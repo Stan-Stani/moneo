@@ -168,23 +168,12 @@ class EmulatorActivity : ComponentActivity() {
         moneo.bindCapture { addr, length -> runner.busReadBytes(addr, length) }
         moneoGate = MoneoSoftGate(moneo.repository, moneo.prefs)
 
-        // Wire the hard area-gate. boundary_tiles.json was extracted from
-        // pokefirered's map_groups.json, so its bank/mapId keys match the
-        // US Rev 1 numbering. The 2024 KR patch reorders map_groups, so its
-        // runtime SaveBlock1.location uses different bank/mapId values; the
-        // boundary_remap.kr2024.json table translates runtime keys back to
-        // the boundary file's keys. The provider is queried each frame so a
-        // ROM swap mid-session immediately picks the right remap.
+        // Wire the hard area-gate. boundary_tiles.json is keyed by
+        // pokefirered's canonical map_groups numbering, which both the US
+        // Rev 1 ROM and the 2024 KR patch use for SaveBlock1.location.
         runCatching {
-            val kr2024Remap = com.poketrek.moneo.data.MapBoundaryLookup
-                .loadRemapFromAssets(applicationContext, "moneo/boundary_remap.kr2024.json")
             val boundaries = com.poketrek.moneo.data.MapBoundaryLookup
-                .loadFromAssets(applicationContext, keyRemap = {
-                    when (runner.romIdentity.value?.variant) {
-                        com.poketrek.emu.RomVariant.LEAFGREEN_KR_2024 -> kr2024Remap
-                        else -> emptyMap()
-                    }
-                })
+                .loadFromAssets(applicationContext)
             val areaGate = com.poketrek.moneo.MoneoAreaGateImpl.create(
                 boundaries,
                 moneo.prefs,

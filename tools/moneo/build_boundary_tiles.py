@@ -13,20 +13,14 @@ Two boundary kinds:
   2. "warp"  — warp_event tiles. The player steps *onto* the warp tile, which
                teleports them into a different map (in a different area).
 
-Numbering scheme: **Korean ROM** (bank, mapId), to match the runtime values
-read out of SaveBlock1 by `LeafGreenRam.read` and the existing
-`map_to_area.json`. The Korean ROM is the only build the area-gate is wired
-for — the English LEAFGREEN_US_REV1 ROM has the area-resolution data
-(`map_to_area.json`) keyed by Korean numbering anyway, so consistency wins.
+Numbering scheme: pokefirered's canonical (bank, mapId), i.e. the index into
+`data/maps/map_groups.json` group_order and the position within that group.
+Both the 2024 Korean patch and LeafGreen US Rev 1 keep this order (43 groups,
+425 maps), and it is what `LeafGreenRam.read` reports from
+SaveBlock1.location. `map_to_area.json` uses the same keys.
 
 World geometry source: pokefirered's `data/maps/<MapName>/map.json` and
-`data/layouts/layouts.json`. The geometry (connections, warps, layout dims)
-is identical between English and Korean — only the bank/mapId numbering
-differs. We translate pokefirered's English `(group_index, position)` into
-Korean `(bank, mapId)` via the +2 group-offset rule (English groups 0-1
-"Link" + "Dungeons" don't exist in Korean ROM; English idx 2 = Korean 0,
-English idx 3 = Korean 1, etc.). This is the same offset used by
-`tools/moneo/resolve_map_areas.py`.
+`data/layouts/layouts.json`.
 
 Output schema (deterministic, sorted keys):
 
@@ -35,7 +29,7 @@ Output schema (deterministic, sorted keys):
       "rom": "leafgreen-kr-2024",
       "stats": {...},
       "boundaries": {
-        "<koreanBank>:<koreanMapId>": [
+        "<bank>:<mapId>": [
           {"x":5,"y":0,"dir":"up","destBank":1,"destMapId":18,
            "destArea":"route_1","kind":"edge"},
           {"x":12,"y":8,"dir":null,"destBank":2,"destMapId":0,
@@ -46,7 +40,7 @@ Output schema (deterministic, sorted keys):
 
 `dir` is the press-direction the player would input; warps have dir=null
 because they trigger on stepping onto the tile from any direction. dest
-bank/mapId are also Korean-ROM-numbered (matching the source side).
+bank/mapId use the same numbering as the source side.
 
 Usage:
     python3 tools/moneo/build_boundary_tiles.py            # write json
@@ -66,17 +60,9 @@ MAP_GROUPS = MAPS_DIR / "map_groups.json"
 AREA_INDEX = ROOT / "tools" / "moneo" / "map_area_index.json"
 OUT = ROOT / "app" / "src" / "main" / "assets" / "moneo" / "boundary_tiles.json"
 
-# Korean-ROM group N corresponds to English-ROM group_order index (N + 2)
-# for indoor groups (which match exactly). Groups 0-1 (SpecialArea +
-# TownsAndRoutes) map identity-modulo-extras: English idx 2 = SpecialArea,
-# English idx 3 = TownsAndRoutes. Korean has extras prepended/appended in
-# those two groups (Korean SpecialArea has 60 vs English 47; TownsAndRoutes
-# 66 vs ?). For the maps we care about (overworld town/route maps the player
-# can walk on), the position-in-group ordering matches between Korean and
-# English for shared maps — what differs is total count due to Korean dummy
-# duplicates. We resolve via symbolic name lookup, not numeric offset, so
-# the count mismatch is harmless.
-KOREAN_TO_ENGLISH_GROUP_OFFSET = 2
+# Kept as a named constant so a future build with a genuinely reordered
+# gMapGroups has one place to change. Both supported ROMs use 0.
+KOREAN_TO_ENGLISH_GROUP_OFFSET = 0
 
 
 def load_json(path: Path):
@@ -85,12 +71,7 @@ def load_json(path: Path):
 
 
 def build_name_to_korean_idx(map_groups: dict) -> dict[str, tuple[int, int]]:
-    """pokefirered symbolic map name ('PalletTown') -> (koreanBank, koreanMapId).
-
-    Skips maps that live in pokefirered groups 0-1 (Link, Dungeons) — those
-    don't exist as standalone groups in the Korean ROM and aren't reachable
-    via overworld traversal anyway.
-    """
+    """pokefirered symbolic map name ('PalletTown') -> (bank, mapId)."""
     order: list[str] = map_groups["group_order"]
     out: dict[str, tuple[int, int]] = {}
     for english_bank, group_name in enumerate(order):

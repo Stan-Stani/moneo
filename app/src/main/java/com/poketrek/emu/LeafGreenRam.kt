@@ -41,8 +41,9 @@ object LeafGreenRam {
         } else {
             playerX = emu.busRead16(ptr)
             playerY = emu.busRead16(ptr + 2)
-            mapId = emu.busRead8(ptr + 4)
-            mapBank = emu.busRead8(ptr + 5)
+            // SaveBlock1.location is struct WarpData { s8 mapGroup; s8 mapNum; ... }.
+            mapBank = emu.busRead8(ptr + 4)
+            mapId = emu.busRead8(ptr + 5)
         }
         return Snapshot(
             playerX = playerX,

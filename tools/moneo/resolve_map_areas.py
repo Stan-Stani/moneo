@@ -21,6 +21,8 @@ MAP_TEXT_INDEX = ROOT / "tools/moneo/map_text_index.json"
 MAPSEC_AREAS_JSON = ROOT / "tools/moneo/mapsec_areas.json"
 AREAS_JSON = ROOT / "app/src/main/assets/moneo/areas.json"
 OUT = ROOT / "tools/moneo/map_area_index.json"
+# Slim (bank:mapId -> area_id) runtime table read by MapAreaLookup.
+APP_MAP_TO_AREA = ROOT / "app/src/main/assets/moneo/map_to_area.json"
 
 GBA_BASE = 0x08000000
 MAX_WARP_HOPS = 6  # interior building chains (e.g. Trainer Tower) need 4-5 hops
@@ -236,6 +238,14 @@ def main() -> int:
     }
 
     OUT.write_text(json.dumps(output, ensure_ascii=False, indent=1) + "\n")
+
+    slim = {
+        "maps": {f"{m['group']}:{m['mapNum']}": m["resolved_area_id"]
+                 for m in per_map if m["resolved_area_id"]},
+        "rom": ROM_PATH.name,
+        "version": 1,
+    }
+    APP_MAP_TO_AREA.write_text(json.dumps(slim, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
     print(f"\nWrote {OUT}")
 
     # Summary

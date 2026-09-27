@@ -1,7 +1,0 @@
-{
-  "rom": "leafgreen-kr-2024",
-  "comment": "Translates the runtime SaveBlock1.location (bank, mapId) read by LeafGreenRam.read on the 2024 Korean patch into the (bank, mapId) keys used by boundary_tiles.json (which were derived from pokefirered's data/maps/map_groups.json with a +2 group offset). The two numbering schemes do not agree because the Korean ROM reorders map_groups; without this table boundariesFor() always misses and the area gate is a no-op. Extend by walking on a new map, reading the MovementGateDbg log line for runtime (bank, mapId), and adding the corresponding boundary_tiles key.",
-  "remap": {
-    "0:3": "1:0"
-  }
-}
