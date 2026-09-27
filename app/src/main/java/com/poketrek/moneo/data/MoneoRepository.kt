@@ -108,19 +108,35 @@ class MoneoRepository(
      * false = hand-written study sentences. When [preferAreaId] is supplied,
      * picks the first sentence whose areaId matches; falls back to any
      * sentence for the vocab in that source.
+     *
+     * In verbatim mode, ROM lines that don't read as a sentence (see
+     * [isUsableRomExample]) are skipped, falling back to the study sentence
+     * when no usable ROM line is left.
      */
     fun sentenceFor(
         vocabId: String,
         preferAreaId: String? = null,
         verbatim: Boolean = true,
     ): SentenceEntry? {
-        val map = if (verbatim) sentencesRomByVocab else sentencesStudyByVocab
-        val all = map[vocabId] ?: return null
-        if (preferAreaId != null) {
-            all.firstOrNull { it.areaId == preferAreaId }?.let { return it }
+        val candidates = if (verbatim) {
+            sentencesRomByVocab[vocabId].orEmpty().filter { it.isUsableRomExample() }
+                .ifEmpty { sentencesStudyByVocab[vocabId].orEmpty() }
+        } else {
+            sentencesStudyByVocab[vocabId].orEmpty()
         }
-        return all.firstOrNull()
+        if (preferAreaId != null) {
+            candidates.firstOrNull { it.areaId == preferAreaId }?.let { return it }
+        }
+        return candidates.firstOrNull()
     }
+
+    /**
+     * About half of the ROM-ripped examples are a single token (undecoded
+     * glyphs dropped out of the middle, e.g. "상대를쪽", "많은주마") or only
+     * carry a "(ROM example, recN)" placeholder instead of a translation.
+     */
+    private fun SentenceEntry.isUsableRomExample(): Boolean =
+        korean.trim().split(WHITESPACE).size >= 2 && !gloss.startsWith("(ROM example")
 
     init {
         // Make sure every seed entry has a card row. Idempotent on repeat launch.
@@ -336,5 +352,9 @@ class MoneoRepository(
         store.clear()
         store.ensureExists(_vocab.value.keys, now())
         _cards.value = store.all().associateBy { it.vocabId }
+    }
+
+    private companion object {
+        val WHITESPACE = Regex("\\s+")
     }
 }
