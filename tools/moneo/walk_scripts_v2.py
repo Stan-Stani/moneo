@@ -49,7 +49,7 @@ OUT = THIS_DIR / "map_text_index.json"
 
 # GROUP_OFFSETS is now derived dynamically from the ROM via get_group_offsets()
 # at walk-time, since the offsets differ between ROM revisions. The 2024 patch
-# has gMapGroups @ 0x352700 with 41 groups (same Korean ordering as 2010).
+# has gMapGroups @ 0x3526F8 with 43 groups in canonical pokefirered order.
 
 
 def u32(rom: bytes, off: int) -> int:

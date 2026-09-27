@@ -27,7 +27,7 @@ GBA_BASE = 0x08000000
 # === Table offsets (2024 patch) ===
 # All discovered via `tools/moneo/rom_swap/find_offsets_2024.py`.
 # See `tools/moneo/rom_swap/OFFSETS_2024.md` for derivation notes.
-GMAP_GROUPS = 0x352700        # 41 group ptrs
+GMAP_GROUPS = 0x3526F8        # 43 group ptrs, canonical pokefirered order
 GITEMS = 0x3DAED4             # 44-byte stride (canonical pokefirered)
 GITEMS_STRIDE = 44
 GITEMS_DESC_OFF = 20          # description ptr field offset within Item struct
@@ -59,11 +59,12 @@ GWILD_MON_HEADERS = 0x3C9B64  # 20-byte stride
 GWILD_STRIDE = 20
 
 # === gWildMonHeaders -> gMapGroups indexing ===
-# The Korean fan-build (both 2010 and 2024) drops the canonical pokefirered
-# gMapGroup_Link (group 0) and gMapGroup_Dungeons (group 1) super-groups, so:
-#   korean_walker_group = pokefirered_canonical_mg - 2
-# This applies to gWildMonHeaders.mapGroup interpretation.
-KOREAN_GROUP_OFFSET = -2
+# The 2024 patch keeps pokefirered's canonical group order (43 groups, 425
+# maps, Link=0, Dungeons=1, TownsAndRoutes=3). An earlier GMAP_GROUPS value
+# pointed two entries into the table, which made it look like Link+Dungeons
+# had been dropped and required a -2 correction here. With GMAP_GROUPS fixed,
+# gWildMonHeaders.mapGroup maps 1:1 onto walker groups.
+KOREAN_GROUP_OFFSET = 0
 
 # === Trainer-dialog region ===
 # In the 2010 ROM this was 0x163000-0x166000. The 2024 ROM moved everything;

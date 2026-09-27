@@ -130,7 +130,9 @@
    "generator": "llm-claude-opus-4-7",
    "firstAreaEncountered": "cerulean_cave",
    "areasReferenced": [
-    "cerulean_cave"
+    "cerulean_cave",
+    "mt_moon",
+    "ss_anne"
    ]
   },
   {
@@ -486,7 +488,11 @@
    "generator": "llm-claude-opus-4-7",
    "firstAreaEncountered": "seafoam_islands",
    "areasReferenced": [
-    "seafoam_islands"
+    "seafoam_islands",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "safari_zone"
    ]
   },
   {
@@ -808,7 +814,11 @@
    "generator": "llm-claude-opus-4-7",
    "firstAreaEncountered": "route_12",
    "areasReferenced": [
-    "route_12"
+    "route_12",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co"
    ]
   },
   {
@@ -1422,7 +1432,13 @@
    "generator": "llm-claude-opus-4-7",
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "pallet_town"
+    "pallet_town",
+    "indigo_plateau",
+    "pokemon_tower",
+    "rock_tunnel",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co"
    ]
   },
   {

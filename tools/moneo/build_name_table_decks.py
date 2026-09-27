@@ -217,13 +217,9 @@ def main():
             species_idx_to_areas.setdefault(sp, []).append(area)
 
     def species_first_area(species_idx: int) -> tuple[str, list[str]]:
-        """Returns (firstArea, allAreas). species_idx is 0-based pokedex
-        species_index in pokedex_table; map species ROM-table idx (1-based)
-        to species_idx (0-based) via subtraction."""
-        # In pokefirered, gSpeciesNames[i] is species i (where 0=NONE,
-        # 1=BULBASAUR). pokedex_table.json species_index 0=BULBASAUR per the
-        # entries we saw (description_rec_id 51005 = Bulbasaur Pokedex entry).
-        # So ROM index i (1-based) -> pokedex_idx (i-1).
+        """Returns (firstArea, allAreas). species_idx is the species ID, which
+        is both the gSpeciesNames index and pokedex_table's species_index
+        (0 = SPECIES_NONE, 1 = BULBASAUR)."""
         areas = species_idx_to_areas.get(species_idx, [])
         if not areas:
             return ("rom_mined", [])
@@ -390,11 +386,10 @@ def main():
                 first_area = "rom_mined"
             ref_areas = [first_area] if first_area != "rom_mined" else []
         else:
-            # pokedex_table species_index uses 0-based to match ROM index 1
-            # actually let's check: pokedex_table[0] = species_index=0 which
-            # is the dex entry for Bulbasaur. So pokedex species_index = ROM
-            # name index - 1.
-            pdx_idx = i - 1
+            # pokedex_table species_index is the species ID itself: entry 0
+            # is the SPECIES_NONE placeholder ("새로이 ... 포켓몬 조사") and
+            # entry 1 is Bulbasaur's dex text, same as gSpeciesNames[i].
+            pdx_idx = i
             first_area, ref_areas = species_first_area(pdx_idx)
         # Validate
         if first_area not in AREA_RANK and first_area != "rom_mined":

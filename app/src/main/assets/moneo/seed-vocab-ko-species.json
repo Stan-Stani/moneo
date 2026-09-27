@@ -175,8 +175,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "route_2",
+   "areasReferenced": [
+    "route_2"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -190,9 +192,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "route_2",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "route_2"
+    "viridian_forest"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -207,10 +209,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "route_24",
-   "areasReferenced": [
-    "route_24"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -224,8 +224,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "route_2",
+   "areasReferenced": [
+    "route_2"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -239,9 +241,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "route_2",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "route_2"
+    "viridian_forest"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -256,10 +258,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "route_24",
-   "areasReferenced": [
-    "route_24"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -273,13 +273,14 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 11,
-   "firstAreaEncountered": "saffron_city",
+   "firstAreaEncountered": "route_1",
    "areasReferenced": [
     "saffron_city",
     "lavender_town",
     "vermilion_city",
     "cinnabar_island",
-    "indigo_plateau"
+    "indigo_plateau",
+    "route_1"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -300,9 +301,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
-   "firstAreaEncountered": "route_1",
+   "firstAreaEncountered": "route_13",
    "areasReferenced": [
-    "route_1"
+    "route_13"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -317,10 +318,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "route_13",
-   "areasReferenced": [
-    "route_13"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -334,7 +333,7 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
-   "firstAreaEncountered": "route_2",
+   "firstAreaEncountered": "route_1",
    "areasReferenced": [
     "route_2",
     "route_25",
@@ -343,7 +342,8 @@
     "route_8",
     "route_10",
     "route_11",
-    "route_9"
+    "route_9",
+    "route_1"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -364,9 +364,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
-   "firstAreaEncountered": "route_1",
+   "firstAreaEncountered": "route_16",
    "areasReferenced": [
-    "route_1"
+    "route_16"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -381,9 +381,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "route_16",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
-    "route_16"
+    "route_3"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -398,9 +398,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
-   "firstAreaEncountered": "route_3",
+   "firstAreaEncountered": "route_17",
    "areasReferenced": [
-    "route_3"
+    "route_17"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -415,10 +415,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 15,
-   "firstAreaEncountered": "pewter_city",
-   "areasReferenced": [
-    "pewter_city"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -447,7 +445,7 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 15,
-   "firstAreaEncountered": "viridian_city",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -457,7 +455,8 @@
     "vermilion_city",
     "route_18",
     "route_22",
-    "seven_island"
+    "seven_island",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -494,8 +493,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "route_4",
+   "areasReferenced": [
+    "route_4"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -509,9 +510,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "route_4",
+   "firstAreaEncountered": "route_23",
    "areasReferenced": [
-    "route_4"
+    "route_23"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -526,9 +527,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "route_3",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "route_3"
+    "safari_zone"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -558,9 +559,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
-   "firstAreaEncountered": "route_3",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "route_3"
+    "safari_zone"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -590,7 +591,7 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 23,
-   "firstAreaEncountered": "route_6",
+   "firstAreaEncountered": "mt_moon",
    "areasReferenced": [
     "route_6",
     "saffron_city",
@@ -600,7 +601,10 @@
     "cinnabar_island",
     "celadon_city",
     "route_9",
-    "indigo_plateau"
+    "indigo_plateau",
+    "mt_moon",
+    "kanto_pokemon_league",
+    "rock_tunnel"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -637,8 +641,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "route_7",
+   "areasReferenced": [
+    "route_7"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -652,10 +658,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "route_7",
-   "areasReferenced": [
-    "route_7"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -669,8 +673,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 11,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "route_3",
+   "areasReferenced": [
+    "route_3"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -684,10 +690,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
-   "firstAreaEncountered": "route_3",
-   "areasReferenced": [
-    "route_3"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -701,8 +705,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "mt_moon",
+   "areasReferenced": [
+    "mt_moon"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -716,8 +722,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -776,8 +784,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "mt_moon",
+   "areasReferenced": [
+    "mt_moon"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -791,8 +801,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -806,8 +818,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "route_12",
+   "areasReferenced": [
+    "route_12"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -821,9 +835,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "route_12",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "route_12"
+    "safari_zone"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -838,7 +852,7 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 9,
-   "firstAreaEncountered": "route_1",
+   "firstAreaEncountered": "digletts_cave",
    "areasReferenced": [
     "route_1",
     "route_2",
@@ -855,7 +869,8 @@
     "five_island",
     "four_island",
     "seven_island",
-    "three_island"
+    "three_island",
+    "digletts_cave"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -877,8 +892,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "digletts_cave",
+   "areasReferenced": [
+    "digletts_cave"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -892,14 +909,15 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
-   "firstAreaEncountered": "route_6",
+   "firstAreaEncountered": "route_5",
    "areasReferenced": [
     "route_6",
     "route_8",
     "route_10",
     "route_11",
     "celadon_city",
-    "route_9"
+    "route_9",
+    "route_5"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -919,10 +937,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
-   "firstAreaEncountered": "pewter_city",
-   "areasReferenced": [
-    "pewter_city"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -936,10 +952,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "pewter_city",
-   "areasReferenced": [
-    "pewter_city"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -968,11 +982,12 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "viridian_city",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
-    "cerulean_city"
+    "cerulean_city",
+    "route_3"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -990,9 +1005,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
-   "firstAreaEncountered": "route_3",
+   "firstAreaEncountered": "cerulean_cave",
    "areasReferenced": [
-    "route_3"
+    "cerulean_cave"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1007,10 +1022,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
-   "firstAreaEncountered": "route_23",
-   "areasReferenced": [
-    "route_23"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1039,8 +1052,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1071,10 +1086,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
-   "firstAreaEncountered": "viridian_city",
-   "areasReferenced": [
-    "viridian_city"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1088,11 +1101,12 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
-   "firstAreaEncountered": "route_25",
+   "firstAreaEncountered": "route_24",
    "areasReferenced": [
     "route_25",
     "seven_island",
-    "one_island"
+    "one_island",
+    "route_24"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1110,9 +1124,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "route_24",
+   "firstAreaEncountered": "cerulean_cave",
    "areasReferenced": [
-    "route_24"
+    "cerulean_cave"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1142,11 +1156,12 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "cerulean_city",
+   "firstAreaEncountered": "rock_tunnel",
    "areasReferenced": [
     "cerulean_city",
     "lavender_town",
-    "vermilion_city"
+    "vermilion_city",
+    "rock_tunnel"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1164,8 +1179,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1194,8 +1211,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "route_24",
+   "areasReferenced": [
+    "route_24"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1209,9 +1228,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "route_24",
+   "firstAreaEncountered": "route_12",
    "areasReferenced": [
-    "route_24"
+    "route_12"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1226,10 +1245,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "route_12",
-   "areasReferenced": [
-    "route_12"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1243,8 +1260,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1258,10 +1277,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "pallet_town",
-   "areasReferenced": [
-    "pallet_town"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1292,9 +1309,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rock_tunnel",
    "areasReferenced": [
-    "pewter_city"
+    "rock_tunnel"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1309,10 +1326,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
-   "firstAreaEncountered": "pewter_city",
-   "areasReferenced": [
-    "pewter_city"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1362,9 +1377,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 9,
-   "firstAreaEncountered": "cinnabar_island",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "cinnabar_island"
+    "cinnabar_island",
+    "pallet_town"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1382,9 +1398,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 12,
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "cinnabar_island",
    "areasReferenced": [
-    "pallet_town"
+    "cinnabar_island"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1399,9 +1415,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
-   "firstAreaEncountered": "cinnabar_island",
+   "firstAreaEncountered": "power_plant",
    "areasReferenced": [
-    "cinnabar_island"
+    "power_plant"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1416,8 +1432,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "power_plant",
+   "areasReferenced": [
+    "power_plant"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1446,8 +1464,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1461,10 +1481,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 9,
-   "firstAreaEncountered": "route_16",
-   "areasReferenced": [
-    "route_16"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1478,8 +1496,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "seafoam_islands",
+   "areasReferenced": [
+    "seafoam_islands"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1493,8 +1513,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "seafoam_islands",
+   "areasReferenced": [
+    "seafoam_islands"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1508,8 +1530,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "pokemon_mansion",
+   "areasReferenced": [
+    "pokemon_mansion"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1523,9 +1547,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
-   "firstAreaEncountered": "celadon_city",
+   "firstAreaEncountered": "pokemon_mansion",
    "areasReferenced": [
-    "celadon_city"
+    "pokemon_mansion"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1570,8 +1594,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "pokemon_tower",
+   "areasReferenced": [
+    "pokemon_tower"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1622,8 +1648,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "rock_tunnel",
+   "areasReferenced": [
+    "rock_tunnel"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1637,9 +1665,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_11",
    "areasReferenced": [
-    "pewter_city"
+    "route_11"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1654,10 +1682,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
-   "firstAreaEncountered": "route_11",
-   "areasReferenced": [
-    "route_11"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1671,8 +1697,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1703,9 +1731,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_10",
    "areasReferenced": [
-    "pallet_town"
+    "route_10"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1720,9 +1748,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "route_10",
+   "firstAreaEncountered": "cerulean_cave",
    "areasReferenced": [
-    "route_10"
+    "cerulean_cave"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1737,8 +1765,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1767,10 +1797,11 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 10,
-   "firstAreaEncountered": "cerulean_city",
+   "firstAreaEncountered": "pokemon_tower",
    "areasReferenced": [
     "cerulean_city",
-    "lavender_town"
+    "lavender_town",
+    "pokemon_tower"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1791,9 +1822,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 10,
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "indigo_plateau",
    "areasReferenced": [
-    "pewter_city"
+    "indigo_plateau"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1857,8 +1888,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "pokemon_mansion",
+   "areasReferenced": [
+    "pokemon_mansion"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1872,10 +1905,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "celadon_city",
-   "areasReferenced": [
-    "celadon_city"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1889,8 +1920,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1919,9 +1952,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 19,
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "pewter_city",
     "cerulean_city",
     "lavender_town",
     "vermilion_city",
@@ -1931,8 +1963,12 @@
     "water_path",
     "six_island",
     "five_island",
-    "treasure_beach",
-    "four_island"
+    "four_island",
+    "safari_zone",
+    "pokemon_mansion",
+    "seven_island",
+    "silph_co",
+    "three_island"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1954,8 +1990,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "route_21",
+   "areasReferenced": [
+    "route_21"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -1969,9 +2007,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 9,
-   "firstAreaEncountered": "route_21",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "route_21"
+    "safari_zone"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -1986,8 +2024,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -2001,10 +2041,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "pallet_town",
-   "areasReferenced": [
-    "pallet_town"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -2018,8 +2056,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -2033,9 +2073,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "viridian_city",
+   "firstAreaEncountered": "fuchsia_city",
    "areasReferenced": [
-    "viridian_city"
+    "fuchsia_city"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -2050,9 +2090,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "fuchsia_city",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "fuchsia_city"
+    "pallet_town"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -2067,10 +2107,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
-   "firstAreaEncountered": "pallet_town",
-   "areasReferenced": [
-    "pallet_town"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -2159,8 +2197,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -2174,8 +2214,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -2189,11 +2231,12 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 18,
-   "firstAreaEncountered": "route_2",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "route_2",
     "route_4",
-    "saffron_city"
+    "saffron_city",
+    "pallet_town"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -2247,8 +2290,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "route_13",
+   "areasReferenced": [
+    "route_13"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -2262,10 +2307,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
-   "firstAreaEncountered": "route_13",
-   "areasReferenced": [
-    "route_13"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -2489,8 +2532,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -2504,8 +2549,10 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -3286,9 +3333,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "mt_moon",
+   "firstAreaEncountered": "cerulean_cave",
    "areasReferenced": [
-    "mt_moon"
+    "cerulean_cave"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -3319,7 +3366,9 @@
    "areaId": "rom_mined",
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "areasReferenced": [
+    "six_island"
+   ],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -3646,9 +3695,9 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "mt_moon",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "mt_moon"
+    "trainer_tower"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -3666,10 +3715,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
-   "firstAreaEncountered": "mt_moon",
-   "areasReferenced": [
-    "mt_moon"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -3713,10 +3760,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "mt_moon",
-   "areasReferenced": [
-    "mt_moon"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -3790,10 +3835,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
-   "firstAreaEncountered": "pewter_city",
-   "areasReferenced": [
-    "pewter_city"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],
@@ -4002,10 +4045,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
-   "firstAreaEncountered": "pewter_city",
-   "areasReferenced": [
-    "pewter_city"
-   ],
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
    "sourceTypes": [
     "pokemon_species"
    ],

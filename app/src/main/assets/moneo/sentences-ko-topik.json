@@ -24,12 +24,14 @@
    "targetForm": "몰다",
    "areaId": "topik_2",
    "source": "rom-rec2747",
-   "firstAreaEncountered": "cerulean_city",
+   "firstAreaEncountered": "mt_moon",
    "areasReferenced": [
     "cerulean_city",
     "lavender_town",
     "vermilion_city",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "ss_anne"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -108,7 +110,15 @@
     "three_island",
     "ruin_valley",
     "five_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "rock_tunnel",
+    "seafoam_islands",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -215,7 +225,16 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -306,7 +325,13 @@
     "celadon_city",
     "rom_mined",
     "four_island",
-    "seven_island"
+    "seven_island",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "rock_tunnel",
+    "silph_co",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -382,7 +407,20 @@
     "ruin_valley",
     "four_island",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -463,7 +501,20 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "originalKorean": "밀밟간같",
    "originalSource": "rom-rec2560",
@@ -563,7 +614,20 @@
     "ruin_valley",
     "four_island",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "originalKorean": "팬이있다",
    "originalSource": "rom-rec4363",
@@ -593,9 +657,8 @@
    "originalKorean": "나카란타",
    "originalSource": "rom-rec856",
    "rotatedFromArea": "viridian_city",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "route_2",
     "pewter_city",
@@ -619,12 +682,16 @@
     "rom_mined",
     "seven_island",
     "two_island",
-    "treasure_beach",
     "six_island",
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "mt_moon",
+    "rocket_hideout",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -736,10 +803,10 @@
    "targetForm": "검다",
    "areaId": "topik_2",
    "source": "rom-rec307",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rock_tunnel",
    "areasReferenced": [
-    "pewter_city",
-    "rom_mined"
+    "rom_mined",
+    "rock_tunnel"
    ],
    "sourceTypes": [
     "item_description",
@@ -816,7 +883,16 @@
     "ruin_valley",
     "four_island",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "rocket_hideout",
+    "safari_zone",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -867,7 +943,13 @@
     "celadon_city",
     "rom_mined",
     "four_island",
-    "seven_island"
+    "seven_island",
+    "indigo_plateau",
+    "kanto_pokemon_league",
+    "one_island",
+    "rock_tunnel",
+    "silph_co",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -1029,7 +1111,16 @@
     "ruin_valley",
     "one_island",
     "four_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "pokemon_tower",
+    "power_plant",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -1069,14 +1160,21 @@
    "targetForm": "치다",
    "areaId": "topik_1",
    "source": "rom-rec1705",
-   "firstAreaEncountered": "route_3",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
     "route_3",
     "rom_mined",
     "ruin_valley",
     "four_island",
     "two_island",
-    "three_island"
+    "three_island",
+    "digletts_cave",
+    "five_island",
+    "indigo_plateau",
+    "rocket_hideout",
+    "route_2",
+    "silph_co",
+    "six_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -1196,7 +1294,20 @@
     "ruin_valley",
     "one_island",
     "four_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -1296,7 +1407,12 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "power_plant",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -1341,7 +1457,11 @@
     "seven_island",
     "two_island",
     "three_island",
-    "one_island"
+    "one_island",
+    "digletts_cave",
+    "five_island",
+    "four_island",
+    "six_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -1396,7 +1516,10 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "rock_tunnel",
+    "silph_co",
+    "ss_anne"
    ],
    "sourceTypes": [
     "item_description",
@@ -1494,7 +1617,8 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "one_island"
+    "one_island",
+    "route_17"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -1586,7 +1710,10 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -1767,7 +1894,6 @@
     "seven_island",
     "five_isle_meadow",
     "two_island",
-    "treasure_beach",
     "kindle_road",
     "water_path",
     "six_island",
@@ -1775,7 +1901,13 @@
     "ruin_valley",
     "five_island",
     "four_island",
-    "one_island"
+    "one_island",
+    "cerulean_cave",
+    "pokemon_mansion",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co"
    ],
    "sourceTypes": [
     "item_description",
@@ -1950,7 +2082,20 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -2216,7 +2361,8 @@
     "seven_island",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "kanto_pokemon_league"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -2283,13 +2429,11 @@
    "targetForm": "먹다",
    "areaId": "topik_1",
    "source": "rom-rec2558",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -2314,7 +2458,10 @@
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "rock_tunnel",
+    "silph_co",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -2491,14 +2638,22 @@
     "seven_island",
     "five_isle_meadow",
     "two_island",
-    "treasure_beach",
     "kindle_road",
     "three_island",
     "six_island",
     "ruin_valley",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "rock_tunnel",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -2574,7 +2729,9 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "kanto_pokemon_league",
+    "rock_tunnel"
    ],
    "sourceTypes": [
     "system_text"
@@ -2761,7 +2918,6 @@
     "viridian_city",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -2804,7 +2960,13 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -2884,7 +3046,19 @@
     "ruin_valley",
     "four_island",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -3028,11 +3202,11 @@
    "targetForm": "길다",
    "areaId": "topik_1",
    "source": "rom-rec5849",
-   "firstAreaEncountered": "mt_moon",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "mt_moon",
     "rom_mined",
-    "two_island"
+    "two_island",
+    "four_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -3205,7 +3379,17 @@
     "five_island",
     "one_island",
     "four_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "pokemon_tower",
+    "power_plant",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -3270,7 +3454,6 @@
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
-    "pewter_city",
     "route_24",
     "route_25",
     "route_22",
@@ -3287,7 +3470,9 @@
     "ruin_valley",
     "five_isle_meadow",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -3349,9 +3534,8 @@
    "targetForm": "뜨다",
    "areaId": "topik_2",
    "source": "rom-rec726",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "route_2",
     "pewter_city",
@@ -3375,12 +3559,15 @@
     "rom_mined",
     "seven_island",
     "two_island",
-    "treasure_beach",
     "six_island",
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -3419,7 +3606,6 @@
     "pallet_town",
     "viridian_city",
     "pewter_city",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "lavender_town",
@@ -3428,7 +3614,20 @@
     "rom_mined",
     "treasure_beach",
     "resort_gorgeous",
-    "kindle_road"
+    "kindle_road",
+    "five_island",
+    "four_island",
+    "kanto_pokemon_league",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "six_island",
+    "three_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -3524,7 +3723,20 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -3561,13 +3773,11 @@
    "targetForm": "가지다",
    "areaId": "topik_1",
    "source": "rom-rec2578",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "route_2",
     "pewter_city",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_5",
@@ -3592,12 +3802,15 @@
     "rom_mined",
     "seven_island",
     "two_island",
-    "treasure_beach",
     "three_island",
     "six_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -3798,7 +4011,8 @@
     "cinnabar_island",
     "celadon_city",
     "indigo_plateau",
-    "rom_mined"
+    "rom_mined",
+    "seafoam_islands"
    ],
    "sourceTypes": [
     "item_description",
@@ -3828,7 +4042,9 @@
     "cerulean_city",
     "lavender_town",
     "vermilion_city",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "rock_tunnel"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -4012,7 +4228,15 @@
     "three_island",
     "ruin_valley",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "mt_moon",
+    "rock_tunnel",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "originalKorean": "기술꼬신",
    "originalSource": "rom-rec3126",
@@ -4075,7 +4299,8 @@
     "treasure_beach",
     "resort_gorgeous",
     "water_labyrinth",
-    "kindle_road"
+    "kindle_road",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -4110,7 +4335,10 @@
     "route_20",
     "route_21",
     "rom_mined",
-    "kindle_road"
+    "kindle_road",
+    "five_island",
+    "four_island",
+    "six_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -4181,7 +4409,6 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_24",
     "route_25",
     "route_22",
@@ -4198,7 +4425,9 @@
     "ruin_valley",
     "five_isle_meadow",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -4220,7 +4449,8 @@
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
-    "rom_mined"
+    "rom_mined",
+    "seafoam_islands"
    ],
    "originalKorean": "에모노트",
    "originalSource": "rom-rec4859",
@@ -4281,7 +4511,12 @@
     "six_island",
     "three_island",
     "five_island",
-    "four_island"
+    "four_island",
+    "indigo_plateau",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "seafoam_islands"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -4357,7 +4592,19 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -4381,14 +4628,16 @@
    "targetForm": "빨다",
    "areaId": "topik_2",
    "source": "rom-rec3496",
-   "firstAreaEncountered": "route_20",
+   "firstAreaEncountered": "mt_moon",
    "areasReferenced": [
     "route_20",
     "route_21",
     "rom_mined",
     "treasure_beach",
     "resort_gorgeous",
-    "kindle_road"
+    "kindle_road",
+    "mt_moon",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -4441,7 +4690,13 @@
     "five_island",
     "one_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co",
+    "ss_anne"
    ],
    "sourceTypes": [
     "item_description",
@@ -4584,9 +4839,8 @@
    "targetForm": "살다",
    "areaId": "topik_1",
    "source": "rom-rec3928",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "mt_moon",
    "areasReferenced": [
-    "pewter_city",
     "cerulean_city",
     "route_25",
     "lavender_town",
@@ -4603,7 +4857,19 @@
     "route_22",
     "rom_mined",
     "one_island",
-    "two_island"
+    "two_island",
+    "digletts_cave",
+    "indigo_plateau",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -4638,9 +4904,10 @@
    "targetForm": "아프다",
    "areaId": "topik_1",
    "source": "rom-rec4392",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "cerulean_cave",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave"
    ],
    "sourceTypes": [
     "system_text"
@@ -4709,7 +4976,9 @@
    "firstAreaEncountered": "route_3",
    "areasReferenced": [
     "route_3",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "rock_tunnel"
    ],
    "sourceTypes": [
     "item_description",
@@ -4755,7 +5024,8 @@
     "three_island",
     "four_island",
     "seven_island",
-    "six_island"
+    "six_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -4774,9 +5044,8 @@
    "targetForm": "매우",
    "areaId": "topik_1",
    "source": "rom-rec164",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "rock_tunnel",
    "areasReferenced": [
-    "pallet_town",
     "fuchsia_city",
     "cinnabar_island",
     "indigo_plateau",
@@ -4785,7 +5054,9 @@
     "four_island",
     "seven_island",
     "two_island",
-    "six_island"
+    "six_island",
+    "rock_tunnel",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -4838,11 +5109,11 @@
    "targetForm": "밟다",
    "areaId": "topik_2",
    "source": "rom-rec2560",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "mt_moon",
    "areasReferenced": [
-    "pewter_city",
     "rom_mined",
-    "kindle_road"
+    "mt_moon",
+    "one_island"
    ],
    "sourceTypes": [
     "pokedex_entry",
@@ -4928,9 +5199,13 @@
     "pallet_town",
     "viridian_city",
     "mt_moon",
-    "route_24",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "one_island",
+    "resort_gorgeous",
+    "six_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -5014,7 +5289,9 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "rock_tunnel",
+    "silph_co"
    ],
    "originalKorean": "조금물속에",
    "originalSource": "rom-rec4476",
@@ -5119,7 +5396,8 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "system_text"
@@ -5279,7 +5557,6 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "resort_gorgeous",
     "kindle_road",
     "memorial_pillar",
     "water_path",
@@ -5289,7 +5566,22 @@
     "five_isle_meadow",
     "four_island",
     "outcast_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "five_island",
+    "mt_moon",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -5331,8 +5623,10 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "kindle_road",
+    "one_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -5408,7 +5702,20 @@
     "ruin_valley",
     "four_island",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "originalKorean": "다당없끓",
    "originalSource": "rom-rec1332",
@@ -5446,7 +5753,13 @@
     "route_18",
     "route_22",
     "rom_mined",
-    "seven_island"
+    "seven_island",
+    "digletts_cave",
+    "indigo_plateau",
+    "mt_moon",
+    "route_2",
+    "six_island",
+    "ss_anne"
    ],
    "originalKorean": "자신의공격이오른다",
    "originalSource": "rom-rec266",
@@ -5474,8 +5787,6 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
-    "mt_moon",
     "fuchsia_city",
     "route_21",
     "celadon_city",
@@ -5488,7 +5799,10 @@
     "water_path",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "kanto_pokemon_league",
+    "seven_island",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -5510,14 +5824,17 @@
    "targetForm": "나타나다",
    "areaId": "topik_2",
    "source": "rom-rec4364",
-   "firstAreaEncountered": "saffron_city",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
     "saffron_city",
     "route_10",
     "cinnabar_island",
-    "celadon_city",
     "indigo_plateau",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "pokemon_mansion",
+    "route_2",
+    "ss_anne"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -5567,7 +5884,11 @@
     "memorial_pillar",
     "outcast_island",
     "water_path",
-    "six_island"
+    "six_island",
+    "mt_moon",
+    "pokemon_tower",
+    "three_island",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -5627,7 +5948,8 @@
    "areasReferenced": [
     "rom_mined",
     "two_island",
-    "one_island"
+    "one_island",
+    "mt_moon"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -5692,8 +6014,8 @@
    "firstAreaEncountered": "route_2",
    "areasReferenced": [
     "route_2",
-    "mt_moon",
-    "rom_mined"
+    "rom_mined",
+    "four_island"
    ],
    "sourceTypes": [
     "pokedex_entry",
@@ -5751,7 +6073,6 @@
     "five_isle_meadow",
     "two_island",
     "green_path",
-    "treasure_beach",
     "water_labyrinth",
     "water_path",
     "six_island",
@@ -5761,7 +6082,20 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -5902,9 +6236,7 @@
     "pallet_town",
     "route_1",
     "route_2",
-    "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "route_5",
     "route_6",
@@ -5926,7 +6258,6 @@
     "route_9",
     "route_22",
     "rom_mined",
-    "treasure_beach",
     "kindle_road",
     "seven_island",
     "six_island",
@@ -5983,7 +6314,12 @@
     "saffron_city",
     "cinnabar_island",
     "indigo_plateau",
-    "rom_mined"
+    "rom_mined",
+    "five_island",
+    "four_island",
+    "one_island",
+    "power_plant",
+    "three_island"
    ],
    "originalKorean": "더빨리뚜워지게지",
    "originalSource": "rom-rec1338",
@@ -6050,7 +6386,20 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "originalKorean": "모습을본사람은",
    "originalSource": "rom-rec4480",
@@ -6158,7 +6507,13 @@
     "ruin_valley",
     "five_isle_meadow",
     "four_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "seafoam_islands",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -6260,7 +6615,6 @@
     "pallet_town",
     "viridian_city",
     "route_2",
-    "pewter_city",
     "route_4",
     "route_5",
     "route_6",
@@ -6284,7 +6638,8 @@
     "one_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -6424,7 +6779,6 @@
     "celadon_city",
     "route_9",
     "rom_mined",
-    "resort_gorgeous",
     "kindle_road",
     "memorial_pillar",
     "water_path",
@@ -6433,7 +6787,23 @@
     "five_isle_meadow",
     "four_island",
     "outcast_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "five_island",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -6465,7 +6835,6 @@
     "route_10",
     "route_11",
     "rom_mined",
-    "treasure_beach",
     "resort_gorgeous",
     "seven_island",
     "six_island",
@@ -6511,7 +6880,9 @@
     "rom_mined",
     "resort_gorgeous",
     "one_island",
-    "four_island"
+    "four_island",
+    "pokemon_mansion",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -6589,7 +6960,17 @@
     "kindle_road",
     "water_path",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "ss_anne",
+    "three_island",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -6651,7 +7032,9 @@
    "areasReferenced": [
     "pewter_city",
     "cerulean_city",
-    "rom_mined"
+    "rom_mined",
+    "rocket_hideout",
+    "silph_co"
    ],
    "originalKorean": "깊꼴선껌",
    "originalSource": "rom-rec5752",
@@ -6687,7 +7070,7 @@
    "targetForm": "알다",
    "areaId": "topik_1",
    "source": "rom-rec2153",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
     "pewter_city",
     "route_3",
@@ -6713,9 +7096,7 @@
     "seven_island",
     "two_island",
     "green_path",
-    "treasure_beach",
     "water_labyrinth",
-    "kindle_road",
     "water_path",
     "three_island",
     "six_island",
@@ -6724,7 +7105,19 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "safari_zone",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -6747,9 +7140,8 @@
    "targetForm": "얼굴",
    "areaId": "topik_1",
    "source": "rom-rec34026",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_3",
@@ -6778,7 +7170,25 @@
     "three_island",
     "ruin_valley",
     "four_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "five_island",
+    "indigo_plateau",
+    "kanto_pokemon_league",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "originalKorean": "낮에는얼굴을콤은채",
    "originalSource": "rom-rec4371",
@@ -6836,7 +7246,6 @@
     "green_path",
     "resort_gorgeous",
     "water_labyrinth",
-    "kindle_road",
     "memorial_pillar",
     "water_path",
     "seven_island",
@@ -6844,7 +7253,16 @@
     "three_island",
     "ruin_valley",
     "four_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "one_island",
+    "pokemon_mansion",
+    "rock_tunnel",
+    "safari_zone",
+    "silph_co",
+    "trainer_tower",
+    "two_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -6888,7 +7306,13 @@
     "route_20",
     "rom_mined",
     "ruin_valley",
-    "resort_gorgeous"
+    "five_island",
+    "four_island",
+    "one_island",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7017,7 +7441,18 @@
     "five_island",
     "four_island",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7214,7 +7649,9 @@
     "ruin_valley",
     "five_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "safari_zone",
+    "seven_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -7277,7 +7714,8 @@
     "route_20",
     "rom_mined",
     "ruin_valley",
-    "trainer_tower"
+    "trainer_tower",
+    "five_island"
    ],
    "sourceTypes": [
     "system_text",
@@ -7295,9 +7733,8 @@
    "targetForm": "동안",
    "areaId": "topik_1",
    "source": "rom-rec192",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "pewter_city",
    "areasReferenced": [
-    "pallet_town",
     "pewter_city",
     "cerulean_city",
     "saffron_city",
@@ -7311,7 +7748,8 @@
     "three_island",
     "four_island",
     "seven_island",
-    "six_island"
+    "six_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -7350,7 +7788,6 @@
     "route_1",
     "viridian_city",
     "route_2",
-    "pewter_city",
     "route_3",
     "route_4",
     "route_24",
@@ -7392,7 +7829,14 @@
     "five_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "digletts_cave",
+    "indigo_plateau",
+    "mt_moon",
+    "rocket_hideout",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7418,8 +7862,6 @@
    "areasReferenced": [
     "viridian_city",
     "route_2",
-    "pewter_city",
-    "mt_moon",
     "route_4",
     "route_24",
     "route_5",
@@ -7434,7 +7876,11 @@
     "water_path",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "five_island",
+    "four_island",
+    "seven_island",
+    "six_island"
    ],
    "originalKorean": "번개모양이있다",
    "originalSource": "rom-rec208",
@@ -7458,14 +7904,12 @@
    "targetForm": "바꾸다",
    "areaId": "topik_1",
    "source": "rom-rec1176",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "route_2",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "saffron_city",
@@ -7481,14 +7925,17 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "treasure_beach",
     "seven_island",
     "three_island",
     "six_island",
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7510,7 +7957,10 @@
    "areasReferenced": [
     "route_2",
     "saffron_city",
-    "rom_mined"
+    "rom_mined",
+    "digletts_cave",
+    "mt_moon",
+    "ss_anne"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7577,9 +8027,8 @@
    "targetForm": "선택",
    "areaId": "topik_2",
    "source": "rom-rec2589",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_4",
@@ -7597,7 +8046,6 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "resort_gorgeous",
     "memorial_pillar",
     "seven_island",
     "five_isle_meadow",
@@ -7610,7 +8058,21 @@
     "five_island",
     "one_island",
     "four_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7731,7 +8193,7 @@
    "originalKorean": "더빨리뚜워지게지",
    "originalSource": "rom-rec1338",
    "rotatedFromArea": "pallet_town",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
     "pewter_city",
     "route_3",
@@ -7765,7 +8227,22 @@
     "one_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "digletts_cave",
+    "five_island",
+    "four_island",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "safari_zone",
+    "silph_co",
+    "six_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7851,7 +8328,6 @@
     "viridian_city",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -7887,7 +8363,13 @@
     "six_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7913,7 +8395,10 @@
    "areasReferenced": [
     "vermilion_city",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -8001,7 +8486,12 @@
     "ruin_valley",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "rock_tunnel",
+    "safari_zone",
+    "seven_island"
    ],
    "originalKorean": "가끔물속에서",
    "originalSource": "rom-rec4336",
@@ -8026,9 +8516,11 @@
    "targetForm": "갑자기",
    "areaId": "topik_1",
    "source": "rom-rec1345",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "system_text"
@@ -8107,7 +8599,8 @@
    "areasReferenced": [
     "route_3",
     "rom_mined",
-    "ruin_valley"
+    "ruin_valley",
+    "safari_zone"
    ],
    "sourceTypes": [
     "pokedex_entry",
@@ -8159,7 +8652,9 @@
     "one_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "safari_zone",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -8237,7 +8732,6 @@
     "viridian_city",
     "route_2",
     "pewter_city",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -8270,7 +8764,16 @@
     "three_island",
     "five_island",
     "four_island",
-    "one_island"
+    "one_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "trainer_tower"
    ],
    "originalKorean": "다음뒤로",
    "originalSource": "rom-rec2591",
@@ -8353,7 +8856,12 @@
     "five_island",
     "one_island",
     "four_island",
-    "outcast_island"
+    "outcast_island",
+    "digletts_cave",
+    "rocket_hideout",
+    "route_2",
+    "silph_co",
+    "ss_anne"
    ],
    "sourceTypes": [
     "item_description",
@@ -8388,7 +8896,11 @@
     "memorial_pillar",
     "outcast_island",
     "water_path",
-    "trainer_tower"
+    "trainer_tower",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -8424,7 +8936,6 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_24",
     "route_25",
     "vermilion_city",
@@ -8442,7 +8953,10 @@
     "ruin_valley",
     "five_isle_meadow",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "pokemon_mansion",
+    "seven_island",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -8502,9 +9016,7 @@
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
-    "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "saffron_city",
     "route_8",
@@ -8516,7 +9028,6 @@
     "route_9",
     "rom_mined",
     "green_path",
-    "treasure_beach",
     "canyon_entrance",
     "resort_gorgeous",
     "water_path",
@@ -8529,7 +9040,20 @@
     "one_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "digletts_cave",
+    "indigo_plateau",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -8582,23 +9106,26 @@
    "targetForm": "버섯",
    "areaId": "topik_2",
    "source": "rom-rec211",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
-    "pallet_town",
     "route_3",
-    "mt_moon",
     "route_4",
     "route_12",
     "route_16",
     "celadon_city",
     "rom_mined",
-    "treasure_beach",
     "seven_island",
     "six_island",
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "power_plant",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -8647,7 +9174,12 @@
     "route_12",
     "celadon_city",
     "route_9",
-    "rom_mined"
+    "rom_mined",
+    "five_island",
+    "four_island",
+    "safari_zone",
+    "six_island",
+    "viridian_forest"
    ],
    "originalKorean": "물,벌레타입의",
    "originalSource": "rom-rec137",
@@ -8679,7 +9211,12 @@
     "route_24",
     "lavender_town",
     "route_23",
-    "rom_mined"
+    "rom_mined",
+    "five_island",
+    "four_island",
+    "one_island",
+    "power_plant",
+    "three_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -8715,7 +9252,9 @@
     "three_island",
     "four_island",
     "seven_island",
-    "six_island"
+    "six_island",
+    "five_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -8766,7 +9305,18 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -8840,7 +9390,7 @@
    "targetForm": "위하다",
    "areaId": "topik_2",
    "source": "rom-rec135",
-   "firstAreaEncountered": "vermilion_city",
+   "firstAreaEncountered": "pokemon_tower",
    "areasReferenced": [
     "vermilion_city",
     "fuchsia_city",
@@ -8850,7 +9400,11 @@
     "five_island",
     "four_island",
     "two_island",
-    "three_island"
+    "three_island",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -8872,7 +9426,6 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_7",
     "route_8",
     "route_10",
@@ -8881,7 +9434,8 @@
     "route_15",
     "route_16",
     "rom_mined",
-    "kindle_road"
+    "kindle_road",
+    "seven_island"
    ],
    "originalKorean": "귀를세우고위험을",
    "originalSource": "rom-rec4360",
@@ -8966,7 +9520,9 @@
     "six_island",
     "three_island",
     "five_island",
-    "four_island"
+    "four_island",
+    "pokemon_mansion",
+    "silph_co"
    ],
    "originalKorean": "건조한장소에",
    "originalSource": "rom-rec4355",
@@ -9044,7 +9600,13 @@
     "four_island",
     "one_island",
     "two_island",
-    "three_island"
+    "three_island",
+    "cerulean_cave",
+    "five_island",
+    "mt_moon",
+    "six_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -9066,9 +9628,8 @@
    "targetForm": "줍다",
    "areaId": "topik_2",
    "source": "rom-rec5754",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
-    "pewter_city",
     "route_3",
     "route_4",
     "route_24",
@@ -9096,7 +9657,10 @@
     "kindle_road",
     "three_island",
     "one_island",
-    "two_island"
+    "two_island",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -9286,11 +9850,12 @@
    "targetForm": "걸리다",
    "areaId": "topik_2",
    "source": "rom-rec141",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "mt_moon",
    "areasReferenced": [
-    "pewter_city",
     "cinnabar_island",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "pokemon_mansion"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -9309,9 +9874,11 @@
    "targetForm": "결정",
    "areaId": "topik_2",
    "source": "rom-rec2589",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "rocket_hideout",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "rocket_hideout",
+    "silph_co"
    ],
    "sourceTypes": [
     "system_text"
@@ -9331,7 +9898,8 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "sourceTypes": [
     "pokedex_entry",
@@ -9429,7 +9997,8 @@
     "vermilion_city",
     "fuchsia_city",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -9454,7 +10023,10 @@
     "pewter_city",
     "vermilion_city",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -9492,7 +10064,7 @@
    "targetForm": "달리다",
    "areaId": "topik_2",
    "source": "rom-rec4434",
-   "firstAreaEncountered": "cerulean_city",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
     "cerulean_city",
     "saffron_city",
@@ -9500,7 +10072,6 @@
     "route_12",
     "route_13",
     "route_14",
-    "route_16",
     "route_21",
     "cinnabar_island",
     "indigo_plateau",
@@ -9510,7 +10081,11 @@
     "kindle_road",
     "one_island",
     "two_island",
-    "three_island"
+    "three_island",
+    "mt_moon",
+    "safari_zone",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -9544,12 +10119,12 @@
    "targetForm": "던지다",
    "areaId": "topik_2",
    "source": "rom-rec4455",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "vermilion_city",
    "areasReferenced": [
-    "pewter_city",
     "vermilion_city",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "indigo_plateau"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -9623,7 +10198,12 @@
     "ruin_valley",
     "five_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "pokemon_mansion",
+    "rock_tunnel",
+    "safari_zone",
+    "seven_island",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -9665,7 +10245,6 @@
     "route_2",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -9687,7 +10266,6 @@
     "seven_island",
     "two_island",
     "green_path",
-    "treasure_beach",
     "kindle_road",
     "water_path",
     "six_island",
@@ -9696,7 +10274,12 @@
     "five_island",
     "one_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "power_plant",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co"
    ],
    "originalKorean": "많이기르지만곤잘",
    "originalSource": "rom-rec4381",
@@ -9781,9 +10364,9 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "mt_moon",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "resort_gorgeous"
    ],
    "originalKorean": "반드시도망칠수있다",
    "originalSource": "rom-rec199",
@@ -9833,7 +10416,12 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "mt_moon",
+    "rock_tunnel",
+    "ss_anne",
+    "trainer_tower",
+    "viridian_forest"
    ],
    "originalKorean": "이겨서받거나발견해서",
    "originalSource": "rom-rec3709",
@@ -9940,9 +10528,13 @@
     "pallet_town",
     "viridian_city",
     "pewter_city",
-    "route_16",
     "rom_mined",
-    "kindle_road"
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "one_island",
+    "pokemon_mansion",
+    "safari_zone",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10032,7 +10624,6 @@
     "cinnabar_island",
     "celadon_city",
     "route_22",
-    "route_23",
     "indigo_plateau",
     "rom_mined",
     "resort_gorgeous",
@@ -10041,7 +10632,9 @@
     "ruin_valley",
     "five_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "safari_zone"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10071,7 +10664,8 @@
     "kindle_road",
     "memorial_pillar",
     "outcast_island",
-    "water_path"
+    "water_path",
+    "three_island"
    ],
    "originalKorean": "세소년석Ä",
    "originalSource": "rom-rec9838",
@@ -10124,9 +10718,7 @@
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
-    "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "route_24",
     "route_25",
@@ -10153,7 +10745,12 @@
     "four_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10384,7 +10981,12 @@
     "indigo_plateau",
     "rom_mined",
     "treasure_beach",
-    "kindle_road"
+    "kindle_road",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "safari_zone",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10429,7 +11031,11 @@
     "cinnabar_island",
     "celadon_city",
     "indigo_plateau",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10491,7 +11097,9 @@
     "route_11",
     "route_12",
     "route_9",
-    "rom_mined"
+    "rom_mined",
+    "indigo_plateau",
+    "silph_co"
    ],
    "sourceTypes": [
     "item_description",
@@ -10515,9 +11123,8 @@
    "targetForm": "전혀",
    "areaId": "topik_2",
    "source": "rom-rec29818",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "pewter_city",
    "areasReferenced": [
-    "pallet_town",
     "pewter_city",
     "cerulean_city",
     "saffron_city",
@@ -10738,9 +11345,8 @@
    "targetForm": "지키다",
    "areaId": "topik_2",
    "source": "rom-rec4440",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "pewter_city",
     "rom_mined",
     "green_path",
     "ruin_valley",
@@ -10749,7 +11355,8 @@
     "memorial_pillar",
     "outcast_island",
     "water_path",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10793,9 +11400,8 @@
    "targetForm": "커다랗다",
    "areaId": "topik_2",
    "source": "rom-rec212",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_16",
    "areasReferenced": [
-    "pewter_city",
     "route_16",
     "route_17",
     "route_18",
@@ -10805,7 +11411,8 @@
     "five_island",
     "four_island",
     "two_island",
-    "three_island"
+    "three_island",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10825,9 +11432,10 @@
    "targetForm": "태양",
    "areaId": "topik_2",
    "source": "rom-rec205",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "power_plant",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "power_plant"
    ],
    "sourceTypes": [
     "item_description",
@@ -10961,7 +11569,6 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_24",
     "route_25",
     "route_17",
@@ -10980,7 +11587,10 @@
     "ruin_valley",
     "five_isle_meadow",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island",
+    "six_island",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11058,7 +11668,6 @@
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
-    "pewter_city",
     "route_24",
     "route_25",
     "route_6",
@@ -11084,7 +11693,9 @@
     "four_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "route_17",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11133,7 +11744,8 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11192,7 +11804,6 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "cerulean_city",
     "route_24",
     "route_25",
@@ -11226,7 +11837,12 @@
     "water_path",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "mt_moon",
+    "rocket_hideout",
+    "seven_island",
+    "silph_co",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11257,7 +11873,12 @@
     "five_island",
     "two_island",
     "three_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11332,12 +11953,13 @@
    "targetForm": "껍질",
    "areaId": "topik_2",
    "source": "rom-rec4419",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
     "pewter_city",
     "cerulean_city",
-    "route_24",
-    "rom_mined"
+    "rom_mined",
+    "six_island",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -11411,11 +12033,11 @@
    "targetForm": "남기다",
    "areaId": "topik_2",
    "source": "rom-rec4412",
-   "firstAreaEncountered": "route_16",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "route_16",
     "cinnabar_island",
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "sourceTypes": [
     "pokedex_entry",
@@ -11464,9 +12086,8 @@
    "targetForm": "늦다",
    "areaId": "topik_1",
    "source": "rom-rec4499",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_4",
@@ -11476,7 +12097,13 @@
     "celadon_city",
     "rom_mined",
     "four_island",
-    "seven_island"
+    "seven_island",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "silph_co",
+    "trainer_tower",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11560,10 +12187,10 @@
    "targetForm": "더럽다",
    "areaId": "topik_2",
    "source": "rom-rec4416",
-   "firstAreaEncountered": "celadon_city",
+   "firstAreaEncountered": "pokemon_mansion",
    "areasReferenced": [
-    "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "pokemon_mansion"
    ],
    "sourceTypes": [
     "pokedex_entry",
@@ -11628,16 +12255,16 @@
    "targetForm": "돌다",
    "areaId": "topik_2",
    "source": "rom-rec4421",
-   "firstAreaEncountered": "mt_moon",
+   "firstAreaEncountered": "saffron_city",
    "areasReferenced": [
-    "mt_moon",
     "saffron_city",
     "fuchsia_city",
     "cinnabar_island",
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "one_island"
+    "one_island",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11659,7 +12286,6 @@
    "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "viridian_city",
-    "pewter_city",
     "mt_moon",
     "route_4",
     "route_15",
@@ -11764,7 +12390,6 @@
    "areasReferenced": [
     "pallet_town",
     "route_2",
-    "pewter_city",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -11802,7 +12427,10 @@
     "water_path",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "safari_zone",
+    "seven_island",
+    "three_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -11861,7 +12489,10 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "rock_tunnel",
+    "route_5",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11951,9 +12582,8 @@
    "targetForm": "맡다",
    "areaId": "topik_2",
    "source": "rom-rec2738",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_4",
@@ -11973,7 +12603,9 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "pokemon_tower",
+    "power_plant"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -12047,7 +12679,9 @@
    "firstAreaEncountered": "fuchsia_city",
    "areasReferenced": [
     "fuchsia_city",
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave",
+    "six_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -12099,7 +12733,14 @@
     "ruin_valley",
     "five_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -12161,7 +12802,10 @@
     "cerulean_city",
     "lavender_town",
     "vermilion_city",
-    "rom_mined"
+    "rom_mined",
+    "one_island",
+    "pokemon_tower",
+    "power_plant"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -12181,10 +12825,15 @@
    "targetForm": "변하다",
    "areaId": "topik_2",
    "source": "rom-rec4423",
-   "firstAreaEncountered": "celadon_city",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co"
    ],
    "sourceTypes": [
     "item_description",
@@ -12331,10 +12980,14 @@
    "targetForm": "소문",
    "areaId": "topik_2",
    "source": "rom-rec28011",
-   "firstAreaEncountered": "saffron_city",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
     "saffron_city",
-    "rom_mined"
+    "rom_mined",
+    "digletts_cave",
+    "indigo_plateau",
+    "route_2",
+    "ss_anne"
    ],
    "originalKorean": "좋턴이있다는소문이있다",
    "originalSource": "rom-rec4352",
@@ -12378,7 +13031,10 @@
     "pewter_city",
     "route_4",
     "cerulean_city",
-    "rom_mined"
+    "rom_mined",
+    "indigo_plateau",
+    "rocket_hideout",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -12557,7 +13213,8 @@
     "viridian_city",
     "pewter_city",
     "cerulean_city",
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -12613,15 +13270,16 @@
    "targetForm": "완전히",
    "areaId": "topik_2",
    "source": "rom-rec706",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "pallet_town",
-    "pewter_city",
     "mt_moon",
     "rom_mined",
-    "treasure_beach",
-    "resort_gorgeous",
-    "kindle_road"
+    "kindle_road",
+    "five_island",
+    "seven_island",
+    "ss_anne",
+    "three_island",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -12661,7 +13319,12 @@
     "resort_gorgeous",
     "water_labyrinth",
     "kindle_road",
-    "five_isle_meadow"
+    "five_isle_meadow",
+    "four_island",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -12944,7 +13607,10 @@
     "rom_mined",
     "seven_island",
     "one_island",
-    "two_island"
+    "two_island",
+    "five_island",
+    "four_island",
+    "six_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13011,7 +13677,14 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "three_island",
+    "viridian_forest"
    ],
    "originalKorean": "정말찾기힘들게된다",
    "originalSource": "rom-rec4454",
@@ -13036,11 +13709,15 @@
    "targetForm": "제법",
    "areaId": "topik_2",
    "source": "rom-rec214",
-   "firstAreaEncountered": "celadon_city",
+   "firstAreaEncountered": "rock_tunnel",
    "areasReferenced": [
     "celadon_city",
     "rom_mined",
-    "four_island"
+    "four_island",
+    "kanto_pokemon_league",
+    "rock_tunnel",
+    "rocket_hideout",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13065,7 +13742,6 @@
     "viridian_city",
     "route_2",
     "pewter_city",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_5",
@@ -13092,7 +13768,14 @@
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13134,7 +13817,11 @@
     "pewter_city",
     "cerulean_city",
     "lavender_town",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13153,10 +13840,10 @@
    "targetForm": "중요",
    "areaId": "topik_2",
    "source": "rom-rec3177",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "indigo_plateau",
    "areasReferenced": [
-    "pewter_city",
-    "rom_mined"
+    "rom_mined",
+    "indigo_plateau"
    ],
    "sourceTypes": [
     "pokedex_entry",
@@ -13205,7 +13892,16 @@
     "six_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13289,9 +13985,8 @@
    "targetForm": "최고",
    "areaId": "topik_2",
    "source": "rom-rec29940",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_8",
    "areasReferenced": [
-    "pewter_city",
     "route_8",
     "route_10",
     "route_11",
@@ -13305,7 +14000,8 @@
     "water_path",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island"
    ],
    "originalKorean": "최고성능의볼",
    "originalSource": "rom-rec132",
@@ -13328,13 +14024,11 @@
    "targetForm": "친구",
    "areaId": "topik_1",
    "source": "rom-rec4364",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -13369,7 +14063,12 @@
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13482,14 +14181,12 @@
    "targetForm": "편하다",
    "areaId": "topik_2",
    "source": "rom-rec142",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "route_2",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "saffron_city",
@@ -13507,12 +14204,15 @@
     "rom_mined",
     "seven_island",
     "two_island",
-    "treasure_beach",
     "three_island",
     "six_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13566,7 +14266,10 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "rock_tunnel",
+    "ss_anne",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13619,10 +14322,8 @@
    "gloss": "(TOPIK example from ROM)",
    "areaId": "topik_1",
    "source": "rom-rec650",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
-    "pewter_city",
-    "mt_moon",
     "celadon_city",
     "rom_mined",
     "green_path",
@@ -13630,7 +14331,12 @@
     "canyon_entrance",
     "outcast_island",
     "water_path",
-    "trainer_tower"
+    "trainer_tower",
+    "digletts_cave",
+    "indigo_plateau",
+    "route_2",
+    "seven_island",
+    "ss_anne"
    ],
    "originalKorean": "함께모험할때",
    "originalSource": "rom-rec3708",
@@ -13689,7 +14395,9 @@
     "ruin_valley",
     "five_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "safari_zone",
+    "seven_island"
    ],
    "originalKorean": "효과는부족한듯",
    "originalSource": "rom-rec1092",
@@ -13712,7 +14420,9 @@
    "source": "rom-rec4435",
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "one_island",
+    "six_island"
    ],
    "sourceTypes": [
     "system_text"
@@ -13759,7 +14469,11 @@
     "six_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "rock_tunnel",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13788,11 +14502,11 @@
     "resort_gorgeous",
     "canyon_entrance",
     "water_labyrinth",
-    "kindle_road",
     "memorial_pillar",
     "outcast_island",
     "water_path",
-    "trainer_tower"
+    "trainer_tower",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13854,9 +14568,8 @@
    "targetForm": "같이",
    "areaId": "topik_1",
    "source": "rom-rec30066",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "pewter_city",
     "cerulean_city",
     "lavender_town",
     "vermilion_city",
@@ -13878,7 +14591,13 @@
     "one_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "mt_moon",
+    "pokemon_tower",
+    "power_plant",
+    "seven_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "originalKorean": "마치로켓발사와같이",
    "originalSource": "rom-rec4337",
@@ -13963,7 +14682,9 @@
     "ruin_valley",
     "five_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "safari_zone",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -14001,10 +14722,10 @@
    "targetForm": "경주",
    "areaId": "topik_1",
    "source": "rom-rec4406",
-   "firstAreaEncountered": "kindle_road",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
     "rom_mined",
-    "kindle_road"
+    "one_island"
    ],
    "sourceTypes": [
     "pokedex_entry",
@@ -14022,16 +14743,16 @@
    "targetForm": "경험",
    "areaId": "topik_2",
    "source": "rom-rec3639",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "pewter_city",
     "rom_mined",
     "green_path",
     "ruin_valley",
     "outcast_island",
     "water_path",
     "canyon_entrance",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -14097,7 +14818,8 @@
    "source": "rom-rec4466",
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "six_island"
    ],
    "sourceTypes": [
     "system_text"
@@ -14119,7 +14841,8 @@
     "fuchsia_city",
     "cinnabar_island",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "six_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -14137,10 +14860,10 @@
    "targetForm": "공장",
    "areaId": "topik_2",
    "source": "rom-rec4416",
-   "firstAreaEncountered": "celadon_city",
+   "firstAreaEncountered": "pokemon_mansion",
    "areasReferenced": [
-    "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "pokemon_mansion"
    ],
    "sourceTypes": [
     "pokedex_entry",
@@ -14214,7 +14937,7 @@
    "targetForm": "괜찮다",
    "areaId": "topik_1",
    "source": "rom-rec4350",
-   "firstAreaEncountered": "route_8",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
     "route_8",
     "route_10",
@@ -14223,7 +14946,10 @@
     "fuchsia_city",
     "celadon_city",
     "route_9",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -14294,9 +15020,10 @@
    "targetForm": "그대로",
    "areaId": "topik_2",
    "source": "rom-rec4356",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "sourceTypes": [
     "system_text"
@@ -14320,7 +15047,10 @@
     "route_10",
     "route_11",
     "route_9",
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave",
+    "pokemon_mansion",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -14361,7 +15091,6 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_24",
     "route_25",
     "route_20",
@@ -14378,7 +15107,9 @@
     "ruin_valley",
     "five_isle_meadow",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -14580,7 +15311,10 @@
     "celadon_city",
     "route_22",
     "rom_mined",
-    "seven_island"
+    "seven_island",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -14604,9 +15338,10 @@
    "targetForm": "날씨",
    "areaId": "topik_1",
    "source": "rom-rec4477",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "sourceTypes": [
     "pokemon_ability",
@@ -14654,11 +15389,9 @@
    "gloss": "(TOPIK example from ROM)",
    "areaId": "topik_1",
    "source": "rom-rec654",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
-    "pallet_town",
     "route_3",
-    "mt_moon",
     "route_4",
     "route_24",
     "route_25",
@@ -14681,7 +15414,15 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "originalKorean": "남자아이",
    "originalSource": "rom-rec2597",
@@ -14736,11 +15477,9 @@
    "targetForm": "내리다",
    "areaId": "topik_1",
    "source": "rom-rec192",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
-    "pallet_town",
     "route_3",
-    "mt_moon",
     "route_4",
     "route_24",
     "route_25",
@@ -14748,13 +15487,17 @@
     "route_16",
     "celadon_city",
     "rom_mined",
-    "treasure_beach",
     "seven_island",
     "six_island",
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -14997,7 +15740,11 @@
     "cinnabar_island",
     "celadon_city",
     "indigo_plateau",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -15090,13 +15837,16 @@
    "targetForm": "뜨겁다",
    "areaId": "topik_1",
    "source": "rom-rec4332",
-   "firstAreaEncountered": "route_14",
+   "firstAreaEncountered": "pokemon_tower",
    "areasReferenced": [
     "route_14",
     "route_15",
     "route_16",
     "route_17",
-    "rom_mined"
+    "rom_mined",
+    "one_island",
+    "pokemon_tower",
+    "power_plant"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -15192,14 +15942,12 @@
    "targetForm": "맡기다",
    "areaId": "topik_2",
    "source": "rom-rec3023",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "route_2",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -15235,7 +15983,12 @@
     "six_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "power_plant",
+    "rock_tunnel",
+    "seafoam_islands",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -15348,7 +16101,10 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "digletts_cave",
+    "silph_co",
+    "ss_anne"
    ],
    "sourceTypes": [
     "item_description",
@@ -15397,7 +16153,8 @@
     "cerulean_city",
     "fuchsia_city",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "six_island"
    ],
    "originalKorean": "여러물건을자를수있다",
    "originalSource": "rom-rec4411",
@@ -15449,9 +16206,12 @@
    "targetForm": "미인",
    "areaId": "topik_2",
    "source": "rom-rec5496",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pokemon_tower",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "sourceTypes": [
     "system_text"
@@ -15502,7 +16262,8 @@
     "treasure_beach",
     "resort_gorgeous",
     "kindle_road",
-    "seven_island"
+    "seven_island",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -15522,9 +16283,8 @@
    "targetForm": "바쁘다",
    "areaId": "topik_1",
    "source": "rom-rec4349",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_4",
@@ -15544,7 +16304,11 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -15584,13 +16348,11 @@
    "targetForm": "박스",
    "areaId": "topik_2",
    "source": "rom-rec28637",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "route_2",
     "pewter_city",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "saffron_city",
@@ -15606,14 +16368,17 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "treasure_beach",
     "seven_island",
     "three_island",
     "six_island",
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co"
    ],
    "originalKorean": "메일박스",
    "originalSource": "rom-rec3022",
@@ -15771,7 +16536,10 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "two_island"
+    "two_island",
+    "rock_tunnel",
+    "ss_anne",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -15942,13 +16710,14 @@
     "treasure_beach",
     "resort_gorgeous",
     "water_labyrinth",
-    "kindle_road",
     "four_island",
     "memorial_pillar",
     "outcast_island",
     "water_path",
     "two_island",
-    "three_island"
+    "three_island",
+    "pokemon_mansion",
+    "silph_co"
    ],
    "originalKorean": "포켓몬의비밀이기록되는도구",
    "originalSource": "rom-rec3707",
@@ -15988,9 +16757,14 @@
    "targetForm": "빨갛다",
    "areaId": "topik_2",
    "source": "rom-rec172",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "power_plant",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "five_island",
+    "four_island",
+    "one_island",
+    "power_plant",
+    "three_island"
    ],
    "sourceTypes": [
     "system_text"
@@ -16050,7 +16824,12 @@
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "rock_tunnel",
+    "rocket_hideout",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower"
    ],
    "originalKorean": "사용하면포켓몬1마리의",
    "originalSource": "rom-rec188",
@@ -16265,7 +17044,8 @@
    "source": "rom-rec4450",
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "six_island"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -16384,7 +17164,15 @@
     "kindle_road",
     "memorial_pillar",
     "outcast_island",
-    "water_path"
+    "water_path",
+    "five_island",
+    "four_island",
+    "one_island",
+    "pokemon_mansion",
+    "safari_zone",
+    "seven_island",
+    "silph_co",
+    "three_island"
    ],
    "originalKorean": "플레이시간",
    "originalSource": "rom-rec4013",
@@ -16498,11 +17286,9 @@
     "pallet_town",
     "viridian_city",
     "route_2",
-    "pewter_city",
     "saffron_city",
     "lavender_town",
     "vermilion_city",
-    "route_23",
     "rom_mined",
     "green_path",
     "resort_gorgeous",
@@ -16512,7 +17298,9 @@
     "water_path",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -16675,7 +17463,15 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "rock_tunnel",
+    "safari_zone",
+    "silph_co",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -16728,7 +17524,10 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "seven_island"
+    "seven_island",
+    "one_island",
+    "rock_tunnel",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -16765,7 +17564,6 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_24",
     "route_25",
     "route_23",
@@ -16781,7 +17579,9 @@
     "ruin_valley",
     "five_isle_meadow",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island",
+    "three_island"
    ],
    "originalKorean": "가지고있으며약간의",
    "originalSource": "rom-rec4429",
@@ -16822,11 +17622,13 @@
    "targetForm": "어둡다",
    "areaId": "topik_2",
    "source": "rom-rec4369",
-   "firstAreaEncountered": "fuchsia_city",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
     "fuchsia_city",
     "cinnabar_island",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -16854,7 +17656,13 @@
     "route_16",
     "route_17",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "five_island",
+    "four_island",
+    "mt_moon",
+    "one_island",
+    "power_plant",
+    "three_island"
    ],
    "originalKorean": "나오기어려워진다",
    "originalSource": "rom-rec173",
@@ -16902,7 +17710,6 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_3",
     "mt_moon",
     "route_4",
@@ -16930,7 +17737,18 @@
     "water_path",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "five_island",
+    "four_island",
+    "one_island",
+    "power_plant",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "three_island",
+    "viridian_forest"
    ],
    "originalKorean": "여자아이",
    "originalSource": "rom-rec2598",
@@ -17069,7 +17887,8 @@
     "cerulean_city",
     "lavender_town",
     "vermilion_city",
-    "rom_mined"
+    "rom_mined",
+    "one_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -17097,7 +17916,9 @@
     "route_16",
     "route_17",
     "rom_mined",
-    "resort_gorgeous"
+    "resort_gorgeous",
+    "pokemon_mansion",
+    "rock_tunnel"
    ],
    "sourceTypes": [
     "system_text",
@@ -17175,7 +17996,6 @@
     "celadon_city",
     "route_9",
     "rom_mined",
-    "resort_gorgeous",
     "kindle_road",
     "memorial_pillar",
     "water_path",
@@ -17184,7 +18004,24 @@
     "five_isle_meadow",
     "four_island",
     "outcast_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "five_island",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -17247,9 +18084,8 @@
    "targetForm": "웃다",
    "areaId": "topik_1",
    "source": "rom-rec4422",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "route_2",
     "pewter_city",
@@ -17296,7 +18132,14 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "mt_moon",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -17369,9 +18212,10 @@
    "targetForm": "이번",
    "areaId": "topik_1",
    "source": "rom-rec1345",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "silph_co",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "silph_co"
    ],
    "sourceTypes": [
     "system_text"
@@ -17404,11 +18248,9 @@
    "targetForm": "이제",
    "areaId": "topik_1",
    "source": "rom-rec4624",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
-    "pallet_town",
     "route_3",
-    "mt_moon",
     "route_4",
     "saffron_city",
     "route_12",
@@ -17438,7 +18280,17 @@
     "four_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -17460,9 +18312,13 @@
    "targetForm": "인간",
    "areaId": "topik_2",
    "source": "rom-rec4478",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "safari_zone",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "system_text"
@@ -17494,9 +18350,12 @@
    "targetForm": "자르다",
    "areaId": "topik_2",
    "source": "rom-rec4411",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -17550,7 +18409,8 @@
     "water_path",
     "ruin_valley",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -17639,7 +18499,8 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -17694,7 +18555,8 @@
     "saffron_city",
     "cinnabar_island",
     "indigo_plateau",
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -17712,17 +18574,16 @@
    "targetForm": "적어도",
    "areaId": "topik_2",
    "source": "rom-rec4457",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "pewter_city",
-    "mt_moon",
     "rom_mined",
     "green_path",
     "ruin_valley",
     "canyon_entrance",
     "outcast_island",
     "water_path",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -17740,9 +18601,12 @@
    "targetForm": "전자",
    "areaId": "topik_2",
    "source": "rom-rec4466",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "rocket_hideout",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "indigo_plateau",
+    "rocket_hideout",
+    "silph_co"
    ],
    "sourceTypes": [
     "system_text"
@@ -17766,7 +18630,8 @@
     "celadon_city",
     "rom_mined",
     "one_island",
-    "two_island"
+    "two_island",
+    "safari_zone"
    ],
    "sourceTypes": [
     "item_description",
@@ -17829,7 +18694,10 @@
    "firstAreaEncountered": "saffron_city",
    "areasReferenced": [
     "rom_mined",
-    "saffron_city"
+    "saffron_city",
+    "five_island",
+    "four_island",
+    "six_island"
    ],
    "sourceTypes": [
     "system_text"
@@ -17920,7 +18788,10 @@
     "vermilion_city",
     "fuchsia_city",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "originalKorean": "주변의온도가점점",
    "originalSource": "rom-rec4333",
@@ -17960,9 +18831,14 @@
    "targetForm": "주제",
    "areaId": "topik_2",
    "source": "rom-rec7572",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "digletts_cave",
+    "indigo_plateau",
+    "rocket_hideout",
+    "route_2",
+    "ss_anne"
    ],
    "sourceTypes": [
     "system_text"
@@ -18090,7 +18966,9 @@
     "route_19",
     "route_20",
     "route_21",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "ss_anne"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -18172,7 +19050,6 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "treasure_beach",
     "kindle_road",
     "seven_island",
     "six_island",
@@ -18217,7 +19094,8 @@
     "resort_gorgeous",
     "water_labyrinth",
     "kindle_road",
-    "five_isle_meadow"
+    "five_isle_meadow",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -18235,15 +19113,16 @@
    "targetForm": "차리다",
    "areaId": "topik_2",
    "source": "rom-rec2807",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "power_plant",
    "areasReferenced": [
-    "pallet_town",
-    "pewter_city",
-    "mt_moon",
     "rom_mined",
-    "treasure_beach",
-    "resort_gorgeous",
-    "kindle_road"
+    "kindle_road",
+    "five_island",
+    "four_island",
+    "one_island",
+    "power_plant",
+    "seven_island",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -18292,7 +19171,6 @@
     "celadon_city",
     "route_9",
     "rom_mined",
-    "resort_gorgeous",
     "kindle_road",
     "memorial_pillar",
     "water_path",
@@ -18301,7 +19179,23 @@
     "five_isle_meadow",
     "four_island",
     "outcast_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "five_island",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "originalKorean": "처음이지",
    "originalSource": "rom-rec1335",
@@ -18337,16 +19231,16 @@
    "targetForm": "추다",
    "areaId": "topik_1",
    "source": "rom-rec4452",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "pewter_city",
     "rom_mined",
     "water_path",
     "five_island",
-    "treasure_beach",
     "resort_gorgeous",
     "six_island",
-    "four_island"
+    "four_island",
+    "seven_island",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -18412,8 +19306,8 @@
    "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "viridian_city",
-    "route_24",
-    "rom_mined"
+    "rom_mined",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -18494,7 +19388,16 @@
     "ruin_valley",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -18554,14 +19457,18 @@
    "targetForm": "터널",
    "areaId": "topik_2",
    "source": "rom-rec3872",
-   "firstAreaEncountered": "route_24",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
     "route_24",
     "route_25",
     "route_6",
     "route_11",
     "route_9",
-    "rom_mined"
+    "rom_mined",
+    "digletts_cave",
+    "mt_moon",
+    "route_2",
+    "ss_anne"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -18678,9 +19585,11 @@
    "targetForm": "틀림없다",
    "areaId": "topik_2",
    "source": "rom-rec4422",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "system_text"
@@ -18842,7 +19751,11 @@
     "rom_mined",
     "seven_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "indigo_plateau",
+    "rock_tunnel",
+    "silph_co",
+    "two_island"
    ],
    "originalKorean": "갗고있어서주의가필요하다",
    "originalSource": "rom-rec4357",
@@ -18916,7 +19829,6 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_24",
     "route_25",
     "rom_mined",
@@ -18935,7 +19847,8 @@
     "one_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island"
    ],
    "originalKorean": "할아버지는",
    "originalSource": "rom-rec1274",
@@ -18959,7 +19872,7 @@
    "targetForm": "향하다",
    "areaId": "topik_2",
    "source": "rom-rec4445",
-   "firstAreaEncountered": "route_12",
+   "firstAreaEncountered": "pokemon_tower",
    "areasReferenced": [
     "route_12",
     "rom_mined",
@@ -18967,10 +19880,13 @@
     "ruin_valley",
     "resort_gorgeous",
     "water_labyrinth",
-    "kindle_road",
     "memorial_pillar",
     "outcast_island",
-    "water_path"
+    "water_path",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -19090,7 +20006,11 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -19112,9 +20032,10 @@
    "targetForm": "활동",
    "areaId": "topik_2",
    "source": "rom-rec4375",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "sourceTypes": [
     "system_text"
@@ -19144,7 +20065,11 @@
     "rom_mined",
     "treasure_beach",
     "kindle_road",
-    "seven_island"
+    "seven_island",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",

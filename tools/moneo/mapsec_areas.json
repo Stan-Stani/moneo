@@ -230,9 +230,49 @@
    "frlg_canonical": "MAPSEC_SS_ANNE",
    "confidence": "frlg-canonical"
   },
+  "0x81": {
+   "area_id": null,
+   "frlg_canonical": "MAPSEC_UNDERGROUND_PATH",
+   "confidence": "frlg-canonical"
+  },
+  "0x82": {
+   "area_id": null,
+   "frlg_canonical": "MAPSEC_UNDERGROUND_PATH_2",
+   "confidence": "frlg-canonical"
+  },
   "0x83": {
    "area_id": "digletts_cave",
    "frlg_canonical": "MAPSEC_DIGLETTS_CAVE",
+   "confidence": "frlg-canonical"
+  },
+  "0x84": {
+   "area_id": "indigo_plateau",
+   "frlg_canonical": "MAPSEC_KANTO_VICTORY_ROAD",
+   "confidence": "frlg-canonical"
+  },
+  "0x85": {
+   "area_id": "rocket_hideout",
+   "frlg_canonical": "MAPSEC_ROCKET_HIDEOUT",
+   "confidence": "frlg-canonical"
+  },
+  "0x86": {
+   "area_id": "silph_co",
+   "frlg_canonical": "MAPSEC_SILPH_CO",
+   "confidence": "frlg-canonical"
+  },
+  "0x87": {
+   "area_id": "pokemon_mansion",
+   "frlg_canonical": "MAPSEC_POKEMON_MANSION",
+   "confidence": "frlg-canonical"
+  },
+  "0x88": {
+   "area_id": "safari_zone",
+   "frlg_canonical": "MAPSEC_KANTO_SAFARI_ZONE",
+   "confidence": "frlg-canonical"
+  },
+  "0x89": {
+   "area_id": "kanto_pokemon_league",
+   "frlg_canonical": "MAPSEC_POKEMON_LEAGUE",
    "confidence": "frlg-canonical"
   },
   "0x8A": {
@@ -240,9 +280,24 @@
    "frlg_canonical": "MAPSEC_ROCK_TUNNEL",
    "confidence": "frlg-canonical"
   },
+  "0x8B": {
+   "area_id": "seafoam_islands",
+   "frlg_canonical": "MAPSEC_SEAFOAM_ISLANDS",
+   "confidence": "frlg-canonical"
+  },
   "0x8C": {
    "area_id": "pokemon_tower",
    "frlg_canonical": "MAPSEC_POKEMON_TOWER",
+   "confidence": "frlg-canonical"
+  },
+  "0x8D": {
+   "area_id": "cerulean_cave",
+   "frlg_canonical": "MAPSEC_CERULEAN_CAVE",
+   "confidence": "frlg-canonical"
+  },
+  "0x8E": {
+   "area_id": "power_plant",
+   "frlg_canonical": "MAPSEC_POWER_PLANT",
    "confidence": "frlg-canonical"
   },
   "0x8F": {
@@ -290,15 +345,40 @@
    "frlg_canonical": "MAPSEC_TREASURE_BEACH",
    "confidence": "frlg-canonical"
   },
+  "0x98": {
+   "area_id": "two_island",
+   "frlg_canonical": "MAPSEC_CAPE_BRINK",
+   "confidence": "frlg-canonical"
+  },
   "0x99": {
-   "area_id": "kindle_road",
-   "frlg_canonical": "(check) MAPSEC_KINDLE_ROAD adjacent",
-   "confidence": "low"
+   "area_id": "three_island",
+   "frlg_canonical": "MAPSEC_BOND_BRIDGE",
+   "confidence": "frlg-canonical"
   },
   "0x9A": {
-   "area_id": "treasure_beach",
-   "frlg_canonical": "(check)",
-   "confidence": "low"
+   "area_id": "three_island",
+   "frlg_canonical": "MAPSEC_THREE_ISLE_PORT",
+   "confidence": "frlg-canonical"
+  },
+  "0x9B": {
+   "area_id": null,
+   "frlg_canonical": "MAPSEC_SEVII_ISLE_6",
+   "confidence": "frlg-canonical"
+  },
+  "0x9C": {
+   "area_id": null,
+   "frlg_canonical": "MAPSEC_SEVII_ISLE_7",
+   "confidence": "frlg-canonical"
+  },
+  "0x9D": {
+   "area_id": null,
+   "frlg_canonical": "MAPSEC_SEVII_ISLE_8",
+   "confidence": "frlg-canonical"
+  },
+  "0x9E": {
+   "area_id": null,
+   "frlg_canonical": "MAPSEC_SEVII_ISLE_9",
+   "confidence": "frlg-canonical"
   },
   "0x9F": {
    "area_id": "resort_gorgeous",
@@ -351,112 +431,144 @@
    "confidence": "frlg-canonical"
   },
   "0xA9": {
-   "area_id": "pewter_city",
-   "frlg_canonical": "(check) sevii region in canonical -- but Korean ROM dialog clearly references Pewter (그레이뱃지, 타케시)",
-   "sample": "오 그건 그레이뱃지! 타케시에게 받은거구나",
-   "confidence": "low -- needs verification"
+   "area_id": "seven_island",
+   "frlg_canonical": "MAPSEC_SEVAULT_CANYON",
+   "confidence": "frlg-canonical"
   },
   "0xAA": {
-   "area_id": "mt_moon",
-   "frlg_canonical": "(check) -- Korean ROM dialog references Mt. Moon (오츠키미산) and Pewter Gym (니비체육관)",
-   "sample": "아그씨는 오츠키미산의 화석을 발굴하고 있어! 니비체육관의 타케시군이 도와줄때도 있지",
-   "confidence": "low -- needs verification"
+   "area_id": "seven_island",
+   "frlg_canonical": "MAPSEC_TANOBY_RUINS",
+   "confidence": "frlg-canonical"
+  },
+  "0xAB": {
+   "area_id": null,
+   "frlg_canonical": "MAPSEC_SEVII_ISLE_22",
+   "confidence": "frlg-canonical"
+  },
+  "0xAC": {
+   "area_id": null,
+   "frlg_canonical": "MAPSEC_SEVII_ISLE_23",
+   "confidence": "frlg-canonical"
+  },
+  "0xAD": {
+   "area_id": null,
+   "frlg_canonical": "MAPSEC_SEVII_ISLE_24",
+   "confidence": "frlg-canonical"
   },
   "0xAE": {
-   "area_id": "pallet_town",
-   "frlg_canonical": "(check) -- Korean ROM has Oak chase line",
-   "sample": "오키드『어-이! 기다려-! 기다리라구!",
-   "confidence": "low -- could be route_1 or pallet"
+   "area_id": null,
+   "frlg_canonical": "MAPSEC_NAVEL_ROCK",
+   "confidence": "frlg-canonical"
+  },
+  "0xAF": {
+   "area_id": "one_island",
+   "frlg_canonical": "MAPSEC_MT_EMBER",
+   "confidence": "frlg-canonical"
+  },
+  "0xB0": {
+   "area_id": "three_island",
+   "frlg_canonical": "MAPSEC_BERRY_FOREST",
+   "confidence": "frlg-canonical"
+  },
+  "0xB1": {
+   "area_id": "four_island",
+   "frlg_canonical": "MAPSEC_ICEFALL_CAVE",
+   "confidence": "frlg-canonical"
+  },
+  "0xB2": {
+   "area_id": "five_island",
+   "frlg_canonical": "MAPSEC_ROCKET_WAREHOUSE",
+   "confidence": "frlg-canonical"
   },
   "0xB3": {
-   "area_id": "pallet_town",
-   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
-   "sample": "공캬럴끓 넋뼈끼! 군콘군콘꽈... 견템!!",
-   "confidence": "high",
-   "resolve_note": "Pallet interior buildings (player house, rival house, Oak's lab) - 6/11 maps warp to Pallet outdoor"
+   "area_id": "trainer_tower",
+   "frlg_canonical": "MAPSEC_TRAINER_TOWER_2",
+   "confidence": "frlg-canonical"
+  },
+  "0xB4": {
+   "area_id": "six_island",
+   "frlg_canonical": "MAPSEC_DOTTED_HOLE",
+   "confidence": "frlg-canonical"
   },
   "0xB5": {
-   "area_id": null,
-   "frlg_canonical": "(unknown)",
-   "sample": "프로필은 좋아하는말을 4개 조합해서 만드는거야 -- character creation?",
-   "confidence": "unidentified"
+   "area_id": "five_island",
+   "frlg_canonical": "MAPSEC_LOST_CAVE",
+   "confidence": "frlg-canonical"
+  },
+  "0xB6": {
+   "area_id": "six_island",
+   "frlg_canonical": "MAPSEC_PATTERN_BUSH",
+   "confidence": "frlg-canonical"
+  },
+  "0xB7": {
+   "area_id": "six_island",
+   "frlg_canonical": "MAPSEC_ALTERING_CAVE",
+   "confidence": "frlg-canonical"
+  },
+  "0xB8": {
+   "area_id": "seven_island",
+   "frlg_canonical": "MAPSEC_TANOBY_CHAMBERS",
+   "confidence": "frlg-canonical"
   },
   "0xB9": {
-   "area_id": "treasure_beach",
-   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
-   "sample": "땍땍몬앨약! 꽁꽁걸검끼!",
-   "confidence": "medium",
-   "resolve_note": "Single map; warps to Treasure Beach"
+   "area_id": "three_island",
+   "frlg_canonical": "MAPSEC_THREE_ISLE_PATH",
+   "confidence": "frlg-canonical"
   },
   "0xBA": {
-   "area_id": "pewter_city",
-   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
-   "sample": "꼴숙딧…… 검다당몬욱끔끔갠갤깃?",
-   "confidence": "high",
-   "resolve_note": "Pewter interior; warp to Pewter outdoor"
+   "area_id": "seven_island",
+   "frlg_canonical": "MAPSEC_TANOBY_KEY",
+   "confidence": "frlg-canonical"
   },
   "0xBB": {
-   "area_id": "pallet_town",
-   "frlg_canonical": "(intro cutscene area)",
-   "sample": "오키드『어-이! 기다려-! 기다리라구! / 위험했다! 풀숲에서는 야생의 포켓몬이...",
-   "confidence": "high",
-   "resolve_note": "Intro cutscene where Oak grabs player; effectively part of Pallet first-encounter."
+   "area_id": null,
+   "frlg_canonical": "MAPSEC_BIRTH_ISLAND",
+   "confidence": "frlg-canonical"
   },
   "0xBC": {
-   "area_id": "mt_moon",
-   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
-   "sample": "(short fragments)",
-   "confidence": "high",
-   "resolve_note": "Mt. Moon sub-floor; warps to Mt. Moon entrance"
+   "area_id": "seven_island",
+   "frlg_canonical": "MAPSEC_MONEAN_CHAMBER",
+   "confidence": "frlg-canonical"
   },
   "0xBD": {
-   "area_id": "mt_moon",
-   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
-   "sample": "(short fragments)",
-   "confidence": "high",
-   "resolve_note": "Mt. Moon sub-floor"
+   "area_id": "seven_island",
+   "frlg_canonical": "MAPSEC_LIPTOO_CHAMBER",
+   "confidence": "frlg-canonical"
   },
   "0xBE": {
-   "area_id": "mt_moon",
-   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
-   "sample": "(short fragments)",
-   "confidence": "high",
-   "resolve_note": "Mt. Moon sub-floor"
+   "area_id": "seven_island",
+   "frlg_canonical": "MAPSEC_WEEPTH_CHAMBER",
+   "confidence": "frlg-canonical"
   },
   "0xBF": {
-   "area_id": "mt_moon",
-   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
-   "sample": "(short fragments)",
-   "confidence": "high",
-   "resolve_note": "Mt. Moon sub-floor"
+   "area_id": "seven_island",
+   "frlg_canonical": "MAPSEC_DILFORD_CHAMBER",
+   "confidence": "frlg-canonical"
   },
   "0xC0": {
-   "area_id": "mt_moon",
-   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
-   "sample": "(short fragments)",
-   "confidence": "high",
-   "resolve_note": "Mt. Moon sub-floor"
+   "area_id": "seven_island",
+   "frlg_canonical": "MAPSEC_SCUFIB_CHAMBER",
+   "confidence": "frlg-canonical"
   },
   "0xC1": {
-   "area_id": "mt_moon",
-   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
-   "sample": "(short fragments)",
-   "confidence": "high",
-   "resolve_note": "Mt. Moon sub-floor"
+   "area_id": "seven_island",
+   "frlg_canonical": "MAPSEC_RIXY_CHAMBER",
+   "confidence": "frlg-canonical"
   },
   "0xC2": {
-   "area_id": "mt_moon",
-   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
-   "sample": "(short fragments)",
-   "confidence": "high",
-   "resolve_note": "Mt. Moon sub-floor"
+   "area_id": "seven_island",
+   "frlg_canonical": "MAPSEC_VIAPOIS_CHAMBER",
+   "confidence": "frlg-canonical"
   },
   "0xC3": {
    "area_id": "kindle_road",
-   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
-   "sample": "[player]궂다당 꿈꺾승!",
-   "confidence": "high",
-   "resolve_note": "Single map; warp to Kindle Road"
+   "frlg_canonical": "MAPSEC_EMBER_SPA",
+   "confidence": "frlg-canonical"
+  },
+  "0xC4": {
+   "area_id": null,
+   "frlg_canonical": "MAPSEC_SPECIAL_AREA",
+   "confidence": "frlg-canonical"
   }
  }
 }

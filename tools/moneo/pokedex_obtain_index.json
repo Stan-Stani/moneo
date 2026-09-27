@@ -3,33 +3,63 @@
  "rom": "leafgreen_J-K_2024.gba",
  "wildmon_table_offset": 3971940,
  "wildmon_stride": 20,
- "group_translation": "pokefirered_group + -2",
+ "group_translation": "pokefirered_group + 0",
  "method": "first-encounter-by-lowest-area-ordinal",
  "n_wild_headers": 132,
- "n_species_with_area": 64,
+ "n_species_with_area": 113,
  "area_to_pokedex_rec_ids": {
-  "celadon_city": [
-   5014,
-   5036
+  "canyon_entrance": [
+   5159
+  ],
+  "cerulean_cave": [
+   4968,
+   4983,
+   4990,
+   4993,
+   5028,
+   5130
   ],
   "cinnabar_island": [
    5006
   ],
+  "digletts_cave": [
+   4976,
+   4977
+  ],
+  "five_island": [
+   5128
+  ],
   "five_isle_meadow": [
    5089
+  ],
+  "four_island": [
+   4999,
+   5058,
+   5111,
+   5143,
+   5148
   ],
   "fuchsia_city": [
    5046
   ],
+  "indigo_plateau": [
+   5032
+  ],
   "kindle_road": [
-   5003,
-   5004
+   4979
   ],
   "mt_moon": [
-   4999,
-   5129,
-   5151,
-   5154
+   4961,
+   4967,
+   4972,
+   5000
+  ],
+  "one_island": [
+   5003,
+   5004,
+   5053,
+   5146,
+   5147
   ],
   "pallet_town": [
    4998,
@@ -41,20 +71,27 @@
    5056,
    5057
   ],
-  "pewter_city": [
-   4946,
-   4978,
-   4979,
-   5000,
-   5001,
-   5021,
-   5031,
-   5032,
-   5159,
-   5174
+  "pokemon_mansion": [
+   5014,
+   5015,
+   5036
+  ],
+  "pokemon_tower": [
+   5018,
+   5031
+  ],
+  "power_plant": [
+   5007,
+   5008
   ],
   "resort_gorgeous": [
-   5115
+   5115,
+   5151
+  ],
+  "rock_tunnel": [
+   4992,
+   5001,
+   5021
   ],
   "route_1": [
    4940,
@@ -75,8 +112,10 @@
    5060
   ],
   "route_16": [
-   4944,
-   5010
+   4944
+  ],
+  "route_17": [
+   4946
   ],
   "route_2": [
    4934,
@@ -86,12 +125,9 @@
    5041
   ],
   "route_23": [
-   4954,
-   4983
+   4954
   ],
   "route_24": [
-   4935,
-   4938,
    4989,
    4995
   ],
@@ -105,22 +141,68 @@
   "route_4": [
    4953
   ],
+  "route_5": [
+   4978
+  ],
   "route_7": [
    4963
   ],
   "ruin_valley": [
    5105,
-   5111,
-   5121,
-   5130
+   5121
   ],
-  "treasure_beach": [
+  "safari_zone": [
+   4956,
+   4959,
+   4973,
+   4975,
+   5010,
+   5029,
+   5038,
+   5040,
+   5042,
+   5054,
+   5055,
+   5075,
+   5076
+  ],
+  "seafoam_islands": [
+   5012,
+   5013
+  ],
+  "seven_island": [
+   5129,
+   5174
+  ],
+  "six_island": [
+   5093,
+   5095,
+   5107,
+   5118,
+   5132,
+   5141,
+   5142,
+   5144,
+   5156,
+   5162,
+   5163
+  ],
+  "three_island": [
+   5024,
    5134
+  ],
+  "trainer_tower": [
+   5154
   ],
   "viridian_city": [
    4986,
    4987,
    5045
+  ],
+  "viridian_forest": [
+   4935,
+   4938,
+   4949
   ]
  }
 }

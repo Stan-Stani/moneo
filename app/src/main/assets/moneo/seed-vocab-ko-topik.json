@@ -47,12 +47,14 @@
    "areaId": "topik_2",
    "frequency": 337,
    "topikLevel": "B",
-   "firstAreaEncountered": "cerulean_city",
+   "firstAreaEncountered": "mt_moon",
    "areasReferenced": [
     "cerulean_city",
     "lavender_town",
     "rom_mined",
-    "vermilion_city"
+    "vermilion_city",
+    "mt_moon",
+    "ss_anne"
    ],
    "liveRecIds": [
     1024
@@ -141,7 +143,15 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "rock_tunnel",
+    "seafoam_islands",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1376,
@@ -250,7 +260,16 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "filledViaSubstring": {
     "rec_id": 29819,
@@ -358,7 +377,13 @@
     "route_4",
     "saffron_city",
     "seven_island",
-    "viridian_city"
+    "viridian_city",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "rock_tunnel",
+    "silph_co",
+    "two_island"
    ],
    "liveRecIds": [
     3102
@@ -437,7 +462,20 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "filledViaSubstring": {
     "rec_id": 30057,
@@ -522,7 +560,20 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     881,
@@ -622,7 +673,20 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     241,
@@ -646,7 +710,7 @@
    "areaId": "topik_1",
    "frequency": 124,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
@@ -657,7 +721,6 @@
     "indigo_plateau",
     "lavender_town",
     "one_island",
-    "pallet_town",
     "pewter_city",
     "rom_mined",
     "route_10",
@@ -674,10 +737,14 @@
     "seven_island",
     "six_island",
     "three_island",
-    "treasure_beach",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "mt_moon",
+    "rocket_hideout",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "filledViaSubstring": {
     "rec_id": 30058,
@@ -815,10 +882,10 @@
    "areaId": "topik_2",
    "frequency": 111,
    "topikLevel": "B",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rock_tunnel",
    "areasReferenced": [
-    "pewter_city",
-    "rom_mined"
+    "rom_mined",
+    "rock_tunnel"
    ],
    "liveRecIds": [
     3287
@@ -895,7 +962,16 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "rocket_hideout",
+    "safari_zone",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "filledViaSubstring": {
     "rec_id": 29819,
@@ -951,7 +1027,13 @@
     "route_4",
     "saffron_city",
     "seven_island",
-    "viridian_city"
+    "viridian_city",
+    "indigo_plateau",
+    "kanto_pokemon_league",
+    "one_island",
+    "rock_tunnel",
+    "silph_co",
+    "two_island"
    ],
    "liveRecIds": [
     3110,
@@ -1125,7 +1207,16 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "pokemon_tower",
+    "power_plant",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "filledViaSubstring": {
     "rec_id": 30298,
@@ -1173,14 +1264,21 @@
    "areaId": "topik_1",
    "frequency": 69,
    "topikLevel": "A",
-   "firstAreaEncountered": "route_3",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
     "four_island",
     "rom_mined",
     "route_3",
     "ruin_valley",
     "three_island",
-    "two_island"
+    "two_island",
+    "digletts_cave",
+    "five_island",
+    "indigo_plateau",
+    "rocket_hideout",
+    "route_2",
+    "silph_co",
+    "six_island"
    ],
    "filledViaSubstring": {
     "rec_id": 28667,
@@ -1316,7 +1414,20 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1039,
@@ -1421,7 +1532,12 @@
     "two_island",
     "vermilion_city",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "power_plant",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     884,
@@ -1466,7 +1582,11 @@
     "seven_island",
     "three_island",
     "two_island",
-    "vermilion_city"
+    "vermilion_city",
+    "digletts_cave",
+    "five_island",
+    "four_island",
+    "six_island"
    ],
    "filledViaSubstring": {
     "rec_id": 27924,
@@ -1525,7 +1645,10 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "rock_tunnel",
+    "silph_co",
+    "ss_anne"
    ],
    "liveRecIds": [
     1961,
@@ -1637,7 +1760,8 @@
     "one_island",
     "pewter_city",
     "rom_mined",
-    "saffron_city"
+    "saffron_city",
+    "route_17"
    ],
    "liveRecIds": [
     975,
@@ -1732,7 +1856,10 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "liveRecIds": [
     1097,
@@ -1949,11 +2076,16 @@
     "seven_island",
     "six_island",
     "three_island",
-    "treasure_beach",
     "two_island",
     "vermilion_city",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "pokemon_mansion",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co"
    ],
    "liveRecIds": [
     1105,
@@ -2147,7 +2279,20 @@
     "two_island",
     "vermilion_city",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     940,
@@ -2442,7 +2587,8 @@
     "trainer_tower",
     "vermilion_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "kanto_pokemon_league"
    ],
    "filledViaSubstring": {
     "rec_id": 30062,
@@ -2536,7 +2682,7 @@
    "areaId": "topik_1",
    "frequency": 29,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
@@ -2547,9 +2693,7 @@
     "indigo_plateau",
     "kindle_road",
     "lavender_town",
-    "mt_moon",
     "one_island",
-    "pallet_town",
     "pewter_city",
     "rom_mined",
     "route_10",
@@ -2567,7 +2711,10 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "rock_tunnel",
+    "silph_co",
+    "trainer_tower"
    ],
    "liveRecIds": [
     953,
@@ -2771,10 +2918,18 @@
     "seven_island",
     "six_island",
     "three_island",
-    "treasure_beach",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "rock_tunnel",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1207,
@@ -2854,7 +3009,9 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "kanto_pokemon_league",
+    "rock_tunnel"
    ],
    "liveRecIds": [
     572
@@ -3093,7 +3250,6 @@
     "kindle_road",
     "lavender_town",
     "memorial_pillar",
-    "mt_moon",
     "one_island",
     "outcast_island",
     "pallet_town",
@@ -3130,7 +3286,13 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "liveRecIds": [
     994,
@@ -3214,7 +3376,19 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     885,
@@ -3367,11 +3541,11 @@
    "areaId": "topik_1",
    "frequency": 20,
    "topikLevel": "A",
-   "firstAreaEncountered": "mt_moon",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "mt_moon",
     "rom_mined",
-    "two_island"
+    "two_island",
+    "four_island"
    ],
    "liveRecIds": [
     263
@@ -3564,7 +3738,17 @@
     "two_island",
     "vermilion_city",
     "viridian_city",
-    "water_labyrinth"
+    "water_labyrinth",
+    "cerulean_cave",
+    "pokemon_tower",
+    "power_plant",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower",
+    "viridian_forest"
    ],
    "liveRecIds": [
     929,
@@ -3642,7 +3826,6 @@
     "memorial_pillar",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_22",
@@ -3654,7 +3837,9 @@
     "treasure_beach",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "seven_island",
+    "three_island"
    ],
    "liveRecIds": [
     949,
@@ -3719,7 +3904,7 @@
    "areaId": "topik_2",
    "frequency": 17,
    "topikLevel": "B",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
@@ -3730,7 +3915,6 @@
     "indigo_plateau",
     "lavender_town",
     "one_island",
-    "pallet_town",
     "pewter_city",
     "rom_mined",
     "route_10",
@@ -3747,10 +3931,13 @@
     "seven_island",
     "six_island",
     "three_island",
-    "treasure_beach",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co"
    ],
    "liveRecIds": [
     1375,
@@ -3797,7 +3984,6 @@
     "cerulean_city",
     "kindle_road",
     "lavender_town",
-    "mt_moon",
     "pallet_town",
     "pewter_city",
     "resort_gorgeous",
@@ -3805,7 +3991,20 @@
     "route_21",
     "route_4",
     "treasure_beach",
-    "viridian_city"
+    "viridian_city",
+    "five_island",
+    "four_island",
+    "kanto_pokemon_league",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "six_island",
+    "three_island",
+    "trainer_tower"
    ],
    "liveRecIds": [
     907,
@@ -3905,7 +4104,20 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     882,
@@ -3949,7 +4161,7 @@
    "areaId": "topik_1",
    "frequency": 15,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
@@ -3959,9 +4171,7 @@
     "fuchsia_city",
     "indigo_plateau",
     "lavender_town",
-    "mt_moon",
     "one_island",
-    "pallet_town",
     "pewter_city",
     "rom_mined",
     "route_10",
@@ -3982,10 +4192,13 @@
     "seven_island",
     "six_island",
     "three_island",
-    "treasure_beach",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co"
    ],
    "liveRecIds": [
     2354,
@@ -4216,7 +4429,8 @@
     "route_7",
     "route_8",
     "saffron_city",
-    "vermilion_city"
+    "vermilion_city",
+    "seafoam_islands"
    ],
    "liveRecIds": [
     1116,
@@ -4249,7 +4463,9 @@
     "pewter_city",
     "rom_mined",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "kanto_pokemon_league",
+    "rock_tunnel"
    ],
    "liveRecIds": [
     2099,
@@ -4470,7 +4686,15 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "mt_moon",
+    "rock_tunnel",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     949,
@@ -4534,7 +4758,8 @@
     "resort_gorgeous",
     "rom_mined",
     "treasure_beach",
-    "water_labyrinth"
+    "water_labyrinth",
+    "three_island"
    ],
    "liveRecIds": [
     1881
@@ -4569,7 +4794,10 @@
     "route_21",
     "saffron_city",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "five_island",
+    "four_island",
+    "six_island"
    ],
    "liveRecIds": [
     1523,
@@ -4668,7 +4896,6 @@
     "memorial_pillar",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_22",
@@ -4679,7 +4906,9 @@
     "trainer_tower",
     "treasure_beach",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "seven_island",
+    "three_island"
    ],
    "liveRecIds": [
     2001
@@ -4701,7 +4930,8 @@
    "areasReferenced": [
     "pallet_town",
     "rom_mined",
-    "viridian_city"
+    "viridian_city",
+    "seafoam_islands"
    ],
    "liveRecIds": [
     2130,
@@ -4763,7 +4993,12 @@
     "route_9",
     "seven_island",
     "six_island",
-    "three_island"
+    "three_island",
+    "indigo_plateau",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "seafoam_islands"
    ],
    "filledViaSubstring": {
     "rec_id": 13165,
@@ -4846,7 +5081,19 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     973,
@@ -4874,14 +5121,16 @@
    "areaId": "topik_2",
    "frequency": 12,
    "topikLevel": "B",
-   "firstAreaEncountered": "route_20",
+   "firstAreaEncountered": "mt_moon",
    "areasReferenced": [
     "kindle_road",
     "resort_gorgeous",
     "rom_mined",
     "route_20",
     "route_21",
-    "treasure_beach"
+    "treasure_beach",
+    "mt_moon",
+    "three_island"
    ],
    "liveRecIds": [
     1800
@@ -4937,7 +5186,13 @@
     "two_island",
     "vermilion_city",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co",
+    "ss_anne"
    ],
    "liveRecIds": [
     1660,
@@ -5116,14 +5371,13 @@
    "areaId": "topik_1",
    "frequency": 11,
    "topikLevel": "A",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "mt_moon",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
     "fuchsia_city",
     "lavender_town",
     "one_island",
-    "pewter_city",
     "rom_mined",
     "route_12",
     "route_15",
@@ -5135,7 +5389,19 @@
     "route_22",
     "route_25",
     "two_island",
-    "vermilion_city"
+    "vermilion_city",
+    "digletts_cave",
+    "indigo_plateau",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co"
    ],
    "liveRecIds": [
     1069,
@@ -5174,9 +5440,10 @@
    "areaId": "topik_1",
    "frequency": 11,
    "topikLevel": "A",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "cerulean_cave",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave"
    ],
    "liveRecIds": [
     4990
@@ -5250,7 +5517,9 @@
    "firstAreaEncountered": "route_3",
    "areasReferenced": [
     "rom_mined",
-    "route_3"
+    "route_3",
+    "kanto_pokemon_league",
+    "rock_tunnel"
    ],
    "liveRecIds": [
     209
@@ -5300,7 +5569,8 @@
     "seven_island",
     "six_island",
     "three_island",
-    "viridian_city"
+    "viridian_city",
+    "trainer_tower"
    ],
    "liveRecIds": [
     2141
@@ -5322,18 +5592,19 @@
    "areaId": "topik_1",
    "frequency": 10,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "rock_tunnel",
    "areasReferenced": [
     "cinnabar_island",
     "four_island",
     "fuchsia_city",
     "indigo_plateau",
-    "pallet_town",
     "rom_mined",
     "seven_island",
     "six_island",
     "three_island",
-    "two_island"
+    "two_island",
+    "rock_tunnel",
+    "trainer_tower"
    ],
    "liveRecIds": [
     2356
@@ -5396,11 +5667,11 @@
    "areaId": "topik_2",
    "frequency": 10,
    "topikLevel": "B",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "mt_moon",
    "areasReferenced": [
-    "kindle_road",
-    "pewter_city",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "one_island"
    ],
    "liveRecIds": [
     5000
@@ -5498,8 +5769,12 @@
     "mt_moon",
     "pallet_town",
     "rom_mined",
-    "route_24",
-    "viridian_city"
+    "viridian_city",
+    "one_island",
+    "resort_gorgeous",
+    "six_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     2143,
@@ -5587,7 +5862,9 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "rock_tunnel",
+    "silph_co"
    ],
    "liveRecIds": [
     891,
@@ -5700,7 +5977,8 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "viridian_forest"
    ],
    "liveRecIds": [
     229
@@ -5865,7 +6143,6 @@
     "outcast_island",
     "pallet_town",
     "pewter_city",
-    "resort_gorgeous",
     "rom_mined",
     "route_11",
     "route_12",
@@ -5880,7 +6157,22 @@
     "three_island",
     "two_island",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "five_island",
+    "mt_moon",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower",
+    "viridian_forest"
    ],
    "liveRecIds": [
     2050,
@@ -5926,8 +6218,10 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "kindle_road",
+    "one_island"
    ],
    "liveRecIds": [
     4010
@@ -6003,7 +6297,20 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1012,
@@ -6038,7 +6345,13 @@
     "route_25",
     "saffron_city",
     "seven_island",
-    "viridian_city"
+    "viridian_city",
+    "digletts_cave",
+    "indigo_plateau",
+    "mt_moon",
+    "route_2",
+    "six_island",
+    "ss_anne"
    ],
    "liveRecIds": [
     2229,
@@ -6070,17 +6383,18 @@
     "fuchsia_city",
     "green_path",
     "kindle_road",
-    "mt_moon",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_21",
     "ruin_valley",
     "trainer_tower",
     "treasure_beach",
-    "water_path"
+    "water_path",
+    "kanto_pokemon_league",
+    "seven_island",
+    "three_island"
    ],
    "liveRecIds": [
     1802,
@@ -6102,14 +6416,17 @@
    "areaId": "topik_2",
    "frequency": 8,
    "topikLevel": "B",
-   "firstAreaEncountered": "saffron_city",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
-    "celadon_city",
     "cinnabar_island",
     "indigo_plateau",
     "rom_mined",
     "route_10",
-    "saffron_city"
+    "saffron_city",
+    "mt_moon",
+    "pokemon_mansion",
+    "route_2",
+    "ss_anne"
    ],
    "liveRecIds": [
     2768
@@ -6163,7 +6480,11 @@
     "six_island",
     "treasure_beach",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "mt_moon",
+    "pokemon_tower",
+    "three_island",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1892,
@@ -6227,7 +6548,8 @@
    "areasReferenced": [
     "one_island",
     "rom_mined",
-    "two_island"
+    "two_island",
+    "mt_moon"
    ],
    "liveRecIds": [
     3047
@@ -6305,9 +6627,9 @@
    "topikLevel": "A",
    "firstAreaEncountered": "route_2",
    "areasReferenced": [
-    "mt_moon",
     "rom_mined",
-    "route_2"
+    "route_2",
+    "four_island"
    ],
    "liveRecIds": [
     4934
@@ -6370,12 +6692,24 @@
     "six_island",
     "three_island",
     "trainer_tower",
-    "treasure_beach",
     "two_island",
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     492,
@@ -6544,9 +6878,7 @@
     "four_island",
     "fuchsia_city",
     "kindle_road",
-    "mt_moon",
     "pallet_town",
-    "pewter_city",
     "rom_mined",
     "route_1",
     "route_10",
@@ -6571,8 +6903,7 @@
     "route_9",
     "seven_island",
     "six_island",
-    "three_island",
-    "treasure_beach"
+    "three_island"
    ],
    "liveRecIds": [
     927,
@@ -6634,7 +6965,12 @@
     "indigo_plateau",
     "pewter_city",
     "rom_mined",
-    "saffron_city"
+    "saffron_city",
+    "five_island",
+    "four_island",
+    "one_island",
+    "power_plant",
+    "three_island"
    ],
    "liveRecIds": [
     975,
@@ -6698,7 +7034,20 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     967,
@@ -6814,7 +7163,13 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "seafoam_islands",
+    "seven_island"
    ],
    "liveRecIds": [
     2218,
@@ -6942,7 +7297,6 @@
     "one_island",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_2",
@@ -6959,7 +7313,8 @@
     "two_island",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "seven_island"
    ],
    "liveRecIds": [
     931,
@@ -7125,7 +7480,6 @@
     "memorial_pillar",
     "outcast_island",
     "pewter_city",
-    "resort_gorgeous",
     "rom_mined",
     "route_11",
     "route_12",
@@ -7135,7 +7489,23 @@
     "three_island",
     "two_island",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "five_island",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     3946
@@ -7174,7 +7544,6 @@
     "seven_island",
     "six_island",
     "three_island",
-    "treasure_beach",
     "two_island"
    ],
    "liveRecIds": [
@@ -7213,7 +7582,9 @@
     "route_16",
     "route_17",
     "saffron_city",
-    "viridian_city"
+    "viridian_city",
+    "pokemon_mansion",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1128,
@@ -7305,7 +7676,17 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "ss_anne",
+    "three_island",
+    "viridian_forest"
    ],
    "liveRecIds": [
     940,
@@ -7372,7 +7753,9 @@
    "areasReferenced": [
     "cerulean_city",
     "pewter_city",
-    "rom_mined"
+    "rom_mined",
+    "rocket_hideout",
+    "silph_co"
    ],
    "liveRecIds": [
     2231
@@ -7414,7 +7797,7 @@
    "areaId": "topik_1",
    "frequency": 6,
    "topikLevel": "A",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
     "canyon_entrance",
     "celadon_city",
@@ -7424,7 +7807,6 @@
     "four_island",
     "green_path",
     "indigo_plateau",
-    "kindle_road",
     "lavender_town",
     "memorial_pillar",
     "mt_moon",
@@ -7447,11 +7829,22 @@
     "six_island",
     "three_island",
     "trainer_tower",
-    "treasure_beach",
     "two_island",
     "vermilion_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "safari_zone",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1039,
@@ -7474,7 +7867,7 @@
    "areaId": "topik_1",
    "frequency": 6,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "five_isle_meadow",
@@ -7485,7 +7878,6 @@
     "memorial_pillar",
     "mt_moon",
     "outcast_island",
-    "pallet_town",
     "pewter_city",
     "resort_gorgeous",
     "rom_mined",
@@ -7505,7 +7897,25 @@
     "two_island",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "five_island",
+    "indigo_plateau",
+    "kanto_pokemon_league",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1258,
@@ -7552,7 +7962,6 @@
     "fuchsia_city",
     "green_path",
     "indigo_plateau",
-    "kindle_road",
     "lavender_town",
     "memorial_pillar",
     "outcast_island",
@@ -7569,7 +7978,16 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "one_island",
+    "pokemon_mansion",
+    "rock_tunnel",
+    "safari_zone",
+    "silph_co",
+    "trainer_tower",
+    "two_island"
    ],
    "liveRecIds": [
     893,
@@ -7603,7 +8021,6 @@
    "areasReferenced": [
     "cerulean_city",
     "pewter_city",
-    "resort_gorgeous",
     "rom_mined",
     "route_11",
     "route_16",
@@ -7617,7 +8034,14 @@
     "route_4",
     "route_5",
     "route_6",
-    "ruin_valley"
+    "ruin_valley",
+    "five_island",
+    "four_island",
+    "one_island",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "three_island"
    ],
    "liveRecIds": [
     1356,
@@ -7760,7 +8184,18 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower"
    ],
    "liveRecIds": [
     492,
@@ -7980,7 +8415,9 @@
     "two_island",
     "vermilion_city",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "safari_zone",
+    "seven_island"
    ],
    "liveRecIds": [
     638,
@@ -8043,7 +8480,8 @@
     "route_20",
     "ruin_valley",
     "saffron_city",
-    "trainer_tower"
+    "trainer_tower",
+    "five_island"
    ],
    "liveRecIds": [
     1151
@@ -8061,7 +8499,7 @@
    "areaId": "topik_1",
    "frequency": 5,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "pewter_city",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
@@ -8070,14 +8508,14 @@
     "fuchsia_city",
     "indigo_plateau",
     "lavender_town",
-    "pallet_town",
     "pewter_city",
     "rom_mined",
     "saffron_city",
     "seven_island",
     "six_island",
     "three_island",
-    "vermilion_city"
+    "vermilion_city",
+    "trainer_tower"
    ],
    "liveRecIds": [
     5270
@@ -8123,7 +8561,6 @@
     "memorial_pillar",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_1",
@@ -8158,7 +8595,14 @@
     "two_island",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "digletts_cave",
+    "indigo_plateau",
+    "mt_moon",
+    "rocket_hideout",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1177,
@@ -8188,9 +8632,7 @@
    "areasReferenced": [
     "canyon_entrance",
     "green_path",
-    "mt_moon",
     "outcast_island",
-    "pewter_city",
     "rom_mined",
     "route_10",
     "route_2",
@@ -8204,7 +8646,11 @@
     "saffron_city",
     "trainer_tower",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "five_island",
+    "four_island",
+    "seven_island",
+    "six_island"
    ],
    "liveRecIds": [
     1989,
@@ -8225,7 +8671,7 @@
    "areaId": "topik_1",
    "frequency": 5,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
@@ -8235,9 +8681,7 @@
     "fuchsia_city",
     "indigo_plateau",
     "lavender_town",
-    "mt_moon",
     "one_island",
-    "pallet_town",
     "pewter_city",
     "rom_mined",
     "route_10",
@@ -8252,10 +8696,13 @@
     "seven_island",
     "six_island",
     "three_island",
-    "treasure_beach",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co"
    ],
    "liveRecIds": [
     1213
@@ -8277,7 +8724,10 @@
    "areasReferenced": [
     "rom_mined",
     "route_2",
-    "saffron_city"
+    "saffron_city",
+    "digletts_cave",
+    "mt_moon",
+    "ss_anne"
    ],
    "liveRecIds": [
     2813
@@ -8355,7 +8805,7 @@
    "areaId": "topik_2",
    "frequency": 5,
    "topikLevel": "B",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
@@ -8370,9 +8820,7 @@
     "memorial_pillar",
     "one_island",
     "outcast_island",
-    "pallet_town",
     "pewter_city",
-    "resort_gorgeous",
     "rom_mined",
     "route_10",
     "route_11",
@@ -8388,7 +8836,21 @@
     "two_island",
     "vermilion_city",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     3912,
@@ -8517,7 +8979,7 @@
    "areaId": "topik_2",
    "frequency": 5,
    "topikLevel": "B",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
     "canyon_entrance",
     "cerulean_city",
@@ -8551,7 +9013,22 @@
     "trainer_tower",
     "two_island",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "five_island",
+    "four_island",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "safari_zone",
+    "silph_co",
+    "six_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "filledViaSubstring": {
     "rec_id": 29819,
@@ -8660,7 +9137,6 @@
     "indigo_plateau",
     "kindle_road",
     "lavender_town",
-    "mt_moon",
     "one_island",
     "pallet_town",
     "pewter_city",
@@ -8691,7 +9167,13 @@
     "two_island",
     "vermilion_city",
     "viridian_city",
-    "water_labyrinth"
+    "water_labyrinth",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co"
    ],
    "liveRecIds": [
     1013,
@@ -8717,7 +9199,10 @@
    "areasReferenced": [
     "celadon_city",
     "rom_mined",
-    "vermilion_city"
+    "vermilion_city",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co"
    ],
    "liveRecIds": [
     2398
@@ -8809,7 +9294,12 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "rock_tunnel",
+    "safari_zone",
+    "seven_island"
    ],
    "liveRecIds": [
     638,
@@ -8831,9 +9321,11 @@
    "areaId": "topik_1",
    "frequency": 4,
    "topikLevel": "A",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "viridian_forest"
    ],
    "liveRecIds": [
     229
@@ -8923,7 +9415,8 @@
    "areasReferenced": [
     "rom_mined",
     "route_3",
-    "ruin_valley"
+    "ruin_valley",
+    "safari_zone"
    ],
    "liveRecIds": [
     4222
@@ -8975,7 +9468,9 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "safari_zone",
+    "seven_island"
    ],
    "liveRecIds": [
     1534,
@@ -9058,7 +9553,6 @@
     "indigo_plateau",
     "kindle_road",
     "lavender_town",
-    "mt_moon",
     "one_island",
     "pallet_town",
     "pewter_city",
@@ -9086,7 +9580,16 @@
     "two_island",
     "vermilion_city",
     "viridian_city",
-    "water_labyrinth"
+    "water_labyrinth",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "trainer_tower"
    ],
    "liveRecIds": [
     1825,
@@ -9167,7 +9670,12 @@
     "two_island",
     "vermilion_city",
     "viridian_city",
-    "water_labyrinth"
+    "water_labyrinth",
+    "digletts_cave",
+    "rocket_hideout",
+    "route_2",
+    "silph_co",
+    "ss_anne"
    ],
    "liveRecIds": [
     1489,
@@ -9202,7 +9710,11 @@
     "ruin_valley",
     "trainer_tower",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "seven_island"
    ],
    "liveRecIds": [
     1969,
@@ -9249,7 +9761,6 @@
     "memorial_pillar",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_23",
@@ -9260,7 +9771,10 @@
     "treasure_beach",
     "vermilion_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "pokemon_mansion",
+    "seven_island",
+    "three_island"
    ],
    "liveRecIds": [
     2017,
@@ -9323,11 +9837,9 @@
     "five_island",
     "four_island",
     "green_path",
-    "mt_moon",
     "one_island",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_10",
@@ -9344,10 +9856,22 @@
     "six_island",
     "three_island",
     "trainer_tower",
-    "treasure_beach",
     "two_island",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "digletts_cave",
+    "indigo_plateau",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne"
    ],
    "liveRecIds": [
     1191,
@@ -9404,14 +9928,12 @@
    "areaId": "topik_2",
    "frequency": 4,
    "topikLevel": "B",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
     "celadon_city",
     "five_island",
     "four_island",
-    "mt_moon",
     "one_island",
-    "pallet_town",
     "rom_mined",
     "route_12",
     "route_16",
@@ -9419,8 +9941,13 @@
     "route_4",
     "seven_island",
     "six_island",
-    "treasure_beach",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "power_plant",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "liveRecIds": [
     3044,
@@ -9469,7 +9996,12 @@
     "route_3",
     "route_4",
     "route_6",
-    "route_9"
+    "route_9",
+    "five_island",
+    "four_island",
+    "safari_zone",
+    "six_island",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1321,
@@ -9501,7 +10033,12 @@
     "rom_mined",
     "route_23",
     "route_24",
-    "viridian_city"
+    "viridian_city",
+    "five_island",
+    "four_island",
+    "one_island",
+    "power_plant",
+    "three_island"
    ],
    "liveRecIds": [
     2220,
@@ -9537,7 +10074,9 @@
     "six_island",
     "three_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "five_island",
+    "trainer_tower"
    ],
    "liveRecIds": [
     2150
@@ -9588,7 +10127,18 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     921,
@@ -9670,7 +10220,7 @@
    "areaId": "topik_2",
    "frequency": 4,
    "topikLevel": "B",
-   "firstAreaEncountered": "vermilion_city",
+   "firstAreaEncountered": "pokemon_tower",
    "areasReferenced": [
     "celadon_city",
     "cinnabar_island",
@@ -9680,7 +10230,11 @@
     "rom_mined",
     "three_island",
     "two_island",
-    "vermilion_city"
+    "vermilion_city",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "liveRecIds": [
     1090,
@@ -9704,7 +10258,6 @@
    "areasReferenced": [
     "kindle_road",
     "pallet_town",
-    "pewter_city",
     "rom_mined",
     "route_10",
     "route_11",
@@ -9712,7 +10265,8 @@
     "route_15",
     "route_16",
     "route_7",
-    "route_8"
+    "route_8",
+    "seven_island"
    ],
    "liveRecIds": [
     921,
@@ -9805,7 +10359,9 @@
     "seven_island",
     "six_island",
     "three_island",
-    "vermilion_city"
+    "vermilion_city",
+    "pokemon_mansion",
+    "silph_co"
    ],
    "liveRecIds": [
     1437,
@@ -9891,7 +10447,13 @@
     "rom_mined",
     "saffron_city",
     "three_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "five_island",
+    "mt_moon",
+    "six_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     2713,
@@ -9913,11 +10475,10 @@
    "areaId": "topik_2",
    "frequency": 4,
    "topikLevel": "B",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
     "kindle_road",
     "one_island",
-    "pewter_city",
     "rom_mined",
     "route_10",
     "route_11",
@@ -9943,7 +10504,10 @@
     "route_9",
     "three_island",
     "treasure_beach",
-    "two_island"
+    "two_island",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co"
    ],
    "liveRecIds": [
     1420,
@@ -10153,11 +10717,12 @@
    "areaId": "topik_2",
    "frequency": 3,
    "topikLevel": "B",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "mt_moon",
    "areasReferenced": [
     "cinnabar_island",
-    "pewter_city",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "pokemon_mansion"
    ],
    "liveRecIds": [
     2675
@@ -10179,9 +10744,11 @@
    "areaId": "topik_2",
    "frequency": 3,
    "topikLevel": "B",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "rocket_hideout",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "rocket_hideout",
+    "silph_co"
    ],
    "liveRecIds": [
     540
@@ -10201,7 +10768,8 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "liveRecIds": [
     1027
@@ -10312,7 +10880,8 @@
     "lavender_town",
     "pallet_town",
     "rom_mined",
-    "vermilion_city"
+    "vermilion_city",
+    "safari_zone"
    ],
    "liveRecIds": [
     1079
@@ -10337,7 +10906,10 @@
     "pewter_city",
     "rom_mined",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     956,
@@ -10375,7 +10947,7 @@
    "areaId": "topik_2",
    "frequency": 3,
    "topikLevel": "B",
-   "firstAreaEncountered": "cerulean_city",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
     "cerulean_city",
     "cinnabar_island",
@@ -10387,13 +10959,16 @@
     "route_12",
     "route_13",
     "route_14",
-    "route_16",
     "route_21",
     "route_8",
     "saffron_city",
     "three_island",
     "treasure_beach",
-    "two_island"
+    "two_island",
+    "mt_moon",
+    "safari_zone",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1147,
@@ -10431,12 +11006,12 @@
    "areaId": "topik_2",
    "frequency": 3,
    "topikLevel": "B",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "vermilion_city",
    "areasReferenced": [
     "celadon_city",
-    "pewter_city",
     "rom_mined",
-    "vermilion_city"
+    "vermilion_city",
+    "indigo_plateau"
    ],
    "liveRecIds": [
     2398
@@ -10518,7 +11093,12 @@
     "saffron_city",
     "trainer_tower",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "pokemon_mansion",
+    "rock_tunnel",
+    "safari_zone",
+    "seven_island",
+    "silph_co"
    ],
    "liveRecIds": [
     1103,
@@ -10573,7 +11153,6 @@
     "indigo_plateau",
     "kindle_road",
     "lavender_town",
-    "mt_moon",
     "one_island",
     "pallet_town",
     "pewter_city",
@@ -10594,11 +11173,15 @@
     "six_island",
     "three_island",
     "trainer_tower",
-    "treasure_beach",
     "two_island",
     "vermilion_city",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "power_plant",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co"
    ],
    "liveRecIds": [
     882,
@@ -10685,9 +11268,9 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "celadon_city",
-    "mt_moon",
     "pallet_town",
-    "rom_mined"
+    "rom_mined",
+    "resort_gorgeous"
    ],
    "liveRecIds": [
     2063,
@@ -10734,7 +11317,12 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "mt_moon",
+    "rock_tunnel",
+    "ss_anne",
+    "trainer_tower",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1569,
@@ -10854,12 +11442,16 @@
    "topikLevel": "A",
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "kindle_road",
     "pallet_town",
     "pewter_city",
     "rom_mined",
-    "route_16",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "one_island",
+    "pokemon_mansion",
+    "safari_zone",
+    "viridian_forest"
    ],
    "liveRecIds": [
     2188
@@ -10954,7 +11546,6 @@
     "route_18",
     "route_20",
     "route_22",
-    "route_23",
     "route_25",
     "route_4",
     "ruin_valley",
@@ -10962,7 +11553,9 @@
     "seven_island",
     "trainer_tower",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "safari_zone"
    ],
    "liveRecIds": [
     2689,
@@ -10992,7 +11585,8 @@
     "rom_mined",
     "treasure_beach",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "three_island"
    ],
    "liveRecIds": [
     1894
@@ -11054,11 +11648,9 @@
     "indigo_plateau",
     "kindle_road",
     "memorial_pillar",
-    "mt_moon",
     "one_island",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_12",
@@ -11075,7 +11667,12 @@
     "two_island",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "liveRecIds": [
     926,
@@ -11344,7 +11941,12 @@
     "route_9",
     "saffron_city",
     "treasure_beach",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "safari_zone",
+    "three_island"
    ],
    "liveRecIds": [
     1300,
@@ -11403,7 +12005,11 @@
     "rom_mined",
     "route_1",
     "saffron_city",
-    "vermilion_city"
+    "vermilion_city",
+    "mt_moon",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "filledViaSubstring": {
     "rec_id": 13165,
@@ -11493,7 +12099,9 @@
     "route_4",
     "route_6",
     "route_8",
-    "route_9"
+    "route_9",
+    "indigo_plateau",
+    "silph_co"
    ],
    "liveRecIds": [
     1352,
@@ -11521,7 +12129,7 @@
    "areaId": "topik_2",
    "frequency": 3,
    "topikLevel": "B",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "pewter_city",
    "areasReferenced": [
     "canyon_entrance",
     "celadon_city",
@@ -11535,7 +12143,6 @@
     "memorial_pillar",
     "one_island",
     "outcast_island",
-    "pallet_town",
     "pewter_city",
     "resort_gorgeous",
     "rom_mined",
@@ -11755,18 +12362,18 @@
    "areaId": "topik_2",
    "frequency": 3,
    "topikLevel": "B",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
     "canyon_entrance",
     "green_path",
     "memorial_pillar",
     "outcast_island",
-    "pewter_city",
     "rom_mined",
     "ruin_valley",
     "trainer_tower",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "seven_island"
    ],
    "liveRecIds": [
     1965,
@@ -11810,11 +12417,10 @@
    "areaId": "topik_2",
    "frequency": 3,
    "topikLevel": "B",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_16",
    "areasReferenced": [
     "five_island",
     "four_island",
-    "pewter_city",
     "rom_mined",
     "route_16",
     "route_17",
@@ -11822,7 +12428,8 @@
     "route_19",
     "route_20",
     "three_island",
-    "two_island"
+    "two_island",
+    "seven_island"
    ],
    "liveRecIds": [
     3082,
@@ -11842,9 +12449,10 @@
    "areaId": "topik_2",
    "frequency": 3,
    "topikLevel": "B",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "power_plant",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "power_plant"
    ],
    "liveRecIds": [
     5008
@@ -12006,7 +12614,6 @@
     "memorial_pillar",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_17",
@@ -12019,7 +12626,10 @@
     "trainer_tower",
     "treasure_beach",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "seven_island",
+    "six_island",
+    "three_island"
    ],
    "liveRecIds": [
     897,
@@ -12125,7 +12735,6 @@
     "memorial_pillar",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_10",
@@ -12145,7 +12754,9 @@
     "two_island",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "route_17",
+    "seven_island"
    ],
    "liveRecIds": [
     1177,
@@ -12197,7 +12808,8 @@
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league"
    ],
    "liveRecIds": [
     4006
@@ -12279,7 +12891,6 @@
     "memorial_pillar",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_10",
@@ -12303,7 +12914,12 @@
     "treasure_beach",
     "vermilion_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "mt_moon",
+    "rocket_hideout",
+    "seven_island",
+    "silph_co",
+    "three_island"
    ],
    "liveRecIds": [
     1272,
@@ -12334,7 +12950,12 @@
     "rom_mined",
     "saffron_city",
     "three_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "liveRecIds": [
     1184,
@@ -12409,12 +13030,13 @@
    "areaId": "topik_2",
    "frequency": 2,
    "topikLevel": "B",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
     "cerulean_city",
     "pewter_city",
     "rom_mined",
-    "route_24"
+    "six_island",
+    "viridian_forest"
    ],
    "liveRecIds": [
     997
@@ -12488,11 +13110,11 @@
    "areaId": "topik_2",
    "frequency": 2,
    "topikLevel": "B",
-   "firstAreaEncountered": "route_16",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
     "cinnabar_island",
     "rom_mined",
-    "route_16"
+    "safari_zone"
    ],
    "liveRecIds": [
     2076
@@ -12551,19 +13173,24 @@
    "areaId": "topik_1",
    "frequency": 2,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "cinnabar_island",
     "four_island",
     "fuchsia_city",
-    "pallet_town",
     "pewter_city",
     "rom_mined",
     "route_4",
     "saffron_city",
     "seven_island",
-    "viridian_city"
+    "viridian_city",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "silph_co",
+    "trainer_tower",
+    "two_island"
    ],
    "liveRecIds": [
     891,
@@ -12656,10 +13283,10 @@
    "areaId": "topik_2",
    "frequency": 2,
    "topikLevel": "B",
-   "firstAreaEncountered": "celadon_city",
+   "firstAreaEncountered": "pokemon_mansion",
    "areasReferenced": [
-    "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "pokemon_mansion"
    ],
    "liveRecIds": [
     3024
@@ -12734,16 +13361,16 @@
    "areaId": "topik_2",
    "frequency": 2,
    "topikLevel": "B",
-   "firstAreaEncountered": "mt_moon",
+   "firstAreaEncountered": "saffron_city",
    "areasReferenced": [
     "celadon_city",
     "cinnabar_island",
     "fuchsia_city",
     "indigo_plateau",
-    "mt_moon",
     "one_island",
     "rom_mined",
-    "saffron_city"
+    "saffron_city",
+    "seven_island"
    ],
    "liveRecIds": [
     1129
@@ -12769,7 +13396,6 @@
     "kindle_road",
     "mt_moon",
     "one_island",
-    "pewter_city",
     "rom_mined",
     "route_15",
     "route_16",
@@ -12888,7 +13514,6 @@
     "memorial_pillar",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_10",
@@ -12918,7 +13543,10 @@
     "treasure_beach",
     "vermilion_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "safari_zone",
+    "seven_island",
+    "three_island"
    ],
    "liveRecIds": [
     1794,
@@ -12990,7 +13618,10 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "rock_tunnel",
+    "route_5",
+    "silph_co"
    ],
    "liveRecIds": [
     2144,
@@ -13084,7 +13715,7 @@
    "areaId": "topik_2",
    "frequency": 2,
    "topikLevel": "B",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
@@ -13095,7 +13726,6 @@
     "indigo_plateau",
     "lavender_town",
     "one_island",
-    "pallet_town",
     "pewter_city",
     "rom_mined",
     "route_10",
@@ -13106,7 +13736,9 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "pokemon_tower",
+    "power_plant"
    ],
    "liveRecIds": [
     3921
@@ -13198,7 +13830,9 @@
    "firstAreaEncountered": "fuchsia_city",
    "areasReferenced": [
     "fuchsia_city",
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave",
+    "six_island"
    ],
    "liveRecIds": [
     3068
@@ -13250,7 +13884,14 @@
     "trainer_tower",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "silph_co"
    ],
    "liveRecIds": [
     1198,
@@ -13319,7 +13960,10 @@
     "pewter_city",
     "rom_mined",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "one_island",
+    "pokemon_tower",
+    "power_plant"
    ],
    "liveRecIds": [
     2220,
@@ -13339,10 +13983,15 @@
    "areaId": "topik_2",
    "frequency": 2,
    "topikLevel": "B",
-   "firstAreaEncountered": "celadon_city",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co"
    ],
    "liveRecIds": [
     654
@@ -13509,10 +14158,14 @@
    "areaId": "topik_2",
    "frequency": 2,
    "topikLevel": "B",
-   "firstAreaEncountered": "saffron_city",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
     "rom_mined",
-    "saffron_city"
+    "saffron_city",
+    "digletts_cave",
+    "indigo_plateau",
+    "route_2",
+    "ss_anne"
    ],
    "liveRecIds": [
     2783
@@ -13557,7 +14210,10 @@
     "cerulean_city",
     "pewter_city",
     "rom_mined",
-    "route_4"
+    "route_4",
+    "indigo_plateau",
+    "rocket_hideout",
+    "silph_co"
    ],
    "liveRecIds": [
     997
@@ -13756,7 +14412,8 @@
     "cerulean_city",
     "pewter_city",
     "rom_mined",
-    "viridian_city"
+    "viridian_city",
+    "safari_zone"
    ],
    "liveRecIds": [
     2221
@@ -13822,15 +14479,16 @@
    "areaId": "topik_2",
    "frequency": 2,
    "topikLevel": "B",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
     "kindle_road",
     "mt_moon",
-    "pallet_town",
-    "pewter_city",
-    "resort_gorgeous",
     "rom_mined",
-    "treasure_beach"
+    "five_island",
+    "seven_island",
+    "ss_anne",
+    "three_island",
+    "viridian_forest"
    ],
    "liveRecIds": [
     914
@@ -13876,7 +14534,12 @@
     "route_4",
     "route_6",
     "treasure_beach",
-    "water_labyrinth"
+    "water_labyrinth",
+    "four_island",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "three_island"
    ],
    "liveRecIds": [
     1350,
@@ -14201,7 +14864,10 @@
     "one_island",
     "rom_mined",
     "seven_island",
-    "two_island"
+    "two_island",
+    "five_island",
+    "four_island",
+    "six_island"
    ],
    "liveRecIds": [
     3018
@@ -14268,7 +14934,14 @@
     "two_island",
     "vermilion_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "three_island",
+    "viridian_forest"
    ],
    "liveRecIds": [
     914,
@@ -14299,11 +14972,15 @@
    "areaId": "topik_2",
    "frequency": 2,
    "topikLevel": "B",
-   "firstAreaEncountered": "celadon_city",
+   "firstAreaEncountered": "rock_tunnel",
    "areasReferenced": [
     "celadon_city",
     "four_island",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "rock_tunnel",
+    "rocket_hideout",
+    "silph_co"
    ],
    "liveRecIds": [
     2515,
@@ -14338,7 +15015,6 @@
     "fuchsia_city",
     "indigo_plateau",
     "lavender_town",
-    "mt_moon",
     "one_island",
     "pallet_town",
     "pewter_city",
@@ -14361,7 +15037,14 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co",
+    "trainer_tower"
    ],
    "liveRecIds": [
     2444,
@@ -14409,7 +15092,11 @@
     "cerulean_city",
     "lavender_town",
     "pewter_city",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "liveRecIds": [
     1013
@@ -14428,10 +15115,10 @@
    "areaId": "topik_2",
    "frequency": 2,
    "topikLevel": "B",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "indigo_plateau",
    "areasReferenced": [
-    "pewter_city",
-    "rom_mined"
+    "rom_mined",
+    "indigo_plateau"
    ],
    "liveRecIds": [
     3573
@@ -14480,7 +15167,16 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "trainer_tower"
    ],
    "liveRecIds": [
     1358,
@@ -14567,13 +15263,12 @@
    "areaId": "topik_2",
    "frequency": 2,
    "topikLevel": "B",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_8",
    "areasReferenced": [
     "canyon_entrance",
     "green_path",
     "memorial_pillar",
     "outcast_island",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_10",
@@ -14583,7 +15278,8 @@
     "ruin_valley",
     "trainer_tower",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "seven_island"
    ],
    "liveRecIds": [
     1973,
@@ -14603,7 +15299,7 @@
    "areaId": "topik_1",
    "frequency": 2,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
@@ -14614,9 +15310,7 @@
     "indigo_plateau",
     "kindle_road",
     "lavender_town",
-    "mt_moon",
     "one_island",
-    "pallet_town",
     "pewter_city",
     "resort_gorgeous",
     "rom_mined",
@@ -14644,7 +15338,12 @@
     "treasure_beach",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1095,
@@ -14761,7 +15460,7 @@
    "areaId": "topik_2",
    "frequency": 2,
    "topikLevel": "B",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
@@ -14771,9 +15470,7 @@
     "fuchsia_city",
     "indigo_plateau",
     "lavender_town",
-    "mt_moon",
     "one_island",
-    "pallet_town",
     "pewter_city",
     "rom_mined",
     "route_10",
@@ -14788,10 +15485,13 @@
     "seven_island",
     "six_island",
     "three_island",
-    "treasure_beach",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co"
    ],
    "liveRecIds": [
     1206,
@@ -14849,7 +15549,10 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "rock_tunnel",
+    "ss_anne",
+    "trainer_tower"
    ],
    "liveRecIds": [
     3151
@@ -14907,18 +15610,21 @@
    "areaId": "topik_1",
    "frequency": 2,
    "topikLevel": "A",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
     "canyon_entrance",
     "celadon_city",
     "green_path",
-    "mt_moon",
     "outcast_island",
-    "pewter_city",
     "rom_mined",
     "ruin_valley",
     "trainer_tower",
-    "water_path"
+    "water_path",
+    "digletts_cave",
+    "indigo_plateau",
+    "route_2",
+    "seven_island",
+    "ss_anne"
    ],
    "liveRecIds": [
     1979,
@@ -14980,7 +15686,9 @@
     "saffron_city",
     "trainer_tower",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "safari_zone",
+    "seven_island"
    ],
    "liveRecIds": [
     2689
@@ -15000,7 +15708,9 @@
    "topikLevel": "B",
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "one_island",
+    "six_island"
    ],
    "liveRecIds": [
     1165
@@ -15053,7 +15763,11 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "rock_tunnel",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower"
    ],
    "liveRecIds": [
     1170,
@@ -15078,7 +15792,6 @@
    "areasReferenced": [
     "canyon_entrance",
     "green_path",
-    "kindle_road",
     "memorial_pillar",
     "outcast_island",
     "resort_gorgeous",
@@ -15086,7 +15799,8 @@
     "ruin_valley",
     "trainer_tower",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "three_island"
    ],
    "liveRecIds": [
     4243
@@ -15148,7 +15862,7 @@
    "areaId": "topik_1",
    "frequency": 1,
    "topikLevel": "A",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
     "canyon_entrance",
     "celadon_city",
@@ -15161,7 +15875,6 @@
     "memorial_pillar",
     "one_island",
     "outcast_island",
-    "pewter_city",
     "rom_mined",
     "route_13",
     "route_14",
@@ -15172,7 +15885,13 @@
     "two_island",
     "vermilion_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "mt_moon",
+    "pokemon_tower",
+    "power_plant",
+    "seven_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1095,
@@ -15268,7 +15987,9 @@
     "saffron_city",
     "trainer_tower",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "safari_zone",
+    "seven_island"
    ],
    "liveRecIds": [
     2135,
@@ -15312,10 +16033,10 @@
    "areaId": "topik_1",
    "frequency": 1,
    "topikLevel": "A",
-   "firstAreaEncountered": "kindle_road",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "kindle_road",
-    "rom_mined"
+    "rom_mined",
+    "one_island"
    ],
    "liveRecIds": [
     5004
@@ -15336,16 +16057,16 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
     "canyon_entrance",
     "green_path",
     "outcast_island",
-    "pewter_city",
     "rom_mined",
     "ruin_valley",
     "trainer_tower",
-    "water_path"
+    "water_path",
+    "seven_island"
    ],
    "liveRecIds": [
     1978
@@ -15418,7 +16139,8 @@
    "topikLevel": "B",
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "six_island"
    ],
    "liveRecIds": [
     5019
@@ -15440,7 +16162,8 @@
     "celadon_city",
     "cinnabar_island",
     "fuchsia_city",
-    "rom_mined"
+    "rom_mined",
+    "six_island"
    ],
    "liveRecIds": [
     2625
@@ -15458,10 +16181,10 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "celadon_city",
+   "firstAreaEncountered": "pokemon_mansion",
    "areasReferenced": [
-    "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "pokemon_mansion"
    ],
    "liveRecIds": [
     5014
@@ -15532,7 +16255,7 @@
    "areaId": "topik_1",
    "frequency": 1,
    "topikLevel": "A",
-   "firstAreaEncountered": "route_8",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
     "celadon_city",
     "fuchsia_city",
@@ -15541,7 +16264,10 @@
     "route_11",
     "route_12",
     "route_8",
-    "route_9"
+    "route_9",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1396,
@@ -15615,9 +16341,10 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "liveRecIds": [
     1482
@@ -15647,7 +16374,10 @@
     "route_11",
     "route_6",
     "route_8",
-    "route_9"
+    "route_9",
+    "cerulean_cave",
+    "pokemon_mansion",
+    "silph_co"
    ],
    "liveRecIds": [
     1285
@@ -15707,7 +16437,6 @@
     "memorial_pillar",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_20",
@@ -15718,7 +16447,9 @@
     "trainer_tower",
     "treasure_beach",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "seven_island",
+    "three_island"
    ],
    "liveRecIds": [
     1776,
@@ -15941,7 +16672,10 @@
     "route_7",
     "route_8",
     "seven_island",
-    "vermilion_city"
+    "vermilion_city",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     2317,
@@ -15965,9 +16699,10 @@
    "areaId": "topik_1",
    "frequency": 1,
    "topikLevel": "A",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "liveRecIds": [
     1731
@@ -16023,16 +16758,14 @@
    "areaId": "topik_1",
    "frequency": 1,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
     "celadon_city",
     "five_island",
     "four_island",
     "kindle_road",
     "memorial_pillar",
-    "mt_moon",
     "one_island",
-    "pallet_town",
     "resort_gorgeous",
     "rom_mined",
     "route_12",
@@ -16050,7 +16783,15 @@
     "six_island",
     "treasure_beach",
     "two_island",
-    "water_labyrinth"
+    "water_labyrinth",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "liveRecIds": [
     1631,
@@ -16105,14 +16846,12 @@
    "areaId": "topik_1",
    "frequency": 1,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
     "celadon_city",
     "five_island",
     "four_island",
-    "mt_moon",
     "one_island",
-    "pallet_town",
     "rom_mined",
     "route_12",
     "route_16",
@@ -16122,8 +16861,12 @@
     "route_4",
     "seven_island",
     "six_island",
-    "treasure_beach",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "liveRecIds": [
     1717
@@ -16381,7 +17124,11 @@
     "indigo_plateau",
     "rom_mined",
     "saffron_city",
-    "vermilion_city"
+    "vermilion_city",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "liveRecIds": [
     1108
@@ -16484,13 +17231,16 @@
    "areaId": "topik_1",
    "frequency": 1,
    "topikLevel": "A",
-   "firstAreaEncountered": "route_14",
+   "firstAreaEncountered": "pokemon_tower",
    "areasReferenced": [
     "rom_mined",
     "route_14",
     "route_15",
     "route_16",
-    "route_17"
+    "route_17",
+    "one_island",
+    "pokemon_tower",
+    "power_plant"
    ],
    "liveRecIds": [
     1554
@@ -16595,7 +17345,7 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
@@ -16606,9 +17356,7 @@
     "indigo_plateau",
     "kindle_road",
     "lavender_town",
-    "mt_moon",
     "one_island",
-    "pallet_town",
     "pewter_city",
     "resort_gorgeous",
     "rom_mined",
@@ -16638,7 +17386,12 @@
     "two_island",
     "vermilion_city",
     "viridian_city",
-    "water_labyrinth"
+    "water_labyrinth",
+    "cerulean_cave",
+    "power_plant",
+    "rock_tunnel",
+    "seafoam_islands",
+    "silph_co"
    ],
    "liveRecIds": [
     1207,
@@ -16748,7 +17501,10 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "digletts_cave",
+    "silph_co",
+    "ss_anne"
    ],
    "filledViaSubstring": {
     "rec_id": 32612,
@@ -16802,7 +17558,8 @@
     "pallet_town",
     "pewter_city",
     "rom_mined",
-    "viridian_city"
+    "viridian_city",
+    "six_island"
    ],
    "liveRecIds": [
     2056,
@@ -16855,9 +17612,12 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pokemon_tower",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "liveRecIds": [
     775
@@ -16908,7 +17668,8 @@
     "route_22",
     "route_25",
     "seven_island",
-    "treasure_beach"
+    "treasure_beach",
+    "three_island"
    ],
    "liveRecIds": [
     1815,
@@ -16931,7 +17692,7 @@
    "areaId": "topik_1",
    "frequency": 1,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
@@ -16942,7 +17703,6 @@
     "indigo_plateau",
     "lavender_town",
     "one_island",
-    "pallet_town",
     "pewter_city",
     "rom_mined",
     "route_10",
@@ -16953,7 +17713,11 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "liveRecIds": [
     3873
@@ -16993,7 +17757,7 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "celadon_city",
     "cerulean_city",
@@ -17003,9 +17767,7 @@
     "fuchsia_city",
     "indigo_plateau",
     "lavender_town",
-    "mt_moon",
     "one_island",
-    "pallet_town",
     "pewter_city",
     "rom_mined",
     "route_10",
@@ -17019,10 +17781,13 @@
     "seven_island",
     "six_island",
     "three_island",
-    "treasure_beach",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co"
    ],
    "liveRecIds": [
     3186
@@ -17181,7 +17946,10 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "rock_tunnel",
+    "ss_anne",
+    "trainer_tower"
    ],
    "liveRecIds": [
     1887,
@@ -17361,7 +18129,6 @@
     "celadon_city",
     "four_island",
     "green_path",
-    "kindle_road",
     "memorial_pillar",
     "outcast_island",
     "resort_gorgeous",
@@ -17374,7 +18141,9 @@
     "treasure_beach",
     "two_island",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "pokemon_mansion",
+    "silph_co"
    ],
    "liveRecIds": [
     1179,
@@ -17411,9 +18180,14 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "power_plant",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "five_island",
+    "four_island",
+    "one_island",
+    "power_plant",
+    "three_island"
    ],
    "liveRecIds": [
     840
@@ -17473,7 +18247,12 @@
     "three_island",
     "two_island",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "rock_tunnel",
+    "rocket_hideout",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower"
    ],
    "liveRecIds": [
     1683,
@@ -17702,7 +18481,8 @@
    "topikLevel": "B",
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "six_island"
    ],
    "liveRecIds": [
     5049
@@ -17825,7 +18605,15 @@
     "ruin_valley",
     "treasure_beach",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "five_island",
+    "four_island",
+    "one_island",
+    "pokemon_mansion",
+    "safari_zone",
+    "seven_island",
+    "silph_co",
+    "three_island"
    ],
    "liveRecIds": [
     1661,
@@ -17940,18 +18728,18 @@
     "memorial_pillar",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_2",
-    "route_23",
     "ruin_valley",
     "saffron_city",
     "trainer_tower",
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "seven_island"
    ],
    "liveRecIds": [
     1961,
@@ -18114,7 +18902,15 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "rock_tunnel",
+    "safari_zone",
+    "silph_co",
+    "viridian_forest"
    ],
    "liveRecIds": [
     893,
@@ -18184,7 +18980,10 @@
     "route_4",
     "saffron_city",
     "seven_island",
-    "viridian_city"
+    "viridian_city",
+    "one_island",
+    "rock_tunnel",
+    "silph_co"
    ],
    "liveRecIds": [
     1609,
@@ -18231,7 +19030,6 @@
     "memorial_pillar",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_23",
@@ -18241,7 +19039,9 @@
     "trainer_tower",
     "treasure_beach",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "seven_island",
+    "three_island"
    ],
    "liveRecIds": [
     2017
@@ -18279,11 +19079,13 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "fuchsia_city",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
     "cinnabar_island",
     "fuchsia_city",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "viridian_forest"
    ],
    "liveRecIds": [
     2635
@@ -18311,7 +19113,13 @@
     "route_15",
     "route_16",
     "route_17",
-    "vermilion_city"
+    "vermilion_city",
+    "five_island",
+    "four_island",
+    "mt_moon",
+    "one_island",
+    "power_plant",
+    "three_island"
    ],
    "liveRecIds": [
     998,
@@ -18365,7 +19173,6 @@
     "mt_moon",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_10",
@@ -18385,7 +19192,18 @@
     "trainer_tower",
     "treasure_beach",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "five_island",
+    "four_island",
+    "one_island",
+    "power_plant",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "three_island",
+    "viridian_forest"
    ],
    "liveRecIds": [
     903,
@@ -18535,7 +19353,8 @@
     "cerulean_city",
     "lavender_town",
     "rom_mined",
-    "vermilion_city"
+    "vermilion_city",
+    "one_island"
    ],
    "liveRecIds": [
     1026
@@ -18563,7 +19382,9 @@
     "route_15",
     "route_16",
     "route_17",
-    "route_8"
+    "route_8",
+    "pokemon_mansion",
+    "rock_tunnel"
    ],
    "liveRecIds": [
     2624
@@ -18648,7 +19469,6 @@
     "outcast_island",
     "pallet_town",
     "pewter_city",
-    "resort_gorgeous",
     "rom_mined",
     "route_11",
     "route_12",
@@ -18658,7 +19478,24 @@
     "three_island",
     "two_island",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "five_island",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     2133,
@@ -18729,7 +19566,7 @@
    "areaId": "topik_1",
    "frequency": 1,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "canyon_entrance",
     "celadon_city",
@@ -18745,7 +19582,6 @@
     "memorial_pillar",
     "one_island",
     "outcast_island",
-    "pallet_town",
     "pewter_city",
     "resort_gorgeous",
     "rom_mined",
@@ -18778,7 +19614,14 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "mt_moon",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     882,
@@ -18855,9 +19698,10 @@
    "areaId": "topik_1",
    "frequency": 1,
    "topikLevel": "A",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "silph_co",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "silph_co"
    ],
    "liveRecIds": [
     580
@@ -18891,7 +19735,7 @@
    "areaId": "topik_1",
    "frequency": 1,
    "topikLevel": "A",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
     "canyon_entrance",
     "celadon_city",
@@ -18902,10 +19746,8 @@
     "indigo_plateau",
     "kindle_road",
     "memorial_pillar",
-    "mt_moon",
     "one_island",
     "outcast_island",
-    "pallet_town",
     "resort_gorgeous",
     "rom_mined",
     "route_12",
@@ -18925,7 +19767,17 @@
     "treasure_beach",
     "two_island",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co"
    ],
    "filledViaSubstring": {
     "rec_id": 29841,
@@ -18951,9 +19803,13 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "safari_zone",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     323
@@ -18985,9 +19841,12 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     324
@@ -19041,7 +19900,8 @@
     "trainer_tower",
     "vermilion_city",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "seven_island"
    ],
    "liveRecIds": [
     1498,
@@ -19130,7 +19990,8 @@
     "two_island",
     "vermilion_city",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "silph_co"
    ],
    "liveRecIds": [
     920,
@@ -19188,7 +20049,8 @@
     "cinnabar_island",
     "indigo_plateau",
     "rom_mined",
-    "saffron_city"
+    "saffron_city",
+    "safari_zone"
    ],
    "liveRecIds": [
     2754
@@ -19209,17 +20071,16 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
     "canyon_entrance",
     "green_path",
-    "mt_moon",
     "outcast_island",
-    "pewter_city",
     "rom_mined",
     "ruin_valley",
     "trainer_tower",
-    "water_path"
+    "water_path",
+    "seven_island"
    ],
    "liveRecIds": [
     1988
@@ -19237,9 +20098,12 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "rocket_hideout",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "indigo_plateau",
+    "rocket_hideout",
+    "silph_co"
    ],
    "liveRecIds": [
     470
@@ -19272,7 +20136,8 @@
     "one_island",
     "pallet_town",
     "rom_mined",
-    "two_island"
+    "two_island",
+    "safari_zone"
    ],
    "liveRecIds": [
     2055,
@@ -19335,7 +20200,10 @@
    "firstAreaEncountered": "saffron_city",
    "areasReferenced": [
     "rom_mined",
-    "saffron_city"
+    "saffron_city",
+    "five_island",
+    "four_island",
+    "six_island"
    ],
    "liveRecIds": [
     871
@@ -19430,7 +20298,10 @@
     "fuchsia_city",
     "lavender_town",
     "rom_mined",
-    "vermilion_city"
+    "vermilion_city",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "liveRecIds": [
     1067
@@ -19467,9 +20338,14 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "digletts_cave",
+    "indigo_plateau",
+    "rocket_hideout",
+    "route_2",
+    "ss_anne"
    ],
    "liveRecIds": [
     431
@@ -19605,7 +20481,9 @@
     "route_19",
     "route_20",
     "route_21",
-    "viridian_city"
+    "viridian_city",
+    "mt_moon",
+    "ss_anne"
    ],
    "liveRecIds": [
     1664,
@@ -19700,7 +20578,6 @@
     "seven_island",
     "six_island",
     "three_island",
-    "treasure_beach",
     "two_island",
     "vermilion_city",
     "viridian_city"
@@ -19740,7 +20617,8 @@
     "route_24",
     "route_25",
     "treasure_beach",
-    "water_labyrinth"
+    "water_labyrinth",
+    "three_island"
    ],
    "liveRecIds": [
     1836
@@ -19758,15 +20636,16 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "power_plant",
    "areasReferenced": [
     "kindle_road",
-    "mt_moon",
-    "pallet_town",
-    "pewter_city",
-    "resort_gorgeous",
     "rom_mined",
-    "treasure_beach"
+    "five_island",
+    "four_island",
+    "one_island",
+    "power_plant",
+    "seven_island",
+    "three_island"
    ],
    "liveRecIds": [
     914
@@ -19815,7 +20694,6 @@
     "outcast_island",
     "pallet_town",
     "pewter_city",
-    "resort_gorgeous",
     "rom_mined",
     "route_10",
     "route_11",
@@ -19831,7 +20709,23 @@
     "three_island",
     "two_island",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "five_island",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     1270,
@@ -19871,16 +20765,16 @@
    "areaId": "topik_1",
    "frequency": 1,
    "topikLevel": "A",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
     "five_island",
     "four_island",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "six_island",
-    "treasure_beach",
-    "water_path"
+    "water_path",
+    "seven_island",
+    "three_island"
    ],
    "liveRecIds": [
     3122
@@ -19950,8 +20844,8 @@
    "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "rom_mined",
-    "route_24",
-    "viridian_city"
+    "viridian_city",
+    "viridian_forest"
    ],
    "liveRecIds": [
     2722
@@ -20032,7 +20926,16 @@
     "vermilion_city",
     "viridian_city",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co",
+    "trainer_tower"
    ],
    "liveRecIds": [
     3177,
@@ -20096,14 +20999,18 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "route_24",
+   "firstAreaEncountered": "route_2",
    "areasReferenced": [
     "rom_mined",
     "route_11",
     "route_24",
     "route_25",
     "route_6",
-    "route_9"
+    "route_9",
+    "digletts_cave",
+    "mt_moon",
+    "route_2",
+    "ss_anne"
    ],
    "liveRecIds": [
     1302,
@@ -20227,9 +21134,11 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "viridian_forest"
    ],
    "liveRecIds": [
     236
@@ -20413,7 +21322,11 @@
     "route_8",
     "saffron_city",
     "seven_island",
-    "viridian_city"
+    "viridian_city",
+    "indigo_plateau",
+    "rock_tunnel",
+    "silph_co",
+    "two_island"
    ],
    "liveRecIds": [
     1510,
@@ -20492,7 +21405,6 @@
     "one_island",
     "outcast_island",
     "pallet_town",
-    "pewter_city",
     "resort_gorgeous",
     "rom_mined",
     "route_24",
@@ -20503,7 +21415,8 @@
     "treasure_beach",
     "two_island",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "seven_island"
    ],
    "liveRecIds": [
     2010,
@@ -20527,10 +21440,9 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "route_12",
+   "firstAreaEncountered": "pokemon_tower",
    "areasReferenced": [
     "green_path",
-    "kindle_road",
     "memorial_pillar",
     "outcast_island",
     "resort_gorgeous",
@@ -20538,7 +21450,11 @@
     "route_12",
     "ruin_valley",
     "water_labyrinth",
-    "water_path"
+    "water_path",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands",
+    "three_island"
    ],
    "liveRecIds": [
     1925
@@ -20659,7 +21575,11 @@
     "treasure_beach",
     "vermilion_city",
     "viridian_city",
-    "water_labyrinth"
+    "water_labyrinth",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co",
+    "three_island"
    ],
    "liveRecIds": [
     1487,
@@ -20681,9 +21601,10 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "liveRecIds": [
     4973
@@ -20713,7 +21634,11 @@
     "route_4",
     "seven_island",
     "treasure_beach",
-    "viridian_city"
+    "viridian_city",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "silph_co"
    ],
    "liveRecIds": [
     1769,

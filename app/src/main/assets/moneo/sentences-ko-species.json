@@ -170,8 +170,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[10]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "route_2",
+   "areasReferenced": [
+    "route_2"
+   ]
   },
   {
    "vocabId": "rom-species-2024:단데기",
@@ -185,9 +187,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[11]",
-   "firstAreaEncountered": "route_2",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "route_2"
+    "viridian_forest"
    ]
   },
   {
@@ -202,10 +204,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[12]",
-   "firstAreaEncountered": "route_24",
-   "areasReferenced": [
-    "route_24"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:뿔충이",
@@ -219,8 +219,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[13]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "route_2",
+   "areasReferenced": [
+    "route_2"
+   ]
   },
   {
    "vocabId": "rom-species-2024:딱충이",
@@ -234,9 +236,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[14]",
-   "firstAreaEncountered": "route_2",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
-    "route_2"
+    "viridian_forest"
    ]
   },
   {
@@ -251,10 +253,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[15]",
-   "firstAreaEncountered": "route_24",
-   "areasReferenced": [
-    "route_24"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:구구",
@@ -268,13 +268,14 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[16]",
-   "firstAreaEncountered": "saffron_city",
+   "firstAreaEncountered": "route_1",
    "areasReferenced": [
     "saffron_city",
     "lavender_town",
     "vermilion_city",
     "cinnabar_island",
-    "indigo_plateau"
+    "indigo_plateau",
+    "route_1"
    ],
    "liveRecIds": [
     2374,
@@ -295,9 +296,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[17]",
-   "firstAreaEncountered": "route_1",
+   "firstAreaEncountered": "route_13",
    "areasReferenced": [
-    "route_1"
+    "route_13"
    ]
   },
   {
@@ -312,10 +313,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[18]",
-   "firstAreaEncountered": "route_13",
-   "areasReferenced": [
-    "route_13"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:꼬렛",
@@ -329,7 +328,7 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[19]",
-   "firstAreaEncountered": "route_2",
+   "firstAreaEncountered": "route_1",
    "areasReferenced": [
     "route_2",
     "route_25",
@@ -338,7 +337,8 @@
     "route_8",
     "route_10",
     "route_11",
-    "route_9"
+    "route_9",
+    "route_1"
    ],
    "liveRecIds": [
     1277,
@@ -359,9 +359,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[20]",
-   "firstAreaEncountered": "route_1",
+   "firstAreaEncountered": "route_16",
    "areasReferenced": [
-    "route_1"
+    "route_16"
    ]
   },
   {
@@ -376,9 +376,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[21]",
-   "firstAreaEncountered": "route_16",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
-    "route_16"
+    "route_3"
    ]
   },
   {
@@ -393,9 +393,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[22]",
-   "firstAreaEncountered": "route_3",
+   "firstAreaEncountered": "route_17",
    "areasReferenced": [
-    "route_3"
+    "route_17"
    ]
   },
   {
@@ -410,10 +410,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[23]",
-   "firstAreaEncountered": "pewter_city",
-   "areasReferenced": [
-    "pewter_city"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:아보크",
@@ -442,7 +440,7 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[25]",
-   "firstAreaEncountered": "viridian_city",
+   "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -452,7 +450,8 @@
     "vermilion_city",
     "route_18",
     "route_22",
-    "seven_island"
+    "seven_island",
+    "viridian_forest"
    ],
    "liveRecIds": [
     2177,
@@ -489,8 +488,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[27]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "route_4",
+   "areasReferenced": [
+    "route_4"
+   ]
   },
   {
    "vocabId": "rom-species-2024:고지",
@@ -504,9 +505,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[28]",
-   "firstAreaEncountered": "route_4",
+   "firstAreaEncountered": "route_23",
    "areasReferenced": [
-    "route_4"
+    "route_23"
    ]
   },
   {
@@ -521,9 +522,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[30]",
-   "firstAreaEncountered": "route_3",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "route_3"
+    "safari_zone"
    ]
   },
   {
@@ -553,9 +554,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[33]",
-   "firstAreaEncountered": "route_3",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "route_3"
+    "safari_zone"
    ]
   },
   {
@@ -585,7 +586,7 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[35]",
-   "firstAreaEncountered": "route_6",
+   "firstAreaEncountered": "mt_moon",
    "areasReferenced": [
     "route_6",
     "saffron_city",
@@ -595,7 +596,10 @@
     "cinnabar_island",
     "celadon_city",
     "route_9",
-    "indigo_plateau"
+    "indigo_plateau",
+    "mt_moon",
+    "kanto_pokemon_league",
+    "rock_tunnel"
    ],
    "liveRecIds": [
     703,
@@ -632,8 +636,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[37]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "route_7",
+   "areasReferenced": [
+    "route_7"
+   ]
   },
   {
    "vocabId": "rom-species-2024:나인테일",
@@ -647,10 +653,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[38]",
-   "firstAreaEncountered": "route_7",
-   "areasReferenced": [
-    "route_7"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:푸린",
@@ -664,8 +668,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[39]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "route_3",
+   "areasReferenced": [
+    "route_3"
+   ]
   },
   {
    "vocabId": "rom-species-2024:푸크린",
@@ -679,10 +685,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[40]",
-   "firstAreaEncountered": "route_3",
-   "areasReferenced": [
-    "route_3"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:주뱃",
@@ -696,8 +700,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[41]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "mt_moon",
+   "areasReferenced": [
+    "mt_moon"
+   ]
   },
   {
    "vocabId": "rom-species-2024:골뱃",
@@ -711,8 +717,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[42]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ]
   },
   {
    "vocabId": "rom-species-2024:뚜벅쵸",
@@ -771,8 +779,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[46]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "mt_moon",
+   "areasReferenced": [
+    "mt_moon"
+   ]
   },
   {
    "vocabId": "rom-species-2024:파라섹트",
@@ -786,8 +796,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[47]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ]
   },
   {
    "vocabId": "rom-species-2024:콘팡",
@@ -801,8 +813,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[48]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "route_12",
+   "areasReferenced": [
+    "route_12"
+   ]
   },
   {
    "vocabId": "rom-species-2024:도나리",
@@ -816,9 +830,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[49]",
-   "firstAreaEncountered": "route_12",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "route_12"
+    "safari_zone"
    ]
   },
   {
@@ -833,7 +847,7 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[50]",
-   "firstAreaEncountered": "route_1",
+   "firstAreaEncountered": "digletts_cave",
    "areasReferenced": [
     "route_1",
     "route_2",
@@ -850,7 +864,8 @@
     "five_island",
     "four_island",
     "seven_island",
-    "three_island"
+    "three_island",
+    "digletts_cave"
    ],
    "liveRecIds": [
     1373,
@@ -872,8 +887,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[51]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "digletts_cave",
+   "areasReferenced": [
+    "digletts_cave"
+   ]
   },
   {
    "vocabId": "rom-species-2024:나옹",
@@ -887,14 +904,15 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[52]",
-   "firstAreaEncountered": "route_6",
+   "firstAreaEncountered": "route_5",
    "areasReferenced": [
     "route_6",
     "route_8",
     "route_10",
     "route_11",
     "celadon_city",
-    "route_9"
+    "route_9",
+    "route_5"
    ],
    "liveRecIds": [
     2420,
@@ -914,10 +932,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[53]",
-   "firstAreaEncountered": "pewter_city",
-   "areasReferenced": [
-    "pewter_city"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:고라파덕",
@@ -931,10 +947,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[54]",
-   "firstAreaEncountered": "pewter_city",
-   "areasReferenced": [
-    "pewter_city"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:골덕",
@@ -963,11 +977,12 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[56]",
-   "firstAreaEncountered": "viridian_city",
+   "firstAreaEncountered": "route_3",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
-    "cerulean_city"
+    "cerulean_city",
+    "route_3"
    ],
    "liveRecIds": [
     2220
@@ -985,9 +1000,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[57]",
-   "firstAreaEncountered": "route_3",
+   "firstAreaEncountered": "cerulean_cave",
    "areasReferenced": [
-    "route_3"
+    "cerulean_cave"
    ]
   },
   {
@@ -1002,10 +1017,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[58]",
-   "firstAreaEncountered": "route_23",
-   "areasReferenced": [
-    "route_23"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:윈디",
@@ -1034,8 +1047,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[60]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-species-2024:슈륙챙이",
@@ -1066,10 +1081,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[62]",
-   "firstAreaEncountered": "viridian_city",
-   "areasReferenced": [
-    "viridian_city"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:캐이시",
@@ -1083,11 +1096,12 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[63]",
-   "firstAreaEncountered": "route_25",
+   "firstAreaEncountered": "route_24",
    "areasReferenced": [
     "route_25",
     "seven_island",
-    "one_island"
+    "one_island",
+    "route_24"
    ],
    "liveRecIds": [
     3005
@@ -1105,9 +1119,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[64]",
-   "firstAreaEncountered": "route_24",
+   "firstAreaEncountered": "cerulean_cave",
    "areasReferenced": [
-    "route_24"
+    "cerulean_cave"
    ]
   },
   {
@@ -1137,11 +1151,12 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[66]",
-   "firstAreaEncountered": "cerulean_city",
+   "firstAreaEncountered": "rock_tunnel",
    "areasReferenced": [
     "cerulean_city",
     "lavender_town",
-    "vermilion_city"
+    "vermilion_city",
+    "rock_tunnel"
    ],
    "liveRecIds": [
     1024
@@ -1159,8 +1174,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[67]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ]
   },
   {
    "vocabId": "rom-species-2024:괴력몬",
@@ -1189,8 +1206,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[69]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "route_24",
+   "areasReferenced": [
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-species-2024:우츠동",
@@ -1204,9 +1223,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[70]",
-   "firstAreaEncountered": "route_24",
+   "firstAreaEncountered": "route_12",
    "areasReferenced": [
-    "route_24"
+    "route_12"
    ]
   },
   {
@@ -1221,10 +1240,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[71]",
-   "firstAreaEncountered": "route_12",
-   "areasReferenced": [
-    "route_12"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:왕눈해",
@@ -1238,8 +1255,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[72]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species-2024:독파리",
@@ -1253,10 +1272,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[73]",
-   "firstAreaEncountered": "pallet_town",
-   "areasReferenced": [
-    "pallet_town"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:꼬마돌",
@@ -1287,9 +1304,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[75]",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rock_tunnel",
    "areasReferenced": [
-    "pewter_city"
+    "rock_tunnel"
    ]
   },
   {
@@ -1304,10 +1321,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[76]",
-   "firstAreaEncountered": "pewter_city",
-   "areasReferenced": [
-    "pewter_city"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:포니타",
@@ -1357,9 +1372,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[79]",
-   "firstAreaEncountered": "cinnabar_island",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "cinnabar_island"
+    "cinnabar_island",
+    "pallet_town"
    ],
    "liveRecIds": [
     5006
@@ -1377,9 +1393,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[80]",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "cinnabar_island",
    "areasReferenced": [
-    "pallet_town"
+    "cinnabar_island"
    ]
   },
   {
@@ -1394,9 +1410,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[81]",
-   "firstAreaEncountered": "cinnabar_island",
+   "firstAreaEncountered": "power_plant",
    "areasReferenced": [
-    "cinnabar_island"
+    "power_plant"
    ]
   },
   {
@@ -1411,8 +1427,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[82]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "power_plant",
+   "areasReferenced": [
+    "power_plant"
+   ]
   },
   {
    "vocabId": "rom-species-2024:파오리",
@@ -1441,8 +1459,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[84]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ]
   },
   {
    "vocabId": "rom-species-2024:두트리오",
@@ -1456,10 +1476,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[85]",
-   "firstAreaEncountered": "route_16",
-   "areasReferenced": [
-    "route_16"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:쥬쥬",
@@ -1473,8 +1491,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[86]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "seafoam_islands",
+   "areasReferenced": [
+    "seafoam_islands"
+   ]
   },
   {
    "vocabId": "rom-species-2024:쥬레곤",
@@ -1488,8 +1508,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[87]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "seafoam_islands",
+   "areasReferenced": [
+    "seafoam_islands"
+   ]
   },
   {
    "vocabId": "rom-species-2024:질퍽이",
@@ -1503,8 +1525,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[88]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "pokemon_mansion",
+   "areasReferenced": [
+    "pokemon_mansion"
+   ]
   },
   {
    "vocabId": "rom-species-2024:질뻐기",
@@ -1518,9 +1542,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[89]",
-   "firstAreaEncountered": "celadon_city",
+   "firstAreaEncountered": "pokemon_mansion",
    "areasReferenced": [
-    "celadon_city"
+    "pokemon_mansion"
    ]
   },
   {
@@ -1565,8 +1589,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[92]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "pokemon_tower",
+   "areasReferenced": [
+    "pokemon_tower"
+   ]
   },
   {
    "vocabId": "rom-species-2024:고우스트",
@@ -1617,8 +1643,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[95]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "rock_tunnel",
+   "areasReferenced": [
+    "rock_tunnel"
+   ]
   },
   {
    "vocabId": "rom-species-2024:슬리프",
@@ -1632,9 +1660,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[96]",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_11",
    "areasReferenced": [
-    "pewter_city"
+    "route_11"
    ]
   },
   {
@@ -1649,10 +1677,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[97]",
-   "firstAreaEncountered": "route_11",
-   "areasReferenced": [
-    "route_11"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:크랩",
@@ -1666,8 +1692,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[98]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species-2024:킹크랩",
@@ -1698,9 +1726,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[100]",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_10",
    "areasReferenced": [
-    "pallet_town"
+    "route_10"
    ]
   },
   {
@@ -1715,9 +1743,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[101]",
-   "firstAreaEncountered": "route_10",
+   "firstAreaEncountered": "cerulean_cave",
    "areasReferenced": [
-    "route_10"
+    "cerulean_cave"
    ]
   },
   {
@@ -1732,8 +1760,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[102]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ]
   },
   {
    "vocabId": "rom-species-2024:나시",
@@ -1762,10 +1792,11 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[104]",
-   "firstAreaEncountered": "cerulean_city",
+   "firstAreaEncountered": "pokemon_tower",
    "areasReferenced": [
     "cerulean_city",
-    "lavender_town"
+    "lavender_town",
+    "pokemon_tower"
    ],
    "liveRecIds": [
     766,
@@ -1786,9 +1817,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[105]",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "indigo_plateau",
    "areasReferenced": [
-    "pewter_city"
+    "indigo_plateau"
    ]
   },
   {
@@ -1852,8 +1883,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[109]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "pokemon_mansion",
+   "areasReferenced": [
+    "pokemon_mansion"
+   ]
   },
   {
    "vocabId": "rom-species-2024:또도가스",
@@ -1867,10 +1900,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[110]",
-   "firstAreaEncountered": "celadon_city",
-   "areasReferenced": [
-    "celadon_city"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:뿔카노",
@@ -1884,8 +1915,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[111]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ]
   },
   {
    "vocabId": "rom-species-2024:코뿌리",
@@ -1914,9 +1947,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[113]",
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "pewter_city",
     "cerulean_city",
     "lavender_town",
     "vermilion_city",
@@ -1926,8 +1958,12 @@
     "water_path",
     "six_island",
     "five_island",
-    "treasure_beach",
-    "four_island"
+    "four_island",
+    "safari_zone",
+    "pokemon_mansion",
+    "seven_island",
+    "silph_co",
+    "three_island"
    ],
    "liveRecIds": [
     632,
@@ -1949,8 +1985,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[114]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "route_21",
+   "areasReferenced": [
+    "route_21"
+   ]
   },
   {
    "vocabId": "rom-species-2024:캥카",
@@ -1964,9 +2002,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[115]",
-   "firstAreaEncountered": "route_21",
+   "firstAreaEncountered": "safari_zone",
    "areasReferenced": [
-    "route_21"
+    "safari_zone"
    ]
   },
   {
@@ -1981,8 +2019,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[116]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species-2024:시드라",
@@ -1996,10 +2036,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[117]",
-   "firstAreaEncountered": "pallet_town",
-   "areasReferenced": [
-    "pallet_town"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:콘치",
@@ -2013,8 +2051,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[118]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-species-2024:왕콘치",
@@ -2028,9 +2068,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[119]",
-   "firstAreaEncountered": "viridian_city",
+   "firstAreaEncountered": "fuchsia_city",
    "areasReferenced": [
-    "viridian_city"
+    "fuchsia_city"
    ]
   },
   {
@@ -2045,9 +2085,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[120]",
-   "firstAreaEncountered": "fuchsia_city",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "fuchsia_city"
+    "pallet_town"
    ]
   },
   {
@@ -2062,10 +2102,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[121]",
-   "firstAreaEncountered": "pallet_town",
-   "areasReferenced": [
-    "pallet_town"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:마임맨",
@@ -2154,8 +2192,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[127]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ]
   },
   {
    "vocabId": "rom-species-2024:켄타로스",
@@ -2169,8 +2209,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[128]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ]
   },
   {
    "vocabId": "rom-species-2024:잉어킹",
@@ -2184,11 +2226,12 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[129]",
-   "firstAreaEncountered": "route_2",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "route_2",
     "route_4",
-    "saffron_city"
+    "saffron_city",
+    "pallet_town"
    ],
    "liveRecIds": [
     1399,
@@ -2242,8 +2285,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[132]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "route_13",
+   "areasReferenced": [
+    "route_13"
+   ]
   },
   {
    "vocabId": "rom-species-2024:이브이",
@@ -2257,10 +2302,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[133]",
-   "firstAreaEncountered": "route_13",
-   "areasReferenced": [
-    "route_13"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:샤미드",
@@ -2484,8 +2527,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[147]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ]
   },
   {
    "vocabId": "rom-species-2024:신뇽",
@@ -2499,8 +2544,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[148]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "safari_zone",
+   "areasReferenced": [
+    "safari_zone"
+   ]
   },
   {
    "vocabId": "rom-species-2024:망나뇽",
@@ -3281,9 +3328,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[202]",
-   "firstAreaEncountered": "mt_moon",
+   "firstAreaEncountered": "cerulean_cave",
    "areasReferenced": [
-    "mt_moon"
+    "cerulean_cave"
    ]
   },
   {
@@ -3314,7 +3361,9 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[204]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "six_island"
+   ]
   },
   {
    "vocabId": "rom-species-2024:쏘콘",
@@ -3641,9 +3690,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[223]",
-   "firstAreaEncountered": "mt_moon",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "mt_moon"
+    "trainer_tower"
    ],
    "liveRecIds": [
     5154
@@ -3661,10 +3710,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[224]",
-   "firstAreaEncountered": "mt_moon",
-   "areasReferenced": [
-    "mt_moon"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:딜리버드",
@@ -3708,10 +3755,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[227]",
-   "firstAreaEncountered": "mt_moon",
-   "areasReferenced": [
-    "mt_moon"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:델빌",
@@ -3785,10 +3830,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[232]",
-   "firstAreaEncountered": "pewter_city",
-   "areasReferenced": [
-    "pewter_city"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:노라키",
@@ -3997,10 +4040,8 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[247]",
-   "firstAreaEncountered": "pewter_city",
-   "areasReferenced": [
-    "pewter_city"
-   ]
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species-2024:마기라스",

@@ -292,7 +292,9 @@
    "firstAreaEncountered": "ss_anne",
    "areasReferenced": [
     "ss_anne",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -560,7 +562,9 @@
     "pewter_city",
     "rom_mined",
     "route_11",
-    "route_12"
+    "route_12",
+    "safari_zone",
+    "seafoam_islands"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -716,7 +720,8 @@
     "pewter_city",
     "rom_mined",
     "route_13",
-    "route_23"
+    "route_23",
+    "safari_zone"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -982,7 +987,8 @@
     "rom_mined",
     "route_12",
     "route_24",
-    "viridian_city"
+    "viridian_city",
+    "mt_moon"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -1389,7 +1395,11 @@
     "fuchsia_city",
     "celadon_city",
     "rom_mined",
-    "seven_island"
+    "seven_island",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -1505,9 +1515,8 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 16,
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_7",
    "areasReferenced": [
-    "pewter_city",
     "route_7",
     "rom_mined",
     "green_path",
@@ -1518,7 +1527,8 @@
     "memorial_pillar",
     "outcast_island",
     "water_path",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -1781,7 +1791,8 @@
    "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "viridian_city",
-    "rom_mined"
+    "rom_mined",
+    "digletts_cave"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -1889,7 +1900,8 @@
     "rom_mined",
     "route_11",
     "vermilion_city",
-    "viridian_city"
+    "viridian_city",
+    "three_island"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -3435,7 +3447,11 @@
     "cinnabar_island",
     "pallet_town",
     "rom_mined",
-    "vermilion_city"
+    "vermilion_city",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "sourceTypes": [
     "item_description",
@@ -5154,7 +5170,8 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "silph_co"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -5471,9 +5488,12 @@
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 9,
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pokemon_tower",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "one_island",
+    "pokemon_tower",
+    "power_plant"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -6868,7 +6888,8 @@
     "power_plant",
     "rom_mined",
     "route_10",
-    "viridian_city"
+    "viridian_city",
+    "six_island"
    ],
    "sourceTypes": [
     "pokemon_ability",
@@ -7430,7 +7451,8 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "six_island"
    ],
    "sourceTypes": [
     "pokemon_ability",
@@ -8297,7 +8319,20 @@
     "ruin_valley",
     "four_island",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -8382,7 +8417,20 @@
     "ruin_valley",
     "four_island",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -8430,15 +8478,19 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "treasure_beach",
     "seven_island",
     "six_island",
     "three_island",
-    "ruin_valley",
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "power_plant",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -8501,7 +8553,13 @@
     "five_island",
     "one_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co",
+    "ss_anne"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -8584,7 +8642,20 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -8649,7 +8720,15 @@
     "three_island",
     "ruin_valley",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "mt_moon",
+    "rock_tunnel",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -8731,7 +8810,20 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -8814,7 +8906,19 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -8899,7 +9003,20 @@
     "ruin_valley",
     "four_island",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -8983,7 +9100,19 @@
     "ruin_valley",
     "four_island",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -9049,7 +9178,20 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -9094,7 +9236,10 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "kanto_pokemon_league",
+    "silph_co",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -9179,7 +9324,20 @@
     "ruin_valley",
     "one_island",
     "four_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -9212,7 +9370,13 @@
     "route_18",
     "route_22",
     "rom_mined",
-    "seven_island"
+    "seven_island",
+    "digletts_cave",
+    "indigo_plateau",
+    "mt_moon",
+    "route_2",
+    "six_island",
+    "ss_anne"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -9270,14 +9434,22 @@
     "seven_island",
     "five_isle_meadow",
     "two_island",
-    "treasure_beach",
     "kindle_road",
     "three_island",
     "six_island",
     "ruin_valley",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "rock_tunnel",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -9350,7 +9522,12 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "power_plant",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -9422,7 +9599,10 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "kanto_pokemon_league",
+    "rock_tunnel",
+    "silph_co"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -9503,7 +9683,16 @@
     "ruin_valley",
     "one_island",
     "four_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "pokemon_tower",
+    "power_plant",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -9560,7 +9749,10 @@
     "indigo_plateau",
     "rom_mined",
     "seven_island",
-    "one_island"
+    "one_island",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -9622,7 +9814,6 @@
     "five_isle_meadow",
     "two_island",
     "green_path",
-    "treasure_beach",
     "water_labyrinth",
     "water_path",
     "six_island",
@@ -9632,7 +9823,20 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -9697,7 +9901,17 @@
     "kindle_road",
     "water_path",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "ss_anne",
+    "three_island",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -9773,7 +9987,15 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "rock_tunnel",
+    "safari_zone",
+    "silph_co",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -9796,7 +10018,6 @@
     3946
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_4",
@@ -9814,7 +10035,6 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "resort_gorgeous",
     "memorial_pillar",
     "seven_island",
     "five_isle_meadow",
@@ -9827,9 +10047,23 @@
     "five_island",
     "one_island",
     "four_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -9854,7 +10088,6 @@
     2429
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_4",
@@ -9876,7 +10109,7 @@
     "one_island",
     "four_island"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "item_description",
     "npc_dialog",
@@ -9909,12 +10142,16 @@
     "vermilion_city",
     "celadon_city",
     "rom_mined",
-    "treasure_beach",
     "kindle_road",
     "one_island",
     "five_isle_meadow",
     "seven_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "safari_zone",
+    "six_island",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -9967,9 +10204,7 @@
     "seven_island",
     "two_island",
     "green_path",
-    "treasure_beach",
     "water_labyrinth",
-    "kindle_road",
     "water_path",
     "three_island",
     "six_island",
@@ -9978,9 +10213,21 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "safari_zone",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_2",
    "sourceTypes": [
     "item_description",
     "npc_dialog",
@@ -10044,7 +10291,12 @@
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "rock_tunnel",
+    "rocket_hideout",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10076,7 +10328,6 @@
     "viridian_city",
     "route_2",
     "pewter_city",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -10109,7 +10360,16 @@
     "three_island",
     "five_island",
     "four_island",
-    "one_island"
+    "one_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10138,7 +10398,6 @@
     "viridian_city",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -10181,7 +10440,13 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10236,7 +10501,12 @@
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "rock_tunnel",
+    "rocket_hideout",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10269,7 +10539,6 @@
     "route_2",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -10291,7 +10560,6 @@
     "seven_island",
     "two_island",
     "green_path",
-    "treasure_beach",
     "kindle_road",
     "water_path",
     "six_island",
@@ -10300,7 +10568,12 @@
     "five_island",
     "one_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "power_plant",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10343,7 +10616,10 @@
     "route_20",
     "route_21",
     "rom_mined",
-    "kindle_road"
+    "kindle_road",
+    "five_island",
+    "four_island",
+    "six_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10370,9 +10646,13 @@
     "pallet_town",
     "viridian_city",
     "mt_moon",
-    "route_24",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "one_island",
+    "resort_gorgeous",
+    "six_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10427,7 +10707,16 @@
     "six_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10453,7 +10742,6 @@
    "areasReferenced": [
     "pallet_town",
     "route_2",
-    "pewter_city",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -10491,7 +10779,10 @@
     "water_path",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "safari_zone",
+    "seven_island",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10550,7 +10841,6 @@
     "viridian_city",
     "route_2",
     "pewter_city",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_5",
@@ -10577,7 +10867,14 @@
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10637,7 +10934,6 @@
     "seven_island",
     "five_isle_meadow",
     "two_island",
-    "treasure_beach",
     "kindle_road",
     "water_path",
     "six_island",
@@ -10645,7 +10941,13 @@
     "ruin_valley",
     "five_island",
     "four_island",
-    "one_island"
+    "one_island",
+    "cerulean_cave",
+    "pokemon_mansion",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10685,7 +10987,12 @@
     "fuchsia_city",
     "cinnabar_island",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "silph_co"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10715,7 +11022,6 @@
     "pallet_town",
     "viridian_city",
     "pewter_city",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "lavender_town",
@@ -10724,7 +11030,20 @@
     "rom_mined",
     "treasure_beach",
     "resort_gorgeous",
-    "kindle_road"
+    "kindle_road",
+    "five_island",
+    "four_island",
+    "kanto_pokemon_league",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "six_island",
+    "three_island",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10752,9 +11071,7 @@
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
-    "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "saffron_city",
     "route_8",
@@ -10766,7 +11083,6 @@
     "route_9",
     "rom_mined",
     "green_path",
-    "treasure_beach",
     "canyon_entrance",
     "resort_gorgeous",
     "water_path",
@@ -10779,7 +11095,20 @@
     "one_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "digletts_cave",
+    "indigo_plateau",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10817,7 +11146,6 @@
     "indigo_plateau",
     "rom_mined",
     "green_path",
-    "resort_gorgeous",
     "canyon_entrance",
     "memorial_pillar",
     "water_path",
@@ -10829,7 +11157,16 @@
     "four_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "digletts_cave",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "route_2",
+    "silph_co",
+    "six_island",
+    "ss_anne"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -10925,7 +11262,6 @@
    ],
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_3",
     "mt_moon",
     "route_4",
@@ -10961,7 +11297,11 @@
     "water_path",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "six_island",
+    "ss_anne",
+    "three_island",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -11023,12 +11363,17 @@
     "rom_mined",
     "seven_island",
     "two_island",
-    "treasure_beach",
     "three_island",
     "six_island",
     "five_island",
     "four_island",
-    "one_island"
+    "one_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -11066,7 +11411,10 @@
     "rom_mined",
     "one_island",
     "two_island",
-    "three_island"
+    "three_island",
+    "indigo_plateau",
+    "rocket_hideout",
+    "silph_co"
    ],
    "firstAreaEncountered": "cerulean_city",
    "sourceTypes": [
@@ -11164,7 +11512,16 @@
     "seven_island",
     "six_island",
     "five_island",
-    "four_island"
+    "four_island",
+    "digletts_cave",
+    "pokemon_tower",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -11190,7 +11547,17 @@
     "viridian_city",
     "fuchsia_city",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave",
+    "indigo_plateau",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "rocket_hideout",
+    "safari_zone",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -11212,9 +11579,11 @@
    "areasReferenced": [
     "viridian_city",
     "five_isle_meadow",
-    "ruin_valley",
-    "treasure_beach",
-    "rom_mined"
+    "rom_mined",
+    "four_island",
+    "safari_zone",
+    "six_island",
+    "three_island"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -11312,7 +11681,6 @@
    ],
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_24",
     "route_25",
     "route_6",
@@ -11331,7 +11699,15 @@
     "water_path",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "four_island",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "seven_island",
+    "silph_co",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -11362,9 +11738,7 @@
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
-    "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "route_24",
     "route_25",
@@ -11391,7 +11765,12 @@
     "four_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -11539,7 +11918,12 @@
     "ruin_valley",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "rock_tunnel",
+    "safari_zone",
+    "seven_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -11566,7 +11950,6 @@
     2333
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_4",
@@ -11590,9 +11973,14 @@
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "mt_moon",
+    "rocket_hideout",
+    "route_2",
+    "silph_co",
+    "ss_anne"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "item_description",
     "npc_dialog",
@@ -11641,7 +12029,6 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "resort_gorgeous",
     "memorial_pillar",
     "seven_island",
     "five_isle_meadow",
@@ -11654,7 +12041,19 @@
     "five_island",
     "one_island",
     "four_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -11678,7 +12077,6 @@
     2356
    ],
    "areasReferenced": [
-    "pallet_town",
     "fuchsia_city",
     "cinnabar_island",
     "indigo_plateau",
@@ -11687,9 +12085,11 @@
     "four_island",
     "seven_island",
     "two_island",
-    "six_island"
+    "six_island",
+    "rock_tunnel",
+    "trainer_tower"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "rock_tunnel",
    "sourceTypes": [
     "item_description",
     "system_text"
@@ -11756,7 +12156,10 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -11798,7 +12201,9 @@
     "rom_mined",
     "resort_gorgeous",
     "one_island",
-    "four_island"
+    "four_island",
+    "pokemon_mansion",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -11822,7 +12227,6 @@
     3047
    ],
    "areasReferenced": [
-    "pewter_city",
     "cerulean_city",
     "route_25",
     "lavender_town",
@@ -11839,9 +12243,21 @@
     "route_22",
     "rom_mined",
     "one_island",
-    "two_island"
+    "two_island",
+    "digletts_cave",
+    "indigo_plateau",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co"
    ],
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "mt_moon",
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
@@ -11870,7 +12286,6 @@
     "viridian_city",
     "route_2",
     "pewter_city",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_5",
@@ -11894,7 +12309,6 @@
     "seven_island",
     "two_island",
     "green_path",
-    "treasure_beach",
     "kindle_road",
     "water_path",
     "six_island",
@@ -11904,7 +12318,13 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "rock_tunnel",
+    "safari_zone",
+    "silph_co",
+    "ss_anne"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -12002,7 +12422,9 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "rock_tunnel",
+    "silph_co"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -12075,7 +12497,18 @@
     "five_island",
     "four_island",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -12127,7 +12560,11 @@
     "rom_mined",
     "seven_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "indigo_plateau",
+    "rock_tunnel",
+    "silph_co",
+    "two_island"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -12216,7 +12653,10 @@
     "three_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "indigo_plateau",
+    "rock_tunnel",
+    "silph_co"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -12267,7 +12707,11 @@
     "six_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "rock_tunnel",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -12293,7 +12737,6 @@
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
-    "pewter_city",
     "route_24",
     "route_25",
     "route_6",
@@ -12319,7 +12762,9 @@
     "four_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "route_17",
+    "seven_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -12348,7 +12793,6 @@
    ],
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_24",
     "route_25",
     "route_22",
@@ -12371,7 +12815,11 @@
     "four_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "mt_moon",
+    "six_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -12399,8 +12847,6 @@
    ],
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
-    "mt_moon",
     "fuchsia_city",
     "route_21",
     "celadon_city",
@@ -12413,7 +12859,10 @@
     "water_path",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "kanto_pokemon_league",
+    "seven_island",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -12454,7 +12903,14 @@
     "ruin_valley",
     "five_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "six_island"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -12477,7 +12933,6 @@
     5270
    ],
    "areasReferenced": [
-    "pallet_town",
     "pewter_city",
     "cerulean_city",
     "saffron_city",
@@ -12491,9 +12946,10 @@
     "three_island",
     "four_island",
     "seven_island",
-    "six_island"
+    "six_island",
+    "trainer_tower"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "item_description",
     "system_text"
@@ -12540,9 +12996,13 @@
     640
    ],
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co",
+    "six_island"
    ],
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "safari_zone",
    "sourceTypes": [
     "system_text"
    ],
@@ -12583,7 +13043,11 @@
     "fuchsia_city",
     "celadon_city",
     "rom_mined",
-    "kindle_road"
+    "kindle_road",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "safari_zone"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -12677,7 +13141,10 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "two_island"
+    "two_island",
+    "rock_tunnel",
+    "ss_anne",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -12713,13 +13180,14 @@
     "treasure_beach",
     "resort_gorgeous",
     "water_labyrinth",
-    "kindle_road",
     "four_island",
     "memorial_pillar",
     "outcast_island",
     "water_path",
     "two_island",
-    "three_island"
+    "three_island",
+    "pokemon_mansion",
+    "silph_co"
    ],
    "firstAreaEncountered": "route_2",
    "sourceTypes": [
@@ -12840,7 +13308,13 @@
     "four_island",
     "one_island",
     "two_island",
-    "three_island"
+    "three_island",
+    "cerulean_cave",
+    "five_island",
+    "mt_moon",
+    "six_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -12876,7 +13350,14 @@
     "cinnabar_island",
     "celadon_city",
     "indigo_plateau",
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "route_2",
+    "safari_zone",
+    "ss_anne"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -12901,11 +13382,9 @@
     1710
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -12940,9 +13419,14 @@
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "viridian_forest"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -13003,11 +13487,9 @@
     4098
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "route_2",
     "pewter_city",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_5",
@@ -13032,14 +13514,17 @@
     "rom_mined",
     "seven_island",
     "two_island",
-    "treasure_beach",
     "three_island",
     "six_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
@@ -13065,7 +13550,6 @@
     3035
    ],
    "areasReferenced": [
-    "pewter_city",
     "cerulean_city",
     "lavender_town",
     "vermilion_city",
@@ -13087,9 +13571,15 @@
     "one_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "mt_moon",
+    "pokemon_tower",
+    "power_plant",
+    "seven_island",
+    "ss_anne",
+    "viridian_forest"
    ],
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "viridian_forest",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -13157,7 +13647,12 @@
     "five_island",
     "two_island",
     "three_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
@@ -13224,7 +13719,6 @@
     "route_9",
     "rom_mined",
     "green_path",
-    "treasure_beach",
     "canyon_entrance",
     "resort_gorgeous",
     "kindle_road",
@@ -13235,7 +13729,10 @@
     "five_island",
     "four_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "rocket_hideout",
+    "seven_island",
+    "silph_co"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -13297,7 +13794,6 @@
     "celadon_city",
     "route_9",
     "rom_mined",
-    "resort_gorgeous",
     "kindle_road",
     "memorial_pillar",
     "water_path",
@@ -13306,7 +13802,23 @@
     "five_isle_meadow",
     "four_island",
     "outcast_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "five_island",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -13332,7 +13844,8 @@
    "areasReferenced": [
     "route_3",
     "rom_mined",
-    "ruin_valley"
+    "ruin_valley",
+    "safari_zone"
    ],
    "firstAreaEncountered": "route_3",
    "sourceTypes": [
@@ -13357,7 +13870,11 @@
     "pallet_town",
     "fuchsia_city",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -13420,7 +13937,9 @@
     "ruin_valley",
     "five_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "safari_zone",
+    "seven_island"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -13441,12 +13960,12 @@
     2398
    ],
    "areasReferenced": [
-    "pewter_city",
     "vermilion_city",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "indigo_plateau"
    ],
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "vermilion_city",
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
@@ -13470,10 +13989,8 @@
     3891
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "saffron_city",
@@ -13485,18 +14002,20 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "resort_gorgeous",
     "seven_island",
     "two_island",
-    "treasure_beach",
     "kindle_road",
     "six_island",
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "silph_co"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -13550,7 +14069,10 @@
     "three_island",
     "five_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "safari_zone"
    ],
    "firstAreaEncountered": "route_1",
    "sourceTypes": [
@@ -13586,7 +14108,6 @@
     1883
    ],
    "areasReferenced": [
-    "pewter_city",
     "rom_mined",
     "green_path",
     "treasure_beach",
@@ -13594,9 +14115,17 @@
     "water_labyrinth",
     "kindle_road",
     "memorial_pillar",
-    "outcast_island"
+    "outcast_island",
+    "five_island",
+    "four_island",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "safari_zone",
+    "seafoam_islands",
+    "three_island"
    ],
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "pokemon_tower",
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
@@ -13672,7 +14201,10 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "digletts_cave",
+    "silph_co",
+    "ss_anne"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -13697,7 +14229,9 @@
    ],
    "areasReferenced": [
     "fuchsia_city",
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave",
+    "six_island"
    ],
    "firstAreaEncountered": "fuchsia_city",
    "sourceTypes": [
@@ -13873,9 +14407,13 @@
     "pallet_town",
     "viridian_city",
     "pewter_city",
-    "route_16",
     "rom_mined",
-    "kindle_road"
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "one_island",
+    "pokemon_mansion",
+    "safari_zone",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -13920,7 +14458,13 @@
     "six_island",
     "five_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "rocket_hideout",
+    "safari_zone",
+    "silph_co"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -13959,7 +14503,15 @@
     "kindle_road",
     "memorial_pillar",
     "outcast_island",
-    "water_path"
+    "water_path",
+    "five_island",
+    "four_island",
+    "one_island",
+    "pokemon_mansion",
+    "safari_zone",
+    "seven_island",
+    "silph_co",
+    "three_island"
    ],
    "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
@@ -14073,7 +14625,10 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "seven_island"
+    "seven_island",
+    "one_island",
+    "rock_tunnel",
+    "silph_co"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -14111,7 +14666,9 @@
     "route_11",
     "route_12",
     "route_9",
-    "rom_mined"
+    "rom_mined",
+    "indigo_plateau",
+    "silph_co"
    ],
    "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
@@ -14142,7 +14699,6 @@
     4250
    ],
    "areasReferenced": [
-    "pallet_town",
     "pewter_city",
     "cerulean_city",
     "saffron_city",
@@ -14173,7 +14729,7 @@
     "two_island",
     "trainer_tower"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "item_description",
     "npc_dialog",
@@ -14198,7 +14754,11 @@
     "pewter_city",
     "cerulean_city",
     "lavender_town",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
@@ -14277,7 +14837,6 @@
     "viridian_city",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -14313,7 +14872,13 @@
     "six_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -14342,12 +14907,15 @@
     "ruin_valley",
     "resort_gorgeous",
     "water_labyrinth",
-    "kindle_road",
     "memorial_pillar",
     "outcast_island",
-    "water_path"
+    "water_path",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands",
+    "three_island"
    ],
-   "firstAreaEncountered": "route_12",
+   "firstAreaEncountered": "pokemon_tower",
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
@@ -14435,15 +15003,24 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "resort_gorgeous",
     "seven_island",
     "two_island",
-    "treasure_beach",
     "three_island",
     "six_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -14470,7 +15047,6 @@
     4176
    ],
    "areasReferenced": [
-    "pallet_town",
     "route_3",
     "mt_moon",
     "route_4",
@@ -14483,15 +15059,20 @@
     "route_16",
     "celadon_city",
     "rom_mined",
-    "treasure_beach",
     "seven_island",
     "six_island",
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "three_island"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_3",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -14544,7 +15125,8 @@
     "four_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "silph_co"
    ],
    "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
@@ -14578,7 +15160,8 @@
    ],
    "areasReferenced": [
     "pallet_town",
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -14633,7 +15216,6 @@
     "viridian_city",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "route_24",
     "route_25",
@@ -14665,7 +15247,17 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -14706,13 +15298,16 @@
     "green_path",
     "resort_gorgeous",
     "water_labyrinth",
-    "kindle_road",
     "memorial_pillar",
     "water_path",
     "seven_island",
     "ruin_valley",
     "one_island",
-    "outcast_island"
+    "outcast_island",
+    "kanto_pokemon_league",
+    "rock_tunnel",
+    "silph_co",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -14765,7 +15360,8 @@
     "seven_island",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "kanto_pokemon_league"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -14790,10 +15386,11 @@
     598
    ],
    "areasReferenced": [
-    "pewter_city",
-    "rom_mined"
+    "rom_mined",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rock_tunnel",
    "sourceTypes": [
     "pokedex_entry",
     "system_text"
@@ -14829,7 +15426,10 @@
     "route_21",
     "celadon_city",
     "route_9",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -14883,9 +15483,7 @@
     3010
    ],
    "areasReferenced": [
-    "pallet_town",
     "route_3",
-    "mt_moon",
     "route_4",
     "route_24",
     "route_25",
@@ -14908,9 +15506,17 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "power_plant",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_3",
    "sourceTypes": [
     "npc_dialog",
     "system_text",
@@ -14941,7 +15547,13 @@
     "celadon_city",
     "rom_mined",
     "four_island",
-    "seven_island"
+    "seven_island",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "rock_tunnel",
+    "silph_co",
+    "two_island"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -14998,7 +15610,10 @@
    "areasReferenced": [
     "cerulean_city",
     "lavender_town",
-    "rom_mined"
+    "rom_mined",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "firstAreaEncountered": "cerulean_city",
    "sourceTypes": [
@@ -15128,7 +15743,6 @@
    ],
    "areasReferenced": [
     "viridian_city",
-    "pewter_city",
     "mt_moon",
     "route_4",
     "route_15",
@@ -15170,9 +15784,14 @@
     "route_10",
     "route_12",
     "route_13",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "viridian_forest"
    ],
-   "firstAreaEncountered": "route_8",
+   "firstAreaEncountered": "viridian_forest",
    "sourceTypes": [
     "item_description",
     "npc_dialog",
@@ -15198,8 +15817,6 @@
     "pallet_town",
     "viridian_city",
     "route_2",
-    "pewter_city",
-    "mt_moon",
     "route_24",
     "route_25",
     "route_10",
@@ -15225,7 +15842,14 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -15256,7 +15880,6 @@
     "route_1",
     "viridian_city",
     "route_2",
-    "pewter_city",
     "route_3",
     "route_4",
     "route_24",
@@ -15298,7 +15921,14 @@
     "five_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "digletts_cave",
+    "indigo_plateau",
+    "mt_moon",
+    "rocket_hideout",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -15356,7 +15986,6 @@
     3048
    ],
    "areasReferenced": [
-    "pewter_city",
     "rom_mined",
     "green_path",
     "ruin_valley",
@@ -15367,9 +15996,10 @@
     "outcast_island",
     "water_path",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island"
    ],
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "rom_mined",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -15403,7 +16033,11 @@
     "memorial_pillar",
     "outcast_island",
     "water_path",
-    "six_island"
+    "six_island",
+    "mt_moon",
+    "pokemon_tower",
+    "three_island",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -15432,8 +16066,6 @@
    "areasReferenced": [
     "viridian_city",
     "route_2",
-    "pewter_city",
-    "mt_moon",
     "route_4",
     "route_24",
     "route_5",
@@ -15448,7 +16080,11 @@
     "water_path",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "five_island",
+    "four_island",
+    "seven_island",
+    "six_island"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -15481,7 +16117,8 @@
     "cerulean_city",
     "fuchsia_city",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "six_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -15531,7 +16168,12 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "mt_moon",
+    "rock_tunnel",
+    "ss_anne",
+    "trainer_tower",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -15558,7 +16200,9 @@
     "pallet_town",
     "viridian_city",
     "cinnabar_island",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -15581,9 +16225,20 @@
     560
    ],
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave",
+    "five_island",
+    "four_island",
+    "kanto_pokemon_league",
+    "one_island",
+    "pokemon_mansion",
+    "power_plant",
+    "rocket_hideout",
+    "safari_zone",
+    "silph_co",
+    "three_island"
    ],
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "safari_zone",
    "sourceTypes": [
     "system_text"
    ],
@@ -15663,9 +16318,12 @@
     271
    ],
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_forest",
    "sourceTypes": [
     "system_text"
    ],
@@ -15686,7 +16344,10 @@
     "pallet_town",
     "viridian_city",
     "pewter_city",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -15707,9 +16368,13 @@
    ],
    "areasReferenced": [
     "saffron_city",
-    "rom_mined"
+    "rom_mined",
+    "digletts_cave",
+    "indigo_plateau",
+    "route_2",
+    "ss_anne"
    ],
-   "firstAreaEncountered": "saffron_city",
+   "firstAreaEncountered": "route_2",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -15758,7 +16423,6 @@
     2697
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_4",
@@ -15767,13 +16431,18 @@
     "cinnabar_island",
     "celadon_city",
     "rom_mined",
-    "resort_gorgeous",
     "one_island",
     "seven_island",
     "two_island",
-    "three_island"
+    "three_island",
+    "five_island",
+    "indigo_plateau",
+    "rock_tunnel",
+    "silph_co",
+    "six_island",
+    "trainer_tower"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -15853,7 +16522,10 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "rocket_hideout",
+    "silph_co",
+    "ss_anne"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -15880,7 +16552,6 @@
     2273
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_3",
@@ -15923,9 +16594,14 @@
     "six_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "mt_moon",
+    "pokemon_tower",
+    "power_plant",
+    "ss_anne",
+    "viridian_forest"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "item_description",
     "npc_dialog",
@@ -15953,8 +16629,6 @@
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
-    "pewter_city",
-    "mt_moon",
     "route_24",
     "route_25",
     "route_6",
@@ -15979,7 +16653,8 @@
     "one_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -16071,7 +16746,6 @@
     "green_path",
     "resort_gorgeous",
     "water_labyrinth",
-    "kindle_road",
     "memorial_pillar",
     "water_path",
     "seven_island",
@@ -16079,7 +16753,16 @@
     "three_island",
     "ruin_valley",
     "four_island",
-    "outcast_island"
+    "outcast_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "one_island",
+    "pokemon_mansion",
+    "rock_tunnel",
+    "safari_zone",
+    "silph_co",
+    "trainer_tower",
+    "two_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -16192,7 +16875,8 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "silph_co"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -16243,7 +16927,9 @@
     "six_island",
     "three_island",
     "five_island",
-    "four_island"
+    "four_island",
+    "pokemon_mansion",
+    "silph_co"
    ],
    "firstAreaEncountered": "route_1",
    "sourceTypes": [
@@ -16267,7 +16953,6 @@
     892
    ],
    "areasReferenced": [
-    "pallet_town",
     "route_1",
     "viridian_city",
     "pewter_city",
@@ -16279,9 +16964,15 @@
     "celadon_city",
     "rom_mined",
     "four_island",
-    "seven_island"
+    "seven_island",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "silph_co",
+    "trainer_tower",
+    "two_island"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "item_description",
     "npc_dialog",
@@ -16307,7 +16998,8 @@
     "saffron_city",
     "cinnabar_island",
     "indigo_plateau",
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
    "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
@@ -16339,7 +17031,8 @@
     "celadon_city",
     "rom_mined",
     "one_island",
-    "two_island"
+    "two_island",
+    "safari_zone"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -16414,7 +17107,14 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "three_island",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -16460,7 +17160,8 @@
     "resort_gorgeous",
     "water_labyrinth",
     "kindle_road",
-    "seven_island"
+    "seven_island",
+    "three_island"
    ],
    "firstAreaEncountered": "cerulean_city",
    "sourceTypes": [
@@ -16535,7 +17236,6 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "treasure_beach",
     "kindle_road",
     "seven_island",
     "six_island",
@@ -16614,7 +17314,6 @@
     3907
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_4",
@@ -16636,7 +17335,7 @@
     "four_island",
     "two_island"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "item_description",
     "npc_dialog",
@@ -16687,7 +17386,11 @@
    ],
    "areasReferenced": [
     "route_4",
-    "rom_mined"
+    "rom_mined",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "silph_co"
    ],
    "firstAreaEncountered": "route_4",
    "sourceTypes": [
@@ -16813,20 +17516,19 @@
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
-    "pewter_city",
     "rom_mined",
     "green_path",
     "ruin_valley",
     "five_island",
-    "treasure_beach",
     "resort_gorgeous",
     "water_labyrinth",
-    "kindle_road",
     "four_island",
     "memorial_pillar",
     "water_path",
     "outcast_island",
-    "six_island"
+    "six_island",
+    "seven_island",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -16868,7 +17570,10 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "rock_tunnel",
+    "ss_anne",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -16908,7 +17613,14 @@
     "canyon_entrance",
     "four_island",
     "water_path",
-    "trainer_tower"
+    "trainer_tower",
+    "digletts_cave",
+    "indigo_plateau",
+    "rocket_hideout",
+    "route_2",
+    "seven_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -16981,7 +17693,12 @@
     "lavender_town",
     "route_11",
     "route_9",
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "rocket_hideout",
+    "safari_zone",
+    "silph_co"
    ],
    "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
@@ -17055,7 +17772,8 @@
     "four_island",
     "six_island",
     "one_island",
-    "rom_mined"
+    "rom_mined",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -17102,7 +17820,16 @@
     "indigo_plateau",
     "rom_mined",
     "one_island",
-    "two_island"
+    "two_island",
+    "digletts_cave",
+    "mt_moon",
+    "pokemon_tower",
+    "rock_tunnel",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "route_2",
    "sourceTypes": [
@@ -17144,7 +17871,13 @@
     "ruin_valley",
     "five_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "safari_zone",
+    "seven_island",
+    "silph_co"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -17172,7 +17905,6 @@
    ],
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "cerulean_city",
     "route_24",
     "route_25",
@@ -17206,7 +17938,12 @@
     "water_path",
     "ruin_valley",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "mt_moon",
+    "rocket_hideout",
+    "seven_island",
+    "silph_co",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -17235,7 +17972,10 @@
     "rom_mined",
     "two_island",
     "three_island",
-    "four_island"
+    "four_island",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -17281,7 +18021,10 @@
     "celadon_city",
     "route_22",
     "rom_mined",
-    "seven_island"
+    "seven_island",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -17322,9 +18065,10 @@
     2171
    ],
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "safari_zone"
    ],
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "safari_zone",
    "sourceTypes": [
     "system_text"
    ],
@@ -17378,7 +18122,10 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "rock_tunnel",
+    "silph_co",
+    "ss_anne"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -17407,7 +18154,10 @@
     "pewter_city",
     "vermilion_city",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -17431,12 +18181,10 @@
     1441
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "route_2",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -17463,7 +18211,6 @@
     "seven_island",
     "two_island",
     "green_path",
-    "treasure_beach",
     "water_labyrinth",
     "water_path",
     "six_island",
@@ -17473,9 +18220,11 @@
     "one_island",
     "four_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "rock_tunnel",
+    "silph_co"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -17502,7 +18251,11 @@
     "route_19",
     "route_20",
     "route_21",
-    "rom_mined"
+    "rom_mined",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "silph_co"
    ],
    "firstAreaEncountered": "route_4",
    "sourceTypes": [
@@ -17534,7 +18287,6 @@
     "celadon_city",
     "route_9",
     "rom_mined",
-    "resort_gorgeous",
     "kindle_road",
     "memorial_pillar",
     "water_path",
@@ -17543,7 +18295,23 @@
     "five_isle_meadow",
     "four_island",
     "outcast_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "five_island",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -17567,7 +18335,10 @@
     "three_island",
     "one_island",
     "two_island",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "four_island",
    "sourceTypes": [
@@ -17592,7 +18363,6 @@
     3911
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_4",
@@ -17614,7 +18384,7 @@
     "one_island",
     "four_island"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -17728,7 +18498,12 @@
     "five_island",
     "one_island",
     "four_island",
-    "outcast_island"
+    "outcast_island",
+    "digletts_cave",
+    "rocket_hideout",
+    "route_2",
+    "silph_co",
+    "ss_anne"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -17800,7 +18575,10 @@
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "rock_tunnel",
+    "ss_anne",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -17825,7 +18603,6 @@
     2567
    ],
    "areasReferenced": [
-    "pallet_town",
     "route_1",
     "viridian_city",
     "route_2",
@@ -17866,9 +18643,20 @@
     "six_island",
     "three_island",
     "ruin_valley",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "five_island",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "rocket_hideout",
+    "seafoam_islands",
+    "seven_island",
+    "ss_anne",
+    "trainer_tower"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -17892,7 +18680,10 @@
     "cerulean_city",
     "lavender_town",
     "cinnabar_island",
-    "rom_mined"
+    "rom_mined",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands"
    ],
    "firstAreaEncountered": "cerulean_city",
    "sourceTypes": [
@@ -17945,7 +18736,11 @@
     "cerulean_city",
     "route_16",
     "cinnabar_island",
-    "rom_mined"
+    "rom_mined",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "silph_co"
    ],
    "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
@@ -17973,12 +18768,10 @@
     3984
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "route_2",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "cerulean_city",
     "route_24",
@@ -18014,9 +18807,14 @@
     "six_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "power_plant",
+    "rock_tunnel",
+    "seafoam_islands",
+    "silph_co"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -18110,7 +18908,10 @@
     "rom_mined",
     "kindle_road",
     "seven_island",
-    "two_island"
+    "two_island",
+    "rocket_hideout",
+    "silph_co",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -18135,9 +18936,11 @@
     "cerulean_city",
     "lavender_town",
     "vermilion_city",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "ss_anne"
    ],
-   "firstAreaEncountered": "cerulean_city",
+   "firstAreaEncountered": "mt_moon",
    "sourceTypes": [
     "npc_dialog",
     "pokemon_species",
@@ -18162,7 +18965,6 @@
     3900
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_4",
@@ -18184,7 +18986,7 @@
     "one_island",
     "four_island"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -18238,7 +19040,14 @@
     "ruin_valley",
     "five_island",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "one_island",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "silph_co"
    ],
    "firstAreaEncountered": "route_1",
    "sourceTypes": [
@@ -18334,7 +19143,6 @@
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
-    "pewter_city",
     "celadon_city",
     "rom_mined",
     "green_path",
@@ -18342,7 +19150,11 @@
     "canyon_entrance",
     "outcast_island",
     "water_path",
-    "trainer_tower"
+    "trainer_tower",
+    "mt_moon",
+    "seven_island",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -18372,7 +19184,11 @@
     "fuchsia_city",
     "celadon_city",
     "rom_mined",
-    "seven_island"
+    "seven_island",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "silph_co"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -18402,7 +19218,10 @@
     "cerulean_city",
     "lavender_town",
     "vermilion_city",
-    "rom_mined"
+    "rom_mined",
+    "one_island",
+    "pokemon_tower",
+    "power_plant"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -18426,9 +19245,14 @@
    ],
    "areasReferenced": [
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co"
    ],
-   "firstAreaEncountered": "celadon_city",
+   "firstAreaEncountered": "safari_zone",
    "sourceTypes": [
     "item_description",
     "system_text"
@@ -18459,7 +19283,13 @@
     "route_15",
     "fuchsia_city",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "route_2",
    "sourceTypes": [
@@ -18509,7 +19339,9 @@
    "areasReferenced": [
     "pewter_city",
     "cerulean_city",
-    "rom_mined"
+    "rom_mined",
+    "rocket_hideout",
+    "silph_co"
    ],
    "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
@@ -18675,7 +19507,6 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "resort_gorgeous",
     "kindle_road",
     "memorial_pillar",
     "water_path",
@@ -18685,7 +19516,22 @@
     "five_isle_meadow",
     "four_island",
     "outcast_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "five_island",
+    "mt_moon",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -18711,7 +19557,6 @@
     2654
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "mt_moon",
@@ -18733,9 +19578,15 @@
     "kindle_road",
     "ruin_valley",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "five_island",
+    "pokemon_mansion",
+    "safari_zone",
+    "seven_island",
+    "silph_co",
+    "three_island"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -18756,10 +19607,14 @@
     896
    ],
    "areasReferenced": [
-    "pallet_town",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "six_island",
+    "ss_anne",
+    "trainer_tower",
+    "viridian_forest"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_forest",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -18810,9 +19665,7 @@
     4176
    ],
    "areasReferenced": [
-    "pallet_town",
     "route_3",
-    "mt_moon",
     "route_4",
     "route_24",
     "route_25",
@@ -18824,15 +19677,20 @@
     "route_20",
     "celadon_city",
     "rom_mined",
-    "treasure_beach",
     "seven_island",
     "six_island",
     "five_island",
     "one_island",
     "four_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "pokemon_tower",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_3",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -18881,7 +19739,14 @@
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "rock_tunnel",
+    "safari_zone",
+    "silph_co",
+    "ss_anne",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -18910,9 +19775,7 @@
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
-    "pewter_city",
     "route_3",
-    "mt_moon",
     "route_4",
     "route_24",
     "route_25",
@@ -18941,7 +19804,15 @@
     "four_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "seafoam_islands",
+    "silph_co",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -18975,7 +19846,13 @@
     "route_16",
     "route_17",
     "celadon_city",
-    "rom_mined"
+    "rom_mined",
+    "five_island",
+    "four_island",
+    "mt_moon",
+    "one_island",
+    "power_plant",
+    "three_island"
    ],
    "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
@@ -18998,20 +19875,20 @@
     2985
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
-    "pewter_city",
-    "mt_moon",
     "route_4",
     "celadon_city",
     "rom_mined",
-    "treasure_beach",
-    "resort_gorgeous",
     "kindle_road",
     "one_island",
-    "seven_island"
+    "seven_island",
+    "five_island",
+    "indigo_plateau",
+    "rock_tunnel",
+    "silph_co",
+    "three_island"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -19029,9 +19906,10 @@
     2091
    ],
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave"
    ],
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "cerulean_cave",
    "sourceTypes": [
     "pokemon_move",
     "system_text"
@@ -19055,7 +19933,6 @@
    ],
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_24",
     "route_25",
     "route_12",
@@ -19082,7 +19959,9 @@
     "ruin_valley",
     "five_isle_meadow",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -19156,9 +20035,14 @@
     654
    ],
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co"
    ],
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "safari_zone",
    "sourceTypes": [
     "system_text"
    ],
@@ -19204,7 +20088,6 @@
     "route_2",
     "pewter_city",
     "route_3",
-    "mt_moon",
     "cerulean_city",
     "route_25",
     "route_8",
@@ -19221,13 +20104,16 @@
     "seven_island",
     "five_isle_meadow",
     "two_island",
-    "treasure_beach",
-    "kindle_road",
     "six_island",
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "kanto_pokemon_league",
+    "power_plant",
+    "seafoam_islands",
+    "silph_co"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -19251,7 +20137,6 @@
     1480
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "route_2",
     "pewter_city",
@@ -19298,9 +20183,16 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "mt_moon",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
@@ -19355,7 +20247,6 @@
     3892
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_4",
@@ -19377,7 +20268,7 @@
     "one_island",
     "four_island"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -19406,7 +20297,11 @@
     "cinnabar_island",
     "celadon_city",
     "indigo_plateau",
-    "rom_mined"
+    "rom_mined",
+    "mt_moon",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -19492,7 +20387,8 @@
     "water_path",
     "ruin_valley",
     "four_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -19513,7 +20409,9 @@
    ],
    "areasReferenced": [
     "route_3",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "rock_tunnel"
    ],
    "firstAreaEncountered": "route_3",
    "sourceTypes": [
@@ -19576,7 +20474,12 @@
     "treasure_beach",
     "kindle_road",
     "seven_island",
-    "four_island"
+    "four_island",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "silph_co",
+    "three_island"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -19672,7 +20575,10 @@
     "four_island",
     "seven_island",
     "two_island",
-    "three_island"
+    "three_island",
+    "indigo_plateau",
+    "rocket_hideout",
+    "silph_co"
    ],
    "firstAreaEncountered": "route_8",
    "sourceTypes": [
@@ -19696,7 +20602,6 @@
    ],
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_24",
     "route_25",
     "route_23",
@@ -19712,7 +20617,9 @@
     "ruin_valley",
     "five_isle_meadow",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -19739,7 +20646,10 @@
     "seven_island",
     "one_island",
     "two_island",
-    "rom_mined"
+    "rom_mined",
+    "five_island",
+    "four_island",
+    "six_island"
    ],
    "firstAreaEncountered": "seven_island",
    "sourceTypes": [
@@ -19779,7 +20689,10 @@
    ],
    "areasReferenced": [
     "saffron_city",
-    "rom_mined"
+    "rom_mined",
+    "five_island",
+    "four_island",
+    "six_island"
    ],
    "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
@@ -19825,7 +20738,6 @@
     3054
    ],
    "areasReferenced": [
-    "pewter_city",
     "route_3",
     "route_4",
     "route_24",
@@ -19853,9 +20765,12 @@
     "kindle_road",
     "three_island",
     "one_island",
-    "two_island"
+    "two_island",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co"
    ],
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "route_3",
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
@@ -19874,10 +20789,10 @@
     3573
    ],
    "areasReferenced": [
-    "pewter_city",
-    "rom_mined"
+    "rom_mined",
+    "indigo_plateau"
    ],
-   "firstAreaEncountered": "pewter_city",
+   "firstAreaEncountered": "indigo_plateau",
    "sourceTypes": [
     "pokedex_entry",
     "system_text"
@@ -19903,7 +20818,6 @@
    ],
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "saffron_city",
     "fuchsia_city",
     "cinnabar_island",
@@ -19914,7 +20828,6 @@
     "resort_gorgeous",
     "canyon_entrance",
     "water_labyrinth",
-    "kindle_road",
     "memorial_pillar",
     "water_path",
     "seven_island",
@@ -19923,7 +20836,8 @@
     "one_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "three_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -20009,7 +20923,6 @@
     "celadon_city",
     "route_9",
     "rom_mined",
-    "resort_gorgeous",
     "kindle_road",
     "memorial_pillar",
     "water_path",
@@ -20018,7 +20931,23 @@
     "five_isle_meadow",
     "four_island",
     "outcast_island",
-    "two_island"
+    "two_island",
+    "cerulean_cave",
+    "five_island",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -20073,8 +21002,8 @@
    ],
    "areasReferenced": [
     "viridian_city",
-    "route_24",
-    "rom_mined"
+    "rom_mined",
+    "viridian_forest"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -20169,7 +21098,16 @@
     "ruin_valley",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "seafoam_islands",
+    "silph_co",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -20196,7 +21134,10 @@
     "four_island",
     "three_island",
     "two_island",
-    "rom_mined"
+    "rom_mined",
+    "one_island",
+    "pokemon_tower",
+    "power_plant"
    ],
    "firstAreaEncountered": "four_island",
    "sourceTypes": [
@@ -20220,7 +21161,6 @@
     2874
    ],
    "areasReferenced": [
-    "pallet_town",
     "route_2",
     "pewter_city",
     "route_4",
@@ -20233,9 +21173,15 @@
     "route_10",
     "route_11",
     "route_12",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "pokemon_tower",
+    "rock_tunnel",
+    "seafoam_islands",
+    "six_island",
+    "trainer_tower"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "route_2",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -20309,7 +21255,6 @@
     3863
    ],
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_4",
@@ -20329,9 +21274,11 @@
     "three_island",
     "five_island",
     "one_island",
-    "four_island"
+    "four_island",
+    "rocket_hideout",
+    "silph_co"
    ],
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -20436,7 +21383,9 @@
     "pallet_town",
     "viridian_city",
     "rom_mined",
-    "kindle_road"
+    "kindle_road",
+    "rocket_hideout",
+    "silph_co"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -20460,7 +21409,6 @@
    ],
    "areasReferenced": [
     "pallet_town",
-    "pewter_city",
     "route_24",
     "route_25",
     "rom_mined",
@@ -20479,7 +21427,8 @@
     "one_island",
     "outcast_island",
     "two_island",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island"
    ],
    "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
@@ -20503,8 +21452,8 @@
    ],
    "areasReferenced": [
     "viridian_city",
-    "mt_moon",
-    "rom_mined"
+    "rom_mined",
+    "trainer_tower"
    ],
    "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
@@ -20598,7 +21547,11 @@
     "four_island",
     "one_island",
     "outcast_island",
-    "trainer_tower"
+    "trainer_tower",
+    "pokemon_mansion",
+    "safari_zone",
+    "silph_co",
+    "three_island"
    ],
    "firstAreaEncountered": "route_1",
    "sourceTypes": [
@@ -20694,7 +21647,20 @@
     "seven_island",
     "water_path",
     "three_island",
-    "five_isle_meadow"
+    "five_isle_meadow",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -20817,9 +21783,8 @@
    "gloss": "hi / hey (casual)",
    "partOfSpeech": "interj",
    "areaId": "pallet_town",
-   "firstAreaEncountered": "pallet_town",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "pallet_town",
     "viridian_city",
     "pewter_city",
     "route_3",
@@ -20840,13 +21805,13 @@
     "rom_mined",
     "two_island",
     "four_island",
-    "treasure_beach",
     "resort_gorgeous",
     "one_island",
     "six_island",
     "five_island",
     "seven_island",
-    "three_island"
+    "three_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -20961,7 +21926,8 @@
     "six_island",
     "seven_island",
     "four_island",
-    "three_island"
+    "three_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -21073,7 +22039,8 @@
     "ruin_valley",
     "water_path",
     "canyon_entrance",
-    "trainer_tower"
+    "trainer_tower",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -21117,7 +22084,9 @@
     "ruin_valley",
     "water_path",
     "canyon_entrance",
-    "trainer_tower"
+    "trainer_tower",
+    "safari_zone",
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -21250,7 +22219,11 @@
     "cerulean_city",
     "lavender_town",
     "vermilion_city",
-    "rom_mined"
+    "rom_mined",
+    "kanto_pokemon_league",
+    "mt_moon",
+    "rock_tunnel",
+    "ss_anne"
    ],
    "sourceTypes": [
     "npc_dialog",

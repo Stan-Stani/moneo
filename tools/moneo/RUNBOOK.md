@@ -67,11 +67,14 @@ python3 tools/moneo/walk_scripts_v2.py
   (msgbox pattern), `trainerbattle` (0x5C with subtype layouts), `bufferstring`
   (0x85/0xBF), CALL/GOTO recursion (depth=2), END/RETURN terminators.
   Falls back to scoped 2KB window u32 scan on unknown opcodes.
-- Map walker uses gMapGroups (2024 patch: 0x352700; 2010 build: 0x316740).
+- Map walker uses gMapGroups (2024 patch: 0x3526F8; 2010 build: 0x316740).
   Group offsets are now derived dynamically from the ROM via
   `rom_config.get_group_offsets()`, so the walker auto-adapts to either
-  build. The 2024 patch ships 299 maps (every canonical FRLG map including
-  Sevii Islands); the 2010 build shipped only 146 (Kanto only).
+  build. The 2024 patch ships all 425 maps in pokefirered's canonical group
+  order (43 groups: Link=0, Dungeons=1, SpecialArea=2, TownsAndRoutes=3, ...).
+  An earlier value of 0x352700 started two entries into the table, which
+  silently dropped Link + all 123 Dungeons maps and shifted every other group
+  number by -2.
 
 If `script_opcodes.py` is missing (or pokefirered updates), regenerate:
 ```bash
@@ -306,15 +309,12 @@ python3 tools/moneo/attribute_existing_decks.py
   build). gMoveDescriptionPointers @ 0x21A2BC and gAbilityDescriptionPointers @
   0x1AA8C0 are findable but their text is unreadable Japanese-as-Korean-glyphs.
   Skipped from attribution.
-- **gWildMonHeaders uses pokefirered's canonical group indexing**, not the
-  Korean ROM's gMapGroups. Translation: `korean_walker_group = pokefirered_group - 2`
-  (the Korean fan-build dropped the first two pokefirered groups: Link multiplayer
-  and the Dungeons super-group). Without the `-2` offset, only 4/68 wild-encounter
-  maps match.
-- **Pallet-heavy distribution** (266/639 attributed cards): correct for
-  first-encounter semantics (most common Korean grammar surfaces in Pallet's
-  Mom/Oak/rival dialog) but worth eyeballing if the deck feels "everything is
-  in Pallet."
+- **gWildMonHeaders and gMapGroups share pokefirered's canonical group
+  indexing** (`KOREAN_GROUP_OFFSET = 0`). The old `-2` translation only existed
+  to compensate for the wrong gMapGroups offset.
+- **Pallet-heavy distribution**: partly real (most common Korean grammar
+  surfaces in Pallet's Mom/Oak/rival dialog), but was inflated by the old
+  gMapGroups offset, which filed Trainer Tower / Navel Rock text under Pallet.
 - **317 still-unattributed cards** are mostly TOPIK vocab whose lemma doesn't
   tokenize to anything in any reachable game text — likely game-irrelevant
   TOPIK words like 공항 (airport), 회사 (company).
@@ -334,10 +334,10 @@ authoritative constants. Verified by `tools/moneo/rom_swap/find_offsets_2024.py`
 
 | Symbol | Offset | Notes |
 |--------|--------|-------|
-| gMapGroups | 0x352700 | 41 groups, 299 maps |
+| gMapGroups | 0x3526F8 | 43 groups, 425 maps (canonical order) |
 | gItems | 0x3DAED4 | 44-byte stride (canonical), 375 items |
 | gPokedexEntries | 0x44E2E0 | 36-byte stride (canonical), 387 entries |
-| gWildMonHeaders | 0x3C9B64 | 20-byte stride, 132 entries; group offset still -2 |
+| gWildMonHeaders | 0x3C9B64 | 20-byte stride, 132 entries; canonical groups |
 | gTrainers | 0x23EB3C | 40-byte stride (canonical), 743 trainers |
 | gTrainerClassNames | 0x23E5A4 | 13-byte stride (canonical), 107 class names |
 | Trainer dialog table | 0x230000-0x240000 | dense pointer region |
@@ -394,3 +394,21 @@ Combined deck: 956 cards total, 639 attributed (67%).
 | route_4..route_25 + others | ~32 | long tail |
 | **unattributed** | 317 | TOPIK vocab not tokenizing in any ROM text |
 ```
+## Re-applying attribution without a full rebuild
+
+The shipped decks carry hand-applied glosses, audits and sentence fixes on top
+of the generated attribution, so re-running `attribute_existing_decks.py` +
+copying is destructive, and that script can only ever *add* areas. After
+changing anything that affects `lemma_area_index.json` or
+`pokedex_obtain_index.json`, apply just the difference instead:
+
+```bash
+git show HEAD:tools/moneo/lemma_area_index.json    > /tmp/old_index.json
+git show HEAD:tools/moneo/pokedex_obtain_index.json > /tmp/old_obtain.json
+# ...re-run walk_scripts_v2 / resolve_map_areas / build_obtain_indexes /
+#    build_live_lemma_index...
+python3 tools/moneo/reattribute_from_index_delta.py \
+    --old-index /tmp/old_index.json --old-obtain /tmp/old_obtain.json
+```
+
+It only rewrites `areasReferenced` / `firstAreaEncountered`.

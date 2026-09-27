@@ -82,7 +82,20 @@
     "two_island",
     "ruin_valley",
     "five_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "liveRecIds": [
     638,
@@ -173,7 +186,20 @@
     "two_island",
     "ruin_valley",
     "five_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
@@ -238,7 +264,10 @@
     "three_island",
     "one_island",
     "five_island",
-    "four_island"
+    "four_island",
+    "kanto_pokemon_league",
+    "silph_co",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -335,7 +364,15 @@
     "two_island",
     "ruin_valley",
     "five_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "indigo_plateau",
+    "mt_moon",
+    "one_island",
+    "rock_tunnel",
+    "seafoam_islands",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -412,7 +449,16 @@
     "two_island",
     "ruin_valley",
     "five_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "digletts_cave",
+    "kanto_pokemon_league",
+    "pokemon_mansion",
+    "rocket_hideout",
+    "safari_zone",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -494,7 +540,16 @@
     "two_island",
     "ruin_valley",
     "five_island",
-    "four_island"
+    "four_island",
+    "cerulean_cave",
+    "pokemon_tower",
+    "power_plant",
+    "rocket_hideout",
+    "safari_zone",
+    "seafoam_islands",
+    "silph_co",
+    "ss_anne",
+    "viridian_forest"
    ],
    "sourceTypes": [
     "item_description",
