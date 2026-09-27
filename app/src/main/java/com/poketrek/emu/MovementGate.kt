@@ -159,6 +159,15 @@ class MovementGate(
      */
     private var lockHudAnchor: Triple<Int, Int, Int>? = null
 
+    /**
+     * Tile the in-flight bounce should land on, in [anchorOf] encoding. The
+     * first step onto it is not charged against the budget. Expires after
+     * [freeBounceStepFrames] so a bounce blocked by a wall can't waive a
+     * later, voluntary step.
+     */
+    private var freeBounceStep: Triple<Int, Int, Int>? = null
+    private var freeBounceStepFrames: Int = 0
+
     fun setEnabled(value: Boolean) {
         budget.setGateEnabled(value)
     }
@@ -172,7 +181,16 @@ class MovementGate(
         if (prev != null && (prevKeys and DIR_MASK) != 0
             && prev.mapBank == current.mapBank && prev.mapId == current.mapId
             && (prev.playerX != current.playerX || prev.playerY != current.playerY)) {
-            budget.consumeOneTile()
+            // The step the bounce forced is the gate's doing, not the
+            // player's, so it doesn't cost a tile.
+            if (anchorOf(current) == freeBounceStep) {
+                freeBounceStep = null
+            } else {
+                budget.consumeOneTile()
+            }
+        }
+        if (freeBounceStep != null && --freeBounceStepFrames <= 0) {
+            freeBounceStep = null  // bounce never landed (wall behind the player)
         }
 
         // Step gate: clear all DPAD bits when the budget is exhausted.
@@ -210,6 +228,8 @@ class MovementGate(
                 if (opp != 0) {
                     bounceDirBit = opp
                     bounceFramesRemaining = BOUNCE_FRAMES
+                    freeBounceStep = stepFrom(current, opp)
+                    freeBounceStepFrames = BOUNCE_FRAMES * 2
                 }
             }
         }
@@ -248,6 +268,16 @@ class MovementGate(
 
     private fun anchorOf(s: LeafGreenRam.Snapshot): Triple<Int, Int, Int> =
         Triple((s.mapBank shl 8) or s.mapId, s.playerX, s.playerY)
+
+    private fun stepFrom(s: LeafGreenRam.Snapshot, dirBit: Int): Triple<Int, Int, Int> {
+        val (dx, dy) = when (dirBit) {
+            GbaKey.UP -> 0 to -1
+            GbaKey.DOWN -> 0 to 1
+            GbaKey.LEFT -> -1 to 0
+            else -> 1 to 0
+        }
+        return Triple((s.mapBank shl 8) or s.mapId, s.playerX + dx, s.playerY + dy)
+    }
 
     private fun oppositeDirBit(mask: Int): Int = when (mask) {
         GbaKey.UP -> GbaKey.DOWN

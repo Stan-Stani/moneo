@@ -354,6 +354,49 @@ class MovementGateTest {
         assertEquals(0, outAfter and GbaKey.DOWN)
     }
 
+    @Test fun `bounce step is not charged but walking back into the edge is`() {
+        val b = FakeBudget(initialTiles = 10)
+        val areaGate = FakeAreaGate(
+            blockOnTile = Triple(0, 5, 0),
+            blockedDirMask = GbaKey.UP,
+        )
+        val gate = MovementGate(b, initialAreaGate = areaGate)
+        val edge = snap(x = 5, y = 0)
+        val bounced = snap(x = 5, y = 1)
+
+        // Block fires; the injected DOWN walks the player one tile back,
+        // with the position committing partway through the bounce window.
+        gate.process(GbaKey.UP, edge)
+        for (frame in 1 until 10) gate.process(GbaKey.UP, edge)
+        for (frame in 10 until MovementGate.BOUNCE_FRAMES) gate.process(GbaKey.UP, bounced)
+        assertEquals("forced bounce step must be free", 0, b.consumeCalls)
+
+        // The player then chooses to walk back up onto the boundary tile.
+        gate.process(GbaKey.UP, bounced)
+        gate.process(GbaKey.UP, edge)
+        assertEquals("voluntary step back is charged", 1, b.consumeCalls)
+    }
+
+    @Test fun `bounce into a wall does not make the next real step free`() {
+        val b = FakeBudget(initialTiles = 10)
+        val areaGate = FakeAreaGate(
+            blockOnTile = Triple(0, 5, 0),
+            blockedDirMask = GbaKey.UP,
+        )
+        val gate = MovementGate(b, initialAreaGate = areaGate)
+        val edge = snap(x = 5, y = 0)
+
+        // Bounce is blocked (e.g. wall behind the player): position never
+        // changes during or shortly after the bounce window.
+        gate.process(GbaKey.UP, edge)
+        repeat(MovementGate.BOUNCE_FRAMES * 3) { gate.process(0, edge) }
+
+        // A later, unrelated step to the tile the bounce aimed at is paid.
+        gate.process(GbaKey.DOWN, edge)
+        gate.process(GbaKey.DOWN, snap(x = 5, y = 1))
+        assertEquals(1, b.consumeCalls)
+    }
+
     @Test fun `multi-dir block (warp) does not trigger bounce`() {
         // Warp tiles block all four directions — there is no unambiguous
         // "back" direction, so the gate should mask without latching a bounce.
