@@ -84,6 +84,24 @@ fun MoneoOverlay(
                     )
                 }
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    // Walking audio review: spoken cards, graded with earbud
+                    // taps, keeps running with the screen off.
+                    val walk by com.poketrek.moneo.audio.WalkReviewService.running.collectAsState()
+                    val ctx = androidx.compose.ui.platform.LocalContext.current
+                    Button(
+                        onClick = {
+                            if (walk != null) {
+                                com.poketrek.moneo.audio.WalkReviewService.stop(ctx)
+                            } else {
+                                selectedArea?.let { module.prefs.setTargetAreaId(it) }
+                                com.poketrek.moneo.audio.WalkReviewService.start(ctx)
+                            }
+                        },
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = if (walk != null) Color(0xFF7C3AED) else Color(0xFF334155)
+                        ),
+                        contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
+                    ) { Text(if (walk != null) "🎧 Stop · ${walk?.reviewed ?: 0}" else "🎧 Walk", fontSize = 12.sp) }
                     if (selectedArea != null) {
                         Button(
                             onClick = { selectedArea = null },

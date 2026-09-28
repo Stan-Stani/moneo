@@ -91,17 +91,22 @@ class TtsPlayer(context: Context) {
      *  default, not the engine this instance is using. */
     @Volatile private var pendingEngineName: String? = null
 
+    /** Utterances [speakAndWait] is waiting on, by utterance id. */
+    private val pending = java.util.concurrent.ConcurrentHashMap<String, kotlinx.coroutines.CompletableDeferred<Boolean>>()
+    private val nextUtterance = java.util.concurrent.atomic.AtomicLong()
+
+    private fun finish(utteranceId: String?, ok: Boolean) {
+        _isSpeaking.value = false
+        utteranceId?.let { pending.remove(it)?.complete(ok) }
+    }
+
     private val progressListener = object : UtteranceProgressListener() {
         override fun onStart(utteranceId: String?) { _isSpeaking.value = true }
-        override fun onDone(utteranceId: String?) { _isSpeaking.value = false }
-        override fun onStop(utteranceId: String?, interrupted: Boolean) {
-            _isSpeaking.value = false
-        }
+        override fun onDone(utteranceId: String?) { finish(utteranceId, true) }
+        override fun onStop(utteranceId: String?, interrupted: Boolean) { finish(utteranceId, false) }
         @Deprecated("Pre-API 21 fallback; the variant with errorCode is preferred.")
-        override fun onError(utteranceId: String?) { _isSpeaking.value = false }
-        override fun onError(utteranceId: String?, errorCode: Int) {
-            _isSpeaking.value = false
-        }
+        override fun onError(utteranceId: String?) { finish(utteranceId, false) }
+        override fun onError(utteranceId: String?, errorCode: Int) { finish(utteranceId, false) }
     }
 
     init {
@@ -214,6 +219,33 @@ class TtsPlayer(context: Context) {
             currentLocale = target
         }
         instance.speak(text, TextToSpeech.QUEUE_FLUSH, null, UTTERANCE_ID)
+    }
+
+    /**
+     * Speak [text] and suspend until it finishes. Returns false when it
+     * couldn't be spoken (language unavailable, engine not ready, error,
+     * interrupted by another utterance or [stop]).
+     */
+    suspend fun speakAndWait(text: String, language: TtsLanguage): Boolean {
+        if (language == TtsLanguage.OFF || language !in _availableLanguages.value) return false
+        val instance = tts ?: return false
+        val target = language.toLocale() ?: return false
+        if (currentLocale != target) {
+            instance.setLanguage(target)
+            currentLocale = target
+        }
+        val id = "wait-" + nextUtterance.incrementAndGet()
+        val done = kotlinx.coroutines.CompletableDeferred<Boolean>()
+        pending[id] = done
+        if (instance.speak(text, TextToSpeech.QUEUE_FLUSH, null, id) != TextToSpeech.SUCCESS) {
+            pending.remove(id)
+            return false
+        }
+        return try {
+            done.await()
+        } finally {
+            pending.remove(id)
+        }
     }
 
     private fun TtsLanguage.toLocale(): Locale? = when (this) {

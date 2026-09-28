@@ -288,10 +288,16 @@ class MoneoRepository(
      *   2. REVIEW cards due today
      *   3. NEW cards (limited per session via the caller's pacing if needed)
      */
-    fun nextDueCard(areaId: String, nowMs: Long = now()): Pair<CardRecord, VocabEntry>? {
+    fun nextDueCard(
+        areaId: String,
+        nowMs: Long = now(),
+        /** Cards to pass over (e.g. skipped in walking review). */
+        exclude: Set<String> = emptySet(),
+    ): Pair<CardRecord, VocabEntry>? {
         if (_studyNext.value.isNotEmpty()) {
             val visible = visibleVocabIds()
             for (id in _studyNext.value) {
+                if (id in exclude) continue
                 val rec = _cards.value[id] ?: continue
                 if (id !in visible || rec.suspended) continue
                 if (rec.snapshot.state == CardState.NEW || rec.snapshot.dueAt <= nowMs) {
@@ -299,7 +305,7 @@ class MoneoRepository(
                 }
             }
         }
-        val vocab = vocabForArea(areaId).associateBy { it.id }
+        val vocab = vocabForArea(areaId).filter { it.id !in exclude }.associateBy { it.id }
         if (vocab.isEmpty()) return null
         val baseAreaId = splitPseudoAreaId(areaId)?.first ?: areaId
         val counts = lemmaCounts.countsFor(baseAreaId)
