@@ -8507,12 +8507,11 @@
   },
   {
    "vocabId": "rom-mine-v3:있다",
-   "korean": "있었는데",
-   "romanization": "isseossneunde",
-   "gloss": "(ROM example, rec282)",
+   "korean": "그럼 잘 있어!",
+   "gloss": "Well then, take care!",
    "targetForm": "있",
    "areaId": "rom_mined",
-   "source": "rom-rec282",
+   "source": "rom-rec2040",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -8599,16 +8598,16 @@
     881,
     893,
     896
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:하다",
-   "korean": "땅을하고",
-   "romanization": "ttangeulhago",
-   "gloss": "(ROM example, rec1022)",
+   "korean": "짐이 가득하다",
+   "gloss": "The bag is full.",
    "targetForm": "하",
    "areaId": "rom_mined",
-   "source": "rom-rec1022",
+   "source": "rom-rec2166",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -8697,16 +8696,16 @@
     963,
     965,
     1019
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:공격",
-   "korean": "공격한다",
-   "romanization": "gonggyeoghanda",
-   "gloss": "(ROM example, rec6261)",
+   "korean": "잠들어버리면 그동안에는 공격할 수 없습니다!",
+   "gloss": "While it's asleep, it can't attack!",
    "targetForm": "공격",
    "areaId": "rom_mined",
-   "source": "rom-rec6261",
+   "source": "rom-rec2140",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -8763,16 +8762,16 @@
     2218,
     2229,
     2406
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:상대",
-   "korean": "상대를쪽",
-   "romanization": "sangdaereuljjog",
-   "gloss": "(ROM example, rec5259)",
+   "korean": "...잠깐 내 상대 좀 해봐!",
+   "gloss": "...Hey, battle me for a bit!",
    "targetForm": "상대",
    "areaId": "rom_mined",
-   "source": "rom-rec5259",
+   "source": "rom-rec2037",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -8853,16 +8852,16 @@
     2102,
     2185,
     2238
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:많다",
-   "korean": "많은주마",
-   "romanization": "manheunjuma",
-   "gloss": "(ROM example, rec2260)",
+   "korean": "내가 더 빨리 많은 포켓몬을 모았는데!",
+   "gloss": "But I collected lots of Pokémon faster than you!",
    "targetForm": "많",
    "areaId": "rom_mined",
-   "source": "rom-rec2260",
+   "source": "rom-rec2087",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -8947,16 +8946,16 @@
     904,
     926,
     954
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:기술",
-   "korean": "한기술을",
-   "romanization": "hangisuleul",
-   "gloss": "(ROM example, rec6750)",
+   "korean": "강력한 기술이지!",
+   "gloss": "It's a powerful move!",
    "targetForm": "기술",
    "areaId": "rom_mined",
-   "source": "rom-rec6750",
+   "source": "rom-rec2102",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -9017,16 +9016,16 @@
     1061,
     1390,
     1441
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:같다",
-   "korean": "있는같네요",
-   "romanization": "issneungatneyo",
-   "gloss": "(ROM example, rec881)",
+   "korean": "도감 같은 물건이 있다!",
+   "gloss": "There's something like a Pokédex!",
    "targetForm": "같",
    "areaId": "rom_mined",
-   "source": "rom-rec881",
+   "source": "rom-rec2072",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -9113,16 +9112,16 @@
     1309,
     1447,
     1452
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:받다",
-   "korean": "겨받았다",
-   "romanization": "gyeobadassda",
-   "gloss": "(ROM example, rec2604)",
+   "korean": "...받으면 기쁘려나?",
+   "gloss": "...Would they be happy to get it?",
    "targetForm": "받",
    "areaId": "rom_mined",
-   "source": "rom-rec2604",
+   "source": "rom-rec2015",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -9208,16 +9207,16 @@
     1681,
     1823,
     1825
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:없다",
-   "korean": "오늘은없어",
-   "romanization": "oneuleuneobseo",
-   "gloss": "(ROM example, rec1267)",
+   "korean": "넣을 곳이 없다...",
+   "gloss": "There's no room to put it...",
    "targetForm": "없",
    "areaId": "rom_mined",
-   "source": "rom-rec1267",
+   "source": "rom-rec3139",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -9303,16 +9302,16 @@
     1291,
     1302,
     1361
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:좋다",
-   "korean": "힘을시좋을",
-   "romanization": "himeulsijoheul",
-   "gloss": "(ROM example, rec2186)",
+   "korean": "좋은 냄새다!",
+   "gloss": "It smells good!",
    "targetForm": "좋",
    "areaId": "rom_mined",
-   "source": "rom-rec2186",
+   "source": "rom-rec4006",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -9399,16 +9398,16 @@
     912,
     914,
     930
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:만들다",
-   "korean": "만든있다",
-   "romanization": "mandeunissda",
-   "gloss": "(ROM example, rec2663)",
-   "targetForm": "만든",
+   "korean": "뭔가 요리를 만들었던 것 같다!",
+   "gloss": "Looks like someone was cooking something!",
+   "targetForm": "만들",
    "areaId": "rom_mined",
-   "source": "rom-rec2663",
+   "source": "rom-rec3991",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -9483,16 +9482,16 @@
     1152,
     1810,
     1988
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:회복",
-   "korean": "회복한다",
-   "romanization": "hoeboghanda",
-   "gloss": "(ROM example, rec6301)",
+   "korean": "포켓몬의 체력 회복!",
+   "gloss": "Restores a Pokémon's HP!",
    "targetForm": "회복",
    "areaId": "rom_mined",
-   "source": "rom-rec6301",
+   "source": "rom-rec3996",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -9534,16 +9533,16 @@
    "liveRecIds": [
     3187,
     3996
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:되다",
-   "korean": "꼴을이될",
-   "romanization": "kkoleulidoel",
-   "gloss": "(ROM example, rec425)",
-   "targetForm": "될",
+   "korean": "그럼 됐어!",
+   "gloss": "All right, that's enough!",
+   "targetForm": "됐",
    "areaId": "rom_mined",
-   "source": "rom-rec425",
+   "source": "rom-rec935",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -9628,16 +9627,16 @@
     1166,
     1246,
     1272
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:자신",
-   "korean": "자신의만들있다",
-   "romanization": "jasinuimandeulissda",
-   "gloss": "(ROM example, rec6331)",
+   "korean": "이길 자신이 있다면 웅이랑 배틀해 봐!",
+   "gloss": "If you think you can win, go battle Brock!",
    "targetForm": "자신",
    "areaId": "rom_mined",
-   "source": "rom-rec6331",
+   "source": "rom-rec965",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -9692,16 +9691,16 @@
     2237,
     2781,
     2951
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:쓰다",
-   "korean": "마쓰고도구를",
-   "romanization": "masseugodogureul",
-   "gloss": "(ROM example, rec3643)",
-   "targetForm": "쓰",
+   "korean": "...힘을 다 썼어",
+   "gloss": "...I used up all my strength.",
+   "targetForm": "썼",
    "areaId": "rom_mined",
-   "source": "rom-rec3643",
+   "source": "rom-rec2105",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -9784,16 +9783,16 @@
     2140,
     2182,
     2212
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:주다",
-   "korean": "운석을줘",
-   "romanization": "unseogeuljwo",
-   "gloss": "(ROM example, rec2967)",
+   "korean": "나한테도 줘!",
+   "gloss": "Give me one too!",
    "targetForm": "줘",
    "areaId": "rom_mined",
-   "source": "rom-rec2967",
+   "source": "rom-rec8399",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -9869,16 +9868,16 @@
     945,
     978,
     1147
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:배틀",
-   "korean": "야생배틀을만",
-   "romanization": "yasaengbaeteuleulman",
-   "gloss": "(ROM example, rec6329)",
+   "korean": "격렬한 배틀이었다!",
+   "gloss": "That was an intense battle!",
    "targetForm": "배틀",
    "areaId": "rom_mined",
-   "source": "rom-rec6329",
+   "source": "rom-rec2097",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -9960,16 +9959,16 @@
     1312,
     1538,
     1879
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:보다",
-   "korean": "봤었는데",
-   "romanization": "bwasseossneunde",
-   "gloss": "(ROM example, rec1203)",
-   "targetForm": "봤었",
+   "korean": "여기 봐봐!",
+   "gloss": "Look over here!",
+   "targetForm": "봐",
    "areaId": "rom_mined",
-   "source": "rom-rec1203",
+   "source": "rom-rec3469",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -10056,16 +10055,16 @@
     959,
     980,
     1014
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:머신",
-   "korean": "기술머신은",
-   "romanization": "gisulmeosineun",
-   "gloss": "(ROM example, rec2102)",
+   "korean": "단 머신은 1회용이야!",
+   "gloss": "But a TM can only be used once!",
    "targetForm": "머신",
    "areaId": "rom_mined",
-   "source": "rom-rec2102",
+   "source": "rom-rec2185",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -10121,16 +10120,16 @@
     2231,
     2232,
     2352
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:강하다",
-   "korean": "턴잘강한내려서",
-   "romanization": "teonjalganghannaeryeoseo",
-   "gloss": "(ROM example, rec6814)",
-   "targetForm": "강한",
+   "korean": "단단하고 참을성이 강해!",
+   "gloss": "It's tough and has great endurance!",
+   "targetForm": "강해",
    "areaId": "rom_mined",
-   "source": "rom-rec6814",
+   "source": "rom-rec2181",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -10216,16 +10215,16 @@
     1258,
     1330,
     1365
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:보이다",
-   "korean": "멋있는그보여줘",
-   "romanization": "meosissneungeuboyeojwo",
-   "gloss": "(ROM example, rec3036)",
-   "targetForm": "보여줘",
+   "korean": "안 보인다...",
+   "gloss": "I can't see anything...",
+   "targetForm": "보인다",
    "areaId": "rom_mined",
-   "source": "rom-rec3036",
+   "source": "rom-rec8398",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -10308,16 +10307,16 @@
     1476,
     1531,
     1892
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:않다",
-   "korean": "눈에않는",
-   "romanization": "nuneanhneun",
-   "gloss": "(ROM example, rec6412)",
+   "korean": "사양 않고 간다!",
+   "gloss": "I won't hold back!",
    "targetForm": "않",
    "areaId": "rom_mined",
-   "source": "rom-rec6412",
+   "source": "rom-rec2709",
    "areasReferenced": [
     "saffron_city",
     "cinnabar_island",
@@ -10338,16 +10337,16 @@
     1551,
     1616,
     1890
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:선택",
-   "korean": "선택받은",
-   "romanization": "seontaegbadeun",
-   "gloss": "(ROM example, rec2723)",
+   "korean": "서로 선택한 것이 다른 것 같습니다",
+   "gloss": "It seems you each chose something different.",
    "targetForm": "선택",
    "areaId": "rom_mined",
-   "source": "rom-rec2723",
+   "source": "rom-rec3864",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -10403,16 +10402,16 @@
    "liveRecIds": [
     3912,
     3946
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:게임",
-   "korean": "게임이다",
-   "romanization": "geimida",
-   "gloss": "(ROM example, rec2389)",
+   "korean": "최신 게임이다!",
+   "gloss": "It's the latest game!",
    "targetForm": "게임",
    "areaId": "rom_mined",
-   "source": "rom-rec2389",
+   "source": "rom-rec4014",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -10466,16 +10465,16 @@
     1132,
     2390,
     2429
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:상태",
-   "korean": "상태는이미",
-   "romanization": "sangtaeneunimi",
-   "gloss": "(ROM example, rec2070)",
+   "korean": "이 상태로 나가봐!",
+   "gloss": "Go out like this!",
    "targetForm": "상태",
    "areaId": "rom_mined",
-   "source": "rom-rec2070",
+   "source": "rom-rec2195",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -10527,16 +10526,16 @@
     2070,
     2085,
     2140
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:알다",
-   "korean": "이런알고",
-   "romanization": "ireonalgo",
-   "gloss": "(ROM example, rec2740)",
+   "korean": "알고 계세요?",
+   "gloss": "Did you know?",
    "targetForm": "알",
    "areaId": "rom_mined",
-   "source": "rom-rec2740",
+   "source": "rom-rec2080",
    "areasReferenced": [
     "pewter_city",
     "route_3",
@@ -10618,16 +10617,16 @@
     1166,
     1234,
     1922
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:사용",
-   "korean": "할사용하는데",
-   "romanization": "halsayonghaneunde",
-   "gloss": "(ROM example, rec3783)",
+   "korean": "사용하는 건 바위포켓몬뿐이야!",
+   "gloss": "I only use Rock Pokémon!",
    "targetForm": "사용",
    "areaId": "rom_mined",
-   "source": "rom-rec3783",
+   "source": "rom-rec2181",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -10694,16 +10693,16 @@
     2444,
     2462,
     3152
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:다음",
-   "korean": "다음에그링",
-   "romanization": "daeumegeuring",
-   "gloss": "(ROM example, rec3163)",
+   "korean": "다음에 잡아줄게!",
+   "gloss": "I'll catch you next time!",
    "targetForm": "다음",
    "areaId": "rom_mined",
-   "source": "rom-rec3163",
+   "source": "rom-rec2178",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -10777,16 +10776,16 @@
     2662,
     2680,
     3092
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:들다",
-   "korean": "들어옛날엔잘나가는",
-   "romanization": "deuleoyesnalenjalnaganeun",
-   "gloss": "(ROM example, rec2044)",
+   "korean": "아무것도 안 들어 있다!",
+   "gloss": "There's nothing inside!",
    "targetForm": "들",
    "areaId": "rom_mined",
-   "source": "rom-rec2044",
+   "source": "rom-rec4007",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -10869,16 +10868,16 @@
     1312,
     1330,
     1555
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:도감",
-   "korean": "도감을있다면",
-   "romanization": "dogameulissdamyeon",
-   "gloss": "(ROM example, rec2590)",
+   "korean": "도감 상태는 어떠냐?",
+   "gloss": "How's your Pokédex coming along?",
    "targetForm": "도감",
    "areaId": "rom_mined",
-   "source": "rom-rec2590",
+   "source": "rom-rec2070",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -10946,16 +10945,16 @@
     2071,
     2430,
     2862
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:많이",
-   "korean": "많이있어",
-   "romanization": "manhiisseo",
-   "gloss": "(ROM example, rec938)",
+   "korean": "트레이너와의 승부도 많이 하면 좋습니다!",
+   "gloss": "It's good to battle trainers a lot, too!",
    "targetForm": "많이",
    "areaId": "rom_mined",
-   "source": "rom-rec938",
+   "source": "rom-rec948",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -11036,16 +11035,16 @@
     978,
     1707,
     1998
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:말다",
-   "korean": "마있는 진정한또것을주마",
-   "romanization": "maissneun jinjeonghanttogeoseuljuma",
-   "gloss": "(ROM example, rec654)",
-   "targetForm": "마",
+   "korean": "다른 녀석에게 지지 마라!",
+   "gloss": "Don't lose to anyone else!",
+   "targetForm": "마라",
    "areaId": "rom_mined",
-   "source": "rom-rec654",
+   "source": "rom-rec3903",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -11102,16 +11101,16 @@
     2054,
     2102,
     2241
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:움직이다",
-   "korean": "움직이지된면",
-   "romanization": "umjigijidoenmyeon",
-   "gloss": "(ROM example, rec4969)",
-   "targetForm": "움직이",
+   "korean": "얼어버리면 전혀 움직일 수 없게 됩니다!",
+   "gloss": "Once it's frozen, it can't move at all!",
+   "targetForm": "움직일",
    "areaId": "rom_mined",
-   "source": "rom-rec4969",
+   "source": "rom-rec2143",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -11164,16 +11163,16 @@
    "liveRecIds": [
     2143,
     2153
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:지금",
-   "korean": "지금교환을하있어",
-   "romanization": "jigeumgyohwaneulhaisseo",
-   "gloss": "(ROM example, rec6961)",
+   "korean": "확실한 건 지금까지의 관장 중에서 누구보다도 강하다는 거야!",
+   "gloss": "One thing's for sure: they're stronger than any Gym Leader so far!",
    "targetForm": "지금",
    "areaId": "rom_mined",
-   "source": "rom-rec6961",
+   "source": "rom-rec2126",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -11255,16 +11254,16 @@
     2206,
     2556,
     2912
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:따르다",
-   "korean": "포켓몬은따라",
-   "romanization": "pokesmoneunttara",
-   "gloss": "(ROM example, rec2856)",
-   "targetForm": "따라",
+   "korean": "그래 꽤나 잘 따르는 것 같은데?",
+   "gloss": "I see, it seems quite attached to you.",
+   "targetForm": "따르",
    "areaId": "rom_mined",
-   "source": "rom-rec2856",
+   "source": "rom-rec2055",
    "areasReferenced": [
     "pallet_town",
     "route_2",
@@ -11333,16 +11332,16 @@
     2026,
     2055,
     2077
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:연속",
-   "korean": "공격한다연속으로",
-   "romanization": "gonggyeoghandayeonsogeuro",
-   "gloss": "(ROM example, rec6813)",
+   "korean": "최근 달맞이산에서 귀중한 포켓몬의 화석을 연속으로 훔치는 악당이 있습니다!",
+   "gloss": "Lately a villain has been stealing precious Pokémon fossils from Mt. Moon one after another!",
    "targetForm": "연속",
    "areaId": "rom_mined",
-   "source": "rom-rec6813",
+   "source": "rom-rec967",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -11360,16 +11359,16 @@
    "liveRecIds": [
     967,
     2686
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:종류",
-   "korean": "드디어종류를",
-   "romanization": "deudieojongryureul",
-   "gloss": "(ROM example, rec3217)",
+   "korean": "여기서는 세상에서 보기 힘든 고대 포켓몬 화석 중 2종류를 전시하고 있습니다!",
+   "gloss": "Here we're displaying two kinds of ancient Pokémon fossils that are rarely seen in this world!",
    "targetForm": "종류",
    "areaId": "rom_mined",
-   "source": "rom-rec3217",
+   "source": "rom-rec2167",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -11424,16 +11423,16 @@
     2859,
     2865,
     2866
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:크다",
-   "korean": "커서움직이지",
-   "romanization": "keoseoumjigiji",
-   "gloss": "(ROM example, rec5026)",
-   "targetForm": "커서",
+   "korean": "땅을 강하게 흔들어서 상대에게 큰 데미지를 주는!",
+   "gloss": "Shakes the ground hard to deal big damage to the opponent!",
+   "targetForm": "큰",
    "areaId": "rom_mined",
-   "source": "rom-rec5026",
+   "source": "rom-rec2102",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -11505,16 +11504,16 @@
     1564,
     2622,
     2893
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:타입",
-   "korean": "풀타입뿐이에요",
-   "romanization": "pultaibppunieyo",
-   "gloss": "(ROM example, rec3264)",
+   "korean": "포켓몬은 타입에 따라 유리한 타입 불리한 타입이 있다네",
+   "gloss": "Depending on their type, Pokémon have types they're strong against and types they're weak against.",
    "targetForm": "타입",
    "areaId": "rom_mined",
-   "source": "rom-rec3264",
+   "source": "rom-rec2077",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -11572,16 +11571,16 @@
     2126,
     2229,
     2241
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:나오다",
-   "korean": "나오겠다모처럼했는데",
-   "romanization": "naogessdamocheoreomhaessneunde",
-   "gloss": "(ROM example, rec729)",
-   "targetForm": "나오",
+   "korean": "풀숲에서는 야생 포켓몬이 튀어나온단다!",
+   "gloss": "Wild Pokémon jump out from tall grass!",
+   "targetForm": "나온단다",
    "areaId": "rom_mined",
-   "source": "rom-rec729",
+   "source": "rom-rec921",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -11652,16 +11651,16 @@
     945,
     2053,
     2235
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:모르다",
-   "korean": "모르겠다",
-   "romanization": "moreugessda",
-   "gloss": "(ROM example, rec835)",
+   "korean": "모르는 게 있을 땐 도움말!",
+   "gloss": "When there's something you don't know: HELP!",
    "targetForm": "모르",
    "areaId": "rom_mined",
-   "source": "rom-rec835",
+   "source": "rom-rec2007",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -11742,16 +11741,16 @@
     1388,
     1397,
     1986
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:생각",
-   "korean": "링생각이특",
-   "romanization": "ringsaenggagiteug",
-   "gloss": "(ROM example, rec538)",
+   "korean": "별명을 생각하는 건 재미있지...만 어려워!",
+   "gloss": "Thinking of nicknames is fun... but hard!",
    "targetForm": "생각",
    "areaId": "rom_mined",
-   "source": "rom-rec538",
+   "source": "rom-rec2093",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -11835,7 +11834,8 @@
     1069,
     1152,
     1190
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:스다",
@@ -11904,12 +11904,11 @@
   },
   {
    "vocabId": "rom-mine-v3:승부",
-   "korean": "있다네물론승부를",
-   "romanization": "issdanemulronseungbureul",
-   "gloss": "(ROM example, rec2942)",
+   "korean": "트레이너와의 승부도 많이 하면 좋습니다!",
+   "gloss": "It's good to battle trainers a lot, too!",
    "targetForm": "승부",
    "areaId": "rom_mined",
-   "source": "rom-rec2942",
+   "source": "rom-rec948",
    "areasReferenced": [
     "pallet_town",
     "route_3",
@@ -11989,16 +11988,16 @@
     1295,
     1363,
     1474
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:시티",
-   "korean": "회색시티는",
-   "romanization": "hoesaegsitineun",
-   "gloss": "(ROM example, rec956)",
+   "korean": "상록시티 포켓몬체육관",
+   "gloss": "Viridian City Pokémon Gym",
    "targetForm": "시티",
    "areaId": "rom_mined",
-   "source": "rom-rec956",
+   "source": "rom-rec950",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -12064,16 +12063,16 @@
     1025,
     1030,
     1075
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:진화",
-   "korean": "종류의진화할있어",
-   "romanization": "jongryuuijinhwahalisseo",
-   "gloss": "(ROM example, rec2661)",
+   "korean": "진화캔슬 쓰고 있니?",
+   "gloss": "Are you using evolution cancel?",
    "targetForm": "진화",
    "areaId": "rom_mined",
-   "source": "rom-rec2661",
+   "source": "rom-rec2817",
    "areasReferenced": [
     "cerulean_city",
     "route_6",
@@ -12125,16 +12124,16 @@
     1286,
     2646,
     2661
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:떨어뜨리다",
-   "korean": "한다상대의떨어뜨리기도슬",
-   "romanization": "handasangdaeuitteoleotteurigidoseul",
-   "gloss": "(ROM example, rec6817)",
-   "targetForm": "떨어뜨리",
+   "korean": "바위를 상대에게 던져서 스피드를 떨어뜨려 버리는 재미있는 기술이지!",
+   "gloss": "It's a fun move that throws rocks at the opponent and lowers its Speed!",
+   "targetForm": "떨어뜨려",
    "areaId": "rom_mined",
-   "source": "rom-rec6817",
+   "source": "rom-rec2185",
    "areasReferenced": [
     "pallet_town",
     "saffron_city",
@@ -12155,16 +12154,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     2765
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:로켓단",
-   "korean": "오우로켓단도전할자슬",
-   "romanization": "ourokesdandojeonhaljaseul",
-   "gloss": "(ROM example, rec539)",
+   "korean": "로켓단은...",
+   "gloss": "Team Rocket is...",
    "targetForm": "로켓단",
    "areaId": "rom_mined",
-   "source": "rom-rec539",
+   "source": "rom-rec2098",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -12235,16 +12234,16 @@
     1014,
     1052,
     1683
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:주마",
-   "korean": "많은주마",
-   "romanization": "manheunjuma",
-   "gloss": "(ROM example, rec2260)",
+   "korean": "필요한 도구를 주마!",
+   "gloss": "I'll give you a tool you'll need!",
    "targetForm": "주마",
    "areaId": "rom_mined",
-   "source": "rom-rec2260",
+   "source": "rom-rec2063",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -12283,16 +12282,16 @@
    "liveRecIds": [
     2097,
     2597
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:꼬리",
-   "korean": "꼬리물보다도",
-   "romanization": "kkorimulbodado",
-   "gloss": "(ROM example, rec5111)",
+   "korean": "꼬리에 작은 뇌가 있다.",
+   "gloss": "It has a small brain in its tail.",
    "targetForm": "꼬리",
    "areaId": "rom_mined",
-   "source": "rom-rec5111",
+   "source": "rom-rec5131",
    "areasReferenced": [
     "rom_mined",
     "five_isle_meadow",
@@ -12320,16 +12319,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     659
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:날카롭다",
-   "korean": "날카로운상대에게공격한다연속으로",
-   "romanization": "nalkarounsangdaeegegonggyeoghandayeonsogeuro",
-   "gloss": "(ROM example, rec6360)",
+   "korean": "딱딱하고 날카로운 손톱.",
+   "gloss": "A hard, sharp claw.",
    "targetForm": "날카로운",
    "areaId": "rom_mined",
-   "source": "rom-rec6360",
+   "source": "rom-rec6737",
    "areasReferenced": [
     "route_2",
     "rom_mined",
@@ -12344,7 +12343,8 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     4937
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:듯하다",
@@ -12394,12 +12394,11 @@
   },
   {
    "vocabId": "rom-mine-v3:마음",
-   "korean": "할마음에든윈도우를",
-   "romanization": "halmaeumedeunwindoureul",
-   "gloss": "(ROM example, rec3748)",
+   "korean": "너도 마음에 드는 걸 가지려무나!",
+   "gloss": "You take one you like, too!",
    "targetForm": "마음",
    "areaId": "rom_mined",
-   "source": "rom-rec3748",
+   "source": "rom-rec2045",
    "areasReferenced": [
     "pallet_town",
     "route_24",
@@ -12476,16 +12475,16 @@
     1744,
     1772,
     2045
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:시작",
-   "korean": "보이고시작한다",
-   "romanization": "boigosijaghanda",
-   "gloss": "(ROM example, rec5134)",
+   "korean": "여기는 태초마을 태초는 새하얀 시작의 색",
+   "gloss": "This is Pallet Town. Pallet is the pure white color of beginnings.",
    "targetForm": "시작",
    "areaId": "rom_mined",
-   "source": "rom-rec5134",
+   "source": "rom-rec926",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -12561,16 +12560,16 @@
     2027,
     2098,
     2686
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:저널",
-   "korean": "진화한다고저널에서",
-   "romanization": "jinhwahandagojeoneoleseo",
-   "gloss": "(ROM example, rec1286)",
+   "korean": "포켓몬 저널!",
+   "gloss": "Pokémon Journal!",
    "targetForm": "저널",
    "areaId": "rom_mined",
-   "source": "rom-rec1286",
+   "source": "rom-rec3454",
    "areasReferenced": [
     "route_6",
     "route_8",
@@ -12614,16 +12613,16 @@
    "liveRecIds": [
     1286,
     3072
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:지니다",
-   "korean": "지니게하있는",
-   "romanization": "jinigehaissneun",
-   "gloss": "(ROM example, rec6735)",
-   "targetForm": "지니",
+   "korean": "지닌 포켓몬에 데려갈 수 없는 포켓몬이 있습니다",
+   "gloss": "There's a Pokémon in your party that can't be taken along.",
+   "targetForm": "지닌",
    "areaId": "rom_mined",
-   "source": "rom-rec6735",
+   "source": "rom-rec3882",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -12690,16 +12689,16 @@
     2899,
     3882,
     3978
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:가끔",
-   "korean": "가끔씩해주시니까하놀있는",
-   "romanization": "gakkeumssighaejusinikkahanolissneun",
-   "gloss": "(ROM example, rec638)",
+   "korean": "오박사: 가끔은 나도 보러 오렴!",
+   "gloss": "Prof. Oak: Come and visit me once in a while!",
    "targetForm": "가끔",
    "areaId": "rom_mined",
-   "source": "rom-rec638",
+   "source": "rom-rec2071",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -12764,16 +12763,16 @@
     1090,
     1366,
     1739
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:교환",
-   "korean": "교환을슬",
-   "romanization": "gyohwaneulseul",
-   "gloss": "(ROM example, rec2436)",
+   "korean": "교환을 하겠습니까?",
+   "gloss": "Do you want to trade?",
    "targetForm": "교환",
    "areaId": "rom_mined",
-   "source": "rom-rec2436",
+   "source": "rom-rec3908",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -12826,16 +12825,16 @@
     2205,
     2247,
     2333
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:맞다",
-   "korean": "기술을맞지한다",
-   "romanization": "gisuleulmajjihanda",
-   "gloss": "(ROM example, rec4492)",
+   "korean": "...너와 포켓몬도 호흡이 잘 맞는구나",
+   "gloss": "...You and your Pokémon are really in sync.",
    "targetForm": "맞",
    "areaId": "rom_mined",
-   "source": "rom-rec4492",
+   "source": "rom-rec2110",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -12912,16 +12911,16 @@
     1489,
     2315,
     2603
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:매우",
-   "korean": "매우움머리하나가",
-   "romanization": "maeuummeorihanaga",
-   "gloss": "(ROM example, rec5030)",
+   "korean": "매우 쓴 뿌리.",
+   "gloss": "A very bitter root.",
    "targetForm": "매우",
    "areaId": "rom_mined",
-   "source": "rom-rec5030",
+   "source": "rom-rec6620",
    "areasReferenced": [
     "fuchsia_city",
     "cinnabar_island",
@@ -12978,16 +12977,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     2356
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:멀다",
-   "korean": "멀었어한몫을슬말슬",
-   "romanization": "meoleosseohanmogseulseulmalseul",
-   "gloss": "(ROM example, rec539)",
-   "targetForm": "멀",
+   "korean": "먼 옛날 나무에서 나온 액체가 화석처럼 굳은 것을 호박이라고 한단다",
+   "gloss": "Long ago, sap from trees hardened like a fossil; that's called amber.",
+   "targetForm": "먼",
    "areaId": "rom_mined",
-   "source": "rom-rec539",
+   "source": "rom-rec2161",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -13054,16 +13053,16 @@
     1676,
     1966,
     2161
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:모이다",
-   "korean": "잘또모이면",
-   "romanization": "jalttomoimyeon",
-   "gloss": "(ROM example, rec1048)",
-   "targetForm": "모이",
+   "korean": "아무래도 이 체육관엔 땅타입 포켓몬을 쓰는 사람이 모여있나봐",
+   "gloss": "It looks like people who use Ground-type Pokémon gather at this Gym.",
+   "targetForm": "모여",
    "areaId": "rom_mined",
-   "source": "rom-rec1048",
+   "source": "rom-rec2126",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -13113,16 +13112,16 @@
     2078,
     2126,
     3480
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:살다",
-   "korean": "수지만산다는",
-   "romanization": "sujimansandaneun",
-   "gloss": "(ROM example, rec5075)",
-   "targetForm": "산다는",
+   "korean": "남나리: 사람이랑 똑같이 포켓몬도 살아 있단다!",
+   "gloss": "Daisy: Pokémon are alive, just like people!",
+   "targetForm": "살",
    "areaId": "rom_mined",
-   "source": "rom-rec5075",
+   "source": "rom-rec2014",
    "areasReferenced": [
     "cerulean_city",
     "route_25",
@@ -13201,16 +13200,16 @@
     1636,
     2930,
     3047
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:오박사",
-   "korean": "오박사에게서",
-   "romanization": "obagsaegeseo",
-   "gloss": "(ROM example, rec2052)",
+   "korean": "오박사: 그래!",
+   "gloss": "Prof. Oak: Right!",
    "targetForm": "오박사",
    "areaId": "rom_mined",
-   "source": "rom-rec2052",
+   "source": "rom-rec2053",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -13281,16 +13280,16 @@
     927,
     930,
     2045
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:이동",
-   "korean": "이동할있는",
-   "romanization": "idonghalissneun",
-   "gloss": "(ROM example, rec6843)",
+   "korean": "회전하면서 이동.",
+   "gloss": "Moves while spinning.",
    "targetForm": "이동",
    "areaId": "rom_mined",
-   "source": "rom-rec6843",
+   "source": "rom-rec5275",
    "areasReferenced": [
     "rom_mined",
     "ruin_valley",
@@ -13312,16 +13311,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     887
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:조금",
-   "korean": "꼬리를쭉조금이라도",
-   "romanization": "kkorireuljjugjogeumirado",
-   "gloss": "(ROM example, rec5089)",
+   "korean": "조금은 도움이 됐지?",
+   "gloss": "That helped a little, right?",
    "targetForm": "조금",
    "areaId": "rom_mined",
-   "source": "rom-rec5089",
+   "source": "rom-rec941",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -13402,16 +13401,16 @@
     1135,
     1555,
     1564
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:찾다",
-   "korean": "찾아옵니다 방이",
-   "romanization": "chajaobnida bangi",
-   "gloss": "(ROM example, rec881)",
+   "korean": "웅이가 상대를 찾고 있어 ...이리 와!",
+   "gloss": "Brock is looking for an opponent... come here!",
    "targetForm": "찾",
    "areaId": "rom_mined",
-   "source": "rom-rec881",
+   "source": "rom-rec964",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -13492,16 +13491,16 @@
     964,
     1910,
     2063
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:필요",
-   "korean": "식줄게놀필요",
-   "romanization": "sigjulgenolpilyo",
-   "gloss": "(ROM example, rec2873)",
+   "korean": "필요한 도구를 주마!",
+   "gloss": "I'll give you a tool you'll need!",
    "targetForm": "필요",
    "areaId": "rom_mined",
-   "source": "rom-rec2873",
+   "source": "rom-rec2063",
    "areasReferenced": [
     "viridian_city",
     "route_2",
@@ -13580,16 +13579,16 @@
     2874,
     2988,
     3105
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:화상",
-   "korean": "둘화상회복한다",
-   "romanization": "dulhwasanghoeboghanda",
-   "gloss": "(ROM example, rec6604)",
+   "korean": "독이나 화상으로 약하게 만들어도 좋다!",
+   "gloss": "It's fine to weaken it with poison or a burn, too!",
    "targetForm": "화상",
    "areaId": "rom_mined",
-   "source": "rom-rec6604",
+   "source": "rom-rec2133",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -13617,16 +13616,16 @@
     2208,
     2617,
     2640
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:가르치다",
-   "korean": "알았어가르쳐줄게바로",
-   "romanization": "alasseogareuchyeojulgebaro",
-   "gloss": "(ROM example, rec663)",
+   "korean": "내 손자가 나와서 가르쳐 주니까 당연하겠지!",
+   "gloss": "My grandson comes and teaches them, so of course!",
    "targetForm": "가르쳐",
    "areaId": "rom_mined",
-   "source": "rom-rec663",
+   "source": "rom-rec945",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -13689,16 +13688,16 @@
     1611,
     2172,
     2220
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:가방",
-   "korean": "받은가방에",
-   "romanization": "badeungabange",
-   "gloss": "(ROM example, rec3569)",
+   "korean": "가방이 가득 차 있다...",
+   "gloss": "The bag is full...",
    "targetForm": "가방",
    "areaId": "rom_mined",
-   "source": "rom-rec3569",
+   "source": "rom-rec3135",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -13743,16 +13742,16 @@
     2862,
     3132,
     3135
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:계속",
-   "korean": "계속있다",
-   "romanization": "gyesogissda",
-   "gloss": "(ROM example, rec4774)",
+   "korean": "꽤 많이 따르는구나 그렇게 계속 귀여워해줘",
+   "gloss": "It's really attached to you. Keep loving it like that.",
    "targetForm": "계속",
    "areaId": "rom_mined",
-   "source": "rom-rec4774",
+   "source": "rom-rec2026",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -13822,16 +13821,16 @@
     1982,
     2026,
     2140
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:그러다",
-   "korean": "그러고 님은",
-   "romanization": "geureogo nimeun",
-   "gloss": "(ROM example, rec3006)",
+   "korean": "음- 왜 그러니?",
+   "gloss": "Hmm, what's the matter?",
    "targetForm": "그러",
    "areaId": "rom_mined",
-   "source": "rom-rec3006",
+   "source": "rom-rec2070",
    "areasReferenced": [
     "pallet_town",
     "route_24",
@@ -13904,16 +13903,16 @@
     2038,
     3006,
     3070
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:그림",
-   "korean": "있는그림",
-   "romanization": "issneungeurim",
-   "gloss": "(ROM example, rec2579)",
+   "korean": "예쁜 포켓몬 그림이다!",
+   "gloss": "It's a pretty picture of a Pokémon!",
    "targetForm": "그림",
    "areaId": "rom_mined",
-   "source": "rom-rec2579",
+   "source": "rom-rec4001",
    "areasReferenced": [
     "pallet_town",
     "route_21",
@@ -13946,16 +13945,16 @@
     2579,
     4001,
     4260
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:동료",
-   "korean": "동료를합슬",
-   "romanization": "dongryoreulhabseul",
-   "gloss": "(ROM example, rec5244)",
+   "korean": "동료들이 날 가만두지 않을 거야",
+   "gloss": "My friends won't let me get away with this.",
    "targetForm": "동료",
    "areaId": "rom_mined",
-   "source": "rom-rec5244",
+   "source": "rom-rec251",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -13998,16 +13997,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     1985
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:동안",
-   "korean": "만한다동안만",
-   "romanization": "manhandadonganman",
-   "gloss": "(ROM example, rec6817)",
+   "korean": "살아 있는 동안에 이 기술을 가르칠 자를 만날 거라곤 생각도 못 했는데",
+   "gloss": "I never thought I'd meet someone to teach this move to while I was still alive.",
    "targetForm": "동안",
    "areaId": "rom_mined",
-   "source": "rom-rec6817",
+   "source": "rom-rec3107",
    "areasReferenced": [
     "pewter_city",
     "cerulean_city",
@@ -14042,16 +14041,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     5270
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:막다",
-   "korean": "배운을막기술의볼있습니다",
-   "romanization": "baeuneulmaggisuluibolissseubnida",
-   "gloss": "(ROM example, rec3589)",
+   "korean": "바위로 흐름을 막을 수 있을지도...",
+   "gloss": "Maybe a boulder could block the current...",
    "targetForm": "막",
    "areaId": "rom_mined",
-   "source": "rom-rec3589",
+   "source": "rom-rec720",
    "areasReferenced": [
     "vermilion_city",
     "celadon_city",
@@ -14068,16 +14067,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     2408
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:먹이",
-   "korean": "먹이를슬",
-   "romanization": "meogireulseul",
-   "gloss": "(ROM example, rec5153)",
+   "korean": "먹이를 던지면 먹이에 정신이 팔린 동안 포켓몬이 잘 도망치지 않아!",
+   "gloss": "If you throw bait, Pokémon won't run away as easily while they're distracted by it!",
    "targetForm": "먹이",
    "areaId": "rom_mined",
-   "source": "rom-rec5153",
+   "source": "rom-rec640",
    "areasReferenced": [
     "rom_mined",
     "pokemon_mansion",
@@ -14094,16 +14093,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     640
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:바로",
-   "korean": "알았어가르쳐줄게바로",
-   "romanization": "alasseogareuchyeojulgebaro",
-   "gloss": "(ROM example, rec663)",
+   "korean": "그럼 바로...!",
+   "gloss": "Well then, right away...!",
    "targetForm": "바로",
    "areaId": "rom_mined",
-   "source": "rom-rec663",
+   "source": "rom-rec2192",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -14170,16 +14169,16 @@
     2192,
     2364,
     2538
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:버튼",
-   "korean": "버튼으로",
-   "romanization": "beoteuneuro",
-   "gloss": "(ROM example, rec3857)",
+   "korean": "가방에 들어 있는 도구를 편리 버튼에 등록할 수 있습니다",
+   "gloss": "You can register an item in your Bag to the SELECT button.",
    "targetForm": "버튼",
    "areaId": "rom_mined",
-   "source": "rom-rec3857",
+   "source": "rom-rec3144",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -14248,16 +14247,16 @@
     975,
     2472,
     3856
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:부르다",
-   "korean": "불러내요",
-   "romanization": "bulreonaeyo",
-   "gloss": "(ROM example, rec3517)",
-   "targetForm": "불러",
+   "korean": "아아 그렇지 내가 불렀구나!",
+   "gloss": "Ah, that's right, I called you!",
+   "targetForm": "불렀",
    "areaId": "rom_mined",
-   "source": "rom-rec3517",
+   "source": "rom-rec2044",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -14330,16 +14329,16 @@
    "liveRecIds": [
     1887,
     3178
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:비밀",
-   "korean": "이비밀이있다",
-   "romanization": "ibimiliissda",
-   "gloss": "(ROM example, rec4236)",
+   "korean": "비밀의 스위치가 있다!",
+   "gloss": "There's a secret switch!",
    "targetForm": "비밀",
    "areaId": "rom_mined",
-   "source": "rom-rec4236",
+   "source": "rom-rec595",
    "areasReferenced": [
     "route_2",
     "route_4",
@@ -14411,7 +14410,8 @@
     1179,
     2820,
     4236
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:식의",
@@ -14450,12 +14450,11 @@
   },
   {
    "vocabId": "rom-mine-v3:얼음",
-   "korean": "둘얼음회복한다",
-   "romanization": "duleoleumhoeboghanda",
-   "gloss": "(ROM example, rec6605)",
+   "korean": "배틀이 끝나도 얼어 있습니다 얼음상태치료제로 안 녹이면 포켓몬이 불쌍합니다",
+   "gloss": "It stays frozen even after battle. If you don't thaw it with Ice Heal, the poor Pokémon suffers.",
    "targetForm": "얼음",
    "areaId": "rom_mined",
-   "source": "rom-rec6605",
+   "source": "rom-rec2143",
    "areasReferenced": [
     "saffron_city",
     "lavender_town",
@@ -14485,16 +14484,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     1116
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:정도",
-   "korean": "정도는있다고",
-   "romanization": "jeongdoneunissdago",
-   "gloss": "(ROM example, rec340)",
+   "korean": "이 이상은 없을 정도로 따르고 있구나...!",
+   "gloss": "It couldn't be more attached to you...!",
    "targetForm": "정도",
    "areaId": "rom_mined",
-   "source": "rom-rec340",
+   "source": "rom-rec2024",
    "areasReferenced": [
     "pallet_town",
     "saffron_city",
@@ -14563,16 +14562,16 @@
     2781,
     3494,
     3977
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:조수",
-   "korean": "조수에게서",
-   "romanization": "josuegeseo",
-   "gloss": "(ROM example, rec2812)",
+   "korean": "저도 박사님의 조수로서 포켓몬을 연구하고 있습니다",
+   "gloss": "I'm also researching Pokémon as the Professor's assistant.",
    "targetForm": "조수",
    "areaId": "rom_mined",
-   "source": "rom-rec2812",
+   "source": "rom-rec2079",
    "areasReferenced": [
     "pallet_town",
     "route_2",
@@ -14603,16 +14602,16 @@
    "liveRecIds": [
     2079,
     2859
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:챔피언",
-   "korean": "포켓몬리그의챔피언이야",
-   "romanization": "pokesmonrigeuuichaempieoniya",
-   "gloss": "(ROM example, rec665)",
+   "korean": "미래의 챔피언!",
+   "gloss": "Future Champion!",
    "targetForm": "챔피언",
    "areaId": "rom_mined",
-   "source": "rom-rec665",
+   "source": "rom-rec2126",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -14674,16 +14673,16 @@
     2241,
     2581,
     2640
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:친구",
-   "korean": "섬이라는섬이친구가가게같이",
-   "romanization": "seomiraneunseomichingugagagegati",
-   "gloss": "(ROM example, rec1095)",
+   "korean": "친구랑 2층에 가서 없던 포켓몬을 교환받으면 많이 모여!",
+   "gloss": "Go to the second floor with a friend and trade for Pokémon you don't have, and you'll collect lots!",
    "targetForm": "친구",
    "areaId": "rom_mined",
-   "source": "rom-rec1095",
+   "source": "rom-rec2228",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -14747,16 +14746,16 @@
     1631,
     1708,
     1710
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:혼란",
-   "korean": "혼란에있다",
-   "romanization": "honraneissda",
-   "gloss": "(ROM example, rec4552)",
+   "korean": "혼란에 빠지면 바로 포켓몬을 교체하는 작전도 좋지",
+   "gloss": "Switching Pokémon as soon as one gets confused is a good strategy, too.",
    "targetForm": "혼란",
    "areaId": "rom_mined",
-   "source": "rom-rec4552",
+   "source": "rom-rec1714",
    "areasReferenced": [
     "cerulean_city",
     "rom_mined",
@@ -14790,16 +14789,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     4434
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:가족",
-   "korean": "가족이나등나무노인의",
-   "romanization": "gajoginadeungnamunoinui",
-   "gloss": "(ROM example, rec3286)",
+   "korean": "이름 캥카 사이좋은 가족포켓몬!",
+   "gloss": "Name: Kangaskhan. The close-knit family Pokémon!",
    "targetForm": "가족",
    "areaId": "rom_mined",
-   "source": "rom-rec3286",
+   "source": "rom-rec1078",
    "areasReferenced": [
     "rom_mined",
     "celadon_city",
@@ -14818,16 +14817,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     3232
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:가지다",
-   "korean": "말이야이런가지고는",
-   "romanization": "maliyaireongajigoneun",
-   "gloss": "(ROM example, rec539)",
+   "korean": "이제 이걸 가지고 가거라",
+   "gloss": "Now take this with you.",
    "targetForm": "가지",
    "areaId": "rom_mined",
-   "source": "rom-rec539",
+   "source": "rom-rec941",
    "areasReferenced": [
     "viridian_city",
     "route_2",
@@ -14901,16 +14900,16 @@
     3166,
     3186,
     4098
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:같이",
-   "korean": "나랑쭉같이있어",
-   "romanization": "narangjjuggatiisseo",
-   "gloss": "(ROM example, rec307)",
+   "korean": "같이 포켓몬 챔피언이 되어 보자고",
+   "gloss": "Let's both become Pokémon Champions!",
    "targetForm": "같이",
    "areaId": "rom_mined",
-   "source": "rom-rec307",
+   "source": "rom-rec2191",
    "areasReferenced": [
     "cerulean_city",
     "lavender_town",
@@ -14975,16 +14974,16 @@
     1510,
     1966,
     3035
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:걷다",
-   "korean": "걷지슬헤엄치는더모양이다",
-   "romanization": "geodjiseulheeomchineundeomoyangida",
-   "gloss": "(ROM example, rec4986)",
+   "korean": "머리를 땋은 여자아이가 벽돌길을 걷고 있다...",
+   "gloss": "A girl with braided hair is walking down the brick road...",
    "targetForm": "걷",
    "areaId": "rom_mined",
-   "source": "rom-rec4986",
+   "source": "rom-rec2005",
    "areasReferenced": [
     "viridian_city",
     "route_7",
@@ -15039,16 +15038,16 @@
     1549,
     2907,
     4134
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:근처",
-   "korean": "룸근처에서",
-   "romanization": "rumgeuncheoeseo",
-   "gloss": "(ROM example, rec3922)",
+   "korean": "우선 제1섬에 가서 그 근처를 찾아볼까- 그럼 먼저 간다!",
+   "gloss": "First I'll go to One Island and look around there. I'm heading off first!",
    "targetForm": "근처",
    "areaId": "rom_mined",
-   "source": "rom-rec3922",
+   "source": "rom-rec2092",
    "areasReferenced": [
     "saffron_city",
     "cinnabar_island",
@@ -15126,16 +15125,16 @@
    "liveRecIds": [
     1184,
     2692
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:급소",
-   "korean": "힘껏공격한다급소에확률이",
-   "romanization": "himkkeosgonggyeoghandageubsoehwagryuli",
-   "gloss": "(ROM example, rec6467)",
+   "korean": "크리티컬커터는 기술이 급소에 맞기 쉬워집니다 도구 구매는 무지개백화점에서!",
+   "gloss": "Focus Energy makes moves more likely to land critical hits. Buy items at the Celadon Dept. Store!",
    "targetForm": "급소",
    "areaId": "rom_mined",
-   "source": "rom-rec6467",
+   "source": "rom-rec1053",
    "areasReferenced": [
     "rom_mined",
     "celadon_city",
@@ -15150,16 +15149,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     4416
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:기다리다",
-   "korean": "상대의기다리고있",
-   "romanization": "sangdaeuigidarigoiss",
-   "gloss": "(ROM example, rec6906)",
+   "korean": "기다리거라!",
+   "gloss": "Wait!",
    "targetForm": "기다리",
    "areaId": "rom_mined",
-   "source": "rom-rec6906",
+   "source": "rom-rec920",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -15224,16 +15223,16 @@
     1382,
     1383,
     1638
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:나가다",
-   "korean": "나갈있어요",
-   "romanization": "nagalisseoyo",
-   "gloss": "(ROM example, rec5545)",
-   "targetForm": "나갈",
+   "korean": "슬슬 나가 보자!",
+   "gloss": "Let's head out soon!",
+   "targetForm": "나가",
    "areaId": "rom_mined",
-   "source": "rom-rec5545",
+   "source": "rom-rec2006",
    "areasReferenced": [
     "cerulean_city",
     "route_25",
@@ -15305,16 +15304,16 @@
     1166,
     2285,
     2947
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:나누다",
-   "korean": "나누어말한다",
-   "romanization": "nanueomalhanda",
-   "gloss": "(ROM example, rec5103)",
-   "targetForm": "나누",
+   "korean": "...정보 나눔 게시판!",
+   "gloss": "...Information bulletin board!",
+   "targetForm": "나눔",
    "areaId": "rom_mined",
-   "source": "rom-rec5103",
+   "source": "rom-rec948",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -15381,16 +15380,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     3946
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:날개",
-   "korean": "날개는보이지만",
-   "romanization": "nalgaeneunboijiman",
-   "gloss": "(ROM example, rec5155)",
+   "korean": "환상의 날개라는 얘기...",
+   "gloss": "A story about phantom wings...",
    "targetForm": "날개",
    "areaId": "rom_mined",
-   "source": "rom-rec5155",
+   "source": "rom-rec4100",
    "areasReferenced": [
     "route_3",
     "rom_mined",
@@ -15418,16 +15417,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     4222
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:남다",
-   "korean": "더 절남도록",
-   "romanization": "deo jeolnamdorog",
-   "gloss": "(ROM example, rec6435)",
+   "korean": "도둑이 어질러 놓은 흔적이 남아 있다...",
+   "gloss": "Traces of the mess the thief left behind remain...",
    "targetForm": "남",
    "areaId": "rom_mined",
-   "source": "rom-rec6435",
+   "source": "rom-rec4015",
    "areasReferenced": [
     "pallet_town",
     "fuchsia_city",
@@ -15472,16 +15471,16 @@
    "liveRecIds": [
     2545,
     4015
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:놀다",
-   "korean": "파티는안대신놀다",
-   "romanization": "patineunandaesinnolda",
-   "gloss": "(ROM example, rec2934)",
+   "korean": "또 놀러 가고 싶어!",
+   "gloss": "I want to go play again!",
    "targetForm": "놀",
    "areaId": "rom_mined",
-   "source": "rom-rec2934",
+   "source": "rom-rec332",
    "areasReferenced": [
     "mt_moon",
     "route_25",
@@ -15529,16 +15528,16 @@
     1524,
     1617,
     2873
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:던지다",
-   "korean": "내던지면됩니다던져도건",
-   "romanization": "naedeonjimyeondoebnidadeonjyeodogeon",
-   "gloss": "(ROM example, rec2171)",
-   "targetForm": "던져",
+   "korean": "하고 던지면 포켓몬을 잡을 수 있지!",
+   "gloss": "You throw it like that and you can catch Pokémon!",
+   "targetForm": "던지",
    "areaId": "rom_mined",
-   "source": "rom-rec2171",
+   "source": "rom-rec2066",
    "areasReferenced": [
     "vermilion_city",
     "celadon_city",
@@ -15590,16 +15589,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     2398
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:들어가다",
-   "korean": "수있어느들어가겠습니까",
-   "romanization": "suisseoneudeuleogagessseubnikka",
-   "gloss": "(ROM example, rec3907)",
-   "targetForm": "들어가",
+   "korean": "다양한 물건이 들어갈 것 같다!",
+   "gloss": "Looks like all sorts of things could fit in it!",
+   "targetForm": "들어갈",
    "areaId": "rom_mined",
-   "source": "rom-rec3907",
+   "source": "rom-rec3992",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -15676,16 +15675,16 @@
     1086,
     3860,
     3891
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:리그",
-   "korean": "포켓몬리그의챔피언이야",
-   "romanization": "pokesmonrigeuuichaempieoniya",
-   "gloss": "(ROM example, rec665)",
+   "korean": "포켓몬리그 본부",
+   "gloss": "Pokémon League Headquarters",
    "targetForm": "리그",
    "areaId": "rom_mined",
-   "source": "rom-rec665",
+   "source": "rom-rec3997",
    "areasReferenced": [
     "route_1",
     "route_2",
@@ -15755,7 +15754,8 @@
     2647,
     2686,
     3074
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:만한",
@@ -15770,12 +15770,11 @@
   },
   {
    "vocabId": "rom-mine-v3:머리",
-   "korean": "머리에뿔은",
-   "romanization": "meorieppuleun",
-   "gloss": "(ROM example, rec5012)",
+   "korean": "머리를 땋은 여자아이가 벽돌길을 걷고 있다...",
+   "gloss": "A girl with braided hair is walking down the brick road...",
    "targetForm": "머리",
    "areaId": "rom_mined",
-   "source": "rom-rec5012",
+   "source": "rom-rec2005",
    "areasReferenced": [
     "rom_mined",
     "green_path",
@@ -15832,16 +15831,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     1883
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:메일",
-   "korean": "메일을여기로",
-   "romanization": "meileulyeogiro",
-   "gloss": "(ROM example, rec3666)",
+   "korean": "메일을 받는다",
+   "gloss": "Receive the mail.",
    "targetForm": "메일",
    "areaId": "rom_mined",
-   "source": "rom-rec3666",
+   "source": "rom-rec5463",
    "areasReferenced": [
     "pallet_town",
     "cinnabar_island",
@@ -15865,16 +15864,16 @@
     2078,
     2662,
     3089
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:모두",
-   "korean": "모두듯하다",
-   "romanization": "modudeushada",
-   "gloss": "(ROM example, rec819)",
+   "korean": "모두 건강해졌습니다!",
+   "gloss": "Everyone's healthy again!",
    "targetForm": "모두",
    "areaId": "rom_mined",
-   "source": "rom-rec819",
+   "source": "rom-rec3188",
    "areasReferenced": [
     "viridian_city",
     "route_2",
@@ -15921,16 +15920,16 @@
     2429,
     3002,
     3189
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:무겁다",
-   "korean": "공격한다무거운밀있다",
-   "romanization": "gonggyeoghandamugeounmilissda",
-   "gloss": "(ROM example, rec6298)",
+   "korean": "엄청 무거운 바위라도 괴력으로 움직일 수 있지!",
+   "gloss": "With Strength you can move even really heavy boulders!",
    "targetForm": "무거운",
    "areaId": "rom_mined",
-   "source": "rom-rec6298",
+   "source": "rom-rec352",
    "areasReferenced": [
     "fuchsia_city",
     "rom_mined",
@@ -15950,16 +15949,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     3068
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:물다",
-   "korean": "문든있어번째는어디고번째는",
-   "romanization": "mundeunisseobeonjjaeneuneodigobeonjjaeneun",
-   "gloss": "(ROM example, rec784)",
-   "targetForm": "문",
+   "korean": "뛰고 물고!",
+   "gloss": "Run and bite!",
+   "targetForm": "물",
    "areaId": "rom_mined",
-   "source": "rom-rec784",
+   "source": "rom-rec1132",
    "areasReferenced": [
     "rom_mined",
     "pallet_town",
@@ -16026,16 +16025,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     784
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:변화",
-   "korean": "전원의변화를",
-   "romanization": "jeonwonuibyeonhwareul",
-   "gloss": "(ROM example, rec6343)",
+   "korean": "칠판에는 배틀 중인 포켓몬에게 일어나는 상태의 변화에 대한 내용이 적혀 있다",
+   "gloss": "The blackboard describes status changes that happen to Pokémon during battle.",
    "targetForm": "변화",
    "areaId": "rom_mined",
-   "source": "rom-rec6343",
+   "source": "rom-rec2138",
    "areasReferenced": [
     "rom_mined",
     "pallet_town",
@@ -16049,16 +16048,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     4720
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:불꽃",
-   "korean": "불꽃을펀치로",
-   "romanization": "bulkkocheulpeonchiro",
-   "gloss": "(ROM example, rec6235)",
+   "korean": "불꽃을 받으면 강해진다",
+   "gloss": "It gets stronger when hit by fire.",
    "targetForm": "불꽃",
    "areaId": "rom_mined",
-   "source": "rom-rec6235",
+   "source": "rom-rec4432",
    "areasReferenced": [
     "fuchsia_city",
     "cinnabar_island",
@@ -16082,16 +16081,16 @@
     2637,
     2638,
     2640
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:비축",
-   "korean": "비축할있다",
-   "romanization": "bichughalissda",
-   "gloss": "(ROM example, rec6485)",
+   "korean": "비축된 만큼 데미지가 크다.",
+   "gloss": "The more it has stockpiled, the bigger the damage.",
    "targetForm": "비축",
    "areaId": "rom_mined",
-   "source": "rom-rec6485",
+   "source": "rom-rec6486",
    "areasReferenced": [
     "rom_mined",
     "six_island"
@@ -16104,16 +16103,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     4605
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:빠르다",
-   "korean": "빨라서잘않는다",
-   "romanization": "ppalraseojalanhneunda",
-   "gloss": "(ROM example, rec5091)",
-   "targetForm": "빨라서",
+   "korean": "물살이 빠르다!",
+   "gloss": "The current is fast!",
+   "targetForm": "빠르",
    "areaId": "rom_mined",
-   "source": "rom-rec5091",
+   "source": "rom-rec3153",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -16166,16 +16165,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     2188
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:사천왕",
-   "korean": "사천왕오박사아끼는영감많강하고",
-   "romanization": "sacheonwangobagsaakkineunyeonggammanhganghago",
-   "gloss": "(ROM example, rec654)",
+   "korean": "사천왕이 군림하고 있다!",
+   "gloss": "The Elite Four reign here!",
    "targetForm": "사천왕",
    "areaId": "rom_mined",
-   "source": "rom-rec654",
+   "source": "rom-rec2135",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -16223,16 +16222,16 @@
    "liveRecIds": [
     2761,
     3464
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:시간",
-   "korean": "시간을테니",
-   "romanization": "siganeulteni",
-   "gloss": "(ROM example, rec883)",
+   "korean": "...시간은 돈이라네",
+   "gloss": "...Time is money.",
    "targetForm": "시간",
    "areaId": "rom_mined",
-   "source": "rom-rec883",
+   "source": "rom-rec946",
    "areasReferenced": [
     "pewter_city",
     "route_5",
@@ -16290,7 +16289,8 @@
     1661,
     1905,
     2834
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:싶다",
@@ -16368,12 +16368,11 @@
   },
   {
    "vocabId": "rom-mine-v3:알리다",
-   "korean": "심오함을알려",
-   "romanization": "simohameulalryeo",
-   "gloss": "(ROM example, rec2564)",
+   "korean": "빨리 알려줘!",
+   "gloss": "Tell me quickly!",
    "targetForm": "알려",
    "areaId": "rom_mined",
-   "source": "rom-rec2564",
+   "source": "rom-rec3952",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -16443,16 +16442,16 @@
     2564,
     2664,
     2743
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:전기",
-   "korean": "전기를회복한다",
-   "romanization": "jeongireulhoeboghanda",
-   "gloss": "(ROM example, rec4424)",
+   "korean": "전기는 소중하게!",
+   "gloss": "Treat electricity with care!",
    "targetForm": "전기",
    "areaId": "rom_mined",
-   "source": "rom-rec4424",
+   "source": "rom-rec1354",
    "areasReferenced": [
     "pewter_city",
     "route_3",
@@ -16490,16 +16489,16 @@
     1369,
     1388,
     2241
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:전혀",
-   "korean": "속에전혀안",
-   "romanization": "sogejeonhyeoan",
-   "gloss": "(ROM example, rec5053)",
+   "korean": "전혀 페이지가 안 늘었는데?",
+   "gloss": "Your pages haven't increased at all?",
    "targetForm": "전혀",
    "areaId": "rom_mined",
-   "source": "rom-rec5053",
+   "source": "rom-rec2070",
    "areasReferenced": [
     "pewter_city",
     "cerulean_city",
@@ -16565,16 +16564,16 @@
     2350,
     4135,
     4250
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:죽다",
-   "korean": "몸을쪽킥을공격한다상대를죽게",
-   "romanization": "momeuljjogkigeulgonggyeoghandasangdaereuljugge",
-   "gloss": "(ROM example, rec6255)",
+   "korean": "키우던 포켓몬이 죽었을 때 포켓몬타워에 데려가서 명복을 빌어주는 거지...",
+   "gloss": "When a Pokémon you raised dies, you take it to Pokémon Tower and pray for its soul...",
    "targetForm": "죽",
    "areaId": "rom_mined",
-   "source": "rom-rec6255",
+   "source": "rom-rec1013",
    "areasReferenced": [
     "pewter_city",
     "cerulean_city",
@@ -16596,16 +16595,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     1013
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:축하",
-   "korean": "축하한다",
-   "romanization": "chughahanda",
-   "gloss": "(ROM example, rec3222)",
+   "korean": "5명 연승 축하한다!",
+   "gloss": "Congratulations on beating five in a row!",
    "targetForm": "축하",
    "areaId": "rom_mined",
-   "source": "rom-rec3222",
+   "source": "rom-rec1680",
    "areasReferenced": [
     "route_1",
     "route_2",
@@ -16653,16 +16652,16 @@
     1680,
     2430,
     2866
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:키우다",
-   "korean": "둘키워텐가",
-   "romanization": "dulkiwotenga",
-   "gloss": "(ROM example, rec3970)",
-   "targetForm": "키워",
+   "korean": "천천히 키우면 좋단다!",
+   "gloss": "It's good to raise them slowly!",
+   "targetForm": "키우",
    "areaId": "rom_mined",
-   "source": "rom-rec3970",
+   "source": "rom-rec2048",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -16745,16 +16744,16 @@
     1823,
     2054,
     2078
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:향하다",
-   "korean": "하다음향했다",
-   "romanization": "hadaeumhyanghaessda",
-   "gloss": "(ROM example, rec5891)",
-   "targetForm": "향했",
+   "korean": "바람은 나를 향해 불고 있어!",
+   "gloss": "The wind is blowing my way!",
+   "targetForm": "향해",
    "areaId": "rom_mined",
-   "source": "rom-rec5891",
+   "source": "rom-rec1423",
    "areasReferenced": [
     "route_12",
     "rom_mined",
@@ -16804,16 +16803,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     1925
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:홍련",
-   "korean": "홍련섬에서",
-   "romanization": "hongryeonseomeseo",
-   "gloss": "(ROM example, rec1634)",
+   "korean": "홍련체육관 관장 강연 특집!",
+   "gloss": "Special feature on Cinnabar Gym Leader Blaine!",
    "targetForm": "홍련",
    "areaId": "rom_mined",
-   "source": "rom-rec1634",
+   "source": "rom-rec3460",
    "areasReferenced": [
     "vermilion_city",
     "fuchsia_city",
@@ -16854,16 +16853,16 @@
     1634,
     1636,
     2643
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:가득",
-   "korean": "가득이다",
-   "romanization": "gadeugida",
-   "gloss": "(ROM example, rec2766)",
+   "korean": "짐이 가득하다",
+   "gloss": "The bag is full.",
    "targetForm": "가득",
    "areaId": "rom_mined",
-   "source": "rom-rec2766",
+   "source": "rom-rec2166",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -16947,16 +16946,16 @@
     1213,
     2267,
     2320
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:갈색",
-   "korean": "갈색시티있는",
-   "romanization": "galsaegsitiissneun",
-   "gloss": "(ROM example, rec4176)",
+   "korean": "...갈색경찰서",
+   "gloss": "...Brown police station",
    "targetForm": "갈색",
    "areaId": "rom_mined",
-   "source": "rom-rec4176",
+   "source": "rom-rec1027",
    "areasReferenced": [
     "route_3",
     "mt_moon",
@@ -17007,16 +17006,16 @@
     1030,
     2367,
     4176
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:감사",
-   "korean": "감사합니다",
-   "romanization": "gamsahabnida",
-   "gloss": "(ROM example, rec2156)",
+   "korean": "감사합니다!",
+   "gloss": "Thank you!",
    "targetForm": "감사",
    "areaId": "rom_mined",
-   "source": "rom-rec2156",
+   "source": "rom-rec2162",
    "areasReferenced": [
     "pewter_city",
     "cerulean_city",
@@ -17076,16 +17075,16 @@
     2249,
     2992,
     3093
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:경우",
-   "korean": "만든경우가",
-   "romanization": "mandeungyeonguga",
-   "gloss": "(ROM example, rec6255)",
+   "korean": "독 상태가 되는 경우가 있다.",
+   "gloss": "It may become poisoned.",
    "targetForm": "경우",
    "areaId": "rom_mined",
-   "source": "rom-rec6255",
+   "source": "rom-rec6268",
    "areasReferenced": [
     "pallet_town",
     "rom_mined",
@@ -17104,16 +17103,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     1027
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:교체",
-   "korean": "교체한다",
-   "romanization": "gyochehanda",
-   "gloss": "(ROM example, rec5460)",
+   "korean": "혼란에 빠지면 바로 포켓몬을 교체하는 작전도 좋지",
+   "gloss": "Switching Pokémon as soon as one gets confused is a good strategy, too.",
    "targetForm": "교체",
    "areaId": "rom_mined",
-   "source": "rom-rec5460",
+   "source": "rom-rec1714",
    "areasReferenced": [
     "rom_mined",
     "celadon_city",
@@ -17142,16 +17141,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     3671
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:그렇게",
-   "korean": "어그렇게나승알을",
-   "romanization": "eogeureohgenaseungaleul",
-   "gloss": "(ROM example, rec3494)",
+   "korean": "꽤 많이 따르는구나 그렇게 계속 귀여워해줘",
+   "gloss": "It's really attached to you. Keep loving it like that.",
    "targetForm": "그렇게",
    "areaId": "rom_mined",
-   "source": "rom-rec3494",
+   "source": "rom-rec2026",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -17219,16 +17218,16 @@
     1818,
     1927,
     2030
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:그렇다",
-   "korean": "말하기그렇지만그렇게",
-   "romanization": "malhagigeureohjimangeureohge",
-   "gloss": "(ROM example, rec2030)",
+   "korean": "그렇게까지 무리는 못한다!",
+   "gloss": "I can't push myself that far!",
    "targetForm": "그렇",
    "areaId": "rom_mined",
-   "source": "rom-rec2030",
+   "source": "rom-rec2067",
    "areasReferenced": [
     "pallet_town",
     "pewter_city",
@@ -17308,16 +17307,16 @@
     2269,
     2302,
     2304
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:나다",
-   "korean": "이다있끝났습니다",
-   "romanization": "idaisskkeutnassseubnida",
-   "gloss": "(ROM example, rec3987)",
-   "targetForm": "났",
+   "korean": "좋은 냄새가 난다!",
+   "gloss": "Something smells good!",
+   "targetForm": "난다",
    "areaId": "rom_mined",
-   "source": "rom-rec3987",
+   "source": "rom-rec3991",
    "areasReferenced": [
     "pallet_town",
     "route_25",
@@ -17383,16 +17382,16 @@
     1570,
     2413,
     2948
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:나아가다",
-   "korean": "나아가기",
-   "romanization": "naagagi",
-   "gloss": "(ROM example, rec598)",
+   "korean": "이 앞으로 나아가라",
+   "gloss": "Go forward from here.",
    "targetForm": "나아가",
    "areaId": "rom_mined",
-   "source": "rom-rec598",
+   "source": "rom-rec3162",
    "areasReferenced": [
     "rom_mined",
     "rock_tunnel",
@@ -17423,16 +17422,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     598
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:낚다",
-   "korean": "대어또승낚았는데그",
-   "romanization": "daeeottoseungnakkassneundegeu",
-   "gloss": "(ROM example, rec4166)",
+   "korean": "낚지 못했나",
+   "gloss": "Didn't catch anything, huh.",
    "targetForm": "낚",
    "areaId": "rom_mined",
-   "source": "rom-rec4166",
+   "source": "rom-rec338",
    "areasReferenced": [
     "pallet_town",
     "route_8",
@@ -17476,16 +17475,16 @@
     1384,
     1646,
     2605
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:날리다",
-   "korean": "속도로날려서더역선제공격한다",
-   "romanization": "sogdoronalryeoseodeoyeogseonjegonggyeoghanda",
-   "gloss": "(ROM example, rec6412)",
-   "targetForm": "날려서",
+   "korean": "어느 아침에 돌연 날려온다.",
+   "gloss": "One morning it suddenly comes flying in.",
+   "targetForm": "날려",
    "areaId": "rom_mined",
-   "source": "rom-rec6412",
+   "source": "rom-rec5119",
    "areasReferenced": [
     "rom_mined",
     "resort_gorgeous",
@@ -17510,16 +17509,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     2044
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:남자",
-   "korean": "바다는남자의",
-   "romanization": "badaneunnamjaui",
-   "gloss": "(ROM example, rec1647)",
+   "korean": "회색시티 포켓몬 체육관 관장 웅 강하고 딱딱한 바위의 남자",
+   "gloss": "Pewter City Pokémon Gym. Leader: Brock. The rock-solid, tough man.",
    "targetForm": "남자",
    "areaId": "rom_mined",
-   "source": "rom-rec1647",
+   "source": "rom-rec969",
    "areasReferenced": [
     "route_3",
     "route_4",
@@ -17576,16 +17575,16 @@
     1710,
     1849,
     3010
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:내다",
-   "korean": "대담한내보낸다",
-   "romanization": "daedamhannaebonaenda",
-   "gloss": "(ROM example, rec4957)",
-   "targetForm": "낸다",
+   "korean": "흉내내기...",
+   "gloss": "Mimic...",
+   "targetForm": "내",
    "areaId": "rom_mined",
-   "source": "rom-rec4957",
+   "source": "rom-rec8427",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -17631,16 +17630,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     3102
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:노랑",
-   "korean": "노랑시티에는개의있었다시합에서곳이",
-   "romanization": "norangsitieneungaeuiisseossdasihabeseogosi",
-   "gloss": "(ROM example, rec2743)",
+   "korean": "노랑체육관 관장 초련 특집!",
+   "gloss": "Special feature on Saffron Gym Leader Sabrina!",
    "targetForm": "노랑",
    "areaId": "rom_mined",
-   "source": "rom-rec2743",
+   "source": "rom-rec3459",
    "areasReferenced": [
     "saffron_city",
     "vermilion_city",
@@ -17690,16 +17689,16 @@
     2743,
     2744,
     2750
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:노인",
-   "korean": "등나무노인에게서",
-   "romanization": "deungnamunoinegeseo",
-   "gloss": "(ROM example, rec2291)",
+   "korean": "강연과 등나무노인의 사진이 있다!",
+   "gloss": "There's a photo of Blaine and Mr. Fuji!",
    "targetForm": "노인",
    "areaId": "rom_mined",
-   "source": "rom-rec2291",
+   "source": "rom-rec2654",
    "areasReferenced": [
     "cerulean_city",
     "lavender_town",
@@ -17738,16 +17737,16 @@
    "liveRecIds": [
     2285,
     2294
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:능력",
-   "korean": "그래이것이능력이다",
-   "romanization": "geuraeigeosineungryeogida",
-   "gloss": "(ROM example, rec2740)",
+   "korean": "종류와 레벨이 같은 포켓몬이라도 잡을 때마다 능력이 조금씩 다르고...",
+   "gloss": "Even Pokémon of the same species and level have slightly different abilities each time you catch one...",
    "targetForm": "능력",
    "areaId": "rom_mined",
-   "source": "rom-rec2740",
+   "source": "rom-rec1564",
    "areasReferenced": [
     "saffron_city",
     "fuchsia_city",
@@ -17791,7 +17790,8 @@
    "liveRecIds": [
     2650,
     2740
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:대의",
@@ -17840,12 +17840,11 @@
   },
   {
    "vocabId": "rom-mine-v3:도움",
-   "korean": "도움말버튼을막곳부르는도감이나",
-   "romanization": "doummalbeoteuneulmaggosbureuneundogamina",
-   "gloss": "(ROM example, rec3747)",
+   "korean": "조금은 도움이 됐지?",
+   "gloss": "That helped a little, right?",
    "targetForm": "도움",
    "areaId": "rom_mined",
-   "source": "rom-rec3747",
+   "source": "rom-rec941",
    "areasReferenced": [
     "cerulean_city",
     "lavender_town",
@@ -17881,16 +17880,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     2294
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:돕다",
-   "korean": "할도와드리는",
-   "romanization": "haldowadeurineun",
-   "gloss": "(ROM example, rec3517)",
+   "korean": "무엇을 도와 드릴까요?",
+   "gloss": "How may I help you?",
    "targetForm": "도와",
    "areaId": "rom_mined",
-   "source": "rom-rec3517",
+   "source": "rom-rec8461",
    "areasReferenced": [
     "viridian_city",
     "mt_moon",
@@ -17949,16 +17948,16 @@
     1607,
     1743,
     2986
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:동굴",
-   "korean": "동굴이라고",
-   "romanization": "donggulirago",
-   "gloss": "(ROM example, rec5810)",
+   "korean": "여기는 달맞이산 ...동굴 입구",
+   "gloss": "This is Mt. Moon... the cave entrance.",
    "targetForm": "동굴",
    "areaId": "rom_mined",
-   "source": "rom-rec5810",
+   "source": "rom-rec1231",
    "areasReferenced": [
     "route_8",
     "route_10",
@@ -18005,7 +18004,8 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     1420
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:된다",
@@ -18034,12 +18034,11 @@
   },
   {
    "vocabId": "rom-mine-v3:만나다",
-   "korean": "못하면만나",
-   "romanization": "moshamyeonmanna",
-   "gloss": "(ROM example, rec2581)",
+   "korean": "다시 만나자!",
+   "gloss": "Let's meet again!",
    "targetForm": "만나",
    "areaId": "rom_mined",
-   "source": "rom-rec2581",
+   "source": "rom-rec2098",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -18123,16 +18122,16 @@
     2028,
     2098,
     2581
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:말씀",
-   "korean": "것 주라고말씀하셨어요그럼  잡은 종류보다승",
-   "romanization": "geos juragomalsseumhasyeosseoyogeureom  jabeun jongryubodaseung",
-   "gloss": "(ROM example, rec2896)",
+   "korean": "포켓몬 도감이 20종류 모인 것 같으면 박사님이 변함없는돌을 주라고 말씀하셨어요!",
+   "gloss": "The Professor said to give you an Everstone once you've collected about 20 kinds in your Pokédex!",
    "targetForm": "말씀",
    "areaId": "rom_mined",
-   "source": "rom-rec2896",
+   "source": "rom-rec2859",
    "areasReferenced": [
     "route_2",
     "route_4",
@@ -18160,16 +18159,16 @@
    "liveRecIds": [
     2862,
     2896
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:멋있다",
-   "korean": "그하멋있다",
-   "romanization": "geuhameosissda",
-   "gloss": "(ROM example, rec1967)",
+   "korean": "있지 앞으로도 여러 트레이너와 배틀해서 멋있는 모습들을 보여줘!",
+   "gloss": "Hey, keep battling lots of trainers and show me how cool you are!",
    "targetForm": "멋있",
    "areaId": "rom_mined",
-   "source": "rom-rec1967",
+   "source": "rom-rec2768",
    "areasReferenced": [
     "rom_mined",
     "green_path",
@@ -18208,16 +18207,16 @@
     1967,
     3036,
     3048
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:모습",
-   "korean": "모습이안",
-   "romanization": "moseubian",
-   "gloss": "(ROM example, rec5018)",
+   "korean": "지는 모습...",
+   "gloss": "How it looks when losing...",
    "targetForm": "모습",
    "areaId": "rom_mined",
-   "source": "rom-rec5018",
+   "source": "rom-rec1891",
    "areasReferenced": [
     "pallet_town",
     "saffron_city",
@@ -18273,16 +18272,16 @@
    "liveRecIds": [
     1892,
     2784
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:모양",
-   "korean": "시 모양이군요",
-   "romanization": "si moyangigunyo",
-   "gloss": "(ROM example, rec2862)",
+   "korean": "너를 얕잡아 봤던 모양이야 나를 이긴 증표로 포켓몬리그 공인 회색배지를 수여할게!",
+   "gloss": "Looks like I underestimated you. As proof of your victory, I award you the official Pokémon League Boulder Badge!",
    "targetForm": "모양",
    "areaId": "rom_mined",
-   "source": "rom-rec2862",
+   "source": "rom-rec2182",
    "areasReferenced": [
     "viridian_city",
     "route_24",
@@ -18328,16 +18327,16 @@
     1989,
     2862,
     4259
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:물건",
-   "korean": "하고갈있는가보렴 물건을수",
-   "romanization": "hagogalissneungaboryeom mulgeoneulsu",
-   "gloss": "(ROM example, rec2556)",
+   "korean": "도감 같은 물건이 있다!",
+   "gloss": "There's something like a Pokédex!",
    "targetForm": "물건",
    "areaId": "rom_mined",
-   "source": "rom-rec2556",
+   "source": "rom-rec2072",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -18396,16 +18395,16 @@
     2146,
     2245,
     2556
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:발견",
-   "korean": "발견된고된살아날있다",
-   "romanization": "balgyeondoengodoensalanalissda",
-   "gloss": "(ROM example, rec5066)",
+   "korean": "달맞이산에서 달의돌이 떨어진 뒤부터 발견되기 시작했대",
+   "gloss": "I heard they started being found after the Moon Stone fell on Mt. Moon.",
    "targetForm": "발견",
    "areaId": "rom_mined",
-   "source": "rom-rec5066",
+   "source": "rom-rec955",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -18465,16 +18464,16 @@
    "liveRecIds": [
     1569,
     3134
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:부활",
-   "korean": "발견한다부활시키면돈벌이가",
-   "romanization": "balgyeonhandabuhwalsikimyeondonbeoliga",
-   "gloss": "(ROM example, rec247)",
+   "korean": "로켓단이 부활할 날까지 이 체육관에서 체제를 정비할 것이다!",
+   "gloss": "We'll reorganize at this Gym until the day Team Rocket is revived!",
    "targetForm": "부활",
    "areaId": "rom_mined",
-   "source": "rom-rec247",
+   "source": "rom-rec2096",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -18503,16 +18502,16 @@
    "liveRecIds": [
     2096,
     2670
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:사실",
-   "korean": "이몇크다는사실이야",
-   "romanization": "imyeochkeudaneunsasiliya",
-   "gloss": "(ROM example, rec3053)",
+   "korean": "사실은 이미 알고 있지만 몇 번이고 보고 싶어서 말이지!",
+   "gloss": "Truth is, I already know, but I want to see it again and again!",
    "targetForm": "사실",
    "areaId": "rom_mined",
-   "source": "rom-rec3053",
+   "source": "rom-rec3228",
    "areasReferenced": [
     "rom_mined",
     "cerulean_cave",
@@ -18546,16 +18545,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     560
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:상품",
-   "korean": "상품을수",
-   "romanization": "sangpumeulsu",
-   "gloss": "(ROM example, rec2295)",
+   "korean": "포켓몬 상품이 가득!",
+   "gloss": "Full of Pokémon goods!",
    "targetForm": "상품",
    "areaId": "rom_mined",
-   "source": "rom-rec2295",
+   "source": "rom-rec3995",
    "areasReferenced": [
     "route_1",
     "route_2",
@@ -18617,16 +18616,16 @@
     1137,
     1680,
     2601
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:선장",
-   "korean": "선장에게",
-   "romanization": "seonjangege",
-   "gloss": "(ROM example, rec294)",
+   "korean": "선장: 후우...",
+   "gloss": "Captain: Phew...",
    "targetForm": "선장",
    "areaId": "rom_mined",
-   "source": "rom-rec294",
+   "source": "rom-rec293",
    "areasReferenced": [
     "rom_mined",
     "mt_moon",
@@ -18640,16 +18639,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     271
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:세계",
-   "korean": "이세계에선",
-   "romanization": "isegyeeseon",
-   "gloss": "(ROM example, rec2186)",
+   "korean": "세계 최강의 격투기다!",
+   "gloss": "The world's strongest martial art!",
    "targetForm": "세계",
    "areaId": "rom_mined",
-   "source": "rom-rec2186",
+   "source": "rom-rec2112",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -18696,16 +18695,16 @@
    "liveRecIds": [
     2112,
     2186
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:소문",
-   "korean": "소문도형은도저히",
-   "romanization": "somundohyeongeundojeohi",
-   "gloss": "(ROM example, rec3321)",
+   "korean": "삐삐가 달에서 왔다는 소문을 알고 있니?",
+   "gloss": "Have you heard the rumor that Clefairy came from the moon?",
    "targetForm": "소문",
    "areaId": "rom_mined",
-   "source": "rom-rec3321",
+   "source": "rom-rec955",
    "areasReferenced": [
     "saffron_city",
     "rom_mined",
@@ -18731,16 +18730,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     2783
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:수재",
-   "korean": "좋아하는수재마니아라서",
-   "romanization": "johahaneunsujaemaniaraseo",
-   "gloss": "(ROM example, rec3319)",
+   "korean": "너도 이수재에 대한 소문을 들었니?",
+   "gloss": "Have you heard the rumor about Bill too?",
    "targetForm": "수재",
    "areaId": "rom_mined",
-   "source": "rom-rec3319",
+   "source": "rom-rec2226",
    "areasReferenced": [
     "route_25",
     "fuchsia_city",
@@ -18766,13 +18765,13 @@
    "liveRecIds": [
     2587,
     3006
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:아까",
-   "korean": "안녕아까는",
-   "romanization": "annyeongakkaneun",
-   "gloss": "(ROM example, rec2697)",
+   "korean": "아까는 고마웠어!",
+   "gloss": "Thanks for earlier!",
    "targetForm": "아까",
    "areaId": "rom_mined",
    "source": "rom-rec2697",
@@ -18835,16 +18834,16 @@
     903,
     1155,
     2697
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:약하다",
-   "korean": "약하게만든",
-   "romanization": "yaghagemandeun",
-   "gloss": "(ROM example, rec6817)",
+   "korean": "독이나 화상으로 약하게 만들어도 좋다!",
+   "gloss": "It's fine to weaken it with poison or a burn, too!",
    "targetForm": "약하",
    "areaId": "rom_mined",
-   "source": "rom-rec6817",
+   "source": "rom-rec2133",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -18896,16 +18895,16 @@
     1501,
     2133,
     2406
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:어떻다",
-   "korean": "말이야이런어떠니",
-   "romanization": "maliyaireoneotteoni",
-   "gloss": "(ROM example, rec576)",
+   "korean": "도감 상태는 어떠냐?",
+   "gloss": "How's your Pokédex coming along?",
    "targetForm": "어떠",
    "areaId": "rom_mined",
-   "source": "rom-rec576",
+   "source": "rom-rec2070",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -18981,16 +18980,16 @@
     2705,
     2986,
     3190
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:열매",
-   "korean": "쓰레기통에 나무열매가",
-   "romanization": "sseuregitonge namuyeolmaega",
-   "gloss": "(ROM example, rec282)",
+   "korean": "나무열매크러시를 하겠습니까?",
+   "gloss": "Do you want to play Berry Crush?",
    "targetForm": "열매",
    "areaId": "rom_mined",
-   "source": "rom-rec282",
+   "source": "rom-rec3910",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -19054,16 +19053,16 @@
     1792,
     2268,
     2273
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:오늘",
-   "korean": "오늘은없어",
-   "romanization": "oneuleuneobseo",
-   "gloss": "(ROM example, rec1267)",
+   "korean": "오늘부로 해산한다!",
+   "gloss": "As of today, we disband!",
    "targetForm": "오늘",
    "areaId": "rom_mined",
-   "source": "rom-rec1267",
+   "source": "rom-rec2098",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -19131,16 +19130,16 @@
     2098,
     2519,
     4050
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:올라가다",
-   "korean": "폭포를잘올라간다",
-   "romanization": "pogporeuljalolraganda",
-   "gloss": "(ROM example, rec5557)",
-   "targetForm": "올라간다",
+   "korean": "상냥한 탕구리의 어미로 돌아온 영혼은 무사히 하늘로 올라가...",
+   "gloss": "The spirit, returned to its gentle Cubone mother, safely ascends to the sky...",
+   "targetForm": "올라가",
    "areaId": "rom_mined",
-   "source": "rom-rec5557",
+   "source": "rom-rec767",
    "areasReferenced": [
     "fuchsia_city",
     "celadon_city",
@@ -19161,16 +19160,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     2560
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:완성",
-   "korean": "네트워크머신을하있어요할완성된면",
-   "romanization": "neteuwokeumeosineulhaisseoyohalwanseongdoenmyeon",
-   "gloss": "(ROM example, rec2985)",
+   "korean": "전국도감의 완성을 기대하고 있으마-!",
+   "gloss": "I'm looking forward to you completing the National Pokédex!",
    "targetForm": "완성",
    "areaId": "rom_mined",
-   "source": "rom-rec2985",
+   "source": "rom-rec3224",
    "areasReferenced": [
     "celadon_city",
     "rom_mined",
@@ -19201,16 +19200,16 @@
     2985,
     2987,
     3002
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:이상",
-   "korean": "하루에이이상을",
-   "romanization": "harueiisangeul",
-   "gloss": "(ROM example, rec5217)",
+   "korean": "너한테 들킨 이상 어쩔 수 없군!",
+   "gloss": "Now that you've found me out, there's nothing I can do!",
    "targetForm": "이상",
    "areaId": "rom_mined",
-   "source": "rom-rec5217",
+   "source": "rom-rec2096",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -19282,16 +19281,16 @@
     1918,
     2096,
     2213
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:자연",
-   "korean": "자연을잘자연이지키고하지",
-   "romanization": "jayeoneuljaljayeonijikigohaji",
-   "gloss": "(ROM example, rec1964)",
+   "korean": "무지개시티 포켓몬체육관 관장 민화 자연을 사랑하는 아기씨!",
+   "gloss": "Celadon City Pokémon Gym. Leader: Erika. The nature-loving princess!",
    "targetForm": "자연",
    "areaId": "rom_mined",
-   "source": "rom-rec1964",
+   "source": "rom-rec1055",
    "areasReferenced": [
     "celadon_city",
     "rom_mined",
@@ -19335,16 +19334,16 @@
    "liveRecIds": [
     1191,
     2462
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:잠깐",
-   "korean": "불렀구나잠깐포켓몬이",
-   "romanization": "bulreossgunajamkkanpokesmoni",
-   "gloss": "(ROM example, rec2044)",
+   "korean": "오박사: 잠깐-!",
+   "gloss": "Prof. Oak: Wait!",
    "targetForm": "잠깐",
    "areaId": "rom_mined",
-   "source": "rom-rec2044",
+   "source": "rom-rec920",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -19421,16 +19420,16 @@
     1246,
     1675,
     1738
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:장소",
-   "korean": "장소에서넣은",
-   "romanization": "jangsoeseoneoheun",
-   "gloss": "(ROM example, rec5817)",
+   "korean": "자신이 있는 장소나 마을의 이름을 알고 싶을 때 타운맵을 쓰면 좋아",
+   "gloss": "Use the Town Map when you want to know the name of the place or town you're in.",
    "targetForm": "장소",
    "areaId": "rom_mined",
-   "source": "rom-rec5817",
+   "source": "rom-rec2013",
    "areasReferenced": [
     "route_1",
     "route_2",
@@ -19503,16 +19502,16 @@
     1576,
     2456,
     2813
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:재빠르다",
-   "korean": "힘을재빠르게상대를원슬",
-   "romanization": "himeuljaeppareugesangdaereulwonseul",
-   "gloss": "(ROM example, rec6813)",
+   "korean": "닌자처럼 재빠르다.",
+   "gloss": "As quick as a ninja.",
    "targetForm": "재빠르",
    "areaId": "rom_mined",
-   "source": "rom-rec6813",
+   "source": "rom-rec5050",
    "areasReferenced": [
     "route_1",
     "viridian_city",
@@ -19546,16 +19545,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     892
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:적다",
-   "korean": "블본적지만",
-   "romanization": "beulbonjeogjiman",
-   "gloss": "(ROM example, rec5077)",
+   "korean": "칠판에 적은 걸 잘 보렴!",
+   "gloss": "Look closely at what I wrote on the blackboard!",
    "targetForm": "적",
    "areaId": "rom_mined",
-   "source": "rom-rec5077",
+   "source": "rom-rec2131",
    "areasReferenced": [
     "saffron_city",
     "cinnabar_island",
@@ -19594,13 +19593,13 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     2754
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:전하다",
-   "korean": "있구나전해줄있다고",
-   "romanization": "issgunajeonhaejulissdago",
-   "gloss": "(ROM example, rec2055)",
+   "korean": "내게 전해줄 물건이 있다고?",
+   "gloss": "You have something to deliver to me?",
    "targetForm": "전해",
    "areaId": "rom_mined",
    "source": "rom-rec2055",
@@ -19656,16 +19655,16 @@
     2056,
     2562,
     3032
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:정말",
-   "korean": "포켓몬을정말환경이야",
-   "romanization": "pokesmoneuljeongmalhwangyeongiya",
-   "gloss": "(ROM example, rec1828)",
+   "korean": "정말 예쁘게 됐다!",
+   "gloss": "It turned out really pretty!",
    "targetForm": "정말",
    "areaId": "rom_mined",
-   "source": "rom-rec1828",
+   "source": "rom-rec2021",
    "areasReferenced": [
     "pallet_town",
     "route_2",
@@ -19749,16 +19748,16 @@
     1518,
     1613,
     1828
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:정말로",
-   "korean": "포켓몬도구사라집니다정말로",
-   "romanization": "pokesmondogusarajibnidajeongmalro",
-   "gloss": "(ROM example, rec4267)",
+   "korean": "정말로 끝난 거야!?",
+   "gloss": "Is it really over!?",
    "targetForm": "정말로",
    "areaId": "rom_mined",
-   "source": "rom-rec4267",
+   "source": "rom-rec664",
    "areasReferenced": [
     "cerulean_city",
     "route_24",
@@ -19806,16 +19805,16 @@
     1827,
     2341,
     2944
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:즐겁다",
-   "korean": "있다어깨동무를하즐거운더고",
-   "romanization": "issdaeokkaedongmureulhajeulgeoundeogo",
-   "gloss": "(ROM example, rec3286)",
-   "targetForm": "즐거운",
+   "korean": "왜지 즐거워 보인다!",
+   "gloss": "For some reason it looks happy!",
+   "targetForm": "즐거워",
    "areaId": "rom_mined",
-   "source": "rom-rec3286",
+   "source": "rom-rec4016",
    "areasReferenced": [
     "pewter_city",
     "cerulean_city",
@@ -19864,16 +19863,16 @@
    "liveRecIds": [
     993,
     1628
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:직접",
-   "korean": "도구포켓에직접지니게",
-   "romanization": "dogupokesejigjeobjinige",
-   "gloss": "(ROM example, rec3677)",
+   "korean": "직접 찾아보렴",
+   "gloss": "Look for it yourself.",
    "targetForm": "직접",
    "areaId": "rom_mined",
-   "source": "rom-rec3677",
+   "source": "rom-rec2955",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -19920,16 +19919,16 @@
     1464,
     2364,
     3907
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:참가",
-   "korean": "참가한다",
-   "romanization": "chamgahanda",
-   "gloss": "(ROM example, rec5462)",
+   "korean": "참가한 인원수가 맞지 않습니다",
+   "gloss": "The number of participants doesn't match.",
    "targetForm": "참가",
    "areaId": "rom_mined",
-   "source": "rom-rec5462",
+   "source": "rom-rec3866",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -19962,16 +19961,16 @@
     3866,
     3869,
     3904
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:코너",
-   "korean": "쪽게임코너가말이야참낚",
-   "romanization": "jjoggeimkoneogamaliyachamnakk",
-   "gloss": "(ROM example, rec1047)",
+   "korean": "포켓몬 무선 클럽 다이렉트 코너에 잘 오셨습니다!",
+   "gloss": "Welcome to the Pokémon Wireless Club Direct Corner!",
    "targetForm": "코너",
    "areaId": "rom_mined",
-   "source": "rom-rec1047",
+   "source": "rom-rec3907",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -20008,16 +20007,16 @@
     3035,
     3046,
     3907
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:특수",
-   "korean": "한다특수한루상대에게자신과특성을",
-   "romanization": "handateugsuhanrusangdaeegejasingwateugseongeul",
-   "gloss": "(ROM example, rec6818)",
+   "korean": "특수한 금속막.",
+   "gloss": "A special metal film.",
    "targetForm": "특수",
    "areaId": "rom_mined",
-   "source": "rom-rec6818",
+   "source": "rom-rec6753",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -20041,16 +20040,16 @@
    "liveRecIds": [
     2218,
     2406
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:펀치",
-   "korean": "불꽃을펀치로",
-   "romanization": "bulkkocheulpeonchiro",
-   "gloss": "(ROM example, rec6235)",
+   "korean": "이걸로 넌 펀치 일원이다!",
+   "gloss": "With this, you're a member of the Punch club!",
    "targetForm": "펀치",
    "areaId": "rom_mined",
-   "source": "rom-rec6235",
+   "source": "rom-rec1236",
    "areasReferenced": [
     "route_4",
     "rom_mined",
@@ -20069,16 +20068,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     1234
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:포켓",
-   "korean": "도구포켓에직접지니게",
-   "romanization": "dogupokesejigjeobjinige",
-   "gloss": "(ROM example, rec3677)",
+   "korean": "몬스터볼 포켓",
+   "gloss": "Poké Ball pocket",
    "targetForm": "포켓",
    "areaId": "rom_mined",
-   "source": "rom-rec3677",
+   "source": "rom-rec3699",
    "areasReferenced": [
     "rom_mined",
     "pallet_town",
@@ -20145,16 +20144,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     3569
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:피하다",
-   "korean": "재빠른말상대를공격한다상대는피할없다",
-   "romanization": "jaeppareunmalsangdaereulgonggyeoghandasangdaeneunpihaleobsda",
-   "gloss": "(ROM example, rec6567)",
-   "targetForm": "피할",
+   "korean": "연하한테 지는 것만큼은 피하고 싶었는데!",
+   "gloss": "Losing to someone younger was the one thing I wanted to avoid!",
+   "targetForm": "피하",
    "areaId": "rom_mined",
-   "source": "rom-rec6567",
+   "source": "rom-rec365",
    "areasReferenced": [
     "vermilion_city",
     "rom_mined",
@@ -20173,16 +20172,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     4850
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:핥다",
-   "korean": "없는하는곳안핥 있었어도",
-   "romanization": "eobsneunhaneungosanhalt isseosseodo",
-   "gloss": "(ROM example, rec2202)",
+   "korean": "매우 긴 혀로 상대를 핥아서 공격한다.",
+   "gloss": "Attacks by licking the opponent with a very long tongue.",
    "targetForm": "핥",
    "areaId": "rom_mined",
-   "source": "rom-rec2202",
+   "source": "rom-rec6351",
    "areasReferenced": [
     "rom_mined",
     "six_island"
@@ -20198,16 +20197,16 @@
     2096,
     3125,
     4237
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:항상",
-   "korean": "항상않으면",
-   "romanization": "hangsanganheumyeon",
-   "gloss": "(ROM example, rec5257)",
+   "korean": "항상 기운이 넘친다.",
+   "gloss": "Always full of energy.",
    "targetForm": "항상",
    "areaId": "rom_mined",
-   "source": "rom-rec5257",
+   "source": "rom-rec5164",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -20245,16 +20244,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     2977
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:화석",
-   "korean": "아저씨는화석을",
-   "romanization": "ajeossineunhwaseogeul",
-   "gloss": "(ROM example, rec241)",
+   "korean": "진귀한 고대 포켓몬 프테라의 화석",
+   "gloss": "A fossil of the rare ancient Pokémon Aerodactyl.",
    "targetForm": "화석",
    "areaId": "rom_mined",
-   "source": "rom-rec241",
+   "source": "rom-rec2169",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -20294,16 +20293,16 @@
     1081,
     2167,
     2170
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:확률",
-   "korean": "힘껏공격한다급소에확률이",
-   "romanization": "himkkeosgonggyeoghandageubsoehwagryuli",
-   "gloss": "(ROM example, rec6467)",
+   "korean": "급소에 맞을 확률이 높다.",
+   "gloss": "High chance of landing a critical hit.",
    "targetForm": "확률",
    "areaId": "rom_mined",
-   "source": "rom-rec6467",
+   "source": "rom-rec6230",
    "areasReferenced": [
     "rom_mined"
    ],
@@ -20314,16 +20313,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     3734
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:가장",
-   "korean": "가장더있는",
-   "romanization": "gajangdeoissneun",
-   "gloss": "(ROM example, rec642)",
+   "korean": "정의감이 강하고 열혈에 멋지고 가장 대단한 사람...!",
+   "gloss": "Someone with a strong sense of justice, hot-blooded, cool, and the most amazing...!",
    "targetForm": "가장",
    "areaId": "rom_mined",
-   "source": "rom-rec642",
+   "source": "rom-rec1122",
    "areasReferenced": [
     "rom_mined",
     "canyon_entrance",
@@ -20368,7 +20367,8 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     636
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:거지",
@@ -20394,12 +20394,11 @@
   },
   {
    "vocabId": "rom-mine-v3:걸다",
-   "korean": "드걸것뿐이지",
-   "romanization": "deugeolgeosppuniji",
-   "gloss": "(ROM example, rec3109)",
+   "korean": "갑자기 말 걸지 마!",
+   "gloss": "Don't just start talking to me!",
    "targetForm": "걸",
    "areaId": "rom_mined",
-   "source": "rom-rec3109",
+   "source": "rom-rec229",
    "areasReferenced": [
     "rom_mined",
     "pallet_town",
@@ -20468,16 +20467,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     229
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:고맙다",
-   "korean": "선장후우고맙다",
-   "romanization": "seonjanghuugomabda",
-   "gloss": "(ROM example, rec293)",
+   "korean": "이건 내가 특별히 주문한 몬스터볼이구나 정말 고맙다!",
+   "gloss": "This is the Poké Ball I specially ordered. Thank you so much!",
    "targetForm": "고맙",
    "areaId": "rom_mined",
-   "source": "rom-rec293",
+   "source": "rom-rec2057",
    "areasReferenced": [
     "route_2",
     "pewter_city",
@@ -20547,16 +20546,16 @@
     2751,
     2847,
     2855
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:국화",
-   "korean": "나는국화너는영감이",
-   "romanization": "naneungughwaneoneunyeonggami",
-   "gloss": "(ROM example, rec655)",
+   "korean": "국화의 고스트포켓몬은 무서울 정도로 강해...!",
+   "gloss": "Agatha's Ghost Pokémon are frighteningly strong...!",
    "targetForm": "국화",
    "areaId": "rom_mined",
-   "source": "rom-rec655",
+   "source": "rom-rec2689",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -20594,16 +20593,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     2689
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:귀엽다",
-   "korean": "귀여운많이있어분해",
-   "romanization": "gwiyeounmanhiisseobunhae",
-   "gloss": "(ROM example, rec4180)",
+   "korean": "우후후 귀여운 포켓몬이네!",
+   "gloss": "Ufufu, what a cute Pokémon!",
    "targetForm": "귀여운",
    "areaId": "rom_mined",
-   "source": "rom-rec4180",
+   "source": "rom-rec2021",
    "areasReferenced": [
     "pallet_town",
     "cerulean_city",
@@ -20679,16 +20678,16 @@
     1516,
     1608,
     1968
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:그냥",
-   "korean": "될지는이그냥할있는할래",
-   "romanization": "doeljineunigeunyanghalissneunhalrae",
-   "gloss": "(ROM example, rec3075)",
+   "korean": "그냥 돌멩이랑 뭐가 다른 걸까?",
+   "gloss": "How is it any different from an ordinary pebble?",
    "targetForm": "그냥",
    "areaId": "rom_mined",
-   "source": "rom-rec3075",
+   "source": "rom-rec2174",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -20718,16 +20717,16 @@
     956,
     2631,
     3075
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:낚시",
-   "korean": "낚시야말로",
-   "romanization": "nakksiyamalro",
-   "gloss": "(ROM example, rec2317)",
+   "korean": "여기는 낚시의 명소",
+   "gloss": "This is a famous fishing spot.",
    "targetForm": "낚시",
    "areaId": "rom_mined",
-   "source": "rom-rec2317",
+   "source": "rom-rec1401",
    "areasReferenced": [
     "pallet_town",
     "route_2",
@@ -20783,13 +20782,13 @@
     2605,
     2880,
     2887
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:날아가다",
-   "korean": "있는드날아간다",
-   "romanization": "issneundeunalaganda",
-   "gloss": "(ROM example, rec5552)",
+   "korean": "알고 있는 마을로 날아간다",
+   "gloss": "Flies to a town you know.",
    "targetForm": "날아간다",
    "areaId": "rom_mined",
    "source": "rom-rec5552",
@@ -20843,16 +20842,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     1435
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:내던지다",
-   "korean": "내던져서",
-   "romanization": "naedeonjyeoseo",
-   "gloss": "(ROM example, rec6234)",
-   "targetForm": "내던져서",
+   "korean": "당신도 승부를 내던지지 말고 잘 해보세요",
+   "gloss": "Don't give up on the match, and do your best too.",
+   "targetForm": "내던지",
    "areaId": "rom_mined",
-   "source": "rom-rec6234",
+   "source": "rom-rec2173",
    "areasReferenced": [
     "rom_mined",
     "safari_zone",
@@ -20874,16 +20873,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     2171
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:넣다",
-   "korean": "장소에서넣은",
-   "romanization": "jangsoeseoneoheun",
-   "gloss": "(ROM example, rec5817)",
+   "korean": "넣을 곳이 없다...",
+   "gloss": "There's no room to put it...",
    "targetForm": "넣",
    "areaId": "rom_mined",
-   "source": "rom-rec5817",
+   "source": "rom-rec3139",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -20950,16 +20949,16 @@
     2344,
     3131,
     3137
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:다르다",
-   "korean": "웅다르다고",
-   "romanization": "ungdareudago",
-   "gloss": "(ROM example, rec956)",
+   "korean": "종류와 레벨이 같은 포켓몬이라도 잡을 때마다 능력이 조금씩 다르고...",
+   "gloss": "Even Pokémon of the same species and level have slightly different abilities each time you catch one...",
    "targetForm": "다르",
    "areaId": "rom_mined",
-   "source": "rom-rec956",
+   "source": "rom-rec1564",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -21020,16 +21019,16 @@
    "liveRecIds": [
     956,
     2385
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:다시",
-   "korean": "있을이다시",
-   "romanization": "isseulidasi",
-   "gloss": "(ROM example, rec3341)",
+   "korean": "다시 한번!",
+   "gloss": "One more time!",
    "targetForm": "다시",
    "areaId": "rom_mined",
-   "source": "rom-rec3341",
+   "source": "rom-rec2096",
    "areasReferenced": [
     "viridian_city",
     "route_2",
@@ -21108,16 +21107,16 @@
     1234,
     1413,
     1441
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:단련",
-   "korean": "못하말나는단련시키면서",
-   "romanization": "moshamalnaneundanryeonsikimyeonseo",
-   "gloss": "(ROM example, rec3085)",
+   "korean": "단련시킨 이 몸을!",
+   "gloss": "This body I've trained!",
    "targetForm": "단련",
    "areaId": "rom_mined",
-   "source": "rom-rec3085",
+   "source": "rom-rec1625",
    "areasReferenced": [
     "route_4",
     "route_16",
@@ -21170,13 +21169,13 @@
     1240,
     4159,
     4168
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:단어",
-   "korean": "프로필은단어를",
-   "romanization": "peuropileundaneoreul",
-   "gloss": "(ROM example, rec3946)",
+   "korean": "프로필은 멋진 단어를 4개 조합해서 만들어 조합하는 단어는 많이 있어!",
+   "gloss": "You make a profile by combining four cool words. There are lots of words to combine!",
    "targetForm": "단어",
    "areaId": "rom_mined",
    "source": "rom-rec3946",
@@ -21224,16 +21223,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     3946
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:대신",
-   "korean": "파티는안대신놀다",
-   "romanization": "patineunandaesinnolda",
-   "gloss": "(ROM example, rec2934)",
+   "korean": "대신 네 포켓몬에게 누르기를 알려줄까?",
+   "gloss": "Shall I teach your Pokémon Body Slam instead?",
    "targetForm": "대신",
    "areaId": "rom_mined",
-   "source": "rom-rec2934",
+   "source": "rom-rec3064",
    "areasReferenced": [
     "rom_mined",
     "one_island",
@@ -21283,16 +21282,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     3967
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:대전",
-   "korean": "대전게임이다어려워",
-   "romanization": "daejeongeimidaeoryeowo",
-   "gloss": "(ROM example, rec2390)",
+   "korean": "어느 대전을 하겠습니까?",
+   "gloss": "Which battle would you like to do?",
    "targetForm": "대전",
    "areaId": "rom_mined",
-   "source": "rom-rec2390",
+   "source": "rom-rec3909",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -21324,16 +21323,16 @@
    "liveRecIds": [
     2390,
     3911
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:대화",
-   "korean": "파장으로대화한다몸의전부가된어",
-   "romanization": "pajangeurodaehwahandamomuijeonbugadoeneo",
-   "gloss": "(ROM example, rec5306)",
+   "korean": "대화가 끊겼습니다",
+   "gloss": "The connection was lost.",
    "targetForm": "대화",
    "areaId": "rom_mined",
-   "source": "rom-rec5306",
+   "source": "rom-rec6913",
    "areasReferenced": [
     "rom_mined",
     "celadon_city",
@@ -21366,16 +21365,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     2792
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:도망",
-   "korean": "더 도망칠있다",
-   "romanization": "deo domangchilissda",
-   "gloss": "(ROM example, rec6657)",
+   "korean": "포켓몬이 기운 넘치면 도망칠지도 모른다!",
+   "gloss": "If the Pokémon is full of energy, it might run away!",
    "targetForm": "도망",
    "areaId": "rom_mined",
-   "source": "rom-rec6657",
+   "source": "rom-rec218",
    "areasReferenced": [
     "rom_mined",
     "pokemon_mansion",
@@ -21392,16 +21391,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     2398
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:돌아가다",
-   "korean": "공기는맛있어서돌아가",
-   "romanization": "gonggineunmasisseoseodolaga",
-   "gloss": "(ROM example, rec4060)",
+   "korean": "그럼 돌아가자!",
+   "gloss": "Well then, let's go back!",
    "targetForm": "돌아가",
    "areaId": "rom_mined",
-   "source": "rom-rec4060",
+   "source": "rom-rec803",
    "areasReferenced": [
     "pewter_city",
     "route_4",
@@ -21476,16 +21475,16 @@
     1664,
     1819,
     1884
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:동시",
-   "korean": "울동시에",
-   "romanization": "uldongsie",
-   "gloss": "(ROM example, rec6818)",
+   "korean": "공격과 동시에 도구를 훔친다.",
+   "gloss": "Steals an item while attacking.",
    "targetForm": "동시",
    "areaId": "rom_mined",
-   "source": "rom-rec6818",
+   "source": "rom-rec6397",
    "areasReferenced": [
     "pewter_city",
     "rom_mined",
@@ -21524,16 +21523,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     3917
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:동전",
-   "korean": "동전받았다",
-   "romanization": "dongjeonbadassda",
-   "gloss": "(ROM example, rec2458)",
+   "korean": "동전케이스가 가득찼다...",
+   "gloss": "The Coin Case is full...",
    "targetForm": "동전",
    "areaId": "rom_mined",
-   "source": "rom-rec2458",
+   "source": "rom-rec3138",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -21574,16 +21573,16 @@
     2451,
     2458,
     2469
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:들어오다",
-   "korean": "잠깐그림을있어쪼들어오지쪼",
-   "romanization": "jamkkangeurimeulisseojjodeuleoojijjo",
-   "gloss": "(ROM example, rec1802)",
-   "targetForm": "들어오",
+   "korean": "어떻게 여기에 들어왔지?",
+   "gloss": "How did you get in here?",
+   "targetForm": "들어왔",
    "areaId": "rom_mined",
-   "source": "rom-rec1802",
+   "source": "rom-rec404",
    "areasReferenced": [
     "route_1",
     "viridian_city",
@@ -21659,16 +21658,16 @@
     1802,
     2499,
     2567
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:등나무",
-   "korean": "등나무노인에게서",
-   "romanization": "deungnamunoinegeseo",
-   "gloss": "(ROM example, rec2291)",
+   "korean": "강연과 등나무노인의 사진이 있다!",
+   "gloss": "There's a photo of Blaine and Mr. Fuji!",
    "targetForm": "등나무",
    "areaId": "rom_mined",
-   "source": "rom-rec2291",
+   "source": "rom-rec2654",
    "areasReferenced": [
     "cerulean_city",
     "lavender_town",
@@ -21709,16 +21708,16 @@
     2286,
     2294,
     2656
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:만드다",
-   "korean": "풀이만드는있다",
-   "romanization": "pulimandeuneunissda",
-   "gloss": "(ROM example, rec6257)",
+   "korean": "이 세상의 모든 포켓몬을 기록한 완벽한 도감을 만드는 것!",
+   "gloss": "To make a perfect Pokédex that records every Pokémon in the world!",
    "targetForm": "만드",
    "areaId": "rom_mined",
-   "source": "rom-rec6257",
+   "source": "rom-rec2067",
    "areasReferenced": [
     "route_25",
     "route_16",
@@ -21752,16 +21751,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     2951
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:만약",
-   "korean": "블루배지가레벨포켓몬은말을만약",
-   "romanization": "beulrubaejigarebelpokesmoneunmaleulmanyag",
-   "gloss": "(ROM example, rec2231)",
+   "korean": "만약 특별한 도구가...",
+   "gloss": "If there were a special item...",
    "targetForm": "만약",
    "areaId": "rom_mined",
-   "source": "rom-rec2231",
+   "source": "rom-rec731",
    "areasReferenced": [
     "pewter_city",
     "cerulean_city",
@@ -21810,16 +21809,16 @@
    "liveRecIds": [
     2231,
     2685
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:맡기다",
-   "korean": "하아많미련은자네에맡겼으니곳남은할아범이",
-   "romanization": "haamanhmiryeoneunjaneematgyeosseunigosnameunhalabeomi",
-   "gloss": "(ROM example, rec3109)",
-   "targetForm": "맡겼으니",
+   "korean": "전부 나한테 맡기라고-!",
+   "gloss": "Leave it all to me!",
+   "targetForm": "맡기",
    "areaId": "rom_mined",
-   "source": "rom-rec3109",
+   "source": "rom-rec2042",
    "areasReferenced": [
     "viridian_city",
     "route_2",
@@ -21891,16 +21890,16 @@
     1823,
     3110,
     3984
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:멀리",
-   "korean": "인연이겠지잠깐안워 멀리곳에",
-   "romanization": "inyeonigessjijamkkananwo meolrigose",
-   "gloss": "(ROM example, rec1095)",
+   "korean": "멀리 사는 사촌이 언제나 말했던 것 같은데...?",
+   "gloss": "I think my cousin who lives far away always used to say that...?",
    "targetForm": "멀리",
    "areaId": "rom_mined",
-   "source": "rom-rec1095",
+   "source": "rom-rec3956",
    "areasReferenced": [
     "cerulean_city",
     "route_8",
@@ -21959,16 +21958,16 @@
     1095,
     2915,
     3010
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:모험",
-   "korean": "계속한다모험을 리포트가있습니다그곳에서모험이나",
-   "romanization": "gyesoghandamoheomeul ripoteugaissseubnidageugoseseomoheomina",
-   "gloss": "(ROM example, rec4267)",
+   "korean": "꿈과 모험과!",
+   "gloss": "Dreams and adventure!",
    "targetForm": "모험",
    "areaId": "rom_mined",
-   "source": "rom-rec4267",
+   "source": "rom-rec4307",
    "areasReferenced": [
     "rom_mined",
     "celadon_city",
@@ -22002,16 +22001,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     3191
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:몬스터",
-   "korean": "몬스터볼이다",
-   "romanization": "monseuteobolida",
-   "gloss": "(ROM example, rec2073)",
+   "korean": "몬스터볼을 픽!",
+   "gloss": "Pick a Poké Ball!",
    "targetForm": "몬스터",
    "areaId": "rom_mined",
-   "source": "rom-rec2073",
+   "source": "rom-rec2066",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -22072,16 +22071,16 @@
     1077,
     2073,
     2132
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:몰다",
-   "korean": "알통몬은땅을있다",
-   "romanization": "altongmoneunttangeulissda",
-   "gloss": "(ROM example, rec1024)",
+   "korean": "내 파트너 근육몬은 굉장한 장사야!",
+   "gloss": "My partner Machoke is incredibly strong!",
    "targetForm": "몬",
    "areaId": "rom_mined",
-   "source": "rom-rec1024",
+   "source": "rom-rec352",
    "areasReferenced": [
     "cerulean_city",
     "lavender_town",
@@ -22100,16 +22099,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     1024
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:무선",
-   "korean": "주세요무선어댑터가",
-   "romanization": "juseyomuseoneodaebteoga",
-   "gloss": "(ROM example, rec3922)",
+   "korean": "무선 통신이 처음이신 분이군요?",
+   "gloss": "Is this your first time using wireless communication?",
    "targetForm": "무선",
    "areaId": "rom_mined",
-   "source": "rom-rec3922",
+   "source": "rom-rec3919",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -22143,16 +22142,16 @@
     2443,
     3892,
     3900
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:무섭다",
-   "korean": "무서우니까",
-   "romanization": "museounikka",
-   "gloss": "(ROM example, rec803)",
-   "targetForm": "무서우",
+   "korean": "뛰어 내리는 건 조금 무섭지만...",
+   "gloss": "Jumping down is a little scary, but...",
+   "targetForm": "무섭",
    "areaId": "rom_mined",
-   "source": "rom-rec803",
+   "source": "rom-rec1198",
    "areasReferenced": [
     "route_1",
     "viridian_city",
@@ -22224,16 +22223,16 @@
     1763,
     2689,
     4129
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:반응",
-   "korean": "반응하고도구가있어",
-   "romanization": "baneunghagodogugaisseo",
-   "gloss": "(ROM example, rec5433)",
+   "korean": "다우징머신이 반응하고 있다!",
+   "gloss": "The Itemfinder is responding!",
    "targetForm": "반응",
    "areaId": "rom_mined",
-   "source": "rom-rec5433",
+   "source": "rom-rec5432",
    "areasReferenced": [
     "rom_mined"
    ],
@@ -22244,16 +22243,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     3156
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:발톱",
-   "korean": "발톱으로",
-   "romanization": "baltobeuro",
-   "gloss": "(ROM example, rec6461)",
+   "korean": "발톱의 일부인 듯하다.",
+   "gloss": "It seems to be part of a claw.",
    "targetForm": "발톱",
    "areaId": "rom_mined",
-   "source": "rom-rec6461",
+   "source": "rom-rec6812",
    "areasReferenced": [
     "rom_mined"
    ],
@@ -22265,16 +22264,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     5279
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:발휘",
-   "korean": "사람칸나는발휘해서",
-   "romanization": "saramkannaneunbalhwihaeseo",
-   "gloss": "(ROM example, rec3291)",
+   "korean": "칸나는 지혜를 발휘해서 쿨하게 싸우지만 의외의 일면도 있다는 듯하다?",
+   "gloss": "Lorelei fights coolly and cleverly, but apparently she has an unexpected side too?",
    "targetForm": "발휘",
    "areaId": "rom_mined",
-   "source": "rom-rec3291",
+   "source": "rom-rec3461",
    "areasReferenced": [
     "rom_mined",
     "canyon_entrance",
@@ -22322,16 +22321,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     1421
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:방심",
-   "korean": "방심시키고",
-   "romanization": "bangsimsikigo",
-   "gloss": "(ROM example, rec6414)",
+   "korean": "방심한 것뿐이야!",
+   "gloss": "I was just careless!",
    "targetForm": "방심",
    "areaId": "rom_mined",
-   "source": "rom-rec6414",
+   "source": "rom-rec2123",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -22384,7 +22383,8 @@
     1977,
     2123,
     2517
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:방어",
@@ -22419,12 +22419,11 @@
   },
   {
    "vocabId": "rom-mine-v3:배우다",
-   "korean": "배울있다",
-   "romanization": "baeulissda",
-   "gloss": "(ROM example, rec5546)",
-   "targetForm": "배울",
+   "korean": "배워 볼래?",
+   "gloss": "Want to learn it?",
+   "targetForm": "배워",
    "areaId": "rom_mined",
-   "source": "rom-rec5546",
+   "source": "rom-rec1185",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -22465,16 +22464,16 @@
    "liveRecIds": [
     2207,
     2395
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:버리다",
-   "korean": "있는마그마가버리면동굴이",
-   "romanization": "issneunmageumagabeorimyeondongguli",
-   "gloss": "(ROM example, rec795)",
-   "targetForm": "버리",
+   "korean": "쓰레기통에 이상한 나무열매가 버려져 있었는데 뭐지?",
+   "gloss": "A strange berry was thrown away in the trash can... what is it?",
+   "targetForm": "버려져",
    "areaId": "rom_mined",
-   "source": "rom-rec795",
+   "source": "rom-rec282",
    "areasReferenced": [
     "cerulean_city",
     "lavender_town",
@@ -22493,16 +22492,16 @@
     2220,
     2286,
     2322
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:변하다",
-   "korean": "다른블변한다",
-   "romanization": "dareunbeulbyeonhanda",
-   "gloss": "(ROM example, rec5313)",
-   "targetForm": "변한다",
+   "korean": "그럼 마음이 변하면 오렴",
+   "gloss": "Then come back if you change your mind.",
+   "targetForm": "변하",
    "areaId": "rom_mined",
-   "source": "rom-rec5313",
+   "source": "rom-rec2394",
    "areasReferenced": [
     "celadon_city",
     "rom_mined",
@@ -22528,16 +22527,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     654
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:비전",
-   "korean": "할켰다비전머신을",
-   "romanization": "halkyeossdabijeonmeosineul",
-   "gloss": "(ROM example, rec5435)",
+   "korean": "비전기술 플래시로 아무리 어두운 장소라도 제대로 밝아집니다",
+   "gloss": "With the hidden move Flash, even the darkest places light right up.",
    "targetForm": "비전",
    "areaId": "rom_mined",
-   "source": "rom-rec5435",
+   "source": "rom-rec2813",
    "areasReferenced": [
     "route_2",
     "route_6",
@@ -22572,7 +22571,8 @@
     2598,
     2813,
     2903
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:뿌리",
@@ -22601,12 +22601,11 @@
   },
   {
    "vocabId": "rom-mine-v3:서다",
-   "korean": "헤헤 이수재가서",
-   "romanization": "hehe isujaegaseo",
-   "gloss": "(ROM example, rec980)",
+   "korean": "인류 사상 처음으로 달 위에 서다!",
+   "gloss": "The first person in human history to stand on the moon!",
    "targetForm": "서",
    "areaId": "rom_mined",
-   "source": "rom-rec980",
+   "source": "rom-rec2175",
    "areasReferenced": [
     "pewter_city",
     "cerulean_city",
@@ -22660,16 +22659,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     2231
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:서로",
-   "korean": "움서로있어",
-   "romanization": "umseoroisseo",
-   "gloss": "(ROM example, rec6957)",
+   "korean": "서로 선택한 것이 다른 것 같습니다",
+   "gloss": "It seems you each chose something different.",
    "targetForm": "서로",
    "areaId": "rom_mined",
-   "source": "rom-rec6957",
+   "source": "rom-rec3864",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -22702,16 +22701,16 @@
    "liveRecIds": [
     2364,
     3864
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:세차다",
-   "korean": "만한다세찬상대를원슬",
-   "romanization": "manhandasechansangdaereulwonseul",
-   "gloss": "(ROM example, rec6814)",
-   "targetForm": "세찬",
+   "korean": "모래바람이 세차게 분다",
+   "gloss": "The sandstorm is raging.",
+   "targetForm": "세차",
    "areaId": "rom_mined",
-   "source": "rom-rec6814",
+   "source": "rom-rec4768",
    "areasReferenced": [
     "rom_mined",
     "safari_zone"
@@ -22723,7 +22722,8 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     4768
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:손녀",
@@ -22759,12 +22759,11 @@
   },
   {
    "vocabId": "rom-mine-v3:손자",
-   "korean": "가족이나손녀든손자셋이서있다는링",
-   "romanization": "gajoginasonnyeodeunsonjasesiseoissdaneunring",
-   "gloss": "(ROM example, rec3232)",
+   "korean": "내 손자가 나와서 가르쳐 주니까 당연하겠지!",
+   "gloss": "My grandson comes and teaches them, so of course!",
    "targetForm": "손자",
    "areaId": "rom_mined",
-   "source": "rom-rec3232",
+   "source": "rom-rec945",
    "areasReferenced": [
     "rom_mined",
     "canyon_entrance",
@@ -22783,16 +22782,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     3232
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:순서",
-   "korean": "막순서를수있",
-   "romanization": "magsunseoreulsuiss",
-   "gloss": "(ROM example, rec3640)",
+   "korean": "리스트의 순서를 바꾸면 유리해지는 일도 있어!",
+   "gloss": "Changing the order of the list can give you an advantage!",
    "targetForm": "순서",
    "areaId": "rom_mined",
-   "source": "rom-rec3640",
+   "source": "rom-rec2193",
    "areasReferenced": [
     "rom_mined",
     "pewter_city",
@@ -22805,16 +22804,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     2193
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:쉽다",
-   "korean": "승있어당신이쉽게",
-   "romanization": "seungisseodangsiniswibge",
-   "gloss": "(ROM example, rec3946)",
+   "korean": "이 애는 엄청 키우기 쉽단다!",
+   "gloss": "This one is really easy to raise!",
    "targetForm": "쉽",
    "areaId": "rom_mined",
-   "source": "rom-rec3946",
+   "source": "rom-rec2050",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -22881,7 +22880,8 @@
     2208,
     3946,
     4047
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:슬다",
@@ -22937,12 +22937,11 @@
   },
   {
    "vocabId": "rom-mine-v3:시험",
-   "korean": "시험해요",
-   "romanization": "siheomhaeyo",
-   "gloss": "(ROM example, rec1117)",
+   "korean": "블루시티 체육관에도 가서 네 힘을 시험해보면 좋을 거야",
+   "gloss": "You should go to the Cerulean Gym too and test your strength.",
    "targetForm": "시험",
    "areaId": "rom_mined",
-   "source": "rom-rec1117",
+   "source": "rom-rec2186",
    "areasReferenced": [
     "rom_mined",
     "mt_moon",
@@ -22973,16 +22972,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     896
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:신비",
-   "korean": "갈필요한티켓신비하게있다",
-   "romanization": "galpilyohantikessinbihageissda",
-   "gloss": "(ROM example, rec6846)",
+   "korean": "그것은 신비의티켓...!",
+   "gloss": "That's the Mystic Ticket...!",
    "targetForm": "신비",
    "areaId": "rom_mined",
-   "source": "rom-rec6846",
+   "source": "rom-rec1039",
    "areasReferenced": [
     "vermilion_city",
     "celadon_city",
@@ -23001,16 +23000,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     2408
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:아빠",
-   "korean": "하는아빠랑왔어",
-   "romanization": "haneunapparangwasseo",
-   "gloss": "(ROM example, rec4176)",
+   "korean": "우리 아빠도 포켓몬 엄청 좋아해!",
+   "gloss": "My dad loves Pokémon too!",
    "targetForm": "아빠",
    "areaId": "rom_mined",
-   "source": "rom-rec4176",
+   "source": "rom-rec2094",
    "areasReferenced": [
     "route_3",
     "route_4",
@@ -23055,16 +23054,16 @@
     3031,
     4164,
     4176
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:아쉽다",
-   "korean": "아쉽다조금만막잡을있었는데",
-   "romanization": "aswibdajogeummanmagjabeulisseossneunde",
-   "gloss": "(ROM example, rec4849)",
+   "korean": "...아쉽구나!",
+   "gloss": "...What a shame!",
    "targetForm": "아쉽",
    "areaId": "rom_mined",
-   "source": "rom-rec4849",
+   "source": "rom-rec669",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -23116,16 +23115,16 @@
     3135,
     3138,
     3142
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:아직",
-   "korean": "아직막참이라서",
-   "romanization": "ajigmagchamiraseo",
-   "gloss": "(ROM example, rec4986)",
+   "korean": "아직도 연습이 부족해",
+   "gloss": "I still haven't practiced enough.",
    "targetForm": "아직",
    "areaId": "rom_mined",
-   "source": "rom-rec4986",
+   "source": "rom-rec2108",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -23204,16 +23203,16 @@
     2028,
     2576,
     2662
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:어렵다",
-   "korean": "대전게임이다어려워",
-   "romanization": "daejeongeimidaeoryeowo",
-   "gloss": "(ROM example, rec2390)",
+   "korean": "별명을 생각하는 건 재미있지...만 어려워!",
+   "gloss": "Thinking of nicknames is fun... but hard!",
    "targetForm": "어려워",
    "areaId": "rom_mined",
-   "source": "rom-rec2390",
+   "source": "rom-rec2093",
    "areasReferenced": [
     "pewter_city",
     "cerulean_city",
@@ -23274,16 +23273,16 @@
     998,
     1560,
     2390
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:언제나",
-   "korean": "있는살고할머니언제나웅포켓몬을",
-   "romanization": "issneunsalgohalmeonieonjenaungpokesmoneul",
-   "gloss": "(ROM example, rec1142)",
+   "korean": "각지의 포켓몬체육관에서는 언제나 격렬한 배틀이 펼쳐지고 있다!",
+   "gloss": "Fierce battles are always taking place at Pokémon Gyms all over!",
    "targetForm": "언제나",
    "areaId": "rom_mined",
-   "source": "rom-rec1142",
+   "source": "rom-rec2134",
    "areasReferenced": [
     "viridian_city",
     "route_4",
@@ -23359,16 +23358,16 @@
     916,
     1061,
     2985
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:엄청나다",
-   "korean": "엄청난발휘하여공격한다자",
-   "romanization": "eomcheongnanbalhwihayeogonggyeoghandaja",
-   "gloss": "(ROM example, rec6509)",
-   "targetForm": "엄청난",
+   "korean": "진짜로 진정한 엄청나게 멋지고 완벽한 포켓몬 도감을 완성시켰구나...!",
+   "gloss": "You really completed a truly amazing, perfect Pokédex...!",
+   "targetForm": "엄청나",
    "areaId": "rom_mined",
-   "source": "rom-rec6509",
+   "source": "rom-rec3225",
    "areasReferenced": [
     "rom_mined",
     "cerulean_cave",
@@ -23403,16 +23402,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     2091
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:여행",
-   "korean": "여행하는받은",
-   "romanization": "yeohaenghaneunbadeun",
-   "gloss": "(ROM example, rec5816)",
+   "korean": "엄마: ...맞아 사내아이는 언젠가 여행을 떠나지 응...",
+   "gloss": "Mom: ...That's right, all boys leave on a journey someday, yes...",
    "targetForm": "여행",
    "areaId": "rom_mined",
-   "source": "rom-rec5816",
+   "source": "rom-rec2000",
    "areasReferenced": [
     "pallet_town",
     "route_24",
@@ -23463,16 +23462,16 @@
     1827,
     2001,
     2534
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:연분홍",
-   "korean": "먼같은데연분홍시티로싶다",
-   "romanization": "meongateundeyeonbunhongsitirosipda",
-   "gloss": "(ROM example, rec1598)",
+   "korean": "여기는 19번 수로 연분홍시티 ...",
+   "gloss": "This is Route 19 Sea Route, Fuchsia City...",
    "targetForm": "연분홍",
    "areaId": "rom_mined",
-   "source": "rom-rec1598",
+   "source": "rom-rec1606",
    "areasReferenced": [
     "route_1",
     "route_2",
@@ -23529,16 +23528,16 @@
     1502,
     1529,
     1543
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:영감",
-   "korean": "나는국화너는영감이",
-   "romanization": "naneungughwaneoneunyeonggami",
-   "gloss": "(ROM example, rec655)",
+   "korean": "영감의 눈에 들 만하구나!",
+   "gloss": "You're worthy of the old man's notice!",
    "targetForm": "영감",
    "areaId": "rom_mined",
-   "source": "rom-rec655",
+   "source": "rom-rec657",
    "areasReferenced": [
     "rom_mined",
     "cerulean_cave",
@@ -23554,16 +23553,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     654
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:완벽",
-   "korean": "맛이나니까곳도감을완벽한찾았어여러포켓몬에게",
-   "romanization": "masinanikkagosdogameulwanbyeoghanchajasseoyeoreopokesmonege",
-   "gloss": "(ROM example, rec663)",
+   "korean": "이 세상의 모든 포켓몬을 기록한 완벽한 도감을 만드는 것!",
+   "gloss": "To make a perfect Pokédex that records every Pokémon in the world!",
    "targetForm": "완벽",
    "areaId": "rom_mined",
-   "source": "rom-rec663",
+   "source": "rom-rec2067",
    "areasReferenced": [
     "rom_mined",
     "canyon_entrance",
@@ -23589,16 +23588,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     663
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:왜지",
-   "korean": "있다왜지 보인다",
-   "romanization": "issdawaeji boinda",
-   "gloss": "(ROM example, rec4016)",
+   "korean": "왜지 재밌어 보인다!",
+   "gloss": "For some reason it looks fun!",
    "targetForm": "왜지",
    "areaId": "rom_mined",
-   "source": "rom-rec4016",
+   "source": "rom-rec4014",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -23666,16 +23665,16 @@
     1214,
     3926,
     4001
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:웃다",
-   "korean": "마했는데웃마",
-   "romanization": "mahaessneundeusma",
-   "gloss": "(ROM example, rec1738)",
+   "korean": "어깨동무를 하고 즐거운 듯이 웃고 있다!",
+   "gloss": "They have their arms around each other's shoulders and are laughing happily!",
    "targetForm": "웃",
    "areaId": "rom_mined",
-   "source": "rom-rec1738",
+   "source": "rom-rec2654",
    "areasReferenced": [
     "rom_mined",
     "canyon_entrance",
@@ -23717,16 +23716,16 @@
     893,
     1476,
     1480
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:원래",
-   "korean": "원래대로",
-   "romanization": "wonraedaero",
-   "gloss": "(ROM example, rec5762)",
+   "korean": "불러들이면 원래대로 돌아간다",
+   "gloss": "It returns to normal when withdrawn.",
    "targetForm": "원래",
    "areaId": "rom_mined",
-   "source": "rom-rec5762",
+   "source": "rom-rec6653",
    "areasReferenced": [
     "pallet_town",
     "cerulean_city",
@@ -23762,16 +23761,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     2372
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:유니언",
-   "korean": "무선유니언무선어댑터가",
-   "romanization": "museonyunieonmuseoneodaebteoga",
-   "gloss": "(ROM example, rec3892)",
+   "korean": "그럼 유니언 룸에서 즐거운 시간을 보내십시오",
+   "gloss": "Then please enjoy your time in the Union Room.",
    "targetForm": "유니언",
    "areaId": "rom_mined",
-   "source": "rom-rec3892",
+   "source": "rom-rec3918",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -23805,16 +23804,16 @@
     2443,
     3891,
     3892
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:이미",
-   "korean": "상태는이미",
-   "romanization": "sangtaeneunimi",
-   "gloss": "(ROM example, rec2070)",
+   "korean": "사실은 이미 알고 있지만 몇 번이고 보고 싶어서 말이지!",
+   "gloss": "Truth is, I already know, but I want to see it again and again!",
    "targetForm": "이미",
    "areaId": "rom_mined",
-   "source": "rom-rec2070",
+   "source": "rom-rec3228",
    "areasReferenced": [
     "pallet_town",
     "route_1",
@@ -23874,16 +23873,16 @@
     2670,
     2744,
     3228
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:자다",
-   "korean": "이런젊었을오박사와강함을잘듯하다",
-   "romanization": "ireonjeolmeosseulobagsawaganghameuljaldeushada",
-   "gloss": "(ROM example, rec3305)",
-   "targetForm": "잘",
+   "korean": "포켓몬이 매우 기분 좋게 자고 있다",
+   "gloss": "The Pokémon is sleeping very comfortably.",
+   "targetForm": "자",
    "areaId": "rom_mined",
-   "source": "rom-rec3305",
+   "source": "rom-rec1374",
    "areasReferenced": [
     "route_1",
     "route_2",
@@ -23940,16 +23939,16 @@
     999,
     1374,
     1527
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:자주",
-   "korean": "집에서포켓몬체력이링자주가서사다있어",
-   "romanization": "jibeseopokesmoncheryeogiringjajugaseosadaisseo",
-   "gloss": "(ROM example, rec2523)",
+   "korean": "몇 마리를 맡겨도 공짜니까 자주 이용해봐!",
+   "gloss": "It's free no matter how many you leave, so use it often!",
    "targetForm": "자주",
    "areaId": "rom_mined",
-   "source": "rom-rec2523",
+   "source": "rom-rec2152",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -24009,16 +24008,16 @@
     1498,
     2375,
     3457
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:작다",
-   "korean": "작다고봐주는사양이야",
-   "romanization": "jagdagobwajuneunsayangiya",
-   "gloss": "(ROM example, rec209)",
+   "korean": "키가 작은 순",
+   "gloss": "Shortest first",
    "targetForm": "작",
    "areaId": "rom_mined",
-   "source": "rom-rec209",
+   "source": "rom-rec5374",
    "areasReferenced": [
     "route_3",
     "rom_mined",
@@ -24063,16 +24062,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     209
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:장막",
-   "korean": "장막으로",
-   "romanization": "jangmageuro",
-   "gloss": "(ROM example, rec6342)",
+   "korean": "기술머신16의 내용은 빛의장막이야!",
+   "gloss": "TM16 contains Light Screen!",
    "targetForm": "장막",
    "areaId": "rom_mined",
-   "source": "rom-rec6342",
+   "source": "rom-rec2406",
    "areasReferenced": [
     "vermilion_city",
     "celadon_city",
@@ -24087,16 +24086,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     2406
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:재밌다",
-   "korean": "재미있는데",
-   "romanization": "jaemiissneunde",
-   "gloss": "(ROM example, rec1084)",
-   "targetForm": "재미있",
+   "korean": "왜지 재밌어 보인다!",
+   "gloss": "For some reason it looks fun!",
+   "targetForm": "재밌",
    "areaId": "rom_mined",
-   "source": "rom-rec1084",
+   "source": "rom-rec4014",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -24136,16 +24135,16 @@
     2665,
     2697,
     3494
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:저택",
-   "korean": "저택은있어서",
-   "romanization": "jeotaegeunisseoseo",
-   "gloss": "(ROM example, rec598)",
+   "korean": "포켓몬저택은 연구를 위해 과학자가 가끔 출입하는 것 같더군",
+   "gloss": "It seems scientists sometimes go in and out of the Pokémon Mansion for research.",
    "targetForm": "저택",
    "areaId": "rom_mined",
-   "source": "rom-rec598",
+   "source": "rom-rec1090",
    "areasReferenced": [
     "vermilion_city",
     "fuchsia_city",
@@ -24172,16 +24171,16 @@
    "liveRecIds": [
     1090,
     1636
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:전부",
-   "korean": "어이지면있는전부두고많",
-   "romanization": "eoijimyeonissneunjeonbudugomanh",
-   "gloss": "(ROM example, rec1493)",
+   "korean": "전부 나한테 맡기라고-!",
+   "gloss": "Leave it all to me!",
    "targetForm": "전부",
    "areaId": "rom_mined",
-   "source": "rom-rec1493",
+   "source": "rom-rec2042",
    "areasReferenced": [
     "route_12",
     "route_13",
@@ -24245,16 +24244,16 @@
     2429,
     2444,
     2545
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:전설",
-   "korean": "위에서정벼락을나타난다전설의포켓몬이다",
-   "romanization": "wieseojeongbyeorageulnatanandajeonseoluipokesmonida",
-   "gloss": "(ROM example, rec5073)",
+   "korean": "전설에 나오는 새포켓몬의 이야기야 프리져 썬더 파이어 3마리가 있어!",
+   "gloss": "It's a story of legendary bird Pokémon. There are three: Articuno, Zapdos and Moltres!",
    "targetForm": "전설",
    "areaId": "rom_mined",
-   "source": "rom-rec5073",
+   "source": "rom-rec1451",
    "areasReferenced": [
     "route_8",
     "route_12",
@@ -24285,16 +24284,16 @@
     1190,
     1451,
     2662
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:전원",
-   "korean": "전원의변화를",
-   "romanization": "jeonwonuibyeonhwareul",
-   "gloss": "(ROM example, rec6343)",
+   "korean": "그러면 전원이 켜집니다.",
+   "gloss": "Then the power turns on.",
    "targetForm": "전원",
    "areaId": "rom_mined",
-   "source": "rom-rec6343",
+   "source": "rom-rec3675",
    "areasReferenced": [
     "pallet_town",
     "route_24",
@@ -24343,16 +24342,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     3145
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:젊다",
-   "korean": "이런젊었을오박사와강함을잘듯하다",
-   "romanization": "ireonjeolmeosseulobagsawaganghameuljaldeushada",
-   "gloss": "(ROM example, rec3305)",
+   "korean": "젊은 사람들은 다들 도시로 가고 싶어하지만 난 계속 여기 있고 싶어!",
+   "gloss": "Young people all want to go to the city, but I want to stay here forever!",
    "targetForm": "젊",
    "areaId": "rom_mined",
-   "source": "rom-rec3305",
+   "source": "rom-rec3018",
    "areasReferenced": [
     "rom_mined",
     "seven_island",
@@ -24384,16 +24383,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     3018
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:정보",
-   "korean": "같이하있는정보를하볼있다",
-   "romanization": "gatihaissneunjeongboreulhabolissda",
-   "gloss": "(ROM example, rec5865)",
+   "korean": "...정보 나눔 게시판!",
+   "gloss": "...Information bulletin board!",
    "targetForm": "정보",
    "areaId": "rom_mined",
-   "source": "rom-rec5865",
+   "source": "rom-rec948",
    "areasReferenced": [
     "rom_mined",
     "celadon_city",
@@ -24442,16 +24441,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     214
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:정하다",
-   "korean": "따라정한쓰면할없어집니다",
-   "romanization": "ttarajeonghansseumyeonhaleobseojibnida",
-   "gloss": "(ROM example, rec3750)",
-   "targetForm": "정한",
+   "korean": "20의 정해진 데미지를 준다.",
+   "gloss": "Deals a fixed 20 damage.",
+   "targetForm": "정해진",
    "areaId": "rom_mined",
-   "source": "rom-rec3750",
+   "source": "rom-rec6277",
    "areasReferenced": [
     "rom_mined",
     "saffron_city",
@@ -24478,16 +24477,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     871
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:제일",
-   "korean": "제일의 모인",
-   "romanization": "jeilui moin",
-   "gloss": "(ROM example, rec5220)",
+   "korean": "공들여서 짓는 것도 좋지만 기억하기 쉬운 게 제일이지!",
+   "gloss": "Putting a lot of thought into a name is nice, but easy to remember is best!",
    "targetForm": "제일",
    "areaId": "rom_mined",
-   "source": "rom-rec5220",
+   "source": "rom-rec2093",
    "areasReferenced": [
     "rom_mined",
     "celadon_city",
@@ -24532,16 +24531,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     913
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:줍다",
-   "korean": "주워모아서",
-   "romanization": "juwomoaseo",
-   "gloss": "(ROM example, rec4978)",
-   "targetForm": "주워모",
+   "korean": "이 해변에는 좋은 물건이 흘러오곤 하지 난 자주 주우러 와",
+   "gloss": "Good things often wash up on this beach. I come to pick them up often.",
+   "targetForm": "주우러",
    "areaId": "rom_mined",
-   "source": "rom-rec4978",
+   "source": "rom-rec1771",
    "areasReferenced": [
     "route_3",
     "route_4",
@@ -24586,16 +24585,16 @@
     1420,
     1771,
     3054
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:중요",
-   "korean": "중요한넣는달려있다",
-   "romanization": "jungyohanneohneundalryeoissda",
-   "gloss": "(ROM example, rec6840)",
+   "korean": "우리는 중요한 일을 하고 있어!",
+   "gloss": "We're doing important work!",
    "targetForm": "중요",
    "areaId": "rom_mined",
-   "source": "rom-rec6840",
+   "source": "rom-rec252",
    "areasReferenced": [
     "rom_mined",
     "indigo_plateau",
@@ -24613,16 +24612,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     3573
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:지방",
-   "korean": "지방이보호한다",
-   "romanization": "jibangibohohanda",
-   "gloss": "(ROM example, rec5297)",
+   "korean": "관동지방 지도다!",
+   "gloss": "It's a map of the Kanto region!",
    "targetForm": "지방",
    "areaId": "rom_mined",
-   "source": "rom-rec5297",
+   "source": "rom-rec2015",
    "areasReferenced": [
     "pallet_town",
     "saffron_city",
@@ -24676,16 +24675,16 @@
     2015,
     2086,
     2987
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:쪼다",
-   "korean": "하쪼아버린다",
-   "romanization": "hajjoabeorinda",
-   "gloss": "(ROM example, rec4941)",
+   "korean": "날카롭고 뾰족한 부리나 뿔로 상대를 쪼아서 공격한다.",
+   "gloss": "Attacks by pecking the opponent with a sharp, pointed beak or horn.",
    "targetForm": "쪼",
    "areaId": "rom_mined",
-   "source": "rom-rec4941",
+   "source": "rom-rec6292",
    "areasReferenced": [
     "route_13",
     "rom_mined"
@@ -24699,16 +24698,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     1236
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:차갑다",
-   "korean": "다차가운상대를원슬",
-   "romanization": "dachagaunsangdaereulwonseul",
-   "gloss": "(ROM example, rec6814)",
-   "targetForm": "차가운",
+   "korean": "차갑게 굴지 말고 도와주라- 아이고...",
+   "gloss": "Don't be cold, help him out... oh dear...",
+   "targetForm": "차갑",
    "areaId": "rom_mined",
-   "source": "rom-rec6814",
+   "source": "rom-rec2928",
    "areasReferenced": [
     "rom_mined",
     "four_island",
@@ -24730,16 +24729,16 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     5122
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:처음",
-   "korean": "이런처음이야이거링",
-   "romanization": "ireoncheoeumiyaigeoring",
-   "gloss": "(ROM example, rec3113)",
+   "korean": "인류 사상 처음으로 달 위에 서다!",
+   "gloss": "The first person in human history to stand on the moon!",
    "targetForm": "처음",
    "areaId": "rom_mined",
-   "source": "rom-rec3113",
+   "source": "rom-rec2175",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -24806,16 +24805,16 @@
     1270,
     2098,
     3944
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:최근",
-   "korean": "이런남최근에",
-   "romanization": "ireonnamchoegeune",
-   "gloss": "(ROM example, rec3253)",
+   "korean": "최근에 이 마을로 이사 왔어!",
+   "gloss": "I moved to this town recently!",
    "targetForm": "최근",
    "areaId": "rom_mined",
-   "source": "rom-rec3253",
+   "source": "rom-rec2283",
    "areasReferenced": [
     "saffron_city",
     "cinnabar_island",
@@ -24856,16 +24855,16 @@
     1184,
     2768,
     3009
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:충격",
-   "korean": "충격으로",
-   "romanization": "chunggyeogeuro",
-   "gloss": "(ROM example, rec6815)",
+   "korean": "정말 충격이야!",
+   "gloss": "That's a real shock!",
    "targetForm": "충격",
    "areaId": "rom_mined",
-   "source": "rom-rec6815",
+   "source": "rom-rec2722",
    "areasReferenced": [
     "viridian_city",
     "rom_mined",
@@ -24884,16 +24883,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     2722
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:치료",
-   "korean": "이런약에도많포켓몬이입으면약을만치료한다는링",
-   "romanization": "ireonyagedomanhpokesmoniibeumyeonyageulmanchiryohandaneunring",
-   "gloss": "(ROM example, rec3273)",
+   "korean": "배틀이 끝나도 마비는 치료되지 않습니다 마비치료제로 치료합시다",
+   "gloss": "Paralysis isn't cured even after battle. Cure it with Parlyz Heal.",
    "targetForm": "치료",
    "areaId": "rom_mined",
-   "source": "rom-rec3273",
+   "source": "rom-rec2144",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -24928,16 +24927,16 @@
     2141,
     2144,
     3054
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:카드",
-   "korean": "있는 카드를",
-   "romanization": "issneun kadeureul",
-   "gloss": "(ROM example, rec6173)",
+   "korean": "카드키가 없으면 열 수 없다!",
+   "gloss": "It won't open without a Card Key!",
    "targetForm": "카드",
    "areaId": "rom_mined",
-   "source": "rom-rec6173",
+   "source": "rom-rec3177",
    "areasReferenced": [
     "pallet_town",
     "viridian_city",
@@ -24998,16 +24997,16 @@
    "liveRecIds": [
     3177,
     3878
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:칸나",
-   "korean": "사람칸나는발휘해서",
-   "romanization": "saramkannaneunbalhwihaeseo",
-   "gloss": "(ROM example, rec3291)",
+   "korean": "여기는 칸나의 집",
+   "gloss": "This is Lorelei's house.",
    "targetForm": "칸나",
    "areaId": "rom_mined",
-   "source": "rom-rec3291",
+   "source": "rom-rec1181",
    "areasReferenced": [
     "rom_mined",
     "two_island",
@@ -25053,16 +25052,16 @@
     1179,
     3073,
     3074
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:타워",
-   "korean": "포켓몬타워에있어기술머신",
-   "romanization": "pokesmontawoeisseogisulmeosin",
-   "gloss": "(ROM example, rec2873)",
+   "korean": "포켓몬타워가 보인다!",
+   "gloss": "You can see Pokémon Tower!",
    "targetForm": "타워",
    "areaId": "rom_mined",
-   "source": "rom-rec2873",
+   "source": "rom-rec2879",
    "areasReferenced": [
     "route_2",
     "pewter_city",
@@ -25114,16 +25113,16 @@
     2298,
     2873,
     2874
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:털다",
-   "korean": "턴상대를",
-   "romanization": "teonsangdaereul",
-   "gloss": "(ROM example, rec6311)",
-   "targetForm": "턴",
+   "korean": "용돈을 털어서 또 알칼로이드를 샀어",
+   "gloss": "I spent my allowance on alkaloids again.",
+   "targetForm": "털",
    "areaId": "rom_mined",
-   "source": "rom-rec6311",
+   "source": "rom-rec4087",
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
@@ -25163,16 +25162,16 @@
     2018,
     2022,
     2081
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:통신",
-   "korean": "다만통신이된려면",
-   "romanization": "damantongsinidoenryeomyeon",
-   "gloss": "(ROM example, rec2988)",
+   "korean": "요즘은 컴퓨터 통신으로 도구나 포켓몬을 데이터로 만들어 보낼 수 있대",
+   "gloss": "I hear these days you can turn items and Pokémon into data and send them by computer.",
    "targetForm": "통신",
    "areaId": "rom_mined",
-   "source": "rom-rec2988",
+   "source": "rom-rec923",
    "areasReferenced": [
     "viridian_city",
     "pewter_city",
@@ -25216,16 +25215,16 @@
     3014,
     3849,
     3863
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:통하다",
-   "korean": "문인간과통하게슬굴절시키는",
-   "romanization": "muningangwatonghageseulguljeolsikineun",
-   "gloss": "(ROM example, rec5313)",
+   "korean": "통하지 않는다",
+   "gloss": "It has no effect.",
    "targetForm": "통하",
    "areaId": "rom_mined",
-   "source": "rom-rec5313",
+   "source": "rom-rec4419",
    "areasReferenced": [
     "celadon_city",
     "rom_mined",
@@ -25266,16 +25265,16 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     2462
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:티켓",
-   "korean": "갈필요한티켓신비하게있다",
-   "romanization": "galpilyohantikessinbihageissda",
-   "gloss": "(ROM example, rec6846)",
+   "korean": "티켓은 있으신가요 손님?",
+   "gloss": "Do you have a ticket, sir?",
    "targetForm": "티켓",
    "areaId": "rom_mined",
-   "source": "rom-rec6846",
+   "source": "rom-rec1032",
    "areasReferenced": [
     "route_25",
     "route_12",
@@ -25300,16 +25299,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     2932
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:하늘",
-   "korean": "비어있어서자유롭게하늘을많",
-   "romanization": "bieoisseoseojayurobgehaneuleulmanh",
-   "gloss": "(ROM example, rec5155)",
+   "korean": "굉장히 아름다운 하늘이 보인다!",
+   "gloss": "You can see an incredibly beautiful sky!",
    "targetForm": "하늘",
    "areaId": "rom_mined",
-   "source": "rom-rec5155",
+   "source": "rom-rec4010",
    "areasReferenced": [
     "route_8",
     "route_12",
@@ -25355,16 +25354,16 @@
    "liveRecIds": [
     1448,
     1452
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:할아버지",
-   "korean": "할아버지에게서",
-   "romanization": "halabeojiegeseo",
-   "gloss": "(ROM example, rec3963)",
+   "korean": "할아버지라면 안 계셔",
+   "gloss": "Grandpa isn't here.",
    "targetForm": "할아버지",
    "areaId": "rom_mined",
-   "source": "rom-rec3963",
+   "source": "rom-rec2032",
    "areasReferenced": [
     "pallet_town",
     "route_24",
@@ -25419,16 +25418,16 @@
     2032,
     3963,
     3971
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:헤엄치다",
-   "korean": "걷지슬헤엄치는더모양이다",
-   "romanization": "geodjiseulheeomchineundeomoyangida",
-   "gloss": "(ROM example, rec4986)",
-   "targetForm": "헤엄치",
+   "korean": "유연하게 바다를 헤엄친다.",
+   "gloss": "Swims gracefully through the sea.",
+   "targetForm": "헤엄친다",
    "areaId": "rom_mined",
-   "source": "rom-rec4986",
+   "source": "rom-rec5154",
    "areasReferenced": [
     "viridian_city",
     "rom_mined",
@@ -25457,16 +25456,16 @@
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
     1604
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:혼신",
-   "korean": "혼신의상대를",
-   "romanization": "honsinuisangdaereul",
-   "gloss": "(ROM example, rec6298)",
+   "korean": "혼신의 힘으로 상대를 공격한다.",
+   "gloss": "Attacks the opponent with all its might.",
    "targetForm": "혼신",
    "areaId": "rom_mined",
-   "source": "rom-rec6298",
+   "source": "rom-rec6821",
    "areasReferenced": [
     "fuchsia_city",
     "rom_mined"
@@ -25479,16 +25478,16 @@
    "primarySourceType": "item_description",
    "liveRecIds": [
     6298
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:혼자",
-   "korean": "혼자포켓몬을있어",
-   "romanization": "honjapokesmoneulisseo",
-   "gloss": "(ROM example, rec1487)",
+   "korean": "안녕 너는 혼자 왔니?",
+   "gloss": "Hi, did you come alone?",
    "targetForm": "혼자",
    "areaId": "rom_mined",
-   "source": "rom-rec1487",
+   "source": "rom-rec1730",
    "areasReferenced": [
     "route_1",
     "viridian_city",
@@ -25561,16 +25560,16 @@
     1876,
     1985,
     2793
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "rom-mine-v3:화나다",
-   "korean": "화나면마그마를",
-   "romanization": "hwanamyeonmageumareul",
-   "gloss": "(ROM example, rec5255)",
+   "korean": "화나면 독가스를 내뿜지만...",
+   "gloss": "When it gets angry it spews poison gas, but...",
    "targetForm": "화나",
    "areaId": "rom_mined",
-   "source": "rom-rec5255",
+   "source": "rom-rec1045",
    "areasReferenced": [
     "cerulean_city",
     "lavender_town",
@@ -25592,7 +25591,8 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     1045
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   }
  ]
 }

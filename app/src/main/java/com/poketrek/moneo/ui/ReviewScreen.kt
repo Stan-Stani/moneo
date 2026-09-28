@@ -232,7 +232,7 @@ fun ReviewScreen(
             currentGloss = s.gloss,
             source = s.source,
             speaker = s.speaker,
-            generator = s.generator,
+            generator = s.generator ?: s.glossGenerator?.let { "$it (gloss only)" },
             proposedKorean = null,
             proposedGloss = null,
             reason = null,
@@ -340,6 +340,7 @@ fun ReviewScreen(
                                     backText = sentenceSides.back,
                                     showBack = showSentenceGloss,
                                     generator = sentence?.generator,
+                                    glossGenerator = sentence?.glossGenerator,
                                     canSpeak = frontHasSpeaker,
                                     onSpeak = { module.tts.speak(sentenceSides.front, frontLang) },
                                     onReport = sentence?.let { s -> { onReportSentence(s) } },
@@ -377,6 +378,7 @@ fun ReviewScreen(
                             backText = sentenceSides.back,
                             showBack = showSentenceGloss,
                             generator = sentence?.generator,
+                            glossGenerator = sentence?.glossGenerator,
                             canSpeak = frontHasSpeaker,
                             onSpeak = { module.tts.speak(sentenceSides.front, frontLang) },
                             onReport = sentence?.let { s -> { onReportSentence(s) } },
@@ -566,11 +568,13 @@ private fun SentenceCard(
     backText: String,
     showBack: Boolean,
     generator: String?,
+    glossGenerator: String?,
     canSpeak: Boolean,
     onSpeak: () -> Unit,
     onReport: (() -> Unit)?,
 ) {
     val isLlm = generator?.startsWith("llm-") == true
+    val isLlmGloss = glossGenerator?.startsWith("llm-") == true
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -608,7 +612,7 @@ private fun SentenceCard(
             if (onReport != null) {
                 // Slightly more prominent affordance when the line is LLM-generated:
                 // those are the ones a native speaker is most likely to need to fix.
-                val reportBg = if (isLlm) Color(0xFF7C3AED) else Color(0xFF334155)
+                val reportBg = if (isLlm || isLlmGloss) Color(0xFF7C3AED) else Color(0xFF334155)
                 Text(
                     "✎ Report",
                     color = Color.White,
@@ -624,6 +628,9 @@ private fun SentenceCard(
         Text(frontText, color = Color.White, fontWeight = FontWeight.Medium, fontSize = 18.sp)
         if (showBack) {
             Text(backText, color = Color(0xFFCBD5E1), fontSize = 13.sp)
+            if (isLlmGloss) {
+                Text("AI translation of a game line", color = Color(0xFFA5B4FC), fontSize = 10.sp)
+            }
         }
     }
 }

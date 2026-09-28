@@ -45,6 +45,12 @@ data class SentenceEntry(
      * machine-written.
      */
     val generator: String? = null,
+    /**
+     * Same convention as [generator], but for [gloss] only: set when the
+     * Korean is an authentic game line and just the English translation was
+     * machine-written.
+     */
+    val glossGenerator: String? = null,
 )
 
 /**
@@ -77,6 +83,7 @@ object SentenceLoader {
                 source = o.optString("source").takeIf { it.isNotEmpty() },
                 speaker = o.optString("speaker").takeIf { it.isNotEmpty() },
                 generator = o.optString("generator").takeIf { it.isNotEmpty() },
+                glossGenerator = o.optString("glossGenerator").takeIf { it.isNotEmpty() },
             )
         }
         return out

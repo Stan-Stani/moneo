@@ -1,0 +1,6874 @@
+[
+ {
+  "vocabId": "rom-mine-v3:있다",
+  "lemma": "있다",
+  "recId": 2040,
+  "korean": "그럼 잘 있어!",
+  "surface": "있",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:하다",
+  "lemma": "하다",
+  "recId": 2166,
+  "korean": "짐이 가득하다",
+  "surface": "하",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:공격",
+  "lemma": "공격",
+  "recId": 2140,
+  "korean": "잠들어버리면 그동안에는 공격할 수 없습니다!",
+  "surface": "공격",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:상대",
+  "lemma": "상대",
+  "recId": 2037,
+  "korean": "...잠깐 내 상대 좀 해봐!",
+  "surface": "상대",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:많다",
+  "lemma": "많다",
+  "recId": 2087,
+  "korean": "내가 더 빨리 많은 포켓몬을 모았는데!",
+  "surface": "많",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:기술",
+  "lemma": "기술",
+  "recId": 2102,
+  "korean": "강력한 기술이지!",
+  "surface": "기술",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:같다",
+  "lemma": "같다",
+  "recId": 2072,
+  "korean": "도감 같은 물건이 있다!",
+  "surface": "같",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:받다",
+  "lemma": "받다",
+  "recId": 2015,
+  "korean": "...받으면 기쁘려나?",
+  "surface": "받",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:없다",
+  "lemma": "없다",
+  "recId": 3139,
+  "korean": "넣을 곳이 없다...",
+  "surface": "없",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:좋다",
+  "lemma": "좋다",
+  "recId": 4006,
+  "korean": "좋은 냄새다!",
+  "surface": "좋",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:만들다",
+  "lemma": "만들다",
+  "recId": 3991,
+  "korean": "뭔가 요리를 만들었던 것 같다!",
+  "surface": "만들",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:회복",
+  "lemma": "회복",
+  "recId": 3996,
+  "korean": "포켓몬의 체력 회복!",
+  "surface": "회복",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:되다",
+  "lemma": "되다",
+  "recId": 935,
+  "korean": "그럼 됐어!",
+  "surface": "됐",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:자신",
+  "lemma": "자신",
+  "recId": 965,
+  "korean": "이길 자신이 있다면 웅이랑 배틀해 봐!",
+  "surface": "자신",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:쓰다",
+  "lemma": "쓰다",
+  "recId": 2105,
+  "korean": "...힘을 다 썼어",
+  "surface": "썼",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:주다",
+  "lemma": "주다",
+  "recId": 8399,
+  "korean": "나한테도 줘!",
+  "surface": "줘",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:배틀",
+  "lemma": "배틀",
+  "recId": 2097,
+  "korean": "격렬한 배틀이었다!",
+  "surface": "배틀",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:보다",
+  "lemma": "보다",
+  "recId": 3469,
+  "korean": "여기 봐봐!",
+  "surface": "봐",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:머신",
+  "lemma": "머신",
+  "recId": 2185,
+  "korean": "단 머신은 1회용이야!",
+  "surface": "머신",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:강하다",
+  "lemma": "강하다",
+  "recId": 2181,
+  "korean": "단단하고 참을성이 강해!",
+  "surface": "강해",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:보이다",
+  "lemma": "보이다",
+  "recId": 8398,
+  "korean": "안 보인다...",
+  "surface": "보인다",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:않다",
+  "lemma": "않다",
+  "recId": 2709,
+  "korean": "사양 않고 간다!",
+  "surface": "않",
+  "area": "saffron_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:선택",
+  "lemma": "선택",
+  "recId": 3864,
+  "korean": "서로 선택한 것이 다른 것 같습니다",
+  "surface": "선택",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:게임",
+  "lemma": "게임",
+  "recId": 4014,
+  "korean": "최신 게임이다!",
+  "surface": "게임",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:상태",
+  "lemma": "상태",
+  "recId": 2195,
+  "korean": "이 상태로 나가봐!",
+  "surface": "상태",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:알다",
+  "lemma": "알다",
+  "recId": 2080,
+  "korean": "알고 계세요?",
+  "surface": "알",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:사용",
+  "lemma": "사용",
+  "recId": 2181,
+  "korean": "사용하는 건 바위포켓몬뿐이야!",
+  "surface": "사용",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:다음",
+  "lemma": "다음",
+  "recId": 2178,
+  "korean": "다음에 잡아줄게!",
+  "surface": "다음",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:들다",
+  "lemma": "들다",
+  "recId": 4007,
+  "korean": "아무것도 안 들어 있다!",
+  "surface": "들",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:도감",
+  "lemma": "도감",
+  "recId": 2070,
+  "korean": "도감 상태는 어떠냐?",
+  "surface": "도감",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:많이",
+  "lemma": "많이",
+  "recId": 948,
+  "korean": "트레이너와의 승부도 많이 하면 좋습니다!",
+  "surface": "많이",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:말다",
+  "lemma": "말다",
+  "recId": 3903,
+  "korean": "다른 녀석에게 지지 마라!",
+  "surface": "마라",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:움직이다",
+  "lemma": "움직이다",
+  "recId": 2143,
+  "korean": "얼어버리면 전혀 움직일 수 없게 됩니다!",
+  "surface": "움직일",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:지금",
+  "lemma": "지금",
+  "recId": 2126,
+  "korean": "확실한 건 지금까지의 관장 중에서 누구보다도 강하다는 거야!",
+  "surface": "지금",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:따르다",
+  "lemma": "따르다",
+  "recId": 2055,
+  "korean": "그래 꽤나 잘 따르는 것 같은데?",
+  "surface": "따르",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:연속",
+  "lemma": "연속",
+  "recId": 967,
+  "korean": "최근 달맞이산에서 귀중한 포켓몬의 화석을 연속으로 훔치는 악당이 있습니다!",
+  "surface": "연속",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:종류",
+  "lemma": "종류",
+  "recId": 2167,
+  "korean": "여기서는 세상에서 보기 힘든 고대 포켓몬 화석 중 2종류를 전시하고 있습니다!",
+  "surface": "종류",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:크다",
+  "lemma": "크다",
+  "recId": 2102,
+  "korean": "땅을 강하게 흔들어서 상대에게 큰 데미지를 주는!",
+  "surface": "큰",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:타입",
+  "lemma": "타입",
+  "recId": 2077,
+  "korean": "포켓몬은 타입에 따라 유리한 타입 불리한 타입이 있다네",
+  "surface": "타입",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:나오다",
+  "lemma": "나오다",
+  "recId": 921,
+  "korean": "풀숲에서는 야생 포켓몬이 튀어나온단다!",
+  "surface": "나온단다",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:모르다",
+  "lemma": "모르다",
+  "recId": 2007,
+  "korean": "모르는 게 있을 땐 도움말!",
+  "surface": "모르",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:생각",
+  "lemma": "생각",
+  "recId": 2093,
+  "korean": "별명을 생각하는 건 재미있지...만 어려워!",
+  "surface": "생각",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:승부",
+  "lemma": "승부",
+  "recId": 948,
+  "korean": "트레이너와의 승부도 많이 하면 좋습니다!",
+  "surface": "승부",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:시티",
+  "lemma": "시티",
+  "recId": 950,
+  "korean": "상록시티 포켓몬체육관",
+  "surface": "시티",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:진화",
+  "lemma": "진화",
+  "recId": 2817,
+  "korean": "진화캔슬 쓰고 있니?",
+  "surface": "진화",
+  "area": "route_2"
+ },
+ {
+  "vocabId": "rom-mine-v3:떨어뜨리다",
+  "lemma": "떨어뜨리다",
+  "recId": 2185,
+  "korean": "바위를 상대에게 던져서 스피드를 떨어뜨려 버리는 재미있는 기술이지!",
+  "surface": "떨어뜨려",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:로켓단",
+  "lemma": "로켓단",
+  "recId": 2098,
+  "korean": "로켓단은...",
+  "surface": "로켓단",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:주마",
+  "lemma": "주마",
+  "recId": 2063,
+  "korean": "필요한 도구를 주마!",
+  "surface": "주마",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:꼬리",
+  "lemma": "꼬리",
+  "recId": 5131,
+  "korean": "꼬리에 작은 뇌가 있다.",
+  "surface": "꼬리",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:날카롭다",
+  "lemma": "날카롭다",
+  "recId": 6737,
+  "korean": "딱딱하고 날카로운 손톱.",
+  "surface": "날카로운",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:마음",
+  "lemma": "마음",
+  "recId": 2045,
+  "korean": "너도 마음에 드는 걸 가지려무나!",
+  "surface": "마음",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:시작",
+  "lemma": "시작",
+  "recId": 926,
+  "korean": "여기는 태초마을 태초는 새하얀 시작의 색",
+  "surface": "시작",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:저널",
+  "lemma": "저널",
+  "recId": 3454,
+  "korean": "포켓몬 저널!",
+  "surface": "저널",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:지니다",
+  "lemma": "지니다",
+  "recId": 3882,
+  "korean": "지닌 포켓몬에 데려갈 수 없는 포켓몬이 있습니다",
+  "surface": "지닌",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:가끔",
+  "lemma": "가끔",
+  "recId": 2071,
+  "korean": "오박사: 가끔은 나도 보러 오렴!",
+  "surface": "가끔",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:교환",
+  "lemma": "교환",
+  "recId": 3908,
+  "korean": "교환을 하겠습니까?",
+  "surface": "교환",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:맞다",
+  "lemma": "맞다",
+  "recId": 2110,
+  "korean": "...너와 포켓몬도 호흡이 잘 맞는구나",
+  "surface": "맞",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:매우",
+  "lemma": "매우",
+  "recId": 6620,
+  "korean": "매우 쓴 뿌리.",
+  "surface": "매우",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:멀다",
+  "lemma": "멀다",
+  "recId": 2161,
+  "korean": "먼 옛날 나무에서 나온 액체가 화석처럼 굳은 것을 호박이라고 한단다",
+  "surface": "먼",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:모이다",
+  "lemma": "모이다",
+  "recId": 2126,
+  "korean": "아무래도 이 체육관엔 땅타입 포켓몬을 쓰는 사람이 모여있나봐",
+  "surface": "모여",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:살다",
+  "lemma": "살다",
+  "recId": 2014,
+  "korean": "남나리: 사람이랑 똑같이 포켓몬도 살아 있단다!",
+  "surface": "살",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:오박사",
+  "lemma": "오박사",
+  "recId": 2053,
+  "korean": "오박사: 그래!",
+  "surface": "오박사",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:이동",
+  "lemma": "이동",
+  "recId": 5275,
+  "korean": "회전하면서 이동.",
+  "surface": "이동",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:조금",
+  "lemma": "조금",
+  "recId": 941,
+  "korean": "조금은 도움이 됐지?",
+  "surface": "조금",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:찾다",
+  "lemma": "찾다",
+  "recId": 964,
+  "korean": "웅이가 상대를 찾고 있어 ...이리 와!",
+  "surface": "찾",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:필요",
+  "lemma": "필요",
+  "recId": 2063,
+  "korean": "필요한 도구를 주마!",
+  "surface": "필요",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:화상",
+  "lemma": "화상",
+  "recId": 2133,
+  "korean": "독이나 화상으로 약하게 만들어도 좋다!",
+  "surface": "화상",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:가르치다",
+  "lemma": "가르치다",
+  "recId": 945,
+  "korean": "내 손자가 나와서 가르쳐 주니까 당연하겠지!",
+  "surface": "가르쳐",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:가방",
+  "lemma": "가방",
+  "recId": 3135,
+  "korean": "가방이 가득 차 있다...",
+  "surface": "가방",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:계속",
+  "lemma": "계속",
+  "recId": 2026,
+  "korean": "꽤 많이 따르는구나 그렇게 계속 귀여워해줘",
+  "surface": "계속",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:그러다",
+  "lemma": "그러다",
+  "recId": 2070,
+  "korean": "음- 왜 그러니?",
+  "surface": "그러",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:그림",
+  "lemma": "그림",
+  "recId": 4001,
+  "korean": "예쁜 포켓몬 그림이다!",
+  "surface": "그림",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:동료",
+  "lemma": "동료",
+  "recId": 251,
+  "korean": "동료들이 날 가만두지 않을 거야",
+  "surface": "동료",
+  "area": "mt_moon"
+ },
+ {
+  "vocabId": "rom-mine-v3:동안",
+  "lemma": "동안",
+  "recId": 3107,
+  "korean": "살아 있는 동안에 이 기술을 가르칠 자를 만날 거라곤 생각도 못 했는데",
+  "surface": "동안",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:막다",
+  "lemma": "막다",
+  "recId": 720,
+  "korean": "바위로 흐름을 막을 수 있을지도...",
+  "surface": "막",
+  "area": "rock_tunnel"
+ },
+ {
+  "vocabId": "rom-mine-v3:먹이",
+  "lemma": "먹이",
+  "recId": 640,
+  "korean": "먹이를 던지면 먹이에 정신이 팔린 동안 포켓몬이 잘 도망치지 않아!",
+  "surface": "먹이",
+  "area": "safari_zone"
+ },
+ {
+  "vocabId": "rom-mine-v3:바로",
+  "lemma": "바로",
+  "recId": 2192,
+  "korean": "그럼 바로...!",
+  "surface": "바로",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:버튼",
+  "lemma": "버튼",
+  "recId": 3144,
+  "korean": "가방에 들어 있는 도구를 편리 버튼에 등록할 수 있습니다",
+  "surface": "버튼",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:부르다",
+  "lemma": "부르다",
+  "recId": 2044,
+  "korean": "아아 그렇지 내가 불렀구나!",
+  "surface": "불렀",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:비밀",
+  "lemma": "비밀",
+  "recId": 595,
+  "korean": "비밀의 스위치가 있다!",
+  "surface": "비밀",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:얼음",
+  "lemma": "얼음",
+  "recId": 2143,
+  "korean": "배틀이 끝나도 얼어 있습니다 얼음상태치료제로 안 녹이면 포켓몬이 불쌍합니다",
+  "surface": "얼음",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:정도",
+  "lemma": "정도",
+  "recId": 2024,
+  "korean": "이 이상은 없을 정도로 따르고 있구나...!",
+  "surface": "정도",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:조수",
+  "lemma": "조수",
+  "recId": 2079,
+  "korean": "저도 박사님의 조수로서 포켓몬을 연구하고 있습니다",
+  "surface": "조수",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:챔피언",
+  "lemma": "챔피언",
+  "recId": 2126,
+  "korean": "미래의 챔피언!",
+  "surface": "챔피언",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:친구",
+  "lemma": "친구",
+  "recId": 2228,
+  "korean": "친구랑 2층에 가서 없던 포켓몬을 교환받으면 많이 모여!",
+  "surface": "친구",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:혼란",
+  "lemma": "혼란",
+  "recId": 1714,
+  "korean": "혼란에 빠지면 바로 포켓몬을 교체하는 작전도 좋지",
+  "surface": "혼란",
+  "area": "route_3"
+ },
+ {
+  "vocabId": "rom-mine-v3:가족",
+  "lemma": "가족",
+  "recId": 1078,
+  "korean": "이름 캥카 사이좋은 가족포켓몬!",
+  "surface": "가족",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:가지다",
+  "lemma": "가지다",
+  "recId": 941,
+  "korean": "이제 이걸 가지고 가거라",
+  "surface": "가지",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:같이",
+  "lemma": "같이",
+  "recId": 2191,
+  "korean": "같이 포켓몬 챔피언이 되어 보자고",
+  "surface": "같이",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:걷다",
+  "lemma": "걷다",
+  "recId": 2005,
+  "korean": "머리를 땋은 여자아이가 벽돌길을 걷고 있다...",
+  "surface": "걷",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:근처",
+  "lemma": "근처",
+  "recId": 2092,
+  "korean": "우선 제1섬에 가서 그 근처를 찾아볼까- 그럼 먼저 간다!",
+  "surface": "근처",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:급소",
+  "lemma": "급소",
+  "recId": 1053,
+  "korean": "크리티컬커터는 기술이 급소에 맞기 쉬워집니다 도구 구매는 무지개백화점에서!",
+  "surface": "급소",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:기다리다",
+  "lemma": "기다리다",
+  "recId": 920,
+  "korean": "기다리거라!",
+  "surface": "기다리",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:나가다",
+  "lemma": "나가다",
+  "recId": 2006,
+  "korean": "슬슬 나가 보자!",
+  "surface": "나가",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:나누다",
+  "lemma": "나누다",
+  "recId": 948,
+  "korean": "...정보 나눔 게시판!",
+  "surface": "나눔",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:날개",
+  "lemma": "날개",
+  "recId": 4100,
+  "korean": "환상의 날개라는 얘기...",
+  "surface": "날개",
+  "area": "route_12"
+ },
+ {
+  "vocabId": "rom-mine-v3:남다",
+  "lemma": "남다",
+  "recId": 4015,
+  "korean": "도둑이 어질러 놓은 흔적이 남아 있다...",
+  "surface": "남",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:놀다",
+  "lemma": "놀다",
+  "recId": 332,
+  "korean": "또 놀러 가고 싶어!",
+  "surface": "놀",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "rom-mine-v3:던지다",
+  "lemma": "던지다",
+  "recId": 2066,
+  "korean": "하고 던지면 포켓몬을 잡을 수 있지!",
+  "surface": "던지",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:들어가다",
+  "lemma": "들어가다",
+  "recId": 3992,
+  "korean": "다양한 물건이 들어갈 것 같다!",
+  "surface": "들어갈",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:리그",
+  "lemma": "리그",
+  "recId": 3997,
+  "korean": "포켓몬리그 본부",
+  "surface": "리그",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:머리",
+  "lemma": "머리",
+  "recId": 2005,
+  "korean": "머리를 땋은 여자아이가 벽돌길을 걷고 있다...",
+  "surface": "머리",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:메일",
+  "lemma": "메일",
+  "recId": 5463,
+  "korean": "메일을 받는다",
+  "surface": "메일",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:모두",
+  "lemma": "모두",
+  "recId": 3188,
+  "korean": "모두 건강해졌습니다!",
+  "surface": "모두",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:무겁다",
+  "lemma": "무겁다",
+  "recId": 352,
+  "korean": "엄청 무거운 바위라도 괴력으로 움직일 수 있지!",
+  "surface": "무거운",
+  "area": "mt_moon"
+ },
+ {
+  "vocabId": "rom-mine-v3:물다",
+  "lemma": "물다",
+  "recId": 1132,
+  "korean": "뛰고 물고!",
+  "surface": "물",
+  "area": "cinnabar_island"
+ },
+ {
+  "vocabId": "rom-mine-v3:변화",
+  "lemma": "변화",
+  "recId": 2138,
+  "korean": "칠판에는 배틀 중인 포켓몬에게 일어나는 상태의 변화에 대한 내용이 적혀 있다",
+  "surface": "변화",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:불꽃",
+  "lemma": "불꽃",
+  "recId": 4432,
+  "korean": "불꽃을 받으면 강해진다",
+  "surface": "불꽃",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:비축",
+  "lemma": "비축",
+  "recId": 6486,
+  "korean": "비축된 만큼 데미지가 크다.",
+  "surface": "비축",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:빠르다",
+  "lemma": "빠르다",
+  "recId": 3153,
+  "korean": "물살이 빠르다!",
+  "surface": "빠르",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:사천왕",
+  "lemma": "사천왕",
+  "recId": 2135,
+  "korean": "사천왕이 군림하고 있다!",
+  "surface": "사천왕",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:시간",
+  "lemma": "시간",
+  "recId": 946,
+  "korean": "...시간은 돈이라네",
+  "surface": "시간",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:알리다",
+  "lemma": "알리다",
+  "recId": 3952,
+  "korean": "빨리 알려줘!",
+  "surface": "알려",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:전기",
+  "lemma": "전기",
+  "recId": 1354,
+  "korean": "전기는 소중하게!",
+  "surface": "전기",
+  "area": "route_11"
+ },
+ {
+  "vocabId": "rom-mine-v3:전혀",
+  "lemma": "전혀",
+  "recId": 2070,
+  "korean": "전혀 페이지가 안 늘었는데?",
+  "surface": "전혀",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:죽다",
+  "lemma": "죽다",
+  "recId": 1013,
+  "korean": "키우던 포켓몬이 죽었을 때 포켓몬타워에 데려가서 명복을 빌어주는 거지...",
+  "surface": "죽",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:축하",
+  "lemma": "축하",
+  "recId": 1680,
+  "korean": "5명 연승 축하한다!",
+  "surface": "축하",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "rom-mine-v3:키우다",
+  "lemma": "키우다",
+  "recId": 2048,
+  "korean": "천천히 키우면 좋단다!",
+  "surface": "키우",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:향하다",
+  "lemma": "향하다",
+  "recId": 1423,
+  "korean": "바람은 나를 향해 불고 있어!",
+  "surface": "향해",
+  "area": "route_10"
+ },
+ {
+  "vocabId": "rom-mine-v3:홍련",
+  "lemma": "홍련",
+  "recId": 3460,
+  "korean": "홍련체육관 관장 강연 특집!",
+  "surface": "홍련",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:가득",
+  "lemma": "가득",
+  "recId": 2166,
+  "korean": "짐이 가득하다",
+  "surface": "가득",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:갈색",
+  "lemma": "갈색",
+  "recId": 1027,
+  "korean": "...갈색경찰서",
+  "surface": "갈색",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:감사",
+  "lemma": "감사",
+  "recId": 2162,
+  "korean": "감사합니다!",
+  "surface": "감사",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:경우",
+  "lemma": "경우",
+  "recId": 6268,
+  "korean": "독 상태가 되는 경우가 있다.",
+  "surface": "경우",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:교체",
+  "lemma": "교체",
+  "recId": 1714,
+  "korean": "혼란에 빠지면 바로 포켓몬을 교체하는 작전도 좋지",
+  "surface": "교체",
+  "area": "route_3"
+ },
+ {
+  "vocabId": "rom-mine-v3:그렇게",
+  "lemma": "그렇게",
+  "recId": 2026,
+  "korean": "꽤 많이 따르는구나 그렇게 계속 귀여워해줘",
+  "surface": "그렇게",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:그렇다",
+  "lemma": "그렇다",
+  "recId": 2067,
+  "korean": "그렇게까지 무리는 못한다!",
+  "surface": "그렇",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:나다",
+  "lemma": "나다",
+  "recId": 3991,
+  "korean": "좋은 냄새가 난다!",
+  "surface": "난다",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:나아가다",
+  "lemma": "나아가다",
+  "recId": 3162,
+  "korean": "이 앞으로 나아가라",
+  "surface": "나아가",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:낚다",
+  "lemma": "낚다",
+  "recId": 338,
+  "korean": "낚지 못했나",
+  "surface": "낚",
+  "area": "mt_moon"
+ },
+ {
+  "vocabId": "rom-mine-v3:날리다",
+  "lemma": "날리다",
+  "recId": 5119,
+  "korean": "어느 아침에 돌연 날려온다.",
+  "surface": "날려",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:남자",
+  "lemma": "남자",
+  "recId": 969,
+  "korean": "회색시티 포켓몬 체육관 관장 웅 강하고 딱딱한 바위의 남자",
+  "surface": "남자",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:내다",
+  "lemma": "내다",
+  "recId": 8427,
+  "korean": "흉내내기...",
+  "surface": "내",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:노랑",
+  "lemma": "노랑",
+  "recId": 3459,
+  "korean": "노랑체육관 관장 초련 특집!",
+  "surface": "노랑",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:노인",
+  "lemma": "노인",
+  "recId": 2654,
+  "korean": "강연과 등나무노인의 사진이 있다!",
+  "surface": "노인",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:능력",
+  "lemma": "능력",
+  "recId": 1564,
+  "korean": "종류와 레벨이 같은 포켓몬이라도 잡을 때마다 능력이 조금씩 다르고...",
+  "surface": "능력",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "rom-mine-v3:도움",
+  "lemma": "도움",
+  "recId": 941,
+  "korean": "조금은 도움이 됐지?",
+  "surface": "도움",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:돕다",
+  "lemma": "돕다",
+  "recId": 8461,
+  "korean": "무엇을 도와 드릴까요?",
+  "surface": "도와",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:동굴",
+  "lemma": "동굴",
+  "recId": 1231,
+  "korean": "여기는 달맞이산 ...동굴 입구",
+  "surface": "동굴",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "rom-mine-v3:만나다",
+  "lemma": "만나다",
+  "recId": 2098,
+  "korean": "다시 만나자!",
+  "surface": "만나",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:말씀",
+  "lemma": "말씀",
+  "recId": 2859,
+  "korean": "포켓몬 도감이 20종류 모인 것 같으면 박사님이 변함없는돌을 주라고 말씀하셨어요!",
+  "surface": "말씀",
+  "area": "route_2"
+ },
+ {
+  "vocabId": "rom-mine-v3:멋있다",
+  "lemma": "멋있다",
+  "recId": 2768,
+  "korean": "있지 앞으로도 여러 트레이너와 배틀해서 멋있는 모습들을 보여줘!",
+  "surface": "멋있",
+  "area": "saffron_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:모습",
+  "lemma": "모습",
+  "recId": 1891,
+  "korean": "지는 모습...",
+  "surface": "모습",
+  "area": "green_path"
+ },
+ {
+  "vocabId": "rom-mine-v3:모양",
+  "lemma": "모양",
+  "recId": 2182,
+  "korean": "너를 얕잡아 봤던 모양이야 나를 이긴 증표로 포켓몬리그 공인 회색배지를 수여할게!",
+  "surface": "모양",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:물건",
+  "lemma": "물건",
+  "recId": 2072,
+  "korean": "도감 같은 물건이 있다!",
+  "surface": "물건",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:발견",
+  "lemma": "발견",
+  "recId": 955,
+  "korean": "달맞이산에서 달의돌이 떨어진 뒤부터 발견되기 시작했대",
+  "surface": "발견",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:부활",
+  "lemma": "부활",
+  "recId": 2096,
+  "korean": "로켓단이 부활할 날까지 이 체육관에서 체제를 정비할 것이다!",
+  "surface": "부활",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:사실",
+  "lemma": "사실",
+  "recId": 3228,
+  "korean": "사실은 이미 알고 있지만 몇 번이고 보고 싶어서 말이지!",
+  "surface": "사실",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:상품",
+  "lemma": "상품",
+  "recId": 3995,
+  "korean": "포켓몬 상품이 가득!",
+  "surface": "상품",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:선장",
+  "lemma": "선장",
+  "recId": 293,
+  "korean": "선장: 후우...",
+  "surface": "선장",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "rom-mine-v3:세계",
+  "lemma": "세계",
+  "recId": 2112,
+  "korean": "세계 최강의 격투기다!",
+  "surface": "세계",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:소문",
+  "lemma": "소문",
+  "recId": 955,
+  "korean": "삐삐가 달에서 왔다는 소문을 알고 있니?",
+  "surface": "소문",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:수재",
+  "lemma": "수재",
+  "recId": 2226,
+  "korean": "너도 이수재에 대한 소문을 들었니?",
+  "surface": "수재",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:아까",
+  "lemma": "아까",
+  "recId": 2697,
+  "korean": "아까는 고마웠어!",
+  "surface": "아까",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:약하다",
+  "lemma": "약하다",
+  "recId": 2133,
+  "korean": "독이나 화상으로 약하게 만들어도 좋다!",
+  "surface": "약하",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:어떻다",
+  "lemma": "어떻다",
+  "recId": 2070,
+  "korean": "도감 상태는 어떠냐?",
+  "surface": "어떠",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:열매",
+  "lemma": "열매",
+  "recId": 3910,
+  "korean": "나무열매크러시를 하겠습니까?",
+  "surface": "열매",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:오늘",
+  "lemma": "오늘",
+  "recId": 2098,
+  "korean": "오늘부로 해산한다!",
+  "surface": "오늘",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:올라가다",
+  "lemma": "올라가다",
+  "recId": 767,
+  "korean": "상냥한 탕구리의 어미로 돌아온 영혼은 무사히 하늘로 올라가...",
+  "surface": "올라가",
+  "area": "pokemon_tower"
+ },
+ {
+  "vocabId": "rom-mine-v3:완성",
+  "lemma": "완성",
+  "recId": 3224,
+  "korean": "전국도감의 완성을 기대하고 있으마-!",
+  "surface": "완성",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:이상",
+  "lemma": "이상",
+  "recId": 2096,
+  "korean": "너한테 들킨 이상 어쩔 수 없군!",
+  "surface": "이상",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:자연",
+  "lemma": "자연",
+  "recId": 1055,
+  "korean": "무지개시티 포켓몬체육관 관장 민화 자연을 사랑하는 아기씨!",
+  "surface": "자연",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:잠깐",
+  "lemma": "잠깐",
+  "recId": 920,
+  "korean": "오박사: 잠깐-!",
+  "surface": "잠깐",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:장소",
+  "lemma": "장소",
+  "recId": 2013,
+  "korean": "자신이 있는 장소나 마을의 이름을 알고 싶을 때 타운맵을 쓰면 좋아",
+  "surface": "장소",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:재빠르다",
+  "lemma": "재빠르다",
+  "recId": 5050,
+  "korean": "닌자처럼 재빠르다.",
+  "surface": "재빠르",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:적다",
+  "lemma": "적다",
+  "recId": 2131,
+  "korean": "칠판에 적은 걸 잘 보렴!",
+  "surface": "적",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:전하다",
+  "lemma": "전하다",
+  "recId": 2055,
+  "korean": "내게 전해줄 물건이 있다고?",
+  "surface": "전해",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:정말",
+  "lemma": "정말",
+  "recId": 2021,
+  "korean": "정말 예쁘게 됐다!",
+  "surface": "정말",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:정말로",
+  "lemma": "정말로",
+  "recId": 664,
+  "korean": "정말로 끝난 거야!?",
+  "surface": "정말로",
+  "area": "cerulean_cave"
+ },
+ {
+  "vocabId": "rom-mine-v3:즐겁다",
+  "lemma": "즐겁다",
+  "recId": 4016,
+  "korean": "왜지 즐거워 보인다!",
+  "surface": "즐거워",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:직접",
+  "lemma": "직접",
+  "recId": 2955,
+  "korean": "직접 찾아보렴",
+  "surface": "직접",
+  "area": "route_18"
+ },
+ {
+  "vocabId": "rom-mine-v3:참가",
+  "lemma": "참가",
+  "recId": 3866,
+  "korean": "참가한 인원수가 맞지 않습니다",
+  "surface": "참가",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:코너",
+  "lemma": "코너",
+  "recId": 3907,
+  "korean": "포켓몬 무선 클럽 다이렉트 코너에 잘 오셨습니다!",
+  "surface": "코너",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:특수",
+  "lemma": "특수",
+  "recId": 6753,
+  "korean": "특수한 금속막.",
+  "surface": "특수",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:펀치",
+  "lemma": "펀치",
+  "recId": 1236,
+  "korean": "이걸로 넌 펀치 일원이다!",
+  "surface": "펀치",
+  "area": "route_4"
+ },
+ {
+  "vocabId": "rom-mine-v3:포켓",
+  "lemma": "포켓",
+  "recId": 3699,
+  "korean": "몬스터볼 포켓",
+  "surface": "포켓",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:피하다",
+  "lemma": "피하다",
+  "recId": 365,
+  "korean": "연하한테 지는 것만큼은 피하고 싶었는데!",
+  "surface": "피하",
+  "area": "route_2"
+ },
+ {
+  "vocabId": "rom-mine-v3:핥다",
+  "lemma": "핥다",
+  "recId": 6351,
+  "korean": "매우 긴 혀로 상대를 핥아서 공격한다.",
+  "surface": "핥",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:항상",
+  "lemma": "항상",
+  "recId": 5164,
+  "korean": "항상 기운이 넘친다.",
+  "surface": "항상",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:화석",
+  "lemma": "화석",
+  "recId": 2169,
+  "korean": "진귀한 고대 포켓몬 프테라의 화석",
+  "surface": "화석",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:확률",
+  "lemma": "확률",
+  "recId": 6230,
+  "korean": "급소에 맞을 확률이 높다.",
+  "surface": "확률",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:가장",
+  "lemma": "가장",
+  "recId": 1122,
+  "korean": "정의감이 강하고 열혈에 멋지고 가장 대단한 사람...!",
+  "surface": "가장",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:걸다",
+  "lemma": "걸다",
+  "recId": 229,
+  "korean": "갑자기 말 걸지 마!",
+  "surface": "걸",
+  "area": "mt_moon"
+ },
+ {
+  "vocabId": "rom-mine-v3:고맙다",
+  "lemma": "고맙다",
+  "recId": 2057,
+  "korean": "이건 내가 특별히 주문한 몬스터볼이구나 정말 고맙다!",
+  "surface": "고맙",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:국화",
+  "lemma": "국화",
+  "recId": 2689,
+  "korean": "국화의 고스트포켓몬은 무서울 정도로 강해...!",
+  "surface": "국화",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:귀엽다",
+  "lemma": "귀엽다",
+  "recId": 2021,
+  "korean": "우후후 귀여운 포켓몬이네!",
+  "surface": "귀여운",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:그냥",
+  "lemma": "그냥",
+  "recId": 2174,
+  "korean": "그냥 돌멩이랑 뭐가 다른 걸까?",
+  "surface": "그냥",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:낚시",
+  "lemma": "낚시",
+  "recId": 1401,
+  "korean": "여기는 낚시의 명소",
+  "surface": "낚시",
+  "area": "five_island"
+ },
+ {
+  "vocabId": "rom-mine-v3:날아가다",
+  "lemma": "날아가다",
+  "recId": 5552,
+  "korean": "알고 있는 마을로 날아간다",
+  "surface": "날아간다",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:내던지다",
+  "lemma": "내던지다",
+  "recId": 2173,
+  "korean": "당신도 승부를 내던지지 말고 잘 해보세요",
+  "surface": "내던지",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:넣다",
+  "lemma": "넣다",
+  "recId": 3139,
+  "korean": "넣을 곳이 없다...",
+  "surface": "넣",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:다르다",
+  "lemma": "다르다",
+  "recId": 1564,
+  "korean": "종류와 레벨이 같은 포켓몬이라도 잡을 때마다 능력이 조금씩 다르고...",
+  "surface": "다르",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "rom-mine-v3:다시",
+  "lemma": "다시",
+  "recId": 2096,
+  "korean": "다시 한번!",
+  "surface": "다시",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:단련",
+  "lemma": "단련",
+  "recId": 1625,
+  "korean": "단련시킨 이 몸을!",
+  "surface": "단련",
+  "area": "route_16"
+ },
+ {
+  "vocabId": "rom-mine-v3:단어",
+  "lemma": "단어",
+  "recId": 3946,
+  "korean": "프로필은 멋진 단어를 4개 조합해서 만들어 조합하는 단어는 많이 있어!",
+  "surface": "단어",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:대신",
+  "lemma": "대신",
+  "recId": 3064,
+  "korean": "대신 네 포켓몬에게 누르기를 알려줄까?",
+  "surface": "대신",
+  "area": "four_island"
+ },
+ {
+  "vocabId": "rom-mine-v3:대전",
+  "lemma": "대전",
+  "recId": 3909,
+  "korean": "어느 대전을 하겠습니까?",
+  "surface": "대전",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:대화",
+  "lemma": "대화",
+  "recId": 6913,
+  "korean": "대화가 끊겼습니다",
+  "surface": "대화",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:도망",
+  "lemma": "도망",
+  "recId": 218,
+  "korean": "포켓몬이 기운 넘치면 도망칠지도 모른다!",
+  "surface": "도망",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "rom-mine-v3:돌아가다",
+  "lemma": "돌아가다",
+  "recId": 803,
+  "korean": "그럼 돌아가자!",
+  "surface": "돌아가",
+  "area": "one_island"
+ },
+ {
+  "vocabId": "rom-mine-v3:동시",
+  "lemma": "동시",
+  "recId": 6397,
+  "korean": "공격과 동시에 도구를 훔친다.",
+  "surface": "동시",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:동전",
+  "lemma": "동전",
+  "recId": 3138,
+  "korean": "동전케이스가 가득찼다...",
+  "surface": "동전",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:들어오다",
+  "lemma": "들어오다",
+  "recId": 404,
+  "korean": "어떻게 여기에 들어왔지?",
+  "surface": "들어왔",
+  "area": "digletts_cave"
+ },
+ {
+  "vocabId": "rom-mine-v3:등나무",
+  "lemma": "등나무",
+  "recId": 2654,
+  "korean": "강연과 등나무노인의 사진이 있다!",
+  "surface": "등나무",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:만드다",
+  "lemma": "만드다",
+  "recId": 2067,
+  "korean": "이 세상의 모든 포켓몬을 기록한 완벽한 도감을 만드는 것!",
+  "surface": "만드",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:만약",
+  "lemma": "만약",
+  "recId": 731,
+  "korean": "만약 특별한 도구가...",
+  "surface": "만약",
+  "area": "kanto_pokemon_league"
+ },
+ {
+  "vocabId": "rom-mine-v3:맡기다",
+  "lemma": "맡기다",
+  "recId": 2042,
+  "korean": "전부 나한테 맡기라고-!",
+  "surface": "맡기",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:멀리",
+  "lemma": "멀리",
+  "recId": 3956,
+  "korean": "멀리 사는 사촌이 언제나 말했던 것 같은데...?",
+  "surface": "멀리",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:모험",
+  "lemma": "모험",
+  "recId": 4307,
+  "korean": "꿈과 모험과!",
+  "surface": "모험",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:몬스터",
+  "lemma": "몬스터",
+  "recId": 2066,
+  "korean": "몬스터볼을 픽!",
+  "surface": "몬스터",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:몰다",
+  "lemma": "몰다",
+  "recId": 352,
+  "korean": "내 파트너 근육몬은 굉장한 장사야!",
+  "surface": "몬",
+  "area": "mt_moon"
+ },
+ {
+  "vocabId": "rom-mine-v3:무선",
+  "lemma": "무선",
+  "recId": 3919,
+  "korean": "무선 통신이 처음이신 분이군요?",
+  "surface": "무선",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:무섭다",
+  "lemma": "무섭다",
+  "recId": 1198,
+  "korean": "뛰어 내리는 건 조금 무섭지만...",
+  "surface": "무섭",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "rom-mine-v3:반응",
+  "lemma": "반응",
+  "recId": 5432,
+  "korean": "다우징머신이 반응하고 있다!",
+  "surface": "반응",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:발톱",
+  "lemma": "발톱",
+  "recId": 6812,
+  "korean": "발톱의 일부인 듯하다.",
+  "surface": "발톱",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:발휘",
+  "lemma": "발휘",
+  "recId": 3461,
+  "korean": "칸나는 지혜를 발휘해서 쿨하게 싸우지만 의외의 일면도 있다는 듯하다?",
+  "surface": "발휘",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:방심",
+  "lemma": "방심",
+  "recId": 2123,
+  "korean": "방심한 것뿐이야!",
+  "surface": "방심",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:방어",
+  "lemma": "방어",
+  "recId": 6510,
+  "korean": "신의 공격과 방어가 떨어진다.",
+  "surface": "방어",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:배우다",
+  "lemma": "배우다",
+  "recId": 1185,
+  "korean": "배워 볼래?",
+  "surface": "배워",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:버리다",
+  "lemma": "버리다",
+  "recId": 282,
+  "korean": "쓰레기통에 이상한 나무열매가 버려져 있었는데 뭐지?",
+  "surface": "버려져",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "rom-mine-v3:변하다",
+  "lemma": "변하다",
+  "recId": 2394,
+  "korean": "그럼 마음이 변하면 오렴",
+  "surface": "변하",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:비전",
+  "lemma": "비전",
+  "recId": 2813,
+  "korean": "비전기술 플래시로 아무리 어두운 장소라도 제대로 밝아집니다",
+  "surface": "비전",
+  "area": "route_2"
+ },
+ {
+  "vocabId": "rom-mine-v3:뿌리",
+  "lemma": "뿌리",
+  "recId": 5673,
+  "korean": "힘의뿌리80",
+  "surface": "뿌리",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:서다",
+  "lemma": "서다",
+  "recId": 2175,
+  "korean": "인류 사상 처음으로 달 위에 서다!",
+  "surface": "서",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:서로",
+  "lemma": "서로",
+  "recId": 3864,
+  "korean": "서로 선택한 것이 다른 것 같습니다",
+  "surface": "서로",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:세차다",
+  "lemma": "세차다",
+  "recId": 4768,
+  "korean": "모래바람이 세차게 분다",
+  "surface": "세차",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:손자",
+  "lemma": "손자",
+  "recId": 945,
+  "korean": "내 손자가 나와서 가르쳐 주니까 당연하겠지!",
+  "surface": "손자",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:순서",
+  "lemma": "순서",
+  "recId": 2193,
+  "korean": "리스트의 순서를 바꾸면 유리해지는 일도 있어!",
+  "surface": "순서",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:쉽다",
+  "lemma": "쉽다",
+  "recId": 2050,
+  "korean": "이 애는 엄청 키우기 쉽단다!",
+  "surface": "쉽",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:시험",
+  "lemma": "시험",
+  "recId": 2186,
+  "korean": "블루시티 체육관에도 가서 네 힘을 시험해보면 좋을 거야",
+  "surface": "시험",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:신비",
+  "lemma": "신비",
+  "recId": 1039,
+  "korean": "그것은 신비의티켓...!",
+  "surface": "신비",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:아빠",
+  "lemma": "아빠",
+  "recId": 2094,
+  "korean": "우리 아빠도 포켓몬 엄청 좋아해!",
+  "surface": "아빠",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:아쉽다",
+  "lemma": "아쉽다",
+  "recId": 669,
+  "korean": "...아쉽구나!",
+  "surface": "아쉽",
+  "area": "cerulean_cave"
+ },
+ {
+  "vocabId": "rom-mine-v3:아직",
+  "lemma": "아직",
+  "recId": 2108,
+  "korean": "아직도 연습이 부족해",
+  "surface": "아직",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:어렵다",
+  "lemma": "어렵다",
+  "recId": 2093,
+  "korean": "별명을 생각하는 건 재미있지...만 어려워!",
+  "surface": "어려워",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:언제나",
+  "lemma": "언제나",
+  "recId": 2134,
+  "korean": "각지의 포켓몬체육관에서는 언제나 격렬한 배틀이 펼쳐지고 있다!",
+  "surface": "언제나",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:엄청나다",
+  "lemma": "엄청나다",
+  "recId": 3225,
+  "korean": "진짜로 진정한 엄청나게 멋지고 완벽한 포켓몬 도감을 완성시켰구나...!",
+  "surface": "엄청나",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:여행",
+  "lemma": "여행",
+  "recId": 2000,
+  "korean": "엄마: ...맞아 사내아이는 언젠가 여행을 떠나지 응...",
+  "surface": "여행",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:연분홍",
+  "lemma": "연분홍",
+  "recId": 1606,
+  "korean": "여기는 19번 수로 연분홍시티 ...",
+  "surface": "연분홍",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "rom-mine-v3:영감",
+  "lemma": "영감",
+  "recId": 657,
+  "korean": "영감의 눈에 들 만하구나!",
+  "surface": "영감",
+  "area": "safari_zone"
+ },
+ {
+  "vocabId": "rom-mine-v3:완벽",
+  "lemma": "완벽",
+  "recId": 2067,
+  "korean": "이 세상의 모든 포켓몬을 기록한 완벽한 도감을 만드는 것!",
+  "surface": "완벽",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:왜지",
+  "lemma": "왜지",
+  "recId": 4014,
+  "korean": "왜지 재밌어 보인다!",
+  "surface": "왜지",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:웃다",
+  "lemma": "웃다",
+  "recId": 2654,
+  "korean": "어깨동무를 하고 즐거운 듯이 웃고 있다!",
+  "surface": "웃",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:원래",
+  "lemma": "원래",
+  "recId": 6653,
+  "korean": "불러들이면 원래대로 돌아간다",
+  "surface": "원래",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:유니언",
+  "lemma": "유니언",
+  "recId": 3918,
+  "korean": "그럼 유니언 룸에서 즐거운 시간을 보내십시오",
+  "surface": "유니언",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:이미",
+  "lemma": "이미",
+  "recId": 3228,
+  "korean": "사실은 이미 알고 있지만 몇 번이고 보고 싶어서 말이지!",
+  "surface": "이미",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:자다",
+  "lemma": "자다",
+  "recId": 1374,
+  "korean": "포켓몬이 매우 기분 좋게 자고 있다",
+  "surface": "자",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "rom-mine-v3:자주",
+  "lemma": "자주",
+  "recId": 2152,
+  "korean": "몇 마리를 맡겨도 공짜니까 자주 이용해봐!",
+  "surface": "자주",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:작다",
+  "lemma": "작다",
+  "recId": 5374,
+  "korean": "키가 작은 순",
+  "surface": "작",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:장막",
+  "lemma": "장막",
+  "recId": 2406,
+  "korean": "기술머신16의 내용은 빛의장막이야!",
+  "surface": "장막",
+  "area": "vermilion_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:재밌다",
+  "lemma": "재밌다",
+  "recId": 4014,
+  "korean": "왜지 재밌어 보인다!",
+  "surface": "재밌",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:저택",
+  "lemma": "저택",
+  "recId": 1090,
+  "korean": "포켓몬저택은 연구를 위해 과학자가 가끔 출입하는 것 같더군",
+  "surface": "저택",
+  "area": "vermilion_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:전부",
+  "lemma": "전부",
+  "recId": 2042,
+  "korean": "전부 나한테 맡기라고-!",
+  "surface": "전부",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:전설",
+  "lemma": "전설",
+  "recId": 1451,
+  "korean": "전설에 나오는 새포켓몬의 이야기야 프리져 썬더 파이어 3마리가 있어!",
+  "surface": "전설",
+  "area": "route_8"
+ },
+ {
+  "vocabId": "rom-mine-v3:전원",
+  "lemma": "전원",
+  "recId": 3675,
+  "korean": "그러면 전원이 켜집니다.",
+  "surface": "전원",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:젊다",
+  "lemma": "젊다",
+  "recId": 3018,
+  "korean": "젊은 사람들은 다들 도시로 가고 싶어하지만 난 계속 여기 있고 싶어!",
+  "surface": "젊",
+  "area": "seven_island"
+ },
+ {
+  "vocabId": "rom-mine-v3:정보",
+  "lemma": "정보",
+  "recId": 948,
+  "korean": "...정보 나눔 게시판!",
+  "surface": "정보",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:정하다",
+  "lemma": "정하다",
+  "recId": 6277,
+  "korean": "20의 정해진 데미지를 준다.",
+  "surface": "정해진",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:제일",
+  "lemma": "제일",
+  "recId": 2093,
+  "korean": "공들여서 짓는 것도 좋지만 기억하기 쉬운 게 제일이지!",
+  "surface": "제일",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:줍다",
+  "lemma": "줍다",
+  "recId": 1771,
+  "korean": "이 해변에는 좋은 물건이 흘러오곤 하지 난 자주 주우러 와",
+  "surface": "주우러",
+  "area": "route_3"
+ },
+ {
+  "vocabId": "rom-mine-v3:중요",
+  "lemma": "중요",
+  "recId": 252,
+  "korean": "우리는 중요한 일을 하고 있어!",
+  "surface": "중요",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "rom-mine-v3:지방",
+  "lemma": "지방",
+  "recId": 2015,
+  "korean": "관동지방 지도다!",
+  "surface": "지방",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:쪼다",
+  "lemma": "쪼다",
+  "recId": 6292,
+  "korean": "날카롭고 뾰족한 부리나 뿔로 상대를 쪼아서 공격한다.",
+  "surface": "쪼",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:차갑다",
+  "lemma": "차갑다",
+  "recId": 2928,
+  "korean": "차갑게 굴지 말고 도와주라- 아이고...",
+  "surface": "차갑",
+  "area": "route_25"
+ },
+ {
+  "vocabId": "rom-mine-v3:처음",
+  "lemma": "처음",
+  "recId": 2175,
+  "korean": "인류 사상 처음으로 달 위에 서다!",
+  "surface": "처음",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:최근",
+  "lemma": "최근",
+  "recId": 2283,
+  "korean": "최근에 이 마을로 이사 왔어!",
+  "surface": "최근",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:충격",
+  "lemma": "충격",
+  "recId": 2722,
+  "korean": "정말 충격이야!",
+  "surface": "충격",
+  "area": "cinnabar_island"
+ },
+ {
+  "vocabId": "rom-mine-v3:치료",
+  "lemma": "치료",
+  "recId": 2144,
+  "korean": "배틀이 끝나도 마비는 치료되지 않습니다 마비치료제로 치료합시다",
+  "surface": "치료",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:카드",
+  "lemma": "카드",
+  "recId": 3177,
+  "korean": "카드키가 없으면 열 수 없다!",
+  "surface": "카드",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:칸나",
+  "lemma": "칸나",
+  "recId": 1181,
+  "korean": "여기는 칸나의 집",
+  "surface": "칸나",
+  "area": "four_island"
+ },
+ {
+  "vocabId": "rom-mine-v3:타워",
+  "lemma": "타워",
+  "recId": 2879,
+  "korean": "포켓몬타워가 보인다!",
+  "surface": "타워",
+  "area": "route_2"
+ },
+ {
+  "vocabId": "rom-mine-v3:털다",
+  "lemma": "털다",
+  "recId": 4087,
+  "korean": "용돈을 털어서 또 알칼로이드를 샀어",
+  "surface": "털",
+  "area": "route_10"
+ },
+ {
+  "vocabId": "rom-mine-v3:통신",
+  "lemma": "통신",
+  "recId": 923,
+  "korean": "요즘은 컴퓨터 통신으로 도구나 포켓몬을 데이터로 만들어 보낼 수 있대",
+  "surface": "통신",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:통하다",
+  "lemma": "통하다",
+  "recId": 4419,
+  "korean": "통하지 않는다",
+  "surface": "통하",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:티켓",
+  "lemma": "티켓",
+  "recId": 1032,
+  "korean": "티켓은 있으신가요 손님?",
+  "surface": "티켓",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "rom-mine-v3:하늘",
+  "lemma": "하늘",
+  "recId": 4010,
+  "korean": "굉장히 아름다운 하늘이 보인다!",
+  "surface": "하늘",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:할아버지",
+  "lemma": "할아버지",
+  "recId": 2032,
+  "korean": "할아버지라면 안 계셔",
+  "surface": "할아버지",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "rom-mine-v3:헤엄치다",
+  "lemma": "헤엄치다",
+  "recId": 5154,
+  "korean": "유연하게 바다를 헤엄친다.",
+  "surface": "헤엄친다",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:혼신",
+  "lemma": "혼신",
+  "recId": 6821,
+  "korean": "혼신의 힘으로 상대를 공격한다.",
+  "surface": "혼신",
+  "area": null
+ },
+ {
+  "vocabId": "rom-mine-v3:혼자",
+  "lemma": "혼자",
+  "recId": 1730,
+  "korean": "안녕 너는 혼자 왔니?",
+  "surface": "혼자",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "rom-mine-v3:화나다",
+  "lemma": "화나다",
+  "recId": 1045,
+  "korean": "화나면 독가스를 내뿜지만...",
+  "surface": "화나",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:키",
+  "lemma": "키",
+  "recId": 5374,
+  "korean": "키가 작은 순",
+  "surface": "키",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:몰다",
+  "lemma": "몰다",
+  "recId": 352,
+  "korean": "내 파트너 근육몬은 굉장한 장사야!",
+  "surface": "몬",
+  "area": "mt_moon"
+ },
+ {
+  "vocabId": "topik-v2:끄다",
+  "lemma": "끄다",
+  "recId": 1367,
+  "korean": "전기 끄는 걸 잊진 않았지?",
+  "surface": "끄",
+  "area": "route_3"
+ },
+ {
+  "vocabId": "topik-v2:깊다",
+  "lemma": "깊다",
+  "recId": 3151,
+  "korean": "물은 깊고 푸른 색이다...",
+  "surface": "깊",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:술",
+  "lemma": "술",
+  "recId": 940,
+  "korean": "술에 취했었나 보구먼!",
+  "surface": "술",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:후",
+  "lemma": "후",
+  "recId": 1334,
+  "korean": "후-하- 후-하!",
+  "surface": "후",
+  "area": "route_10"
+ },
+ {
+  "vocabId": "topik-v2:오다",
+  "lemma": "오다",
+  "recId": 8461,
+  "korean": "어서 오세요!",
+  "surface": "오",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:달",
+  "lemma": "달",
+  "recId": 2174,
+  "korean": "달의돌이라...",
+  "surface": "달",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:주",
+  "lemma": "주",
+  "recId": 8267,
+  "korean": "나오는 포켓몬은 주뱃",
+  "surface": "주",
+  "area": "six_island"
+ },
+ {
+  "vocabId": "topik-v2:꿈",
+  "lemma": "꿈",
+  "recId": 2067,
+  "korean": "그게 내 꿈이었다!",
+  "surface": "꿈",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:코",
+  "lemma": "코",
+  "recId": 6813,
+  "korean": "데봉 코포레이션 제품.",
+  "surface": "코",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:내다",
+  "lemma": "내다",
+  "recId": 8427,
+  "korean": "흉내내기...",
+  "surface": "내",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:하다",
+  "lemma": "하다",
+  "recId": 2166,
+  "korean": "짐이 가득하다",
+  "surface": "하",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:같다",
+  "lemma": "같다",
+  "recId": 2072,
+  "korean": "도감 같은 물건이 있다!",
+  "surface": "같",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:있다",
+  "lemma": "있다",
+  "recId": 2040,
+  "korean": "그럼 잘 있어!",
+  "surface": "있",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:타다",
+  "lemma": "타다",
+  "recId": 1037,
+  "korean": "그럼 타세요!",
+  "surface": "타",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:통",
+  "lemma": "통",
+  "recId": 575,
+  "korean": "나는 통이 크니까 말이야 자 이런 건 어떠니?",
+  "surface": "통",
+  "area": "silph_co"
+ },
+ {
+  "vocabId": "topik-v2:메다",
+  "lemma": "메다",
+  "recId": 191,
+  "korean": "나오는 포켓몬은 메리프",
+  "surface": "메",
+  "area": "six_island"
+ },
+ {
+  "vocabId": "topik-v2:검다",
+  "lemma": "검다",
+  "recId": 3460,
+  "korean": "강연은 퀴즈를 생각할 때만 검은안경을 벗는 듯하다!",
+  "surface": "검",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:가다",
+  "lemma": "가다",
+  "recId": 2005,
+  "korean": "...이제 가야겠다!",
+  "surface": "가",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:놓다",
+  "lemma": "놓다",
+  "recId": 3110,
+  "korean": "모든 기술을 맡기고 마음을 놓았더니 왜지 조금 젊어져버린 것 같구먼...",
+  "surface": "놓",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:걷다",
+  "lemma": "걷다",
+  "recId": 2005,
+  "korean": "머리를 땋은 여자아이가 벽돌길을 걷고 있다...",
+  "surface": "걷",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:시",
+  "lemma": "시",
+  "recId": 2716,
+  "korean": "시라소몬을 데려가겠나?",
+  "surface": "시",
+  "area": "cinnabar_island"
+ },
+ {
+  "vocabId": "topik-v2:간",
+  "lemma": "간",
+  "recId": 5263,
+  "korean": "몸 안에 모아둔 물로 30일간 살 수 있다.",
+  "surface": "간",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:보다",
+  "lemma": "보다",
+  "recId": 3469,
+  "korean": "여기 봐봐!",
+  "surface": "봐",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:늘",
+  "lemma": "늘",
+  "recId": 2692,
+  "korean": "늘 남을 따라 하며 놀리니까 근처에서는 흉내내기 아가씨라고 불린단다!",
+  "surface": "늘",
+  "area": "cinnabar_island"
+ },
+ {
+  "vocabId": "topik-v2:치다",
+  "lemma": "치다",
+  "recId": 3064,
+  "korean": "누가 먼저 지칠까?",
+  "surface": "칠까",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:공",
+  "lemma": "공",
+  "recId": 9016,
+  "korean": "공했습니다!",
+  "surface": "공",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:피",
+  "lemma": "피",
+  "recId": 6370,
+  "korean": "피를 빨아서 공격한다.",
+  "surface": "피",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:양",
+  "lemma": "양",
+  "recId": 2031,
+  "korean": "“러블리 스위트 삐삐 양”",
+  "surface": "양",
+  "area": "canyon_entrance"
+ },
+ {
+  "vocabId": "topik-v2:되다",
+  "lemma": "되다",
+  "recId": 935,
+  "korean": "그럼 됐어!",
+  "surface": "됐",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:돈",
+  "lemma": "돈",
+  "recId": 946,
+  "korean": "...시간은 돈이라네",
+  "surface": "돈",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:안",
+  "lemma": "안",
+  "recId": 985,
+  "korean": "이제 안 할게!",
+  "surface": "안",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:주다",
+  "lemma": "주다",
+  "recId": 8399,
+  "korean": "나한테도 줘!",
+  "surface": "줘",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:사다",
+  "lemma": "사다",
+  "recId": 2150,
+  "korean": "상처약을 사둬야지!",
+  "surface": "사",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:넣다",
+  "lemma": "넣다",
+  "recId": 3139,
+  "korean": "넣을 곳이 없다...",
+  "surface": "넣",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:눈",
+  "lemma": "눈",
+  "recId": 1375,
+  "korean": "잠만보가 눈을 떴다!",
+  "surface": "눈",
+  "area": "fuchsia_city"
+ },
+ {
+  "vocabId": "topik-v2:다",
+  "lemma": "다",
+  "recId": 2105,
+  "korean": "...힘을 다 썼어",
+  "surface": "다",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:벌다",
+  "lemma": "벌다",
+  "recId": 2484,
+  "korean": "돈 벌었다 돈 벌었어...!",
+  "surface": "벌",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:넓다",
+  "lemma": "넓다",
+  "recId": 2186,
+  "korean": "이 넓은 세계에선 여러 사람들이 포켓몬으로 배틀을 펼치고 있지!",
+  "surface": "넓",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:떨다",
+  "lemma": "떨다",
+  "recId": 2858,
+  "korean": "보라타운에서 유령포켓몬이 나온다고 다들 소란을 떨고 있어",
+  "surface": "떨",
+  "area": "route_2"
+ },
+ {
+  "vocabId": "topik-v2:멀다",
+  "lemma": "멀다",
+  "recId": 2161,
+  "korean": "먼 옛날 나무에서 나온 액체가 화석처럼 굳은 것을 호박이라고 한단다",
+  "surface": "먼",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:문",
+  "lemma": "문",
+  "recId": 3200,
+  "korean": "문은 열려 있다...",
+  "surface": "문",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:아이",
+  "lemma": "아이",
+  "recId": 2120,
+  "korean": "어른스러운 아이로군!",
+  "surface": "아이",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:때",
+  "lemma": "때",
+  "recId": 2104,
+  "korean": "지칠 때가 됐는데",
+  "surface": "때",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:사이",
+  "lemma": "사이",
+  "recId": 1078,
+  "korean": "이름 캥카 사이좋은 가족포켓몬!",
+  "surface": "사이",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:맛",
+  "lemma": "맛",
+  "recId": 337,
+  "korean": "내가 데리고 있는 바다 출신 맛 좀 보라고!",
+  "surface": "맛",
+  "area": "mt_moon"
+ },
+ {
+  "vocabId": "topik-v2:몸",
+  "lemma": "몸",
+  "recId": 2208,
+  "korean": "포켓몬 몸 상태가 나쁘면 잡기 쉬워 하지만...",
+  "surface": "몸",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:크다",
+  "lemma": "크다",
+  "recId": 2102,
+  "korean": "땅을 강하게 흔들어서 상대에게 큰 데미지를 주는!",
+  "surface": "큰",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:톤",
+  "lemma": "톤",
+  "recId": 674,
+  "korean": "가끔 나오는 롱스톤은 레벨이 높으면 조이기를 써 조심해라",
+  "surface": "톤",
+  "area": "kanto_pokemon_league"
+ },
+ {
+  "vocabId": "topik-v2:달다",
+  "lemma": "달다",
+  "recId": 2182,
+  "korean": "회색배지를 달면 그것만으로도 네 포켓몬은 강해져!",
+  "surface": "달",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:자다",
+  "lemma": "자다",
+  "recId": 1374,
+  "korean": "포켓몬이 매우 기분 좋게 자고 있다",
+  "surface": "자",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:군",
+  "lemma": "군",
+  "recId": 912,
+  "korean": "좋은 온천이군 몸이 되살아나...",
+  "surface": "군",
+  "area": "five_island"
+ },
+ {
+  "vocabId": "topik-v2:만들다",
+  "lemma": "만들다",
+  "recId": 3991,
+  "korean": "뭔가 요리를 만들었던 것 같다!",
+  "surface": "만들",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:세",
+  "lemma": "세",
+  "recId": 8974,
+  "korean": "착한 트레이너 친구 여러분 안-녕-하-세-요-!",
+  "surface": "세",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:세다",
+  "lemma": "세다",
+  "recId": 6295,
+  "korean": "다리를 세게 차 상대를 넘어뜨려서 공격한다.",
+  "surface": "세",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:차",
+  "lemma": "차",
+  "recId": 2018,
+  "korean": "그럼 차나 마시자",
+  "surface": "차",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:짐",
+  "lemma": "짐",
+  "recId": 2563,
+  "korean": "짐이 가득이군",
+  "surface": "짐",
+  "area": "fuchsia_city"
+ },
+ {
+  "vocabId": "topik-v2:파",
+  "lemma": "파",
+  "recId": 8407,
+  "korean": "고라파덕: 파덕파덕!",
+  "surface": "파",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:날",
+  "lemma": "날",
+  "recId": 2067,
+  "korean": "그래서 너희가 날 대신해서 꿈을 이루어 주었으면 한단다!",
+  "surface": "날",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:피다",
+  "lemma": "피다",
+  "recId": 5116,
+  "korean": "머리 위에 핀 꽃은 기온에 의해 피거나 지거나 하는 성질을 가지고 있다.",
+  "surface": "피",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:나다",
+  "lemma": "나다",
+  "recId": 3991,
+  "korean": "좋은 냄새가 난다!",
+  "surface": "난다",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:나이",
+  "lemma": "나이",
+  "recId": 2585,
+  "korean": "사파리존 원장님 나이가 많으신데 엄청 건강하셔 하지만...",
+  "surface": "나이",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:더",
+  "lemma": "더",
+  "recId": 3186,
+  "korean": "포켓몬을 더 가질 수 없습니다!",
+  "surface": "더",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:부",
+  "lemma": "부",
+  "recId": 2098,
+  "korean": "오늘부로 해산한다!",
+  "surface": "부",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:먹다",
+  "lemma": "먹다",
+  "recId": 953,
+  "korean": "어느 포켓몬에게 꿈먹기를 가르칠까...?",
+  "surface": "먹",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:곧",
+  "lemma": "곧",
+  "recId": 1037,
+  "korean": "씨갤럽 하이스피드7은 곧 출항합니다!",
+  "surface": "곧",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:꾸다",
+  "lemma": "꾸다",
+  "recId": 2752,
+  "korean": "구구: 꾸룩꾸-",
+  "surface": "꾸",
+  "area": "saffron_city"
+ },
+ {
+  "vocabId": "topik-v2:반",
+  "lemma": "반",
+  "recId": 1364,
+  "korean": "나는 반에서 제일 강해!",
+  "surface": "반",
+  "area": "route_11"
+ },
+ {
+  "vocabId": "topik-v2:사",
+  "lemma": "사",
+  "recId": 1137,
+  "korean": "희귀한 상품이 있으니 사가 주세요!",
+  "surface": "사",
+  "area": "cinnabar_island"
+ },
+ {
+  "vocabId": "topik-v2:산",
+  "lemma": "산",
+  "recId": 2203,
+  "korean": "로켓단이 달맞이산에서...",
+  "surface": "산",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:쓰다",
+  "lemma": "쓰다",
+  "recId": 2105,
+  "korean": "...힘을 다 썼어",
+  "surface": "썼",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:울다",
+  "lemma": "울다",
+  "recId": 2329,
+  "korean": "하고 울어!",
+  "surface": "울",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:호",
+  "lemma": "호",
+  "recId": 1031,
+  "korean": "상트앙느호에 오신 것을 환영합니다!",
+  "surface": "호",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:가루",
+  "lemma": "가루",
+  "recId": 2270,
+  "korean": "코너에서 가루라네!",
+  "surface": "가루",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:땀",
+  "lemma": "땀",
+  "recId": 1774,
+  "korean": "포켓몬이 땀을 흘렸나?",
+  "surface": "땀",
+  "area": "kindle_road"
+ },
+ {
+  "vocabId": "topik-v2:등",
+  "lemma": "등",
+  "recId": 5084,
+  "korean": "전투중에 등을 보이면 요주의.",
+  "surface": "등",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:매다",
+  "lemma": "매다",
+  "recId": 6489,
+  "korean": "5턴 동안 싸라기눈을 내리게 해 얼음타입이 아닌 포켓몬에게 매 턴 데미지를 준다.",
+  "surface": "매",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:꼭",
+  "lemma": "꼭",
+  "recId": 1195,
+  "korean": "저는 프렌들리숍의 점원입니다 편리한 도구 상점이니 상록시티에서 꼭 좀 들러주세요!",
+  "surface": "꼭",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:들다",
+  "lemma": "들다",
+  "recId": 4007,
+  "korean": "아무것도 안 들어 있다!",
+  "surface": "들",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:좋다",
+  "lemma": "좋다",
+  "recId": 4006,
+  "korean": "좋은 냄새다!",
+  "surface": "좋",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:갈다",
+  "lemma": "갈다",
+  "recId": 6704,
+  "korean": "갈아 으깨서 가루로 만들면 약의 재료가 된다.",
+  "surface": "갈",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:낳다",
+  "lemma": "낳다",
+  "recId": 1063,
+  "korean": "알낳기를 배우게 될 럭키 포켓몬은?",
+  "surface": "낳",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:도구",
+  "lemma": "도구",
+  "recId": 1057,
+  "korean": "도구 구매는 무지개백화점에서!",
+  "surface": "도구",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:밀다",
+  "lemma": "밀다",
+  "recId": 372,
+  "korean": "곤란할 때는 바위를 밀어 봐라!",
+  "surface": "밀",
+  "area": "route_2"
+ },
+ {
+  "vocabId": "topik-v2:길다",
+  "lemma": "길다",
+  "recId": 263,
+  "korean": "이 배의 손님들은 긴 여행에 지루해하고 있어!",
+  "surface": "긴",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "topik-v2:비",
+  "lemma": "비",
+  "recId": 4766,
+  "korean": "비가 그쳤다!",
+  "surface": "비",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:애",
+  "lemma": "애",
+  "recId": 4204,
+  "korean": "엔 지지 않아!",
+  "surface": "엔",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:이사",
+  "lemma": "이사",
+  "recId": 2283,
+  "korean": "최근에 이 마을로 이사 왔어!",
+  "surface": "이사",
+  "area": "canyon_entrance"
+ },
+ {
+  "vocabId": "topik-v2:잡다",
+  "lemma": "잡다",
+  "recId": 2178,
+  "korean": "다음에 잡아줄게!",
+  "surface": "잡",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:낡다",
+  "lemma": "낡다",
+  "recId": 6788,
+  "korean": "낡고 허름한 낚싯대.",
+  "surface": "낡",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:메모",
+  "lemma": "메모",
+  "recId": 3195,
+  "korean": "설문용 메모 용지가 있다 설문 용지에 뭔가를 적겠습니까?",
+  "surface": "메모",
+  "area": "kanto_pokemon_league"
+ },
+ {
+  "vocabId": "topik-v2:쉬다",
+  "lemma": "쉬다",
+  "recId": 2014,
+  "korean": "체력이 없을 때는 쉬게 해줘!",
+  "surface": "쉬",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:짜다",
+  "lemma": "짜다",
+  "recId": 6635,
+  "korean": "굉장히 짜다.",
+  "surface": "짜",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:뜨다",
+  "lemma": "뜨다",
+  "recId": 1375,
+  "korean": "잠만보가 눈을 떴다!",
+  "surface": "떴",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:곳",
+  "lemma": "곳",
+  "recId": 3139,
+  "korean": "넣을 곳이 없다...",
+  "surface": "곳",
+  "area": "saffron_city"
+ },
+ {
+  "vocabId": "topik-v2:나오다",
+  "lemma": "나오다",
+  "recId": 921,
+  "korean": "풀숲에서는 야생 포켓몬이 튀어나온단다!",
+  "surface": "나온단다",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:뜻",
+  "lemma": "뜻",
+  "recId": 6950,
+  "korean": "그건 이렇다는 뜻이야?",
+  "surface": "뜻",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:많다",
+  "lemma": "많다",
+  "recId": 2087,
+  "korean": "내가 더 빨리 많은 포켓몬을 모았는데!",
+  "surface": "많",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:숲",
+  "lemma": "숲",
+  "recId": 938,
+  "korean": "가끔씩 회색시티까지 쇼핑하러 가는데 상록숲은 길이 많이 구부러져 있어",
+  "surface": "숲",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:가지다",
+  "lemma": "가지다",
+  "recId": 941,
+  "korean": "이제 이걸 가지고 가거라",
+  "surface": "가지",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:낮",
+  "lemma": "낮",
+  "recId": 5270,
+  "korean": "낮 동안 태양에너지를 비축한다.",
+  "surface": "낮",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:물",
+  "lemma": "물",
+  "recId": 3151,
+  "korean": "물은 깊고 푸른 색이다...",
+  "surface": "물",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:싸다",
+  "lemma": "싸다",
+  "recId": 6671,
+  "korean": "숍에서 싸게 팔린다.",
+  "surface": "싸",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:아마",
+  "lemma": "아마",
+  "recId": 3062,
+  "korean": "나는 미호가 아닌데 미호라면 아마 도시락에 쓸 나무열매를 숲에서 줍고 있을걸",
+  "surface": "아마",
+  "area": "one_island"
+ },
+ {
+  "vocabId": "topik-v2:오",
+  "lemma": "오",
+  "recId": 5296,
+  "korean": "대굴레오를 코로 데굴데굴 돌리며 논다.",
+  "surface": "오",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:참",
+  "lemma": "참",
+  "recId": 931,
+  "korean": "언제나 포켓몬을 자유롭게 꺼내고 넣을 수 있다니 세상 참 편리하지",
+  "surface": "참",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:깨다",
+  "lemma": "깨다",
+  "recId": 2140,
+  "korean": "배틀이 끝나도 계속 잠든 상태입니다 잠깨는약을 쓰면 일어납니다",
+  "surface": "깨",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:높다",
+  "lemma": "높다",
+  "recId": 2099,
+  "korean": "그린배지만 있다면 아무리 레벨이 높은 포켓몬이라도 말을 듣는다!",
+  "surface": "높",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:돌",
+  "lemma": "돌",
+  "recId": 2174,
+  "korean": "달의돌이라...",
+  "surface": "돌",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:말",
+  "lemma": "말",
+  "recId": 2178,
+  "korean": "피카츄 말이지!",
+  "surface": "말",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:발",
+  "lemma": "발",
+  "recId": 1120,
+  "korean": "...발매일 미정",
+  "surface": "발",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:위",
+  "lemma": "위",
+  "recId": 3942,
+  "korean": "위에 뭔가 있습니다!",
+  "surface": "위",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:전부",
+  "lemma": "전부",
+  "recId": 2042,
+  "korean": "전부 나한테 맡기라고-!",
+  "surface": "전부",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:지",
+  "lemma": "지",
+  "recId": 3019,
+  "korean": "뭐지 미호 녀석 오늘은 왜 안 오는 거야?",
+  "surface": "지",
+  "area": "one_island"
+ },
+ {
+  "vocabId": "topik-v2:강",
+  "lemma": "강",
+  "recId": 1050,
+  "korean": "강챙이: 강챙 강챙!",
+  "surface": "강",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:기술",
+  "lemma": "기술",
+  "recId": 2102,
+  "korean": "강력한 기술이지!",
+  "surface": "기술",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:낮다",
+  "lemma": "낮다",
+  "recId": 6631,
+  "korean": "불면 야생 포켓몬이 나타날 확률이 낮아진다.",
+  "surface": "낮",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:닿다",
+  "lemma": "닿다",
+  "recId": 1881,
+  "korean": "마사: 다리가 안 닿아서 누나를 잡고 있어",
+  "surface": "닿",
+  "area": "water_labyrinth"
+ },
+ {
+  "vocabId": "topik-v2:말다",
+  "lemma": "말다",
+  "recId": 3903,
+  "korean": "다른 녀석에게 지지 마라!",
+  "surface": "마라",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:멋",
+  "lemma": "멋",
+  "recId": 1753,
+  "korean": "격투가도 요즘은 멋을 부리게 되었구나...",
+  "surface": "멋",
+  "area": "kindle_road"
+ },
+ {
+  "vocabId": "topik-v2:아래",
+  "lemma": "아래",
+  "recId": 1725,
+  "korean": "블루시티로 돌아갈 때는 아래곳 보도로 가는 게 빨라",
+  "surface": "아래",
+  "area": "route_3"
+ },
+ {
+  "vocabId": "topik-v2:꿈꾸다",
+  "lemma": "꿈꾸다",
+  "recId": 2001,
+  "korean": "엄마: ...맞아 여자아이는 언제나 여행하는 걸 꿈꾸지 응...",
+  "surface": "꿈꾸",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:노트",
+  "lemma": "노트",
+  "recId": 2132,
+  "korean": "노트를 들여다 보았다!",
+  "surface": "노트",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:덜",
+  "lemma": "덜",
+  "recId": 1375,
+  "korean": "잠만보는 잠이 덜 깨서 공격해왔다!",
+  "surface": "덜",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:두다",
+  "lemma": "두다",
+  "recId": 1436,
+  "korean": "말똑을 사이에 두고 왼곳",
+  "surface": "두",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:받다",
+  "lemma": "받다",
+  "recId": 2015,
+  "korean": "...받으면 기쁘려나?",
+  "surface": "받",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:빨다",
+  "lemma": "빨다",
+  "recId": 1800,
+  "korean": "분해서 얼굴이 새빨게!",
+  "surface": "빨",
+  "area": "kindle_road"
+ },
+ {
+  "vocabId": "topik-v2:상대",
+  "lemma": "상대",
+  "recId": 2037,
+  "korean": "...잠깐 내 상대 좀 해봐!",
+  "surface": "상대",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:스스로",
+  "lemma": "스스로",
+  "recId": 4268,
+  "korean": "스스로 결정한다",
+  "surface": "스스로",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:약",
+  "lemma": "약",
+  "recId": 2150,
+  "korean": "상처약을 사둬야지!",
+  "surface": "약",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:유리",
+  "lemma": "유리",
+  "recId": 2193,
+  "korean": "리스트의 순서를 바꾸면 유리해지는 일도 있어!",
+  "surface": "유리",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:급",
+  "lemma": "급",
+  "recId": 5303,
+  "korean": "강철급의 단단한 머리는 바위도 산산조각 낸다.",
+  "surface": "급",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:누나",
+  "lemma": "누나",
+  "recId": 2043,
+  "korean": "우리 누나한테 타운맵을 빌리러 가야지!",
+  "surface": "누나",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:법",
+  "lemma": "법",
+  "recId": 3620,
+  "korean": "자전거 타는 법",
+  "surface": "법",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:살다",
+  "lemma": "살다",
+  "recId": 2014,
+  "korean": "남나리: 사람이랑 똑같이 포켓몬도 살아 있단다!",
+  "surface": "살",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:아아",
+  "lemma": "아아",
+  "recId": 730,
+  "korean": "아아- 분명 이제 이 근처엔 없는 걸 거야!",
+  "surface": "아아",
+  "area": "kanto_pokemon_league"
+ },
+ {
+  "vocabId": "topik-v2:아프다",
+  "lemma": "아프다",
+  "recId": 8621,
+  "korean": "피부가 타서 아파 오기 시작했어...",
+  "surface": "아파",
+  "area": "route_19"
+ },
+ {
+  "vocabId": "topik-v2:일",
+  "lemma": "일",
+  "recId": 2127,
+  "korean": "놀라운 일인걸!",
+  "surface": "일",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:잊다",
+  "lemma": "잊다",
+  "recId": 4048,
+  "korean": "잊지 않았다!",
+  "surface": "잊",
+  "area": "route_11"
+ },
+ {
+  "vocabId": "topik-v2:작다",
+  "lemma": "작다",
+  "recId": 5374,
+  "korean": "키가 작은 순",
+  "surface": "작",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:화",
+  "lemma": "화",
+  "recId": 248,
+  "korean": "으- 화가 난다!",
+  "surface": "화",
+  "area": "mt_moon"
+ },
+ {
+  "vocabId": "topik-v2:낫다",
+  "lemma": "낫다",
+  "recId": 2141,
+  "korean": "배틀이 끝나도 화상은 치료되지 않으며 화상치료제를 쓰면 낫습니다",
+  "surface": "낫",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:매우",
+  "lemma": "매우",
+  "recId": 6620,
+  "korean": "매우 쓴 뿌리.",
+  "surface": "매우",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:못",
+  "lemma": "못",
+  "recId": 2253,
+  "korean": "나는 못 산다고",
+  "surface": "못",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:묻다",
+  "lemma": "묻다",
+  "recId": 1642,
+  "korean": "잘 잡히는 곳이냐고 묻고 싶은 거 아니야?",
+  "surface": "묻",
+  "area": "route_17"
+ },
+ {
+  "vocabId": "topik-v2:밟다",
+  "lemma": "밟다",
+  "recId": 5003,
+  "korean": "어떤 것이라도 납작하게 밟아 부숴버린다.",
+  "surface": "밟",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:섬",
+  "lemma": "섬",
+  "recId": 3009,
+  "korean": "이 섬에는 큰 화산이 있다!",
+  "surface": "섬",
+  "area": "seven_island"
+ },
+ {
+  "vocabId": "topik-v2:아주",
+  "lemma": "아주",
+  "recId": 8434,
+  "korean": "아주 잘 알았어!",
+  "surface": "아주",
+  "area": "cinnabar_island"
+ },
+ {
+  "vocabId": "topik-v2:엔",
+  "lemma": "엔",
+  "recId": 1816,
+  "korean": "리조트에서의 마린 라이프를 엔조이하고 있어",
+  "surface": "엔",
+  "area": "kindle_road"
+ },
+ {
+  "vocabId": "topik-v2:움직이다",
+  "lemma": "움직이다",
+  "recId": 2143,
+  "korean": "얼어버리면 전혀 움직일 수 없게 됩니다!",
+  "surface": "움직일",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:잘",
+  "lemma": "잘",
+  "recId": 2003,
+  "korean": "잘 다녀와!",
+  "surface": "잘",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:조금",
+  "lemma": "조금",
+  "recId": 941,
+  "korean": "조금은 도움이 됐지?",
+  "surface": "조금",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:풀",
+  "lemma": "풀",
+  "recId": 4453,
+  "korean": "풀죽지 않는다",
+  "surface": "풀",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:걸다",
+  "lemma": "걸다",
+  "recId": 229,
+  "korean": "갑자기 말 걸지 마!",
+  "surface": "걸",
+  "area": "mt_moon"
+ },
+ {
+  "vocabId": "topik-v2:굽다",
+  "lemma": "굽다",
+  "recId": 2259,
+  "korean": "이거 도움이 되는 구먼!",
+  "surface": "구",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:꿀",
+  "lemma": "꿀",
+  "recId": 5144,
+  "korean": "꿀을 발견하면 초승달 문양이 빛난다.",
+  "surface": "꿀",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:물다",
+  "lemma": "물다",
+  "recId": 1132,
+  "korean": "뛰고 물고!",
+  "surface": "물",
+  "area": "cinnabar_island"
+ },
+ {
+  "vocabId": "topik-v2:쉽다",
+  "lemma": "쉽다",
+  "recId": 2050,
+  "korean": "이 애는 엄청 키우기 쉽단다!",
+  "surface": "쉽",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:신",
+  "lemma": "신",
+  "recId": 495,
+  "korean": "신이시여 도와주세요-!",
+  "surface": "신",
+  "area": "indigo_plateau"
+ },
+ {
+  "vocabId": "topik-v2:아름답다",
+  "lemma": "아름답다",
+  "recId": 4010,
+  "korean": "굉장히 아름다운 하늘이 보인다!",
+  "surface": "아름다운",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:없다",
+  "lemma": "없다",
+  "recId": 3139,
+  "korean": "넣을 곳이 없다...",
+  "surface": "없",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:자신",
+  "lemma": "자신",
+  "recId": 965,
+  "korean": "이길 자신이 있다면 웅이랑 배틀해 봐!",
+  "surface": "자신",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:그림",
+  "lemma": "그림",
+  "recId": 4001,
+  "korean": "예쁜 포켓몬 그림이다!",
+  "surface": "그림",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:나타나다",
+  "lemma": "나타나다",
+  "recId": 4805,
+  "korean": "유령이 나타났다!",
+  "surface": "나타났",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:뒤",
+  "lemma": "뒤",
+  "recId": 4238,
+  "korean": "그 뒤로 뭔가 알아냈니?",
+  "surface": "뒤",
+  "area": "green_path"
+ },
+ {
+  "vocabId": "topik-v2:모습",
+  "lemma": "모습",
+  "recId": 1891,
+  "korean": "지는 모습...",
+  "surface": "모습",
+  "area": "green_path"
+ },
+ {
+  "vocabId": "topik-v2:믿다",
+  "lemma": "믿다",
+  "recId": 1011,
+  "korean": "...흐음- 믿는 사람도 있구나",
+  "surface": "믿",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:뼈",
+  "lemma": "뼈",
+  "recId": 2162,
+  "korean": "용신님의 뼈를 보게 될 줄이야!",
+  "surface": "뼈",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:옛날",
+  "lemma": "옛날",
+  "recId": 1192,
+  "korean": "여기는 제6섬 옛날로부터 전언 다복섬",
+  "surface": "옛날",
+  "area": "two_island"
+ },
+ {
+  "vocabId": "topik-v2:좀",
+  "lemma": "좀",
+  "recId": 3954,
+  "korean": "우리도 이걸로 좀 더 친해졌어!",
+  "surface": "좀",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:짧다",
+  "lemma": "짧다",
+  "recId": 1492,
+  "korean": "짧은 인생...!",
+  "surface": "짧",
+  "area": "route_12"
+ },
+ {
+  "vocabId": "topik-v2:강하다",
+  "lemma": "강하다",
+  "recId": 2181,
+  "korean": "단단하고 참을성이 강해!",
+  "surface": "강해",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:구",
+  "lemma": "구",
+  "recId": 6535,
+  "korean": "구를 때마다 데미지가 올라간다.",
+  "surface": "구",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:끌다",
+  "lemma": "끌다",
+  "recId": 5628,
+  "korean": "스위치를 끈다",
+  "surface": "끈다",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:끝",
+  "lemma": "끝",
+  "recId": 2393,
+  "korean": "포켓몬이 이제야 끝났네!",
+  "surface": "끝",
+  "area": "route_4"
+ },
+ {
+  "vocabId": "topik-v2:나무",
+  "lemma": "나무",
+  "recId": 2267,
+  "korean": "나무열매가 가득하구먼!",
+  "surface": "나무",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:능력",
+  "lemma": "능력",
+  "recId": 1564,
+  "korean": "종류와 레벨이 같은 포켓몬이라도 잡을 때마다 능력이 조금씩 다르고...",
+  "surface": "능력",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:다리",
+  "lemma": "다리",
+  "recId": 1438,
+  "korean": "고요한 다리",
+  "surface": "다리",
+  "area": "five_island"
+ },
+ {
+  "vocabId": "topik-v2:모으다",
+  "lemma": "모으다",
+  "recId": 2087,
+  "korean": "내가 더 빨리 많은 포켓몬을 모았는데!",
+  "surface": "모았",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:밤",
+  "lemma": "밤",
+  "recId": 5275,
+  "korean": "밤에 잘 때도 한 다리다.",
+  "surface": "밤",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:빨리",
+  "lemma": "빨리",
+  "recId": 2087,
+  "korean": "내가 더 빨리 많은 포켓몬을 모았는데!",
+  "surface": "빨리",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:사람",
+  "lemma": "사람",
+  "recId": 2099,
+  "korean": "네가 한 사람의 트레이너가 된 증표지!",
+  "surface": "사람",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:색",
+  "lemma": "색",
+  "recId": 3151,
+  "korean": "물은 깊고 푸른 색이다...",
+  "surface": "색",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:속",
+  "lemma": "속",
+  "recId": 2072,
+  "korean": "속은 하얀 페이지투성이다!",
+  "surface": "속",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:약하다",
+  "lemma": "약하다",
+  "recId": 2133,
+  "korean": "독이나 화상으로 약하게 만들어도 좋다!",
+  "surface": "약하",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:오르다",
+  "lemma": "오르다",
+  "recId": 3935,
+  "korean": "...폭포오르기를 쓰겠습니까?",
+  "surface": "오르",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:요리",
+  "lemma": "요리",
+  "recId": 3991,
+  "korean": "뭔가 요리를 만들었던 것 같다!",
+  "surface": "요리",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:원",
+  "lemma": "원",
+  "recId": 2393,
+  "korean": "이거야 원-!",
+  "surface": "원",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:일부",
+  "lemma": "일부",
+  "recId": 6811,
+  "korean": "뿌리의 일부인 듯하다.",
+  "surface": "일부",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:잠",
+  "lemma": "잠",
+  "recId": 2140,
+  "korean": "배틀이 끝나도 계속 잠든 상태입니다 잠깨는약을 쓰면 일어납니다",
+  "surface": "잠",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:점",
+  "lemma": "점",
+  "recId": 1122,
+  "korean": "그 목호님의 좋은 점을 모르다니!",
+  "surface": "점",
+  "area": "canyon_entrance"
+ },
+ {
+  "vocabId": "topik-v2:차다",
+  "lemma": "차다",
+  "recId": 2012,
+  "korean": "짐이 가득 찼네",
+  "surface": "찼",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:하하",
+  "lemma": "하하",
+  "recId": 663,
+  "korean": "...하하 기쁜걸!",
+  "surface": "하하",
+  "area": "cerulean_cave"
+ },
+ {
+  "vocabId": "topik-v2:힘",
+  "lemma": "힘",
+  "recId": 962,
+  "korean": "꽤나 힘이 든다고",
+  "surface": "힘",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:기초",
+  "lemma": "기초",
+  "recId": 6642,
+  "korean": "포켓몬 1마리의 공격의 기초 포인트를 올린다.",
+  "surface": "기초",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:꽤",
+  "lemma": "꽤",
+  "recId": 2055,
+  "korean": "그래 꽤나 잘 따르는 것 같은데?",
+  "surface": "꽤",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:나누다",
+  "lemma": "나누다",
+  "recId": 948,
+  "korean": "...정보 나눔 게시판!",
+  "surface": "나눔",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:드리다",
+  "lemma": "드리다",
+  "recId": 2963,
+  "korean": "잘 부탁드립니다!",
+  "surface": "드립니다",
+  "area": "one_island"
+ },
+ {
+  "vocabId": "topik-v2:모이다",
+  "lemma": "모이다",
+  "recId": 2126,
+  "korean": "아무래도 이 체육관엔 땅타입 포켓몬을 쓰는 사람이 모여있나봐",
+  "surface": "모여",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:바다",
+  "lemma": "바다",
+  "recId": 3937,
+  "korean": "깊은 바다다!",
+  "surface": "바다",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:보이다",
+  "lemma": "보이다",
+  "recId": 8398,
+  "korean": "안 보인다...",
+  "surface": "보인다",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:부부",
+  "lemma": "부부",
+  "recId": 5815,
+  "korean": "키우미집 부부에게서 받은 이상한 포켓몬알이다",
+  "surface": "부부",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:서다",
+  "lemma": "서다",
+  "recId": 2175,
+  "korean": "인류 사상 처음으로 달 위에 서다!",
+  "surface": "서",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:알다",
+  "lemma": "알다",
+  "recId": 2080,
+  "korean": "알고 계세요?",
+  "surface": "알",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:얼굴",
+  "lemma": "얼굴",
+  "recId": 3946,
+  "korean": "...어렵다는 얼굴이네 어쨌든 해보자!",
+  "surface": "얼굴",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:이상",
+  "lemma": "이상",
+  "recId": 2096,
+  "korean": "너한테 들킨 이상 어쩔 수 없군!",
+  "surface": "이상",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:자라다",
+  "lemma": "자라다",
+  "recId": 2257,
+  "korean": "포켓몬이 한 번에 자라서 레벨이 올라간대",
+  "surface": "자라",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:짓",
+  "lemma": "짓",
+  "recId": 1103,
+  "korean": "나쁜 짓을 마구 했더니 속이 다 후련한걸!",
+  "surface": "짓",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:짓다",
+  "lemma": "짓다",
+  "recId": 3621,
+  "korean": "이름을 짓는 법",
+  "surface": "짓",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:찾다",
+  "lemma": "찾다",
+  "recId": 964,
+  "korean": "웅이가 상대를 찾고 있어 ...이리 와!",
+  "surface": "찾",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:곱다",
+  "lemma": "곱다",
+  "recId": 6407,
+  "korean": "고운 솜처럼 폭신폭신한 포자를 착 달라붙게 해서 상대의 스피드를 크게 떨어뜨린다.",
+  "surface": "고운",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:나라",
+  "lemma": "나라",
+  "recId": 3077,
+  "korean": "사천왕 칸나라네!",
+  "surface": "나라",
+  "area": "canyon_entrance"
+ },
+ {
+  "vocabId": "topik-v2:날다",
+  "lemma": "날다",
+  "recId": 6247,
+  "korean": "1턴째에 하늘을 날아 2턴째에 공격한다.",
+  "surface": "날",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:넘다",
+  "lemma": "넘다",
+  "recId": 3212,
+  "korean": "드디어 50종류를 넘었구나!",
+  "surface": "넘",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:놀다",
+  "lemma": "놀다",
+  "recId": 332,
+  "korean": "또 놀러 가고 싶어!",
+  "surface": "놀",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "topik-v2:높이다",
+  "lemma": "높이다",
+  "recId": 2620,
+  "korean": "이 진홍색배지는 가지고 있는 것만으로도 포켓몬의 특수능력을 높이는 효과가 있단다!",
+  "surface": "높이",
+  "area": "fuchsia_city"
+ },
+ {
+  "vocabId": "topik-v2:늙다",
+  "lemma": "늙다",
+  "recId": 2044,
+  "korean": "지금은 늙어서 포켓몬도 3마리밖에 안 남았지만 너한테 1마리를 주마!",
+  "surface": "늙",
+  "area": "canyon_entrance"
+ },
+ {
+  "vocabId": "topik-v2:다니다",
+  "lemma": "다니다",
+  "recId": 1104,
+  "korean": "어딜 보고 다니는 거야!",
+  "surface": "다니",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:동안",
+  "lemma": "동안",
+  "recId": 3107,
+  "korean": "살아 있는 동안에 이 기술을 가르칠 자를 만날 거라곤 생각도 못 했는데",
+  "surface": "동안",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:마치다",
+  "lemma": "마치다",
+  "recId": 3862,
+  "korean": "친구의 준비가 되지가 않은 것 같습니다 준비를 마치면 다시 와주십시오",
+  "surface": "마치",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:만나다",
+  "lemma": "만나다",
+  "recId": 2098,
+  "korean": "다시 만나자!",
+  "surface": "만나",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:모양",
+  "lemma": "모양",
+  "recId": 2182,
+  "korean": "너를 얕잡아 봤던 모양이야 나를 이긴 증표로 포켓몬리그 공인 회색배지를 수여할게!",
+  "surface": "모양",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:바꾸다",
+  "lemma": "바꾸다",
+  "recId": 5849,
+  "korean": "설정을 바꾼다",
+  "surface": "바꾼다",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:밝다",
+  "lemma": "밝다",
+  "recId": 2813,
+  "korean": "비전기술 플래시로 아무리 어두운 장소라도 제대로 밝아집니다",
+  "surface": "밝",
+  "area": "route_2"
+ },
+ {
+  "vocabId": "topik-v2:빼다",
+  "lemma": "빼다",
+  "recId": 1553,
+  "korean": "땀 잔뜩 흘려서 살 빼야지!",
+  "surface": "빼",
+  "area": "route_14"
+ },
+ {
+  "vocabId": "topik-v2:선택",
+  "lemma": "선택",
+  "recId": 3864,
+  "korean": "서로 선택한 것이 다른 것 같습니다",
+  "surface": "선택",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:얕다",
+  "lemma": "얕다",
+  "recId": 4998,
+  "korean": "바다 얕은 곳을 떠다닌다.",
+  "surface": "얕",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:오리",
+  "lemma": "오리",
+  "recId": 6779,
+  "korean": "파오리에게 지니게 하면 기술이 상대의 급소에 맞기 쉬워지는 파.",
+  "surface": "오리",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:정보",
+  "lemma": "정보",
+  "recId": 948,
+  "korean": "...정보 나눔 게시판!",
+  "surface": "정보",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:지다",
+  "lemma": "지다",
+  "recId": 2181,
+  "korean": "질 줄 알면서도 배틀하는 거구나!",
+  "surface": "질",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:칼",
+  "lemma": "칼",
+  "recId": 1185,
+  "korean": "맞아 그런 기술인 칼춤...",
+  "surface": "칼",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:키우다",
+  "lemma": "키우다",
+  "recId": 2048,
+  "korean": "천천히 키우면 좋단다!",
+  "surface": "키우",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:팔리다",
+  "lemma": "팔리다",
+  "recId": 2282,
+  "korean": "그게 비싸게 팔린다고 하더라",
+  "surface": "팔린다고",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:풀다",
+  "lemma": "풀다",
+  "recId": 6550,
+  "korean": "상대를 풀 파워로 공격한다.",
+  "surface": "풀",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:가끔",
+  "lemma": "가끔",
+  "recId": 2071,
+  "korean": "오박사: 가끔은 나도 보러 오렴!",
+  "surface": "가끔",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:갑자기",
+  "lemma": "갑자기",
+  "recId": 229,
+  "korean": "갑자기 말 걸지 마!",
+  "surface": "갑자기",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "topik-v2:거의",
+  "lemma": "거의",
+  "recId": 5018,
+  "korean": "모습이 거의 안 보인다.",
+  "surface": "거의",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:끊다",
+  "lemma": "끊다",
+  "recId": 5570,
+  "korean": "접속을 끊는다",
+  "surface": "끊",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:날개",
+  "lemma": "날개",
+  "recId": 4100,
+  "korean": "환상의 날개라는 얘기...",
+  "surface": "날개",
+  "area": "route_12"
+ },
+ {
+  "vocabId": "topik-v2:너무",
+  "lemma": "너무",
+  "recId": 2177,
+  "korean": "있지 있지 나 피카츄가 너무 귀여워서 갖고 싶어!",
+  "surface": "너무",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:늘다",
+  "lemma": "늘다",
+  "recId": 2070,
+  "korean": "전혀 페이지가 안 늘었는데?",
+  "surface": "늘",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:늘어나다",
+  "lemma": "늘어나다",
+  "recId": 2679,
+  "korean": "좀 더 친구가 늘어날 걸세!",
+  "surface": "늘어날",
+  "area": "cinnabar_island"
+ },
+ {
+  "vocabId": "topik-v2:다음",
+  "lemma": "다음",
+  "recId": 2178,
+  "korean": "다음에 잡아줄게!",
+  "surface": "다음",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:돌아가다",
+  "lemma": "돌아가다",
+  "recId": 803,
+  "korean": "그럼 돌아가자!",
+  "surface": "돌아가",
+  "area": "one_island"
+ },
+ {
+  "vocabId": "topik-v2:듣다",
+  "lemma": "듣다",
+  "recId": 939,
+  "korean": "내 말을 듣게나!",
+  "surface": "듣",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:마시다",
+  "lemma": "마시다",
+  "recId": 2018,
+  "korean": "그럼 차나 마시자",
+  "surface": "마시",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:맑다",
+  "lemma": "맑다",
+  "recId": 6667,
+  "korean": "맑고 푸른 색을 띠고 있다.",
+  "surface": "맑",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:모르다",
+  "lemma": "모르다",
+  "recId": 2007,
+  "korean": "모르는 게 있을 땐 도움말!",
+  "surface": "모르",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:밑",
+  "lemma": "밑",
+  "recId": 4974,
+  "korean": "큰 나무 밑에 살며 벌레 등을 먹는 듯 하다.",
+  "surface": "밑",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:버섯",
+  "lemma": "버섯",
+  "recId": 1228,
+  "korean": "나는 달맞이산에 버섯포켓몬을 잡으러 왔어!",
+  "surface": "버섯",
+  "area": "route_3"
+ },
+ {
+  "vocabId": "topik-v2:벌레",
+  "lemma": "벌레",
+  "recId": 8340,
+  "korean": "내 벌레가...",
+  "surface": "벌레",
+  "area": "route_11"
+ },
+ {
+  "vocabId": "topik-v2:비싸다",
+  "lemma": "비싸다",
+  "recId": 2220,
+  "korean": "그거 비쌌는데...",
+  "surface": "비쌌",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:상처",
+  "lemma": "상처",
+  "recId": 2150,
+  "korean": "상처약을 사둬야지!",
+  "surface": "상처",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:싸우다",
+  "lemma": "싸우다",
+  "recId": 2078,
+  "korean": "포켓몬을 강하게 키우고 싸우는 포켓몬 트레이너!",
+  "surface": "싸우",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:쌓다",
+  "lemma": "쌓다",
+  "recId": 3713,
+  "korean": "승부에서 경험을 쌓으면 받을 수 있습니다.",
+  "surface": "쌓",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:아기",
+  "lemma": "아기",
+  "recId": 1083,
+  "korean": "캥카 아기 말이야 대타로 출동해서 저 배 주머니에 들어가 보고 싶어!",
+  "surface": "아기",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:위하다",
+  "lemma": "위하다",
+  "recId": 2063,
+  "korean": "자 그러기 위해서...",
+  "surface": "위해서",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:위험",
+  "lemma": "위험",
+  "recId": 921,
+  "korean": "오박사: 위험할 쩌했구나!",
+  "surface": "위험",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:이동",
+  "lemma": "이동",
+  "recId": 5275,
+  "korean": "회전하면서 이동.",
+  "surface": "이동",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:자",
+  "lemma": "자",
+  "recId": 2580,
+  "korean": "자가 있는 법!",
+  "surface": "자",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:장소",
+  "lemma": "장소",
+  "recId": 2013,
+  "korean": "자신이 있는 장소나 마을의 이름을 알고 싶을 때 타운맵을 쓰면 좋아",
+  "surface": "장소",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:전",
+  "lemma": "전",
+  "recId": 1723,
+  "korean": "그 전에 승부하자!",
+  "surface": "전",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:점점",
+  "lemma": "점점",
+  "recId": 1185,
+  "korean": "점점 강해진다...",
+  "surface": "점점",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:정",
+  "lemma": "정",
+  "recId": 3665,
+  "korean": "같은 도구를 많이 갖고 있을 때는 맡길 수를 상하로 정합니다.",
+  "surface": "정",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:정도",
+  "lemma": "정도",
+  "recId": 2024,
+  "korean": "이 이상은 없을 정도로 따르고 있구나...!",
+  "surface": "정도",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:줍다",
+  "lemma": "줍다",
+  "recId": 1771,
+  "korean": "이 해변에는 좋은 물건이 흘러오곤 하지 난 자주 주우러 와",
+  "surface": "주우러",
+  "area": "route_3"
+ },
+ {
+  "vocabId": "topik-v2:지우다",
+  "lemma": "지우다",
+  "recId": 5588,
+  "korean": "내용을 지운 메일을 가방에 넣었습니다",
+  "surface": "지운",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:팔다",
+  "lemma": "팔다",
+  "recId": 1105,
+  "korean": "실프주식회사를 점령하면 전 세계에 포켓몬을 팔아서 크게 한몫 챙길 거야!",
+  "surface": "팔",
+  "area": "vermilion_city"
+ },
+ {
+  "vocabId": "topik-v2:팬",
+  "lemma": "팬",
+  "recId": 2778,
+  "korean": "팬을 계속하겠어!",
+  "surface": "팬",
+  "area": "saffron_city"
+ },
+ {
+  "vocabId": "topik-v2:가게",
+  "lemma": "가게",
+  "recId": 991,
+  "korean": "가게 앞의 나무도 풀베기로 벨 수 있어!",
+  "surface": "가게",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:감다",
+  "lemma": "감다",
+  "recId": 5210,
+  "korean": "사람이나 포켓몬의 감정을 민감하게 감지.",
+  "surface": "감",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:걸리다",
+  "lemma": "걸리다",
+  "recId": 1226,
+  "korean": "발이 걸려서 넘어졌는데 알고 보니 포켓몬 꼬마돌이었어!",
+  "surface": "걸려서",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:결정",
+  "lemma": "결정",
+  "recId": 4268,
+  "korean": "스스로 결정한다",
+  "surface": "결정",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:경우",
+  "lemma": "경우",
+  "recId": 6268,
+  "korean": "독 상태가 되는 경우가 있다.",
+  "surface": "경우",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:금",
+  "lemma": "금",
+  "recId": 907,
+  "korean": "금을 파고 있단다!",
+  "surface": "금",
+  "area": "five_island"
+ },
+ {
+  "vocabId": "topik-v2:노래",
+  "lemma": "노래",
+  "recId": 2204,
+  "korean": "푸린의 노래를 들으면...",
+  "surface": "노래",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:느리다",
+  "lemma": "느리다",
+  "recId": 1079,
+  "korean": "움직임이 느린 포켓몬!",
+  "surface": "느린",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:다르다",
+  "lemma": "다르다",
+  "recId": 1564,
+  "korean": "종류와 레벨이 같은 포켓몬이라도 잡을 때마다 능력이 조금씩 다르고...",
+  "surface": "다르",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:닫다",
+  "lemma": "닫다",
+  "recId": 5372,
+  "korean": "도감을 닫는다",
+  "surface": "닫",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:달리다",
+  "lemma": "달리다",
+  "recId": 323,
+  "korean": "인간을 태우고 물 위를 달리는 포켓몬을 본 적이 있네!",
+  "surface": "달리",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "topik-v2:던지다",
+  "lemma": "던지다",
+  "recId": 2066,
+  "korean": "하고 던지면 포켓몬을 잡을 수 있지!",
+  "surface": "던지",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:덮다",
+  "lemma": "덮다",
+  "recId": 4264,
+  "korean": "전에 작성한 리포트에 덮어써도 괜찮습니까?",
+  "surface": "덮",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:딸",
+  "lemma": "딸",
+  "recId": 3344,
+  "korean": "지금부터 딸을 수련시켜 볼까",
+  "surface": "딸",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:마구",
+  "lemma": "마구",
+  "recId": 8590,
+  "korean": "포켓몬을 마구 잡읍시다!",
+  "surface": "마구",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:막",
+  "lemma": "막",
+  "recId": 1134,
+  "korean": "이 가게는 막 개업했어요!",
+  "surface": "막",
+  "area": "cinnabar_island"
+ },
+ {
+  "vocabId": "topik-v2:많이",
+  "lemma": "많이",
+  "recId": 948,
+  "korean": "트레이너와의 승부도 많이 하면 좋습니다!",
+  "surface": "많이",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:맵다",
+  "lemma": "맵다",
+  "recId": 4835,
+  "korean": "너무 맵다!",
+  "surface": "맵",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:모래",
+  "lemma": "모래",
+  "recId": 6757,
+  "korean": "만지면 부들부들한 모래.",
+  "surface": "모래",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:밖",
+  "lemma": "밖",
+  "recId": 4010,
+  "korean": "창문 밖에는...",
+  "surface": "밖",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:반드시",
+  "lemma": "반드시",
+  "recId": 2063,
+  "korean": "반드시 잡아야만 한단다!",
+  "surface": "반드시",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:발견",
+  "lemma": "발견",
+  "recId": 955,
+  "korean": "달맞이산에서 달의돌이 떨어진 뒤부터 발견되기 시작했대",
+  "surface": "발견",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:벽",
+  "lemma": "벽",
+  "recId": 4685,
+  "korean": "벽이 깨졌다!",
+  "surface": "벽",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:보호",
+  "lemma": "보호",
+  "recId": 5297,
+  "korean": "두터운 지방이 몸을 보호한다.",
+  "surface": "보호",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:복사",
+  "lemma": "복사",
+  "recId": 5060,
+  "korean": "세포 조직을 일순간에 복사해서 상대와 똑같이 변신하는 능력이 있다.",
+  "surface": "복사",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:빛",
+  "lemma": "빛",
+  "recId": 2579,
+  "korean": "빛과 그림자!",
+  "surface": "빛",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:빠르다",
+  "lemma": "빠르다",
+  "recId": 3153,
+  "korean": "물살이 빠르다!",
+  "surface": "빠르",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:생기다",
+  "lemma": "생기다",
+  "recId": 2431,
+  "korean": "건드렸다간 버그가 생길지도",
+  "surface": "생길지",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:설명",
+  "lemma": "설명",
+  "recId": 3894,
+  "korean": "어느 설명을 듣겠습니까?",
+  "surface": "설명",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:성격",
+  "lemma": "성격",
+  "recId": 2689,
+  "korean": "성격이 급해서 금방 고함치고 그 할머니 너무 무서워...",
+  "surface": "성격",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:소년",
+  "lemma": "소년",
+  "recId": 1893,
+  "korean": "수영팬티소년은 이제 보기 질렸다고?",
+  "surface": "소년",
+  "area": "water_labyrinth"
+ },
+ {
+  "vocabId": "topik-v2:숨",
+  "lemma": "숨",
+  "recId": 5168,
+  "korean": "숨을 쉬거나 밸거나 할 때마다 입과 코에서 불꽃이 새어나와 버린다.",
+  "surface": "숨",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:시작",
+  "lemma": "시작",
+  "recId": 926,
+  "korean": "여기는 태초마을 태초는 새하얀 시작의 색",
+  "surface": "시작",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:심다",
+  "lemma": "심다",
+  "recId": 2559,
+  "korean": "이것은 상대에게 공포를 심어주는 기술이지!",
+  "surface": "심",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:얻다",
+  "lemma": "얻다",
+  "recId": 2063,
+  "korean": "오박사: 포켓몬을 그저 찾기만 해선 자세한 데이터를 얻을 수 없지!",
+  "surface": "얻",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:에너지",
+  "lemma": "에너지",
+  "recId": 6646,
+  "korean": "에너지가 담긴 사탕.",
+  "surface": "에너지",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:이기다",
+  "lemma": "이기다",
+  "recId": 965,
+  "korean": "이길 자신이 있다면 웅이랑 배틀해 봐!",
+  "surface": "이길",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:이리",
+  "lemma": "이리",
+  "recId": 964,
+  "korean": "웅이가 상대를 찾고 있어 ...이리 와!",
+  "surface": "이리",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:이미",
+  "lemma": "이미",
+  "recId": 3228,
+  "korean": "사실은 이미 알고 있지만 몇 번이고 보고 싶어서 말이지!",
+  "surface": "이미",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:장",
+  "lemma": "장",
+  "recId": 2415,
+  "korean": "휴식의 장 ...",
+  "surface": "장",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:전기",
+  "lemma": "전기",
+  "recId": 1354,
+  "korean": "전기는 소중하게!",
+  "surface": "전기",
+  "area": "route_11"
+ },
+ {
+  "vocabId": "topik-v2:전혀",
+  "lemma": "전혀",
+  "recId": 2070,
+  "korean": "전혀 페이지가 안 늘었는데?",
+  "surface": "전혀",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:좋아하다",
+  "lemma": "좋아하다",
+  "recId": 2295,
+  "korean": "상품 응모를 좋아하나?",
+  "surface": "좋아하",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:줄다",
+  "lemma": "줄다",
+  "recId": 2141,
+  "korean": "화상을 입으면 체력이 줄고 공격력이 떨어집니다!",
+  "surface": "줄",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:중",
+  "lemma": "중",
+  "recId": 3260,
+  "korean": "마티스 소령님은 직접 트랩을 만들어서 방을 2중으로 잠그셨지",
+  "surface": "중",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:지키다",
+  "lemma": "지키다",
+  "recId": 6804,
+  "korean": "눈을 지키기 위한 안경.",
+  "surface": "지키",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:치우다",
+  "lemma": "치우다",
+  "recId": 2944,
+  "korean": "힘내서 상자를 치운 보람이 있었구먼!",
+  "surface": "치운",
+  "area": "route_25"
+ },
+ {
+  "vocabId": "topik-v2:커다랗다",
+  "lemma": "커다랗다",
+  "recId": 5238,
+  "korean": "커다란 산 하나가 영역.",
+  "surface": "커다란",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:태양",
+  "lemma": "태양",
+  "recId": 6663,
+  "korean": "태양처럼 빨갛다.",
+  "surface": "태양",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:태어나다",
+  "lemma": "태어나다",
+  "recId": 3077,
+  "korean": "이 섬에서 엄청 강한 트레이너가 태어났지!",
+  "surface": "태어났",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:평소",
+  "lemma": "평소",
+  "recId": 1045,
+  "korean": "평소에는 착한 아이야",
+  "surface": "평소",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:피부",
+  "lemma": "피부",
+  "recId": 1733,
+  "korean": "피부가 타기 시작했어...",
+  "surface": "피부",
+  "area": "kindle_road"
+ },
+ {
+  "vocabId": "topik-v2:하루",
+  "lemma": "하루",
+  "recId": 8767,
+  "korean": "하루종일 먹이를 운반한다.",
+  "surface": "하루",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:힘들다",
+  "lemma": "힘들다",
+  "recId": 2010,
+  "korean": "힘들겠다- 이거 줄 테니까 써!",
+  "surface": "힘들",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:가스",
+  "lemma": "가스",
+  "recId": 1045,
+  "korean": "내 또가스!",
+  "surface": "가스",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:계속",
+  "lemma": "계속",
+  "recId": 2026,
+  "korean": "꽤 많이 따르는구나 그렇게 계속 귀여워해줘",
+  "surface": "계속",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:고르다",
+  "lemma": "고르다",
+  "recId": 2044,
+  "korean": "...자 고르거라!",
+  "surface": "고르",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:고프다",
+  "lemma": "고프다",
+  "recId": 4006,
+  "korean": "배가 고파진다!",
+  "surface": "고파진다",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:구멍",
+  "lemma": "구멍",
+  "recId": 2223,
+  "korean": "벽에 구멍이 뚫려 있다!",
+  "surface": "구멍",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:귀",
+  "lemma": "귀",
+  "recId": 5225,
+  "korean": "귀의 덮개를 닫으면 울음을 그친다.",
+  "surface": "귀",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:귀엽다",
+  "lemma": "귀엽다",
+  "recId": 2021,
+  "korean": "우후후 귀여운 포켓몬이네!",
+  "surface": "귀여운",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:근처",
+  "lemma": "근처",
+  "recId": 2092,
+  "korean": "우선 제1섬에 가서 그 근처를 찾아볼까- 그럼 먼저 간다!",
+  "surface": "근처",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:기분",
+  "lemma": "기분",
+  "recId": 4001,
+  "korean": "왜지 기분이 좋아 보인다!",
+  "surface": "기분",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:껍질",
+  "lemma": "껍질",
+  "recId": 258,
+  "korean": "껍질화석을 가질까?",
+  "surface": "껍질",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "topik-v2:나가다",
+  "lemma": "나가다",
+  "recId": 2006,
+  "korean": "슬슬 나가 보자!",
+  "surface": "나가",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:나타내다",
+  "lemma": "나타내다",
+  "recId": 3716,
+  "korean": "공격의 강함을 나타냅니다.",
+  "surface": "나타냅니다",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:남기다",
+  "lemma": "남기다",
+  "recId": 2076,
+  "korean": "기록을 남기려면 포켓몬 리포트 가끔씩 쓰면 좋다네",
+  "surface": "남기",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:노랗다",
+  "lemma": "노랗다",
+  "recId": 6639,
+  "korean": "노란 작은 조각.",
+  "surface": "노란",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:늦다",
+  "lemma": "늦다",
+  "recId": 891,
+  "korean": "조금 여기에 오는 게 늦은 것 같은데...",
+  "surface": "늦",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:대단히",
+  "lemma": "대단히",
+  "recId": 5453,
+  "korean": "네 여기 있습니다 대단히 감사합니다",
+  "surface": "대단히",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:더럽다",
+  "lemma": "더럽다",
+  "recId": 2017,
+  "korean": "네 포켓몬 약간 더러워진 것 같아!",
+  "surface": "더러워진",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:도망가다",
+  "lemma": "도망가다",
+  "recId": 989,
+  "korean": "...이거 못 건네면 나 도망가지 못한단 말이야!",
+  "surface": "도망가",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:도시",
+  "lemma": "도시",
+  "recId": 5367,
+  "korean": "도시의 포켓몬",
+  "surface": "도시",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:돌다",
+  "lemma": "돌다",
+  "recId": 283,
+  "korean": "바빠서 눈이 돈다 돌아!",
+  "surface": "돈다",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "topik-v2:돕다",
+  "lemma": "돕다",
+  "recId": 8461,
+  "korean": "무엇을 도와 드릴까요?",
+  "surface": "도와",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:둥글다",
+  "lemma": "둥글다",
+  "recId": 4978,
+  "korean": "둥근 것을 무척 좋아한다.",
+  "surface": "둥근",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:등록",
+  "lemma": "등록",
+  "recId": 3488,
+  "korean": "전당등록자랑실을 트레이너카드에 붙였다!",
+  "surface": "등록",
+  "area": "four_island"
+ },
+ {
+  "vocabId": "topik-v2:따르다",
+  "lemma": "따르다",
+  "recId": 2055,
+  "korean": "그래 꽤나 잘 따르는 것 같은데?",
+  "surface": "따르",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:딱",
+  "lemma": "딱",
+  "recId": 1731,
+  "korean": "승부하기 딱 좋은걸",
+  "surface": "딱",
+  "area": "kindle_road"
+ },
+ {
+  "vocabId": "topik-v2:떨어지다",
+  "lemma": "떨어지다",
+  "recId": 2141,
+  "korean": "화상을 입으면 체력이 줄고 공격력이 떨어집니다!",
+  "surface": "떨어집니다",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:만지다",
+  "lemma": "만지다",
+  "recId": 5107,
+  "korean": "만지면 감전됨.",
+  "surface": "만지",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:맡다",
+  "lemma": "맡다",
+  "recId": 809,
+  "korean": "너는 저 녀석을 맡아줘!",
+  "surface": "맡",
+  "area": "four_island"
+ },
+ {
+  "vocabId": "topik-v2:메일",
+  "lemma": "메일",
+  "recId": 5463,
+  "korean": "메일을 받는다",
+  "surface": "메일",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:무겁다",
+  "lemma": "무겁다",
+  "recId": 352,
+  "korean": "엄청 무거운 바위라도 괴력으로 움직일 수 있지!",
+  "surface": "무거운",
+  "area": "mt_moon"
+ },
+ {
+  "vocabId": "topik-v2:무섭다",
+  "lemma": "무섭다",
+  "recId": 1198,
+  "korean": "뛰어 내리는 건 조금 무섭지만...",
+  "surface": "무섭",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:미치다",
+  "lemma": "미치다",
+  "recId": 8433,
+  "korean": "실력이 못 미쳤나!",
+  "surface": "미쳤",
+  "area": "saffron_city"
+ },
+ {
+  "vocabId": "topik-v2:버리다",
+  "lemma": "버리다",
+  "recId": 282,
+  "korean": "쓰레기통에 이상한 나무열매가 버려져 있었는데 뭐지?",
+  "surface": "버려져",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "topik-v2:변하다",
+  "lemma": "변하다",
+  "recId": 2394,
+  "korean": "그럼 마음이 변하면 오렴",
+  "surface": "변하",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:북",
+  "lemma": "북",
+  "recId": 1400,
+  "korean": "여기는 12번 도로 북곳 ...",
+  "surface": "북",
+  "area": "five_island"
+ },
+ {
+  "vocabId": "topik-v2:붉다",
+  "lemma": "붉다",
+  "recId": 940,
+  "korean": "그 붉은 상자는 뭔가?",
+  "surface": "붉",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:뿌리",
+  "lemma": "뿌리",
+  "recId": 5673,
+  "korean": "힘의뿌리80",
+  "surface": "뿌리",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:뿌리다",
+  "lemma": "뿌리다",
+  "recId": 963,
+  "korean": "화단에 야생 포켓몬이 들어오지 못하게 벌레회피스프레이를 뿌리고 있어",
+  "surface": "뿌리",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:소문",
+  "lemma": "소문",
+  "recId": 955,
+  "korean": "삐삐가 달에서 왔다는 소문을 알고 있니?",
+  "surface": "소문",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:손",
+  "lemma": "손",
+  "recId": 2116,
+  "korean": "손이 미끄러졌어...!",
+  "surface": "손",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:숨다",
+  "lemma": "숨다",
+  "recId": 997,
+  "korean": "껍질에숨기!",
+  "surface": "숨",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:시키다",
+  "lemma": "시키다",
+  "recId": 3456,
+  "korean": "마티스는 미국에 있었을 때 포켓몬에게 발전을 시켜서 비행기를 띄웠다는 듯하다!",
+  "surface": "시켜서",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:신다",
+  "lemma": "신다",
+  "recId": 4252,
+  "korean": "넌 언제나 멋진 신발을 신고 있구나!",
+  "surface": "신",
+  "area": "canyon_entrance"
+ },
+ {
+  "vocabId": "topik-v2:쌓이다",
+  "lemma": "쌓이다",
+  "recId": 1864,
+  "korean": "돌이 정성 들여 쌓여 있다 “롱길 여기에 잠들다”라고 새겨져 있다",
+  "surface": "쌓여",
+  "area": "route_24"
+ },
+ {
+  "vocabId": "topik-v2:앞",
+  "lemma": "앞",
+  "recId": 2240,
+  "korean": "이슬은 앞으로 계속 강해질 트레이너야!",
+  "surface": "앞",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:얼음",
+  "lemma": "얼음",
+  "recId": 2143,
+  "korean": "배틀이 끝나도 얼어 있습니다 얼음상태치료제로 안 녹이면 포켓몬이 불쌍합니다",
+  "surface": "얼음",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:없이",
+  "lemma": "없이",
+  "recId": 2631,
+  "korean": "그냥 이유없이 좋아하니까 불꽃포켓몬을 쓰고 있어!",
+  "surface": "없이",
+  "area": "cinnabar_island"
+ },
+ {
+  "vocabId": "topik-v2:여",
+  "lemma": "여",
+  "recId": 777,
+  "korean": "여 역시 무섭지 부들부들",
+  "surface": "여",
+  "area": "indigo_plateau"
+ },
+ {
+  "vocabId": "topik-v2:오랫동안",
+  "lemma": "오랫동안",
+  "recId": 5075,
+  "korean": "오랫동안 환상의 포켓몬이라 불렸다.",
+  "surface": "오랫동안",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:올라가다",
+  "lemma": "올라가다",
+  "recId": 767,
+  "korean": "상냥한 탕구리의 어미로 돌아온 영혼은 무사히 하늘로 올라가...",
+  "surface": "올라가",
+  "area": "pokemon_tower"
+ },
+ {
+  "vocabId": "topik-v2:완전히",
+  "lemma": "완전히",
+  "recId": 812,
+  "korean": "완전히 부숴 주지!",
+  "surface": "완전히",
+  "area": "four_island"
+ },
+ {
+  "vocabId": "topik-v2:이렇다",
+  "lemma": "이렇다",
+  "recId": 2117,
+  "korean": "이렇게 지면...",
+  "surface": "이렇",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:이름",
+  "lemma": "이름",
+  "recId": 2013,
+  "korean": "자신이 있는 장소나 마을의 이름을 알고 싶을 때 타운맵을 쓰면 좋아",
+  "surface": "이름",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:이하",
+  "lemma": "이하",
+  "recId": 6939,
+  "korean": "대전을 하기 위해서는 레벨 30 이하의 포켓몬이 2마리 필요해",
+  "surface": "이하",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:인기",
+  "lemma": "인기",
+  "recId": 2149,
+  "korean": "있지 이 가게의 인기 상품은 해독제래!",
+  "surface": "인기",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:입",
+  "lemma": "입",
+  "recId": 4931,
+  "korean": "입에서 강력한 거품을 내뿜는다.",
+  "surface": "입",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:잎",
+  "lemma": "잎",
+  "recId": 5203,
+  "korean": "잎새코가 부는 풀피리의 소리는 듣는 사람을 불안하게 만든다.",
+  "surface": "잎",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:자리",
+  "lemma": "자리",
+  "recId": 1686,
+  "korean": "그만큼 실력이 있으면 로켓단에서도 높은 자리를 차지할 수 있을 텐데 아까워!",
+  "surface": "자리",
+  "area": "route_12"
+ },
+ {
+  "vocabId": "topik-v2:잘못",
+  "lemma": "잘못",
+  "recId": 6102,
+  "korean": "접속이 잘못되었습니다",
+  "surface": "잘못",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:적",
+  "lemma": "적",
+  "recId": 6303,
+  "korean": "잎사귀를 날려 적을 베어 공격한다.",
+  "surface": "적",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:젊다",
+  "lemma": "젊다",
+  "recId": 3018,
+  "korean": "젊은 사람들은 다들 도시로 가고 싶어하지만 난 계속 여기 있고 싶어!",
+  "surface": "젊",
+  "area": "seven_island"
+ },
+ {
+  "vocabId": "topik-v2:정말",
+  "lemma": "정말",
+  "recId": 2021,
+  "korean": "정말 예쁘게 됐다!",
+  "surface": "정말",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:제법",
+  "lemma": "제법",
+  "recId": 2190,
+  "korean": "너 제법 하는구나!",
+  "surface": "제법",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:종류",
+  "lemma": "종류",
+  "recId": 2167,
+  "korean": "여기서는 세상에서 보기 힘든 고대 포켓몬 화석 중 2종류를 전시하고 있습니다!",
+  "surface": "종류",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:죽다",
+  "lemma": "죽다",
+  "recId": 1013,
+  "korean": "키우던 포켓몬이 죽었을 때 포켓몬타워에 데려가서 명복을 빌어주는 거지...",
+  "surface": "죽",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:중요",
+  "lemma": "중요",
+  "recId": 252,
+  "korean": "우리는 중요한 일을 하고 있어!",
+  "surface": "중요",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "topik-v2:지금",
+  "lemma": "지금",
+  "recId": 2126,
+  "korean": "확실한 건 지금까지의 관장 중에서 누구보다도 강하다는 거야!",
+  "surface": "지금",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:지나가다",
+  "lemma": "지나가다",
+  "recId": 3160,
+  "korean": "지나가셔도 좋습니다!",
+  "surface": "지나가",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:찍다",
+  "lemma": "찍다",
+  "recId": 6196,
+  "korean": "스탬프가 가득 차서 더 이상 찍을 수 없습니다!",
+  "surface": "찍",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:최고",
+  "lemma": "최고",
+  "recId": 3998,
+  "korean": "여기는 석영고원 포켓몬의 최고 기관 포켓몬리그 본부",
+  "surface": "최고",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:친구",
+  "lemma": "친구",
+  "recId": 2228,
+  "korean": "친구랑 2층에 가서 없던 포켓몬을 교환받으면 많이 모여!",
+  "surface": "친구",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:컴퓨터",
+  "lemma": "컴퓨터",
+  "recId": 923,
+  "korean": "요즘은 컴퓨터 통신으로 도구나 포켓몬을 데이터로 만들어 보낼 수 있대",
+  "surface": "컴퓨터",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:태우다",
+  "lemma": "태우다",
+  "recId": 323,
+  "korean": "인간을 태우고 물 위를 달리는 포켓몬을 본 적이 있네!",
+  "surface": "태우",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "topik-v2:털",
+  "lemma": "털",
+  "recId": 2017,
+  "korean": "털다듬기를 해줄까?",
+  "surface": "털",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:편하다",
+  "lemma": "편하다",
+  "recId": 1206,
+  "korean": "반바지는 움직이기 편해서 좋아!",
+  "surface": "편해서",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:푸르다",
+  "lemma": "푸르다",
+  "recId": 3151,
+  "korean": "물은 깊고 푸른 색이다...",
+  "surface": "푸른",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:하얗다",
+  "lemma": "하얗다",
+  "recId": 2072,
+  "korean": "속은 하얀 페이지투성이다!",
+  "surface": "하얀",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:함께",
+  "lemma": "함께",
+  "recId": 401,
+  "korean": "이화: 함께 챔피언이 될 거야!",
+  "surface": "함께",
+  "area": "digletts_cave"
+ },
+ {
+  "vocabId": "topik-v2:효과",
+  "lemma": "효과",
+  "recId": 4742,
+  "korean": "효과가 굉장했다!",
+  "surface": "효과",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:가만히",
+  "lemma": "가만히",
+  "recId": 1267,
+  "korean": "아무래도 오늘은 운이 없어 가만히 있어야겠다",
+  "surface": "가만히",
+  "area": "route_6"
+ },
+ {
+  "vocabId": "topik-v2:가방",
+  "lemma": "가방",
+  "recId": 3135,
+  "korean": "가방이 가득 차 있다...",
+  "surface": "가방",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:가볍다",
+  "lemma": "가볍다",
+  "recId": 1939,
+  "korean": "캬하하 가볍게 한 번에 비틀어주지!",
+  "surface": "가볍",
+  "area": "water_labyrinth"
+ },
+ {
+  "vocabId": "topik-v2:가을",
+  "lemma": "가을",
+  "recId": 1820,
+  "korean": "여기는 가을의 집",
+  "surface": "가을",
+  "area": "route_24"
+ },
+ {
+  "vocabId": "topik-v2:같이",
+  "lemma": "같이",
+  "recId": 2191,
+  "korean": "같이 포켓몬 챔피언이 되어 보자고",
+  "surface": "같이",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:거리",
+  "lemma": "거리",
+  "recId": 2189,
+  "korean": "시간이 아니라 ...거리였지!",
+  "surface": "거리",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:겁",
+  "lemma": "겁",
+  "recId": 5138,
+  "korean": "사실은 겁쟁이라서 겁이 많다.",
+  "surface": "겁",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:게다가",
+  "lemma": "게다가",
+  "recId": 2135,
+  "korean": "게다가 포켓몬리그 본부에는 ...굉장히 강한!",
+  "surface": "게다가",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:결과",
+  "lemma": "결과",
+  "recId": 2740,
+  "korean": "이런 결과는 알고 있었다...",
+  "surface": "결과",
+  "area": "saffron_city"
+ },
+ {
+  "vocabId": "topik-v2:경험",
+  "lemma": "경험",
+  "recId": 3713,
+  "korean": "승부에서 경험을 쌓으면 받을 수 있습니다.",
+  "surface": "경험",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:계산",
+  "lemma": "계산",
+  "recId": 4991,
+  "korean": "슈퍼컴퓨터보다 빠르게 계산하는 두뇌를 가졌다.",
+  "surface": "계산",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:고속",
+  "lemma": "고속",
+  "recId": 5121,
+  "korean": "고속으로 날개를 치면 충격파가 발생해서 주변의 유리창이 깨진다.",
+  "surface": "고속",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:공간",
+  "lemma": "공간",
+  "recId": 5065,
+  "korean": "전자공간을 자유자재로 이동할 수 있는 능력을 가졌다.",
+  "surface": "공간",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:공기",
+  "lemma": "공기",
+  "recId": 1334,
+  "korean": "산 공기는 맛있어!",
+  "surface": "공기",
+  "area": "route_25"
+ },
+ {
+  "vocabId": "topik-v2:공장",
+  "lemma": "공장",
+  "recId": 5014,
+  "korean": "공장에서 흘러나오는 진흙 폐수를 마시고 산다.",
+  "surface": "공장",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:공짜",
+  "lemma": "공짜",
+  "recId": 2152,
+  "korean": "몇 마리를 맡겨도 공짜니까 자주 이용해봐!",
+  "surface": "공짜",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:과학자",
+  "lemma": "과학자",
+  "recId": 1090,
+  "korean": "포켓몬저택은 연구를 위해 과학자가 가끔 출입하는 것 같더군",
+  "surface": "과학자",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:괜찮다",
+  "lemma": "괜찮다",
+  "recId": 3871,
+  "korean": "방에서 나가면 통신이 종료됩니다만 괜찮겠습니까?",
+  "surface": "괜찮",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:구름",
+  "lemma": "구름",
+  "recId": 5073,
+  "korean": "구름 위에서 거대한 벼락을 떨어뜨리며 나타난다.",
+  "surface": "구름",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:규칙",
+  "lemma": "규칙",
+  "recId": 2686,
+  "korean": "포켓몬리그 사천왕은 4명과 연속해서 승부하는 규칙이야!",
+  "surface": "규칙",
+  "area": "cinnabar_island"
+ },
+ {
+  "vocabId": "topik-v2:그대로",
+  "lemma": "그대로",
+  "recId": 3906,
+  "korean": "“두트리오 나무열매먹기”는 이름 그대로야!",
+  "surface": "그대로",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:그만",
+  "lemma": "그만",
+  "recId": 5600,
+  "korean": "그만 읽는다",
+  "surface": "그만",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:급하다",
+  "lemma": "급하다",
+  "recId": 4102,
+  "korean": "나 난 성질이 급해!",
+  "surface": "급해",
+  "area": "route_12"
+ },
+ {
+  "vocabId": "topik-v2:기르다",
+  "lemma": "기르다",
+  "recId": 922,
+  "korean": "나도 포켓몬을 길러!",
+  "surface": "길러",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:기본",
+  "lemma": "기본",
+  "recId": 942,
+  "korean": "모르는 게 있으면 그걸 보면 좋을 게다 포켓몬 트레이너의 기본을 알 수 있으니까!",
+  "surface": "기본",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:기준",
+  "lemma": "기준",
+  "recId": 3733,
+  "korean": "상대에게 주는 데미지의 기준이 됩니다.",
+  "surface": "기준",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:길",
+  "lemma": "길",
+  "recId": 2005,
+  "korean": "머리를 땋은 여자아이가 벽돌길을 걷고 있다...",
+  "surface": "길",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:꽃",
+  "lemma": "꽃",
+  "recId": 5247,
+  "korean": "꽃의 향기를 맡으면 기분이 릴렉스된다.",
+  "surface": "꽃",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:꽃잎",
+  "lemma": "꽃잎",
+  "recId": 5120,
+  "korean": "태양이 저물어 어두워지면 꽃잎을 닫고 그자리에서 머문다.",
+  "surface": "꽃잎",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:나쁘다",
+  "lemma": "나쁘다",
+  "recId": 1683,
+  "korean": "우리는 포켓몬을 나쁜 일에 사용하려는 그룹이야!",
+  "surface": "나쁜",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:낚시",
+  "lemma": "낚시",
+  "recId": 1401,
+  "korean": "여기는 낚시의 명소",
+  "surface": "낚시",
+  "area": "five_island"
+ },
+ {
+  "vocabId": "topik-v2:날씨",
+  "lemma": "날씨",
+  "recId": 1731,
+  "korean": "좋은 날씨야!",
+  "surface": "날씨",
+  "area": "kindle_road"
+ },
+ {
+  "vocabId": "topik-v2:날아가다",
+  "lemma": "날아가다",
+  "recId": 5552,
+  "korean": "알고 있는 마을로 날아간다",
+  "surface": "날아간다",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:남",
+  "lemma": "남",
+  "recId": 2082,
+  "korean": "남들에겐 비밀이에요!",
+  "surface": "남",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:남자",
+  "lemma": "남자",
+  "recId": 969,
+  "korean": "회색시티 포켓몬 체육관 관장 웅 강하고 딱딱한 바위의 남자",
+  "surface": "남자",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:내려오다",
+  "lemma": "내려오다",
+  "recId": 2908,
+  "korean": "타고 내려오면 기분이 좋아요!",
+  "surface": "내려오",
+  "area": "route_10"
+ },
+ {
+  "vocabId": "topik-v2:내리다",
+  "lemma": "내리다",
+  "recId": 1198,
+  "korean": "뛰어 내리는 건 조금 무섭지만...",
+  "surface": "내리",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:내밀다",
+  "lemma": "내밀다",
+  "recId": 4976,
+  "korean": "가끔 지상으로 얼굴을 내민다.",
+  "surface": "내민",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:넘어지다",
+  "lemma": "넘어지다",
+  "recId": 1226,
+  "korean": "발이 걸려서 넘어졌는데 알고 보니 포켓몬 꼬마돌이었어!",
+  "surface": "넘어졌",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:눈앞",
+  "lemma": "눈앞",
+  "recId": 1803,
+  "korean": "눈앞이 새하얘...",
+  "surface": "눈앞",
+  "area": "kindle_road"
+ },
+ {
+  "vocabId": "topik-v2:느끼다",
+  "lemma": "느끼다",
+  "recId": 2772,
+  "korean": "예전엔 네 팬이였지만 지금은 그때의 기세가 안 느껴져서...",
+  "surface": "느껴져서",
+  "area": "saffron_city"
+ },
+ {
+  "vocabId": "topik-v2:도로",
+  "lemma": "도로",
+  "recId": 1400,
+  "korean": "여기는 12번 도로 북곳 ...",
+  "surface": "도로",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:돌리다",
+  "lemma": "돌리다",
+  "recId": 5296,
+  "korean": "대굴레오를 코로 데굴데굴 돌리며 논다.",
+  "surface": "돌리",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:돌아오다",
+  "lemma": "돌아오다",
+  "recId": 933,
+  "korean": "상록체육관의 관장이 돌아왔다네!",
+  "surface": "돌아왔",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:동물",
+  "lemma": "동물",
+  "recId": 3757,
+  "korean": "사람은 포켓몬을 애완동물로 삼거나 승부에 사용하고 있습니다.",
+  "surface": "동물",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:들리다",
+  "lemma": "들리다",
+  "recId": 3181,
+  "korean": "누군가의 목소리가 들린다...",
+  "surface": "들린다",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:똑같이",
+  "lemma": "똑같이",
+  "recId": 2014,
+  "korean": "남나리: 사람이랑 똑같이 포켓몬도 살아 있단다!",
+  "surface": "똑같이",
+  "area": "canyon_entrance"
+ },
+ {
+  "vocabId": "topik-v2:뜨겁다",
+  "lemma": "뜨겁다",
+  "recId": 1060,
+  "korean": "맨션의 할머니가 주신 차가 뜨거워서 정말...",
+  "surface": "뜨거워서",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:마을",
+  "lemma": "마을",
+  "recId": 2145,
+  "korean": "너는 태초마을에서 왔니?",
+  "surface": "마을",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:막다",
+  "lemma": "막다",
+  "recId": 720,
+  "korean": "바위로 흐름을 막을 수 있을지도...",
+  "surface": "막",
+  "area": "rock_tunnel"
+ },
+ {
+  "vocabId": "topik-v2:맡기다",
+  "lemma": "맡기다",
+  "recId": 2042,
+  "korean": "전부 나한테 맡기라고-!",
+  "surface": "맡기",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:매일",
+  "lemma": "매일",
+  "recId": 284,
+  "korean": "난 매일같이 감자 껍질을 깎아!",
+  "surface": "매일",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "topik-v2:메뉴",
+  "lemma": "메뉴",
+  "recId": 2075,
+  "korean": "누르면 메뉴가 열린다네",
+  "surface": "메뉴",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:모두",
+  "lemma": "모두",
+  "recId": 3188,
+  "korean": "모두 건강해졌습니다!",
+  "surface": "모두",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:무늬",
+  "lemma": "무늬",
+  "recId": 6668,
+  "korean": "잎사귀 무늬가 있다.",
+  "surface": "무늬",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:물건",
+  "lemma": "물건",
+  "recId": 2072,
+  "korean": "도감 같은 물건이 있다!",
+  "surface": "물건",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:물속",
+  "lemma": "물속",
+  "recId": 4986,
+  "korean": "물속을 헤엄치는 편이 더 좋은 모양이다.",
+  "surface": "물속",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:미인",
+  "lemma": "미인",
+  "recId": 855,
+  "korean": "묘한 미인을 말하는 건가?",
+  "surface": "미인",
+  "area": "five_island"
+ },
+ {
+  "vocabId": "topik-v2:바라다",
+  "lemma": "바라다",
+  "recId": 967,
+  "korean": "...회색경찰서에 연락 바랍니다",
+  "surface": "바랍니다",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:바람",
+  "lemma": "바람",
+  "recId": 888,
+  "korean": "옥상에서 부는 바람...",
+  "surface": "바람",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:바쁘다",
+  "lemma": "바쁘다",
+  "recId": 3873,
+  "korean": "바쁜 것 같다...",
+  "surface": "바쁜",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:박물관",
+  "lemma": "박물관",
+  "recId": 957,
+  "korean": "너 박물관 견학은 했니?",
+  "surface": "박물관",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:박스",
+  "lemma": "박스",
+  "recId": 3186,
+  "korean": "박스도 가득차서 전송할 수 없습니다!",
+  "surface": "박스",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:밥",
+  "lemma": "밥",
+  "recId": 1754,
+  "korean": "자연 속에서 먹는 밥은 맛있다!",
+  "surface": "밥",
+  "area": "kindle_road"
+ },
+ {
+  "vocabId": "topik-v2:버튼",
+  "lemma": "버튼",
+  "recId": 3144,
+  "korean": "가방에 들어 있는 도구를 편리 버튼에 등록할 수 있습니다",
+  "surface": "버튼",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:벨트",
+  "lemma": "벨트",
+  "recId": 2818,
+  "korean": "볼을 벨트에 세트해야지 1, 2, 3, 4, 5, 6...!",
+  "surface": "벨트",
+  "area": "route_2"
+ },
+ {
+  "vocabId": "topik-v2:부근",
+  "lemma": "부근",
+  "recId": 5052,
+  "korean": "발전소 부근에서 모습을 감췄을 때 마을에서 큰 정전이 일어난다고 한다.",
+  "surface": "부근",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:부르다",
+  "lemma": "부르다",
+  "recId": 2044,
+  "korean": "아아 그렇지 내가 불렀구나!",
+  "surface": "불렀",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:부분",
+  "lemma": "부분",
+  "recId": 6388,
+  "korean": "몸의 각진 부분을 늘려서 딱딱해져 자신의 공격을 올린다.",
+  "surface": "부분",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:부족",
+  "lemma": "부족",
+  "recId": 2108,
+  "korean": "아직도 연습이 부족해",
+  "surface": "부족",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:불",
+  "lemma": "불",
+  "recId": 5183,
+  "korean": "목숨이 있는 한 계속 불탄다.",
+  "surface": "불",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:불꽃",
+  "lemma": "불꽃",
+  "recId": 4432,
+  "korean": "불꽃을 받으면 강해진다",
+  "surface": "불꽃",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:불리다",
+  "lemma": "불리다",
+  "recId": 3277,
+  "korean": "난 에스퍼 소녀라고 불렸어",
+  "surface": "불렸",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:비밀",
+  "lemma": "비밀",
+  "recId": 595,
+  "korean": "비밀의 스위치가 있다!",
+  "surface": "비밀",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:빨갛다",
+  "lemma": "빨갛다",
+  "recId": 6637,
+  "korean": "빨간 작은 조각.",
+  "surface": "빨간",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:사용",
+  "lemma": "사용",
+  "recId": 2181,
+  "korean": "사용하는 건 바위포켓몬뿐이야!",
+  "surface": "사용",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:사탕",
+  "lemma": "사탕",
+  "recId": 2257,
+  "korean": "가게에선 본 적이 없지만 이상한사탕을 아니?",
+  "surface": "사탕",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:산소",
+  "lemma": "산소",
+  "recId": 2625,
+  "korean": "불탄다는 건 공기 중의 산소가...",
+  "surface": "산소",
+  "area": "fuchsia_city"
+ },
+ {
+  "vocabId": "topik-v2:새로",
+  "lemma": "새로",
+  "recId": 6177,
+  "korean": "갖고 있지 않아 새로 카드를 읽습니다",
+  "surface": "새로",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:세기",
+  "lemma": "세기",
+  "recId": 6091,
+  "korean": "누른 세기 랭킹",
+  "surface": "세기",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:세우다",
+  "lemma": "세우다",
+  "recId": 3087,
+  "korean": "그 국화양도 사천왕 최연장자의 기록을 세웠으니까 나도 노력할 거란다",
+  "surface": "세웠",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:소금",
+  "lemma": "소금",
+  "recId": 6635,
+  "korean": "여울의 동굴 속에서 발견한 깨끗한 소금.",
+  "surface": "소금",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:소포",
+  "lemma": "소포",
+  "recId": 3197,
+  "korean": "그렇다면 이상한 소포를 알고 계신 거군요!",
+  "surface": "소포",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:속도",
+  "lemma": "속도",
+  "recId": 2757,
+  "korean": "포켓몬은 종류에 따라 성장하는 속도가 다르다는 것 같아",
+  "surface": "속도",
+  "area": "saffron_city"
+ },
+ {
+  "vocabId": "topik-v2:손바닥",
+  "lemma": "손바닥",
+  "recId": 5144,
+  "korean": "달콤한 꿀이 흡착된 손바닥을 항상 핥고 있다.",
+  "surface": "손바닥",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:수",
+  "lemma": "수",
+  "recId": 3933,
+  "korean": "“ 수 있게 되었다!",
+  "surface": "수",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:순간",
+  "lemma": "순간",
+  "recId": 1742,
+  "korean": "패배한 순간과 동시에 물고기도 도망쳤어",
+  "surface": "순간",
+  "area": "kindle_road"
+ },
+ {
+  "vocabId": "topik-v2:슬프다",
+  "lemma": "슬프다",
+  "recId": 1903,
+  "korean": "미우: 지면 슬퍼",
+  "surface": "슬퍼",
+  "area": "green_path"
+ },
+ {
+  "vocabId": "topik-v2:시간",
+  "lemma": "시간",
+  "recId": 946,
+  "korean": "...시간은 돈이라네",
+  "surface": "시간",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:시대",
+  "lemma": "시대",
+  "recId": 1281,
+  "korean": "나는 이 시대의 떠돌이 갬블러!",
+  "surface": "시대",
+  "area": "route_8"
+ },
+ {
+  "vocabId": "topik-v2:실수",
+  "lemma": "실수",
+  "recId": 5250,
+  "korean": "실수로 영역에 들어온 먹잇감을 집단으로 덮친다.",
+  "surface": "실수",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:아무리",
+  "lemma": "아무리",
+  "recId": 2099,
+  "korean": "그린배지만 있다면 아무리 레벨이 높은 포켓몬이라도 말을 듣는다!",
+  "surface": "아무리",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:안다",
+  "lemma": "안다",
+  "recId": 5183,
+  "korean": "안으면 따끈따끈하다.",
+  "surface": "안",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:않다",
+  "lemma": "않다",
+  "recId": 2709,
+  "korean": "사양 않고 간다!",
+  "surface": "않",
+  "area": "saffron_city"
+ },
+ {
+  "vocabId": "topik-v2:알",
+  "lemma": "알",
+  "recId": 1063,
+  "korean": "알낳기를 배우게 될 럭키 포켓몬은?",
+  "surface": "알",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:알리다",
+  "lemma": "알리다",
+  "recId": 3952,
+  "korean": "빨리 알려줘!",
+  "surface": "알려",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:약간",
+  "lemma": "약간",
+  "recId": 2017,
+  "korean": "네 포켓몬 약간 더러워진 것 같아!",
+  "surface": "약간",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:어둡다",
+  "lemma": "어둡다",
+  "recId": 358,
+  "korean": "지하통로는 좀 어두워서 떨어져 있는 물건이 많대",
+  "surface": "어두워서",
+  "area": "route_2"
+ },
+ {
+  "vocabId": "topik-v2:어렵다",
+  "lemma": "어렵다",
+  "recId": 2093,
+  "korean": "별명을 생각하는 건 재미있지...만 어려워!",
+  "surface": "어려워",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:얼다",
+  "lemma": "얼다",
+  "recId": 2143,
+  "korean": "얼어버리면 전혀 움직일 수 없게 됩니다!",
+  "surface": "얼",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:여자",
+  "lemma": "여자",
+  "recId": 2005,
+  "korean": "머리를 땋은 여자아이가 벽돌길을 걷고 있다...",
+  "surface": "여자",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:역할",
+  "lemma": "역할",
+  "recId": 922,
+  "korean": "강해지면 경비원 역할도 대신할 수 있지",
+  "surface": "역할",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:연구",
+  "lemma": "연구",
+  "recId": 2079,
+  "korean": "저도 박사님의 조수로서 포켓몬을 연구하고 있습니다",
+  "surface": "연구",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:연기",
+  "lemma": "연기",
+  "recId": 703,
+  "korean": "코스프레라는 건 삐삐의 탈인형 같은 걸 만들어서 포켓몬을 연기하는 겁니다",
+  "surface": "연기",
+  "area": "rock_tunnel"
+ },
+ {
+  "vocabId": "topik-v2:열리다",
+  "lemma": "열리다",
+  "recId": 3200,
+  "korean": "문은 열려 있다...",
+  "surface": "열려",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:오렌지",
+  "lemma": "오렌지",
+  "recId": 1026,
+  "korean": "여기는 갈색시티 오렌지빛 저녁노을의 색",
+  "surface": "오렌지",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:온도",
+  "lemma": "온도",
+  "recId": 2624,
+  "korean": "포켓몬이 내뿜는 불꽃의 온도가 어느 정도인지 아니?",
+  "surface": "온도",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:옷",
+  "lemma": "옷",
+  "recId": 2617,
+  "korean": "우오오-옷!",
+  "surface": "옷",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:우선",
+  "lemma": "우선",
+  "recId": 2133,
+  "korean": "포켓몬을 잡을 때는 우선 약하게 만든다!",
+  "surface": "우선",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:우유",
+  "lemma": "우유",
+  "recId": 6618,
+  "korean": "영양 만점의 우유.",
+  "surface": "우유",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:운",
+  "lemma": "운",
+  "recId": 1344,
+  "korean": "오늘은 운이 없군",
+  "surface": "운",
+  "area": "route_11"
+ },
+ {
+  "vocabId": "topik-v2:웃다",
+  "lemma": "웃다",
+  "recId": 2654,
+  "korean": "어깨동무를 하고 즐거운 듯이 웃고 있다!",
+  "surface": "웃",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:이루다",
+  "lemma": "이루다",
+  "recId": 2999,
+  "korean": "서유석: 이게 루비와 쌍을 이루는 돌...",
+  "surface": "이루",
+  "area": "seven_island"
+ },
+ {
+  "vocabId": "topik-v2:이번",
+  "lemma": "이번",
+  "recId": 2096,
+  "korean": "이번엔 봐주지 않겠다!",
+  "surface": "이번",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:이유",
+  "lemma": "이유",
+  "recId": 2631,
+  "korean": "그냥 이유없이 좋아하니까 불꽃포켓몬을 쓰고 있어!",
+  "surface": "이유",
+  "area": "cinnabar_island"
+ },
+ {
+  "vocabId": "topik-v2:이제",
+  "lemma": "이제",
+  "recId": 2104,
+  "korean": "이제 슬슬...",
+  "surface": "이제",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:인간",
+  "lemma": "인간",
+  "recId": 323,
+  "korean": "인간을 태우고 물 위를 달리는 포켓몬을 본 적이 있네!",
+  "surface": "인간",
+  "area": "viridian_forest"
+ },
+ {
+  "vocabId": "topik-v2:일기",
+  "lemma": "일기",
+  "recId": 613,
+  "korean": "일기: 9월 1일 포켓몬 뮤츠는 너무 강하다 안 돼...",
+  "surface": "일기",
+  "area": "pokemon_mansion"
+ },
+ {
+  "vocabId": "topik-v2:자르다",
+  "lemma": "자르다",
+  "recId": 3926,
+  "korean": "이 나무는 왜지 자를 수 있을 것 같다!",
+  "surface": "자를",
+  "area": "viridian_city"
+ },
+ {
+  "vocabId": "topik-v2:자주",
+  "lemma": "자주",
+  "recId": 2152,
+  "korean": "몇 마리를 맡겨도 공짜니까 자주 이용해봐!",
+  "surface": "자주",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:잠깐",
+  "lemma": "잠깐",
+  "recId": 920,
+  "korean": "오박사: 잠깐-!",
+  "surface": "잠깐",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:잡히다",
+  "lemma": "잡히다",
+  "recId": 2066,
+  "korean": "잘 잡힐지는 모르는 일이란다!",
+  "surface": "잡힐지",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:적다",
+  "lemma": "적다",
+  "recId": 2131,
+  "korean": "칠판에 적은 걸 잘 보렴!",
+  "surface": "적",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:적어도",
+  "lemma": "적어도",
+  "recId": 728,
+  "korean": "살아 있는데 왜 오냐 그럼 적어도 싸우지 못하게 만들어 줄게!",
+  "surface": "적어도",
+  "area": "kanto_pokemon_league"
+ },
+ {
+  "vocabId": "topik-v2:전자",
+  "lemma": "전자",
+  "recId": 470,
+  "korean": "이 건물의 문은 전부 전자 잠금장치로 잠겨 있지!",
+  "surface": "전자",
+  "area": "indigo_plateau"
+ },
+ {
+  "vocabId": "topik-v2:전하다",
+  "lemma": "전하다",
+  "recId": 2055,
+  "korean": "내게 전해줄 물건이 있다고?",
+  "surface": "전해",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:절반",
+  "lemma": "절반",
+  "recId": 2497,
+  "korean": "절반이 포켓몬의 양분이 되는 멋진 기술이에요",
+  "surface": "절반",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:정하다",
+  "lemma": "정하다",
+  "recId": 6277,
+  "korean": "20의 정해진 데미지를 준다.",
+  "surface": "정해진",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:정확히",
+  "lemma": "정확히",
+  "recId": 5346,
+  "korean": "리포트가 정확히 쓰여있지 않기 때문에 전에 작성한 리포트를 읽겠습니다!",
+  "surface": "정확히",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:젖다",
+  "lemma": "젖다",
+  "recId": 1605,
+  "korean": "바다에서 포켓몬을 탈 거라면 라프라스가 좋아 몸이 커서 젖지 않거든",
+  "surface": "젖",
+  "area": "route_15"
+ },
+ {
+  "vocabId": "topik-v2:조사",
+  "lemma": "조사",
+  "recId": 940,
+  "korean": "포켓몬을 잡아서 조사하면 자동적으로 페이지가 늘어간단다!",
+  "surface": "조사",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:주변",
+  "lemma": "주변",
+  "recId": 5207,
+  "korean": "겨울이 되면 둥지 주변에 먹이를 숨긴다.",
+  "surface": "주변",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:주인",
+  "lemma": "주인",
+  "recId": 1022,
+  "korean": "나는 땅 주인!",
+  "surface": "주인",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:주제",
+  "lemma": "주제",
+  "recId": 431,
+  "korean": "로켓단의 악행이 멋진 걸 모르는 꼬맹이 주제에!",
+  "surface": "주제",
+  "area": "route_2"
+ },
+ {
+  "vocabId": "topik-v2:줄무늬",
+  "lemma": "줄무늬",
+  "recId": 6636,
+  "korean": "파랑과 하양의 줄무늬.",
+  "surface": "줄무늬",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:중심",
+  "lemma": "중심",
+  "recId": 5048,
+  "korean": "코어라 불리는 중심은 일곱 빛깔로 빛난다.",
+  "surface": "중심",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:지구",
+  "lemma": "지구",
+  "recId": 2171,
+  "korean": "지구의 비밀...",
+  "surface": "지구",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:지내다",
+  "lemma": "지내다",
+  "recId": 557,
+  "korean": "너 만할 때부터 포켓몬과 지냈다면 나도...",
+  "surface": "지냈",
+  "area": "rocket_hideout"
+ },
+ {
+  "vocabId": "topik-v2:지역",
+  "lemma": "지역",
+  "recId": 4948,
+  "korean": "배의 무서운 문양은 지역에 따라서 몇 종류인가 패턴이 있다는 소문이다.",
+  "surface": "지역",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:지치다",
+  "lemma": "지치다",
+  "recId": 2104,
+  "korean": "지칠 때가 됐는데",
+  "surface": "지칠",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:지하",
+  "lemma": "지하",
+  "recId": 5796,
+  "korean": "천연 지하 터널.",
+  "surface": "지하",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:직접",
+  "lemma": "직접",
+  "recId": 2955,
+  "korean": "직접 찾아보렴",
+  "surface": "직접",
+  "area": "route_18"
+ },
+ {
+  "vocabId": "topik-v2:진짜",
+  "lemma": "진짜",
+  "recId": 2925,
+  "korean": "진짜라니까!",
+  "surface": "진짜",
+  "area": "route_11"
+ },
+ {
+  "vocabId": "topik-v2:차리다",
+  "lemma": "차리다",
+  "recId": 831,
+  "korean": "이 앞에 있는 간부는 나보다 강해 정신 차리고 맞서봐!",
+  "surface": "차리",
+  "area": "power_plant"
+ },
+ {
+  "vocabId": "topik-v2:책",
+  "lemma": "책",
+  "recId": 3988,
+  "korean": "포켓몬 책이 가득하다!",
+  "surface": "책",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:처음",
+  "lemma": "처음",
+  "recId": 2175,
+  "korean": "인류 사상 처음으로 달 위에 서다!",
+  "surface": "처음",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:철",
+  "lemma": "철",
+  "recId": 5236,
+  "korean": "철을 먹어서 강철 몸을 만든다.",
+  "surface": "철",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:추다",
+  "lemma": "추다",
+  "recId": 3122,
+  "korean": "자 춤춰봐 춤춰봐!",
+  "surface": "춰",
+  "area": "five_island"
+ },
+ {
+  "vocabId": "topik-v2:추위",
+  "lemma": "추위",
+  "recId": 6564,
+  "korean": "극한의 추위로 상대를 공격한다.",
+  "surface": "추위",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:춤",
+  "lemma": "춤",
+  "recId": 3122,
+  "korean": "자 춤춰봐 춤춰봐!",
+  "surface": "춤",
+  "area": "five_island"
+ },
+ {
+  "vocabId": "topik-v2:충격",
+  "lemma": "충격",
+  "recId": 2722,
+  "korean": "정말 충격이야!",
+  "surface": "충격",
+  "area": "cinnabar_island"
+ },
+ {
+  "vocabId": "topik-v2:취소",
+  "lemma": "취소",
+  "recId": 6228,
+  "korean": "모두 삭제취소결정",
+  "surface": "취소",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:카드",
+  "lemma": "카드",
+  "recId": 3177,
+  "korean": "카드키가 없으면 열 수 없다!",
+  "surface": "카드",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:크기",
+  "lemma": "크기",
+  "recId": 2889,
+  "korean": "전에 본 거랑 똑같은 크기 같은데?",
+  "surface": "크기",
+  "area": "route_4"
+ },
+ {
+  "vocabId": "topik-v2:탑",
+  "lemma": "탑",
+  "recId": 1018,
+  "korean": "여기는 포켓몬을 기리는 탑 포켓몬타워",
+  "surface": "탑",
+  "area": "cerulean_city"
+ },
+ {
+  "vocabId": "topik-v2:터널",
+  "lemma": "터널",
+  "recId": 1341,
+  "korean": "여기는 돌산터널",
+  "surface": "터널",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:턱",
+  "lemma": "턱",
+  "recId": 1198,
+  "korean": "길에 턱이 있지?",
+  "surface": "턱",
+  "area": "five_island"
+ },
+ {
+  "vocabId": "topik-v2:털다",
+  "lemma": "털다",
+  "recId": 4087,
+  "korean": "용돈을 털어서 또 알칼로이드를 샀어",
+  "surface": "털",
+  "area": "route_10"
+ },
+ {
+  "vocabId": "topik-v2:통하다",
+  "lemma": "통하다",
+  "recId": 4419,
+  "korean": "통하지 않는다",
+  "surface": "통하",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:특별히",
+  "lemma": "특별히",
+  "recId": 2057,
+  "korean": "이건 내가 특별히 주문한 몬스터볼이구나 정말 고맙다!",
+  "surface": "특별히",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:틀림없다",
+  "lemma": "틀림없다",
+  "recId": 2349,
+  "korean": "유도 같은 길을 걸을 게 틀림없어-요!",
+  "surface": "틀림없",
+  "area": "lavender_town"
+ },
+ {
+  "vocabId": "topik-v2:파도",
+  "lemma": "파도",
+  "recId": 6285,
+  "korean": "일으킨 파도를 적에게 부딪쳐 공격한다.",
+  "surface": "파도",
+  "area": null
+ },
+ {
+  "vocabId": "topik-v2:팔",
+  "lemma": "팔",
+  "recId": 779,
+  "korean": "화산에서 대폭팔을...",
+  "surface": "팔",
+  "area": "indigo_plateau"
+ },
+ {
+  "vocabId": "topik-v2:프로그램",
+  "lemma": "프로그램",
+  "recId": 2927,
+  "korean": "내가 전송머신에 들어가면 분리 프로그램을 가동해줘!",
+  "surface": "프로그램",
+  "area": "route_25"
+ },
+ {
+  "vocabId": "topik-v2:피우다",
+  "lemma": "피우다",
+  "recId": 1000,
+  "korean": "야도란은 게으름을 피우고 있다...",
+  "surface": "피우",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:필요",
+  "lemma": "필요",
+  "recId": 2063,
+  "korean": "필요한 도구를 주마!",
+  "surface": "필요",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:하늘",
+  "lemma": "하늘",
+  "recId": 4010,
+  "korean": "굉장히 아름다운 하늘이 보인다!",
+  "surface": "하늘",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:할아버지",
+  "lemma": "할아버지",
+  "recId": 2032,
+  "korean": "할아버지라면 안 계셔",
+  "surface": "할아버지",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:향하다",
+  "lemma": "향하다",
+  "recId": 1423,
+  "korean": "바람은 나를 향해 불고 있어!",
+  "surface": "향해",
+  "area": "route_10"
+ },
+ {
+  "vocabId": "topik-v2:허리",
+  "lemma": "허리",
+  "recId": 931,
+  "korean": "네가 허리에 찬 그 몬스터볼은!",
+  "surface": "허리",
+  "area": "pallet_town"
+ },
+ {
+  "vocabId": "topik-v2:혀",
+  "lemma": "혀",
+  "recId": 1060,
+  "korean": "혀에 화상을 입었어!",
+  "surface": "혀",
+  "area": "celadon_city"
+ },
+ {
+  "vocabId": "topik-v2:호수",
+  "lemma": "호수",
+  "recId": 1730,
+  "korean": "모처럼 블루시티 호수공원에 올 거면...",
+  "surface": "호수",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:혼자",
+  "lemma": "혼자",
+  "recId": 1730,
+  "korean": "안녕 너는 혼자 왔니?",
+  "surface": "혼자",
+  "area": "route_1"
+ },
+ {
+  "vocabId": "topik-v2:활동",
+  "lemma": "활동",
+  "recId": 1017,
+  "korean": "여기는 사랑의 봉사활동 포켓몬하우스",
+  "surface": "활동",
+  "area": "pewter_city"
+ },
+ {
+  "vocabId": "topik-v2:흔들다",
+  "lemma": "흔들다",
+  "recId": 2102,
+  "korean": "땅을 강하게 흔들어서 상대에게 큰 데미지를 주는!",
+  "surface": "흔들",
+  "area": "pallet_town"
+ }
+]
