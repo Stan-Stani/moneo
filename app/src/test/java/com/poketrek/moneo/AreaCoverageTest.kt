@@ -120,6 +120,16 @@ class AreaCoverageTest {
         assertEquals("home-mid", r.nextDueCard("route_1")?.first?.vocabId)
     }
 
+    @Test fun duplicateCardOfAKnownWordGoesLast() {
+        val r = repo(
+            vocab = listOf(v("mined:가다", "가다"), v("topik:가다", "가다"), v("x", "풀숲")),
+            counts = mapOf("route_1" to mapOf("가다" to 30, "풀숲" to 4)),
+        )
+        val first = r.nextDueCard("route_1")!!.first.vocabId
+        r.grade(first, com.poketrek.moneo.srs.Rating.EASY, now)
+        assertEquals("x", r.nextDueCard("route_1")?.first?.vocabId)
+    }
+
     @Test fun dueLearningCardStillBeatsNewCards() {
         val r = repo(
             vocab = listOf(v("new-common", "가다"), v("learning", "덤불")),

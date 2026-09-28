@@ -271,8 +271,15 @@ class MoneoRepository(
             // Frequency mode: the gate measures how much of this area's text
             // is readable, so new cards come in order of how often the
             // area's dialog uses them, whichever area they were first seen in.
+            // A word can be a card in two decks (mined + TOPIK); once one of
+            // them is known the other adds no coverage, so it goes last.
+            val cards = _cards.value
+            val knownLemmas = vocab.values.filter { v ->
+                cards[v.id]?.let { it.suspended || it.snapshot.state == CardState.REVIEW } == true
+            }.mapTo(HashSet()) { it.korean }
             return pickByPriority(vocab.keys, vocab, nowMs) { rec ->
-                -(counts[vocab[rec.vocabId]?.korean] ?: 0)
+                val lemma = vocab[rec.vocabId]?.korean
+                if (lemma in knownLemmas) 0 else -(counts[lemma] ?: 0)
             }
         }
         val (homeVocab, refVocab) = vocab.values.partition { it.areaId == baseAreaId }
