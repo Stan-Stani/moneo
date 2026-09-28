@@ -32,6 +32,11 @@ class MoneoModule private constructor(context: Context) {
     }
     private val captureDir: File = File(context.filesDir, "moneo")
 
+    /** Loanword origins (시티 ← city), shown on the card back. */
+    val loanwords: com.poketrek.moneo.data.LoanwordDict =
+        runCatching { com.poketrek.moneo.data.LoanwordDict.loadFromAssets(context) }
+            .getOrElse { com.poketrek.moneo.data.LoanwordDict.EMPTY }
+
     /** Hanja breakdowns for Sino-Korean words, shown on the card back. */
     val hanja: com.poketrek.moneo.data.HanjaDict =
         runCatching { com.poketrek.moneo.data.HanjaDict.loadFromAssets(context) }

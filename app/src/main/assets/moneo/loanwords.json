@@ -1,0 +1,1176 @@
+{
+ "version": 1,
+ "notes": "Loanwords in the deck: borrowed part and source word. Built by tools/moneo/build_loanwords.py.",
+ "words": {
+  "가스": {
+   "part": "가스",
+   "source": "gas",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "게이트": {
+   "part": "게이트",
+   "source": "gate",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "게임": {
+   "part": "게임",
+   "source": "game",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "고속스핀": {
+   "part": "스핀",
+   "source": "spin",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "고스트": {
+   "part": "고스트",
+   "source": "ghost",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "그룹": {
+   "part": "그룹",
+   "source": "group",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "기가드레인": {
+   "part": "기가드레인",
+   "source": "giga drain",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "기타": {
+   "part": "기타",
+   "source": "guitar",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "깃털댄스": {
+   "part": "댄스",
+   "source": "dance",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "껌": {
+   "part": "껌",
+   "source": "gum",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "꽃잎댄스": {
+   "part": "댄스",
+   "source": "dance",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "나이트헤드": {
+   "part": "나이트헤드",
+   "source": "night head",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "냉동펀치": {
+   "part": "펀치",
+   "source": "punch",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "네트워크": {
+   "part": "네트워크",
+   "source": "network",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "노트": {
+   "part": "노트",
+   "source": "note",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "뉴스": {
+   "part": "뉴스",
+   "source": "news",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "다이빙": {
+   "part": "다이빙",
+   "source": "diving",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "더블": {
+   "part": "더블",
+   "source": "double",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "더블니들": {
+   "part": "더블니들",
+   "source": "double needle",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "데미지": {
+   "part": "데미지",
+   "source": "damage",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "드래곤크루": {
+   "part": "드래곤크루",
+   "source": "dragon claw",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "드링크": {
+   "part": "드링크",
+   "source": "drink",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "라스트버지": {
+   "part": "라스트버지",
+   "source": "luster purge",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "락블레스트": {
+   "part": "락블레스트",
+   "source": "rock blast",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "랭킹": {
+   "part": "랭킹",
+   "source": "ranking",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "레벨": {
+   "part": "레벨",
+   "source": "level",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "로망": {
+   "part": "로망",
+   "source": "roman",
+   "lang": "French",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "로케트박치기": {
+   "part": "로케트",
+   "source": "rocket",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "로켓": {
+   "part": "로켓",
+   "source": "rocket",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "로켓단": {
+   "part": "로켓",
+   "source": "rocket",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "록온": {
+   "part": "록온",
+   "source": "lock-on",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "리그": {
+   "part": "리그",
+   "source": "league",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "리더": {
+   "part": "리더",
+   "source": "leader",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "리벤지": {
+   "part": "리벤지",
+   "source": "revenge",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "리사이클": {
+   "part": "리사이클",
+   "source": "recycle",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "리포트": {
+   "part": "리포트",
+   "source": "report",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "리프레쉬": {
+   "part": "리프레쉬",
+   "source": "refresh",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "리프블레이드": {
+   "part": "리프블레이드",
+   "source": "leaf blade",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "리플렉터": {
+   "part": "리플렉터",
+   "source": "reflector",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "마그마의무장": {
+   "part": "마그마",
+   "source": "magma",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "마니아": {
+   "part": "마니아",
+   "source": "mania",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "마스터": {
+   "part": "마스터",
+   "source": "master",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "마이너스": {
+   "part": "마이너스",
+   "source": "minus",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "마이페이스": {
+   "part": "마이페이스",
+   "source": "my pace",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "마하펀치": {
+   "part": "마하펀치",
+   "source": "mach punch",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "매그니튜드": {
+   "part": "매그니튜드",
+   "source": "magnitude",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "매직코트": {
+   "part": "매직코트",
+   "source": "magic coat",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "머드숏": {
+   "part": "머드숏",
+   "source": "mud shot",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "머신": {
+   "part": "머신",
+   "source": "machine",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "메가드레인": {
+   "part": "메가드레인",
+   "source": "mega drain",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "메가톤펀치": {
+   "part": "메가톤펀치",
+   "source": "megaton punch",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "메가폰": {
+   "part": "메가폰",
+   "source": "megaphone",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "메뉴": {
+   "part": "메뉴",
+   "source": "menu",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "메일": {
+   "part": "메일",
+   "source": "mail",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "메지컬리프": {
+   "part": "메지컬리프",
+   "source": "magical leaf",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "메탈크로우": {
+   "part": "메탈크로우",
+   "source": "metal claw",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "멤버": {
+   "part": "멤버",
+   "source": "member",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "몬스터": {
+   "part": "몬스터",
+   "source": "monster",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "미러코트": {
+   "part": "미러코트",
+   "source": "mirror coat",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "미스트볼": {
+   "part": "미스트볼",
+   "source": "mist ball",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "바늘미사일": {
+   "part": "미사일",
+   "source": "missile",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "바톤터치": {
+   "part": "바톤터치",
+   "source": "baton touch",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "박스": {
+   "part": "박스",
+   "source": "box",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "배리어": {
+   "part": "배리어",
+   "source": "barrier",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "배틀": {
+   "part": "배틀",
+   "source": "battle",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "버스": {
+   "part": "버스",
+   "source": "bus",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "버튼": {
+   "part": "버튼",
+   "source": "button",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "벌크업": {
+   "part": "벌크업",
+   "source": "bulk up",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "벨트": {
+   "part": "벨트",
+   "source": "belt",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "보스": {
+   "part": "보스",
+   "source": "boss",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "본러쉬": {
+   "part": "본러쉬",
+   "source": "bone rush",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "볼트태클": {
+   "part": "볼트태클",
+   "source": "volt tackle",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "불꽃펀치": {
+   "part": "펀치",
+   "source": "punch",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "브레이즈킥": {
+   "part": "브레이즈킥",
+   "source": "blaze kick",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "브레이크크루": {
+   "part": "브레이크크루",
+   "source": "break claw",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "블러스트번": {
+   "part": "블러스트번",
+   "source": "blast burn",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "블록": {
+   "part": "블록",
+   "source": "block",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "빌딩": {
+   "part": "빌딩",
+   "source": "building",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "뿔드릴": {
+   "part": "드릴",
+   "source": "drill",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "사이코부스트": {
+   "part": "사이코부스트",
+   "source": "psycho boost",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "사이코웨이브": {
+   "part": "사이코웨이브",
+   "source": "psycho wave",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "사이클링": {
+   "part": "사이클링",
+   "source": "cycling",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "섀도볼": {
+   "part": "섀도볼",
+   "source": "shadow ball",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "섀도펀치": {
+   "part": "섀도펀치",
+   "source": "shadow punch",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "센터": {
+   "part": "센터",
+   "source": "center",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "소닉붐": {
+   "part": "소닉붐",
+   "source": "sonic boom",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "소스": {
+   "part": "소스",
+   "source": "sauce",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "솔라빔": {
+   "part": "솔라빔",
+   "source": "solar beam",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "쇼핑": {
+   "part": "쇼핑",
+   "source": "shopping",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "수의베일": {
+   "part": "베일",
+   "source": "veil",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "슈퍼": {
+   "part": "슈퍼",
+   "source": "super",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스모그": {
+   "part": "스모그",
+   "source": "smog",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스위치": {
+   "part": "스위치",
+   "source": "switch",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스카이업퍼": {
+   "part": "스카이업퍼",
+   "source": "sky upper",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스케치": {
+   "part": "스케치",
+   "source": "sketch",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스코프": {
+   "part": "스코프",
+   "source": "scope",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스키": {
+   "part": "스키",
+   "source": "ski",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스킬스웹": {
+   "part": "스킬스웹",
+   "source": "skill swap",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스타": {
+   "part": "스타",
+   "source": "star",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스탬프": {
+   "part": "스탬프",
+   "source": "stamp",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스톤샤워": {
+   "part": "스톤샤워",
+   "source": "stone shower",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스파크": {
+   "part": "스파크",
+   "source": "spark",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스프레이": {
+   "part": "스프레이",
+   "source": "spray",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스피드": {
+   "part": "스피드",
+   "source": "speed",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "스피드스타": {
+   "part": "스피드스타",
+   "source": "speed star",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "슬롯": {
+   "part": "슬롯",
+   "source": "slot",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "시그널빔": {
+   "part": "시그널빔",
+   "source": "signal beam",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "시스템": {
+   "part": "시스템",
+   "source": "system",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "시티": {
+   "part": "시티",
+   "source": "city",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "싱글": {
+   "part": "싱글",
+   "source": "single",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "싱크로": {
+   "part": "싱크로",
+   "source": "synchro",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "아로마테라피": {
+   "part": "아로마테라피",
+   "source": "aromatherapy",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "아이스볼": {
+   "part": "아이스볼",
+   "source": "ice ball",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "아이언테일": {
+   "part": "아이언테일",
+   "source": "iron tail",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "아지트": {
+   "part": "아지트",
+   "source": "agitpunkt",
+   "lang": "Russian, via Japanese",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "악마의키스": {
+   "part": "키스",
+   "source": "kiss",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "앵콜": {
+   "part": "앵콜",
+   "source": "encore",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "어댑터": {
+   "part": "어댑터",
+   "source": "adapter",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "에어록": {
+   "part": "에어록",
+   "source": "air lock",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "에어컷터": {
+   "part": "에어컷터",
+   "source": "air cutter",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "엘리베이터": {
+   "part": "엘리베이터",
+   "source": "elevator",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "연속펀치": {
+   "part": "펀치",
+   "source": "punch",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "오렌지": {
+   "part": "오렌지",
+   "source": "orange",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "오로라빔": {
+   "part": "오로라빔",
+   "source": "aurora beam",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "오버히트": {
+   "part": "오버히트",
+   "source": "overheat",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "올림픽": {
+   "part": "올림픽",
+   "source": "Olympics",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "요가포즈": {
+   "part": "요가포즈",
+   "source": "yoga pose",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "웨더볼": {
+   "part": "웨더볼",
+   "source": "weather ball",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "잼잼펀치": {
+   "part": "펀치",
+   "source": "punch",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "저널": {
+   "part": "저널",
+   "source": "journal",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "점프": {
+   "part": "점프",
+   "source": "jump",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "점프킥": {
+   "part": "점프킥",
+   "source": "jump kick",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "채팅": {
+   "part": "채팅",
+   "source": "chatting",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "챔피언": {
+   "part": "챔피언",
+   "source": "champion",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "천사의키스": {
+   "part": "키스",
+   "source": "kiss",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "치즈": {
+   "part": "치즈",
+   "source": "cheese",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "카드": {
+   "part": "카드",
+   "source": "card",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "카레": {
+   "part": "카레",
+   "source": "curry",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "카운터": {
+   "part": "카운터",
+   "source": "counter",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "컨디션": {
+   "part": "컨디션",
+   "source": "condition",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "컬렉션": {
+   "part": "컬렉션",
+   "source": "collection",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "컴퓨터": {
+   "part": "컴퓨터",
+   "source": "computer",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "케이블": {
+   "part": "케이블",
+   "source": "cable",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "케이스": {
+   "part": "케이스",
+   "source": "case",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "코너": {
+   "part": "코너",
+   "source": "corner",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "코스믹파워": {
+   "part": "코스믹파워",
+   "source": "cosmic power",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "콘테스트": {
+   "part": "콘테스트",
+   "source": "contest",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "퀴즈": {
+   "part": "퀴즈",
+   "source": "quiz",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "크로스촙": {
+   "part": "크로스촙",
+   "source": "cross chop",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "클럽": {
+   "part": "클럽",
+   "source": "club",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "클리어바디": {
+   "part": "클리어바디",
+   "source": "clear body",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "타운": {
+   "part": "타운",
+   "source": "town",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "타입": {
+   "part": "타입",
+   "source": "type",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "터널": {
+   "part": "터널",
+   "source": "tunnel",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "텍스처": {
+   "part": "텍스처",
+   "source": "texture",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "톤": {
+   "part": "톤",
+   "source": "ton",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "트라이어택": {
+   "part": "트라이어택",
+   "source": "tri-attack",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "트레이너": {
+   "part": "트레이너",
+   "source": "trainer",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "트레이스": {
+   "part": "트레이스",
+   "source": "trace",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "트리플킥": {
+   "part": "트리플킥",
+   "source": "triple kick",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "트릭": {
+   "part": "트릭",
+   "source": "trick",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "티켓": {
+   "part": "티켓",
+   "source": "ticket",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "팀": {
+   "part": "팀",
+   "source": "team",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "파일": {
+   "part": "파일",
+   "source": "file",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "파티": {
+   "part": "파티",
+   "source": "party",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "패스": {
+   "part": "패스",
+   "source": "pass",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "패스워드": {
+   "part": "패스워드",
+   "source": "password",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "팩": {
+   "part": "팩",
+   "source": "pack",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "팬": {
+   "part": "팬",
+   "source": "fan",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "팬클럽": {
+   "part": "팬클럽",
+   "source": "fan club",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "펀치": {
+   "part": "펀치",
+   "source": "punch",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "페이지": {
+   "part": "페이지",
+   "source": "page",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "포이즌테일": {
+   "part": "포이즌테일",
+   "source": "poison tail",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "포인트": {
+   "part": "포인트",
+   "source": "point",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "포즈": {
+   "part": "포즈",
+   "source": "pose",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "포켓": {
+   "part": "포켓",
+   "source": "pocket",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "포켓몬": {
+   "part": "포켓몬",
+   "source": "pocket monsters",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "프레셔": {
+   "part": "프레셔",
+   "source": "pressure",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "프레젠트": {
+   "part": "프레젠트",
+   "source": "present",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "프로": {
+   "part": "프로",
+   "source": "pro",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "프로그램": {
+   "part": "프로그램",
+   "source": "program",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "프로필": {
+   "part": "프로필",
+   "source": "profile",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "프린트": {
+   "part": "프린트",
+   "source": "print",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "플래시": {
+   "part": "플래시",
+   "source": "flash",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "플러스": {
+   "part": "플러스",
+   "source": "plus",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "플레이": {
+   "part": "플레이",
+   "source": "play",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "픽업": {
+   "part": "픽업",
+   "source": "pickup",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "핑크": {
+   "part": "핑크",
+   "source": "pink",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "하드플랜트": {
+   "part": "하드플랜트",
+   "source": "hard plant",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "하이드로캐논": {
+   "part": "하이드로캐논",
+   "source": "hydro cannon",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "하이드로펌프": {
+   "part": "하이드로펌프",
+   "source": "hydro pump",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "하이퍼보이스": {
+   "part": "하이퍼보이스",
+   "source": "hyper voice",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "흔들흔들댄스": {
+   "part": "댄스",
+   "source": "dance",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "힌트": {
+   "part": "힌트",
+   "source": "hint",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "힘껏펀치": {
+   "part": "펀치",
+   "source": "punch",
+   "lang": "English",
+   "pickedBy": "llm-claude-opus-5-5"
+  }
+ }
+}

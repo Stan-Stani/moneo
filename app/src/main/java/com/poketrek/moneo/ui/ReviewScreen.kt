@@ -353,6 +353,7 @@ fun ReviewScreen(
                                 ReportOnlyCard(onReport = onReportCard)
                             }
                             HanjaCard(module = module, korean = vocab.korean)
+                            LoanwordCard(module = module, korean = vocab.korean)
                         }
                         ratings()
                     } else {
@@ -392,6 +393,7 @@ fun ReviewScreen(
                         ReportOnlyCard(onReport = onReportCard)
                     }
                     HanjaCard(module = module, korean = vocab.korean)
+                    LoanwordCard(module = module, korean = vocab.korean)
                     ratings()
                 } else {
                     revealButton()
@@ -539,6 +541,35 @@ private fun CardBack(
         notes?.let {
             Text(it, color = Color(0xFFA7F3D0), fontSize = 12.sp)
         }
+    }
+}
+
+/**
+ * Where a loanword comes from: "시티 ← English "city"", or for a word that's
+ * only partly borrowed, just that part (불꽃펀치: 펀치 ← "punch"). English
+ * speakers get these nearly for free once they hear the source word.
+ */
+@Composable
+private fun LoanwordCard(module: MoneoModule, korean: String) {
+    val loan = remember(korean) { module.loanwords.lookup(korean) } ?: return
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(Color(0xFF1F2937), shape = RoundedCornerShape(12.dp))
+            .padding(14.dp),
+        verticalArrangement = Arrangement.spacedBy(4.dp),
+    ) {
+        Text(
+            if (loan.part == korean) "외래어 · loanword" else "외래어 · partly a loanword",
+            color = Color(0xFF9CA3AF),
+            fontSize = 10.sp,
+        )
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Text(loan.part, color = Color(0xFFFCD34D), fontSize = 20.sp, fontWeight = FontWeight.SemiBold)
+            Text("←", color = Color(0xFF6B7280), fontSize = 16.sp)
+            Text("“${loan.source}”", color = Color.White, fontSize = 18.sp)
+        }
+        Text(loan.language, color = Color(0xFF6B7280), fontSize = 10.sp)
     }
 }
 
