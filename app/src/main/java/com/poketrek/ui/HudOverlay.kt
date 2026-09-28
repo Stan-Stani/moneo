@@ -1436,17 +1436,17 @@ private fun MoneoSection(
             }
         }
 
-        // Hard area-gate: blocks the player from physically entering an area
-        // until they've cleared enough cards anchored to the upstream area.
+        // Hard area-gate: blocks the player from physically entering a new area
+        // until they know enough of the words its text uses.
         Expander(
             title = "Area gate",
             initiallyExpanded = areaGateEnabled,
-            summary = if (areaGateEnabled) "Block at ≥${areaGateThresholdPct}% maturity" else "Off",
+            summary = if (areaGateEnabled) "Enter at ≥${areaGateThresholdPct}% readable" else "Off",
         ) {
             ToggleRow(
                 label = "Block at boundaries",
                 sublabel = if (areaGateEnabled)
-                    "Blocks DPAD at area edges/warps until vocab maturity ≥ threshold"
+                    "Blocks DPAD at the edge of a new area until you know enough of the words it uses"
                 else
                     "Off — area transitions are unrestricted",
                 checked = areaGateEnabled,
@@ -1455,7 +1455,7 @@ private fun MoneoSection(
             if (areaGateEnabled) {
                 Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
                     Text(
-                        "Maturity threshold: ${areaGateThresholdPct}%",
+                        "Readable text needed: ${areaGateThresholdPct}% (early areas ramp up from ${minOf(com.poketrek.moneo.data.GateThreshold.RAMP_START_PCT, areaGateThresholdPct)}%)",
                         fontSize = 12.sp,
                         color = Color(0xFF374151),
                     )

@@ -88,6 +88,17 @@ class MoneoRepository(
     }
 
     /**
+     * Per-area lemma frequencies. When an area has counts, [readiness]
+     * measures text coverage and [nextDueCard] teaches its most frequent
+     * words first; without them both fall back to the first-seen card rules.
+     */
+    @Volatile private var lemmaCounts: AreaLemmaCounts = AreaLemmaCounts.EMPTY
+
+    fun setAreaLemmaCounts(counts: AreaLemmaCounts) {
+        lemmaCounts = counts
+    }
+
+    /**
      * Parse a pseudo-area id of the form `"<baseAreaId>#<primarySourceType>"`
      * into its components, or return null if [areaId] is a plain area id.
      */
@@ -255,6 +266,15 @@ class MoneoRepository(
         val vocab = vocabForArea(areaId).associateBy { it.id }
         if (vocab.isEmpty()) return null
         val baseAreaId = splitPseudoAreaId(areaId)?.first ?: areaId
+        val counts = lemmaCounts.countsFor(baseAreaId)
+        if (counts != null) {
+            // Frequency mode: the gate measures how much of this area's text
+            // is readable, so new cards come in order of how often the
+            // area's dialog uses them, whichever area they were first seen in.
+            return pickByPriority(vocab.keys, vocab, nowMs) { rec ->
+                -(counts[vocab[rec.vocabId]?.korean] ?: 0)
+            }
+        }
         val (homeVocab, refVocab) = vocab.values.partition { it.areaId == baseAreaId }
         pickByPriority(homeVocab.map { it.id }.toSet(), vocab, nowMs)?.let { return it }
         return pickByPriority(refVocab.map { it.id }.toSet(), vocab, nowMs)
@@ -264,6 +284,8 @@ class MoneoRepository(
         vocabIdSubset: Set<String>,
         vocab: Map<String, VocabEntry>,
         nowMs: Long,
+        /** Sort key for NEW cards, applied before creation order. */
+        newCardRank: (CardRecord) -> Int = { 0 },
     ): Pair<CardRecord, VocabEntry>? {
         if (vocabIdSubset.isEmpty()) return null
         val cards = _cards.value.values.filter { it.vocabId in vocabIdSubset && !it.suspended }
@@ -280,7 +302,7 @@ class MoneoRepository(
             return rec to (vocab[rec.vocabId] ?: return null)
         }
         val news = cards.filter { it.snapshot.state == CardState.NEW }
-            .sortedBy { it.createdAt }
+            .sortedWith(compareBy(newCardRank).thenBy { it.createdAt })
         if (news.isNotEmpty()) {
             val rec = news.first()
             return rec to (vocab[rec.vocabId] ?: return null)
@@ -351,6 +373,39 @@ class MoneoRepository(
         if (cards.isEmpty()) return 1f
         val mature = cards.count { it.suspended || it.snapshot.state == CardState.REVIEW }
         return mature.toFloat() / cards.size
+    }
+
+    /**
+     * How ready the player is to enter [areaId], 0..1. With lemma counts for
+     * the area this is text coverage: the share of the area's deck-word
+     * tokens whose word the player knows (some visible card with that
+     * [VocabEntry.korean] is in REVIEW or suspended). Words hidden by the
+     * deck filters don't count either way. Without counts it falls back to
+     * [maturityPct].
+     */
+    fun readiness(areaId: String): Float {
+        val counts = lemmaCounts.countsFor(areaId) ?: return maturityPct(areaId)
+        val excludedTags = _excludedSourceTags.value
+        val excludedTypes = _excludedSourceTypes.value
+        val cards = _cards.value
+        val visible = HashSet<String>()
+        val known = HashSet<String>()
+        for (v in _vocab.value.values) {
+            if (v.korean !in counts) continue
+            if (v.sourceTag in excludedTags) continue
+            if (v.primarySourceType != null && v.primarySourceType in excludedTypes) continue
+            visible += v.korean
+            val rec = cards[v.id] ?: continue
+            if (rec.suspended || rec.snapshot.state == CardState.REVIEW) known += v.korean
+        }
+        var total = 0L
+        var covered = 0L
+        for (lemma in visible) {
+            val n = counts.getValue(lemma)
+            total += n
+            if (lemma in known) covered += n
+        }
+        return if (total == 0L) 1f else covered.toFloat() / total
     }
 
     /** Wipe all SRS state. Used by debug actions. */

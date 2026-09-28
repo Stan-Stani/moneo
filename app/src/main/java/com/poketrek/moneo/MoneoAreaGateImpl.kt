@@ -13,12 +13,13 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
 /**
- * Tiny oracle the area gate consults for area maturity. Letting the gate
+ * Tiny oracle the area gate consults for area readiness. Letting the gate
  * take this interface (instead of [MoneoRepository]) keeps it testable on
- * the plain JVM. The production path forwards to [MoneoRepository.maturityPct].
+ * the plain JVM. The production path forwards to [MoneoRepository.readiness]
+ * (share of the area's text the player can read).
  */
 fun interface MaturityOracle {
-    /** Fraction (0..1) of cards in [areaId] considered mature. */
+    /** Readiness (0..1) for entering [areaId]. */
     fun maturityFraction(areaId: String): Float
 }
 
@@ -29,6 +30,9 @@ fun interface MaturityOracle {
 interface AreaGateConfig {
     val enabled: Boolean
     val thresholdPct: Int
+
+    /** Threshold for entering [areaId]; production ramps it (see GateThreshold). */
+    fun thresholdPctFor(areaId: String): Int = thresholdPct
 }
 
 /**
@@ -96,9 +100,6 @@ class MoneoAreaGateImpl(
             return updateAndReturn(AreaGateDecision.NONE)
         }
 
-        val thresholdPct = config.thresholdPct.coerceIn(0, 100)
-        val thresholdFrac = thresholdPct / 100f
-
         val list = boundaries.boundariesFor(snapshot.mapBank, snapshot.mapId)
             .filter { visited?.isVisited(it.destArea) != true }
         if (list.isEmpty()) return updateAndReturn(AreaGateDecision.NONE)
@@ -106,6 +107,8 @@ class MoneoAreaGateImpl(
         var blockedMask = 0
         var firstHitArea: String? = null
         var firstHitMaturity = 0f
+        var firstHitThreshold = 0f
+        fun thresholdFrac(areaId: String) = config.thresholdPctFor(areaId).coerceIn(0, 100) / 100f
 
         // Edge case: standing on a warp tile (any pressed dir would trigger
         // the warp on the next step). Block all four directions.
@@ -114,10 +117,12 @@ class MoneoAreaGateImpl(
         }
         if (warpHere != null) {
             val mat = oracle.maturityFraction(warpHere.destArea)
-            if (mat < thresholdFrac) {
+            val threshold = thresholdFrac(warpHere.destArea)
+            if (mat < threshold) {
                 blockedMask = blockedMask or DIR_MASK
                 firstHitArea = warpHere.destArea
                 firstHitMaturity = mat
+                firstHitThreshold = threshold
             }
         }
 
@@ -138,11 +143,13 @@ class MoneoAreaGateImpl(
             }
             if (edge != null) {
                 val mat = oracle.maturityFraction(edge.destArea)
-                if (mat < thresholdFrac) {
+                val threshold = thresholdFrac(edge.destArea)
+                if (mat < threshold) {
                     blockedMask = blockedMask or dirBit
                     if (firstHitArea == null) {
                         firstHitArea = edge.destArea
                         firstHitMaturity = mat
+                        firstHitThreshold = threshold
                     }
                 }
                 continue
@@ -153,11 +160,13 @@ class MoneoAreaGateImpl(
             val warp = list.firstOrNull { it.kind == "warp" && it.x == ax && it.y == ay }
             if (warp != null) {
                 val mat = oracle.maturityFraction(warp.destArea)
-                if (mat < thresholdFrac) {
+                val threshold = thresholdFrac(warp.destArea)
+                if (mat < threshold) {
                     blockedMask = blockedMask or dirBit
                     if (firstHitArea == null) {
                         firstHitArea = warp.destArea
                         firstHitMaturity = mat
+                        firstHitThreshold = threshold
                     }
                 }
             }
@@ -171,7 +180,7 @@ class MoneoAreaGateImpl(
             blockedDirMask = blockedMask,
             destArea = firstHitArea,
             maturityFraction = firstHitMaturity,
-            thresholdFraction = thresholdFrac,
+            thresholdFraction = firstHitThreshold,
         )
         return updateAndReturn(dec)
     }
@@ -198,6 +207,8 @@ class MoneoAreaGateImpl(
             boundaries: MapBoundaryLookup,
             prefs: MoneoPrefs,
             repo: MoneoRepository,
+            lemmaCounts: com.poketrek.moneo.data.AreaLemmaCounts =
+                com.poketrek.moneo.data.AreaLemmaCounts.EMPTY,
             isRomSupported: () -> Boolean = { true },
             mapAreas: MapAreaLookup? = null,
             /** Key for the loaded ROM (e.g. its CRC), or null before one is loaded. */
@@ -206,8 +217,10 @@ class MoneoAreaGateImpl(
             val cfg = object : AreaGateConfig {
                 override val enabled: Boolean get() = prefs.areaGateEnabled.value
                 override val thresholdPct: Int get() = prefs.areaGateThresholdPct.value
+                override fun thresholdPctFor(areaId: String): Int =
+                    com.poketrek.moneo.data.GateThreshold.pctFor(lemmaCounts.storyIndex(areaId), thresholdPct)
             }
-            val oracle = MaturityOracle { areaId -> repo.maturityPct(areaId) }
+            val oracle = MaturityOracle { areaId -> repo.readiness(areaId) }
             val visited = object : VisitedAreas {
                 override fun isVisited(areaId: String): Boolean =
                     romKey()?.let { prefs.isAreaVisited(it, areaId) } ?: false

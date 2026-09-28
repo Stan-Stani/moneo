@@ -124,7 +124,13 @@ fun migrateTtsLegacy(legacyEnabled: Boolean?, existingOverride: TtsLanguage?): T
     return null
 }
 
-const val DEFAULT_AREA_GATE_THRESHOLD_PCT = 80
+/**
+ * Final text-coverage threshold for the area gate: the share of an area's
+ * word occurrences the player must know. Early story areas ramp up to it
+ * from 60% (GateThreshold). ~90% is where reading research puts "follows
+ * the text"; 95%+ is comfortable reading.
+ */
+const val DEFAULT_AREA_GATE_THRESHOLD_PCT = 90
 const val MIN_AREA_GATE_THRESHOLD_PCT = 0
 const val MAX_AREA_GATE_THRESHOLD_PCT = 100
 
@@ -208,8 +214,9 @@ class MoneoPrefs private constructor(private val context: Context) {
     val abilitiesMode: StateFlow<SourceTypeMode> = _abilitiesMode.asStateFlow()
 
     /**
-     * Hard area gate: when on, MovementGate refuses to enter a downstream area
-     * until the upstream area's review maturity meets [areaGateThresholdPct].
+     * Hard area gate: when on, MovementGate refuses to enter an area the
+     * player hasn't visited until they can read enough of its text (see
+     * MoneoRepository.readiness and GateThreshold).
      * Default off — the player should opt in once they've built up some review
      * history, otherwise the very first map transition would be blocked.
      */

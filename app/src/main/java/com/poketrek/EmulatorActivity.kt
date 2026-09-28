@@ -178,6 +178,7 @@ class EmulatorActivity : ComponentActivity() {
                 boundaries,
                 moneo.prefs,
                 moneo.repository,
+                lemmaCounts = moneo.lemmaCounts,
                 isRomSupported = { runner.romIdentity.value?.variant?.areaGateSupported == true },
                 mapAreas = com.poketrek.moneo.data.MapAreaLookup.loadFromAssets(applicationContext),
                 romKey = { runner.romIdentity.value?.crc32Hex },

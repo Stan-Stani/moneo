@@ -290,4 +290,24 @@ class MoneoAreaGateImplTest {
         assertTrue(d.shouldBlock)
         assertEquals("viridian_forest", d.destArea)
     }
+
+    @Test
+    fun `threshold is per destination area`() {
+        val config = object : AreaGateConfig {
+            override val enabled = true
+            override val thresholdPct = 90
+            override fun thresholdPctFor(areaId: String) = if (areaId == "route_1") 60 else 90
+        }
+        val gate = MoneoAreaGateImpl(
+            MapBoundaryLookup.parse(boundaryJson),
+            config,
+            FakeOracle(mapOf("route_1" to 0.7f, "viridian_forest" to 0.7f)),
+        )
+        // 70% clears route_1's 60% ...
+        assertEquals(AreaGateDecision.NONE, gate.evaluate(GbaKey.UP, snap(bank = 1, mapId = 0, x = 5, y = 0)))
+        // ... but not the forest's 90%, and the decision reports that threshold.
+        val d = gate.evaluate(GbaKey.RIGHT, snap(bank = 1, mapId = 0, x = 11, y = 8))
+        assertTrue(d.shouldBlock)
+        assertEquals(0.9f, d.thresholdFraction, 1e-6f)
+    }
 }

@@ -32,6 +32,11 @@ class MoneoModule private constructor(context: Context) {
     }
     private val captureDir: File = File(context.filesDir, "moneo")
 
+    /** Per-area lemma frequencies driving the area gate; empty if the asset is missing. */
+    val lemmaCounts: com.poketrek.moneo.data.AreaLemmaCounts =
+        runCatching { com.poketrek.moneo.data.AreaLemmaCounts.loadFromAssets(context) }
+            .getOrElse { com.poketrek.moneo.data.AreaLemmaCounts.EMPTY }
+
     /**
      * Lazily-attached runtime EWRAM capture. Built on demand once the
      * runner is constructed; call [bindCapture] from the activity.
@@ -141,6 +146,7 @@ class MoneoModule private constructor(context: Context) {
             initialSentencesRom = allRomSentences,
             initialSentencesStudy = allStudySentences,
         )
+        repository.setAreaLemmaCounts(lemmaCounts)
         // Drive optional-deck visibility from user prefs. Combined so toggles
         // take effect immediately without an app restart.
         GlobalScope.launch {
