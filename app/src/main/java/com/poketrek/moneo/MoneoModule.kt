@@ -32,6 +32,11 @@ class MoneoModule private constructor(context: Context) {
     }
     private val captureDir: File = File(context.filesDir, "moneo")
 
+    /** Hanja breakdowns for Sino-Korean words, shown on the card back. */
+    val hanja: com.poketrek.moneo.data.HanjaDict =
+        runCatching { com.poketrek.moneo.data.HanjaDict.loadFromAssets(context) }
+            .getOrElse { com.poketrek.moneo.data.HanjaDict.EMPTY }
+
     /** Per-area lemma frequencies driving the area gate; empty if the asset is missing. */
     val lemmaCounts: com.poketrek.moneo.data.AreaLemmaCounts =
         runCatching { com.poketrek.moneo.data.AreaLemmaCounts.loadFromAssets(context) }

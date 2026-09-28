@@ -1,0 +1,2571 @@
+{
+ "가구": {
+  "hanja": "家具",
+  "pickedBy": "dict"
+ },
+ "가능": {
+  "hanja": "可能",
+  "pickedBy": "dict"
+ },
+ "가득": null,
+ "가로": null,
+ "가루": null,
+ "가방": null,
+ "가속": {
+  "hanja": "加速",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "가장": null,
+ "가족": {
+  "hanja": "家族",
+  "pickedBy": "dict"
+ },
+ "각오": {
+  "hanja": "覺悟",
+  "pickedBy": "dict"
+ },
+ "각지": {
+  "hanja": "各地",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "각지기": null,
+ "간판": {
+  "hanja": "看板",
+  "pickedBy": "dict"
+ },
+ "갈색": {
+  "hanja": "褐色",
+  "pickedBy": "dict"
+ },
+ "감사": {
+  "hanja": "感謝",
+  "pickedBy": "dict"
+ },
+ "강": {
+  "hanja": "江",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "강연": {
+  "hanja": "講演",
+  "pickedBy": "dict"
+ },
+ "강하다": {
+  "hanja": "强하다",
+  "pickedBy": "dict"
+ },
+ "개": null,
+ "개미지옥": {
+  "hanja": "개미地獄",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "개최": {
+  "hanja": "開催",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "객기": {
+  "hanja": "客氣",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "거대": {
+  "hanja": "巨大",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "거리": null,
+ "거의": null,
+ "거절": {
+  "hanja": "拒絶",
+  "pickedBy": "dict"
+ },
+ "거지": null,
+ "건강": {
+  "hanja": "健康",
+  "pickedBy": "dict"
+ },
+ "건너편": {
+  "hanja": "건너便",
+  "pickedBy": "dict"
+ },
+ "건물": {
+  "hanja": "建物",
+  "pickedBy": "dict"
+ },
+ "게시판": {
+  "hanja": "揭示板",
+  "pickedBy": "dict"
+ },
+ "격투": {
+  "hanja": "格鬪",
+  "pickedBy": "dict"
+ },
+ "결과": {
+  "hanja": "結果",
+  "pickedBy": "dict"
+ },
+ "결정": {
+  "hanja": "決定",
+  "pickedBy": "dict"
+ },
+ "경비원": {
+  "hanja": "警備員",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "경우": {
+  "hanja": "境遇",
+  "pickedBy": "dict"
+ },
+ "경주": {
+  "hanja": "慶州",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "경품": {
+  "hanja": "景品",
+  "pickedBy": "dict"
+ },
+ "경험": {
+  "hanja": "經驗",
+  "pickedBy": "dict"
+ },
+ "계산": {
+  "hanja": "計算",
+  "pickedBy": "dict"
+ },
+ "계속": {
+  "hanja": "繼續",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "고기": null,
+ "고대": {
+  "hanja": "古代",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "고모": {
+  "hanja": "姑母",
+  "pickedBy": "dict"
+ },
+ "고속": {
+  "hanja": "高速",
+  "pickedBy": "dict"
+ },
+ "고통": {
+  "hanja": "苦痛",
+  "pickedBy": "dict"
+ },
+ "곤란": {
+  "hanja": "困難",
+  "pickedBy": "dict"
+ },
+ "공": null,
+ "공간": {
+  "hanja": "空間",
+  "pickedBy": "dict"
+ },
+ "공격": {
+  "hanja": "攻擊",
+  "pickedBy": "dict"
+ },
+ "공격력": {
+  "hanja": "攻擊力",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "공기": {
+  "hanja": "空氣",
+  "pickedBy": "dict"
+ },
+ "공부": {
+  "hanja": "工夫",
+  "pickedBy": "dict"
+ },
+ "공원": {
+  "hanja": "公園",
+  "pickedBy": "dict"
+ },
+ "공장": {
+  "hanja": "工場",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "공중": {
+  "hanja": "空中",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "공짜": {
+  "hanja": "空짜",
+  "pickedBy": "dict"
+ },
+ "과학": {
+  "hanja": "科學",
+  "pickedBy": "dict"
+ },
+ "과학자": {
+  "hanja": "科學者",
+  "pickedBy": "dict"
+ },
+ "관계": {
+  "hanja": "關係",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "관련": {
+  "hanja": "關聯",
+  "pickedBy": "dict"
+ },
+ "관장": {
+  "hanja": "館長",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "광합성": {
+  "hanja": "光合成",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "괴력": {
+  "hanja": "怪力",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "굉장히": {
+  "hanja": "宏壯히",
+  "pickedBy": "dict"
+ },
+ "교수": {
+  "hanja": "敎授",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "교체": {
+  "hanja": "交替",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "교환": {
+  "hanja": "交換",
+  "pickedBy": "dict"
+ },
+ "구하다": {
+  "hanja": "救하다",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "국화": {
+  "hanja": "菊花",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "규칙": {
+  "hanja": "規則",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "근성": {
+  "hanja": "根性",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "근처": {
+  "hanja": "近處",
+  "pickedBy": "dict"
+ },
+ "금방": {
+  "hanja": "今方",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "금속음": {
+  "hanja": "金屬音",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "금지": {
+  "hanja": "禁止",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "급류": {
+  "hanja": "急流",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "급소": {
+  "hanja": "急所",
+  "pickedBy": "dict"
+ },
+ "급하다": {
+  "hanja": "急하다",
+  "pickedBy": "dict"
+ },
+ "기계": {
+  "hanja": "機械",
+  "pickedBy": "dict"
+ },
+ "기관총": {
+  "hanja": "機關銃",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "기록": {
+  "hanja": "記錄",
+  "pickedBy": "dict"
+ },
+ "기본": {
+  "hanja": "基本",
+  "pickedBy": "dict"
+ },
+ "기분": {
+  "hanja": "氣分",
+  "pickedBy": "dict"
+ },
+ "기분파": {
+  "hanja": "氣分派",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "기사회생": {
+  "hanja": "起死回生",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "기세": {
+  "hanja": "氣勢",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "기술": {
+  "hanja": "技術",
+  "pickedBy": "dict"
+ },
+ "기억": {
+  "hanja": "記憶",
+  "pickedBy": "dict"
+ },
+ "기운": {
+  "hanja": "氣運",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "기자": {
+  "hanja": "記者",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "기절": {
+  "hanja": "氣絶",
+  "pickedBy": "dict"
+ },
+ "기준": {
+  "hanja": "基準",
+  "pickedBy": "dict"
+ },
+ "기초": {
+  "hanja": "基礎",
+  "pickedBy": "dict"
+ },
+ "기타": null,
+ "난동": {
+  "hanja": "亂動",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "남동생": {
+  "hanja": "男同生",
+  "pickedBy": "dict"
+ },
+ "남자": {
+  "hanja": "男子",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "내기": null,
+ "내용": {
+  "hanja": "內容",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "노란색": {
+  "hanja": "노란色",
+  "pickedBy": "dict"
+ },
+ "노랑": null,
+ "노래": null,
+ "노력": {
+  "hanja": "努力",
+  "pickedBy": "dict"
+ },
+ "노인": {
+  "hanja": "老人",
+  "pickedBy": "dict"
+ },
+ "녹기": null,
+ "녹다": null,
+ "논문": {
+  "hanja": "論文",
+  "pickedBy": "dict"
+ },
+ "능력": {
+  "hanja": "能力",
+  "pickedBy": "dict"
+ },
+ "다시": null,
+ "다음": null,
+ "다행": {
+  "hanja": "多幸",
+  "pickedBy": "dict"
+ },
+ "단련": {
+  "hanja": "鍛鍊",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "단어": {
+  "hanja": "單語",
+  "pickedBy": "dict"
+ },
+ "답례": {
+  "hanja": "答禮",
+  "pickedBy": "dict"
+ },
+ "당장": {
+  "hanja": "當場",
+  "pickedBy": "dict"
+ },
+ "당하다": {
+  "hanja": "當하다",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "대기": {
+  "hanja": "待機",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "대답": {
+  "hanja": "對答",
+  "pickedBy": "dict"
+ },
+ "대신": {
+  "hanja": "代身",
+  "pickedBy": "dict"
+ },
+ "대의": {
+  "hanja": "大義",
+  "pickedBy": "dict"
+ },
+ "대전": {
+  "hanja": "對戰",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "대체": {
+  "hanja": "大體",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "대폭발": {
+  "hanja": "大爆發",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "대하다": {
+  "hanja": "對하다",
+  "pickedBy": "dict"
+ },
+ "대화": {
+  "hanja": "對話",
+  "pickedBy": "dict"
+ },
+ "덕분": {
+  "hanja": "德分",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "도감": {
+  "hanja": "圖鑑",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "도구": {
+  "hanja": "道具",
+  "pickedBy": "dict"
+ },
+ "도로": {
+  "hanja": "道路",
+  "pickedBy": "dict"
+ },
+ "도망": {
+  "hanja": "逃亡",
+  "pickedBy": "dict"
+ },
+ "도망가다": {
+  "hanja": "逃亡가다",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "도망치다": {
+  "hanja": "逃亡치다",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "도발": {
+  "hanja": "挑發",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "도시": {
+  "hanja": "都市",
+  "pickedBy": "dict"
+ },
+ "도장": {
+  "hanja": "道場",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "도전": {
+  "hanja": "挑戰",
+  "pickedBy": "dict"
+ },
+ "도전하다": {
+  "hanja": "挑戰하다",
+  "pickedBy": "dict"
+ },
+ "도주": {
+  "hanja": "逃走",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "도중": {
+  "hanja": "途中",
+  "pickedBy": "dict"
+ },
+ "독가스": {
+  "hanja": "毒가스",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "독침": {
+  "hanja": "毒針",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "돌진": {
+  "hanja": "突進",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "동경": {
+  "hanja": "憧憬",
+  "pickedBy": "dict"
+ },
+ "동굴": {
+  "hanja": "洞窟",
+  "pickedBy": "dict"
+ },
+ "동료": {
+  "hanja": "同僚",
+  "pickedBy": "dict"
+ },
+ "동물": {
+  "hanja": "動物",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "동생": {
+  "hanja": "同生",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "동시": {
+  "hanja": "同時",
+  "pickedBy": "dict"
+ },
+ "동안": null,
+ "동전": {
+  "hanja": "銅錢",
+  "pickedBy": "dict"
+ },
+ "둔감": {
+  "hanja": "鈍感",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "등나무": {
+  "hanja": "藤나무",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "등록": {
+  "hanja": "登錄",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "로망": null,
+ "마구": null,
+ "마리": null,
+ "마비": {
+  "hanja": "痲痺",
+  "pickedBy": "dict"
+ },
+ "마주": null,
+ "마치": null,
+ "막": null,
+ "만약": {
+  "hanja": "萬若",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "만한": null,
+ "만화": {
+  "hanja": "漫畵",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "망원경": {
+  "hanja": "望遠鏡",
+  "pickedBy": "dict"
+ },
+ "매우": null,
+ "매일": {
+  "hanja": "每日",
+  "pickedBy": "dict"
+ },
+ "맥주": {
+  "hanja": "麥酒",
+  "pickedBy": "dict"
+ },
+ "맹독": {
+  "hanja": "猛毒",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "맹화": {
+  "hanja": "猛火",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "면역": {
+  "hanja": "免疫",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "명상": {
+  "hanja": "冥想",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "명중": {
+  "hanja": "命中",
+  "pickedBy": "dict"
+ },
+ "명중률": {
+  "hanja": "命中率",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "모두": null,
+ "모습": null,
+ "모양": {
+  "hanja": "模樣",
+  "pickedBy": "dict"
+ },
+ "모험": {
+  "hanja": "冒險",
+  "pickedBy": "dict"
+ },
+ "목적": {
+  "hanja": "目的",
+  "pickedBy": "dict"
+ },
+ "목표": {
+  "hanja": "目標",
+  "pickedBy": "dict"
+ },
+ "무리": {
+  "hanja": "無理",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "무사히": {
+  "hanja": "無事히",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "무선": {
+  "hanja": "無線",
+  "pickedBy": "dict"
+ },
+ "무승부": {
+  "hanja": "無勝負",
+  "pickedBy": "dict"
+ },
+ "무척": null,
+ "물건": {
+  "hanja": "物件",
+  "pickedBy": "dict"
+ },
+ "물기": null,
+ "미래": {
+  "hanja": "未來",
+  "pickedBy": "dict"
+ },
+ "미리": null,
+ "미소": {
+  "hanja": "微笑",
+  "pickedBy": "dict"
+ },
+ "미안": {
+  "hanja": "未安",
+  "pickedBy": "dict"
+ },
+ "미인": {
+  "hanja": "美人",
+  "pickedBy": "dict"
+ },
+ "미확인": {
+  "hanja": "未確認",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "박물관": {
+  "hanja": "博物館",
+  "pickedBy": "dict"
+ },
+ "박사": {
+  "hanja": "博士",
+  "pickedBy": "dict"
+ },
+ "반동": {
+  "hanja": "反動",
+  "pickedBy": "dict"
+ },
+ "반바지": {
+  "hanja": "半바지",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "반응": {
+  "hanja": "反應",
+  "pickedBy": "dict"
+ },
+ "발견": {
+  "hanja": "發見",
+  "pickedBy": "dict"
+ },
+ "발광": {
+  "hanja": "發光",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "발사": {
+  "hanja": "發射",
+  "pickedBy": "dict"
+ },
+ "발생": {
+  "hanja": "發生",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "발전소": {
+  "hanja": "發電所",
+  "pickedBy": "dict"
+ },
+ "발휘": {
+  "hanja": "發揮",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "방금": {
+  "hanja": "方今",
+  "pickedBy": "dict"
+ },
+ "방법": {
+  "hanja": "方法",
+  "pickedBy": "dict"
+ },
+ "방송": {
+  "hanja": "放送",
+  "pickedBy": "dict"
+ },
+ "방식": {
+  "hanja": "方式",
+  "pickedBy": "dict"
+ },
+ "방심": {
+  "hanja": "放心",
+  "pickedBy": "dict"
+ },
+ "방어": {
+  "hanja": "防禦",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "방음": {
+  "hanja": "防音",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "방해": {
+  "hanja": "妨害",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "방황": {
+  "hanja": "彷徨",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "배지": null,
+ "백화점": {
+  "hanja": "百貨店",
+  "pickedBy": "dict"
+ },
+ "변색": {
+  "hanja": "變色",
+  "pickedBy": "dict"
+ },
+ "변신": {
+  "hanja": "變身",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "변하다": {
+  "hanja": "變하다",
+  "pickedBy": "dict"
+ },
+ "변화": {
+  "hanja": "變化",
+  "pickedBy": "dict"
+ },
+ "별로": {
+  "hanja": "別로",
+  "pickedBy": "dict"
+ },
+ "별명": {
+  "hanja": "別名",
+  "pickedBy": "dict"
+ },
+ "보관": {
+  "hanja": "保管",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "보답": {
+  "hanja": "報答",
+  "pickedBy": "dict"
+ },
+ "보물": {
+  "hanja": "寶物",
+  "pickedBy": "dict"
+ },
+ "보석": {
+  "hanja": "寶石",
+  "pickedBy": "dict"
+ },
+ "보조": {
+  "hanja": "補助",
+  "pickedBy": "dict"
+ },
+ "보통": {
+  "hanja": "普通",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "보호": {
+  "hanja": "保護",
+  "pickedBy": "dict"
+ },
+ "보호색": {
+  "hanja": "保護色",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "복사": {
+  "hanja": "複寫",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "복안": {
+  "hanja": "複眼",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "본부": {
+  "hanja": "本部",
+  "pickedBy": "dict"
+ },
+ "본사": {
+  "hanja": "本社",
+  "pickedBy": "dict"
+ },
+ "봉인": {
+  "hanja": "封印",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "부": null,
+ "부근": {
+  "hanja": "附近",
+  "pickedBy": "dict"
+ },
+ "부리": null,
+ "부모": {
+  "hanja": "父母",
+  "pickedBy": "dict"
+ },
+ "부부": {
+  "hanja": "夫婦",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "부분": {
+  "hanja": "部分",
+  "pickedBy": "dict"
+ },
+ "부산": {
+  "hanja": "釜山",
+  "pickedBy": "dict"
+ },
+ "부유": {
+  "hanja": "浮遊",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "부인": null,
+ "부적": {
+  "hanja": "符籍",
+  "pickedBy": "dict"
+ },
+ "부족": null,
+ "부탁": {
+  "hanja": "付託",
+  "pickedBy": "dict"
+ },
+ "부화": {
+  "hanja": "孵化",
+  "pickedBy": "dict"
+ },
+ "부활": {
+  "hanja": "復活",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "분": null,
+ "분노": {
+  "hanja": "憤怒",
+  "pickedBy": "dict"
+ },
+ "분명": {
+  "hanja": "分明",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "분명히": {
+  "hanja": "分明히",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "분신": {
+  "hanja": "分身",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "분화": {
+  "hanja": "噴火",
+  "pickedBy": "dict"
+ },
+ "불면": {
+  "hanja": "不眠",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "비": null,
+ "비밀": {
+  "hanja": "秘密",
+  "pickedBy": "dict"
+ },
+ "비전": null,
+ "비축": {
+  "hanja": "備蓄",
+  "pickedBy": "dict"
+ },
+ "비행": {
+  "hanja": "飛行",
+  "pickedBy": "dict"
+ },
+ "빨간색": {
+  "hanja": "빨간色",
+  "pickedBy": "dict"
+ },
+ "사랑": null,
+ "사막": {
+  "hanja": "沙漠",
+  "pickedBy": "dict"
+ },
+ "사무": {
+  "hanja": "事務",
+  "pickedBy": "dict"
+ },
+ "사범": {
+  "hanja": "師範",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "사실": {
+  "hanja": "事實",
+  "pickedBy": "dict"
+ },
+ "사양": {
+  "hanja": "辭讓",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "사용": {
+  "hanja": "使用",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "사용법": {
+  "hanja": "使用法",
+  "pickedBy": "dict"
+ },
+ "사이": null,
+ "사장": {
+  "hanja": "社長",
+  "pickedBy": "dict"
+ },
+ "사정": {
+  "hanja": "事情",
+  "pickedBy": "dict"
+ },
+ "사진": {
+  "hanja": "寫眞",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "사천왕": {
+  "hanja": "四天王",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "사탕": {
+  "hanja": "砂糖",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "산": {
+  "hanja": "山",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "산길": {
+  "hanja": "山길",
+  "pickedBy": "dict"
+ },
+ "산소": null,
+ "산책": {
+  "hanja": "散策",
+  "pickedBy": "dict"
+ },
+ "삼다": null,
+ "상금": {
+  "hanja": "賞金",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "상대": {
+  "hanja": "相對",
+  "pickedBy": "dict"
+ },
+ "상대방": {
+  "hanja": "相對方",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "상성": {
+  "hanja": "相性",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "상처": {
+  "hanja": "傷處",
+  "pickedBy": "dict"
+ },
+ "상태": {
+  "hanja": "狀態",
+  "pickedBy": "dict"
+ },
+ "상품": null,
+ "상황": {
+  "hanja": "狀況",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "생각": null,
+ "생명체": {
+  "hanja": "生命體",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "생물": {
+  "hanja": "生物",
+  "pickedBy": "dict"
+ },
+ "서다": null,
+ "서로": null,
+ "서식": {
+  "hanja": "棲息",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "서쪽": {
+  "hanja": "西쪽",
+  "pickedBy": "dict"
+ },
+ "석실": {
+  "hanja": "石室",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "석유": {
+  "hanja": "石油",
+  "pickedBy": "dict"
+ },
+ "선물": {
+  "hanja": "膳物",
+  "pickedBy": "dict"
+ },
+ "선생": {
+  "hanja": "先生",
+  "pickedBy": "dict"
+ },
+ "선수": {
+  "hanja": "選手",
+  "pickedBy": "dict"
+ },
+ "선장": {
+  "hanja": "船長",
+  "pickedBy": "dict"
+ },
+ "선택": {
+  "hanja": "選擇",
+  "pickedBy": "dict"
+ },
+ "설명": {
+  "hanja": "說明",
+  "pickedBy": "dict"
+ },
+ "설정": {
+  "hanja": "設定",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "성격": {
+  "hanja": "性格",
+  "pickedBy": "dict"
+ },
+ "성실": {
+  "hanja": "誠實",
+  "pickedBy": "dict"
+ },
+ "성장": {
+  "hanja": "成長",
+  "pickedBy": "dict"
+ },
+ "세": null,
+ "세계": {
+  "hanja": "世界",
+  "pickedBy": "dict"
+ },
+ "세기": {
+  "hanja": "世紀",
+  "pickedBy": "dict"
+ },
+ "세상": {
+  "hanja": "世上",
+  "pickedBy": "dict"
+ },
+ "세포": {
+  "hanja": "細胞",
+  "pickedBy": "dict"
+ },
+ "소금": null,
+ "소녀": {
+  "hanja": "少女",
+  "pickedBy": "dict"
+ },
+ "소년": {
+  "hanja": "少年",
+  "pickedBy": "dict"
+ },
+ "소란": {
+  "hanja": "騷亂",
+  "pickedBy": "dict"
+ },
+ "소령": {
+  "hanja": "少領",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "소리": null,
+ "소문": {
+  "hanja": "所聞",
+  "pickedBy": "dict"
+ },
+ "소음": {
+  "hanja": "騷音",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "소주": {
+  "hanja": "燒酒",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "소포": {
+  "hanja": "小包",
+  "pickedBy": "dict"
+ },
+ "속": null,
+ "속도": {
+  "hanja": "速度",
+  "pickedBy": "dict"
+ },
+ "손녀": {
+  "hanja": "孫女",
+  "pickedBy": "dict"
+ },
+ "손자": {
+  "hanja": "孫子",
+  "pickedBy": "dict"
+ },
+ "수고": null,
+ "수많다": {
+  "hanja": "數많다",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "수영": {
+  "hanja": "水泳",
+  "pickedBy": "dict"
+ },
+ "수재": {
+  "hanja": "秀才",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "수치": {
+  "hanja": "數値",
+  "pickedBy": "dict"
+ },
+ "수행": {
+  "hanja": "修行",
+  "pickedBy": "dict"
+ },
+ "순간": {
+  "hanja": "瞬間",
+  "pickedBy": "dict"
+ },
+ "순서": {
+  "hanja": "順序",
+  "pickedBy": "dict"
+ },
+ "술": null,
+ "술잔": {
+  "hanja": "술盞",
+  "pickedBy": "dict"
+ },
+ "슬슬": null,
+ "습기": {
+  "hanja": "濕氣",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "승리": {
+  "hanja": "勝利",
+  "pickedBy": "dict"
+ },
+ "승부": {
+  "hanja": "勝負",
+  "pickedBy": "dict"
+ },
+ "시간": {
+  "hanja": "時間",
+  "pickedBy": "dict"
+ },
+ "시대": {
+  "hanja": "時代",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "시작": {
+  "hanja": "始作",
+  "pickedBy": "dict"
+ },
+ "시합": {
+  "hanja": "試合",
+  "pickedBy": "dict"
+ },
+ "시험": {
+  "hanja": "試驗",
+  "pickedBy": "dict"
+ },
+ "식의": null,
+ "신경": {
+  "hanja": "神經",
+  "pickedBy": "dict"
+ },
+ "신비": {
+  "hanja": "神秘",
+  "pickedBy": "dict"
+ },
+ "신속": {
+  "hanja": "神速",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "신청": {
+  "hanja": "申請",
+  "pickedBy": "dict"
+ },
+ "신체": {
+  "hanja": "身體",
+  "pickedBy": "dict"
+ },
+ "신통력": {
+  "hanja": "神通力",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "실력": {
+  "hanja": "實力",
+  "pickedBy": "dict"
+ },
+ "실망": {
+  "hanja": "失望",
+  "pickedBy": "dict"
+ },
+ "실수": {
+  "hanja": "失手",
+  "pickedBy": "dict"
+ },
+ "실은": {
+  "hanja": "實은",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "실패": {
+  "hanja": "失敗",
+  "pickedBy": "dict"
+ },
+ "심다": null,
+ "심록": {
+  "hanja": "深綠",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "십자": {
+  "hanja": "十字",
+  "pickedBy": "dict"
+ },
+ "아기": null,
+ "아마": null,
+ "아무": null,
+ "아아": null,
+ "아주": null,
+ "악몽": {
+  "hanja": "惡夢",
+  "pickedBy": "dict"
+ },
+ "악취": {
+  "hanja": "惡臭",
+  "pickedBy": "dict"
+ },
+ "안경": {
+  "hanja": "眼鏡",
+  "pickedBy": "dict"
+ },
+ "안녕": {
+  "hanja": "安寧",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "안심": {
+  "hanja": "安心",
+  "pickedBy": "dict"
+ },
+ "안주": {
+  "hanja": "按酒",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "암석": {
+  "hanja": "巖石",
+  "pickedBy": "dict"
+ },
+ "압정": {
+  "hanja": "押釘",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "애정": {
+  "hanja": "愛情",
+  "pickedBy": "dict"
+ },
+ "야구": {
+  "hanja": "野球",
+  "pickedBy": "dict"
+ },
+ "야생": {
+  "hanja": "野生",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "약간": {
+  "hanja": "若干",
+  "pickedBy": "dict"
+ },
+ "약하다": {
+  "hanja": "弱하다",
+  "pickedBy": "dict"
+ },
+ "양복": {
+  "hanja": "洋服",
+  "pickedBy": "dict"
+ },
+ "양분": {
+  "hanja": "養分",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "양쪽": {
+  "hanja": "兩쪽",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "어서": null,
+ "어차피": {
+  "hanja": "於此彼",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "여성": {
+  "hanja": "女性",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "여자": {
+  "hanja": "女子",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "여행": {
+  "hanja": "旅行",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "역린": {
+  "hanja": "逆鱗",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "역할": {
+  "hanja": "役割",
+  "pickedBy": "dict"
+ },
+ "연결": {
+  "hanja": "連結",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "연구": {
+  "hanja": "硏究",
+  "pickedBy": "dict"
+ },
+ "연구소": {
+  "hanja": "硏究所",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "연기": {
+  "hanja": "煙氣",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "연락": {
+  "hanja": "連絡",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "연막": {
+  "hanja": "煙幕",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "연분홍": {
+  "hanja": "軟粉紅",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "연속": {
+  "hanja": "連續",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "연습": {
+  "hanja": "練習",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "열매": null,
+ "열심히": {
+  "hanja": "熱心히",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "열풍": {
+  "hanja": "熱風",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "열혈": {
+  "hanja": "熱血",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "엽록소": {
+  "hanja": "葉綠素",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "영감": {
+  "hanja": "令監",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "영매": {
+  "hanja": "靈媒",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "영양": {
+  "hanja": "營養",
+  "pickedBy": "dict"
+ },
+ "영역": {
+  "hanja": "領域",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "영혼": {
+  "hanja": "靈魂",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "예감": {
+  "hanja": "豫感",
+  "pickedBy": "dict"
+ },
+ "예전": null,
+ "오리": null,
+ "오이": null,
+ "오후": {
+  "hanja": "午後",
+  "pickedBy": "dict"
+ },
+ "옥상": {
+  "hanja": "屋上",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "온도": {
+  "hanja": "溫度",
+  "pickedBy": "dict"
+ },
+ "온천": {
+  "hanja": "溫泉",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "완벽": {
+  "hanja": "完璧",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "완성": {
+  "hanja": "完成",
+  "pickedBy": "dict"
+ },
+ "완전히": {
+  "hanja": "完全히",
+  "pickedBy": "dict"
+ },
+ "요리": {
+  "hanja": "料理",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "용돈": {
+  "hanja": "用돈",
+  "pickedBy": "dict"
+ },
+ "용서": {
+  "hanja": "容恕",
+  "pickedBy": "dict"
+ },
+ "용해액": {
+  "hanja": "溶解液",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "우산": {
+  "hanja": "雨傘",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "우선": {
+  "hanja": "于先",
+  "pickedBy": "dict"
+ },
+ "우승": {
+  "hanja": "優勝",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "우유": {
+  "hanja": "牛乳",
+  "pickedBy": "dict"
+ },
+ "우주": {
+  "hanja": "宇宙",
+  "pickedBy": "dict"
+ },
+ "운동": {
+  "hanja": "運動",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "원념": {
+  "hanja": "怨念",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "원래": {
+  "hanja": "元來",
+  "pickedBy": "dict"
+ },
+ "원장": {
+  "hanja": "院長",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "원한": {
+  "hanja": "怨恨",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "위력": {
+  "hanja": "威力",
+  "pickedBy": "dict"
+ },
+ "위하다": {
+  "hanja": "爲하다",
+  "pickedBy": "dict"
+ },
+ "위험": {
+  "hanja": "危險",
+  "pickedBy": "dict"
+ },
+ "위협": {
+  "hanja": "威脅",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "유도": {
+  "hanja": "柔道",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "유령": {
+  "hanja": "幽靈",
+  "pickedBy": "dict"
+ },
+ "유리": {
+  "hanja": "琉璃",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "유연": {
+  "hanja": "柔軟",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "유적": {
+  "hanja": "遺跡",
+  "pickedBy": "dict"
+ },
+ "유행": {
+  "hanja": "流行",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "음색": {
+  "hanja": "音色",
+  "pickedBy": "dict"
+ },
+ "음식": {
+  "hanja": "飮食",
+  "pickedBy": "dict"
+ },
+ "응원": {
+  "hanja": "應援",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "의기양양": {
+  "hanja": "意氣揚揚",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "의미": {
+  "hanja": "意味",
+  "pickedBy": "dict"
+ },
+ "의욕": {
+  "hanja": "意欲",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "의지": {
+  "hanja": "意志",
+  "pickedBy": "dict"
+ },
+ "의하다": {
+  "hanja": "依하다",
+  "pickedBy": "dict"
+ },
+ "이동": {
+  "hanja": "移動",
+  "pickedBy": "dict"
+ },
+ "이리": null,
+ "이모": {
+  "hanja": "姨母",
+  "pickedBy": "dict"
+ },
+ "이미": null,
+ "이번": {
+  "hanja": "이番",
+  "pickedBy": "dict"
+ },
+ "이사": {
+  "hanja": "移徙",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "이상": {
+  "hanja": "異常",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "이용": {
+  "hanja": "利用",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "이유": {
+  "hanja": "理由",
+  "pickedBy": "dict"
+ },
+ "이제": null,
+ "이하": {
+  "hanja": "以下",
+  "pickedBy": "dict"
+ },
+ "이후": {
+  "hanja": "以後",
+  "pickedBy": "dict"
+ },
+ "인간": {
+  "hanja": "人間",
+  "pickedBy": "dict"
+ },
+ "인기": {
+  "hanja": "人氣",
+  "pickedBy": "dict"
+ },
+ "인분": {
+  "hanja": "鱗粉",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "인사": {
+  "hanja": "人事",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "인삼": {
+  "hanja": "人蔘",
+  "pickedBy": "dict"
+ },
+ "인용": {
+  "hanja": "引用",
+  "pickedBy": "dict"
+ },
+ "인원수": {
+  "hanja": "人員數",
+  "pickedBy": "dict"
+ },
+ "인정": {
+  "hanja": "認定",
+  "pickedBy": "dict"
+ },
+ "인하다": {
+  "hanja": "因하다",
+  "pickedBy": "dict"
+ },
+ "인형": {
+  "hanja": "人形",
+  "pickedBy": "dict"
+ },
+ "일격": {
+  "hanja": "一擊",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "일기": {
+  "hanja": "日記",
+  "pickedBy": "dict"
+ },
+ "일단": {
+  "hanja": "一旦",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "일람": {
+  "hanja": "一覽",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "일부": {
+  "hanja": "一部",
+  "pickedBy": "dict"
+ },
+ "입구": {
+  "hanja": "入口",
+  "pickedBy": "dict"
+ },
+ "자기암시": {
+  "hanja": "自己暗示",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "자다": null,
+ "자력": {
+  "hanja": "磁力",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "자리": null,
+ "자세히": {
+  "hanja": "仔細히",
+  "pickedBy": "dict"
+ },
+ "자식": {
+  "hanja": "子息",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "자신": {
+  "hanja": "自身",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "자연": {
+  "hanja": "自然",
+  "pickedBy": "dict"
+ },
+ "자주": null,
+ "자폭": {
+  "hanja": "自爆",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "작성": {
+  "hanja": "作成",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "잔비": null,
+ "잔치": null,
+ "잠금장치": {
+  "hanja": "잠금裝置",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "잠시": {
+  "hanja": "暫時",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "잡다": null,
+ "장": {
+  "hanja": "張",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "장막": {
+  "hanja": "帳幕",
+  "pickedBy": "dict"
+ },
+ "장사": {
+  "hanja": "壯士",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "장소": {
+  "hanja": "場所",
+  "pickedBy": "dict"
+ },
+ "장치": {
+  "hanja": "裝置",
+  "pickedBy": "dict"
+ },
+ "재료": {
+  "hanja": "材料",
+  "pickedBy": "dict"
+ },
+ "저수": {
+  "hanja": "貯水",
+  "pickedBy": "dict"
+ },
+ "저주": {
+  "hanja": "詛呪",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "저택": {
+  "hanja": "邸宅",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "적다": null,
+ "전광석화": {
+  "hanja": "電光石火",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "전국": {
+  "hanja": "全國",
+  "pickedBy": "dict"
+ },
+ "전기": {
+  "hanja": "電氣",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "전기쇼크": {
+  "hanja": "電氣쇼크",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "전단지": {
+  "hanja": "傳單紙",
+  "pickedBy": "dict"
+ },
+ "전부": {
+  "hanja": "全部",
+  "pickedBy": "dict"
+ },
+ "전설": {
+  "hanja": "傳說",
+  "pickedBy": "dict"
+ },
+ "전송": {
+  "hanja": "傳送",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "전신": {
+  "hanja": "全身",
+  "pickedBy": "dict"
+ },
+ "전용": {
+  "hanja": "專用",
+  "pickedBy": "dict"
+ },
+ "전원": {
+  "hanja": "電源",
+  "pickedBy": "dict"
+ },
+ "전자": {
+  "hanja": "電子",
+  "pickedBy": "dict"
+ },
+ "전투": {
+  "hanja": "戰鬪",
+  "pickedBy": "dict"
+ },
+ "전하다": {
+  "hanja": "傳하다",
+  "pickedBy": "dict"
+ },
+ "전혀": {
+  "hanja": "全혀",
+  "pickedBy": "dict"
+ },
+ "전환": {
+  "hanja": "轉換",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "절대": {
+  "hanja": "絶對",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "절대로": {
+  "hanja": "絶對로",
+  "pickedBy": "dict"
+ },
+ "절대영도": {
+  "hanja": "絶對零度",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "절반": {
+  "hanja": "折半",
+  "pickedBy": "dict"
+ },
+ "점령": {
+  "hanja": "占領",
+  "pickedBy": "dict"
+ },
+ "점점": {
+  "hanja": "漸漸",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "점착": {
+  "hanja": "粘着",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "접속": {
+  "hanja": "接續",
+  "pickedBy": "dict"
+ },
+ "접수처": {
+  "hanja": "接受處",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "접촉": {
+  "hanja": "接觸",
+  "pickedBy": "dict"
+ },
+ "정도": {
+  "hanja": "程度",
+  "pickedBy": "dict"
+ },
+ "정리": {
+  "hanja": "整理",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "정말": {
+  "hanja": "正말",
+  "pickedBy": "dict"
+ },
+ "정말로": {
+  "hanja": "正말로",
+  "pickedBy": "dict"
+ },
+ "정보": {
+  "hanja": "情報",
+  "pickedBy": "dict"
+ },
+ "정신": {
+  "hanja": "精神",
+  "pickedBy": "dict"
+ },
+ "정신력": {
+  "hanja": "精神力",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "정전기": {
+  "hanja": "靜電氣",
+  "pickedBy": "dict"
+ },
+ "정점": {
+  "hanja": "頂點",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "정체": {
+  "hanja": "正體",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "정하다": {
+  "hanja": "定하다",
+  "pickedBy": "dict"
+ },
+ "정확히": {
+  "hanja": "正確히",
+  "pickedBy": "dict"
+ },
+ "제법": null,
+ "제일": {
+  "hanja": "第一",
+  "pickedBy": "dict"
+ },
+ "제품": {
+  "hanja": "製品",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "조각": {
+  "hanja": "彫刻",
+  "pickedBy": "dict"
+ },
+ "조금": null,
+ "조련사": {
+  "hanja": "調練師",
+  "pickedBy": "dict"
+ },
+ "조류": {
+  "hanja": "鳥類",
+  "pickedBy": "dict"
+ },
+ "조사": {
+  "hanja": "調査",
+  "pickedBy": "dict"
+ },
+ "조수": {
+  "hanja": "助手",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "조심": {
+  "hanja": "操心",
+  "pickedBy": "dict"
+ },
+ "조심하다": {
+  "hanja": "操心하다",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "조작": {
+  "hanja": "操作",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "조정": {
+  "hanja": "調整",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "조합": {
+  "hanja": "組合",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "존경": {
+  "hanja": "尊敬",
+  "pickedBy": "dict"
+ },
+ "존재": {
+  "hanja": "存在",
+  "pickedBy": "dict"
+ },
+ "졸음": null,
+ "종료": {
+  "hanja": "終了",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "종류": {
+  "hanja": "種類",
+  "pickedBy": "dict"
+ },
+ "좌우": {
+  "hanja": "左右",
+  "pickedBy": "dict"
+ },
+ "주": {
+  "hanja": "週",
+  "pickedBy": "dict"
+ },
+ "주다": null,
+ "주로": {
+  "hanja": "主로",
+  "pickedBy": "dict"
+ },
+ "주마": null,
+ "주변": {
+  "hanja": "周邊",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "주사": {
+  "hanja": "注射",
+  "pickedBy": "dict"
+ },
+ "주소": {
+  "hanja": "住所",
+  "pickedBy": "dict"
+ },
+ "주식회사": {
+  "hanja": "株式會社",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "주위": {
+  "hanja": "周圍",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "주의": {
+  "hanja": "注意",
+  "pickedBy": "dict"
+ },
+ "주인": {
+  "hanja": "主人",
+  "pickedBy": "dict"
+ },
+ "주제": {
+  "hanja": "主題",
+  "pickedBy": "dict"
+ },
+ "준비": {
+  "hanja": "準備",
+  "pickedBy": "dict"
+ },
+ "중심": {
+  "hanja": "中心",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "중요": {
+  "hanja": "重要",
+  "pickedBy": "dict"
+ },
+ "중지": {
+  "hanja": "中止",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "즉시": {
+  "hanja": "卽時",
+  "pickedBy": "dict"
+ },
+ "증표": {
+  "hanja": "證票",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "지구": {
+  "hanja": "地球",
+  "pickedBy": "dict"
+ },
+ "지금": {
+  "hanja": "只今",
+  "pickedBy": "dict"
+ },
+ "지난번": {
+  "hanja": "지난番",
+  "pickedBy": "dict"
+ },
+ "지도": {
+  "hanja": "地圖",
+  "pickedBy": "dict"
+ },
+ "지면": {
+  "hanja": "地面",
+  "pickedBy": "dict"
+ },
+ "지방": {
+  "hanja": "地方",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "지역": {
+  "hanja": "地域",
+  "pickedBy": "dict"
+ },
+ "지진": {
+  "hanja": "地震",
+  "pickedBy": "dict"
+ },
+ "지하": {
+  "hanja": "地下",
+  "pickedBy": "dict"
+ },
+ "지하도": {
+  "hanja": "地下道",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "직접": {
+  "hanja": "直接",
+  "pickedBy": "dict"
+ },
+ "진짜": {
+  "hanja": "眞짜",
+  "pickedBy": "dict"
+ },
+ "진행": {
+  "hanja": "進行",
+  "pickedBy": "dict"
+ },
+ "진화": {
+  "hanja": "進化",
+  "pickedBy": "dict"
+ },
+ "집사": {
+  "hanja": "執事",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "차례": {
+  "hanja": "次例",
+  "pickedBy": "dict"
+ },
+ "착각": {
+  "hanja": "錯覺",
+  "pickedBy": "dict"
+ },
+ "참가": {
+  "hanja": "參加",
+  "pickedBy": "dict"
+ },
+ "참고": {
+  "hanja": "參考",
+  "pickedBy": "dict"
+ },
+ "참기": null,
+ "창고": {
+  "hanja": "倉庫",
+  "pickedBy": "dict"
+ },
+ "천하장사": {
+  "hanja": "天下壯士",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "천하제일": {
+  "hanja": "天下第一",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "철": {
+  "hanja": "鐵",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "철벽": {
+  "hanja": "鐵壁",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "청년": {
+  "hanja": "靑年",
+  "pickedBy": "dict"
+ },
+ "체력": {
+  "hanja": "體力",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "체육관": {
+  "hanja": "體育館",
+  "pickedBy": "dict"
+ },
+ "초능력": {
+  "hanja": "超能力",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "초음파": {
+  "hanja": "超音波",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "촉수": {
+  "hanja": "觸手",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "최강": {
+  "hanja": "最强",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "최고": {
+  "hanja": "最高",
+  "pickedBy": "dict"
+ },
+ "최근": {
+  "hanja": "最近",
+  "pickedBy": "dict"
+ },
+ "최대": {
+  "hanja": "最大",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "최면술": {
+  "hanja": "催眠術",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "최선": {
+  "hanja": "最善",
+  "pickedBy": "dict"
+ },
+ "추위": null,
+ "축전": {
+  "hanja": "蓄電",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "축하": {
+  "hanja": "祝賀",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "출구": {
+  "hanja": "出口",
+  "pickedBy": "dict"
+ },
+ "충격": {
+  "hanja": "衝擊",
+  "pickedBy": "dict"
+ },
+ "충전": {
+  "hanja": "充電",
+  "pickedBy": "dict"
+ },
+ "취미": {
+  "hanja": "趣味",
+  "pickedBy": "dict"
+ },
+ "취소": {
+  "hanja": "取消",
+  "pickedBy": "dict"
+ },
+ "치료": {
+  "hanja": "治療",
+  "pickedBy": "dict"
+ },
+ "치료제": {
+  "hanja": "治療劑",
+  "pickedBy": "dict"
+ },
+ "치마": null,
+ "친구": {
+  "hanja": "親舊",
+  "pickedBy": "dict"
+ },
+ "친하다": {
+  "hanja": "親하다",
+  "pickedBy": "dict"
+ },
+ "쾌청": {
+  "hanja": "快晴",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "타입": null,
+ "탁류": {
+  "hanja": "濁流",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "탄생": {
+  "hanja": "誕生",
+  "pickedBy": "dict"
+ },
+ "탈피": {
+  "hanja": "脫皮",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "태양": {
+  "hanja": "太陽",
+  "pickedBy": "dict"
+ },
+ "통로": {
+  "hanja": "通路",
+  "pickedBy": "dict"
+ },
+ "통신": {
+  "hanja": "通信",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "통하다": {
+  "hanja": "通하다",
+  "pickedBy": "dict"
+ },
+ "특별": {
+  "hanja": "特別",
+  "pickedBy": "dict"
+ },
+ "특별히": {
+  "hanja": "特別히",
+  "pickedBy": "dict"
+ },
+ "특성": {
+  "hanja": "特性",
+  "pickedBy": "dict"
+ },
+ "특수": {
+  "hanja": "特殊",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "특이": {
+  "hanja": "特異",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "특정": {
+  "hanja": "特定",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "특집": {
+  "hanja": "特輯",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "특훈": {
+  "hanja": "特訓",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "파다": null,
+ "파도": {
+  "hanja": "波濤",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "파도타기": {
+  "hanja": "波濤타기",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "파란색": {
+  "hanja": "파란色",
+  "pickedBy": "dict"
+ },
+ "파일": null,
+ "판별": {
+  "hanja": "判別",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "패배": {
+  "hanja": "敗北",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "편리": {
+  "hanja": "便利",
+  "pickedBy": "dict"
+ },
+ "편지": {
+  "hanja": "便紙",
+  "pickedBy": "dict"
+ },
+ "편하다": {
+  "hanja": "便하다",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "평소": {
+  "hanja": "平素",
+  "pickedBy": "dict"
+ },
+ "포기": {
+  "hanja": "抛棄",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "포도": {
+  "hanja": "葡萄",
+  "pickedBy": "dict"
+ },
+ "포자": {
+  "hanja": "胞子",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "폭발": {
+  "hanja": "爆發",
+  "pickedBy": "dict"
+ },
+ "폭포": {
+  "hanja": "瀑布",
+  "pickedBy": "dict"
+ },
+ "표시": {
+  "hanja": "表示",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "피뢰침": {
+  "hanja": "避雷針",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "피리": null,
+ "피부": {
+  "hanja": "皮膚",
+  "pickedBy": "dict"
+ },
+ "피시": null,
+ "피하다": {
+  "hanja": "避하다",
+  "pickedBy": "dict"
+ },
+ "필요": {
+  "hanja": "必要",
+  "pickedBy": "dict"
+ },
+ "하루": null,
+ "하품": null,
+ "하하": null,
+ "한편": {
+  "hanja": "한便",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "항구": {
+  "hanja": "港口",
+  "pickedBy": "dict"
+ },
+ "항상": {
+  "hanja": "恒常",
+  "pickedBy": "dict"
+ },
+ "해결": {
+  "hanja": "解決",
+  "pickedBy": "dict"
+ },
+ "해제": {
+  "hanja": "解除",
+  "pickedBy": "dict"
+ },
+ "행동": {
+  "hanja": "行動",
+  "pickedBy": "dict"
+ },
+ "행복": {
+  "hanja": "幸福",
+  "pickedBy": "dict"
+ },
+ "향기": {
+  "hanja": "香氣",
+  "pickedBy": "dict"
+ },
+ "향하다": {
+  "hanja": "向하다",
+  "pickedBy": "dict"
+ },
+ "허리": null,
+ "현재": {
+  "hanja": "現在",
+  "pickedBy": "dict"
+ },
+ "형제": {
+  "hanja": "兄弟",
+  "pickedBy": "dict"
+ },
+ "호박": {
+  "hanja": "琥珀",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "호수": {
+  "hanja": "湖水",
+  "pickedBy": "dict"
+ },
+ "호주": {
+  "hanja": "濠洲",
+  "pickedBy": "dict"
+ },
+ "호화": {
+  "hanja": "豪華",
+  "pickedBy": "dict"
+ },
+ "혹시": {
+  "hanja": "或是",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "혼란": {
+  "hanja": "混亂",
+  "pickedBy": "dict"
+ },
+ "혼신": {
+  "hanja": "渾身",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "혼자": null,
+ "홍련": {
+  "hanja": "紅蓮",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "화나다": {
+  "hanja": "火나다",
+  "pickedBy": "dict"
+ },
+ "화내다": {
+  "hanja": "火내다",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "화산": {
+  "hanja": "火山",
+  "pickedBy": "dict"
+ },
+ "화상": {
+  "hanja": "火傷",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "화석": {
+  "hanja": "化石",
+  "pickedBy": "dict"
+ },
+ "화풀이": {
+  "hanja": "火풀이",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "확률": {
+  "hanja": "確率",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "확인": {
+  "hanja": "確認",
+  "pickedBy": "dict"
+ },
+ "환상": {
+  "hanja": "幻想",
+  "pickedBy": "dict"
+ },
+ "환영": {
+  "hanja": "歡迎",
+  "pickedBy": "dict"
+ },
+ "활동": {
+  "hanja": "活動",
+  "pickedBy": "dict"
+ },
+ "회복": {
+  "hanja": "回復",
+  "pickedBy": "dict"
+ },
+ "회색": {
+  "hanja": "灰色",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "회피": {
+  "hanja": "回避",
+  "pickedBy": "dict"
+ },
+ "효과": {
+  "hanja": "效果",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "후회": {
+  "hanja": "後悔",
+  "pickedBy": "dict"
+ },
+ "휴식": {
+  "hanja": "休息",
+  "pickedBy": "dict"
+ },
+ "흡반": {
+  "hanja": "吸盤",
+  "pickedBy": "dict"
+ },
+ "흡수": {
+  "hanja": "吸收",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "흡혈": {
+  "hanja": "吸血",
+  "pickedBy": "llm-claude-opus-5-5"
+ },
+ "흥미": {
+  "hanja": "興味",
+  "pickedBy": "dict"
+ }
+}

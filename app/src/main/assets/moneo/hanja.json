@@ -1,0 +1,3144 @@
+{
+ "version": 1,
+ "notes": "Hanja for Sino-Korean deck words (syllable-aligned) and a short English meaning per character. Word hanja from kengdic (MPL-2.0/LGPL) and libhangul (LGPL), checked against Unihan readings; character meanings from Unihan kDefinition. Built by tools/moneo/build_hanja.py.",
+ "words": {
+  "가구": {
+   "hanja": "家具",
+   "pickedBy": "dict"
+  },
+  "가능": {
+   "hanja": "可能",
+   "pickedBy": "dict"
+  },
+  "가속": {
+   "hanja": "加速",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "가족": {
+   "hanja": "家族",
+   "pickedBy": "dict"
+  },
+  "각오": {
+   "hanja": "覺悟",
+   "pickedBy": "dict"
+  },
+  "각지": {
+   "hanja": "各地",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "간판": {
+   "hanja": "看板",
+   "pickedBy": "dict"
+  },
+  "갈색": {
+   "hanja": "褐色",
+   "pickedBy": "dict"
+  },
+  "감사": {
+   "hanja": "感謝",
+   "pickedBy": "dict"
+  },
+  "강": {
+   "hanja": "江",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "강연": {
+   "hanja": "講演",
+   "pickedBy": "dict"
+  },
+  "강하다": {
+   "hanja": "强하다",
+   "pickedBy": "dict"
+  },
+  "개미지옥": {
+   "hanja": "개미地獄",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "개최": {
+   "hanja": "開催",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "객기": {
+   "hanja": "客氣",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "거대": {
+   "hanja": "巨大",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "거절": {
+   "hanja": "拒絶",
+   "pickedBy": "dict"
+  },
+  "건강": {
+   "hanja": "健康",
+   "pickedBy": "dict"
+  },
+  "건너편": {
+   "hanja": "건너便",
+   "pickedBy": "dict"
+  },
+  "건물": {
+   "hanja": "建物",
+   "pickedBy": "dict"
+  },
+  "게시판": {
+   "hanja": "揭示板",
+   "pickedBy": "dict"
+  },
+  "격투": {
+   "hanja": "格鬪",
+   "pickedBy": "dict"
+  },
+  "결과": {
+   "hanja": "結果",
+   "pickedBy": "dict"
+  },
+  "결정": {
+   "hanja": "決定",
+   "pickedBy": "dict"
+  },
+  "경비원": {
+   "hanja": "警備員",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "경우": {
+   "hanja": "境遇",
+   "pickedBy": "dict"
+  },
+  "경주": {
+   "hanja": "慶州",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "경품": {
+   "hanja": "景品",
+   "pickedBy": "dict"
+  },
+  "경험": {
+   "hanja": "經驗",
+   "pickedBy": "dict"
+  },
+  "계산": {
+   "hanja": "計算",
+   "pickedBy": "dict"
+  },
+  "계속": {
+   "hanja": "繼續",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "고대": {
+   "hanja": "古代",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "고모": {
+   "hanja": "姑母",
+   "pickedBy": "dict"
+  },
+  "고속": {
+   "hanja": "高速",
+   "pickedBy": "dict"
+  },
+  "고통": {
+   "hanja": "苦痛",
+   "pickedBy": "dict"
+  },
+  "곤란": {
+   "hanja": "困難",
+   "pickedBy": "dict"
+  },
+  "공간": {
+   "hanja": "空間",
+   "pickedBy": "dict"
+  },
+  "공격": {
+   "hanja": "攻擊",
+   "pickedBy": "dict"
+  },
+  "공격력": {
+   "hanja": "攻擊力",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "공기": {
+   "hanja": "空氣",
+   "pickedBy": "dict"
+  },
+  "공부": {
+   "hanja": "工夫",
+   "pickedBy": "dict"
+  },
+  "공원": {
+   "hanja": "公園",
+   "pickedBy": "dict"
+  },
+  "공장": {
+   "hanja": "工場",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "공중": {
+   "hanja": "空中",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "공짜": {
+   "hanja": "空짜",
+   "pickedBy": "dict"
+  },
+  "과학": {
+   "hanja": "科學",
+   "pickedBy": "dict"
+  },
+  "과학자": {
+   "hanja": "科學者",
+   "pickedBy": "dict"
+  },
+  "관계": {
+   "hanja": "關係",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "관련": {
+   "hanja": "關聯",
+   "pickedBy": "dict"
+  },
+  "관장": {
+   "hanja": "館長",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "광합성": {
+   "hanja": "光合成",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "괴력": {
+   "hanja": "怪力",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "굉장히": {
+   "hanja": "宏壯히",
+   "pickedBy": "dict"
+  },
+  "교수": {
+   "hanja": "敎授",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "교체": {
+   "hanja": "交替",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "교환": {
+   "hanja": "交換",
+   "pickedBy": "dict"
+  },
+  "구하다": {
+   "hanja": "救하다",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "국화": {
+   "hanja": "菊花",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "규칙": {
+   "hanja": "規則",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "근성": {
+   "hanja": "根性",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "근처": {
+   "hanja": "近處",
+   "pickedBy": "dict"
+  },
+  "금방": {
+   "hanja": "今方",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "금속음": {
+   "hanja": "金屬音",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "금지": {
+   "hanja": "禁止",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "급류": {
+   "hanja": "急流",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "급소": {
+   "hanja": "急所",
+   "pickedBy": "dict"
+  },
+  "급하다": {
+   "hanja": "急하다",
+   "pickedBy": "dict"
+  },
+  "기계": {
+   "hanja": "機械",
+   "pickedBy": "dict"
+  },
+  "기관총": {
+   "hanja": "機關銃",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "기록": {
+   "hanja": "記錄",
+   "pickedBy": "dict"
+  },
+  "기본": {
+   "hanja": "基本",
+   "pickedBy": "dict"
+  },
+  "기분": {
+   "hanja": "氣分",
+   "pickedBy": "dict"
+  },
+  "기분파": {
+   "hanja": "氣分派",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "기사회생": {
+   "hanja": "起死回生",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "기세": {
+   "hanja": "氣勢",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "기술": {
+   "hanja": "技術",
+   "pickedBy": "dict"
+  },
+  "기억": {
+   "hanja": "記憶",
+   "pickedBy": "dict"
+  },
+  "기운": {
+   "hanja": "氣運",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "기자": {
+   "hanja": "記者",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "기절": {
+   "hanja": "氣絶",
+   "pickedBy": "dict"
+  },
+  "기준": {
+   "hanja": "基準",
+   "pickedBy": "dict"
+  },
+  "기초": {
+   "hanja": "基礎",
+   "pickedBy": "dict"
+  },
+  "난동": {
+   "hanja": "亂動",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "남동생": {
+   "hanja": "男同生",
+   "pickedBy": "dict"
+  },
+  "남자": {
+   "hanja": "男子",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "내용": {
+   "hanja": "內容",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "노란색": {
+   "hanja": "노란色",
+   "pickedBy": "dict"
+  },
+  "노력": {
+   "hanja": "努力",
+   "pickedBy": "dict"
+  },
+  "노인": {
+   "hanja": "老人",
+   "pickedBy": "dict"
+  },
+  "논문": {
+   "hanja": "論文",
+   "pickedBy": "dict"
+  },
+  "능력": {
+   "hanja": "能力",
+   "pickedBy": "dict"
+  },
+  "다행": {
+   "hanja": "多幸",
+   "pickedBy": "dict"
+  },
+  "단련": {
+   "hanja": "鍛鍊",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "단어": {
+   "hanja": "單語",
+   "pickedBy": "dict"
+  },
+  "답례": {
+   "hanja": "答禮",
+   "pickedBy": "dict"
+  },
+  "당장": {
+   "hanja": "當場",
+   "pickedBy": "dict"
+  },
+  "당하다": {
+   "hanja": "當하다",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "대기": {
+   "hanja": "待機",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "대답": {
+   "hanja": "對答",
+   "pickedBy": "dict"
+  },
+  "대신": {
+   "hanja": "代身",
+   "pickedBy": "dict"
+  },
+  "대의": {
+   "hanja": "大義",
+   "pickedBy": "dict"
+  },
+  "대전": {
+   "hanja": "對戰",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "대체": {
+   "hanja": "大體",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "대폭발": {
+   "hanja": "大爆發",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "대하다": {
+   "hanja": "對하다",
+   "pickedBy": "dict"
+  },
+  "대화": {
+   "hanja": "對話",
+   "pickedBy": "dict"
+  },
+  "덕분": {
+   "hanja": "德分",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "도감": {
+   "hanja": "圖鑑",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "도구": {
+   "hanja": "道具",
+   "pickedBy": "dict"
+  },
+  "도로": {
+   "hanja": "道路",
+   "pickedBy": "dict"
+  },
+  "도망": {
+   "hanja": "逃亡",
+   "pickedBy": "dict"
+  },
+  "도망가다": {
+   "hanja": "逃亡가다",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "도망치다": {
+   "hanja": "逃亡치다",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "도발": {
+   "hanja": "挑發",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "도시": {
+   "hanja": "都市",
+   "pickedBy": "dict"
+  },
+  "도장": {
+   "hanja": "道場",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "도전": {
+   "hanja": "挑戰",
+   "pickedBy": "dict"
+  },
+  "도전하다": {
+   "hanja": "挑戰하다",
+   "pickedBy": "dict"
+  },
+  "도주": {
+   "hanja": "逃走",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "도중": {
+   "hanja": "途中",
+   "pickedBy": "dict"
+  },
+  "독가스": {
+   "hanja": "毒가스",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "독침": {
+   "hanja": "毒針",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "돌진": {
+   "hanja": "突進",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "동경": {
+   "hanja": "憧憬",
+   "pickedBy": "dict"
+  },
+  "동굴": {
+   "hanja": "洞窟",
+   "pickedBy": "dict"
+  },
+  "동료": {
+   "hanja": "同僚",
+   "pickedBy": "dict"
+  },
+  "동물": {
+   "hanja": "動物",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "동생": {
+   "hanja": "同生",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "동시": {
+   "hanja": "同時",
+   "pickedBy": "dict"
+  },
+  "동전": {
+   "hanja": "銅錢",
+   "pickedBy": "dict"
+  },
+  "둔감": {
+   "hanja": "鈍感",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "등나무": {
+   "hanja": "藤나무",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "등록": {
+   "hanja": "登錄",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "마비": {
+   "hanja": "痲痺",
+   "pickedBy": "dict"
+  },
+  "만약": {
+   "hanja": "萬若",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "만화": {
+   "hanja": "漫畵",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "망원경": {
+   "hanja": "望遠鏡",
+   "pickedBy": "dict"
+  },
+  "매일": {
+   "hanja": "每日",
+   "pickedBy": "dict"
+  },
+  "맥주": {
+   "hanja": "麥酒",
+   "pickedBy": "dict"
+  },
+  "맹독": {
+   "hanja": "猛毒",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "맹화": {
+   "hanja": "猛火",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "면역": {
+   "hanja": "免疫",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "명상": {
+   "hanja": "冥想",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "명중": {
+   "hanja": "命中",
+   "pickedBy": "dict"
+  },
+  "명중률": {
+   "hanja": "命中率",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "모양": {
+   "hanja": "模樣",
+   "pickedBy": "dict"
+  },
+  "모험": {
+   "hanja": "冒險",
+   "pickedBy": "dict"
+  },
+  "목적": {
+   "hanja": "目的",
+   "pickedBy": "dict"
+  },
+  "목표": {
+   "hanja": "目標",
+   "pickedBy": "dict"
+  },
+  "무리": {
+   "hanja": "無理",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "무사히": {
+   "hanja": "無事히",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "무선": {
+   "hanja": "無線",
+   "pickedBy": "dict"
+  },
+  "무승부": {
+   "hanja": "無勝負",
+   "pickedBy": "dict"
+  },
+  "물건": {
+   "hanja": "物件",
+   "pickedBy": "dict"
+  },
+  "미래": {
+   "hanja": "未來",
+   "pickedBy": "dict"
+  },
+  "미소": {
+   "hanja": "微笑",
+   "pickedBy": "dict"
+  },
+  "미안": {
+   "hanja": "未安",
+   "pickedBy": "dict"
+  },
+  "미인": {
+   "hanja": "美人",
+   "pickedBy": "dict"
+  },
+  "미확인": {
+   "hanja": "未確認",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "박물관": {
+   "hanja": "博物館",
+   "pickedBy": "dict"
+  },
+  "박사": {
+   "hanja": "博士",
+   "pickedBy": "dict"
+  },
+  "반동": {
+   "hanja": "反動",
+   "pickedBy": "dict"
+  },
+  "반바지": {
+   "hanja": "半바지",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "반응": {
+   "hanja": "反應",
+   "pickedBy": "dict"
+  },
+  "발견": {
+   "hanja": "發見",
+   "pickedBy": "dict"
+  },
+  "발광": {
+   "hanja": "發光",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "발사": {
+   "hanja": "發射",
+   "pickedBy": "dict"
+  },
+  "발생": {
+   "hanja": "發生",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "발전소": {
+   "hanja": "發電所",
+   "pickedBy": "dict"
+  },
+  "발휘": {
+   "hanja": "發揮",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "방금": {
+   "hanja": "方今",
+   "pickedBy": "dict"
+  },
+  "방법": {
+   "hanja": "方法",
+   "pickedBy": "dict"
+  },
+  "방송": {
+   "hanja": "放送",
+   "pickedBy": "dict"
+  },
+  "방식": {
+   "hanja": "方式",
+   "pickedBy": "dict"
+  },
+  "방심": {
+   "hanja": "放心",
+   "pickedBy": "dict"
+  },
+  "방어": {
+   "hanja": "防禦",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "방음": {
+   "hanja": "防音",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "방해": {
+   "hanja": "妨害",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "방황": {
+   "hanja": "彷徨",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "백화점": {
+   "hanja": "百貨店",
+   "pickedBy": "dict"
+  },
+  "변색": {
+   "hanja": "變色",
+   "pickedBy": "dict"
+  },
+  "변신": {
+   "hanja": "變身",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "변하다": {
+   "hanja": "變하다",
+   "pickedBy": "dict"
+  },
+  "변화": {
+   "hanja": "變化",
+   "pickedBy": "dict"
+  },
+  "별로": {
+   "hanja": "別로",
+   "pickedBy": "dict"
+  },
+  "별명": {
+   "hanja": "別名",
+   "pickedBy": "dict"
+  },
+  "보관": {
+   "hanja": "保管",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "보답": {
+   "hanja": "報答",
+   "pickedBy": "dict"
+  },
+  "보물": {
+   "hanja": "寶物",
+   "pickedBy": "dict"
+  },
+  "보석": {
+   "hanja": "寶石",
+   "pickedBy": "dict"
+  },
+  "보조": {
+   "hanja": "補助",
+   "pickedBy": "dict"
+  },
+  "보통": {
+   "hanja": "普通",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "보호": {
+   "hanja": "保護",
+   "pickedBy": "dict"
+  },
+  "보호색": {
+   "hanja": "保護色",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "복사": {
+   "hanja": "複寫",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "복안": {
+   "hanja": "複眼",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "본부": {
+   "hanja": "本部",
+   "pickedBy": "dict"
+  },
+  "본사": {
+   "hanja": "本社",
+   "pickedBy": "dict"
+  },
+  "봉인": {
+   "hanja": "封印",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "부근": {
+   "hanja": "附近",
+   "pickedBy": "dict"
+  },
+  "부모": {
+   "hanja": "父母",
+   "pickedBy": "dict"
+  },
+  "부부": {
+   "hanja": "夫婦",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "부분": {
+   "hanja": "部分",
+   "pickedBy": "dict"
+  },
+  "부산": {
+   "hanja": "釜山",
+   "pickedBy": "dict"
+  },
+  "부유": {
+   "hanja": "浮遊",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "부적": {
+   "hanja": "符籍",
+   "pickedBy": "dict"
+  },
+  "부탁": {
+   "hanja": "付託",
+   "pickedBy": "dict"
+  },
+  "부화": {
+   "hanja": "孵化",
+   "pickedBy": "dict"
+  },
+  "부활": {
+   "hanja": "復活",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "분노": {
+   "hanja": "憤怒",
+   "pickedBy": "dict"
+  },
+  "분명": {
+   "hanja": "分明",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "분명히": {
+   "hanja": "分明히",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "분신": {
+   "hanja": "分身",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "분화": {
+   "hanja": "噴火",
+   "pickedBy": "dict"
+  },
+  "불면": {
+   "hanja": "不眠",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "비밀": {
+   "hanja": "秘密",
+   "pickedBy": "dict"
+  },
+  "비축": {
+   "hanja": "備蓄",
+   "pickedBy": "dict"
+  },
+  "비행": {
+   "hanja": "飛行",
+   "pickedBy": "dict"
+  },
+  "빨간색": {
+   "hanja": "빨간色",
+   "pickedBy": "dict"
+  },
+  "사막": {
+   "hanja": "沙漠",
+   "pickedBy": "dict"
+  },
+  "사무": {
+   "hanja": "事務",
+   "pickedBy": "dict"
+  },
+  "사범": {
+   "hanja": "師範",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "사실": {
+   "hanja": "事實",
+   "pickedBy": "dict"
+  },
+  "사양": {
+   "hanja": "辭讓",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "사용": {
+   "hanja": "使用",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "사용법": {
+   "hanja": "使用法",
+   "pickedBy": "dict"
+  },
+  "사장": {
+   "hanja": "社長",
+   "pickedBy": "dict"
+  },
+  "사정": {
+   "hanja": "事情",
+   "pickedBy": "dict"
+  },
+  "사진": {
+   "hanja": "寫眞",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "사천왕": {
+   "hanja": "四天王",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "사탕": {
+   "hanja": "砂糖",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "산": {
+   "hanja": "山",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "산길": {
+   "hanja": "山길",
+   "pickedBy": "dict"
+  },
+  "산책": {
+   "hanja": "散策",
+   "pickedBy": "dict"
+  },
+  "상금": {
+   "hanja": "賞金",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "상대": {
+   "hanja": "相對",
+   "pickedBy": "dict"
+  },
+  "상대방": {
+   "hanja": "相對方",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "상성": {
+   "hanja": "相性",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "상처": {
+   "hanja": "傷處",
+   "pickedBy": "dict"
+  },
+  "상태": {
+   "hanja": "狀態",
+   "pickedBy": "dict"
+  },
+  "상황": {
+   "hanja": "狀況",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "생명체": {
+   "hanja": "生命體",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "생물": {
+   "hanja": "生物",
+   "pickedBy": "dict"
+  },
+  "서식": {
+   "hanja": "棲息",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "서쪽": {
+   "hanja": "西쪽",
+   "pickedBy": "dict"
+  },
+  "석실": {
+   "hanja": "石室",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "석유": {
+   "hanja": "石油",
+   "pickedBy": "dict"
+  },
+  "선물": {
+   "hanja": "膳物",
+   "pickedBy": "dict"
+  },
+  "선생": {
+   "hanja": "先生",
+   "pickedBy": "dict"
+  },
+  "선수": {
+   "hanja": "選手",
+   "pickedBy": "dict"
+  },
+  "선장": {
+   "hanja": "船長",
+   "pickedBy": "dict"
+  },
+  "선택": {
+   "hanja": "選擇",
+   "pickedBy": "dict"
+  },
+  "설명": {
+   "hanja": "說明",
+   "pickedBy": "dict"
+  },
+  "설정": {
+   "hanja": "設定",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "성격": {
+   "hanja": "性格",
+   "pickedBy": "dict"
+  },
+  "성실": {
+   "hanja": "誠實",
+   "pickedBy": "dict"
+  },
+  "성장": {
+   "hanja": "成長",
+   "pickedBy": "dict"
+  },
+  "세계": {
+   "hanja": "世界",
+   "pickedBy": "dict"
+  },
+  "세기": {
+   "hanja": "世紀",
+   "pickedBy": "dict"
+  },
+  "세상": {
+   "hanja": "世上",
+   "pickedBy": "dict"
+  },
+  "세포": {
+   "hanja": "細胞",
+   "pickedBy": "dict"
+  },
+  "소녀": {
+   "hanja": "少女",
+   "pickedBy": "dict"
+  },
+  "소년": {
+   "hanja": "少年",
+   "pickedBy": "dict"
+  },
+  "소란": {
+   "hanja": "騷亂",
+   "pickedBy": "dict"
+  },
+  "소령": {
+   "hanja": "少領",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "소문": {
+   "hanja": "所聞",
+   "pickedBy": "dict"
+  },
+  "소음": {
+   "hanja": "騷音",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "소주": {
+   "hanja": "燒酒",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "소포": {
+   "hanja": "小包",
+   "pickedBy": "dict"
+  },
+  "속도": {
+   "hanja": "速度",
+   "pickedBy": "dict"
+  },
+  "손녀": {
+   "hanja": "孫女",
+   "pickedBy": "dict"
+  },
+  "손자": {
+   "hanja": "孫子",
+   "pickedBy": "dict"
+  },
+  "수많다": {
+   "hanja": "數많다",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "수영": {
+   "hanja": "水泳",
+   "pickedBy": "dict"
+  },
+  "수재": {
+   "hanja": "秀才",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "수치": {
+   "hanja": "數値",
+   "pickedBy": "dict"
+  },
+  "수행": {
+   "hanja": "修行",
+   "pickedBy": "dict"
+  },
+  "순간": {
+   "hanja": "瞬間",
+   "pickedBy": "dict"
+  },
+  "순서": {
+   "hanja": "順序",
+   "pickedBy": "dict"
+  },
+  "술잔": {
+   "hanja": "술盞",
+   "pickedBy": "dict"
+  },
+  "습기": {
+   "hanja": "濕氣",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "승리": {
+   "hanja": "勝利",
+   "pickedBy": "dict"
+  },
+  "승부": {
+   "hanja": "勝負",
+   "pickedBy": "dict"
+  },
+  "시간": {
+   "hanja": "時間",
+   "pickedBy": "dict"
+  },
+  "시대": {
+   "hanja": "時代",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "시작": {
+   "hanja": "始作",
+   "pickedBy": "dict"
+  },
+  "시합": {
+   "hanja": "試合",
+   "pickedBy": "dict"
+  },
+  "시험": {
+   "hanja": "試驗",
+   "pickedBy": "dict"
+  },
+  "신경": {
+   "hanja": "神經",
+   "pickedBy": "dict"
+  },
+  "신비": {
+   "hanja": "神秘",
+   "pickedBy": "dict"
+  },
+  "신속": {
+   "hanja": "神速",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "신청": {
+   "hanja": "申請",
+   "pickedBy": "dict"
+  },
+  "신체": {
+   "hanja": "身體",
+   "pickedBy": "dict"
+  },
+  "신통력": {
+   "hanja": "神通力",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "실력": {
+   "hanja": "實力",
+   "pickedBy": "dict"
+  },
+  "실망": {
+   "hanja": "失望",
+   "pickedBy": "dict"
+  },
+  "실수": {
+   "hanja": "失手",
+   "pickedBy": "dict"
+  },
+  "실은": {
+   "hanja": "實은",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "실패": {
+   "hanja": "失敗",
+   "pickedBy": "dict"
+  },
+  "심록": {
+   "hanja": "深綠",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "십자": {
+   "hanja": "十字",
+   "pickedBy": "dict"
+  },
+  "악몽": {
+   "hanja": "惡夢",
+   "pickedBy": "dict"
+  },
+  "악취": {
+   "hanja": "惡臭",
+   "pickedBy": "dict"
+  },
+  "안경": {
+   "hanja": "眼鏡",
+   "pickedBy": "dict"
+  },
+  "안녕": {
+   "hanja": "安寧",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "안심": {
+   "hanja": "安心",
+   "pickedBy": "dict"
+  },
+  "안주": {
+   "hanja": "按酒",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "암석": {
+   "hanja": "巖石",
+   "pickedBy": "dict"
+  },
+  "압정": {
+   "hanja": "押釘",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "애정": {
+   "hanja": "愛情",
+   "pickedBy": "dict"
+  },
+  "야구": {
+   "hanja": "野球",
+   "pickedBy": "dict"
+  },
+  "야생": {
+   "hanja": "野生",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "약간": {
+   "hanja": "若干",
+   "pickedBy": "dict"
+  },
+  "약하다": {
+   "hanja": "弱하다",
+   "pickedBy": "dict"
+  },
+  "양복": {
+   "hanja": "洋服",
+   "pickedBy": "dict"
+  },
+  "양분": {
+   "hanja": "養分",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "양쪽": {
+   "hanja": "兩쪽",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "어차피": {
+   "hanja": "於此彼",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "여성": {
+   "hanja": "女性",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "여자": {
+   "hanja": "女子",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "여행": {
+   "hanja": "旅行",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "역린": {
+   "hanja": "逆鱗",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "역할": {
+   "hanja": "役割",
+   "pickedBy": "dict"
+  },
+  "연결": {
+   "hanja": "連結",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "연구": {
+   "hanja": "硏究",
+   "pickedBy": "dict"
+  },
+  "연구소": {
+   "hanja": "硏究所",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "연기": {
+   "hanja": "煙氣",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "연락": {
+   "hanja": "連絡",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "연막": {
+   "hanja": "煙幕",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "연분홍": {
+   "hanja": "軟粉紅",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "연속": {
+   "hanja": "連續",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "연습": {
+   "hanja": "練習",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "열심히": {
+   "hanja": "熱心히",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "열풍": {
+   "hanja": "熱風",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "열혈": {
+   "hanja": "熱血",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "엽록소": {
+   "hanja": "葉綠素",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "영감": {
+   "hanja": "令監",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "영매": {
+   "hanja": "靈媒",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "영양": {
+   "hanja": "營養",
+   "pickedBy": "dict"
+  },
+  "영역": {
+   "hanja": "領域",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "영혼": {
+   "hanja": "靈魂",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "예감": {
+   "hanja": "豫感",
+   "pickedBy": "dict"
+  },
+  "오후": {
+   "hanja": "午後",
+   "pickedBy": "dict"
+  },
+  "옥상": {
+   "hanja": "屋上",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "온도": {
+   "hanja": "溫度",
+   "pickedBy": "dict"
+  },
+  "온천": {
+   "hanja": "溫泉",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "완벽": {
+   "hanja": "完璧",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "완성": {
+   "hanja": "完成",
+   "pickedBy": "dict"
+  },
+  "완전히": {
+   "hanja": "完全히",
+   "pickedBy": "dict"
+  },
+  "요리": {
+   "hanja": "料理",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "용돈": {
+   "hanja": "用돈",
+   "pickedBy": "dict"
+  },
+  "용서": {
+   "hanja": "容恕",
+   "pickedBy": "dict"
+  },
+  "용해액": {
+   "hanja": "溶解液",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "우산": {
+   "hanja": "雨傘",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "우선": {
+   "hanja": "于先",
+   "pickedBy": "dict"
+  },
+  "우승": {
+   "hanja": "優勝",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "우유": {
+   "hanja": "牛乳",
+   "pickedBy": "dict"
+  },
+  "우주": {
+   "hanja": "宇宙",
+   "pickedBy": "dict"
+  },
+  "운동": {
+   "hanja": "運動",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "원념": {
+   "hanja": "怨念",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "원래": {
+   "hanja": "元來",
+   "pickedBy": "dict"
+  },
+  "원장": {
+   "hanja": "院長",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "원한": {
+   "hanja": "怨恨",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "위력": {
+   "hanja": "威力",
+   "pickedBy": "dict"
+  },
+  "위하다": {
+   "hanja": "爲하다",
+   "pickedBy": "dict"
+  },
+  "위험": {
+   "hanja": "危險",
+   "pickedBy": "dict"
+  },
+  "위협": {
+   "hanja": "威脅",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "유도": {
+   "hanja": "柔道",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "유령": {
+   "hanja": "幽靈",
+   "pickedBy": "dict"
+  },
+  "유리": {
+   "hanja": "琉璃",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "유연": {
+   "hanja": "柔軟",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "유적": {
+   "hanja": "遺跡",
+   "pickedBy": "dict"
+  },
+  "유행": {
+   "hanja": "流行",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "음색": {
+   "hanja": "音色",
+   "pickedBy": "dict"
+  },
+  "음식": {
+   "hanja": "飮食",
+   "pickedBy": "dict"
+  },
+  "응원": {
+   "hanja": "應援",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "의기양양": {
+   "hanja": "意氣揚揚",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "의미": {
+   "hanja": "意味",
+   "pickedBy": "dict"
+  },
+  "의욕": {
+   "hanja": "意欲",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "의지": {
+   "hanja": "意志",
+   "pickedBy": "dict"
+  },
+  "의하다": {
+   "hanja": "依하다",
+   "pickedBy": "dict"
+  },
+  "이동": {
+   "hanja": "移動",
+   "pickedBy": "dict"
+  },
+  "이모": {
+   "hanja": "姨母",
+   "pickedBy": "dict"
+  },
+  "이번": {
+   "hanja": "이番",
+   "pickedBy": "dict"
+  },
+  "이사": {
+   "hanja": "移徙",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "이상": {
+   "hanja": "異常",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "이용": {
+   "hanja": "利用",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "이유": {
+   "hanja": "理由",
+   "pickedBy": "dict"
+  },
+  "이하": {
+   "hanja": "以下",
+   "pickedBy": "dict"
+  },
+  "이후": {
+   "hanja": "以後",
+   "pickedBy": "dict"
+  },
+  "인간": {
+   "hanja": "人間",
+   "pickedBy": "dict"
+  },
+  "인기": {
+   "hanja": "人氣",
+   "pickedBy": "dict"
+  },
+  "인분": {
+   "hanja": "鱗粉",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "인사": {
+   "hanja": "人事",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "인삼": {
+   "hanja": "人蔘",
+   "pickedBy": "dict"
+  },
+  "인용": {
+   "hanja": "引用",
+   "pickedBy": "dict"
+  },
+  "인원수": {
+   "hanja": "人員數",
+   "pickedBy": "dict"
+  },
+  "인정": {
+   "hanja": "認定",
+   "pickedBy": "dict"
+  },
+  "인하다": {
+   "hanja": "因하다",
+   "pickedBy": "dict"
+  },
+  "인형": {
+   "hanja": "人形",
+   "pickedBy": "dict"
+  },
+  "일격": {
+   "hanja": "一擊",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "일기": {
+   "hanja": "日記",
+   "pickedBy": "dict"
+  },
+  "일단": {
+   "hanja": "一旦",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "일람": {
+   "hanja": "一覽",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "일부": {
+   "hanja": "一部",
+   "pickedBy": "dict"
+  },
+  "입구": {
+   "hanja": "入口",
+   "pickedBy": "dict"
+  },
+  "자기암시": {
+   "hanja": "自己暗示",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "자력": {
+   "hanja": "磁力",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "자세히": {
+   "hanja": "仔細히",
+   "pickedBy": "dict"
+  },
+  "자식": {
+   "hanja": "子息",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "자신": {
+   "hanja": "自身",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "자연": {
+   "hanja": "自然",
+   "pickedBy": "dict"
+  },
+  "자폭": {
+   "hanja": "自爆",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "작성": {
+   "hanja": "作成",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "잠금장치": {
+   "hanja": "잠금裝置",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "잠시": {
+   "hanja": "暫時",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "장": {
+   "hanja": "張",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "장막": {
+   "hanja": "帳幕",
+   "pickedBy": "dict"
+  },
+  "장사": {
+   "hanja": "壯士",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "장소": {
+   "hanja": "場所",
+   "pickedBy": "dict"
+  },
+  "장치": {
+   "hanja": "裝置",
+   "pickedBy": "dict"
+  },
+  "재료": {
+   "hanja": "材料",
+   "pickedBy": "dict"
+  },
+  "저수": {
+   "hanja": "貯水",
+   "pickedBy": "dict"
+  },
+  "저주": {
+   "hanja": "詛呪",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "저택": {
+   "hanja": "邸宅",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "전광석화": {
+   "hanja": "電光石火",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "전국": {
+   "hanja": "全國",
+   "pickedBy": "dict"
+  },
+  "전기": {
+   "hanja": "電氣",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "전기쇼크": {
+   "hanja": "電氣쇼크",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "전단지": {
+   "hanja": "傳單紙",
+   "pickedBy": "dict"
+  },
+  "전부": {
+   "hanja": "全部",
+   "pickedBy": "dict"
+  },
+  "전설": {
+   "hanja": "傳說",
+   "pickedBy": "dict"
+  },
+  "전송": {
+   "hanja": "傳送",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "전신": {
+   "hanja": "全身",
+   "pickedBy": "dict"
+  },
+  "전용": {
+   "hanja": "專用",
+   "pickedBy": "dict"
+  },
+  "전원": {
+   "hanja": "電源",
+   "pickedBy": "dict"
+  },
+  "전자": {
+   "hanja": "電子",
+   "pickedBy": "dict"
+  },
+  "전투": {
+   "hanja": "戰鬪",
+   "pickedBy": "dict"
+  },
+  "전하다": {
+   "hanja": "傳하다",
+   "pickedBy": "dict"
+  },
+  "전혀": {
+   "hanja": "全혀",
+   "pickedBy": "dict"
+  },
+  "전환": {
+   "hanja": "轉換",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "절대": {
+   "hanja": "絶對",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "절대로": {
+   "hanja": "絶對로",
+   "pickedBy": "dict"
+  },
+  "절대영도": {
+   "hanja": "絶對零度",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "절반": {
+   "hanja": "折半",
+   "pickedBy": "dict"
+  },
+  "점령": {
+   "hanja": "占領",
+   "pickedBy": "dict"
+  },
+  "점점": {
+   "hanja": "漸漸",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "점착": {
+   "hanja": "粘着",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "접속": {
+   "hanja": "接續",
+   "pickedBy": "dict"
+  },
+  "접수처": {
+   "hanja": "接受處",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "접촉": {
+   "hanja": "接觸",
+   "pickedBy": "dict"
+  },
+  "정도": {
+   "hanja": "程度",
+   "pickedBy": "dict"
+  },
+  "정리": {
+   "hanja": "整理",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "정말": {
+   "hanja": "正말",
+   "pickedBy": "dict"
+  },
+  "정말로": {
+   "hanja": "正말로",
+   "pickedBy": "dict"
+  },
+  "정보": {
+   "hanja": "情報",
+   "pickedBy": "dict"
+  },
+  "정신": {
+   "hanja": "精神",
+   "pickedBy": "dict"
+  },
+  "정신력": {
+   "hanja": "精神力",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "정전기": {
+   "hanja": "靜電氣",
+   "pickedBy": "dict"
+  },
+  "정점": {
+   "hanja": "頂點",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "정체": {
+   "hanja": "正體",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "정하다": {
+   "hanja": "定하다",
+   "pickedBy": "dict"
+  },
+  "정확히": {
+   "hanja": "正確히",
+   "pickedBy": "dict"
+  },
+  "제일": {
+   "hanja": "第一",
+   "pickedBy": "dict"
+  },
+  "제품": {
+   "hanja": "製品",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "조각": {
+   "hanja": "彫刻",
+   "pickedBy": "dict"
+  },
+  "조련사": {
+   "hanja": "調練師",
+   "pickedBy": "dict"
+  },
+  "조류": {
+   "hanja": "鳥類",
+   "pickedBy": "dict"
+  },
+  "조사": {
+   "hanja": "調査",
+   "pickedBy": "dict"
+  },
+  "조수": {
+   "hanja": "助手",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "조심": {
+   "hanja": "操心",
+   "pickedBy": "dict"
+  },
+  "조심하다": {
+   "hanja": "操心하다",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "조작": {
+   "hanja": "操作",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "조정": {
+   "hanja": "調整",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "조합": {
+   "hanja": "組合",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "존경": {
+   "hanja": "尊敬",
+   "pickedBy": "dict"
+  },
+  "존재": {
+   "hanja": "存在",
+   "pickedBy": "dict"
+  },
+  "종료": {
+   "hanja": "終了",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "종류": {
+   "hanja": "種類",
+   "pickedBy": "dict"
+  },
+  "좌우": {
+   "hanja": "左右",
+   "pickedBy": "dict"
+  },
+  "주": {
+   "hanja": "週",
+   "pickedBy": "dict"
+  },
+  "주로": {
+   "hanja": "主로",
+   "pickedBy": "dict"
+  },
+  "주변": {
+   "hanja": "周邊",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "주사": {
+   "hanja": "注射",
+   "pickedBy": "dict"
+  },
+  "주소": {
+   "hanja": "住所",
+   "pickedBy": "dict"
+  },
+  "주식회사": {
+   "hanja": "株式會社",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "주위": {
+   "hanja": "周圍",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "주의": {
+   "hanja": "注意",
+   "pickedBy": "dict"
+  },
+  "주인": {
+   "hanja": "主人",
+   "pickedBy": "dict"
+  },
+  "주제": {
+   "hanja": "主題",
+   "pickedBy": "dict"
+  },
+  "준비": {
+   "hanja": "準備",
+   "pickedBy": "dict"
+  },
+  "중심": {
+   "hanja": "中心",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "중요": {
+   "hanja": "重要",
+   "pickedBy": "dict"
+  },
+  "중지": {
+   "hanja": "中止",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "즉시": {
+   "hanja": "卽時",
+   "pickedBy": "dict"
+  },
+  "증표": {
+   "hanja": "證票",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "지구": {
+   "hanja": "地球",
+   "pickedBy": "dict"
+  },
+  "지금": {
+   "hanja": "只今",
+   "pickedBy": "dict"
+  },
+  "지난번": {
+   "hanja": "지난番",
+   "pickedBy": "dict"
+  },
+  "지도": {
+   "hanja": "地圖",
+   "pickedBy": "dict"
+  },
+  "지면": {
+   "hanja": "地面",
+   "pickedBy": "dict"
+  },
+  "지방": {
+   "hanja": "地方",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "지역": {
+   "hanja": "地域",
+   "pickedBy": "dict"
+  },
+  "지진": {
+   "hanja": "地震",
+   "pickedBy": "dict"
+  },
+  "지하": {
+   "hanja": "地下",
+   "pickedBy": "dict"
+  },
+  "지하도": {
+   "hanja": "地下道",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "직접": {
+   "hanja": "直接",
+   "pickedBy": "dict"
+  },
+  "진짜": {
+   "hanja": "眞짜",
+   "pickedBy": "dict"
+  },
+  "진행": {
+   "hanja": "進行",
+   "pickedBy": "dict"
+  },
+  "진화": {
+   "hanja": "進化",
+   "pickedBy": "dict"
+  },
+  "집사": {
+   "hanja": "執事",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "차례": {
+   "hanja": "次例",
+   "pickedBy": "dict"
+  },
+  "착각": {
+   "hanja": "錯覺",
+   "pickedBy": "dict"
+  },
+  "참가": {
+   "hanja": "參加",
+   "pickedBy": "dict"
+  },
+  "참고": {
+   "hanja": "參考",
+   "pickedBy": "dict"
+  },
+  "창고": {
+   "hanja": "倉庫",
+   "pickedBy": "dict"
+  },
+  "천하장사": {
+   "hanja": "天下壯士",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "천하제일": {
+   "hanja": "天下第一",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "철": {
+   "hanja": "鐵",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "철벽": {
+   "hanja": "鐵壁",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "청년": {
+   "hanja": "靑年",
+   "pickedBy": "dict"
+  },
+  "체력": {
+   "hanja": "體力",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "체육관": {
+   "hanja": "體育館",
+   "pickedBy": "dict"
+  },
+  "초능력": {
+   "hanja": "超能力",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "초음파": {
+   "hanja": "超音波",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "촉수": {
+   "hanja": "觸手",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "최강": {
+   "hanja": "最强",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "최고": {
+   "hanja": "最高",
+   "pickedBy": "dict"
+  },
+  "최근": {
+   "hanja": "最近",
+   "pickedBy": "dict"
+  },
+  "최대": {
+   "hanja": "最大",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "최면술": {
+   "hanja": "催眠術",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "최선": {
+   "hanja": "最善",
+   "pickedBy": "dict"
+  },
+  "축전": {
+   "hanja": "蓄電",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "축하": {
+   "hanja": "祝賀",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "출구": {
+   "hanja": "出口",
+   "pickedBy": "dict"
+  },
+  "충격": {
+   "hanja": "衝擊",
+   "pickedBy": "dict"
+  },
+  "충전": {
+   "hanja": "充電",
+   "pickedBy": "dict"
+  },
+  "취미": {
+   "hanja": "趣味",
+   "pickedBy": "dict"
+  },
+  "취소": {
+   "hanja": "取消",
+   "pickedBy": "dict"
+  },
+  "치료": {
+   "hanja": "治療",
+   "pickedBy": "dict"
+  },
+  "치료제": {
+   "hanja": "治療劑",
+   "pickedBy": "dict"
+  },
+  "친구": {
+   "hanja": "親舊",
+   "pickedBy": "dict"
+  },
+  "친하다": {
+   "hanja": "親하다",
+   "pickedBy": "dict"
+  },
+  "쾌청": {
+   "hanja": "快晴",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "탁류": {
+   "hanja": "濁流",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "탄생": {
+   "hanja": "誕生",
+   "pickedBy": "dict"
+  },
+  "탈피": {
+   "hanja": "脫皮",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "태양": {
+   "hanja": "太陽",
+   "pickedBy": "dict"
+  },
+  "통로": {
+   "hanja": "通路",
+   "pickedBy": "dict"
+  },
+  "통신": {
+   "hanja": "通信",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "통하다": {
+   "hanja": "通하다",
+   "pickedBy": "dict"
+  },
+  "특별": {
+   "hanja": "特別",
+   "pickedBy": "dict"
+  },
+  "특별히": {
+   "hanja": "特別히",
+   "pickedBy": "dict"
+  },
+  "특성": {
+   "hanja": "特性",
+   "pickedBy": "dict"
+  },
+  "특수": {
+   "hanja": "特殊",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "특이": {
+   "hanja": "特異",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "특정": {
+   "hanja": "特定",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "특집": {
+   "hanja": "特輯",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "특훈": {
+   "hanja": "特訓",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "파도": {
+   "hanja": "波濤",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "파도타기": {
+   "hanja": "波濤타기",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "파란색": {
+   "hanja": "파란色",
+   "pickedBy": "dict"
+  },
+  "판별": {
+   "hanja": "判別",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "패배": {
+   "hanja": "敗北",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "편리": {
+   "hanja": "便利",
+   "pickedBy": "dict"
+  },
+  "편지": {
+   "hanja": "便紙",
+   "pickedBy": "dict"
+  },
+  "편하다": {
+   "hanja": "便하다",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "평소": {
+   "hanja": "平素",
+   "pickedBy": "dict"
+  },
+  "포기": {
+   "hanja": "抛棄",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "포도": {
+   "hanja": "葡萄",
+   "pickedBy": "dict"
+  },
+  "포자": {
+   "hanja": "胞子",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "폭발": {
+   "hanja": "爆發",
+   "pickedBy": "dict"
+  },
+  "폭포": {
+   "hanja": "瀑布",
+   "pickedBy": "dict"
+  },
+  "표시": {
+   "hanja": "表示",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "피뢰침": {
+   "hanja": "避雷針",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "피부": {
+   "hanja": "皮膚",
+   "pickedBy": "dict"
+  },
+  "피하다": {
+   "hanja": "避하다",
+   "pickedBy": "dict"
+  },
+  "필요": {
+   "hanja": "必要",
+   "pickedBy": "dict"
+  },
+  "한편": {
+   "hanja": "한便",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "항구": {
+   "hanja": "港口",
+   "pickedBy": "dict"
+  },
+  "항상": {
+   "hanja": "恒常",
+   "pickedBy": "dict"
+  },
+  "해결": {
+   "hanja": "解決",
+   "pickedBy": "dict"
+  },
+  "해제": {
+   "hanja": "解除",
+   "pickedBy": "dict"
+  },
+  "행동": {
+   "hanja": "行動",
+   "pickedBy": "dict"
+  },
+  "행복": {
+   "hanja": "幸福",
+   "pickedBy": "dict"
+  },
+  "향기": {
+   "hanja": "香氣",
+   "pickedBy": "dict"
+  },
+  "향하다": {
+   "hanja": "向하다",
+   "pickedBy": "dict"
+  },
+  "현재": {
+   "hanja": "現在",
+   "pickedBy": "dict"
+  },
+  "형제": {
+   "hanja": "兄弟",
+   "pickedBy": "dict"
+  },
+  "호박": {
+   "hanja": "琥珀",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "호수": {
+   "hanja": "湖水",
+   "pickedBy": "dict"
+  },
+  "호주": {
+   "hanja": "濠洲",
+   "pickedBy": "dict"
+  },
+  "호화": {
+   "hanja": "豪華",
+   "pickedBy": "dict"
+  },
+  "혹시": {
+   "hanja": "或是",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "혼란": {
+   "hanja": "混亂",
+   "pickedBy": "dict"
+  },
+  "혼신": {
+   "hanja": "渾身",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "홍련": {
+   "hanja": "紅蓮",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "화나다": {
+   "hanja": "火나다",
+   "pickedBy": "dict"
+  },
+  "화내다": {
+   "hanja": "火내다",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "화산": {
+   "hanja": "火山",
+   "pickedBy": "dict"
+  },
+  "화상": {
+   "hanja": "火傷",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "화석": {
+   "hanja": "化石",
+   "pickedBy": "dict"
+  },
+  "화풀이": {
+   "hanja": "火풀이",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "확률": {
+   "hanja": "確率",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "확인": {
+   "hanja": "確認",
+   "pickedBy": "dict"
+  },
+  "환상": {
+   "hanja": "幻想",
+   "pickedBy": "dict"
+  },
+  "환영": {
+   "hanja": "歡迎",
+   "pickedBy": "dict"
+  },
+  "활동": {
+   "hanja": "活動",
+   "pickedBy": "dict"
+  },
+  "회복": {
+   "hanja": "回復",
+   "pickedBy": "dict"
+  },
+  "회색": {
+   "hanja": "灰色",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "회피": {
+   "hanja": "回避",
+   "pickedBy": "dict"
+  },
+  "효과": {
+   "hanja": "效果",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "후회": {
+   "hanja": "後悔",
+   "pickedBy": "dict"
+  },
+  "휴식": {
+   "hanja": "休息",
+   "pickedBy": "dict"
+  },
+  "흡반": {
+   "hanja": "吸盤",
+   "pickedBy": "dict"
+  },
+  "흡수": {
+   "hanja": "吸收",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "흡혈": {
+   "hanja": "吸血",
+   "pickedBy": "llm-claude-opus-5-5"
+  },
+  "흥미": {
+   "hanja": "興味",
+   "pickedBy": "dict"
+  }
+ },
+ "chars": {
+  "一": "one; a, an",
+  "上": "top; superior, highest",
+  "下": "under, underneath, below; down",
+  "不": "no, not; un-",
+  "世": "generation; world",
+  "中": "central; center, middle",
+  "主": "master, chief owner; host",
+  "乳": "breast, nipples; milk, suckle",
+  "亂": "confusion, state of chaos",
+  "了": "to finish; particle of completed action",
+  "事": "affair, matter, business; to serve",
+  "于": "in, on, at; go to",
+  "亡": "death, destroyed; lose, perish",
+  "交": "mix; intersect",
+  "人": "man; people",
+  "今": "now, today, modern era",
+  "仔": "small thing, child; young animal",
+  "付": "give, deliver, pay, hand over; entrust",
+  "代": "replace, replacement (of person or gener",
+  "令": "command, order; 'commandant', magistrate",
+  "以": "by means of; thereby, therefore",
+  "件": "numerary adjunct for article; matter",
+  "休": "rest, stop; retire",
+  "住": "reside, live at, dwell, lodge; stop",
+  "作": "make; work",
+  "使": "cause, send on a mission, order",
+  "來": "come, coming; return, returning",
+  "例": "precedent, example; regulation",
+  "依": "rely on, be set in; consent, obey a wish",
+  "便": "convenience, ease; expedient",
+  "係": "bind, tie up; involve, relation",
+  "保": "protect, safeguard, defend, care",
+  "信": "trust, believe; letter",
+  "修": "study; repair",
+  "倉": "granary; berth",
+  "値": "price, cost, worth",
+  "健": "strong, robust, healthy; strength",
+  "傘": "umbrella, parasol, parachute",
+  "備": "prepare, ready, perfect",
+  "催": "press, urge",
+  "傳": "summon; propagate, transmit",
+  "傷": "wound, injury; fall ill from",
+  "僚": "companion, colleague; officials",
+  "優": "superior, excellent; actor",
+  "元": "first; dollar",
+  "兄": "elder brother",
+  "充": "fill, be full, supply",
+  "先": "first, former, previous",
+  "光": "light, brilliant, shine; only",
+  "免": "spare; excuse from",
+  "入": "enter, come in(to), join",
+  "內": "inside, interior; domestic",
+  "全": "maintain, keep whole or intact",
+  "兩": "two, both, pair, couple; ounce",
+  "公": "fair, equitable; public",
+  "具": "tool, implement; draw up, write",
+  "冒": "risk, brave, dare",
+  "冥": "dark, gloomy, night; deep",
+  "出": "go out, send out; stand",
+  "分": "divide; small unit of time etc.",
+  "判": "judge; discriminate",
+  "別": "separate, other; do not",
+  "利": "gains, advantage, profit, merit",
+  "刻": "carve, engrave; quarter hour",
+  "則": "rule, law, regulation; grades",
+  "割": "cut, divide, partition; cede",
+  "劑": "medicinal preparation",
+  "力": "power, capability, influence",
+  "加": "add to, increase, augment",
+  "助": "help, aid, assist",
+  "努": "to exert, strive, make an effort",
+  "動": "move, happen; movement, action",
+  "務": "affairs, business; must, should",
+  "勝": "victory; excel, be better than",
+  "勢": "power, force; tendency",
+  "包": "wrap, pack, bundle; package",
+  "化": "change, convert, reform; -ize",
+  "北": "north; northern",
+  "十": "ten, tenth; complete",
+  "午": "seventh earthly branch",
+  "半": "half",
+  "博": "gamble, play games; wide, broad",
+  "占": "divine; observe",
+  "印": "print, seal, stamp, chop, mark",
+  "危": "dangerous, precarious; high",
+  "卽": "promptly",
+  "參": "take part in, intervene; ginseng",
+  "反": "reverse, opposite, contrary, anti",
+  "取": "take, receive, obtain; select",
+  "受": "receive, accept, get; bear, stand",
+  "口": "mouth; open end",
+  "古": "old, classic, ancient",
+  "只": "only, just, simply",
+  "可": "may, can, -able; possibly",
+  "右": "right; west",
+  "各": "each, individually, every, all",
+  "合": "combine, unite, join; gather",
+  "同": "same, similar; together with",
+  "名": "name, rank, title, position",
+  "向": "toward, direction, trend",
+  "吸": "inhale, suck in; absorb",
+  "周": "Zhou dynasty; circumference",
+  "呪": "curse, damn, incantation",
+  "味": "taste, smell, odor; delicacy",
+  "命": "life; destiny, fate, luck",
+  "品": "article, product, commodity",
+  "員": "member; personnel, staff member",
+  "善": "good, virtuous, charitable, kind",
+  "單": "single, individual, only; lone",
+  "噴": "spurt, blow out, puff out",
+  "四": "four",
+  "回": "return, turn around; a time",
+  "因": "cause, reason; by",
+  "困": "to surround, besiege; to be surrounded",
+  "國": "nation, country, nation-state",
+  "圍": "surround, encircle, corral",
+  "園": "garden; park, orchard",
+  "圖": "diagram; chart, map, picture",
+  "在": "be at, in, on; consist in, rest",
+  "地": "earth; soil, ground",
+  "域": "district, region, boundary; land",
+  "執": "hold in hand; keep",
+  "基": "foundation, base",
+  "報": "report, tell, announce",
+  "場": "open space, field, market",
+  "境": "boundary, frontier; area, region",
+  "壁": "partition wall; walls of a house",
+  "士": "scholar, gentleman; soldier",
+  "壯": "big, large; robust",
+  "多": "much, many; more than, over",
+  "夢": "dream; visionary",
+  "大": "big, great, vast, large, high",
+  "天": "sky, heaven; god, celestial",
+  "太": "very, too, much; big",
+  "夫": "man, male adult, husband; those",
+  "失": "lose; make mistake, neglect",
+  "女": "woman, girl; feminine",
+  "妨": "interfere with, impede, obstruct",
+  "始": "begin, start; then, only then",
+  "姑": "father's sister; husband's mother",
+  "姨": "mother/wife's sister; concubine",
+  "威": "pomp, power; powerful",
+  "婦": "married women; woman",
+  "媒": "go-between, matchmaker; medium",
+  "子": "offspring, child; fruit, seed of",
+  "字": "letter, character, word",
+  "存": "exist, live, be; survive",
+  "孫": "grandchild, descendent; surname",
+  "孵": "sit on eggs, hatch",
+  "學": "learning, knowledge; school",
+  "宅": "residence, dwelling, home; grave",
+  "宇": "house; building, structure",
+  "安": "peaceful, tranquil, quiet",
+  "完": "complete, finish, settle; whole",
+  "宏": "wide, spacious, great, vast",
+  "宙": "time as concept; infinite time",
+  "定": "decide, settle, fix",
+  "客": "guest, traveller; customer",
+  "室": "room, home, house, chamber",
+  "害": "injure, harm; destroy, kill",
+  "家": "house, home, residence; family",
+  "容": "looks, appearance; figure, form",
+  "密": "dense, thick, close; intimate",
+  "實": "real, true, solid, honest",
+  "寧": "repose, serenity, peace; peaceful",
+  "寫": "write; draw, sketch",
+  "寶": "treasure, jewel; precious, rare",
+  "封": "letter, envelope; feudal",
+  "射": "shoot, eject, issue forth, emit",
+  "專": "monopolize, take sole possession",
+  "尊": "respect, revere, venerate; honor",
+  "對": "correct, right; facing, opposed",
+  "小": "small, tiny, insignificant",
+  "少": "few, less, inadequate",
+  "屋": "house; room",
+  "屬": "class, category, type; to belong to",
+  "山": "mountain, hill, peak",
+  "巖": "cliff, precipice; cave, grotto",
+  "州": "administrative division, state",
+  "工": "labor, work; worker, laborer",
+  "左": "left; east",
+  "巨": "large, great, enormous; chief",
+  "己": "self, oneself; personal, private",
+  "市": "market, fair; city, town",
+  "布": "cotton cloth, textiles, linen",
+  "師": "teacher, master, specialist",
+  "帳": "tent; screen, mosquito net",
+  "常": "common, normal, frequent, regular",
+  "幕": "curtain, screen, tent",
+  "干": "oppose, offend; invade",
+  "平": "flat, level, even; peaceful",
+  "年": "year; new-years",
+  "幸": "luck(ily), favor, fortunately",
+  "幻": "illusion, fantasy, mirage",
+  "幽": "quiet, secluded, tranquil; dark",
+  "序": "series, serial order, sequence",
+  "店": "shop, store; inn, hotel",
+  "度": "degree, system; manner",
+  "庫": "armory, treasury, storehouse",
+  "康": "peaceful, quiet; happy, healthy",
+  "建": "build, establish, erect, found",
+  "式": "style, system, formula, rule",
+  "引": "to pull, draw out, attract; to stretch",
+  "弟": "young brother; junior",
+  "弱": "weak; fragile, delicate",
+  "張": "stretch, extend, expand; sheet",
+  "强": "strong, powerful, energetic",
+  "形": "form, shape, appearance",
+  "彫": "carve, decorate; emaciated",
+  "彷": "like, resembling; resemble",
+  "役": "service; a servant, laborer",
+  "彼": "that, there, those",
+  "待": "treat, entertain, receive; wait",
+  "後": "behind, rear, after; descendents",
+  "徙": "move one's abode, shift, migrate",
+  "徨": "doubtful, irresolute, vacillating",
+  "復": "return; repeat",
+  "微": "small, prefix micro-, trifling",
+  "德": "ethics, morality, virtue",
+  "心": "heart; mind, intelligence",
+  "必": "surely, most certainly; must",
+  "志": "purpose, will, determination; annals",
+  "快": "rapid, quick, speedy, fast; soon",
+  "念": "think of, recall, study",
+  "怒": "anger, rage, passion; angry",
+  "急": "quick, quickly; urgent, pressing",
+  "性": "nature, character, sex",
+  "怨": "hatred, enmity, resentment",
+  "怪": "strange, unusual, peculiar",
+  "恒": "constant, regular, persistent",
+  "恕": "forgive, excuse, show mercy",
+  "恨": "hatred, dislike; resent, hate",
+  "息": "rest, put stop to, end, cease",
+  "悔": "repent, show remorse, regret",
+  "悟": "to apprehend, realize, become aware",
+  "情": "feeling, sentiment, emotion",
+  "惡": "evil, wicked, bad, foul",
+  "想": "think, speculate, plan, consider",
+  "意": "thought, idea, opinion; think",
+  "愛": "love, be fond of, like",
+  "感": "feel, perceive, emotion",
+  "態": "manner, bearing, attitude",
+  "慶": "congratulate, celebrate",
+  "憤": "resent, hate; indignant",
+  "憧": "irresolute, indecisive; yearn for",
+  "憬": "rouse, awaken; become conscious",
+  "憶": "remember, reflect upon; memory",
+  "應": "should, ought to, must",
+  "成": "completed, finished, fixed",
+  "或": "or, either, else; perhaps, maybe",
+  "戰": "war, fighting, battle",
+  "所": "place, location; numerary adjunct",
+  "手": "hand",
+  "才": "talent, ability; just, only",
+  "技": "skill, ability, talent, ingenuity",
+  "折": "break off, snap; bend",
+  "抛": "throw (away)",
+  "押": "mortgage, pledge; deposit",
+  "拒": "ward off with hand, defend",
+  "按": "put hand on, press down with hand",
+  "挑": "a load carried on the shoulders",
+  "授": "give to, transmit; confer",
+  "接": "receive; continue",
+  "揚": "scatter, spread; praise",
+  "換": "change, exchange; substitute",
+  "揭": "raise, lift up; surname",
+  "揮": "direct; wipe away",
+  "援": "aid, assist; lead",
+  "擇": "select, choose, pick out",
+  "擊": "strike, hit, beat; attack, fight",
+  "操": "conduct, run, control, manage",
+  "收": "gather together, collect; harvest",
+  "攻": "attack, assault; criticize",
+  "放": "put, release, free, liberate",
+  "效": "result, effect; effectiveness",
+  "敎": "teach",
+  "救": "save, rescue, relieve; help, aid",
+  "敗": "be defeated, decline, fail",
+  "散": "scatter, disperse, break up",
+  "敬": "respect, honor; respectfully",
+  "整": "orderly, neat, tidy; whole",
+  "數": "number; several",
+  "文": "literature, culture, writing",
+  "料": "consider, conjecture",
+  "方": "a square, rectangle; a region",
+  "於": "in, at, on; interjection alas!",
+  "旅": "trip, journey; travel",
+  "族": "a family clan, ethnic group, tribe",
+  "日": "sun; day",
+  "旦": "dawn; morning",
+  "明": "bright, light, brilliant; clear",
+  "是": "indeed, yes, right; to be",
+  "時": "time, season; era, age, period",
+  "普": "universal, general, widespread",
+  "景": "scenery, view; conditions",
+  "晴": "clear weather, fine weather",
+  "暗": "dark; obscure",
+  "暫": "temporary",
+  "替": "change, replace, substitute for",
+  "最": "most, extremely, exceedingly",
+  "會": "to assemble, meet together; a meeting",
+  "服": "clothes; wear, dress",
+  "望": "to look at, look forward",
+  "未": "not yet; eighth earthly branch",
+  "本": "root, origin, source; basis",
+  "材": "material, stuff; timber",
+  "板": "plank, board; iron or tin plate",
+  "果": "fruit; result",
+  "柔": "soft; gentle, pliant",
+  "査": "investigate, examine, seek into",
+  "株": "numerary adjunct for trees; root",
+  "根": "root, base(d on); foundation",
+  "格": "pattern, standard, form; style",
+  "械": "weapons; implements, instruments",
+  "棄": "reject, abandon, discard",
+  "棲": "perch; roost",
+  "標": "a mark, symbol, label, sign; standard",
+  "模": "model, standard, pattern; copy",
+  "樣": "shape, form, pattern, style",
+  "機": "machine; moment, chance",
+  "次": "order, sequence; next",
+  "欲": "desire, want, long for; intend",
+  "歡": "happy, pleased, glad; joy",
+  "止": "stop, halt, desist; detain",
+  "正": "right, proper, correct",
+  "此": "this, these; in this case, then",
+  "死": "die; dead",
+  "殊": "different, special, unusual",
+  "母": "mother; female elders",
+  "每": "every, each",
+  "毒": "poison, venom; poisonous",
+  "氣": "air, gas, steam, vapor; spirit",
+  "水": "water, liquid, lotion, juice",
+  "江": "large river; the Yangzi",
+  "決": "decide, determine, judge",
+  "沙": "sand, gravel, pebbles; granulated",
+  "油": "oil, fat, grease, lard; paints",
+  "治": "govern, regulate, administer",
+  "況": "condition, situation; furthermore",
+  "泉": "spring, fountain; wealth, money",
+  "法": "law, rule, regulation, statute",
+  "波": "waves, breakers; undulations",
+  "注": "concentrate, focus, direct",
+  "泳": "dive; swim",
+  "洋": "ocean, sea; foreign",
+  "洞": "cave, grotto; ravine",
+  "洲": "continent; island",
+  "活": "live, exist, survive; lively",
+  "派": "school of thought, sect, branch",
+  "流": "flow, circulate, drift; class",
+  "浮": "to float, drift, waft; to exceed",
+  "消": "vanish, die out; melt away",
+  "液": "sap, juice, liquid, fluid",
+  "深": "deep; depth",
+  "混": "to mix, blend, mingle; to bumble along",
+  "港": "port, harbor; small stream",
+  "渾": "muddy, turbid; blend, merge, mix",
+  "湖": "a lake; Hubei, Hunan",
+  "源": "spring; source, head",
+  "準": "rule, guideline, standard",
+  "溫": "lukewarm, warm; tepid, mild",
+  "溶": "to melt, dissolve; overflowing with",
+  "演": "perform, put on; exercise",
+  "漠": "desert; aloof, indifferent, cool",
+  "漫": "overflow of water; spreading",
+  "漸": "gradually; hexagram ䷴",
+  "濁": "muddy, turbid, dirty, filthy",
+  "濕": "wet, moist, humid, damp; an illness",
+  "濠": "moat, trench, ditch",
+  "濤": "large waves",
+  "瀑": "waterfall, cascade; heavy rain",
+  "火": "fire, flame; burn",
+  "灰": "ashes; dust",
+  "無": "negative, no, not; lack, have no",
+  "然": "yes, certainly; pledge, promise",
+  "煙": "smoke, soot; opium",
+  "熱": "hot; heat",
+  "燒": "burn; bake",
+  "營": "encampment, barracks; manage",
+  "爆": "crackle, pop, burst, explode",
+  "爲": "do, handle, govern, act; be",
+  "父": "father; Kangxi radical 88",
+  "牛": "cow, ox, bull; Kangxi radical 93",
+  "物": "thing, substance, creature",
+  "特": "special, unique, distinguished",
+  "狀": "form; appearance",
+  "猛": "violent, savage, cruel; bold",
+  "獄": "prison, jail; case",
+  "率": "to lead; ratio",
+  "王": "king, ruler; royal",
+  "珀": "amber",
+  "現": "appear, manifest, become visible",
+  "球": "ball, sphere, globe; round",
+  "理": "reason, logic; manage",
+  "琉": "sparkling stone; glazed, opaque",
+  "琥": "jewel in shape of tiger; amber",
+  "璃": "glass",
+  "璧": "piece of jade with hole in it",
+  "生": "life, living, lifetime; birth",
+  "用": "use, employ, apply, operate; use",
+  "由": "cause, reason; from",
+  "申": "to state to a superior, report; extend",
+  "男": "male, man; son",
+  "界": "boundary, limit; domain",
+  "番": "to take turns; a turn, a time",
+  "異": "different, unusual, strange",
+  "畵": "delineate, painting, picture, drawing",
+  "當": "bear, accept, undertake; just",
+  "疫": "epidemic, plague, pestilence",
+  "痛": "pain, ache; sorry, sad",
+  "痲": "pock-marked; leprosy",
+  "痺": "paralysis, numbness",
+  "療": "be healed, cured, recover",
+  "登": "rise, mount, board, climb",
+  "發": "issue, dispatch, send out, emit",
+  "百": "one hundred; numerous, many",
+  "的": "possessive, adjectival suffix",
+  "皮": "skin, hide, fur, feather; outer",
+  "盞": "small cup or container",
+  "監": "supervise, control, direct",
+  "盤": "tray, plate, dish; examine",
+  "目": "eye; look, see",
+  "直": "straight, erect, vertical",
+  "相": "mutual, reciprocal, each other",
+  "看": "look, see; examine, scrutinize",
+  "眞": "real, actual, true, genuine",
+  "眠": "close eyes, sleep; hibernate",
+  "眼": "eye; eyelet, hole, opening",
+  "着": "make move, take action",
+  "瞬": "wink, blink; in a wink, a flash",
+  "石": "stone, rock, mineral; Kangxi radical 112",
+  "砂": "sand; pebbles, gravel",
+  "硏": "grind",
+  "確": "sure, certain; real, true",
+  "磁": "magnetic; magnetism",
+  "礎": "foundation stone, plinth",
+  "示": "show, manifest; demonstrate",
+  "社": "god of the soil and altars to him",
+  "祝": "pray for happiness or blessings",
+  "神": "spirit, god, supernatural being",
+  "票": "slip of paper or bamboo; ticket",
+  "禁": "restrict, prohibit, forbid",
+  "福": "happiness, good fortune, blessing",
+  "禦": "defend, resist, hold out against",
+  "禮": "social custom; manners",
+  "秀": "ear of grain; flowering, luxuriant",
+  "科": "section, department, science",
+  "秘": "secret, mysterious, abstruse",
+  "移": "change place, shift; move about",
+  "程": "journey, trip; schedule, agenda",
+  "種": "seed; race",
+  "究": "examine, investigate",
+  "空": "empty, hollow, bare, deserted",
+  "突": "suddenly, abruptly, unexpectedly",
+  "窟": "hole, cave; cellar",
+  "笑": "smile, laugh, giggle; snicker",
+  "符": "i.d. tag, tally, symbol, charm",
+  "第": "sequence, number; grade, degree",
+  "答": "answer, reply; return",
+  "策": "scheme, plan; to whip",
+  "算": "count, calculate, figure; plan",
+  "管": "pipe, tube, duct; woodwind music",
+  "範": "pattern, model, rule, law",
+  "籍": "record, register, list; census",
+  "粉": "powder, face powder; plaster",
+  "粘": "viscous, mucous; glutinous",
+  "精": "essence; semen",
+  "糖": "sugar; candy",
+  "紀": "record, annal, historical account",
+  "紅": "red, vermillion; blush, flush",
+  "紙": "paper",
+  "素": "white (silk); plain",
+  "細": "fine, tiny; slender, thin",
+  "終": "end; finally, in the end",
+  "組": "class; section, department",
+  "結": "knot, tie; join, connect",
+  "絡": "enmesh, wrap around; web, net",
+  "絶": "cut",
+  "經": "classic works; pass through",
+  "綠": "green; chlorine",
+  "線": "thread, line, wire; clue",
+  "練": "practice, drill, exercise, train",
+  "繼": "continue, maintain, carry on",
+  "續": "continue, carry on; succeed",
+  "置": "place, lay out; set aside",
+  "美": "beautiful, pretty; pleasing",
+  "義": "right conduct, righteousness",
+  "習": "practice; flapping wings",
+  "老": "old, aged; experienced",
+  "考": "examine, test; investigate",
+  "者": "that which; he who",
+  "聞": "hear; smell",
+  "聯": "connect, join; associate, ally",
+  "育": "produce, give birth to; educate",
+  "胞": "womb, placenta, fetal membrane",
+  "能": "to be able; can, permitted to",
+  "脅": "ribs; armpits",
+  "脫": "take off, peel off, strip",
+  "膚": "skin; superficial, shallow",
+  "膳": "meals, provisions, board",
+  "自": "self, private, personal; from",
+  "臭": "smell, stink, emit foul odor",
+  "興": "thrive, prosper, flourish",
+  "舊": "old, ancient; former, past",
+  "船": "ship, boat, vessel",
+  "色": "color, tint, hue, shade; form, body",
+  "花": "flower; blossoms",
+  "若": "if, supposing, assuming; similar",
+  "苦": "bitter; hardship, suffering",
+  "菊": "chrysanthemum",
+  "華": "flowery; illustrious",
+  "萄": "grapes",
+  "萬": "ten thousand; innumerable",
+  "葉": "leaf, petal; page of book",
+  "葡": "grapes",
+  "蓄": "store, save, hoard, gather",
+  "蓮": "lotus, water lily; paradise",
+  "蔘": "ginseng; huge",
+  "藤": "rattan, cane; creeper plant",
+  "處": "place, locale; department",
+  "血": "blood; Kangxi radical 143",
+  "行": "go; walk",
+  "術": "art, skill, special feat",
+  "衝": "rush against, charge ahead",
+  "表": "show, express, manifest, display",
+  "補": "mend, patch, fix, repair, restore",
+  "裝": "dress, clothes; decorate",
+  "製": "make, manufacture; produce",
+  "複": "repeat, double, overlap",
+  "褐": "coarse woolen cloth; dull, dark",
+  "西": "west(ern); westward",
+  "要": "necessary, essential; necessity",
+  "見": "see, observe, behold; perceive",
+  "規": "rules, regulations, customs, law",
+  "親": "relatives, parents; intimate",
+  "覺": "to wake up from sleep; conscious",
+  "覽": "look at, inspect; perceive",
+  "解": "loosen, unfasten, untie; explain",
+  "觸": "touch; butt, ram, gore",
+  "計": "plan, plot; stratagem",
+  "訓": "teach, instruct; exegesis",
+  "託": "entrust, rely on; commission",
+  "記": "record; keep in mind, remember",
+  "設": "build; establish",
+  "詛": "curse; swear, pledge",
+  "試": "test, try, experiment",
+  "話": "speech, talk, language; dialect",
+  "認": "recognize, know, understand",
+  "誕": "to bear children, give birth; birth",
+  "語": "language, words; saying, expression",
+  "誠": "sincere, honest; true, real",
+  "說": "speak, say, talk; scold, upbraid",
+  "調": "transfer, move, change; tune",
+  "請": "ask, request; invite",
+  "論": "debate; discuss",
+  "講": "explain; discuss",
+  "謝": "thank; decline",
+  "證": "proof, evidence; testify, verify",
+  "警": "guard, watch; alert, alarm",
+  "護": "protect, guard, defend, shelter",
+  "變": "change, transform, alter; rebel",
+  "讓": "allow, permit, yield, concede",
+  "豪": "brave, heroic, chivalrous",
+  "豫": "relaxed, comfortable, at ease",
+  "負": "load, burden; carry, bear",
+  "貨": "goods, commodities, products",
+  "貯": "store, stockpile, hoard",
+  "賀": "congratulate; send present",
+  "賞": "reward, grant, bestow; appreciate",
+  "走": "walk, go on foot; run",
+  "起": "rise, stand up; go up",
+  "超": "jump over, leap over; surpass",
+  "趣": "what attracts one's attention",
+  "跡": "search, track, trace",
+  "路": "road, path, street; journey",
+  "身": "body; trunk, hull",
+  "軟": "soft, flexible, pliable; weak",
+  "輯": "gather up, collect; edit, compile",
+  "轉": "shift, move, turn",
+  "辭": "words, speech, expression, phrase",
+  "迎": "receive, welcome, greet",
+  "近": "near, close; approach",
+  "送": "see off, send off; dispatch, give",
+  "逃": "escape, flee; abscond, dodge",
+  "逆": "disobey, rebel; rebel, traitor",
+  "途": "way, road, path, journey; course",
+  "通": "pass through; common",
+  "速": "quick, prompt, speedy",
+  "連": "join, connect; continuous",
+  "週": "week; turn, cycle",
+  "進": "advance, make progress, enter",
+  "遇": "meet, come across, encounter",
+  "遊": "wander, roam, travel",
+  "運": "luck, fortune; ship, transport",
+  "道": "path, road, street; method, way",
+  "遠": "distant, remote, far; profound",
+  "選": "choose, select; elect",
+  "遺": "lose; articles lost",
+  "避": "avoid; turn aside",
+  "邊": "edge, margin, side, border",
+  "邸": "official residence, residence of",
+  "部": "part, division, section",
+  "都": "metropolis, capital; all, the whole",
+  "酒": "wine, spirits, liquor, alcoholic beverag",
+  "重": "heavy, weighty; double",
+  "野": "open country, field; wilderness",
+  "金": "gold; metals in general",
+  "釘": "nail, spike; pursue closely",
+  "釜": "cauldron, pot, kettle",
+  "針": "needle; pin",
+  "鈍": "blunt, obtuse; dull",
+  "銃": "ancient weapon, blunderbuss",
+  "銅": "copper (element 29, Cu); brass, bronze",
+  "錄": "copy, write down, record",
+  "錢": "money, currency, coins",
+  "錯": "error, blunder, mistake, wrong",
+  "鍊": "smelt metals, forge; refine",
+  "鍛": "forge metal; temper, refine",
+  "鏡": "mirror; lens",
+  "鐵": "iron (element 26, Fe)",
+  "鑑": "mirror, looking glass; reflect",
+  "長": "long; length",
+  "開": "open; initiate, begin, start",
+  "間": "interval, space; place, between",
+  "關": "frontier pass; close",
+  "防": "defend; prevent",
+  "附": "adhere to, append; rely on near to",
+  "院": "courtyard, yard, court; school",
+  "除": "eliminate, remove, except",
+  "陽": "the active, male principle in Chinese ph",
+  "險": "narrow pass, strategic point, dangerous",
+  "難": "difficult, arduous, hard; unable",
+  "雨": "rain; rainy",
+  "零": "zero; fragment, fraction",
+  "雷": "thunder",
+  "電": "electricity, electric; lightning",
+  "震": "shake, quake, tremor; excite",
+  "靈": "spirit, soul; spiritual world",
+  "靑": "blue, green; young",
+  "靜": "quiet, still, motionless; gentle",
+  "面": "face; surface",
+  "音": "sound, tone, pitch, pronunciation",
+  "頂": "top, peak; carry on head",
+  "順": "obey, submit to, go along with",
+  "領": "neck; collar",
+  "題": "forehead; title, headline",
+  "類": "class, group, kind, category",
+  "風": "wind; air",
+  "飛": "fly; go quickly",
+  "食": "eat; meal",
+  "飮": "drink; swallow",
+  "養": "raise, rear, bring up; support",
+  "館": "public building",
+  "香": "fragrant, sweet-smelling; incense",
+  "騷": "harass, bother, annoy, disturb, agitate",
+  "驗": "test, examine, inspect; verify",
+  "體": "body; group, class, body, unit",
+  "高": "high, tall; lofty, elevated",
+  "鬪": "struggle, fight, compete, contend",
+  "魂": "soul, spirit",
+  "鱗": "fish scales",
+  "鳥": "bird; Kangxi radical 196",
+  "麥": "wheat, barley, oats; Kangxi radical 199",
+  "點": "dot, speck, spot; point, degree"
+ }
+}

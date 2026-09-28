@@ -11,6 +11,8 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -36,6 +38,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.launch
@@ -334,6 +338,7 @@ fun ReviewScreen(
                                 direction = direction,
                                 senses = sensesForBack(vocab, direction),
                             )
+                            HanjaCard(module = module, korean = vocab.korean)
                             if (sentenceSides != null) {
                                 SentenceCard(
                                     frontText = sentenceSides.front,
@@ -372,6 +377,7 @@ fun ReviewScreen(
                         direction = direction,
                         senses = sensesForBack(vocab, direction),
                     )
+                    HanjaCard(module = module, korean = vocab.korean)
                     if (sentenceSides != null) {
                         SentenceCard(
                             frontText = sentenceSides.front,
@@ -532,6 +538,91 @@ private fun CardBack(
         }
         notes?.let {
             Text(it, color = Color(0xFFA7F3D0), fontSize = 12.sp)
+        }
+    }
+}
+
+/**
+ * Hanja breakdown for Sino-Korean words: each syllable's character with its
+ * meaning (體 body · 育 educate · 館 public building). Tapping a character
+ * lists other deck words built on it, ticking the ones already learned, so
+ * a new word hooks onto known ones. Renders nothing for native words and
+ * loanwords.
+ */
+@Composable
+private fun HanjaCard(module: MoneoModule, korean: String) {
+    val parts = remember(korean) { module.hanja.breakdown(korean) } ?: return
+    var selected by remember(korean) { mutableStateOf<Char?>(null) }
+    val vocab by module.repository.vocab.collectAsState()
+    val cards by module.repository.cards.collectAsState()
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(Color(0xFF1F2937), shape = RoundedCornerShape(12.dp))
+            .padding(14.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        Text("漢字 · tap a character", color = Color(0xFF9CA3AF), fontSize = 10.sp)
+        Row(
+            modifier = Modifier.horizontalScroll(rememberScrollState()),
+            horizontalArrangement = Arrangement.spacedBy(6.dp),
+        ) {
+            parts.forEach { p ->
+                val h = p.hanja
+                val isSel = h != null && h == selected
+                Column(
+                    modifier = Modifier
+                        .width(76.dp)
+                        .background(
+                            if (isSel) Color(0xFF374151) else Color.Transparent,
+                            RoundedCornerShape(8.dp),
+                        )
+                        .then(if (h != null) Modifier.clickable { selected = if (isSel) null else h } else Modifier)
+                        .padding(vertical = 6.dp, horizontal = 4.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                ) {
+                    Text(
+                        (h ?: p.syllable).toString(),
+                        color = if (h != null) Color.White else Color(0xFF6B7280),
+                        fontSize = 24.sp,
+                    )
+                    Text(p.syllable.toString(), color = Color(0xFFFCD34D), fontSize = 12.sp)
+                    Text(
+                        p.meaning ?: "native",
+                        color = Color(0xFFD1D5DB),
+                        fontSize = 10.sp,
+                        textAlign = TextAlign.Center,
+                        maxLines = 2,
+                        overflow = TextOverflow.Ellipsis,
+                    )
+                }
+            }
+        }
+        val sel = selected
+        if (sel != null) {
+            val related = remember(sel, korean) { module.hanja.wordsWith(sel, except = korean) }
+            val byKorean = remember(vocab) { vocab.values.groupBy { it.korean } }
+            val rows = related.mapNotNull { w ->
+                val entries = byKorean[w] ?: return@mapNotNull null
+                val known = entries.any { e ->
+                    cards[e.id]?.let { it.suspended || it.snapshot.state == CardState.REVIEW } == true
+                }
+                Triple(w, entries.first().gloss, known)
+            }.sortedByDescending { it.third }.take(8)
+            if (rows.isEmpty()) {
+                Text("No other deck words use $sel yet.", color = Color(0xFF9CA3AF), fontSize = 11.sp)
+            } else {
+                Text("Also uses $sel:", color = Color(0xFF9CA3AF), fontSize = 11.sp)
+                rows.forEach { (w, gloss, known) ->
+                    Text(
+                        (if (known) "✓ " else "   ") + "$w — $gloss",
+                        color = if (known) Color(0xFF6EE7B7) else Color(0xFFE5E7EB),
+                        fontSize = 12.sp,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                    )
+                }
+            }
         }
     }
 }
