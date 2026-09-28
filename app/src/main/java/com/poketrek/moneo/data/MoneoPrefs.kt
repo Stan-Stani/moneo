@@ -41,6 +41,7 @@ private val KEY_AREA_GATE_THRESHOLD_PCT = intPreferencesKey("moneo_area_gate_thr
 private val KEY_VISITED_AREAS = stringSetPreferencesKey("moneo_visited_areas")
 private val KEY_STUDY_NEXT = stringPreferencesKey("moneo_study_next")
 private val KEY_READING_HELP = booleanPreferencesKey("moneo_reading_help")
+private val KEY_ASK_FOLDER = stringPreferencesKey("moneo_ask_folder")
 private val KEY_DIRECTION = stringPreferencesKey("moneo_direction")
 private val KEY_DIRECTION_MANUAL = booleanPreferencesKey("moneo_direction_manual")
 private val KEY_TTS_LANGUAGE = stringPreferencesKey("moneo_tts_language")
@@ -257,6 +258,20 @@ class MoneoPrefs private constructor(private val context: Context) {
     }
 
     /**
+     * Tree URI of the folder the "Ask" bridge writes requests to and reads
+     * replies from (e.g. a folder in Termux's home); null when not set up.
+     */
+    private val _askFolder = MutableStateFlow<String?>(null)
+    val askFolder: StateFlow<String?> = _askFolder.asStateFlow()
+
+    fun setAskFolder(value: String?) {
+        _askFolder.value = value
+        scope.launch {
+            context.moneoStore.edit { if (value == null) it.remove(KEY_ASK_FOLDER) else it[KEY_ASK_FOLDER] = value }
+        }
+    }
+
+    /**
      * Flashcard display direction. KO_TO_EN (default) shows Korean on the
      * front; EN_TO_KO flips for Korean native speakers learning English.
      */
@@ -315,6 +330,7 @@ class MoneoPrefs private constructor(private val context: Context) {
             _visitedAreas.value = prefs[KEY_VISITED_AREAS] ?: emptySet()
             studyNext = prefs[KEY_STUDY_NEXT]?.split('\n')?.filter { it.isNotEmpty() } ?: emptyList()
             _readingHelp.value = prefs[KEY_READING_HELP] ?: true
+            _askFolder.value = prefs[KEY_ASK_FOLDER]
             _direction.value = FlashcardDirection.fromStored(prefs[KEY_DIRECTION])
             _directionWasManuallySet.value = prefs[KEY_DIRECTION_MANUAL] ?: false
             val storedOverride = TtsLanguage.fromStored(prefs[KEY_TTS_LANGUAGE])

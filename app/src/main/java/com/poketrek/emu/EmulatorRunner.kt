@@ -257,6 +257,11 @@ class EmulatorRunner(
     /** UI bitmap; pixels mutated each frame via copyPixelsFromBuffer. */
     val bitmap: Bitmap = Bitmap.createBitmap(GBA_W, GBA_H, Bitmap.Config.ARGB_8888)
 
+    /** A copy of the current frame, enlarged [scale]× with no smoothing (for the ask bridge). */
+    fun screenshot(scale: Int = 3): Bitmap = synchronized(bitmap) {
+        Bitmap.createScaledBitmap(bitmap, GBA_W * scale, GBA_H * scale, false)
+    }
+
     /** Compose state tick: read by the screen Composable to force recomposition. */
     private val _frameTick = mutableIntStateOf(0)
     val frameTick: androidx.compose.runtime.State<Int> = _frameTick

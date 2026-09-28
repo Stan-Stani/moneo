@@ -1445,6 +1445,8 @@ private fun MoneoSection(
             onCheckedChange = { moneo.prefs.setReadingHelp(it) },
         )
 
+        AskFolderExpander(moneo)
+
         // Hard area-gate: blocks the player from physically entering a new area
         // until they know enough of the words its text uses.
         Expander(
@@ -1534,6 +1536,51 @@ private fun CorrectionEndpointExpander(moneo: MoneoModule) {
                     draft = ""
                     moneo.prefs.setCorrectionVpsUrl(null)
                 }) { Text("Clear") }
+            }
+        }
+    }
+}
+
+/**
+ * Folder shared with the LLM watcher (tools/ask_bridge/moneo-ask.sh). Picked
+ * with the system folder picker, so it can be a folder in Termux's home;
+ * setting it shows the 💬 button in game.
+ */
+@Composable
+private fun AskFolderExpander(moneo: MoneoModule) {
+    val folder by moneo.prefs.askFolder.collectAsState()
+    val context = androidx.compose.ui.platform.LocalContext.current
+    val pick = androidx.activity.compose.rememberLauncherForActivityResult(
+        androidx.activity.result.contract.ActivityResultContracts.OpenDocumentTree(),
+    ) { uri ->
+        if (uri == null) return@rememberLauncherForActivityResult
+        runCatching {
+            context.contentResolver.takePersistableUriPermission(
+                uri,
+                android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION or
+                    android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION,
+            )
+        }.onFailure { android.util.Log.w("AskFolder", "Could not persist folder permission", it) }
+        moneo.prefs.setAskFolder(uri.toString())
+    }
+    val label = folder?.let { android.net.Uri.parse(it).lastPathSegment?.substringAfterLast(':') ?: it }
+    Expander(
+        title = "Ask an LLM (💬)",
+        summary = label ?: "Off",
+    ) {
+        Text(
+            "Writes the message box, its words and a screenshot to a folder; " +
+                "tools/ask_bridge/moneo-ask.sh (e.g. Claude Code in Termux) writes the answer back. " +
+                "In Termux, make ~/moneo-ask and pick it here via the Termux entry in the picker.",
+            fontSize = 12.sp,
+            color = Color(0xFF6B7280),
+        )
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Button(onClick = { pick.launch(null) }) {
+                Text(if (folder == null) "Choose folder" else "Change folder", fontSize = 12.sp)
+            }
+            if (folder != null) {
+                TextButton(onClick = { moneo.prefs.setAskFolder(null) }) { Text("Turn off", fontSize = 12.sp) }
             }
         }
     }

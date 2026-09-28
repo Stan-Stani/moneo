@@ -82,6 +82,45 @@ class MoneoModule private constructor(context: Context) {
         r.start()
     }
 
+    private val mapAreas by lazy {
+        runCatching { com.poketrek.moneo.data.MapAreaLookup.loadFromAssets(appContext) }.getOrNull()
+    }
+
+    /** Questions to an LLM watching a shared folder (tools/ask_bridge). */
+    val ask = com.poketrek.moneo.ask.AskBridge(context, prefs)
+
+    /**
+     * Asks [question] about the screen: the open message box's text and
+     * words (when the reading helper sees one), the words the player knows,
+     * and [screen] (the framebuffer).
+     */
+    fun askAboutScreen(question: String, screen: android.graphics.Bitmap?, map: Pair<Int, Int>?, rom: String?) {
+        val location = map?.let { (bank, id) ->
+            "map $bank:$id" + (mapAreas?.areaIdFor(bank, id)?.let { " ($it)" } ?: "")
+        }
+        val shown = dialogReader?.current?.value
+        val cards = repository.cards.value
+        ask.ask(question, shown?.message, screen) { id, followUp ->
+            val vocab = repository.vocab.value
+            com.poketrek.moneo.ask.AskRequest(
+                id = id,
+                question = question,
+                message = shown?.message,
+                lineId = shown?.line?.id,
+                words = shown?.let { com.poketrek.moneo.reading.readingRows(repository, it, cards) }.orEmpty(),
+                knownWords = cards.values
+                    .filter { it.suspended || it.snapshot.state == com.poketrek.moneo.srs.CardState.REVIEW }
+                    .mapNotNull { vocab[it.vocabId]?.korean }
+                    .distinct().sorted(),
+                location = location,
+                rom = rom,
+                followUp = followUp,
+                hasScreenshot = screen != null,
+                createdMs = System.currentTimeMillis(),
+            )
+        }
+    }
+
     /** Per-area lemma frequencies driving the area gate; empty if the asset is missing. */
     val lemmaCounts: com.poketrek.moneo.data.AreaLemmaCounts =
         runCatching { com.poketrek.moneo.data.AreaLemmaCounts.loadFromAssets(context) }

@@ -4,6 +4,7 @@ import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -71,6 +72,7 @@ fun EmulatorScreen(
     val controlState = rememberControlState()
     var settingsOpen by remember { mutableStateOf(false) }
     var moneoOpen by remember { mutableStateOf(false) }
+    var askOpen by remember { mutableStateOf(false) }
     /** Area to open Moneo on (set by the area-gate lock chip); null opens the picker. */
     var moneoStudyArea by remember { mutableStateOf<String?>(null) }
 
@@ -133,6 +135,34 @@ fun EmulatorScreen(
                 .align(Alignment.TopEnd)
                 .padding(top = 52.dp, end = 6.dp),
         )
+
+        AskChip(
+            moneo = moneo,
+            open = askOpen,
+            onToggle = { askOpen = !askOpen },
+            modifier = Modifier
+                .align(Alignment.CenterStart)
+                .padding(start = 8.dp),
+        )
+
+        if (askOpen) {
+            AskPanel(
+                moneo = moneo,
+                onAsk = { question ->
+                    moneo.askAboutScreen(
+                        question,
+                        screen = runner.screenshot(),
+                        map = ramSnapshot?.let { it.mapBank to it.mapId },
+                        rom = romIdentity?.variant?.name,
+                    )
+                },
+                onClose = { askOpen = false },
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .fillMaxWidth(0.62f)
+                    .padding(top = 8.dp),
+            )
+        }
 
         if (debugOn) {
             DebugOverlay(

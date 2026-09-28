@@ -27,7 +27,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.poketrek.moneo.MoneoModule
-import com.poketrek.moneo.srs.CardState
+import com.poketrek.moneo.reading.readingRows
 
 /**
  * In-game reading helper: while a message box is open on the 2024 KR ROM,
@@ -46,23 +46,7 @@ fun ReadingHelperPanel(moneo: MoneoModule, modifier: Modifier = Modifier) {
     val studyNext by moneo.repository.studyNext.collectAsState()
     var collapsed by remember { mutableStateOf(false) }
 
-    data class Row(val korean: String, val gloss: String, val id: String?, val known: Boolean)
-    val rows = remember(shown, cards) {
-        (shown.line?.words.orEmpty() + shown.names).distinct().mapNotNull { w ->
-            val entries = moneo.repository.visibleEntriesFor(w)
-            if (entries.isEmpty()) {
-                // A name whose deck is switched off (e.g. moves): show what
-                // it means, but it can't be starred or counted.
-                val hidden = moneo.repository.anyEntryFor(w) ?: return@mapNotNull null
-                return@mapNotNull Row(w, hidden.gloss, null, false)
-            }
-            val known = entries.any { e ->
-                cards[e.id]?.let { it.suspended || it.snapshot.state == CardState.REVIEW } == true
-            }
-            val primary = entries.firstOrNull { cards[it.id]?.snapshot?.state != CardState.REVIEW } ?: entries.first()
-            Row(w, primary.gloss, primary.id, known)
-        }
-    }
+    val rows = remember(shown, cards) { readingRows(moneo.repository, shown, cards) }
     if (rows.isEmpty()) return
     val counted = rows.filter { it.id != null }
     val pct = if (counted.isEmpty()) 0 else counted.count { it.known } * 100 / counted.size
