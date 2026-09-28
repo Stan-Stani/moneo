@@ -35,7 +35,7 @@ class Phase0EmulatorEmbedTest {
     @Test
     fun loadsRomAndRunsFrames() {
         val rom = readRom()
-        assertTrue("loadRom should succeed", emu.loadRom(rom))
+        assertTrue("loadRom should succeed", emu.loadRom(rom, null))
 
         repeat(600) { emu.runFrame() }
 
@@ -52,7 +52,7 @@ class Phase0EmulatorEmbedTest {
         val hashes = (0 until 2).map { _ ->
             val e = NativeEmulator()
             try {
-                assertTrue(e.loadRom(rom))
+                assertTrue(e.loadRom(rom, null))
                 repeat(600) { e.runFrame() }
                 e.getFramebufferHash()
             } finally {

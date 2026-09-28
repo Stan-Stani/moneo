@@ -162,7 +162,11 @@ class EmulatorActivity : ComponentActivity() {
                 WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
         }
         budget = MovementBudget.get(applicationContext)
-        runner = EmulatorRunner(budget, CalibrationStore(applicationContext))
+        runner = EmulatorRunner(
+            budget,
+            CalibrationStore(applicationContext),
+            saveDir = java.io.File(filesDir, "saves"),
+        )
         saveStateStore = SaveStateStore(applicationContext)
         moneo = MoneoModule.get(applicationContext)
         moneo.bindCapture { addr, length -> runner.busReadBytes(addr, length) }

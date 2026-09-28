@@ -28,6 +28,22 @@ private const val FRAMEBUFFER_BYTES = GBA_W * GBA_H * 4
 private const val FRAME_PERIOD_NS = 16_750_419L
 
 private const val SAMPLE_RATE = 48000
+
+/** Battery-save file name for a ROM. */
+fun saveFileName(crc32: Long): String = "%08x.sav".format(crc32)
+
+/** True for a missing/empty save file or one never written (erased flash reads 0xFF). */
+fun isBlankSave(file: java.io.File): Boolean {
+    if (!file.exists() || file.length() == 0L) return true
+    return file.inputStream().buffered().use { input ->
+        var b = input.read()
+        while (b != -1) {
+            if (b != 0xFF) return@use false
+            b = input.read()
+        }
+        true
+    }
+}
 /** Headroom for ~one full frame of stereo samples + slack. */
 private const val AUDIO_BUFFER_BYTES = 4096
 
@@ -40,6 +56,11 @@ private const val AUDIO_BUFFER_BYTES = 4096
 class EmulatorRunner(
     private val budget: MovementBudget,
     private val calibrationStore: CalibrationStore? = null,
+    /**
+     * Where each ROM's battery save (the game's in-game save) is kept, as
+     * `<crc32>.sav`. Null keeps saves in memory only (tests).
+     */
+    private val saveDir: java.io.File? = null,
 ) {
     private val native = NativeEmulator()
     val gate: MovementGate = MovementGate(budget)
@@ -156,7 +177,21 @@ class EmulatorRunner(
     }
 
     fun saveState(): ByteArray? = native.saveState()
-    fun loadState(bytes: ByteArray): Boolean = native.loadState(bytes)
+    /**
+     * Restore a save state. The state's copy of the battery save is only
+     * restored while the ROM's save file is still blank: otherwise loading an
+     * old slot would overwrite newer in-game saves. Blank-file import covers
+     * players whose in-game saves predate the save file and exist only
+     * inside their slots.
+     */
+    fun loadState(bytes: ByteArray): Boolean =
+        native.loadState(bytes, withSavedata = currentSaveFile()?.let { isBlankSave(it) } ?: false)
+
+    private fun currentSaveFile(): java.io.File? {
+        val dir = saveDir ?: return null
+        val id = _romIdentity.value ?: return null
+        return java.io.File(dir, saveFileName(id.crc32))
+    }
 
     /** Adapter so RareCandyShop can drive the native bus through a small interface. */
     private val nativeBusIo = object : RareCandyShop.BusIO {
@@ -244,14 +279,18 @@ class EmulatorRunner(
 
     fun loadRom(bytes: ByteArray): Boolean {
         stop()
-        val ok = native.loadRom(bytes)
+        val identity = RomIdentity.of(bytes)
+        val savePath = saveDir?.let { dir ->
+            dir.mkdirs()
+            java.io.File(dir, saveFileName(identity.crc32)).absolutePath
+        }
+        val ok = native.loadRom(bytes, savePath)
         if (!ok) {
             Log.e(TAG, "loadRom returned false")
             _romIdentity.value = null
             return false
         }
-        val identity = RomIdentity.of(bytes)
-            .also { Log.i(TAG, "loaded ${it.variant.displayName} (${it.crc32Hex})") }
+        Log.i(TAG, "loaded ${identity.variant.displayName} (${identity.crc32Hex}), save=$savePath")
         _romIdentity.value = identity
         // Drop any pending calibration baseline — it belongs to the prior ROM.
         _calibrationBaseline.value = null

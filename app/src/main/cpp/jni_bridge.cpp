@@ -5,6 +5,7 @@
 // Phase 3a will add: busRead8/16/32 + frame callback hook.
 
 #include <jni.h>
+#include <fcntl.h>
 #include <android/log.h>
 #include <cstdint>
 #include <cstdlib>
@@ -68,7 +69,8 @@ uint64_t fnv1a64(const uint8_t* data, size_t len) {
 }  // namespace
 
 extern "C" JNIEXPORT jboolean JNICALL
-Java_com_poketrek_emu_NativeEmulator_loadRom(JNIEnv* env, jobject /*thiz*/, jbyteArray romBytes) {
+Java_com_poketrek_emu_NativeEmulator_loadRom(JNIEnv* env, jobject /*thiz*/, jbyteArray romBytes,
+                                             jstring savePath) {
     if (g_emulator) {
         LOGI("loadRom called while emulator alive — recreating");
         g_emulator.reset();
@@ -108,6 +110,20 @@ Java_com_poketrek_emu_NativeEmulator_loadRom(JNIEnv* env, jobject /*thiz*/, jbyt
     if (!emu->core->loadROM(emu->core, vf)) {
         LOGE("loadROM failed");
         return JNI_FALSE;
+    }
+    // Battery save (the game's own in-game save). mGBA memory-maps the file,
+    // so every write the game makes to flash lands in it directly; without
+    // this the save only lived in RAM and was lost when the app closed.
+    if (savePath) {
+        const char* path = env->GetStringUTFChars(savePath, nullptr);
+        VFile* sv = VFileOpen(path, O_CREAT | O_RDWR);
+        if (!sv || !emu->core->loadSave(emu->core, sv)) {
+            LOGE("battery save not attached: %s", path);
+            if (sv) sv->close(sv);
+        } else {
+            LOGI("battery save: %s", path);
+        }
+        env->ReleaseStringUTFChars(savePath, path);
     }
     emu->core->reset(emu->core);
 
@@ -333,7 +349,8 @@ Java_com_poketrek_emu_NativeEmulator_saveState(JNIEnv* env, jobject /*thiz*/) {
 }
 
 extern "C" JNIEXPORT jboolean JNICALL
-Java_com_poketrek_emu_NativeEmulator_loadState(JNIEnv* env, jobject /*thiz*/, jbyteArray data) {
+Java_com_poketrek_emu_NativeEmulator_loadState(JNIEnv* env, jobject /*thiz*/, jbyteArray data,
+                                               jboolean withSavedata) {
     if (!g_emulator || !g_emulator->core || !data) return JNI_FALSE;
     std::lock_guard<std::mutex> lock(g_emulator->mutex);
     jsize len = env->GetArrayLength(data);
@@ -341,8 +358,11 @@ Java_com_poketrek_emu_NativeEmulator_loadState(JNIEnv* env, jobject /*thiz*/, jb
     env->GetByteArrayRegion(data, 0, len, reinterpret_cast<jbyte*>(buf.data()));
     VFile* vfm = VFileFromConstMemory(buf.data(), len);
     if (!vfm) return JNI_FALSE;
-    bool ok = mCoreLoadStateNamed(g_emulator->core, vfm,
-                                  SAVESTATE_SAVEDATA | SAVESTATE_RTC);
+    // States carry a copy of the battery save. Restoring it would overwrite
+    // the save file with an older in-game save, so (like mGBA's own default)
+    // it's only restored when the caller says the save file is still blank.
+    int flags = SAVESTATE_RTC | (withSavedata ? SAVESTATE_SAVEDATA : 0);
+    bool ok = mCoreLoadStateNamed(g_emulator->core, vfm, flags);
     vfm->close(vfm);
     return ok ? JNI_TRUE : JNI_FALSE;
 }

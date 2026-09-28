@@ -95,7 +95,7 @@ The "direction held last frame" guard is what keeps cutscenes, ledge hops, ice t
 
 ## ROM handling
 
-ROMs are gitignored (`*.gba`, `*.sav`, `*.savestate`). At runtime the user picks via Storage Access Framework (`OpenDocument`) and the URI permission is persisted. The two `.gba` files at the repo root are dev convenience copies, not committed. For `connectedAndroidTest`, drop `app/src/androidTest/assets/leafgreen.gba` manually.
+ROMs are gitignored (`*.gba`, `*.sav`, `*.savestate`). The game's own battery save (in-game "리포트"/Save) lives in `filesDir/saves/<crc32>.sav`, memory-mapped by mGBA so every in-game save hits disk. Save-state slots also carry a copy of it, but `loadState` restores that copy only while the `.sav` is blank (so an old slot can't overwrite newer in-game saves). At runtime the user picks via Storage Access Framework (`OpenDocument`) and the URI permission is persisted. The two `.gba` files at the repo root are dev convenience copies, not committed. For `connectedAndroidTest`, drop `app/src/androidTest/assets/leafgreen.gba` manually.
 
 The moneo gloss pipeline reads two ROMs at the repo root:
 - `Pokemon - LeafGreen Version (USA, Europe) (Rev 1).gba` — canonical EN

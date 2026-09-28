@@ -11,8 +11,12 @@ class NativeEmulator {
         System.loadLibrary("poketrek")
     }
 
-    /** Loads a ROM from a byte array. Replaces any previously loaded ROM. */
-    external fun loadRom(romBytes: ByteArray): Boolean
+    /**
+     * Loads a ROM from a byte array. Replaces any previously loaded ROM.
+     * [savePath] is the battery-save file (created if missing), or null to
+     * keep the save in memory only.
+     */
+    external fun loadRom(romBytes: ByteArray, savePath: String?): Boolean
 
     /** Runs a single GBA frame. Caller is responsible for ~60 Hz pacing. */
     external fun runFrame()
@@ -68,7 +72,8 @@ class NativeEmulator {
     external fun saveState(): ByteArray?
 
     /** Restores emulator state from a previously-saved byte array. */
-    external fun loadState(data: ByteArray): Boolean
+    /** [withSavedata]: also restore the state's copy of the battery save. */
+    external fun loadState(data: ByteArray, withSavedata: Boolean): Boolean
 
     /**
      * Applies an xdelta (VCDIFF) [patch] to [base] entirely in memory and
