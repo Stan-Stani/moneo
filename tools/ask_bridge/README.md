@@ -20,9 +20,19 @@ there?" has context. A new message starts a fresh session.
 ```sh
 pkg install jq inotify-tools
 mkdir -p ~/moneo-ask
-cp moneo-ask.sh ~/bin/   # or run it from a clone of this repo
-moneo-ask.sh             # leave running; takes a wake lock
+cp moneo-ask.sh moneo-ask-start.sh ~/bin/   # or run them from a clone of this repo
+moneo-ask-start.sh                          # background watcher; takes a wake lock
 ```
+
+`moneo-ask-start.sh [start|stop|status|log]` keeps one watcher running in the
+background, and `start` does nothing if one already is. To restart it whenever
+you open a shell, add `~/bin/moneo-ask-start.sh >/dev/null` to `~/.bashrc`.
+
+**Claude Code in a proot distro** (e.g. Ubuntu under Termux): run both scripts
+inside the proot, but keep the folder in Termux's real home, the only place
+the app's picker can reach. The start script does this by default when it
+sees `/data/data/com.termux/files/home`. `pkg` won't work in the proot, so
+install `jq` and `inotify-tools` with its own package manager.
 
 In the app: Settings → "Ask an LLM (💬)" → Choose folder → pick **Termux**
 in the picker's side menu → `moneo-ask` → Use this folder. The 💬 button then
@@ -33,6 +43,7 @@ only talks to it through the Storage Access Framework.
 
 Environment: `MONEO_ASK_DIR` (default `~/moneo-ask`), `MONEO_ASK_MODEL`
 (passed to `claude --model`, e.g. `sonnet` or `haiku` for quicker replies).
+The log shows which model answered and how long it took after each reply.
 
 Exempt Termux from battery optimisation or Android may kill the watcher on
 a long walk.

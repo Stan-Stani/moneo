@@ -68,6 +68,7 @@ Screenshot: inbox/$shot"
   out="$(cd "$DIR" && claude "${args[@]}" 2>"$DIR/.last_err" </dev/null)"
   reply="$(jq -r '.result // empty' <<<"$out" 2>/dev/null)"
   sid="$(jq -r '.session_id // empty' <<<"$out" 2>/dev/null)"
+  echo "    ($(jq -r '[(.modelUsage // {} | keys | join("+")), "\((.duration_ms // 0) / 1000 | floor)s"] | join(", ")' <<<"$out" 2>/dev/null))"
   [[ -n "$sid" ]] && echo "$sid" >"$SESSION_FILE"
   [[ -z "$reply" ]] && reply="⚠ claude failed: $(tail -c 300 "$DIR/.last_err")"
   echo "$reply" | sed 's/^/    /'
