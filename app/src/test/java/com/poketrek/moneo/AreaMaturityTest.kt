@@ -70,4 +70,36 @@ class AreaMaturityTest {
         // v1 (REVIEW) + v2 (suspended) = mature; v3 (LEARNING) + v4 (NEW) = not.
         assertEquals(0.5f, repo.maturityPct("aid"), 1e-6f)
     }
+
+    @Test fun onlyCardsFirstSeenInTheAreaCount() {
+        // The gate asks "has the player learned this area's words?", so a word
+        // first met in an earlier area and merely referenced here must not count.
+        val store = MoneoCardStore(tempFolder.newFolder())
+        store.put(CardRecord("here", CardSnapshot(state = CardState.REVIEW), createdAt = now))
+        store.put(CardRecord("earlier", CardSnapshot(state = CardState.NEW), createdAt = now))
+        val vocab = listOf(
+            vocab("here", "aid"),
+            vocab("earlier", "other").copy(areasReferenced = listOf("other", "aid")),
+        )
+        val repo = MoneoRepository(
+            store = store,
+            initialVocab = vocab,
+            initialAreas = listOf(Area("other", "O", "오", 0), Area("aid", "A", "에이", 1)),
+            now = { now },
+        )
+        assertEquals(1f, repo.maturityPct("aid"), 0f)
+        assertEquals(0f, repo.maturityPct("other"), 0f)
+    }
+
+    @Test fun areaWithOnlyReferencedCardsIsVacuouslyMature() {
+        val store = MoneoCardStore(tempFolder.newFolder())
+        val vocab = listOf(vocab("earlier", "other").copy(areasReferenced = listOf("aid")))
+        val repo = MoneoRepository(
+            store = store,
+            initialVocab = vocab,
+            initialAreas = listOf(Area("other", "O", "오", 0), Area("aid", "A", "에이", 1)),
+            now = { now },
+        )
+        assertEquals(1f, repo.maturityPct("aid"), 0f)
+    }
 }

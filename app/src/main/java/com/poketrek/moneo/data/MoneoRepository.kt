@@ -332,16 +332,20 @@ class MoneoRepository(
     }
 
     /**
-     * Fraction of cards in [areaId] considered "mature" — i.e. cards in the
-     * REVIEW state or user-suspended (the user vouched they know it). Used
-     * by the area-gate to decide whether the player may cross into a higher
-     * ordinal area in-game.
+     * Fraction of the cards first encountered in [areaId] (VocabEntry.areaId)
+     * that are "mature" — in the REVIEW state or user-suspended (the user
+     * vouched they know it). Used by the area-gate to decide whether the
+     * player may cross into a higher ordinal area in-game.
      *
-     * Returns 1.0 for areas with no visible vocab (vacuously cleared) so
-     * empty/unused areas never block progression.
+     * Words merely referenced in the area (VocabEntry.areasReferenced) don't
+     * count: most common words appear in nearly every area, so counting them
+     * made each gate re-require the earlier areas' vocab.
+     *
+     * Returns 1.0 for areas with no visible vocab first seen there (vacuously
+     * cleared) so empty/unused areas never block progression.
      */
     fun maturityPct(areaId: String): Float {
-        val ids = vocabForArea(areaId).map { it.id }.toSet()
+        val ids = vocabForArea(areaId).filter { it.areaId == areaId }.map { it.id }.toSet()
         if (ids.isEmpty()) return 1f
         val cards = _cards.value.values.filter { it.vocabId in ids }
         if (cards.isEmpty()) return 1f
