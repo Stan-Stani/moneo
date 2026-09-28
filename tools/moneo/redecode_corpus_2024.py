@@ -14,9 +14,9 @@ characters (space, punctuation, controls) with 2-byte hangul, so
 This keeps record ids stable, because map/lemma indexes and the shipped
 sentence decks refer to them:
 
-  1. A record whose offset+1 is a clean pointer-target string (the old
-     round-down) moves to offset+1 and takes that text.
-  2. A record whose own offset decodes cleanly gets the clean text.
+  1. A record whose own offset decodes cleanly gets the clean text.
+  2. Otherwise, if offset+1 holds a clean string (the old round-down onto
+     the previous terminator), the record moves to offset+1.
   3. Anything else (name tables in the fixed-width font, non-text bytes the
      old scan accepted) is left untouched.
   4. Clean pointer-target strings not covered above are appended with new
@@ -90,19 +90,22 @@ def main() -> int:
     claimed: set[int] = set()
     for r in records:
         off = r["offset"]
-        moved = clean_targets.get(off + 1)
-        if moved is None and rom[off] == 0xFF:
-            # Old scan rounded an odd pointer down onto the previous string's
-            # terminator; the real string starts one byte later.
-            moved = clean_decode(rom, off + 1, cmap)
-        if moved is not None and off + 1 not in claimed:
+        if off in claimed:
+            continue
+        own = clean_targets.get(off) or clean_decode(rom, off, cmap)
+        moved = None
+        if own is None:
+            moved = clean_targets.get(off + 1)
+            if moved is None and rom[off] == 0xFF:
+                # Old scan rounded an odd pointer down onto the previous
+                # string's terminator; the real string starts one byte later.
+                moved = clean_decode(rom, off + 1, cmap)
+        if own is not None:
+            r["text"] = own
+            stats["redecoded"] += 1
+        elif moved is not None and off + 1 not in claimed:
             r["offset"], r["text"] = off + 1, moved
             stats["moved_to_odd_offset"] += 1
-        elif (s := clean_targets.get(off)) is not None or (s := clean_decode(rom, off, cmap)) is not None:
-            if off in claimed:
-                continue
-            r["text"] = s
-            stats["redecoded"] += 1
         else:
             stats["untouched"] += 1
             continue
