@@ -410,13 +410,26 @@ private fun AppRoot(
             )
         }
         if (showFlipPrompt) {
-            Button(
-                onClick = onFlipOrientation,
-                modifier = Modifier
-                    .align(Alignment.TopCenter)
-                    .padding(top = 12.dp),
-            ) {
-                Text(if (flipTargetIsPortrait) "Switch to portrait" else "Switch to landscape")
+            // In landscape the top bar is wide enough for a centered prompt.
+            // In portrait it would sit on the settings button, so it goes in
+            // the empty band between the game (vertically centered) and the
+            // controls at the bottom.
+            androidx.compose.foundation.layout.BoxWithConstraints(Modifier.fillMaxSize()) {
+                val portrait = maxHeight > maxWidth
+                Button(
+                    onClick = onFlipOrientation,
+                    modifier = if (portrait) {
+                        Modifier
+                            .align(Alignment.BottomCenter)
+                            .padding(bottom = maxHeight * 0.26f)
+                    } else {
+                        Modifier
+                            .align(Alignment.TopCenter)
+                            .padding(top = 12.dp)
+                    },
+                ) {
+                    Text(if (flipTargetIsPortrait) "Switch to portrait" else "Switch to landscape")
+                }
             }
         }
     }
