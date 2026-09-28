@@ -4295,7 +4295,8 @@
     "six_island",
     "ss_anne",
     "two_island",
-    "vermilion_city"
+    "vermilion_city",
+    "route_3"
    ],
    "liveRecIds": [
     949,
@@ -12087,7 +12088,10 @@
     "six_island",
     "trainer_tower",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "route_16",
+    "route_18",
+    "route_22"
    ],
    "liveRecIds": [
     1090,
@@ -19749,7 +19753,7 @@
    "areaId": "topik_2",
    "frequency": 1,
    "topikLevel": "B",
-   "firstAreaEncountered": "route_1",
+   "firstAreaEncountered": "route_6",
    "areasReferenced": [
     "rom_mined",
     "route_10",
@@ -19763,7 +19767,6 @@
     "fuchsia_city",
     "indigo_plateau",
     "rocket_hideout",
-    "route_1",
     "route_16",
     "route_17",
     "route_18",
@@ -26366,7 +26369,9 @@
     "ss_anne",
     "two_island",
     "viridian_forest",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "kanto_pokemon_league"
    ],
    "liveRecIds": [
     1487,

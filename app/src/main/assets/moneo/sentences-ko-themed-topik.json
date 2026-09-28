@@ -3673,7 +3673,8 @@
     "six_island",
     "ss_anne",
     "two_island",
-    "vermilion_city"
+    "vermilion_city",
+    "route_3"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11203,7 +11204,10 @@
     "six_island",
     "trainer_tower",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "route_16",
+    "route_18",
+    "route_22"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -18583,7 +18587,7 @@
     "auditedAt": "2026-05-09",
     "round": 2
    },
-   "firstAreaEncountered": "route_1",
+   "firstAreaEncountered": "route_6",
    "areasReferenced": [
     "route_6",
     "route_8",
@@ -18597,7 +18601,6 @@
     "fuchsia_city",
     "indigo_plateau",
     "rocket_hideout",
-    "route_1",
     "route_16",
     "route_17",
     "route_18",
@@ -25139,7 +25142,9 @@
     "ss_anne",
     "two_island",
     "viridian_forest",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "kanto_pokemon_league"
    ],
    "sourceTypes": [
     "npc_dialog",

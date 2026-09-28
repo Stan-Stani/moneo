@@ -2702,6 +2702,7 @@
     755,
     756,
     757,
+    758,
     759,
     760,
     761,
@@ -2852,6 +2853,7 @@
     755,
     756,
     757,
+    758,
     759,
     760,
     761,
@@ -3045,6 +3047,7 @@
     755,
     756,
     757,
+    758,
     759,
     760,
     761,
@@ -3267,6 +3270,7 @@
     755,
     756,
     757,
+    758,
     759,
     760,
     761,
@@ -4775,6 +4779,7 @@
     3962,
     3963,
     3964,
+    3965,
     3966,
     3967,
     3968,
@@ -5375,6 +5380,7 @@
     3962,
     3963,
     3964,
+    3965,
     3966,
     3967,
     3968,
@@ -6872,6 +6878,7 @@
     2840,
     2841,
     2941,
+    2942,
     2943,
     2944,
     2946,
@@ -12265,6 +12272,7 @@
     3962,
     3963,
     3964,
+    3965,
     3966,
     3967,
     3968,
@@ -16610,6 +16618,7 @@
     2938,
     2939,
     2941,
+    2942,
     2943,
     2944,
     2946,
@@ -17180,6 +17189,7 @@
     2938,
     2939,
     2941,
+    2942,
     2943,
     2944,
     2946,
@@ -18038,6 +18048,7 @@
     2938,
     2939,
     2941,
+    2942,
     2943,
     2944,
     2946,
@@ -18631,6 +18642,7 @@
     2938,
     2939,
     2941,
+    2942,
     2943,
     2944,
     2946,
@@ -21880,7 +21892,7 @@
    "mapsec": 137,
    "resolved_area_id": "kanto_pokemon_league",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 96
+   "recIds_count": 97
   },
   {
    "group": 1,
@@ -21888,7 +21900,7 @@
    "mapsec": 138,
    "resolved_area_id": "rock_tunnel",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 115
+   "recIds_count": 116
   },
   {
    "group": 1,
@@ -21896,7 +21908,7 @@
    "mapsec": 138,
    "resolved_area_id": "rock_tunnel",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 212
+   "recIds_count": 213
   },
   {
    "group": 1,
@@ -21904,7 +21916,7 @@
    "mapsec": 139,
    "resolved_area_id": "seafoam_islands",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 93
+   "recIds_count": 94
   },
   {
    "group": 1,
@@ -21928,7 +21940,7 @@
    "mapsec": 139,
    "resolved_area_id": "seafoam_islands",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 78
+   "recIds_count": 79
   },
   {
    "group": 1,
@@ -21936,7 +21948,7 @@
    "mapsec": 139,
    "resolved_area_id": "seafoam_islands",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 205
+   "recIds_count": 206
   },
   {
    "group": 1,
@@ -21944,7 +21956,7 @@
    "mapsec": 140,
    "resolved_area_id": "pokemon_tower",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 69
+   "recIds_count": 70
   },
   {
    "group": 1,
@@ -21952,7 +21964,7 @@
    "mapsec": 140,
    "resolved_area_id": "pokemon_tower",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 73
+   "recIds_count": 74
   },
   {
    "group": 1,
@@ -21960,7 +21972,7 @@
    "mapsec": 140,
    "resolved_area_id": "pokemon_tower",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 81
+   "recIds_count": 82
   },
   {
    "group": 1,
@@ -21968,7 +21980,7 @@
    "mapsec": 140,
    "resolved_area_id": "pokemon_tower",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 74
+   "recIds_count": 75
   },
   {
    "group": 1,
@@ -21976,7 +21988,7 @@
    "mapsec": 140,
    "resolved_area_id": "pokemon_tower",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 68
+   "recIds_count": 69
   },
   {
    "group": 1,
@@ -22808,7 +22820,7 @@
    "mapsec": 144,
    "resolved_area_id": "two_island",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 117
+   "recIds_count": 118
   },
   {
    "group": 3,
@@ -22816,7 +22828,7 @@
    "mapsec": 145,
    "resolved_area_id": "three_island",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 141
+   "recIds_count": 142
   },
   {
    "group": 3,
@@ -22824,7 +22836,7 @@
    "mapsec": 146,
    "resolved_area_id": "four_island",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 119
+   "recIds_count": 120
   },
   {
    "group": 3,
@@ -24136,7 +24148,7 @@
    "mapsec": 116,
    "resolved_area_id": "route_16",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 43
+   "recIds_count": 44
   },
   {
    "group": 25,
@@ -24144,7 +24156,7 @@
    "mapsec": 116,
    "resolved_area_id": "route_16",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 55
+   "recIds_count": 56
   },
   {
    "group": 25,
@@ -24152,7 +24164,7 @@
    "mapsec": 116,
    "resolved_area_id": "route_16",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 49
+   "recIds_count": 50
   },
   {
    "group": 26,
@@ -24160,7 +24172,7 @@
    "mapsec": 118,
    "resolved_area_id": "route_18",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 52
+   "recIds_count": 53
   },
   {
    "group": 26,
@@ -24168,7 +24180,7 @@
    "mapsec": 118,
    "resolved_area_id": "route_18",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 77
+   "recIds_count": 78
   },
   {
    "group": 27,
@@ -24184,7 +24196,7 @@
    "mapsec": 122,
    "resolved_area_id": "route_22",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 36
+   "recIds_count": 37
   },
   {
    "group": 29,
@@ -24200,7 +24212,7 @@
    "mapsec": 125,
    "resolved_area_id": "route_25",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 61
+   "recIds_count": 62
   },
   {
    "group": 31,
@@ -24208,7 +24220,7 @@
    "mapsec": 148,
    "resolved_area_id": "seven_island",
    "resolution_path": "mapsec_direct",
-   "recIds_count": 74
+   "recIds_count": 75
   },
   {
    "group": 31,

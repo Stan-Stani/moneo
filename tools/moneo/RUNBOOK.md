@@ -428,3 +428,27 @@ notation; 0x41EE is still unidentified.
 
 Name tables (gMoveNames etc.) really are fixed-width 16-bit and are
 unaffected.
+
+### Verifying codepoint labels against the font
+
+`rom_swap/codepoint_map.json` labels can be checked against the glyphs the
+game actually draws. Atlas 1 at ROM `0xF18800`, index
+`((hi - 0x35) << 8) | lo`, 64 bytes per slot; hangul use the top-left 8x13
+pixels, raw 2bpp value 1 = ink, 2 = drop shadow (see
+`rom_swap/FONT_HUNT.md` for the tile layout).
+
+```bash
+.venv-moneo/bin/python tools/moneo/rom_swap/glyph_sheet.py --all      # every label
+.venv-moneo/bin/python tools/moneo/rom_swap/glyph_sheet.py --suspects # out of KS X 1001 order
+.venv-moneo/bin/python tools/moneo/rom_swap/glyph_sheet.py --codes 3B7E
+```
+
+The font follows KS X 1001 order between spare out-of-order slots, so a
+second, independent check is to predict each slot from its neighbours'
+KS X indices; every label was reviewed against both (2026-09-27). The glyph
+is ground truth: a handful of dialog lines really do contain odd syllables
+(e.g. 0x3839 낟 in "포켓몬낟망간다").
+
+Particle codes 0x41ED..0x41F4 are not glyphs: the engine at `0x0872BA00`
+indexes a (after-consonant, after-vowel) halfword table at `0x0872BC0C` by
+a batchim flag saved from the previous syllable (see `ko_text.PARTICLES`).

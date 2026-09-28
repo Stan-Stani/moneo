@@ -37,11 +37,12 @@ PLACEHOLDERS = {0x01: "{PLAYER}", 0x02: "{STR_VAR_1}", 0x03: "{STR_VAR_2}",
                 0x04: "{STR_VAR_3}", 0x06: "{RIVAL}"}
 
 # Josa codes the patch emits after a name buffer ({PLAYER}, {STR_VAR_1}...),
-# whose final consonant isn't known until runtime. Rendered in the usual
-# dictionary notation. Identified from context across the dialog corpus;
-# 0x41EE (context "{VAR}▮의") is still unidentified.
-PARTICLES = {0x41EF: "은(는)", 0x41F0: "을(를)", 0x41F1: "이(가)",
-             0x41F2: "(이)", 0x41F4: "(으)"}
+# whose final consonant isn't known until runtime. The text engine
+# (0x0872BA00) picks the glyph from a (after-consonant, after-vowel) table at
+# 0x0872BC0C using a batchim flag saved from the previous syllable; rendered
+# here in the usual dictionary notation.
+PARTICLES = {0x41ED: "아(야)", 0x41EE: "과(와)", 0x41EF: "은(는)", 0x41F0: "을(를)",
+             0x41F1: "이(가)", 0x41F2: "(이)", 0x41F3: "(이)", 0x41F4: "(으)"}
 
 # Gen 3 1-byte charset (pokefirered charmap.txt), the printable subset
 # Korean dialog actually uses.

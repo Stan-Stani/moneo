@@ -4506,7 +4506,8 @@
     "six_island",
     "ss_anne",
     "two_island",
-    "vermilion_city"
+    "vermilion_city",
+    "route_3"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -17418,12 +17419,12 @@
    "areaId": "rom_mined"
   },
   {
-   "vocabId": "rom-mine-v3:왜지",
-   "korean": "이 포켓몬이 안 잡혀요, 왜지?",
-   "gloss": "This Pokémon won't get caught — why is that?",
-   "targetForm": "왜지",
+   "vocabId": "rom-mine-v3:왠지",
+   "korean": "왠지 오늘은 좋은 포켓몬을 만날 것 같아.",
+   "gloss": "Somehow I feel like I'll meet a great Pokémon today.",
+   "targetForm": "왠지",
    "source": "themed-v1",
-   "generator": "llm-claude-opus-4-7",
+   "generator": "llm-claude-opus-5-5",
    "areaId": "rom_mined"
   },
   {

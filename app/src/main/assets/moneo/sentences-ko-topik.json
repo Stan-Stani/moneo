@@ -1028,7 +1028,7 @@
   },
   {
    "vocabId": "topik-v2:놓다",
-   "korean": "모든 기술을 맡기고 마음을 놓았더니 왜지 조금 젊어져버린 것 같구먼...",
+   "korean": "모든 기술을 맡기고 마음을 놓았더니 왠지 조금 젊어져버린 것 같구먼...",
    "gloss": "After handing down all my moves I feel relieved, and somehow a little younger...",
    "targetForm": "놓",
    "areaId": "topik_1",
@@ -4017,7 +4017,8 @@
     "six_island",
     "ss_anne",
     "two_island",
-    "vermilion_city"
+    "vermilion_city",
+    "route_3"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11510,7 +11511,10 @@
     "six_island",
     "trainer_tower",
     "viridian_city",
-    "water_path"
+    "water_path",
+    "route_16",
+    "route_18",
+    "route_22"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13282,7 +13286,7 @@
   },
   {
    "vocabId": "topik-v2:숨",
-   "korean": "숨을 쉬거나 밸거나 할 때마다 입과 코에서 불꽃이 새어나와 버린다.",
+   "korean": "숨을 쉬거나 뱉거나 할 때마다 입과 코에서 불꽃이 새어나와 버린다.",
    "gloss": "Every time it breathes in or out, flames leak from its mouth and nose.",
    "targetForm": "숨",
    "areaId": "topik_2",
@@ -14853,7 +14857,7 @@
   },
   {
    "vocabId": "topik-v2:기분",
-   "korean": "왜지 기분이 좋아 보인다!",
+   "korean": "왠지 기분이 좋아 보인다!",
    "gloss": "For some reason it looks happy!",
    "targetForm": "기분",
    "areaId": "topik_1",
@@ -18844,7 +18848,7 @@
    "targetForm": "그만",
    "areaId": "topik_2",
    "source": "rom-rec5600",
-   "firstAreaEncountered": "route_1",
+   "firstAreaEncountered": "route_6",
    "areasReferenced": [
     "route_6",
     "route_8",
@@ -18858,7 +18862,6 @@
     "fuchsia_city",
     "indigo_plateau",
     "rocket_hideout",
-    "route_1",
     "route_16",
     "route_17",
     "route_18",
@@ -23119,7 +23122,7 @@
   },
   {
    "vocabId": "topik-v2:자르다",
-   "korean": "이 나무는 왜지 자를 수 있을 것 같다!",
+   "korean": "이 나무는 왠지 자를 수 있을 것 같다!",
    "gloss": "For some reason, this tree looks like it could be cut!",
    "targetForm": "자를",
    "areaId": "topik_2",
@@ -25374,7 +25377,9 @@
     "ss_anne",
     "two_island",
     "viridian_forest",
-    "water_path"
+    "water_path",
+    "cerulean_cave",
+    "kanto_pokemon_league"
    ],
    "sourceTypes": [
     "npc_dialog",
