@@ -5149,28 +5149,14 @@
   },
   {
    "vocabId": "topik-v2:아래",
-   "korean": ":아래아신",
-   "gloss": "(TOPIK example from ROM)",
+   "korean": "깊은 땅속 아래서 압축되어진 몸은 다이아몬드보다 단단하다.",
+   "gloss": "Its body, compressed deep underground, is harder than diamond.",
    "targetForm": "아래",
    "areaId": "topik_1",
-   "source": "rom-rec2153",
-   "firstAreaEncountered": "route_3",
+   "source": "rom-rec5136",
+   "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
-    "rom_mined",
-    "celadon_city",
-    "cerulean_cave",
-    "one_island",
-    "power_plant",
-    "route_12",
-    "route_16",
-    "route_24",
-    "route_25",
-    "route_3",
-    "route_4",
-    "seafoam_islands",
-    "seven_island",
-    "silph_co",
-    "six_island"
+    "rom_mined"
    ],
    "sourceTypes": [
     "system_text"
@@ -5178,7 +5164,8 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     1726
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "topik-v2:꿈꾸다",
@@ -7901,15 +7888,10 @@
     "rock_tunnel",
     "seafoam_islands",
     "seven_island",
-    "cinnabar_island",
-    "five_island",
     "green_path",
-    "lavender_town",
     "memorial_pillar",
     "outcast_island",
     "resort_gorgeous",
-    "route_4",
-    "saffron_city",
     "six_island",
     "water_labyrinth",
     "water_path"
@@ -8582,26 +8564,13 @@
     "lavender_town",
     "one_island",
     "pallet_town",
-    "pokemon_mansion",
     "power_plant",
-    "route_1",
     "route_10",
     "route_11",
-    "route_12",
-    "route_13",
-    "route_14",
-    "route_15",
-    "route_16",
-    "route_18",
-    "route_2",
-    "route_3",
     "route_4",
-    "route_5",
     "route_6",
-    "route_7",
     "route_8",
     "route_9",
-    "safari_zone",
     "saffron_city",
     "seven_island",
     "six_island",
@@ -11557,10 +11526,10 @@
   },
   {
    "vocabId": "topik-v2:위험",
-   "korean": "자리를 위험하므로 웅 이동하게",
-   "gloss": "(TOPIK example from ROM)",
+   "korean": "오박사: 위험할 뻔했구나!",
+   "gloss": "Prof. Oak: That was close!",
    "areaId": "topik_1",
-   "source": "rom-rec887",
+   "source": "rom-rec921",
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
@@ -11603,7 +11572,9 @@
    "liveRecIds": [
     921,
     2907
-   ]
+   ],
+   "targetForm": "위험",
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "topik-v2:이동",
@@ -19752,11 +19723,11 @@
   },
   {
    "vocabId": "topik-v2:도로",
-   "korean": "펌술잔래달렛굴□이키스츠노마야리레로루요호토키닌L엔7탕콧랑2B힌에레했밧윤본린터도로하사",
-   "gloss": "(TOPIK example from ROM)",
+   "korean": "여기는 12번 도로 북쪽 ...",
+   "gloss": "This is Route 12, north side...",
    "targetForm": "도로",
    "areaId": "topik_2",
-   "source": "rom-rec9054",
+   "source": "rom-rec1400",
    "firstAreaEncountered": "route_1",
    "areasReferenced": [
     "route_1",
@@ -19800,7 +19771,8 @@
     1529,
     1566,
     2816
-   ]
+   ],
+   "glossGenerator": "llm-claude-opus-5-5"
   },
   {
    "vocabId": "topik-v2:돌리다",
