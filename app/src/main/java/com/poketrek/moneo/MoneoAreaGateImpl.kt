@@ -4,6 +4,7 @@ import com.poketrek.emu.AreaGateDecision
 import com.poketrek.emu.GbaKey
 import com.poketrek.emu.LeafGreenRam
 import com.poketrek.emu.MoneoAreaGate
+import com.poketrek.moneo.data.MapAreaLookup
 import com.poketrek.moneo.data.MapBoundaryLookup
 import com.poketrek.moneo.data.MoneoPrefs
 import com.poketrek.moneo.data.MoneoRepository
@@ -31,6 +32,18 @@ interface AreaGateConfig {
 }
 
 /**
+ * Areas the player has already been in. The gate records the current area
+ * every frame and never blocks a transition into a recorded one: an area's
+ * gate is for entering it the first time, not for going back (the story
+ * sends the player back to Pallet with Oak's Parcel), and lapsed reviews
+ * shouldn't lock the player out of a town they already reached.
+ */
+interface VisitedAreas {
+    fun isVisited(areaId: String): Boolean
+    fun markVisited(areaId: String)
+}
+
+/**
  * Concrete implementation of [MoneoAreaGate] that uses [MapBoundaryLookup] to detect
  * area boundaries and warps, [MoneoPrefs] to read the user's enable toggle and maturity
  * threshold, and [MoneoRepository] to obtain the actual maturity of the destination area.
@@ -53,14 +66,17 @@ class MoneoAreaGateImpl(
      * directions on tiles that belong to entirely different maps.
      */
     private val isRomSupported: () -> Boolean = { true },
+    /** Area of the player's current map, or null if unknown. */
+    private val currentArea: (mapBank: Int, mapId: Int) -> String? = { _, _ -> null },
+    private val visited: VisitedAreas? = null,
 ) : MoneoAreaGate {
 
     private val _last = MutableStateFlow(AreaGateDecision.NONE)
     override val lastDecision: StateFlow<AreaGateDecision> = _last.asStateFlow()
 
     override fun evaluate(rawKeys: Int, snapshot: LeafGreenRam.Snapshot): AreaGateDecision {
-        // Gate disabled OR loaded ROM isn't on the supported list → no blocking
-        if (!config.enabled || !isRomSupported()) {
+        // Loaded ROM isn't on the supported list → no blocking
+        if (!isRomSupported()) {
             return updateAndReturn(AreaGateDecision.NONE)
         }
 
@@ -70,10 +86,21 @@ class MoneoAreaGateImpl(
             return updateAndReturn(AreaGateDecision.NONE)
         }
 
+        // Record visits even with the gate off, so turning it on later
+        // doesn't wall the player out of places they've already been.
+        if (visited != null) {
+            currentArea(snapshot.mapBank, snapshot.mapId)?.let { visited.markVisited(it) }
+        }
+
+        if (!config.enabled) {
+            return updateAndReturn(AreaGateDecision.NONE)
+        }
+
         val thresholdPct = config.thresholdPct.coerceIn(0, 100)
         val thresholdFrac = thresholdPct / 100f
 
         val list = boundaries.boundariesFor(snapshot.mapBank, snapshot.mapId)
+            .filter { visited?.isVisited(it.destArea) != true }
         if (list.isEmpty()) return updateAndReturn(AreaGateDecision.NONE)
 
         var blockedMask = 0
@@ -172,13 +199,27 @@ class MoneoAreaGateImpl(
             prefs: MoneoPrefs,
             repo: MoneoRepository,
             isRomSupported: () -> Boolean = { true },
+            mapAreas: MapAreaLookup? = null,
+            /** Key for the loaded ROM (e.g. its CRC), or null before one is loaded. */
+            romKey: () -> String? = { null },
         ): MoneoAreaGateImpl {
             val cfg = object : AreaGateConfig {
                 override val enabled: Boolean get() = prefs.areaGateEnabled.value
                 override val thresholdPct: Int get() = prefs.areaGateThresholdPct.value
             }
             val oracle = MaturityOracle { areaId -> repo.maturityPct(areaId) }
-            return MoneoAreaGateImpl(boundaries, cfg, oracle, isRomSupported)
+            val visited = object : VisitedAreas {
+                override fun isVisited(areaId: String): Boolean =
+                    romKey()?.let { prefs.isAreaVisited(it, areaId) } ?: false
+                override fun markVisited(areaId: String) {
+                    romKey()?.let { prefs.markAreaVisited(it, areaId) }
+                }
+            }
+            return MoneoAreaGateImpl(
+                boundaries, cfg, oracle, isRomSupported,
+                currentArea = { bank, id -> mapAreas?.areaIdFor(bank, id) },
+                visited = visited,
+            )
         }
     }
 }

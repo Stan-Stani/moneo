@@ -1268,6 +1268,7 @@ private fun MoneoSection(
     val abilitiesMode by moneo.prefs.abilitiesMode.collectAsState()
     val areaGateEnabled by moneo.prefs.areaGateEnabled.collectAsState()
     val areaGateThresholdPct by moneo.prefs.areaGateThresholdPct.collectAsState()
+    val visitedAreas by moneo.prefs.visitedAreas.collectAsState()
     val ttsOn = effectiveTtsLanguage != com.poketrek.moneo.data.TtsLanguage.OFF
 
     val sectionTitle = when (direction) {
@@ -1466,6 +1467,18 @@ private fun MoneoSection(
                         valueRange = 0f..100f,
                         steps = 9, // 10-percent increments (0, 10, 20, ..., 100)
                     )
+                }
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(
+                        "Areas already visited are never blocked (${visitedAreas.size} so far)",
+                        fontSize = 12.sp,
+                        color = Color(0xFF374151),
+                        modifier = Modifier.weight(1f),
+                    )
+                    TextButton(
+                        onClick = { moneo.prefs.clearVisitedAreas() },
+                        enabled = visitedAreas.isNotEmpty(),
+                    ) { Text("Forget (new game)") }
                 }
             }
         }

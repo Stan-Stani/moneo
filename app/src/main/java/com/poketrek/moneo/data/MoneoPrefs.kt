@@ -5,6 +5,7 @@ import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
+import androidx.datastore.preferences.core.stringSetPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -16,6 +17,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
@@ -36,6 +38,7 @@ private val KEY_MOVES_MODE = stringPreferencesKey("moneo_moves_mode")
 private val KEY_ABILITIES_MODE = stringPreferencesKey("moneo_abilities_mode")
 private val KEY_AREA_GATE_ENABLED = booleanPreferencesKey("moneo_area_gate_enabled")
 private val KEY_AREA_GATE_THRESHOLD_PCT = intPreferencesKey("moneo_area_gate_threshold_pct")
+private val KEY_VISITED_AREAS = stringSetPreferencesKey("moneo_visited_areas")
 private val KEY_DIRECTION = stringPreferencesKey("moneo_direction")
 private val KEY_DIRECTION_MANUAL = booleanPreferencesKey("moneo_direction_manual")
 private val KEY_TTS_LANGUAGE = stringPreferencesKey("moneo_tts_language")
@@ -217,6 +220,16 @@ class MoneoPrefs private constructor(private val context: Context) {
     val areaGateThresholdPct: StateFlow<Int> = _areaGateThresholdPct.asStateFlow()
 
     /**
+     * Areas the player has stood in, as `"<romKey>/<areaId>"` entries. The
+     * area gate never blocks a transition into a visited area, so going back
+     * (e.g. delivering Oak's Parcel to Pallet) is always free. Kept per ROM
+     * because different ROMs mean different save files; it is not tied to a
+     * save, so a new game needs [clearVisitedAreas].
+     */
+    private val _visitedAreas = MutableStateFlow<Set<String>>(emptySet())
+    val visitedAreas: StateFlow<Set<String>> = _visitedAreas.asStateFlow()
+
+    /**
      * Flashcard display direction. KO_TO_EN (default) shows Korean on the
      * front; EN_TO_KO flips for Korean native speakers learning English.
      */
@@ -272,6 +285,7 @@ class MoneoPrefs private constructor(private val context: Context) {
             _areaGateThresholdPct.value =
                 (prefs[KEY_AREA_GATE_THRESHOLD_PCT] ?: DEFAULT_AREA_GATE_THRESHOLD_PCT)
                     .coerceIn(MIN_AREA_GATE_THRESHOLD_PCT, MAX_AREA_GATE_THRESHOLD_PCT)
+            _visitedAreas.value = prefs[KEY_VISITED_AREAS] ?: emptySet()
             _direction.value = FlashcardDirection.fromStored(prefs[KEY_DIRECTION])
             _directionWasManuallySet.value = prefs[KEY_DIRECTION_MANUAL] ?: false
             val storedOverride = TtsLanguage.fromStored(prefs[KEY_TTS_LANGUAGE])
@@ -375,6 +389,25 @@ class MoneoPrefs private constructor(private val context: Context) {
         if (v == _areaGateThresholdPct.value) return
         _areaGateThresholdPct.value = v
         scope.launch { context.moneoStore.edit { it[KEY_AREA_GATE_THRESHOLD_PCT] = v } }
+    }
+
+    fun isAreaVisited(romKey: String, areaId: String): Boolean =
+        "$romKey/$areaId" in _visitedAreas.value
+
+    /** Cheap no-op when already recorded, so the frame loop can call it every frame. */
+    fun markAreaVisited(romKey: String, areaId: String) {
+        val entry = "$romKey/$areaId"
+        if (entry in _visitedAreas.value) return
+        _visitedAreas.update { it + entry }
+        scope.launch {
+            context.moneoStore.edit { it[KEY_VISITED_AREAS] = (it[KEY_VISITED_AREAS] ?: emptySet()) + entry }
+        }
+    }
+
+    /** Forget every visited area (all ROMs). For starting a new game. */
+    fun clearVisitedAreas() {
+        _visitedAreas.value = emptySet()
+        scope.launch { context.moneoStore.edit { it.remove(KEY_VISITED_AREAS) } }
     }
 
     fun setDirection(value: FlashcardDirection) {

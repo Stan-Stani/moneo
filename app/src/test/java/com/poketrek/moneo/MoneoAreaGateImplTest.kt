@@ -227,4 +227,67 @@ class MoneoAreaGateImplTest {
         gateDisabled.evaluate(GbaKey.UP, snapshot)
         assertEquals(AreaGateDecision.NONE, gateDisabled.lastDecision.value)
     }
+
+    private class FakeVisited(initial: Set<String> = emptySet()) : VisitedAreas {
+        val areas = initial.toMutableSet()
+        override fun isVisited(areaId: String) = areaId in areas
+        override fun markVisited(areaId: String) { areas += areaId }
+    }
+
+    private val mapAreas = mapOf((1 to 0) to "pallet_town", (1 to 19) to "route_1")
+
+    private fun gateWithVisits(
+        visited: FakeVisited,
+        enabled: Boolean = true,
+        maturity: Map<String, Float> = mapOf("route_1" to 0f, "viridian_forest" to 0f),
+    ) = MoneoAreaGateImpl(
+        MapBoundaryLookup.parse(boundaryJson),
+        FakeConfig(enabled = enabled),
+        FakeOracle(maturity),
+        currentArea = { bank, id -> mapAreas[bank to id] },
+        visited = visited,
+    )
+
+    @Test
+    fun `standing in an area records it as visited`() {
+        val visited = FakeVisited()
+        gateWithVisits(visited).evaluate(0, snap(bank = 1, mapId = 0, x = 3, y = 3))
+        assertEquals(setOf("pallet_town"), visited.areas)
+    }
+
+    @Test
+    fun `visits are recorded while the gate is off`() {
+        val visited = FakeVisited()
+        gateWithVisits(visited, enabled = false).evaluate(0, snap(bank = 1, mapId = 0, x = 3, y = 3))
+        assertEquals(setOf("pallet_town"), visited.areas)
+    }
+
+    @Test
+    fun `no visit recorded before the save block exists`() {
+        val visited = FakeVisited()
+        gateWithVisits(visited).evaluate(0, snap(bank = 1, mapId = 0, x = 3, y = 3, saveBlockPtr = 0))
+        assertTrue(visited.areas.isEmpty())
+    }
+
+    @Test
+    fun `edge into a visited area is not blocked even when immature`() {
+        val gate = gateWithVisits(FakeVisited(setOf("route_1")))
+        assertEquals(AreaGateDecision.NONE, gate.evaluate(GbaKey.UP, snap(bank = 1, mapId = 0, x = 5, y = 0)))
+    }
+
+    @Test
+    fun `standing on a warp to a visited area is not blocked`() {
+        val gate = gateWithVisits(FakeVisited(setOf("viridian_forest")))
+        assertEquals(AreaGateDecision.NONE, gate.evaluate(GbaKey.UP, snap(bank = 1, mapId = 0, x = 12, y = 8)))
+    }
+
+    @Test
+    fun `unvisited destination still blocks alongside a visited one`() {
+        // Standing next to the warp (12,8) from (11,8): RIGHT goes to the
+        // unvisited forest; route_1 is visited but irrelevant here.
+        val gate = gateWithVisits(FakeVisited(setOf("route_1")))
+        val d = gate.evaluate(GbaKey.RIGHT, snap(bank = 1, mapId = 0, x = 11, y = 8))
+        assertTrue(d.shouldBlock)
+        assertEquals("viridian_forest", d.destArea)
+    }
 }

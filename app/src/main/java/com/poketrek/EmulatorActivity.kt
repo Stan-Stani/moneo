@@ -179,6 +179,8 @@ class EmulatorActivity : ComponentActivity() {
                 moneo.prefs,
                 moneo.repository,
                 isRomSupported = { runner.romIdentity.value?.variant?.areaGateSupported == true },
+                mapAreas = com.poketrek.moneo.data.MapAreaLookup.loadFromAssets(applicationContext),
+                romKey = { runner.romIdentity.value?.crc32Hex },
             )
             runner.setMoneoAreaGate(areaGate)
         }.onFailure {
