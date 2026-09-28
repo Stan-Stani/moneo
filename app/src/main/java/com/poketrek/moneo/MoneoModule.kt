@@ -43,8 +43,21 @@ class MoneoModule private constructor(context: Context) {
 
     private val appContext = context.applicationContext
 
-    /** Start watching the message box; [isSupported] says whether the loaded ROM is the 2024 KR patch. */
-    fun bindDialogReader(reader: RamCapture.BusReader, isSupported: () -> Boolean) {
+    /** Messages the reading helper couldn't match, for reviewing misses from real play. */
+    val unmatchedDialog = com.poketrek.moneo.reading.UnmatchedDialogLog(
+        File(File(context.filesDir, "moneo"), "unmatched_dialog.json")
+    )
+
+    /**
+     * Start watching the message box; [isSupported] says whether the loaded
+     * ROM is the 2024 KR patch, [location] names the current map for the
+     * unmatched-dialogue log.
+     */
+    fun bindDialogReader(
+        reader: RamCapture.BusReader,
+        isSupported: () -> Boolean,
+        location: () -> String? = { null },
+    ) {
         if (dialogReader != null) return
         val r = runCatching {
             com.poketrek.moneo.reading.DialogReader(
@@ -52,6 +65,7 @@ class MoneoModule private constructor(context: Context) {
                 com.poketrek.moneo.reading.KoText2024.loadFromAssets(appContext),
                 com.poketrek.moneo.reading.DialogIndex.loadFromAssets(appContext),
                 isSupported,
+                onUnmatched = { unmatchedDialog.record(it, location()) },
             )
         }.getOrNull() ?: return
         dialogReader = r

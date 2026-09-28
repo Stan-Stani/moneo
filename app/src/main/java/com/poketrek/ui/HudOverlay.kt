@@ -465,6 +465,7 @@ fun SettingsSheet(
                 AdvancedSection(
                     onResetSteps = { budget.resetBudgetAndRebaseSteps() },
                 )
+                UnmatchedDialogSection(moneo)
                 RuntimeTextCaptureSection(moneo)
             }
             Spacer(Modifier.height(8.dp))
@@ -1533,6 +1534,40 @@ private fun CorrectionEndpointExpander(moneo: MoneoModule) {
                     draft = ""
                     moneo.prefs.setCorrectionVpsUrl(null)
                 }) { Text("Clear") }
+            }
+        }
+    }
+}
+
+/**
+ * Messages the in-game reading helper saw but couldn't match, collected
+ * during real play. Share sends the list as text (e.g. to yourself) so the
+ * misses can be fixed; tools/moneo/pull_unmatched_dialog.py reads the same
+ * file over adb.
+ */
+@Composable
+private fun UnmatchedDialogSection(moneo: MoneoModule) {
+    val log = moneo.unmatchedDialog
+    val n by log.count.collectAsState()
+    val context = androidx.compose.ui.platform.LocalContext.current
+    Expander(
+        title = "Reading help: missed dialogue",
+        summary = if (n == 0) "None yet" else "$n message${if (n == 1) "" else "s"}",
+    ) {
+        Text(
+            "Messages shown in a box that the reading panel couldn't identify.",
+            color = Color(0xFF6B7280),
+            fontSize = 11.sp,
+        )
+        if (n > 0) {
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                TextButton(onClick = {
+                    val send = android.content.Intent(android.content.Intent.ACTION_SEND)
+                        .setType("text/plain")
+                        .putExtra(android.content.Intent.EXTRA_TEXT, log.report())
+                    context.startActivity(android.content.Intent.createChooser(send, "Share missed dialogue"))
+                }) { Text("Share", fontSize = 12.sp) }
+                TextButton(onClick = { log.clear() }) { Text("Clear", fontSize = 12.sp) }
             }
         }
     }

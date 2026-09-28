@@ -173,6 +173,7 @@ class EmulatorActivity : ComponentActivity() {
         moneo.bindDialogReader(
             reader = { addr, length -> runner.busReadBytes(addr, length) },
             isSupported = { runner.romIdentity.value?.variant == com.poketrek.emu.RomVariant.LEAFGREEN_KR_2024 },
+            location = { runner.ramSnapshot.value?.let { "${it.mapBank}:${it.mapId}" } },
         )
         moneoGate = MoneoSoftGate(moneo.repository, moneo.prefs)
 
