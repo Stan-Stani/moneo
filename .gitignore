@@ -47,3 +47,7 @@ tools/moneo/rom_swap/diff_runs_2024.txt
 # Generated HTML reports from visualizer scripts (rebuilt by the .py)
 tools/moneo/rom_diff.html
 tools/moneo/sentence_browser.html
+
+# Local emulator save states for manual testing (see tools/test_states/README.md)
+tools/test_states/**/*.bin
+tools/test_states/**/*.meta

@@ -42,6 +42,8 @@ ADB=~/Library/Android/sdk/platform-tools/adb
   sleep 2 && $ADB exec-out screencap -p > /tmp/poketrek.png
 ```
 
+**Skip the new-game intro:** `tools/test_states/push.sh` loads saved emulator states into the app's save slots (e.g. KR 2024 slot 2 = standing one step below Route 1, for testing the area gate). The state files are local-only (gitignored); see `tools/test_states/README.md`.
+
 Logcat tags worth watching: `EmulatorActivity`, `EmulatorRunner`, `poketrek-jni`, `StepCounterService`, `StepSensor`, `SaveStateStore`.
 
 ## Architecture
