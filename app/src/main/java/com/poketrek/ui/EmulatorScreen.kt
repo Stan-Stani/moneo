@@ -71,6 +71,8 @@ fun EmulatorScreen(
     val controlState = rememberControlState()
     var settingsOpen by remember { mutableStateOf(false) }
     var moneoOpen by remember { mutableStateOf(false) }
+    /** Area to open Moneo on (set by the area-gate lock chip); null opens the picker. */
+    var moneoStudyArea by remember { mutableStateOf<String?>(null) }
 
     // Game-audio ducking. The Korean TTS engine and the GBA AudioTrack share
     // the speaker; when both play simultaneously the synthesized speech gets
@@ -115,6 +117,11 @@ fun EmulatorScreen(
         AreaGateLockChip(
             gate = runner.gate,
             moneo = moneo,
+            onStudy = { areaId ->
+                moneo.prefs.setTargetAreaId(areaId)
+                moneoStudyArea = areaId
+                moneoOpen = true
+            },
             modifier = Modifier
                 .align(Alignment.TopStart)
                 .padding(start = 8.dp, top = 96.dp),
@@ -197,9 +204,10 @@ fun EmulatorScreen(
         if (moneoOpen) {
             MoneoOverlay(
                 module = moneo,
-                onClose = { moneoOpen = false },
+                onClose = { moneoOpen = false; moneoStudyArea = null },
                 modifier = Modifier.fillMaxSize(),
                 romCrc32Hex = romIdentity?.crc32Hex,
+                initialArea = moneoStudyArea,
             )
         }
 

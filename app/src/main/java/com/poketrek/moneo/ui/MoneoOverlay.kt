@@ -46,8 +46,10 @@ fun MoneoOverlay(
     onClose: () -> Unit,
     modifier: Modifier = Modifier,
     romCrc32Hex: String? = null,
+    /** Open straight into this area's review (e.g. from the area-gate lock chip). */
+    initialArea: String? = null,
 ) {
-    var selectedArea by remember { mutableStateOf<String?>(null) }
+    var selectedArea by remember(initialArea) { mutableStateOf(initialArea) }
 
     Box(
         modifier = modifier

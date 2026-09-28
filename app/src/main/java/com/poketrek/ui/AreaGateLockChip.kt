@@ -1,6 +1,7 @@
 package com.poketrek.ui
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
@@ -34,6 +35,8 @@ import kotlin.math.roundToInt
 fun AreaGateLockChip(
     gate: MovementGate,
     moneo: MoneoModule,
+    /** Tapping the chip studies the blocked area; receives its area id. */
+    onStudy: (String) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val decision by gate.persistentAreaGateDecision.collectAsState()
@@ -46,6 +49,7 @@ fun AreaGateLockChip(
     Row(
         modifier = modifier
             .background(Color(0xCCB91C1C), shape = RoundedCornerShape(10.dp))
+            .clickable(enabled = decision.destArea != null) { decision.destArea?.let(onStudy) }
             .padding(horizontal = 10.dp, vertical = 4.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(6.dp),
@@ -55,6 +59,12 @@ fun AreaGateLockChip(
             "$label ($curPct%/$thresholdPct%)",
             color = Color.White,
             fontFamily = FontFamily.Monospace,
+            fontWeight = FontWeight.Bold,
+            fontSize = 11.sp,
+        )
+        Text(
+            "Study ›",
+            color = Color.White,
             fontWeight = FontWeight.Bold,
             fontSize = 11.sp,
         )
