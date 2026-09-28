@@ -446,8 +446,10 @@ pixels, raw 2bpp value 1 = ink, 2 = drop shadow (see
 The font follows KS X 1001 order between spare out-of-order slots, so a
 second, independent check is to predict each slot from its neighbours'
 KS X indices; every label was reviewed against both (2026-09-27). The glyph
-is ground truth: a handful of dialog lines really do contain odd syllables
-(e.g. 0x3839 낟 in "포켓몬낟망간다").
+is ground truth. Context from dialog is only a hint: before ko_text.py, the
+corpus included non-text records whose "contexts" looked plausible (0x3839,
+really 낟, appeared to read "포켓몬[도]망간다" but never occurs in real
+dialog; 0x3863 is 넥 as in "포켓몬스넥", not 터).
 
 Particle codes 0x41ED..0x41F4 are not glyphs: the engine at `0x0872BA00`
 indexes a (after-consonant, after-vowel) halfword table at `0x0872BC0C` by
