@@ -1436,6 +1436,14 @@ private fun MoneoSection(
             }
         }
 
+        val readingHelp by moneo.prefs.readingHelp.collectAsState()
+        ToggleRow(
+            label = "Reading help in dialogue",
+            sublabel = "Korean 2024 ROM: lists the words of the open message box beside the game",
+            checked = readingHelp,
+            onCheckedChange = { moneo.prefs.setReadingHelp(it) },
+        )
+
         // Hard area-gate: blocks the player from physically entering a new area
         // until they know enough of the words its text uses.
         Expander(

@@ -17,3 +17,4 @@ live in the app's own storage, so reset those separately (e.g.
 |---|---|
 | 1 | New game (player "A", rival "AAAAAAA"), in the bedroom in Pallet Town. No Pokémon yet. |
 | 2 | Bulbasaur Lv6, rival beaten. Standing on Pallet's north exit, one step below Route 1: pressing Up tests the area gate's first boundary. |
+| 3 | Slot 2's spot, facing the Pallet NPC with her message box open ("간판은 도움이 되지!"): the reading helper panel shows on load. |

@@ -99,6 +99,26 @@ class MoneoRepository(
     }
 
     /**
+     * Cards the player asked to study next (e.g. tapped in the in-game
+     * reading helper), oldest first. They come before anything else in every
+     * area's queue until graded. [onStudyNextChanged] persists the list.
+     */
+    private val _studyNext = MutableStateFlow<List<String>>(emptyList())
+    val studyNext: StateFlow<List<String>> = _studyNext.asStateFlow()
+    var onStudyNextChanged: ((List<String>) -> Unit)? = null
+
+    fun setStudyNext(ids: List<String>) {
+        _studyNext.value = ids.filter { it in _vocab.value }
+    }
+
+    /** Queue [vocabId] to study next, or take it off the queue if it's already there. */
+    fun toggleStudyNext(vocabId: String) {
+        val cur = _studyNext.value
+        _studyNext.value = if (vocabId in cur) cur - vocabId else cur + vocabId
+        onStudyNextChanged?.invoke(_studyNext.value)
+    }
+
+    /**
      * Parse a pseudo-area id of the form `"<baseAreaId>#<primarySourceType>"`
      * into its components, or return null if [areaId] is a plain area id.
      */
@@ -197,6 +217,12 @@ class MoneoRepository(
         }
     }
 
+    /** Visible cards for a word (the same word can be a card in two decks). */
+    fun visibleEntriesFor(korean: String): List<VocabEntry> {
+        val visible = visibleVocabIds()
+        return _vocab.value.values.filter { it.korean == korean && it.id in visible }
+    }
+
     /** Vocab IDs visible after applying all opt-out filters. Used by due-count helpers. */
     private fun visibleVocabIds(): Set<String> {
         val excludedTags = _excludedSourceTags.value
@@ -263,6 +289,16 @@ class MoneoRepository(
      *   3. NEW cards (limited per session via the caller's pacing if needed)
      */
     fun nextDueCard(areaId: String, nowMs: Long = now()): Pair<CardRecord, VocabEntry>? {
+        if (_studyNext.value.isNotEmpty()) {
+            val visible = visibleVocabIds()
+            for (id in _studyNext.value) {
+                val rec = _cards.value[id] ?: continue
+                if (id !in visible || rec.suspended) continue
+                if (rec.snapshot.state == CardState.NEW || rec.snapshot.dueAt <= nowMs) {
+                    return rec to (_vocab.value[id] ?: continue)
+                }
+            }
+        }
         val vocab = vocabForArea(areaId).associateBy { it.id }
         if (vocab.isEmpty()) return null
         val baseAreaId = splitPseudoAreaId(areaId)?.first ?: areaId
@@ -327,6 +363,10 @@ class MoneoRepository(
         val updated = current.copy(snapshot = nextSnap, lastReviewedAt = nowMs)
         store.put(updated)
         _cards.value = _cards.value + (vocabId to updated)
+        if (vocabId in _studyNext.value) {
+            _studyNext.value = _studyNext.value - vocabId
+            onStudyNextChanged?.invoke(_studyNext.value)
+        }
     }
 
     /** Total cards due across all areas at [nowMs]. NEW cards always count as due. */

@@ -166,6 +166,10 @@ class EmulatorActivity : ComponentActivity() {
         saveStateStore = SaveStateStore(applicationContext)
         moneo = MoneoModule.get(applicationContext)
         moneo.bindCapture { addr, length -> runner.busReadBytes(addr, length) }
+        moneo.bindDialogReader(
+            reader = { addr, length -> runner.busReadBytes(addr, length) },
+            isSupported = { runner.romIdentity.value?.variant == com.poketrek.emu.RomVariant.LEAFGREEN_KR_2024 },
+        )
         moneoGate = MoneoSoftGate(moneo.repository, moneo.prefs)
 
         // Wire the hard area-gate. boundary_tiles.json is keyed by

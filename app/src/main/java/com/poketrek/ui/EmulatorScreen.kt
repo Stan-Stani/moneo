@@ -127,6 +127,13 @@ fun EmulatorScreen(
                 .padding(start = 8.dp, top = 96.dp),
         )
 
+        ReadingHelperPanel(
+            moneo = moneo,
+            modifier = Modifier
+                .align(Alignment.TopEnd)
+                .padding(top = 52.dp, end = 6.dp),
+        )
+
         if (debugOn) {
             DebugOverlay(
                 snapshot = ramSnapshot,

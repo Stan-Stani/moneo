@@ -39,6 +39,8 @@ private val KEY_ABILITIES_MODE = stringPreferencesKey("moneo_abilities_mode")
 private val KEY_AREA_GATE_ENABLED = booleanPreferencesKey("moneo_area_gate_enabled")
 private val KEY_AREA_GATE_THRESHOLD_PCT = intPreferencesKey("moneo_area_gate_threshold_pct")
 private val KEY_VISITED_AREAS = stringSetPreferencesKey("moneo_visited_areas")
+private val KEY_STUDY_NEXT = stringPreferencesKey("moneo_study_next")
+private val KEY_READING_HELP = booleanPreferencesKey("moneo_reading_help")
 private val KEY_DIRECTION = stringPreferencesKey("moneo_direction")
 private val KEY_DIRECTION_MANUAL = booleanPreferencesKey("moneo_direction_manual")
 private val KEY_TTS_LANGUAGE = stringPreferencesKey("moneo_tts_language")
@@ -236,6 +238,24 @@ class MoneoPrefs private constructor(private val context: Context) {
     private val _visitedAreas = MutableStateFlow<Set<String>>(emptySet())
     val visitedAreas: StateFlow<Set<String>> = _visitedAreas.asStateFlow()
 
+    /** Vocab ids queued to study next (MoneoRepository.studyNext), oldest first. */
+    var studyNext: List<String> = emptyList()
+        private set
+
+    fun saveStudyNext(ids: List<String>) {
+        studyNext = ids
+        scope.launch { context.moneoStore.edit { it[KEY_STUDY_NEXT] = ids.joinToString("\n") } }
+    }
+
+    /** In-game reading helper: show the open message box's words beside the game. */
+    private val _readingHelp = MutableStateFlow(true)
+    val readingHelp: StateFlow<Boolean> = _readingHelp.asStateFlow()
+
+    fun setReadingHelp(value: Boolean) {
+        _readingHelp.value = value
+        scope.launch { context.moneoStore.edit { it[KEY_READING_HELP] = value } }
+    }
+
     /**
      * Flashcard display direction. KO_TO_EN (default) shows Korean on the
      * front; EN_TO_KO flips for Korean native speakers learning English.
@@ -293,6 +313,8 @@ class MoneoPrefs private constructor(private val context: Context) {
                 (prefs[KEY_AREA_GATE_THRESHOLD_PCT] ?: DEFAULT_AREA_GATE_THRESHOLD_PCT)
                     .coerceIn(MIN_AREA_GATE_THRESHOLD_PCT, MAX_AREA_GATE_THRESHOLD_PCT)
             _visitedAreas.value = prefs[KEY_VISITED_AREAS] ?: emptySet()
+            studyNext = prefs[KEY_STUDY_NEXT]?.split('\n')?.filter { it.isNotEmpty() } ?: emptyList()
+            _readingHelp.value = prefs[KEY_READING_HELP] ?: true
             _direction.value = FlashcardDirection.fromStored(prefs[KEY_DIRECTION])
             _directionWasManuallySet.value = prefs[KEY_DIRECTION_MANUAL] ?: false
             val storedOverride = TtsLanguage.fromStored(prefs[KEY_TTS_LANGUAGE])

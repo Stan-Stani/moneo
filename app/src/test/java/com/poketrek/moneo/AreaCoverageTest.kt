@@ -130,6 +130,22 @@ class AreaCoverageTest {
         assertEquals("x", r.nextDueCard("route_1")?.first?.vocabId)
     }
 
+    @Test fun studyNextCardsComeFirstUntilGraded() {
+        val r = repo(
+            vocab = listOf(v("common", "가다"), v("starred", "간판", area = "pallet_town")),
+            counts = mapOf("route_1" to mapOf("가다" to 30)),
+        )
+        var saved: List<String>? = null
+        r.onStudyNextChanged = { saved = it }
+        r.toggleStudyNext("starred")
+        assertEquals(listOf("starred"), saved)
+        // Queued from another area's dialogue, still first in Route 1's queue.
+        assertEquals("starred", r.nextDueCard("route_1")?.first?.vocabId)
+        r.grade("starred", com.poketrek.moneo.srs.Rating.GOOD, now)
+        assertEquals(emptyList<String>(), saved)
+        assertEquals("common", r.nextDueCard("route_1")?.first?.vocabId)
+    }
+
     @Test fun dueLearningCardStillBeatsNewCards() {
         val r = repo(
             vocab = listOf(v("new-common", "가다"), v("learning", "덤불")),

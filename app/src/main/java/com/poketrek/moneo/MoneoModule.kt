@@ -37,6 +37,27 @@ class MoneoModule private constructor(context: Context) {
         runCatching { com.poketrek.moneo.data.HanjaDict.loadFromAssets(context) }
             .getOrElse { com.poketrek.moneo.data.HanjaDict.EMPTY }
 
+    /** In-game reading helper for the 2024 KR ROM; null until [bindDialogReader]. */
+    @Volatile var dialogReader: com.poketrek.moneo.reading.DialogReader? = null
+        private set
+
+    private val appContext = context.applicationContext
+
+    /** Start watching the message box; [isSupported] says whether the loaded ROM is the 2024 KR patch. */
+    fun bindDialogReader(reader: RamCapture.BusReader, isSupported: () -> Boolean) {
+        if (dialogReader != null) return
+        val r = runCatching {
+            com.poketrek.moneo.reading.DialogReader(
+                reader,
+                com.poketrek.moneo.reading.KoText2024.loadFromAssets(appContext),
+                com.poketrek.moneo.reading.DialogIndex.loadFromAssets(appContext),
+                isSupported,
+            )
+        }.getOrNull() ?: return
+        dialogReader = r
+        r.start()
+    }
+
     /** Per-area lemma frequencies driving the area gate; empty if the asset is missing. */
     val lemmaCounts: com.poketrek.moneo.data.AreaLemmaCounts =
         runCatching { com.poketrek.moneo.data.AreaLemmaCounts.loadFromAssets(context) }
@@ -152,6 +173,8 @@ class MoneoModule private constructor(context: Context) {
             initialSentencesStudy = allStudySentences,
         )
         repository.setAreaLemmaCounts(lemmaCounts)
+        repository.setStudyNext(prefs.studyNext)
+        repository.onStudyNextChanged = { prefs.saveStudyNext(it) }
         // Drive optional-deck visibility from user prefs. Combined so toggles
         // take effect immediately without an app restart.
         GlobalScope.launch {
