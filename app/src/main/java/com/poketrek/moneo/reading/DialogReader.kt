@@ -17,18 +17,18 @@ import kotlinx.coroutines.launch
  * Watches the message box of the 2024 KR ROM and publishes the dialog line
  * on screen, matched against [DialogIndex], while a box is open.
  *
- * RAM locations were found by diffing save states with a box open/closed
- * (2026-09-28): bit 0 of [BOX_OPEN_FLAG] is set only while a field message box
- * is up (0x01 for an NPC line, 0x11 in a house),
- * and [MESSAGE_PTR] points at the expanded message (0x02021D18, the
- * gStringVar4-style buffer the text printer reads). They're specific to that
- * ROM, so [isSupported] gates everything.
+ * A box is on screen when BG0's message-box rows have tiles ([boxShown]).
+ * [MESSAGE_PTR] is text printer 0's current character (sTextPrinters[0]),
+ * which points into the expanded message; found by diffing save states on
+ * the 2024 KR ROM, so [isSupported] gates everything.
  */
 class DialogReader(
     private val reader: RamCapture.BusReader,
     private val text: KoText2024,
     private val index: DialogIndex,
     private val isSupported: () -> Boolean,
+    /** Called once per newly shown message that no dialog line matched. */
+    private val onUnmatched: ((String) -> Unit)? = null,
 ) {
     data class OnScreen(val message: String, val line: DialogIndex.Line?)
 
@@ -56,8 +56,7 @@ class DialogReader(
 
     private fun poll() {
         if (!isSupported()) { _current.value = null; return }
-        val open = ((reader.readBytes(BOX_OPEN_FLAG, 1)?.firstOrNull()?.toInt() ?: 0) and 1) != 0
-        if (!open) { _current.value = null; return }
+        if (!boxShown()) { _current.value = null; return }
         val p = reader.readBytes(MESSAGE_PTR, 4) ?: return
         val addr = (p[0].toInt() and 0xFF) or ((p[1].toInt() and 0xFF) shl 8) or
             ((p[2].toInt() and 0xFF) shl 16) or ((p[3].toInt() and 0xFF) shl 24)
@@ -72,9 +71,45 @@ class DialogReader(
         val line = index.match(message)
         Log.d(TAG, "0x${addr.toString(16)} line=${line?.id} ${message.replace('\n', ' ')}")
         _current.value = OnScreen(message, line)
+        if (line == null && message.isNotBlank()) onUnmatched?.invoke(message)
+    }
+
+    /** Whether a message box is on screen (see [boxRowsHaveTiles]). */
+    private fun boxShown(): Boolean {
+        val io = reader.readBytes(IO_BASE, 12) ?: return false
+        val dispcnt = u16(io, 0)
+        if (dispcnt and DISPCNT_BG0_ON == 0) return false
+        val screenblock = (u16(io, 8) shr 8) and 31
+        val rows = reader.readBytes(VRAM_BASE + screenblock * 0x800 + BOX_FIRST_ROW * 64, BOX_ROWS * 64)
+            ?: return false
+        return boxRowsHaveTiles(rows)
     }
 
     companion object {
+        /**
+         * Message boxes (field and battle alike) are drawn on BG0, in tile
+         * rows 14-19 of its screenblock; with no box those rows are empty.
+         * Found by diffing save states open/closed/in battle (2026-09-28).
+         * This replaced a RAM byte (0x02036E81) that looked like a box flag
+         * in the first states tested but stayed 0 in battles after Continue.
+         * [rows] is the tilemap of those rows: 32 u16 entries per row; the
+         * low 10 bits are the tile index, and columns 30-31 are off-screen.
+         */
+        fun boxRowsHaveTiles(rows: ByteArray): Boolean {
+            for (r in 0 until rows.size / 64) for (c in 0 until 30) {
+                if (u16(rows, r * 64 + c * 2) and 0x3FF != 0) return true
+            }
+            return false
+        }
+
+        private fun u16(b: ByteArray, i: Int) = (b[i].toInt() and 0xFF) or ((b[i + 1].toInt() and 0xFF) shl 8)
+
+        private const val IO_BASE = 0x04000000
+        private const val VRAM_BASE = 0x06000000
+        private const val DISPCNT_BG0_ON = 0x100
+        private const val BOX_FIRST_ROW = 14
+        private const val BOX_ROWS = 6
+
         /**
          * Start of the message the printer cursor at [cursor] belongs to. A
          * finished printer sits one past its message's 0xFF, so that FF is
@@ -95,7 +130,6 @@ class DialogReader(
         private const val LOOKBACK = 512
         private const val TAG = "DialogReader"
         private const val POLL_MS = 250L
-        const val BOX_OPEN_FLAG = 0x02036E81
         const val MESSAGE_PTR = 0x02020010
         private const val MESSAGE_MAX = 1000
         private const val EWRAM_START = 0x02000000

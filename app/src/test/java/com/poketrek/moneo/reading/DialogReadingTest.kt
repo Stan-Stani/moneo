@@ -75,4 +75,20 @@ class DialogReadingTest {
         assertEquals(msgAt, DialogReader.messageStart(battle, 27))         // finished: one past FF
         assertEquals("이상해씨\n무엇을 할까?", text.decode(battle, msgAt))
     }
+
+    private fun rows(vararg entries: Pair<Int, Int>): ByteArray {
+        val b = ByteArray(6 * 64)
+        for ((i, v) in entries) { b[i * 2] = (v and 0xFF).toByte(); b[i * 2 + 1] = (v shr 8).toByte() }
+        return b
+    }
+
+    @Test fun messageBoxDetectedFromBg0Rows() {
+        // Closed: tile 0 everywhere, palette bits don't count.
+        assertEquals(false, DialogReader.boxRowsHaveTiles(rows(0 to 0xF000, 100 to 0xF000)))
+        // Open (field and battle): frame tiles like 0xF200 in the box rows.
+        assertEquals(true, DialogReader.boxRowsHaveTiles(rows(0 to 0xF200)))
+        assertEquals(true, DialogReader.boxRowsHaveTiles(rows(5 * 32 + 29 to 0x0001)))
+        // Columns 30-31 are off-screen.
+        assertEquals(false, DialogReader.boxRowsHaveTiles(rows(30 to 0xF200, 31 to 0xF200)))
+    }
 }
