@@ -64,7 +64,8 @@ Screenshot: inbox/$shot"
   fi
 
   echo "[$(date +%T)] $id: $(jq -r .question "$json")"
-  out="$(cd "$DIR" && claude "${args[@]}" 2>"$DIR/.last_err")"
+  # </dev/null: otherwise claude reads the inotifywait pipe and blocks on queued events.
+  out="$(cd "$DIR" && claude "${args[@]}" 2>"$DIR/.last_err" </dev/null)"
   reply="$(jq -r '.result // empty' <<<"$out" 2>/dev/null)"
   sid="$(jq -r '.session_id // empty' <<<"$out" 2>/dev/null)"
   [[ -n "$sid" ]] && echo "$sid" >"$SESSION_FILE"

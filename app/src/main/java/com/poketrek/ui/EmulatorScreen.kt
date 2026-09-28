@@ -73,6 +73,8 @@ fun EmulatorScreen(
     var settingsOpen by remember { mutableStateOf(false) }
     var moneoOpen by remember { mutableStateOf(false) }
     var askOpen by remember { mutableStateOf(false) }
+    val portrait = androidx.compose.ui.platform.LocalConfiguration.current.orientation ==
+        android.content.res.Configuration.ORIENTATION_PORTRAIT
     /** Area to open Moneo on (set by the area-gate lock chip); null opens the picker. */
     var moneoStudyArea by remember { mutableStateOf<String?>(null) }
 
@@ -140,9 +142,12 @@ fun EmulatorScreen(
             moneo = moneo,
             open = askOpen,
             onToggle = { askOpen = !askOpen },
-            modifier = Modifier
-                .align(Alignment.CenterStart)
-                .padding(start = 8.dp),
+            // Portrait: under the HUD chips, clear of the game (centred) and its message box.
+            modifier = if (portrait) {
+                Modifier.align(Alignment.TopStart).padding(start = 8.dp, top = 140.dp)
+            } else {
+                Modifier.align(Alignment.CenterStart).padding(start = 8.dp)
+            },
         )
 
         if (askOpen) {
@@ -157,10 +162,11 @@ fun EmulatorScreen(
                     )
                 },
                 onClose = { askOpen = false },
+                // Portrait has room below the top buttons; landscape sits over the game's top half.
                 modifier = Modifier
                     .align(Alignment.TopCenter)
-                    .fillMaxWidth(0.62f)
-                    .padding(top = 8.dp),
+                    .fillMaxWidth(if (portrait) 1f else 0.62f)
+                    .padding(top = if (portrait) 64.dp else 8.dp),
             )
         }
 
