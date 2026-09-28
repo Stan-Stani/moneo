@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Make an emulator save state Continue anywhere on the map.
 
-    tools/test_states/teleport.py <state.bin> <group> <num> <x> <y> [out.bin]
+    tools/test_states/teleport.py <state.bin> <group> <num> <x> <y> [out.bin|out.sav]
 
 <state.bin> must be an mGBA save state taken at the title screen of a game
 that has an in-game save (kr2024/title_with_save.bin). The script edits the
@@ -15,8 +15,11 @@ Map numbers are pokefirered's map_groups order (the 2024 KR patch uses the
 same numbering): e.g. Viridian City is 3 1, with warp tiles listed in
 data/maps/ViridianCity/map.json -- stand one tile below a door (y+1).
 
-Then: push the output into a slot (push.sh or load_slot.sh), load it, press
-START until the Continue menu appears, A, and B to skip the recap.
+An out path ending in .sav writes just the 128 KB battery save. Install it
+with push_save.sh: the app keeps each ROM's in-game save in
+files/saves/<crc>.sav and only takes a slot's copy while that file is blank,
+so pushing the .sav is the reliable way. Then relaunch, START until the
+Continue menu appears, A, and B to skip the recap.
 """
 import struct
 import sys
@@ -48,7 +51,7 @@ def main():
     st[o0 + 9] |= 1                                                # CONTINUE_GAME_WARP
     for o in (o0, o1):
         struct.pack_into("<H", st, o + 0xFF6, checksum(st[o:o + 0x1000]))
-    open(out, "wb").write(st)
+    open(out, "wb").write(st[SAVEDATA:SAVEDATA + 0x20000] if out.endswith(".sav") else st)
     print(f"Continue -> map {g}:{n} ({x},{y}) in {out}")
 
 

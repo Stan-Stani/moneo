@@ -29,10 +29,14 @@ Named states (load with `load_slot.sh <file> <slot>`):
 
 ## Teleporting
 
-`teleport.py title_with_save.bin <group> <num> <x> <y> out.bin` makes Continue
-drop the player anywhere (map numbers as in pokefirered's
-`data/maps/map_groups.json`; see the script's docstring). Then
-`load_slot.sh out.bin 3`, load slot 3, press START until the Continue menu,
-A, then B to skip the recap. Story flags stay those of the save, so NPCs
-behave as early-game (e.g. the Mart won't sell until the Parcel is delivered).
+`teleport.py kr2024/title_with_save.bin <group> <num> <x> <y> out.sav`
+writes a battery save whose Continue drops the player anywhere (map numbers
+as in pokefirered's `data/maps/map_groups.json`; see the script's
+docstring). `push_save.sh out.sav` installs it, then relaunch the app, press
+START until the Continue menu, A, then B to skip the recap. Story flags stay
+those of the save, so NPCs behave as early-game (e.g. the Mart won't sell
+until the Parcel is delivered).
 
+The app keeps each ROM's in-game save in `files/saves/<crc>.sav`. Loading a
+slot restores the slot's copy of that save only while the file is still
+blank, so for anything save-related push the `.sav` directly.
