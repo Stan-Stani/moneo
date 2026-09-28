@@ -338,7 +338,6 @@ fun ReviewScreen(
                                 direction = direction,
                                 senses = sensesForBack(vocab, direction),
                             )
-                            HanjaCard(module = module, korean = vocab.korean)
                             if (sentenceSides != null) {
                                 SentenceCard(
                                     frontText = sentenceSides.front,
@@ -353,6 +352,7 @@ fun ReviewScreen(
                             } else {
                                 ReportOnlyCard(onReport = onReportCard)
                             }
+                            HanjaCard(module = module, korean = vocab.korean)
                         }
                         ratings()
                     } else {
@@ -377,7 +377,6 @@ fun ReviewScreen(
                         direction = direction,
                         senses = sensesForBack(vocab, direction),
                     )
-                    HanjaCard(module = module, korean = vocab.korean)
                     if (sentenceSides != null) {
                         SentenceCard(
                             frontText = sentenceSides.front,
@@ -392,6 +391,7 @@ fun ReviewScreen(
                     } else {
                         ReportOnlyCard(onReport = onReportCard)
                     }
+                    HanjaCard(module = module, korean = vocab.korean)
                     ratings()
                 } else {
                     revealButton()
