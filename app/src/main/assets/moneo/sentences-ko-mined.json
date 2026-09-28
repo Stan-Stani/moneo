@@ -14467,29 +14467,6 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v3:신의",
-   "korean": "많자신의",
-   "romanization": "manhjasinui",
-   "gloss": "(ROM example, rec6301)",
-   "targetForm": "신의",
-   "areaId": "rom_mined",
-   "source": "rom-rec6301",
-   "areasReferenced": [
-    "rom_mined",
-    "route_12",
-    "fuchsia_city",
-    "celadon_city"
-   ],
-   "firstAreaEncountered": "route_12",
-   "sourceTypes": [
-    "system_text"
-   ],
-   "primarySourceType": "system_text",
-   "liveRecIds": [
-    6510
-   ]
-  },
-  {
    "vocabId": "rom-mine-v3:얼음",
    "korean": "둘얼음회복한다",
    "romanization": "duleoleumhoeboghanda",
@@ -17120,17 +17097,6 @@
     2992,
     3093
    ]
-  },
-  {
-   "vocabId": "rom-mine-v3:게막",
-   "korean": "지니게막스스로",
-   "romanization": "jinigemagseuseuro",
-   "gloss": "(ROM example, rec6689)",
-   "targetForm": "게막",
-   "areaId": "rom_mined",
-   "source": "rom-rec6689",
-   "sourceTypes": [],
-   "primarySourceType": ""
   },
   {
    "vocabId": "rom-mine-v3:경우",
@@ -25451,32 +25417,6 @@
    "liveRecIds": [
     1448,
     1452
-   ]
-  },
-  {
-   "vocabId": "rom-mine-v3:하말",
-   "korean": "하말이야",
-   "romanization": "hamaliya",
-   "gloss": "(ROM example, rec1162)",
-   "targetForm": "하말",
-   "areaId": "rom_mined",
-   "source": "rom-rec1162",
-   "areasReferenced": [
-    "pallet_town",
-    "viridian_city",
-    "rom_mined",
-    "kindle_road",
-    "rocket_hideout",
-    "silph_co"
-   ],
-   "firstAreaEncountered": "pallet_town",
-   "sourceTypes": [
-    "npc_dialog",
-    "system_text"
-   ],
-   "primarySourceType": "npc_dialog",
-   "liveRecIds": [
-    945
    ]
   },
   {

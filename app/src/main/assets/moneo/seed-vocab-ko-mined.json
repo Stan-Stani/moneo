@@ -14562,28 +14562,6 @@
    ]
   },
   {
-   "korean": "신의",
-   "romanization": "sinui",
-   "gloss": "(신 'god/new' + 의 genitive)",
-   "partOfSpeech": "noun",
-   "areaId": "rom_mined",
-   "frequency": 6,
-   "liveRecIds": [
-    6510
-   ],
-   "areasReferenced": [
-    "route_12",
-    "fuchsia_city",
-    "celadon_city",
-    "rom_mined"
-   ],
-   "firstAreaEncountered": "route_12",
-   "sourceTypes": [
-    "system_text"
-   ],
-   "primarySourceType": "system_text"
-  },
-  {
    "korean": "얼음",
    "romanization": "eoleum",
    "gloss": "Ice",
@@ -17210,16 +17188,6 @@
    "senses": [
     "gratitude"
    ]
-  },
-  {
-   "korean": "게막",
-   "romanization": "gemag",
-   "gloss": "(Pokémon-game term; encounter/battle screen)",
-   "partOfSpeech": "noun",
-   "areaId": "rom_mined",
-   "frequency": 4,
-   "sourceTypes": [],
-   "primarySourceType": ""
   },
   {
    "korean": "경우",
@@ -25667,31 +25635,6 @@
     "system_text"
    ],
    "primarySourceType": "item_description"
-  },
-  {
-   "korean": "하말",
-   "romanization": "hamal",
-   "gloss": "(possibly proper noun or compound)",
-   "partOfSpeech": "noun",
-   "areaId": "rom_mined",
-   "frequency": 3,
-   "liveRecIds": [
-    945
-   ],
-   "areasReferenced": [
-    "pallet_town",
-    "viridian_city",
-    "rom_mined",
-    "kindle_road",
-    "rocket_hideout",
-    "silph_co"
-   ],
-   "firstAreaEncountered": "pallet_town",
-   "sourceTypes": [
-    "npc_dialog",
-    "system_text"
-   ],
-   "primarySourceType": "npc_dialog"
   },
   {
    "korean": "할아버지",

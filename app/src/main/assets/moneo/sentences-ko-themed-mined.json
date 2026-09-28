@@ -16163,15 +16163,6 @@
    "areaId": "rom_mined"
   },
   {
-   "vocabId": "rom-mine-v3:신의",
-   "korean": "신의 한 수처럼 기술이 통했어요.",
-   "gloss": "The move worked like a stroke of genius.",
-   "targetForm": "신의",
-   "source": "themed-v1",
-   "generator": "llm-claude-opus-4-7",
-   "areaId": "rom_mined"
-  },
-  {
    "vocabId": "rom-mine-v3:얼음",
    "korean": "얼음 타입 포켓몬은 추위에 강해요.",
    "gloss": "Ice-type Pokémon are strong against cold.",
@@ -16509,15 +16500,6 @@
    "korean": "도와주셔서 정말 감사해요.",
    "gloss": "Thank you so much for helping.",
    "targetForm": "감사",
-   "source": "themed-v1",
-   "generator": "llm-claude-opus-4-7",
-   "areaId": "rom_mined"
-  },
-  {
-   "vocabId": "rom-mine-v3:게막",
-   "korean": "배틀 게막이 화면에 떴어요.",
-   "gloss": "The battle screen popped up.",
-   "targetForm": "게막",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
    "areaId": "rom_mined"
@@ -17742,15 +17724,6 @@
    "korean": "새 포켓몬이 푸른 하늘을 날아요.",
    "gloss": "The bird Pokémon flies in the blue sky.",
    "targetForm": "하늘",
-   "source": "themed-v1",
-   "generator": "llm-claude-opus-4-7",
-   "areaId": "rom_mined"
-  },
-  {
-   "vocabId": "rom-mine-v3:하말",
-   "korean": "하말이라는 트레이너와 배틀했어요.",
-   "gloss": "I battled a trainer named Hamal.",
-   "targetForm": "하말",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
    "areaId": "rom_mined"
