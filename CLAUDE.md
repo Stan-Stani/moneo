@@ -80,7 +80,7 @@ The "direction held last frame" guard is what keeps cutscenes, ledge hops, ice t
 
 ### ROM identity & gating
 
-`RomIdentity.of(bytes)` CRC32s the loaded ROM and maps it to a `RomVariant`. Only `LEAFGREEN_US_REV1` (CRC `0xDAFFECEC`) has `gatingSupported = true`. For Korean / unknown ROMs, `EmulatorRunner.runLoop` bypasses the gate entirely (`rawKeys` passes straight through) because `LeafGreenRam` reads from US-Rev1 addresses that won't be valid elsewhere — gating against random RAM diffs would burn the budget. The HUD shows a yellow warning on uncalibrated ROMs. Korean runtime calibration is the planned-but-deferred path.
+`RomIdentity.of(bytes)` CRC32s the loaded ROM and maps it to a `RomVariant`. `gatingSupported = true` only means "ships pre-calibrated", which is just `LEAFGREEN_US_REV1` (CRC `0xDAFFECEC`). Other ROMs (e.g. the Korean 2024 patch, `LEAFGREEN_KR_2024`) become gateable through runtime calibration: `RomCalibrator` diffs EWRAM across a one-tile step to find the SaveBlock1 pointer in IWRAM, and `CalibrationStore` persists the result per ROM. Until a calibration exists, `EmulatorRunner.runLoop` bypasses the gate (`rawKeys` passes straight through), because gating against wrong RAM addresses would burn the budget, and the HUD shows a yellow warning. `areaGateSupported` (moneo's area gate) is separate and true for both US Rev 1 and KR 2024.
 
 ## JNI / native gotchas
 
