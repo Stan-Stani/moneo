@@ -40,7 +40,9 @@ class DialogIndex(private val lines: List<Line>) {
             }
             if (ok && score > bestScore) { best = line; bestScore = score }
         }
-        return best?.takeIf { bestScore * 2 >= h.length }
+        // A 2-syllable line (이상) is also a piece of countless names
+        // (이상해씨), so short lines only match the whole message.
+        return best?.takeIf { bestScore * 2 >= h.length && (bestScore >= 3 || bestScore == h.length) }
     }
 
     companion object {

@@ -18,7 +18,8 @@ import kotlinx.coroutines.launch
  * on screen, matched against [DialogIndex], while a box is open.
  *
  * RAM locations were found by diffing save states with a box open/closed
- * (2026-09-28): [BOX_OPEN_FLAG] is 1 only while a field message box is up,
+ * (2026-09-28): bit 0 of [BOX_OPEN_FLAG] is set only while a field message box
+ * is up (0x01 for an NPC line, 0x11 in a house),
  * and [MESSAGE_PTR] points at the expanded message (0x02021D18, the
  * gStringVar4-style buffer the text printer reads). They're specific to that
  * ROM, so [isSupported] gates everything.
@@ -55,19 +56,43 @@ class DialogReader(
 
     private fun poll() {
         if (!isSupported()) { _current.value = null; return }
-        val open = reader.readBytes(BOX_OPEN_FLAG, 1)?.firstOrNull()?.toInt() == 1
+        val open = ((reader.readBytes(BOX_OPEN_FLAG, 1)?.firstOrNull()?.toInt() ?: 0) and 1) != 0
         if (!open) { _current.value = null; return }
         val p = reader.readBytes(MESSAGE_PTR, 4) ?: return
         val addr = (p[0].toInt() and 0xFF) or ((p[1].toInt() and 0xFF) shl 8) or
             ((p[2].toInt() and 0xFF) shl 16) or ((p[3].toInt() and 0xFF) shl 24)
-        if (addr !in EWRAM_START until EWRAM_END - MESSAGE_MAX) return
-        val bytes = reader.readBytes(addr, MESSAGE_MAX) ?: return
-        val message = text.decode(bytes)
+        if (addr !in EWRAM_START + LOOKBACK until EWRAM_END - MESSAGE_MAX) return
+        // The pointer is the text printer's current character: at the start
+        // of a field message, but it walks through battle text as it prints.
+        // Step back to just after the previous string's 0xFF terminator.
+        val bytes = reader.readBytes(addr - LOOKBACK, LOOKBACK + MESSAGE_MAX) ?: return
+        val start = messageStart(bytes, LOOKBACK)
+        val message = text.decode(bytes, start).trim()
         if (_current.value?.message == message) return
-        _current.value = OnScreen(message, index.match(message))
+        val line = index.match(message)
+        Log.d(TAG, "0x${addr.toString(16)} line=${line?.id} ${message.replace('\n', ' ')}")
+        _current.value = OnScreen(message, line)
     }
 
     companion object {
+        /**
+         * Start of the message the printer cursor at [cursor] belongs to. A
+         * finished printer sits one past its message's 0xFF, so that FF is
+         * skipped first. Walks back to the previous 0xFF, or to a run of two
+         * 0x00 (a lone 00 is a space, but the battle text buffer is preceded
+         * by zero padding with no terminator).
+         */
+        fun messageStart(bytes: ByteArray, cursor: Int): Int {
+            var i = cursor
+            if (i > 0 && bytes[i - 1] == FF) i--
+            while (i > 0 && bytes[i - 1] != FF && !(i > 1 && bytes[i - 1] == ZERO && bytes[i - 2] == ZERO)) i--
+            return i
+        }
+
+        private const val FF = 0xFF.toByte()
+        private const val ZERO = 0.toByte()
+
+        private const val LOOKBACK = 512
         private const val TAG = "DialogReader"
         private const val POLL_MS = 250L
         const val BOX_OPEN_FLAG = 0x02036E81

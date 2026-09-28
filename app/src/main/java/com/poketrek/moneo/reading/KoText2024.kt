@@ -21,7 +21,9 @@ class KoText2024(private val codepoints: Map<Int, Char>) {
                 b == EOS -> return sb.toString()
                 b in HANGUL_LEAD_LO..HANGUL_LEAD_HI && i + 1 < end -> {
                     val cp = (b shl 8) or (bytes[i + 1].toInt() and 0xFF)
-                    sb.append(codepoints[cp] ?: '□')
+                    // Runtime particle codes (은(는), 이(가) ...) render after a
+                    // name; the index splits lines there, so they're dropped.
+                    if (cp !in PARTICLE_LO..PARTICLE_HI) sb.append(codepoints[cp] ?: '□')
                     i += 2
                 }
                 b == NEWLINE || b == PROMPT_SCROLL || b == PROMPT_CLEAR -> { sb.append('\n'); i++ }
@@ -46,6 +48,8 @@ class KoText2024(private val codepoints: Map<Int, Char>) {
         private const val PROMPT_CLEAR = 0xFB
         private const val PROMPT_SCROLL = 0xFA
         private const val EXTRA_SYMBOL = 0xF9
+        private const val PARTICLE_LO = 0x41ED
+        private const val PARTICLE_HI = 0x41F4
 
         // pokefirered GetExtCtrlCodeLength: bytes after FC, including the code byte.
         private val EXT_CTRL_LENGTHS = intArrayOf(1, 2, 2, 2, 4, 2, 2, 1, 2, 1, 1, 3, 2, 2, 2, 1, 3, 2, 2, 2, 2, 1, 1, 1, 1)

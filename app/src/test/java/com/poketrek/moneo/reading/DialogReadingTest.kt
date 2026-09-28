@@ -51,5 +51,22 @@ class DialogReadingTest {
         val idx = DialogIndex(listOf(DialogIndex.Line(1, listOf("포켓몬"), listOf("포켓몬"))))
         assertNull(idx.match("포켓몬 센터에 어서 오세요 무엇을 도와드릴까요"))
         assertNull(idx.match("A"))
+        // Battle HP box: species name containing a 2-syllable line.
+        val short = DialogIndex(listOf(DialogIndex.Line(1, listOf("이상"), listOf("이상"))))
+        assertNull(short.match("이상해씨♂"))
+        assertEquals(1, short.match("이상!")!!.id)
+    }
+
+    /** Battle text buffer at 0x02022960.. on the emulator: zero padding, then 이상해씨{은(는)}\n무엇을 할까? FF, then a stale tail. */
+    private val battle = hex(
+        "00 00 00 00 3d 72 3b a1 40 43 3c 97 41 ef fe 3a 8c 3c d2 3d 61 00 40 3d 37 ac ac ff ff c2 ab fb ff 6c 00 3b a1"
+    )
+
+    @Test fun findsBattleMessageStartFromAnyCursor() {
+        val msgAt = 4
+        assertEquals(msgAt, DialogReader.messageStart(battle, msgAt))      // cursor at the start
+        assertEquals(msgAt, DialogReader.messageStart(battle, msgAt + 9))  // mid-print
+        assertEquals(msgAt, DialogReader.messageStart(battle, 27))         // finished: one past FF
+        assertEquals("이상해씨\n무엇을 할까?", text.decode(battle, msgAt))
     }
 }
