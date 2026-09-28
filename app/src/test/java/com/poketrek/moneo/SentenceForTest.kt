@@ -40,6 +40,7 @@ class SentenceForTest {
     private val id = "rom-mine-v3:있다"
     private val fragment = SentenceEntry(id, "있었는데", "(ROM example, rec282)")
     private val unglossed = SentenceEntry(id, "여기 뭔가 있었는데", "(ROM example, rec283)")
+    private val topikPlaceholder = SentenceEntry(id, "제킹부두도론 부J도톤다!", "(TOPIK example from ROM)")
     private val realLine = SentenceEntry(id, "여기 뭔가 있었는데 없어졌다", "Something was here, but it's gone.")
     private val study = SentenceEntry(id, "방에 침대가 있어요.", "There is a bed in the room.")
 
@@ -49,7 +50,7 @@ class SentenceForTest {
     }
 
     @Test fun verbatimFallsBackToStudyWhenRomOnlyHasFragments() {
-        val repo = mkRepo(rom = listOf(fragment, unglossed), study = listOf(study))
+        val repo = mkRepo(rom = listOf(fragment, unglossed, topikPlaceholder), study = listOf(study))
         assertEquals(study, repo.sentenceFor(id, verbatim = true))
     }
 

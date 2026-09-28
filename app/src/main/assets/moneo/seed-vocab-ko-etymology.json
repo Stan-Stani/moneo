@@ -189,7 +189,8 @@
    "areasReferenced": [
     "cerulean_cave",
     "mt_moon",
-    "ss_anne"
+    "ss_anne",
+    "rock_tunnel"
    ],
    "componentOf": [
     "근육몬"
@@ -273,7 +274,23 @@
     "mt_moon",
     "pallet_town",
     "rom_mined",
-    "route_1"
+    "route_1",
+    "celadon_city",
+    "digletts_cave",
+    "five_island",
+    "four_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "one_island",
+    "power_plant",
+    "rocket_hideout",
+    "route_3",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "ss_anne",
+    "three_island",
+    "two_island"
    ],
    "componentOf": [
     "꼬부기",
@@ -329,7 +346,14 @@
    "frequency": 1,
    "firstAreaEncountered": "route_12",
    "areasReferenced": [
-    "route_12"
+    "route_12",
+    "kanto_pokemon_league",
+    "kindle_road",
+    "pallet_town",
+    "route_20",
+    "route_21",
+    "three_island",
+    "treasure_beach"
    ],
    "componentOf": [
     "냄새꼬"
@@ -536,7 +560,26 @@
    "frequency": 1,
    "firstAreaEncountered": "route_21",
    "areasReferenced": [
-    "route_21"
+    "route_21",
+    "celadon_city",
+    "cerulean_city",
+    "cinnabar_island",
+    "five_island",
+    "four_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "lavender_town",
+    "one_island",
+    "pewter_city",
+    "route_10",
+    "route_4",
+    "saffron_city",
+    "seven_island",
+    "six_island",
+    "three_island",
+    "two_island",
+    "vermilion_city",
+    "viridian_city"
    ],
    "componentOf": [
     "덩쿠리"
@@ -685,7 +728,9 @@
     "cerulean_cave",
     "kanto_pokemon_league",
     "pokemon_mansion",
-    "safari_zone"
+    "safari_zone",
+    "lavender_town",
+    "ruin_valley"
    ],
    "componentOf": [
     "쥬레곤"
@@ -1088,7 +1133,10 @@
     "cerulean_cave",
     "power_plant",
     "seafoam_islands",
-    "silph_co"
+    "silph_co",
+    "mt_moon",
+    "ss_anne",
+    "viridian_forest"
    ],
    "componentOf": [
     "잠만보"
@@ -1415,7 +1463,14 @@
    "firstAreaEncountered": "viridian_forest",
    "areasReferenced": [
     "pewter_city",
-    "viridian_forest"
+    "viridian_forest",
+    "route_11",
+    "route_24",
+    "route_25",
+    "route_3",
+    "route_4",
+    "route_6",
+    "route_9"
    ],
    "componentOf": [
     "단데기",
@@ -1747,7 +1802,11 @@
    "frequency": 1,
    "firstAreaEncountered": "celadon_city",
    "areasReferenced": [
-    "celadon_city"
+    "celadon_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_8"
    ],
    "componentOf": [
     "쥬피썬더"
@@ -1817,7 +1876,8 @@
    "frequency": 1,
    "firstAreaEncountered": "rock_tunnel",
    "areasReferenced": [
-    "rock_tunnel"
+    "rock_tunnel",
+    "kanto_pokemon_league"
    ],
    "componentOf": [
     "알통몬"
@@ -1893,7 +1953,26 @@
     "rock_tunnel",
     "rocket_hideout",
     "seafoam_islands",
-    "silph_co"
+    "silph_co",
+    "celadon_city",
+    "cerulean_cave",
+    "cerulean_city",
+    "five_island",
+    "four_island",
+    "kanto_pokemon_league",
+    "lavender_town",
+    "mt_moon",
+    "one_island",
+    "power_plant",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "safari_zone",
+    "three_island",
+    "vermilion_city",
+    "viridian_city",
+    "viridian_forest"
    ],
    "componentOf": [
     "어니부기"
@@ -2050,7 +2129,21 @@
    "frequency": 1,
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "pallet_town"
+    "pallet_town",
+    "celadon_city",
+    "fuchsia_city",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "route_5",
+    "route_6",
+    "route_7",
+    "route_8"
    ],
    "componentOf": [
     "잉어킹"
@@ -2598,9 +2691,11 @@
    "sourceTag": "etymology-roots",
    "notes": "From 에레키드 (Elekid)",
    "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "lavender_town",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "lavender_town",
+    "vermilion_city"
    ],
    "componentOf": [
     "에레키드"
@@ -2690,7 +2785,8 @@
    "frequency": 1,
    "firstAreaEncountered": "five_island",
    "areasReferenced": [
-    "five_island"
+    "five_island",
+    "resort_gorgeous"
    ],
    "componentOf": [
     "통통코"
@@ -2724,7 +2820,15 @@
    "frequency": 2,
    "firstAreaEncountered": "cinnabar_island",
    "areasReferenced": [
-    "cinnabar_island"
+    "cinnabar_island",
+    "celadon_city",
+    "cerulean_city",
+    "fuchsia_city",
+    "lavender_town",
+    "pallet_town",
+    "pewter_city",
+    "vermilion_city",
+    "viridian_city"
    ],
    "componentOf": [
     "투구",
@@ -2796,7 +2900,9 @@
    "firstAreaEncountered": "route_3",
    "areasReferenced": [
     "rom_mined",
-    "route_3"
+    "route_3",
+    "pewter_city",
+    "viridian_city"
    ],
    "componentOf": [
     "푸크린",
@@ -2814,7 +2920,17 @@
    "frequency": 1,
    "firstAreaEncountered": "route_13",
    "areasReferenced": [
-    "route_13"
+    "route_13",
+    "celadon_city",
+    "cinnabar_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "route_10",
+    "route_12",
+    "route_8",
+    "route_9",
+    "saffron_city",
+    "vermilion_city"
    ],
    "componentOf": [
     "피죤투"
@@ -2907,7 +3023,9 @@
    "frequency": 1,
    "firstAreaEncountered": "saffron_city",
    "areasReferenced": [
-    "saffron_city"
+    "saffron_city",
+    "cinnabar_island",
+    "indigo_plateau"
    ],
    "componentOf": [
     "홍수몬"

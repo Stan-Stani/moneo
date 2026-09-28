@@ -133,10 +133,12 @@ class MoneoRepository(
     /**
      * About half of the ROM-ripped examples are a single token (undecoded
      * glyphs dropped out of the middle, e.g. "상대를쪽", "많은주마") or only
-     * carry a "(ROM example, recN)" placeholder instead of a translation.
+     * carry a "(ROM example, recN)" / "(TOPIK example from ROM)" placeholder
+     * instead of a translation -- the latter are mostly kana text decoded
+     * through the hangul table, i.e. not Korean at all.
      */
     private fun SentenceEntry.isUsableRomExample(): Boolean =
-        korean.trim().split(WHITESPACE).size >= 2 && !gloss.startsWith("(ROM example")
+        korean.trim().split(WHITESPACE).size >= 2 && !PLACEHOLDER_GLOSS.matches(gloss)
 
     init {
         // Make sure every seed entry has a card row. Idempotent on repeat launch.
@@ -356,5 +358,6 @@ class MoneoRepository(
 
     private companion object {
         val WHITESPACE = Regex("\\s+")
+        val PLACEHOLDER_GLOSS = Regex("""\(.*\bexample\b.*\)""", RegexOption.IGNORE_CASE)
     }
 }

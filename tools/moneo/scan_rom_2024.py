@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 """Scan the 2024 Korean LeafGreen ROM for dialog/text records.
 
+SUPERSEDED for dialog text: this scanner decodes fixed-width 16-bit
+codepoints and rounds odd pointers down, but dialog is variable-width
+(1-byte Gen 3 chars + 2-byte hangul). Use ko_text.decode() and
+redecode_corpus_2024.py, which re-decode corpus.ko.2024.json in place
+(keeping record ids) and add the strings this scan missed. Re-running
+this script would renumber every record.
+
 Why this exists. The 2010 fan-translation used a F0..F6 page-byte encoding
 (see build_corpus.py + glyph-map.json). The 2024-02-29 patch by 명군/tony/koi
 re-encoded all text — both name tables and dialog — as 16-bit big-endian

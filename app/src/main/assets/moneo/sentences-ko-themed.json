@@ -330,7 +330,7 @@
    "areaId": "topik_2",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "route_1",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "route_1",
     "viridian_city",
@@ -372,7 +372,17 @@
     "rock_tunnel",
     "seafoam_islands",
     "ss_anne",
-    "viridian_forest"
+    "viridian_forest",
+    "cinnabar_island",
+    "kanto_pokemon_league",
+    "lavender_town",
+    "pallet_town",
+    "pokemon_tower",
+    "route_18",
+    "route_22",
+    "saffron_city",
+    "silph_co",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -458,7 +468,12 @@
     "safari_zone",
     "silph_co",
     "ss_anne",
-    "viridian_forest"
+    "viridian_forest",
+    "pokemon_tower",
+    "power_plant",
+    "rock_tunnel",
+    "route_21",
+    "seafoam_islands"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -549,7 +564,9 @@
     "seafoam_islands",
     "silph_co",
     "ss_anne",
-    "viridian_forest"
+    "viridian_forest",
+    "kanto_pokemon_league",
+    "rock_tunnel"
    ],
    "sourceTypes": [
     "item_description",

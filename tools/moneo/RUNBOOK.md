@@ -412,3 +412,19 @@ python3 tools/moneo/reattribute_from_index_delta.py \
 ```
 
 It only rewrites `areasReferenced` / `firstAreaEncountered`.
+
+## Korean text encoding (2024 patch)
+
+Dialog is **variable-width**: Gen 3's 1-byte charset for space (00),
+digits, punctuation, FC/FD control codes, FE newline and FF end, plus
+2-byte hangul with lead byte 0x37-0x41 (`rom_swap/codepoint_map.json`).
+Strings start at odd addresses about half the time. `ko_text.decode()`
+is the decoder; `redecode_corpus_2024.py` applies it to
+`corpus.ko.2024.json` and the app's `corpus.ko.json` without changing
+record ids, and appends pointer-target strings the old fixed-width scan
+missed. Josa codes after name buffers (0x41EF 은(는), 0x41F0 을(를),
+0x41F1 이(가), 0x41F2 (이), 0x41F4 (으)) are rendered in dictionary
+notation; 0x41EE is still unidentified.
+
+Name tables (gMoveNames etc.) really are fixed-width 16-bit and are
+unaffected.

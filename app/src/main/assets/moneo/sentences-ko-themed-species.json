@@ -211,7 +211,17 @@
    "generator": "llm-claude-opus-4-7",
    "firstAreaEncountered": "route_13",
    "areasReferenced": [
-    "route_13"
+    "route_13",
+    "celadon_city",
+    "cinnabar_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "route_10",
+    "route_12",
+    "route_8",
+    "route_9",
+    "saffron_city",
+    "vermilion_city"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -528,7 +538,44 @@
     "indigo_plateau",
     "mt_moon",
     "kanto_pokemon_league",
-    "rock_tunnel"
+    "rock_tunnel",
+    "canyon_entrance",
+    "cerulean_cave",
+    "cerulean_city",
+    "five_island",
+    "five_isle_meadow",
+    "four_island",
+    "fuchsia_city",
+    "green_path",
+    "lavender_town",
+    "memorial_pillar",
+    "one_island",
+    "outcast_island",
+    "pallet_town",
+    "pewter_city",
+    "pokemon_tower",
+    "power_plant",
+    "resort_gorgeous",
+    "route_12",
+    "route_16",
+    "route_18",
+    "route_2",
+    "route_24",
+    "route_25",
+    "route_3",
+    "route_4",
+    "ruin_valley",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "three_island",
+    "trainer_tower",
+    "two_island",
+    "vermilion_city",
+    "viridian_city",
+    "water_labyrinth",
+    "water_path"
    ],
    "liveRecIds": [
     703,
@@ -599,7 +646,9 @@
    ],
    "primarySourceType": "pokemon_species",
    "areasReferenced": [
-    "route_3"
+    "route_3",
+    "pewter_city",
+    "viridian_city"
    ]
   },
   {
@@ -847,7 +896,8 @@
     "route_11",
     "celadon_city",
     "route_9",
-    "route_5"
+    "route_5",
+    "route_25"
    ],
    "liveRecIds": [
     2420,
@@ -1440,7 +1490,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "areasReferenced": [
-    "seafoam_islands"
+    "seafoam_islands",
+    "cerulean_city",
+    "lavender_town",
+    "vermilion_city"
    ]
   },
   {
@@ -1502,12 +1555,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "cinnabar_island",
    "sourceTypes": [
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cinnabar_island"
+   ]
   },
   {
    "vocabId": "rom-species-2024:파르셀",
@@ -1916,7 +1971,14 @@
     "pokemon_mansion",
     "seven_island",
     "silph_co",
-    "three_island"
+    "three_island",
+    "cinnabar_island",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "route_4",
+    "saffron_city",
+    "viridian_city"
    ],
    "liveRecIds": [
     632,
@@ -2329,7 +2391,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "areasReferenced": [
-    "celadon_city"
+    "celadon_city",
+    "indigo_plateau",
+    "rocket_hideout",
+    "silph_co"
    ],
    "liveRecIds": [
     2483
@@ -2373,12 +2438,21 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "fuchsia_city",
+    "lavender_town",
+    "pallet_town",
+    "pewter_city",
+    "vermilion_city",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-species-2024:투구푸스",
@@ -2456,7 +2530,11 @@
    "generator": "llm-claude-opus-4-7",
    "firstAreaEncountered": "power_plant",
    "areasReferenced": [
-    "power_plant"
+    "power_plant",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_8"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -2545,7 +2623,9 @@
    },
    "firstAreaEncountered": "cerulean_cave",
    "areasReferenced": [
-    "cerulean_cave"
+    "cerulean_cave",
+    "pokemon_mansion",
+    "silph_co"
    ],
    "sourceTypes": [
     "pokemon_species"
@@ -3450,7 +3530,12 @@
     "five_island",
     "four_island",
     "seven_island",
-    "three_island"
+    "three_island",
+    "canyon_entrance",
+    "mt_moon",
+    "ruin_valley",
+    "trainer_tower",
+    "water_path"
    ],
    "liveRecIds": [
     237,

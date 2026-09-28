@@ -298,7 +298,17 @@
    "source": "gSpeciesNames[17]",
    "firstAreaEncountered": "route_13",
    "areasReferenced": [
-    "route_13"
+    "route_13",
+    "celadon_city",
+    "cinnabar_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "route_10",
+    "route_12",
+    "route_8",
+    "route_9",
+    "saffron_city",
+    "vermilion_city"
    ]
   },
   {
@@ -599,7 +609,44 @@
     "indigo_plateau",
     "mt_moon",
     "kanto_pokemon_league",
-    "rock_tunnel"
+    "rock_tunnel",
+    "canyon_entrance",
+    "cerulean_cave",
+    "cerulean_city",
+    "five_island",
+    "five_isle_meadow",
+    "four_island",
+    "fuchsia_city",
+    "green_path",
+    "lavender_town",
+    "memorial_pillar",
+    "one_island",
+    "outcast_island",
+    "pallet_town",
+    "pewter_city",
+    "pokemon_tower",
+    "power_plant",
+    "resort_gorgeous",
+    "route_12",
+    "route_16",
+    "route_18",
+    "route_2",
+    "route_24",
+    "route_25",
+    "route_3",
+    "route_4",
+    "ruin_valley",
+    "seafoam_islands",
+    "seven_island",
+    "silph_co",
+    "six_island",
+    "three_island",
+    "trainer_tower",
+    "two_island",
+    "vermilion_city",
+    "viridian_city",
+    "water_labyrinth",
+    "water_path"
    ],
    "liveRecIds": [
     703,
@@ -670,7 +717,9 @@
    "source": "gSpeciesNames[39]",
    "firstAreaEncountered": "route_3",
    "areasReferenced": [
-    "route_3"
+    "route_3",
+    "pewter_city",
+    "viridian_city"
    ]
   },
   {
@@ -912,7 +961,8 @@
     "route_11",
     "celadon_city",
     "route_9",
-    "route_5"
+    "route_5",
+    "route_25"
    ],
    "liveRecIds": [
     2420,
@@ -1493,7 +1543,10 @@
    "source": "gSpeciesNames[86]",
    "firstAreaEncountered": "seafoam_islands",
    "areasReferenced": [
-    "seafoam_islands"
+    "seafoam_islands",
+    "cerulean_city",
+    "lavender_town",
+    "vermilion_city"
    ]
   },
   {
@@ -1559,8 +1612,10 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[90]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "cinnabar_island",
+   "areasReferenced": [
+    "cinnabar_island"
+   ]
   },
   {
    "vocabId": "rom-species-2024:파르셀",
@@ -1963,7 +2018,14 @@
     "pokemon_mansion",
     "seven_island",
     "silph_co",
-    "three_island"
+    "three_island",
+    "cinnabar_island",
+    "indigo_plateau",
+    "one_island",
+    "rock_tunnel",
+    "route_4",
+    "saffron_city",
+    "viridian_city"
    ],
    "liveRecIds": [
     632,
@@ -2364,7 +2426,10 @@
    "source": "gSpeciesNames[137]",
    "firstAreaEncountered": "celadon_city",
    "areasReferenced": [
-    "celadon_city"
+    "celadon_city",
+    "indigo_plateau",
+    "rocket_hideout",
+    "silph_co"
    ],
    "liveRecIds": [
     2483
@@ -2412,8 +2477,17 @@
    ],
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[140]",
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "fuchsia_city",
+    "lavender_town",
+    "pallet_town",
+    "pewter_city",
+    "vermilion_city",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-species-2024:투구푸스",
@@ -2495,7 +2569,11 @@
    "source": "gSpeciesNames[145]",
    "firstAreaEncountered": "power_plant",
    "areasReferenced": [
-    "power_plant"
+    "power_plant",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_8"
    ]
   },
   {
@@ -2578,7 +2656,9 @@
    "source": "gSpeciesNames[150]",
    "firstAreaEncountered": "cerulean_cave",
    "areasReferenced": [
-    "cerulean_cave"
+    "cerulean_cave",
+    "pokemon_mansion",
+    "silph_co"
    ]
   },
   {
@@ -3473,7 +3553,12 @@
     "five_island",
     "four_island",
     "seven_island",
-    "three_island"
+    "three_island",
+    "canyon_entrance",
+    "mt_moon",
+    "ruin_valley",
+    "trainer_tower",
+    "water_path"
    ],
    "liveRecIds": [
     237,
