@@ -217,6 +217,9 @@ class MoneoRepository(
         }
     }
 
+    /** Any card for a word, including ones hidden by deck filters. */
+    fun anyEntryFor(korean: String): VocabEntry? = _vocab.value.values.firstOrNull { it.korean == korean }
+
     /** Visible cards for a word (the same word can be a card in two decks). */
     fun visibleEntriesFor(korean: String): List<VocabEntry> {
         val visible = visibleVocabIds()

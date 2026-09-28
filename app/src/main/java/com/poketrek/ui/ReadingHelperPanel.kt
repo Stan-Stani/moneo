@@ -40,17 +40,22 @@ fun ReadingHelperPanel(moneo: MoneoModule, modifier: Modifier = Modifier) {
     val reader = moneo.dialogReader ?: return
     val enabled by moneo.prefs.readingHelp.collectAsState()
     val onScreen by reader.current.collectAsState()
-    val line = onScreen?.line
-    if (!enabled || line == null) return
+    val shown = onScreen
+    if (!enabled || shown == null || (shown.line == null && shown.names.isEmpty())) return
     val cards by moneo.repository.cards.collectAsState()
     val studyNext by moneo.repository.studyNext.collectAsState()
     var collapsed by remember { mutableStateOf(false) }
 
     data class Row(val korean: String, val gloss: String, val id: String?, val known: Boolean)
-    val rows = remember(line, cards) {
-        line.words.mapNotNull { w ->
+    val rows = remember(shown, cards) {
+        (shown.line?.words.orEmpty() + shown.names).distinct().mapNotNull { w ->
             val entries = moneo.repository.visibleEntriesFor(w)
-            if (entries.isEmpty()) return@mapNotNull null
+            if (entries.isEmpty()) {
+                // A name whose deck is switched off (e.g. moves): show what
+                // it means, but it can't be starred or counted.
+                val hidden = moneo.repository.anyEntryFor(w) ?: return@mapNotNull null
+                return@mapNotNull Row(w, hidden.gloss, null, false)
+            }
             val known = entries.any { e ->
                 cards[e.id]?.let { it.suspended || it.snapshot.state == CardState.REVIEW } == true
             }
@@ -59,7 +64,8 @@ fun ReadingHelperPanel(moneo: MoneoModule, modifier: Modifier = Modifier) {
         }
     }
     if (rows.isEmpty()) return
-    val pct = rows.count { it.known } * 100 / rows.size
+    val counted = rows.filter { it.id != null }
+    val pct = if (counted.isEmpty()) 0 else counted.count { it.known } * 100 / counted.size
 
     Column(
         modifier = modifier
@@ -69,8 +75,8 @@ fun ReadingHelperPanel(moneo: MoneoModule, modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.spacedBy(3.dp),
     ) {
         Text(
-            "📖 $pct% known" + if (collapsed) " ▸" else " ▾",
-            color = if (pct >= 90) Color(0xFF6EE7B7) else Color(0xFFFCD34D),
+            (if (counted.isEmpty()) "📖 names" else "📖 $pct% known") + if (collapsed) " ▸" else " ▾",
+            color = if (counted.isEmpty() || pct >= 90) Color(0xFF6EE7B7) else Color(0xFFFCD34D),
             fontSize = 12.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.fillMaxWidth().clickable { collapsed = !collapsed },
@@ -93,6 +99,7 @@ fun ReadingHelperPanel(moneo: MoneoModule, modifier: Modifier = Modifier) {
                             color = when {
                                 r.known -> Color(0xFF6EE7B7)
                                 queued -> Color(0xFFFCD34D)
+                                r.id == null -> Color(0xFF9CA3AF)  // deck switched off: read-only
                                 else -> Color.White
                             },
                             fontSize = 13.sp,

@@ -66,6 +66,11 @@ class MoneoModule private constructor(context: Context) {
                 com.poketrek.moneo.reading.DialogIndex.loadFromAssets(appContext),
                 isSupported,
                 onUnmatched = { unmatchedDialog.record(it, location()) },
+                names = com.poketrek.moneo.reading.NameFinder(
+                    repository.vocab.value.values
+                        .filter { it.primarySourceType in com.poketrek.moneo.reading.NameFinder.NAME_TYPES }
+                        .map { it.korean }
+                ),
             )
         }.getOrNull() ?: return
         dialogReader = r

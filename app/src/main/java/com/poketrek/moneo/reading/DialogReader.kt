@@ -29,8 +29,14 @@ class DialogReader(
     private val isSupported: () -> Boolean,
     /** Called once per newly shown message that no dialog line matched. */
     private val onUnmatched: ((String) -> Unit)? = null,
+    private val names: NameFinder = NameFinder.EMPTY,
 ) {
-    data class OnScreen(val message: String, val line: DialogIndex.Line?)
+    /**
+     * [names]: Pokémon/move/ability names in the message, looked for when no
+     * line matched or the line is a template whose names are filled in at
+     * runtime.
+     */
+    data class OnScreen(val message: String, val line: DialogIndex.Line?, val names: List<String> = emptyList())
 
     private val _current = MutableStateFlow<OnScreen?>(null)
     /** The open message box's text and matched line, or null when no box is open. */
@@ -69,9 +75,10 @@ class DialogReader(
         val message = text.decode(bytes, start).trim()
         if (_current.value?.message == message) return
         val line = index.match(message)
-        Log.d(TAG, "0x${addr.toString(16)} line=${line?.id} ${message.replace('\n', ' ')}")
-        _current.value = OnScreen(message, line)
-        if (line == null && message.isNotBlank()) onUnmatched?.invoke(message)
+        val found = if (line == null || line.template) names.find(message) else emptyList()
+        Log.d(TAG, "0x${addr.toString(16)} line=${line?.id} names=$found ${message.replace('\n', ' ')}")
+        _current.value = OnScreen(message, line, found)
+        if (line == null && found.isEmpty() && message.isNotBlank()) onUnmatched?.invoke(message)
     }
 
     /** Whether a message box is on screen (see [boxRowsHaveTiles]). */
