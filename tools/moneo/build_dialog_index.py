@@ -70,6 +70,8 @@ def main():
             continue
         if words:
             seen[t] = {"id": r["id"], "segs": segs, "words": words}
+            if PLACEHOLDER.search(t):
+                seen[t]["tmpl"] = 1  # names/items filled in at runtime
     lines = sorted(seen.values(), key=lambda x: x["id"])
     with open(ASSETS / "dialog_index.json", "w", encoding="utf-8") as f:
         json.dump({"version": 1, "notes": "Built by tools/moneo/build_dialog_index.py.",

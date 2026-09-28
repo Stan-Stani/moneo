@@ -47,6 +47,12 @@ class DialogReadingTest {
         assertEquals(1, idx.match("민수는 선장의\n등을 쓰다듬어 줬다!")!!.id)
     }
 
+    @Test fun itemPickupTemplateMatches() {
+        // Message box after the Viridian Mart clerk hands over Oak's Parcel.
+        val line = index.match("A 전해줄물건 중요한 물건\n포켓에 넣었다!")!!
+        assertEquals(listOf("넣다"), line.words)
+    }
+
     @Test fun unrelatedTextDoesNotMatch() {
         val idx = DialogIndex(listOf(DialogIndex.Line(1, listOf("포켓몬"), listOf("포켓몬"))))
         assertNull(idx.match("포켓몬 센터에 어서 오세요 무엇을 도와드릴까요"))

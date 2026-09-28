@@ -16,7 +16,7 @@ class DialogIndex(private val lines: List<Line>) {
      * runtime particles ({PLAYER}은(는) ...), which render differently per
      * save; [words] are deck words (VocabEntry.korean) in order of use.
      */
-    data class Line(val id: Int, val segs: List<String>, val words: List<String>)
+    data class Line(val id: Int, val segs: List<String>, val words: List<String>, val template: Boolean = false)
 
     /**
      * The line whose segments all appear, in order, in [message]'s hangul,
@@ -38,11 +38,22 @@ class DialogIndex(private val lines: List<Line>) {
                 from = at + seg.length
                 score += seg.length
             }
-            if (ok && score > bestScore) { best = line; bestScore = score }
+            if (ok && score > bestScore && accepts(line, score, h.length)) { best = line; bestScore = score }
         }
-        // A 2-syllable line (이상) is also a piece of countless names
-        // (이상해씨), so short lines only match the whole message.
-        return best?.takeIf { bestScore * 2 >= h.length && (bestScore >= 3 || bestScore == h.length) }
+        return best
+    }
+
+    /**
+     * Whether [line]'s fixed text ([score] syllables) explains enough of a
+     * [len]-syllable message. Normally half. Templates ({PLAYER}은(는)
+     * {STR_VAR_2}을(를) ... 넣었다!) get most of their text at runtime, so a
+     * fifth will do. A 2-syllable line (이상) is also a piece of countless
+     * names (이상해씨), so short lines only match the whole message.
+     */
+    private fun accepts(line: Line, score: Int, len: Int): Boolean = when {
+        score < 3 -> score == len
+        line.template -> score * 5 >= len
+        else -> score * 2 >= len
     }
 
     companion object {
@@ -57,7 +68,7 @@ class DialogIndex(private val lines: List<Line>) {
                 val o = arr.getJSONObject(i)
                 val segs = o.getJSONArray("segs").let { a -> List(a.length()) { a.getString(it) } }
                 val words = o.getJSONArray("words").let { a -> List(a.length()) { a.getString(it) } }
-                out += Line(o.getInt("id"), segs, words)
+                out += Line(o.getInt("id"), segs, words, o.optInt("tmpl", 0) == 1)
             }
             return DialogIndex(out)
         }
