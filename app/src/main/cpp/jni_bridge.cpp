@@ -218,14 +218,19 @@ Java_com_poketrek_emu_NativeEmulator_setKeys(JNIEnv* /*env*/, jobject /*thiz*/, 
 // FRAMEBUFFER_BYTES. The byte layout is mGBA's native 32-bit color_t: R, G, B, A
 // in memory order, which matches Android Bitmap.Config.ARGB_8888 byte layout
 // (despite the name) and works with Bitmap.copyPixelsFromBuffer.
+//
+// mGBA leaves A at 0 for most pixels. Drawn over black that looks right, but
+// anything that reads the Bitmap's alpha (PNG export for the ask bridge) sees
+// a mostly transparent frame, so A is forced to 0xFF here.
 extern "C" JNIEXPORT jboolean JNICALL
 Java_com_poketrek_emu_NativeEmulator_writeFramebuffer(JNIEnv* env, jobject /*thiz*/, jobject directBuffer) {
     if (!g_emulator) return JNI_FALSE;
-    void* dst = env->GetDirectBufferAddress(directBuffer);
+    auto* dst = static_cast<uint8_t*>(env->GetDirectBufferAddress(directBuffer));
     jlong cap = env->GetDirectBufferCapacity(directBuffer);
     if (!dst || cap < FRAMEBUFFER_BYTES) return JNI_FALSE;
     std::lock_guard<std::mutex> lock(g_emulator->mutex);
     std::memcpy(dst, g_emulator->framebuffer.data(), FRAMEBUFFER_BYTES);
+    for (int i = 3; i < FRAMEBUFFER_BYTES; i += 4) dst[i] = 0xFF;
     return JNI_TRUE;
 }
 
