@@ -50,3 +50,24 @@ The log shows which model answered and how long it took after each reply.
 
 Exempt Termux from battery optimisation or Android may kill the watcher on
 a long walk.
+
+## Study words → Google Doc → Claude project
+
+The app writes `study-words.md` (words marked Again/Hard and words first
+studied in the last 14 days) to the top of the ask folder whenever the
+flashcards close. The watcher then runs `study-sync.sh`, which replaces the
+content of one Google Doc ("Moneo study words") with it through the Drive API.
+Claude project knowledge only takes Google Docs/Sheets/Slides from Drive, and
+it refreshes a Doc's content when the project is opened.
+
+One-time setup:
+
+```sh
+rclone config create moneo drive scope=drive.file   # Google sign-in; access to its own files only
+study-sync.sh ~/moneo-ask/study-words.md            # first run creates the Doc, id in ~/.moneo-ask/study-doc-id
+```
+
+Then in claude.ai, open the (private) project → knowledge → Add files →
+Google Drive → "Moneo study words". To sign in on the PC and use the Doc from
+the phone, copy the `[moneo]` section of `rclone config file` and
+`~/.moneo-ask/study-doc-id` across.
