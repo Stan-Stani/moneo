@@ -34,7 +34,7 @@ import androidx.compose.ui.unit.sp
 import com.poketrek.moneo.MoneoModule
 
 /** Canned questions for the quick buttons, phrased for the watcher's prompt. */
-private const val ASK_SIMPLER = "Explain this line in simpler Korean."
+private const val ASK_SIMPLER = "이 대사를 더 쉬운 한국어로 설명해 줘."
 private const val ASK_ENGLISH = "Translate this line and explain the hard parts in English."
 
 /** Opens [AskPanel]; shown once an ask folder is set up. Lights up when a reply is waiting unread. */
