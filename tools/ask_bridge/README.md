@@ -6,14 +6,17 @@ The app's 💬 button sends what's on screen to an LLM through a shared folder:
 app  → inbox/<id>.png    screenshot (3× nearest-neighbour)
 app  → inbox/<id>.json   question, decoded message box text, its words
                          (gloss + known?), every known word, map, ROM
-       moneo-ask.sh: claude -p … → outbox/<id>.md
+       moneo-ask.sh: long-lived claude worker → outbox/<id>.md
 app  ← outbox/<id>.md    shown in the 💬 panel, then deleted
        done/             every request, screenshot and reply, kept
 ```
 
-A question about the same message as the previous one sets `followUp`, and
-the script resumes the previous `claude` session (`.session`) so "why 은
-there?" has context. A new message starts a fresh session.
+`claude` starts slowly under a Termux proot (~30 s), so the script keeps it
+running: `claude -p --input-format stream-json` workers take one question
+after another. A question about the same message as the previous one sets
+`followUp` and goes to the current worker, which has the conversation, so
+"why 은 there?" has context. A new message goes to a spare worker started in
+advance (a fresh conversation), and the next spare starts after the answer.
 
 ## Setup (Termux on the phone)
 

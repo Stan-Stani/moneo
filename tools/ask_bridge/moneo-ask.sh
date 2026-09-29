@@ -2,8 +2,14 @@
 # Answers the app's 💬 questions with Claude Code (see README.md).
 #
 # The app writes inbox/<id>.png then inbox/<id>.json into the ask folder;
-# this runs `claude -p` on each request and writes outbox/<id>.md, which the
+# this asks claude about each request and writes outbox/<id>.md, which the
 # app shows and deletes. Handled requests and replies are kept in done/.
+#
+# claude runs as long-lived workers (-p with stream-json input), since
+# starting it costs ~30 s under a Termux proot. A follow-up question goes to
+# the current worker, which has the conversation; a new question goes to a
+# spare worker started in advance, which becomes current, and a new spare is
+# started after the answer.
 #
 #   MONEO_ASK_DIR    ask folder (default ~/moneo-ask)
 #   MONEO_ASK_MODEL  model for claude --model (default: claude's own default)
@@ -11,7 +17,8 @@ set -u
 
 DIR="${MONEO_ASK_DIR:-$HOME/moneo-ask}"
 MODEL="${MONEO_ASK_MODEL:-}"
-SESSION_FILE="$DIR/.session"
+RUN="$(mktemp -d "${TMPDIR:-/tmp}/moneo-ask.XXXXXX")"
+REPLY_TIMEOUT=300
 
 for cmd in claude jq inotifywait; do
   command -v "$cmd" >/dev/null || { echo "missing $cmd (Termux: pkg install jq inotify-tools)" >&2; exit 1; }
@@ -47,8 +54,62 @@ beside the game: plain text, no markdown headings or tables, and under about
 in the game.
 EOF
 
+CLAUDE_ARGS=(-p --input-format stream-json --output-format stream-json --verbose
+  --append-system-prompt "$SYSTEM_PROMPT" --allowedTools Read)
+[[ -n "$MODEL" ]] && CLAUDE_ARGS+=(--model "$MODEL")
+
+# A worker is "pid in-fd out-fd dir": claude reading JSON lines from a FIFO
+# and writing stream-json events to another.
+CUR=""
+SPARE=""
+SEQ=0
+
+# Starts a worker into variable $1. Not in $(...): the FIFO fds must stay
+# open in this shell.
+spawn() {
+  local d="$RUN/w$((++SEQ))" win rout
+  mkfifo "$d.in" "$d.out"
+  (cd "$DIR" && exec claude "${CLAUDE_ARGS[@]}" <"$d.in" >"$d.out" 2>"$d.err") &
+  local pid=$!
+  exec {win}>"$d.in" {rout}<"$d.out"
+  printf -v "$1" '%s' "$pid $win $rout $d"
+}
+
+alive() { [[ -n "$1" ]] && kill -0 "${1%% *}" 2>/dev/null; }
+
+retire() {
+  [[ -n "$1" ]] || return 0
+  local pid win rout d
+  read -r pid win rout d <<<"$1"
+  exec {win}>&- {rout}<&-
+  kill "$pid" 2>/dev/null
+  rm -f "$d.in" "$d.out" "$d.err"
+}
+
+cleanup() { retire "$CUR"; retire "$SPARE"; rm -rf "$RUN"; }
+trap cleanup EXIT
+trap 'exit 0' INT TERM
+trap '' PIPE  # a dead worker must not take the watcher down with it
+
+# Sends $2 to worker $1; sets ANSWER and META, or returns 1.
+ask() {
+  local pid win rout d line type
+  read -r pid win rout d <<<"$1"
+  jq -cn --arg t "$2" '{type: "user", message: {role: "user", content: $t}}' >&"$win" || return 1
+  while IFS= read -r -t "$REPLY_TIMEOUT" -u "$rout" line; do
+    type="$(jq -r '.type // empty' <<<"$line" 2>/dev/null)"
+    [[ "$type" == result ]] || continue
+    ANSWER="$(jq -r '.result // empty' <<<"$line")"
+    META="$(jq -r '[(.modelUsage // {} | keys | join("+")), "\((.duration_ms // 0) / 1000 | floor)s"] | join(", ")' <<<"$line")"
+    [[ -n "$ANSWER" ]] && return 0
+    ANSWER="⚠ claude: $(jq -r '.subtype // "no answer"' <<<"$line")"
+    return 0
+  done
+  return 1
+}
+
 handle() {
-  local json="$1" id out reply sid shot
+  local json="$1" id shot worker t0
   id="$(basename "$json" .json)"
   [[ -f "$json" ]] || return 0
   # The app creates the file before writing it; wait for the full JSON.
@@ -61,33 +122,43 @@ $(cat "$json")"
 
 Screenshot: inbox/$shot"
 
-  local args=(-p "$prompt" --output-format json --append-system-prompt "$SYSTEM_PROMPT" --allowedTools Read)
-  [[ -n "$MODEL" ]] && args+=(--model "$MODEL")
-  if [[ "$(jq -r .followUp "$json")" == true && -s "$SESSION_FILE" ]]; then
-    args+=(--resume "$(cat "$SESSION_FILE")")
+  echo "[$(date +%T)] $id: $(jq -r .question "$json")"
+  if [[ "$(jq -r .followUp "$json")" == true ]] && alive "$CUR"; then
+    worker="$CUR"
+  else
+    alive "$SPARE" || { retire "$SPARE"; spawn SPARE; }
+    retire "$CUR"
+    CUR="$SPARE"
+    SPARE=""
+    worker="$CUR"
   fi
 
-  echo "[$(date +%T)] $id: $(jq -r .question "$json")"
-  # </dev/null: otherwise claude reads the inotifywait pipe and blocks on queued events.
-  out="$(cd "$DIR" && claude "${args[@]}" 2>"$DIR/.last_err" </dev/null)"
-  reply="$(jq -r '.result // empty' <<<"$out" 2>/dev/null)"
-  sid="$(jq -r '.session_id // empty' <<<"$out" 2>/dev/null)"
-  echo "    ($(jq -r '[(.modelUsage // {} | keys | join("+")), "\((.duration_ms // 0) / 1000 | floor)s"] | join(", ")' <<<"$out" 2>/dev/null))"
-  [[ -n "$sid" ]] && echo "$sid" >"$SESSION_FILE"
-  [[ -z "$reply" ]] && reply="⚠ claude failed: $(tail -c 300 "$DIR/.last_err")"
-  echo "$reply" | sed 's/^/    /'
+  t0=$SECONDS
+  if ! ask "$worker" "$prompt"; then
+    ANSWER="⚠ claude stopped answering: $(tail -c 300 "${worker##* }.err" 2>/dev/null)"
+    META="failed"
+    retire "$CUR"
+    CUR=""
+  fi
+  echo "    ($META; $((SECONDS - t0))s here)"
+  echo "$ANSWER" | sed 's/^/    /'
 
   # Rename into place so the app never reads a half-written reply.
-  printf '%s\n' "$reply" >"$DIR/outbox/$id.md.part"
+  printf '%s\n' "$ANSWER" >"$DIR/outbox/$id.md.part"
   cp "$DIR/outbox/$id.md.part" "$DIR/done/$id.md"
   mv "$DIR/outbox/$id.md.part" "$DIR/outbox/$id.md"
   mv "$json" "$DIR/done/"
   [[ -n "$shot" && -f "$DIR/inbox/$shot" ]] && mv "$DIR/inbox/$shot" "$DIR/done/"
+
+  # Warm up the next new-question worker while the player reads.
+  alive "$SPARE" || spawn SPARE
   return 0
 }
 
+spawn SPARE
 echo "watching $DIR/inbox"
 for f in "$DIR"/inbox/*.json; do [[ -e "$f" ]] && handle "$f"; done
-inotifywait -m -q -e close_write -e moved_to --format '%f' "$DIR/inbox" | while read -r name; do
+# Process substitution keeps the loop (and the workers) in this shell.
+while read -r name; do
   [[ "$name" == *.json ]] && handle "$DIR/inbox/$name"
-done
+done < <(inotifywait -m -q -e close_write -e moved_to --format '%f' "$DIR/inbox")
