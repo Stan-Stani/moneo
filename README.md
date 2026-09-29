@@ -28,6 +28,19 @@ You don't need to build anything or know how to code to play.
 3. Every tile you walk in the overworld spends from a **movement budget**. When it runs out, the D-pad locks until you **walk in the real world** — your phone's step counter refills the budget.
 4. The Korean words you'd be meeting at that point in the story queue up as a spaced-repetition deck. Review them, then keep playing.
 
+### Optional: ask Claude about the screen (💬, via Termux)
+
+Stuck on a line? The 💬 button sends the current screen to [Claude Code](https://claude.com/claude-code) running on your phone in [Termux](https://termux.dev), and shows the answer in a panel beside the game. Each question carries a screenshot, the exact text of the open message box (decoded from game memory), the dictionary words in it, and every word you already know from your flashcards. Claude answers in simple Korean built from those known words — ask "in English" if you want English — and a follow-up about the same line keeps the conversation going.
+
+The app and Termux talk only through a shared folder, and the app itself needs no API key. Setup, in short:
+
+1. In Termux, install Claude Code, `jq` and `inotify-tools`, copy `tools/ask_bridge/moneo-ask.sh` and `moneo-ask-start.sh` onto the phone, and run `moneo-ask-start.sh` (it takes a wake lock; exempt Termux from battery optimisation so it survives a long walk).
+2. In the app: **Settings → Ask an LLM (💬) → Choose folder** → pick **Termux** in the picker's side menu → `moneo-ask` → *Use this folder*. The 💬 button appears at the left edge of the game.
+
+**Study words → Claude project.** Whenever you close the flashcards, the app writes `study-words.md` — words you marked *Again*/*Hard* plus words first studied in the last 14 days — into the same folder, and the watcher copies it into a Google Doc ("Moneo study words") through `rclone`. Add that Doc to a claude.ai project's knowledge, and Claude there always knows what you're currently learning.
+
+Full setup (proot distros, model choice, the Google Doc sync, testing on a Mac emulator) is in [`tools/ask_bridge/README.md`](tools/ask_bridge/README.md).
+
 Found a wrong or awkward Korean flashcard? Hit the **✎ Report** button on the review screen — it opens a pre-filled GitHub issue.
 
 ---
@@ -90,6 +103,7 @@ app/
   src/androidTest/java/com/poketrek/emu/
     Phase0EmulatorEmbedTest.kt
 tools/moneo/             # Korean text extraction + glyph-map pipeline
+tools/ask_bridge/        # 💬 watcher: Claude Code in Termux, study-words → Google Doc
 third_party/mgba/        # submodule, pinned tag (see .gitmodules)
 ```
 
