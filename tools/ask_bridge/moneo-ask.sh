@@ -5,11 +5,10 @@
 # this asks claude about each request and writes outbox/<id>.md, which the
 # app shows and deletes. Handled requests and replies are kept in done/.
 #
-# claude runs as long-lived workers (-p with stream-json input), since
-# starting it costs ~30 s under a Termux proot. A follow-up question goes to
-# the current worker, which has the conversation; a new question goes to a
-# spare worker started in advance, which becomes current, and a new spare is
-# started after the answer.
+# claude runs as one long-lived worker (-p with stream-json input), since
+# starting it costs ~30 s under a Termux proot. A follow-up question continues
+# its conversation; a new question is preceded by /clear, which starts a fresh
+# one in the same process.
 #
 #   MONEO_ASK_DIR    ask folder (default ~/moneo-ask)
 #   MONEO_ASK_MODEL  model for claude --model (default: claude's own default)
@@ -58,10 +57,11 @@ CLAUDE_ARGS=(-p --input-format stream-json --output-format stream-json --verbose
   --append-system-prompt "$SYSTEM_PROMPT" --allowedTools Read)
 [[ -n "$MODEL" ]] && CLAUDE_ARGS+=(--model "$MODEL")
 
-# A worker is "pid in-fd out-fd dir": claude reading JSON lines from a FIFO
-# and writing stream-json events to another.
+# The worker is "pid in-fd out-fd dir": claude reading JSON lines from a
+# FIFO and writing stream-json events to another. ASKED counts questions in
+# its current conversation.
 CUR=""
-SPARE=""
+ASKED=0
 SEQ=0
 
 # Starts a worker into variable $1. Not in $(...): the FIFO fds must stay
@@ -86,7 +86,7 @@ retire() {
   rm -f "$d.in" "$d.out" "$d.err"
 }
 
-cleanup() { retire "$CUR"; retire "$SPARE"; rm -rf "$RUN"; }
+cleanup() { retire "$CUR"; rm -rf "$RUN"; }
 trap cleanup EXIT
 trap 'exit 0' INT TERM
 trap '' PIPE  # a dead worker must not take the watcher down with it
@@ -123,14 +123,15 @@ $(cat "$json")"
 Screenshot: inbox/$shot"
 
   echo "[$(date +%T)] $id: $(jq -r .question "$json")"
-  if [[ "$(jq -r .followUp "$json")" == true ]] && alive "$CUR"; then
-    worker="$CUR"
-  else
-    alive "$SPARE" || { retire "$SPARE"; spawn SPARE; }
+  if ! alive "$CUR"; then
     retire "$CUR"
-    CUR="$SPARE"
-    SPARE=""
-    worker="$CUR"
+    spawn CUR
+    ASKED=0
+  fi
+  worker="$CUR"
+  if [[ "$(jq -r .followUp "$json")" != true && $ASKED -gt 0 ]]; then
+    ask "$worker" /clear || true
+    ASKED=0
   fi
 
   t0=$SECONDS
@@ -140,6 +141,7 @@ Screenshot: inbox/$shot"
     retire "$CUR"
     CUR=""
   fi
+  ASKED=$((ASKED + 1))
   echo "    ($META; $((SECONDS - t0))s here)"
   echo "$ANSWER" | sed 's/^/    /'
 
@@ -150,12 +152,12 @@ Screenshot: inbox/$shot"
   mv "$json" "$DIR/done/"
   [[ -n "$shot" && -f "$DIR/inbox/$shot" ]] && mv "$DIR/inbox/$shot" "$DIR/done/"
 
-  # Warm up the next new-question worker while the player reads.
-  alive "$SPARE" || spawn SPARE
+  # Restart a worker that died now, while the player reads, not on the next question.
+  alive "$CUR" || { retire "$CUR"; spawn CUR; ASKED=0; }
   return 0
 }
 
-spawn SPARE
+spawn CUR
 echo "watching $DIR/inbox"
 for f in "$DIR"/inbox/*.json; do [[ -e "$f" ]] && handle "$f"; done
 # Process substitution keeps the loop (and the workers) in this shell.
