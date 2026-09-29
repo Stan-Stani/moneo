@@ -51,3 +51,4 @@ tools/moneo/sentence_browser.html
 # Local emulator save states for manual testing (see tools/test_states/README.md)
 tools/test_states/**/*.bin
 tools/test_states/**/*.meta
+.playwright-mcp/
