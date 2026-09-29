@@ -90,17 +90,18 @@ class MoneoModule private constructor(context: Context) {
     val studyWordsStatus: kotlinx.coroutines.flow.StateFlow<String?> = _studyWordsStatus
 
     /**
-     * Rewrites the study-words file ([MoneoPrefs.studyWordsFile]) with the
-     * words marked Again/Hard and the words started lately
-     * ([com.poketrek.moneo.data.StudyDigest]). No-op when no file is set.
+     * Rewrites `study-words.md` in the ask folder with the words marked
+     * Again/Hard and the words started lately ([com.poketrek.moneo.data.StudyDigest]);
+     * tools/ask_bridge copies it into a Google Doc for a Claude project.
+     * No-op when no ask folder is set.
      */
     fun exportStudyWords() {
-        val target = prefs.studyWordsFile.value?.let(android.net.Uri::parse) ?: return
+        if (prefs.askFolder.value == null) return
         GlobalScope.launch(kotlinx.coroutines.Dispatchers.IO) {
             val now = System.currentTimeMillis()
             val since = now - com.poketrek.moneo.data.StudyDigest.WINDOW_DAYS * 86_400_000L
             val verbatim = prefs.verbatimSentences.value
-            val text = runCatching {
+            val result = runCatching {
                 val digest = com.poketrek.moneo.data.StudyDigest.collect(
                     entries = reviewLog.since(since),
                     logStartMs = reviewLog.firstMs(),
@@ -109,14 +110,14 @@ class MoneoModule private constructor(context: Context) {
                     example = { id -> repository.sentenceFor(id, verbatim = verbatim)?.korean },
                     nowMs = now,
                 )
-                com.poketrek.moneo.data.StudyDigest.markdown(digest, now)
-            }
-            val result = text.mapCatching { md ->
-                appContext.contentResolver.openOutputStream(target, "wt")?.use { it.write(md.toByteArray()) }
-                    ?: error("can't open the file")
+                ask.writeTopLevel(STUDY_WORDS_FILE, com.poketrek.moneo.data.StudyDigest.markdown(digest, now))
+                digest
             }
             _studyWordsStatus.value = result.fold(
-                { "Updated " + java.text.SimpleDateFormat("HH:mm", java.util.Locale.US).format(java.util.Date(now)) },
+                { d ->
+                    "${d.struggling.size} struggling, ${d.learned.size} new · " +
+                        java.text.SimpleDateFormat("HH:mm", java.util.Locale.US).format(java.util.Date(now))
+                },
                 { android.util.Log.w("StudyWords", "export failed", it); "Failed: ${it.message}" },
             )
         }
@@ -364,6 +365,7 @@ class MoneoModule private constructor(context: Context) {
         }
 
         const val SOURCE_TYPE_MOVE = "pokemon_move"
+        const val STUDY_WORDS_FILE = "study-words.md"
         const val SOURCE_TYPE_ABILITY = "pokemon_ability"
     }
 }

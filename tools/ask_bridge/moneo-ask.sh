@@ -10,6 +10,9 @@
 # its conversation; a new question is preceded by /clear, which starts a fresh
 # one in the same process.
 #
+# When the app rewrites study-words.md at the top of the folder, study-sync.sh
+# (next to this script) copies it into a Google Doc, in the background.
+#
 #   MONEO_ASK_DIR    ask folder (default ~/moneo-ask)
 #   MONEO_ASK_MODEL  model for claude --model (default: claude's own default)
 set -u
@@ -160,7 +163,16 @@ Screenshot: inbox/$shot"
 spawn CUR
 echo "watching $DIR/inbox"
 for f in "$DIR"/inbox/*.json; do [[ -e "$f" ]] && handle "$f"; done
-# Process substitution keeps the loop (and the workers) in this shell.
-while read -r name; do
-  [[ "$name" == *.json ]] && handle "$DIR/inbox/$name"
-done < <(inotifywait -m -q -e close_write -e moved_to --format '%f' "$DIR/inbox")
+SYNC="$(dirname "$(readlink -f "$0")")/study-sync.sh"
+sync_study_words() {
+  [[ -x "$SYNC" ]] || return 0
+  "$SYNC" "$DIR/study-words.md" 2>&1 | sed "s/^/[$(date +%T)] /" &
+}
+
+# Process substitution keeps the loop (and the worker) in this shell.
+while read -r path; do
+  case "$path" in
+    "$DIR"/inbox/*.json) handle "$path" ;;
+    "$DIR"/study-words.md) sync_study_words ;;
+  esac
+done < <(inotifywait -m -q -e close_write -e moved_to --format '%w%f' "$DIR/inbox" "$DIR")

@@ -84,6 +84,19 @@ class AskBridge(context: Context, private val prefs: MoneoPrefs) {
 
     fun clear() = _exchanges.update { list -> list.filter { it.pending } }
 
+    /**
+     * Writes [text] to [name] at the top of the ask folder, replacing it if it
+     * exists. Blocking; call off the main thread. Throws when no folder is set.
+     */
+    fun writeTopLevel(name: String, text: String) {
+        val tree = prefs.askFolder.value?.let(Uri::parse) ?: error("no ask folder set")
+        val root = rootDocument(tree)
+        val doc = findChild(tree, root, name)
+            ?: DocumentsContract.createDocument(resolver, root, "text/markdown", name)
+            ?: error("Can't create $name in the ask folder")
+        resolver.openOutputStream(doc, "wt")?.use { it.write(text.toByteArray()) } ?: error("Can't write $name")
+    }
+
     private suspend fun awaitReply(tree: Uri, outbox: Uri, name: String): String? {
         val deadline = System.currentTimeMillis() + TIMEOUT_MS
         while (System.currentTimeMillis() < deadline) {

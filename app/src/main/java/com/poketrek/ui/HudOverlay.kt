@@ -1543,48 +1543,27 @@ private fun CorrectionEndpointExpander(moneo: MoneoModule) {
 }
 
 /**
- * File the words to go over (Again/Hard lately, and newly learned) are
- * written to after each review session, e.g. in Google Drive for a Claude
- * project to read. Created with the system "save as" picker.
+ * The words to go over (Again/Hard lately, and newly learned), written to
+ * study-words.md in the ask folder whenever the flashcards close;
+ * tools/ask_bridge copies it into a Google Doc a Claude project reads.
  */
 @Composable
 private fun StudyWordsExpander(moneo: MoneoModule) {
-    val file by moneo.prefs.studyWordsFile.collectAsState()
+    val folder by moneo.prefs.askFolder.collectAsState()
     val status by moneo.studyWordsStatus.collectAsState()
-    val context = androidx.compose.ui.platform.LocalContext.current
-    val create = androidx.activity.compose.rememberLauncherForActivityResult(
-        androidx.activity.result.contract.ActivityResultContracts.CreateDocument("text/markdown"),
-    ) { uri ->
-        if (uri == null) return@rememberLauncherForActivityResult
-        runCatching {
-            context.contentResolver.takePersistableUriPermission(
-                uri,
-                android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION or
-                    android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION,
-            )
-        }.onFailure { android.util.Log.w("StudyWords", "Could not persist file permission", it) }
-        moneo.prefs.setStudyWordsFile(uri.toString())
-        moneo.exportStudyWords()
-    }
     Expander(
         title = "Study words for Claude",
-        summary = if (file == null) "Off" else status ?: "On",
+        summary = if (folder == null) "Needs the ask folder" else status ?: "On",
     ) {
         Text(
-            "Keeps a file of the words you marked Again/Hard and the words you started learning in the " +
-                "last ${com.poketrek.moneo.data.StudyDigest.WINDOW_DAYS} days, updated when you close the flashcards. " +
-                "Save it in Google Drive and a Claude project can read it through the Drive connector.",
+            "Writes ${MoneoModule.STUDY_WORDS_FILE} to the ask folder with the words you marked Again/Hard and " +
+                "the words you started in the last ${com.poketrek.moneo.data.StudyDigest.WINDOW_DAYS} days, " +
+                "whenever you close the flashcards. The Termux watcher copies it into a Google Doc for your Claude project.",
             fontSize = 12.sp,
             color = Color(0xFF6B7280),
         )
-        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            Button(onClick = { create.launch("moneo-study-words.md") }) {
-                Text(if (file == null) "Create file" else "New file", fontSize = 12.sp)
-            }
-            if (file != null) {
-                TextButton(onClick = { moneo.exportStudyWords() }) { Text("Update now", fontSize = 12.sp) }
-                TextButton(onClick = { moneo.prefs.setStudyWordsFile(null) }) { Text("Turn off", fontSize = 12.sp) }
-            }
+        if (folder != null) {
+            TextButton(onClick = { moneo.exportStudyWords() }) { Text("Update now", fontSize = 12.sp) }
         }
     }
 }
