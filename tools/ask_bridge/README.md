@@ -51,6 +51,15 @@ The log shows which model answered and how long it took after each reply.
 Exempt Termux from battery optimisation or Android may kill the watcher on
 a long walk.
 
+## Testing on a Mac with the Android emulator
+
+`mac-emulator.sh [serial]` runs the same watcher on a Mac, for an emulator
+or a USB phone. It creates `Download/moneo-ask` on the device and copies
+requests and answers between it and `~/.cache/moneo-ask-emulator` over
+adb. In the app, choose Download → moneo-ask as the folder. macOS lacks
+`inotifywait` and ships bash 3.2, so the script uses a polling stand-in and
+runs a patched copy of `moneo-ask.sh`; study words aren't synced to the Doc.
+
 ## Study words → Google Doc → Claude project
 
 The app writes `study-words.md` (words marked Again/Hard and words first
