@@ -82,6 +82,46 @@ class MoneoModule private constructor(context: Context) {
         r.start()
     }
 
+    /** Every grade given, for [exportStudyWords]. */
+    val reviewLog = com.poketrek.moneo.data.ReviewLog(File(File(context.filesDir, "moneo"), "review_log.jsonl"))
+
+    private val _studyWordsStatus = kotlinx.coroutines.flow.MutableStateFlow<String?>(null)
+    /** Result of the last [exportStudyWords] ("Updated 19:40" or an error), for settings. */
+    val studyWordsStatus: kotlinx.coroutines.flow.StateFlow<String?> = _studyWordsStatus
+
+    /**
+     * Rewrites the study-words file ([MoneoPrefs.studyWordsFile]) with the
+     * words marked Again/Hard and the words started lately
+     * ([com.poketrek.moneo.data.StudyDigest]). No-op when no file is set.
+     */
+    fun exportStudyWords() {
+        val target = prefs.studyWordsFile.value?.let(android.net.Uri::parse) ?: return
+        GlobalScope.launch(kotlinx.coroutines.Dispatchers.IO) {
+            val now = System.currentTimeMillis()
+            val since = now - com.poketrek.moneo.data.StudyDigest.WINDOW_DAYS * 86_400_000L
+            val verbatim = prefs.verbatimSentences.value
+            val text = runCatching {
+                val digest = com.poketrek.moneo.data.StudyDigest.collect(
+                    entries = reviewLog.since(since),
+                    logStartMs = reviewLog.firstMs(),
+                    cards = repository.cards.value,
+                    vocab = repository.vocab.value,
+                    example = { id -> repository.sentenceFor(id, verbatim = verbatim)?.korean },
+                    nowMs = now,
+                )
+                com.poketrek.moneo.data.StudyDigest.markdown(digest, now)
+            }
+            val result = text.mapCatching { md ->
+                appContext.contentResolver.openOutputStream(target, "wt")?.use { it.write(md.toByteArray()) }
+                    ?: error("can't open the file")
+            }
+            _studyWordsStatus.value = result.fold(
+                { "Updated " + java.text.SimpleDateFormat("HH:mm", java.util.Locale.US).format(java.util.Date(now)) },
+                { android.util.Log.w("StudyWords", "export failed", it); "Failed: ${it.message}" },
+            )
+        }
+    }
+
     private val mapAreas by lazy {
         runCatching { com.poketrek.moneo.data.MapAreaLookup.loadFromAssets(appContext) }.getOrNull()
     }
@@ -238,6 +278,7 @@ class MoneoModule private constructor(context: Context) {
         repository.setAreaLemmaCounts(lemmaCounts)
         repository.setStudyNext(prefs.studyNext)
         repository.onStudyNextChanged = { prefs.saveStudyNext(it) }
+        repository.onGraded = { reviewLog.append(it) }
         // Drive optional-deck visibility from user prefs. Combined so toggles
         // take effect immediately without an app restart.
         GlobalScope.launch {

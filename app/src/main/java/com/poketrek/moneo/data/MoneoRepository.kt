@@ -107,6 +107,9 @@ class MoneoRepository(
     val studyNext: StateFlow<List<String>> = _studyNext.asStateFlow()
     var onStudyNextChanged: ((List<String>) -> Unit)? = null
 
+    /** Called after each grade with the card's state before it (see [ReviewLog]). */
+    var onGraded: ((ReviewLog.Entry) -> Unit)? = null
+
     fun setStudyNext(ids: List<String>) {
         _studyNext.value = ids.filter { it in _vocab.value }
     }
@@ -372,6 +375,7 @@ class MoneoRepository(
         val updated = current.copy(snapshot = nextSnap, lastReviewedAt = nowMs)
         store.put(updated)
         _cards.value = _cards.value + (vocabId to updated)
+        onGraded?.invoke(ReviewLog.Entry(vocabId, rating, nowMs, current.snapshot.state))
         if (vocabId in _studyNext.value) {
             _studyNext.value = _studyNext.value - vocabId
             onStudyNextChanged?.invoke(_studyNext.value)

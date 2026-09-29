@@ -247,7 +247,11 @@ fun EmulatorScreen(
         if (moneoOpen) {
             MoneoOverlay(
                 module = moneo,
-                onClose = { moneoOpen = false; moneoStudyArea = null },
+                onClose = {
+                    moneoOpen = false
+                    moneoStudyArea = null
+                    moneo.exportStudyWords()
+                },
                 modifier = Modifier.fillMaxSize(),
                 romCrc32Hex = romIdentity?.crc32Hex,
                 initialArea = moneoStudyArea,

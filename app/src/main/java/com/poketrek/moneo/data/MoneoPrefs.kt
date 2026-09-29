@@ -42,6 +42,7 @@ private val KEY_VISITED_AREAS = stringSetPreferencesKey("moneo_visited_areas")
 private val KEY_STUDY_NEXT = stringPreferencesKey("moneo_study_next")
 private val KEY_READING_HELP = booleanPreferencesKey("moneo_reading_help")
 private val KEY_ASK_FOLDER = stringPreferencesKey("moneo_ask_folder")
+private val KEY_STUDY_WORDS_FILE = stringPreferencesKey("moneo_study_words_file")
 private val KEY_DIRECTION = stringPreferencesKey("moneo_direction")
 private val KEY_DIRECTION_MANUAL = booleanPreferencesKey("moneo_direction_manual")
 private val KEY_TTS_LANGUAGE = stringPreferencesKey("moneo_tts_language")
@@ -264,6 +265,17 @@ class MoneoPrefs private constructor(private val context: Context) {
     private val _askFolder = MutableStateFlow<String?>(null)
     val askFolder: StateFlow<String?> = _askFolder.asStateFlow()
 
+    /** Document URI the study-words list is written to (e.g. a file in Google Drive); null when off. */
+    private val _studyWordsFile = MutableStateFlow<String?>(null)
+    val studyWordsFile: StateFlow<String?> = _studyWordsFile.asStateFlow()
+
+    fun setStudyWordsFile(value: String?) {
+        _studyWordsFile.value = value
+        scope.launch {
+            context.moneoStore.edit { if (value == null) it.remove(KEY_STUDY_WORDS_FILE) else it[KEY_STUDY_WORDS_FILE] = value }
+        }
+    }
+
     fun setAskFolder(value: String?) {
         _askFolder.value = value
         scope.launch {
@@ -331,6 +343,7 @@ class MoneoPrefs private constructor(private val context: Context) {
             studyNext = prefs[KEY_STUDY_NEXT]?.split('\n')?.filter { it.isNotEmpty() } ?: emptyList()
             _readingHelp.value = prefs[KEY_READING_HELP] ?: true
             _askFolder.value = prefs[KEY_ASK_FOLDER]
+            _studyWordsFile.value = prefs[KEY_STUDY_WORDS_FILE]
             _direction.value = FlashcardDirection.fromStored(prefs[KEY_DIRECTION])
             _directionWasManuallySet.value = prefs[KEY_DIRECTION_MANUAL] ?: false
             val storedOverride = TtsLanguage.fromStored(prefs[KEY_TTS_LANGUAGE])
