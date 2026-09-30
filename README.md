@@ -39,6 +39,8 @@ The app and Termux talk only through a shared folder, and the app itself needs n
 
 **Study words → Claude project.** Whenever you close the flashcards, the app writes `study-words.md` — words you marked *Again*/*Hard* plus words first studied in the last 14 days — into the same folder, and the watcher copies it into a Google Doc ("Moneo study words") through `rclone`. Add that Doc to a claude.ai project's knowledge, and Claude there always knows what you're currently learning.
 
+**Anki too.** A separate companion script, [`anki-korean-sync`](https://github.com/Stan-Stani/anki-korean-sync), does the same for AnkiDroid: it copies the collection off the phone over adb (read-only), and writes the Korean cards you graded *Again*/*Hard* or first studied in the last 14 days into an "Anki Korean study words" Google Doc, which can sit in the same Claude project.
+
 Full setup (proot distros, model choice, the Google Doc sync, testing on a Mac emulator) is in [`tools/ask_bridge/README.md`](tools/ask_bridge/README.md).
 
 Found a wrong or awkward Korean flashcard? Hit the **✎ Report** button on the review screen — it opens a pre-filled GitHub issue.
