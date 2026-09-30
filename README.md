@@ -6,6 +6,8 @@ Moneo is a project I started vibe-coding (making with AI) a few months back. I r
 
 There were some false starts, like starting with an older less complete fan translation ROM hack before finding the newer one referenced below. And reverse engineering the ROM for getting vocabulary and memory locations of things consisted entirely of me throwing ideas at Claude like "use the FireRed decompilation project for reference".
 
+**See it in action:** the [blog post](https://www.seldoncortex.com) walks through every feature with screenshots, or jump straight to the videos: [reading helper + asking Claude](https://www.seldoncortex.com/blog/moneo/askvid.mp4), [area vocab gate](https://www.seldoncortex.com/blog/moneo/gatevid.mp4).
+
 An Android app for learning Korean by reading the 2024 fan-translation of Pokémon LeafGreen. Vocabulary and example sentences are mined from the ROM itself, attributed to the in-game area where they surface, and surfaced as a spaced-repetition deck while you play.
 
 The twist: the emulator is **step-gated**. The phone's hardware step counter feeds a movement budget; every overworld tile you move (via the D-pad, as normal) costs one tile from that budget, and when the budget hits zero the direction-pad is masked until you walk in the real world again. You still play the game — you just can't out-walk yourself. The Korean words you'd be encountering at that point in the story queue up for review. The step-gating layer is called **PokéTrek**; Moneo is the Korean-learning experience that runs on top of it.
