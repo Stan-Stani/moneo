@@ -1583,15 +1583,54 @@ private fun AskFolderExpander(moneo: MoneoModule) {
         }.onFailure { android.util.Log.w("AskFolder", "Could not persist folder permission", it) }
         moneo.prefs.setAskFolder(uri.toString())
     }
+    val apiKey by moneo.prefs.askApiKey.collectAsState()
+    var keyDraft by remember { mutableStateOf("") }
     val label = folder?.let { android.net.Uri.parse(it).lastPathSegment?.substringAfterLast(':') ?: it }
     Expander(
         title = "Ask an LLM (💬)",
-        summary = label ?: "Off",
+        summary = when {
+            apiKey != null -> "Claude API"
+            label != null -> label
+            else -> "Off"
+        },
     ) {
+        Text("Claude API key", fontWeight = FontWeight.SemiBold, fontSize = 13.sp)
+        Text(
+            "Sends the message box, its words and a screenshot straight to Claude " +
+                "(${com.poketrek.moneo.ask.ClaudeAsker.MODEL}) with your own key from " +
+                "console.anthropic.com. Usage is billed to your account. The key stays on this phone.",
+            fontSize = 12.sp,
+            color = Color(0xFF6B7280),
+        )
+        if (apiKey == null) {
+            OutlinedTextField(
+                value = keyDraft,
+                onValueChange = { keyDraft = it },
+                label = { Text("sk-ant-…", fontSize = 12.sp) },
+                singleLine = true,
+                visualTransformation = androidx.compose.ui.text.input.PasswordVisualTransformation(),
+                modifier = Modifier.fillMaxWidth(),
+            )
+            Button(
+                onClick = { moneo.prefs.setAskApiKey(keyDraft); keyDraft = "" },
+                enabled = keyDraft.isNotBlank(),
+            ) { Text("Save key", fontSize = 12.sp) }
+        } else {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+            ) {
+                Text("Key …${apiKey!!.takeLast(4)}", fontSize = 12.sp, fontFamily = FontFamily.Monospace)
+                TextButton(onClick = { moneo.prefs.setAskApiKey(null) }) { Text("Remove key", fontSize = 12.sp) }
+            }
+        }
+
+        Text("Or: Claude Code in Termux", fontWeight = FontWeight.SemiBold, fontSize = 13.sp)
         Text(
             "Writes the message box, its words and a screenshot to a folder; " +
                 "tools/ask_bridge/moneo-ask.sh (e.g. Claude Code in Termux) writes the answer back. " +
-                "In Termux, make ~/moneo-ask and pick it here via the Termux entry in the picker.",
+                "In Termux, make ~/moneo-ask and pick it here via the Termux entry in the picker. " +
+                "The folder also receives the study-words file. With an API key set, questions use the key.",
             fontSize = 12.sp,
             color = Color(0xFF6B7280),
         )

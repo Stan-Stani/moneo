@@ -17,9 +17,11 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.sync.withLock
 
 /**
- * Asks an LLM about what's on screen through a shared folder: the app writes
+ * Asks an LLM about what's on screen. With an API key set, calls the Claude
+ * API directly ([ClaudeAsker]). Otherwise goes through a shared folder: the app writes
  * `inbox/<id>.png` then `inbox/<id>.json` ([AskRequest]), and a watcher
  * (tools/ask_bridge/moneo-ask.sh, e.g. Claude Code in Termux) answers with
  * `outbox/<id>.md`. The folder is picked with the Storage Access Framework,
@@ -45,41 +47,68 @@ class AskBridge(context: Context, private val prefs: MoneoPrefs) {
     /** This session's questions, oldest first. */
     val exchanges: StateFlow<List<Exchange>> = _exchanges.asStateFlow()
 
-    val configured: Boolean get() = prefs.askFolder.value != null
+    val configured: Boolean get() = prefs.askApiKey.value != null || prefs.askFolder.value != null
+
+    private var asker: ClaudeAsker? = null
+
+    /** The direct-API asker for the current key, rebuilt when the key changes. */
+    private fun askerFor(key: String): ClaudeAsker =
+        asker?.takeIf { it.apiKey == key } ?: ClaudeAsker(key).also { asker = it }
 
     /**
      * Writes the request and waits for the reply in the background. [build]
      * gets the new id and whether this continues the previous conversation.
      */
     fun ask(question: String, message: String?, screen: Bitmap?, build: (id: String, followUp: Boolean) -> AskRequest) {
-        val folder = prefs.askFolder.value?.let(Uri::parse) ?: return
+        val apiKey = prefs.askApiKey.value
+        val folder = prefs.askFolder.value?.let(Uri::parse)
+        if (apiKey == null && folder == null) return
         val now = System.currentTimeMillis()
         val id = AskRequest.newId(now)
         val prev = _exchanges.value.lastOrNull()
         val request = build(id, AskRequest.isFollowUp(prev?.message, prev != null, message))
         _exchanges.update { it + Exchange(id, question, message) }
         scope.launch {
-            val result = runCatching {
-                val root = rootDocument(folder)
-                val inbox = childDir(folder, root, "inbox")
-                val outbox = childDir(folder, root, "outbox")
-                if (screen != null) {
-                    writeFile(inbox, "$id.png", "image/png") { out ->
-                        screen.compress(Bitmap.CompressFormat.PNG, 100, out)
-                    }
-                }
-                // The JSON goes last: the watcher treats it as "request complete".
-                writeFile(inbox, "$id.json", "application/json") { out ->
-                    out.write(request.toJson().toString(1).toByteArray())
-                }
-                awaitReply(folder, outbox, "$id.md")
+            val (reply, error) = if (apiKey != null) {
+                askDirect(apiKey, request, screen)
+            } else {
+                askThroughFolder(folder!!, id, request, screen)
             }
-            val (reply, error) = result.fold(
-                { it to (if (it == null) "No reply after ${TIMEOUT_MS / 1000}s — is moneo-ask.sh running?" else null) },
-                { Log.w(TAG, "ask $id failed", it); null to (it.message ?: it.javaClass.simpleName) },
-            )
             _exchanges.update { list -> list.map { if (it.id == id) it.copy(reply = reply, error = error) else it } }
         }
+    }
+
+    /** One question at a time, so a follow-up sees the answer before it. */
+    private val directLock = kotlinx.coroutines.sync.Mutex()
+
+    private suspend fun askDirect(apiKey: String, request: AskRequest, screen: Bitmap?): Pair<String?, String?> =
+        directLock.withLock {
+            runCatching { askerFor(apiKey).ask(request, screen) }.fold(
+                { it to null },
+                { Log.w(TAG, "ask ${request.id} failed", it); null to (it.message ?: it.javaClass.simpleName) },
+            )
+        }
+
+    private suspend fun askThroughFolder(folder: Uri, id: String, request: AskRequest, screen: Bitmap?): Pair<String?, String?> {
+        val result = runCatching {
+            val root = rootDocument(folder)
+            val inbox = childDir(folder, root, "inbox")
+            val outbox = childDir(folder, root, "outbox")
+            if (screen != null) {
+                writeFile(inbox, "$id.png", "image/png") { out ->
+                    screen.compress(Bitmap.CompressFormat.PNG, 100, out)
+                }
+            }
+            // The JSON goes last: the watcher treats it as "request complete".
+            writeFile(inbox, "$id.json", "application/json") { out ->
+                out.write(request.toJson().toString(1).toByteArray())
+            }
+            awaitReply(folder, outbox, "$id.md")
+        }
+        return result.fold(
+            { it to (if (it == null) "No reply after ${TIMEOUT_MS / 1000}s — is moneo-ask.sh running?" else null) },
+            { Log.w(TAG, "ask $id failed", it); null to (it.message ?: it.javaClass.simpleName) },
+        )
     }
 
     fun clear() = _exchanges.update { list -> list.filter { it.pending } }

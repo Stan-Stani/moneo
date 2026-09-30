@@ -42,6 +42,7 @@ private val KEY_VISITED_AREAS = stringSetPreferencesKey("moneo_visited_areas")
 private val KEY_STUDY_NEXT = stringPreferencesKey("moneo_study_next")
 private val KEY_READING_HELP = booleanPreferencesKey("moneo_reading_help")
 private val KEY_ASK_FOLDER = stringPreferencesKey("moneo_ask_folder")
+private val KEY_ASK_API_KEY = stringPreferencesKey("moneo_ask_api_key")
 private val KEY_DIRECTION = stringPreferencesKey("moneo_direction")
 private val KEY_DIRECTION_MANUAL = booleanPreferencesKey("moneo_direction_manual")
 private val KEY_TTS_LANGUAGE = stringPreferencesKey("moneo_tts_language")
@@ -272,6 +273,21 @@ class MoneoPrefs private constructor(private val context: Context) {
     }
 
     /**
+     * The player's own Claude API key for 💬. When set, questions go straight
+     * to the API instead of through [askFolder]. Kept in app-private storage.
+     */
+    private val _askApiKey = MutableStateFlow<String?>(null)
+    val askApiKey: StateFlow<String?> = _askApiKey.asStateFlow()
+
+    fun setAskApiKey(value: String?) {
+        val key = value?.trim()?.takeIf { it.isNotEmpty() }
+        _askApiKey.value = key
+        scope.launch {
+            context.moneoStore.edit { if (key == null) it.remove(KEY_ASK_API_KEY) else it[KEY_ASK_API_KEY] = key }
+        }
+    }
+
+    /**
      * Flashcard display direction. KO_TO_EN (default) shows Korean on the
      * front; EN_TO_KO flips for Korean native speakers learning English.
      */
@@ -331,6 +347,7 @@ class MoneoPrefs private constructor(private val context: Context) {
             studyNext = prefs[KEY_STUDY_NEXT]?.split('\n')?.filter { it.isNotEmpty() } ?: emptyList()
             _readingHelp.value = prefs[KEY_READING_HELP] ?: true
             _askFolder.value = prefs[KEY_ASK_FOLDER]
+            _askApiKey.value = prefs[KEY_ASK_API_KEY]
             _direction.value = FlashcardDirection.fromStored(prefs[KEY_DIRECTION])
             _directionWasManuallySet.value = prefs[KEY_DIRECTION_MANUAL] ?: false
             val storedOverride = TtsLanguage.fromStored(prefs[KEY_TTS_LANGUAGE])

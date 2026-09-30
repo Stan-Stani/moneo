@@ -36,11 +36,16 @@ You don't need to build anything or know how to code to play.
 3. Every tile you walk in the overworld spends from a **movement budget**. When it runs out, the D-pad locks until you **walk in the real world** — your phone's step counter refills the budget.
 4. The Korean words you'd be meeting at that point in the story queue up as a spaced-repetition deck. Review them, then keep playing.
 
-### Optional: ask Claude about the screen (💬, via Termux)
+### Optional: ask Claude about the screen (💬)
 
-Stuck on a line? The 💬 button sends the current screen to [Claude Code](https://claude.com/claude-code) running on your phone in [Termux](https://termux.dev), and shows the answer in a panel beside the game. Each question carries a screenshot, the exact text of the open message box (decoded from game memory), the dictionary words in it, and every word you already know from your flashcards. Claude answers in simple Korean built from those known words — ask "in English" if you want English — and a follow-up about the same line keeps the conversation going.
+Stuck on a line? The 💬 button sends the current screen to Claude and shows the answer in a panel beside the game. There are two ways to connect it:
 
-The app and Termux talk only through a shared folder, and the app itself needs no API key. Setup, in short:
+- **Your own API key (simplest):** **Settings → Ask an LLM (💬) → Claude API key**, paste a key from [console.anthropic.com](https://console.anthropic.com). The app calls the Claude API directly; usage is billed to your account and the key stays on the phone.
+- **Claude Code in [Termux](https://termux.dev):** no key in the app; described below.
+
+Either way, each question carries a screenshot, the exact text of the open message box (decoded from game memory), the dictionary words in it, and every word you already know from your flashcards. Claude answers in simple Korean built from those known words — ask "in English" if you want English — and a follow-up about the same line keeps the conversation going.
+
+**Termux setup.** The app and Termux talk only through a shared folder, and the app itself needs no API key. In short:
 
 1. In Termux, install Claude Code, `jq` and `inotify-tools`, copy `tools/ask_bridge/moneo-ask.sh` and `moneo-ask-start.sh` onto the phone, and run `moneo-ask-start.sh` (it takes a wake lock; exempt Termux from battery optimisation so it survives a long walk).
 2. In the app: **Settings → Ask an LLM (💬) → Choose folder** → pick **Termux** in the picker's side menu → `moneo-ask` → *Use this folder*. The 💬 button appears at the left edge of the game.

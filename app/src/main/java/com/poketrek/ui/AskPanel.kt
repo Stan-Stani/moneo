@@ -37,11 +37,12 @@ import com.poketrek.moneo.MoneoModule
 private const val ASK_SIMPLER = "이 대사를 더 쉬운 한국어로 설명해 줘."
 private const val ASK_ENGLISH = "Translate this line and explain the hard parts in English."
 
-/** Opens [AskPanel]; shown once an ask folder is set up. Lights up when a reply is waiting unread. */
+/** Opens [AskPanel]; shown once an API key or ask folder is set up. Lights up when a reply is waiting unread. */
 @Composable
 fun AskChip(moneo: MoneoModule, open: Boolean, onToggle: () -> Unit, modifier: Modifier = Modifier) {
     val folder by moneo.prefs.askFolder.collectAsState()
-    if (folder == null) return
+    val apiKey by moneo.prefs.askApiKey.collectAsState()
+    if (folder == null && apiKey == null) return
     val exchanges by moneo.ask.exchanges.collectAsState()
     val pending = exchanges.any { it.pending }
     Text(
