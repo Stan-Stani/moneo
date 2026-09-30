@@ -14,7 +14,7 @@ The twist: the emulator is **step-gated**. The phone's hardware step counter fee
 
 ## Get the app (for players)
 
-> ⚠️ **Pre-release.** Moneo is at **Phase 0**. Tested on a **Samsung Galaxy S20+** — real-world step-gating and save/restore work there — but broader device coverage is still untested, so expect rough edges. Download builds from the Releases page below.
+> ⚠️ **Early release.** The whole game plays: step-gating, save states, the Korean flashcards, the area gate, reading help and 💬. It has only been tested on a **Samsung Galaxy S20+**, though, so other phones may have rough edges (step counters especially vary by manufacturer). Download builds from the Releases page below.
 
 You don't need to build anything or know how to code to play.
 
@@ -66,7 +66,9 @@ The rest of this README is for people who want to build, modify, or contribute t
 
 ### Status
 
-**Phase 0** — emulator embed running; real-walk step-gating and save/restore verified on a Samsung Galaxy S20+ (Android). Wider device validation still pending.
+Playable end to end: embedded mGBA, real-walk step-gating, save states, in-app Korean ROM patching, the SRS deck with per-area readiness and the area gate, in-game reading help, and 💬 (Claude API key or Termux). Verified on a Samsung Galaxy S20+; wider device validation is still pending.
+
+CI (`.github/workflows/ci.yml`) runs the JVM unit tests and builds a debug APK on every push and pull request; the APK is attached to each run.
 
 ### Prerequisites
 
@@ -82,7 +84,7 @@ The rest of this README is for people who want to build, modify, or contribute t
 # Clone with submodules (mGBA lives under third_party/mgba)
 git submodule update --init --recursive
 
-# Drop your legally-obtained LeafGreen ROM here for the Phase 0 test.
+# Drop your legally-obtained LeafGreen ROM here for the emulator instrumentation tests.
 # This path is gitignored. The runtime will use a Storage Access Framework picker;
 # the test asset is only for `connectedAndroidTest`.
 mkdir -p app/src/androidTest/assets
@@ -91,17 +93,18 @@ cp /path/to/leafgreen.gba app/src/androidTest/assets/leafgreen.gba
 
 Open the project in Android Studio. The first sync will take a while because CMake will configure mGBA.
 
-### Phase 0 verification
+### Tests
 
 ```bash
-./gradlew connectedDebugAndroidTest
+./gradlew test                        # JVM unit tests (no device, no ROM); what CI runs
+./gradlew connectedDebugAndroidTest   # emulator-core tests; need a device and the ROM above
 ```
 
-Both tests in `Phase0EmulatorEmbedTest` must pass:
+`Phase0EmulatorEmbedTest` (named for the project's first milestone) checks the native core:
 - `loadsRomAndRunsFrames` — ROM loads, 600 frames execute without crash, framebuffer is non-zero
 - `framebufferHashIsDeterministic` — two independent 600-frame runs produce byte-identical framebuffers
 
-If those pass, Phase 0 is complete and Phase 1 (playable UI) can begin.
+The determinism test is the canary for emulator state leaking between instances; if it breaks after a change to native init or teardown, that change is the bug.
 
 ### Layout
 
@@ -110,7 +113,7 @@ app/
   src/main/cpp/         # JNI bridge + native gate logic
     CMakeLists.txt      # builds libmgba.a (static) + libpoketrek.so (shared)
     jni_bridge.cpp      # loadRom, runFrame, getFramebuffer, ...
-    movement_gate.{h,cpp}  # input filter (Phase 3b)
+    movement_gate.{h,cpp}  # native input filter
   src/main/java/com/poketrek/
     EmulatorActivity.kt    # PokéTrek harness (emulator + step-counter)
     emu/NativeEmulator.kt
