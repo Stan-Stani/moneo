@@ -36,6 +36,9 @@ private val KEY_GATE_ENABLED = booleanPreferencesKey("gate_enabled")
 private val KEY_DEBUG_HUD = booleanPreferencesKey("debug_hud_visible")
 private val KEY_HAPTIC_ON_STEP = booleanPreferencesKey("haptic_on_step")
 private val KEY_RARE_CANDY_COST = intPreferencesKey("rare_candy_cost_tiles")
+private val KEY_TALLY_DAY = longPreferencesKey("tally_epoch_day")
+private val KEY_TALLY_STEPS = longPreferencesKey("tally_steps")
+private val KEY_TALLY_TILES = intPreferencesKey("tally_tiles_spent")
 
 private const val DEFAULT_RATIO_NUM = 4
 private const val DEFAULT_RATIO_DEN = 1
@@ -125,6 +128,24 @@ internal fun creditTiles(
 }
 
 /**
+ * Steps walked and tiles spent on one local calendar day ([epochDay]).
+ * Adding to a tally from an earlier day starts the new day from zero.
+ * Pure, for JVM tests.
+ */
+data class DailyTally(val epochDay: Long, val steps: Long = 0, val tilesSpent: Int = 0) {
+    fun addSteps(today: Long, n: Long): DailyTally =
+        if (today == epochDay) copy(steps = steps + n) else DailyTally(today, steps = n)
+
+    fun addTilesSpent(today: Long, n: Int): DailyTally =
+        if (today == epochDay) copy(tilesSpent = tilesSpent + n) else DailyTally(today, tilesSpent = n)
+
+    /** This tally as seen on [today]: itself, or empty if it's from another day. */
+    fun on(today: Long): DailyTally = if (today == epochDay) this else DailyTally(today)
+}
+
+private fun localEpochDay(): Long = java.time.LocalDate.now().toEpochDay()
+
+/**
  * Tracks the player's movement budget — how many in-game tiles they're allowed
  * to walk before they need more real-world steps.
  *
@@ -184,6 +205,10 @@ class MovementBudget private constructor(private val context: Context) : Movemen
     private val _creditedTiles = MutableSharedFlow<Int>(extraBufferCapacity = 16)
     val creditedTiles: SharedFlow<Int> = _creditedTiles.asSharedFlow()
 
+    private val _today = MutableStateFlow(DailyTally(localEpochDay()))
+    /** Steps and tiles spent today; read through [DailyTally.on] to roll over at midnight. */
+    val today: StateFlow<DailyTally> = _today.asStateFlow()
+
     private var lastSensorValue: Long = -1L
     private var stepCarry: Int = 0
 
@@ -198,6 +223,11 @@ class MovementBudget private constructor(private val context: Context) : Movemen
             _tilesPerStepDen.value = den.coerceIn(MIN_RATIO_PART, MAX_RATIO_PART)
             stepCarry = (prefs[KEY_STEP_CARRY] ?: 0).coerceAtLeast(0)
             lastSensorValue = prefs[KEY_LAST_SENSOR_VALUE] ?: -1L
+            _today.value = DailyTally(
+                epochDay = prefs[KEY_TALLY_DAY] ?: localEpochDay(),
+                steps = prefs[KEY_TALLY_STEPS] ?: 0L,
+                tilesSpent = prefs[KEY_TALLY_TILES] ?: 0,
+            ).on(localEpochDay())
             _gateEnabled.value = prefs[KEY_GATE_ENABLED] ?: false
             _debugHudVisible.value = prefs[KEY_DEBUG_HUD] ?: false
             _hapticOnStep.value = prefs[KEY_HAPTIC_ON_STEP] ?: true
@@ -238,6 +268,8 @@ class MovementBudget private constructor(private val context: Context) : Movemen
 
     private fun creditAndPersist(deltaSteps: Long) {
         if (deltaSteps <= 0) return
+        _today.value = _today.value.addSteps(localEpochDay(), deltaSteps)
+        persistTally()
         val (tiles, newCarry) = creditTiles(
             deltaSteps,
             _tilesPerStepNum.value,
@@ -259,6 +291,8 @@ class MovementBudget private constructor(private val context: Context) : Movemen
         if (current <= 0) return false
         _budget.value = current - 1
         persistBudget(current - 1)
+        _today.value = _today.value.addTilesSpent(localEpochDay(), 1)
+        persistTally()
         return true
     }
 
@@ -386,6 +420,17 @@ class MovementBudget private constructor(private val context: Context) : Movemen
     private fun persistBudget(value: Int) {
         scope.launch {
             context.budgetStore.edit { it[KEY_BUDGET] = value }
+        }
+    }
+
+    private fun persistTally() {
+        val t = _today.value
+        scope.launch {
+            context.budgetStore.edit {
+                it[KEY_TALLY_DAY] = t.epochDay
+                it[KEY_TALLY_STEPS] = t.steps
+                it[KEY_TALLY_TILES] = t.tilesSpent
+            }
         }
     }
 

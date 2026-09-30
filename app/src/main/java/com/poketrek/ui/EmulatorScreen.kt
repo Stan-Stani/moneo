@@ -255,6 +255,7 @@ fun EmulatorScreen(
                 modifier = Modifier.fillMaxSize(),
                 romCrc32Hex = romIdentity?.crc32Hex,
                 initialArea = moneoStudyArea,
+                today = budget.today,
             )
         }
 

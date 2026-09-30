@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
@@ -48,6 +49,8 @@ fun MoneoOverlay(
     romCrc32Hex: String? = null,
     /** Open straight into this area's review (e.g. from the area-gate lock chip). */
     initialArea: String? = null,
+    /** Today's steps and tiles, for the area picker's summary strip. */
+    today: kotlinx.coroutines.flow.StateFlow<com.poketrek.step.DailyTally>? = null,
 ) {
     var selectedArea by remember(initialArea) { mutableStateOf(initialArea) }
 
@@ -121,6 +124,8 @@ fun MoneoOverlay(
             if (area == null) {
                 AreaPicker(
                     module = module,
+                    romKey = romCrc32Hex,
+                    today = today,
                     onPickArea = { id ->
                         selectedArea = id
                         module.prefs.setTargetAreaId(id)
@@ -143,11 +148,16 @@ fun MoneoOverlay(
 @Composable
 private fun AreaPicker(
     module: MoneoModule,
+    romKey: String?,
+    today: kotlinx.coroutines.flow.StateFlow<com.poketrek.step.DailyTally>?,
     onPickArea: (String) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val areas by module.repository.areas.collectAsState()
     val cards by module.repository.cards.collectAsState()
+    val gateOn by module.prefs.areaGateEnabled.collectAsState()
+    val finalPct by module.prefs.areaGateThresholdPct.collectAsState()
+    val visited by module.prefs.visitedAreas.collectAsState()
 
     if (areas.isEmpty()) {
         Box(modifier = modifier, contentAlignment = Alignment.Center) {
@@ -160,12 +170,24 @@ private fun AreaPicker(
         return
     }
 
+    // Readiness walks the whole vocab per area, so compute it once per card change.
+    val readiness = remember(areas, cards) { areas.associate { it.id to module.repository.readiness(it.id) } }
+    val reviewsToday = remember(cards) {
+        val log = module.reviewLog
+        com.poketrek.moneo.data.ReviewLog.summarize(
+            log.since(com.poketrek.moneo.data.ReviewLog.startOfDayMs(System.currentTimeMillis())),
+        )
+    }
+
     LazyVerticalGrid(
         columns = GridCells.Adaptive(minSize = 160.dp),
         modifier = modifier.padding(12.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp),
     ) {
+        item(span = { androidx.compose.foundation.lazy.grid.GridItemSpan(maxLineSpan) }) {
+            TodayStrip(today = today?.collectAsState()?.value, reviews = reviewsToday)
+        }
         items(areas, key = { it.id }) { area ->
             val total = module.repository.vocabForArea(area.id).size
             val due = module.repository.dueCountForArea(area.id)
@@ -177,9 +199,49 @@ private fun AreaPicker(
                 ordinal = area.ordinal,
                 total = total,
                 due = due,
+                readiness = readiness[area.id] ?: 0f,
+                // The gate's bar for this area, shown only while the gate is on.
+                thresholdPct = if (gateOn) {
+                    com.poketrek.moneo.data.GateThreshold.pctFor(module.lemmaCounts.storyIndex(area.id), finalPct)
+                } else null,
+                visited = romKey != null && "$romKey/${area.id}" in visited,
                 onClick = { onPickArea(area.id) },
             )
         }
+    }
+}
+
+/** Today at a glance: real steps, tiles spent in game, cards graded. */
+@Composable
+private fun TodayStrip(
+    today: com.poketrek.step.DailyTally?,
+    reviews: com.poketrek.moneo.data.ReviewLog.Summary,
+) {
+    val day = today?.on(java.time.LocalDate.now().toEpochDay())
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(Color(0xFF0F172A), RoundedCornerShape(10.dp))
+            .padding(horizontal = 12.dp, vertical = 8.dp),
+        horizontalArrangement = Arrangement.spacedBy(16.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Text("Today", color = Color(0xFF9CA3AF), fontSize = 11.sp, fontWeight = FontWeight.Bold)
+        if (day != null) {
+            TodayStat("🚶", "%,d".format(day.steps), "steps")
+            TodayStat("👣", "%,d".format(day.tilesSpent), "tiles")
+        }
+        TodayStat("📚", "${reviews.reviews}", "reviews")
+        TodayStat("✨", "${reviews.newWords}", "new words")
+    }
+}
+
+@Composable
+private fun TodayStat(icon: String, value: String, label: String) {
+    Row(horizontalArrangement = Arrangement.spacedBy(4.dp), verticalAlignment = Alignment.CenterVertically) {
+        Text(icon, fontSize = 12.sp)
+        Text(value, color = Color.White, fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Bold, fontSize = 12.sp)
+        Text(label, color = Color(0xFF9CA3AF), fontSize = 11.sp)
     }
 }
 
@@ -190,6 +252,9 @@ private fun AreaCard(
     ordinal: Int,
     total: Int,
     due: Int,
+    readiness: Float,
+    thresholdPct: Int?,
+    visited: Boolean,
     onClick: () -> Unit,
 ) {
     Column(
@@ -241,5 +306,47 @@ private fun AreaCard(
                 )
             }
         }
+        if (total > 0) ReadinessBar(readiness, thresholdPct, visited)
+    }
+}
+
+/**
+ * Share of the area's text the player can read (what the area gate checks),
+ * with the gate's bar marked when [thresholdPct] is set.
+ */
+@Composable
+private fun ReadinessBar(readiness: Float, thresholdPct: Int?, visited: Boolean) {
+    val pct = Math.round(readiness * 100)
+    val open = visited || thresholdPct == null || pct >= thresholdPct
+    val fill = if (open) Color(0xFF10B981) else Color(0xFF60A5FA)
+    Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+        androidx.compose.foundation.Canvas(
+            modifier = Modifier.fillMaxWidth().height(6.dp),
+        ) {
+            val r = androidx.compose.ui.geometry.CornerRadius(size.height / 2)
+            drawRoundRect(Color(0xFF374151), cornerRadius = r)
+            drawRoundRect(
+                fill,
+                size = size.copy(width = size.width * readiness.coerceIn(0f, 1f)),
+                cornerRadius = r,
+            )
+            if (thresholdPct != null) {
+                val x = size.width * thresholdPct / 100f
+                drawLine(Color.White, androidx.compose.ui.geometry.Offset(x, 0f),
+                    androidx.compose.ui.geometry.Offset(x, size.height), strokeWidth = 2f)
+            }
+        }
+        Text(
+            buildString {
+                append("$pct% readable")
+                when {
+                    visited -> append(" · visited")
+                    thresholdPct != null && pct >= thresholdPct -> append(" · 🔓 open")
+                    thresholdPct != null -> append(" · needs $thresholdPct%")
+                }
+            },
+            color = Color(0xFF9CA3AF),
+            fontSize = 10.sp,
+        )
     }
 }

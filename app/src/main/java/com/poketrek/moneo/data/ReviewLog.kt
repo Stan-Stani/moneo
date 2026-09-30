@@ -39,8 +39,19 @@ class ReviewLog(private val file: File) {
         return file.bufferedReader().useLines { lines -> lines.firstNotNullOfOrNull { parse(it) }?.atMs }
     }
 
+    /** Grades in a span of the log: [reviews] in all, [newWords] of them first studies. */
+    data class Summary(val reviews: Int, val newWords: Int)
+
     companion object {
         private const val TAG = "ReviewLog"
+
+        fun summarize(entries: List<Entry>): Summary =
+            Summary(reviews = entries.size, newWords = entries.count { it.before == CardState.NEW })
+
+        /** Start of the local calendar day containing [nowMs]. */
+        fun startOfDayMs(nowMs: Long, zone: java.time.ZoneId = java.time.ZoneId.systemDefault()): Long =
+            java.time.Instant.ofEpochMilli(nowMs).atZone(zone).toLocalDate()
+                .atStartOfDay(zone).toInstant().toEpochMilli()
 
         fun format(e: Entry): String = JSONObject()
             .put("id", e.vocabId).put("r", e.rating.name).put("t", e.atMs).put("b", e.before.name)
