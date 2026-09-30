@@ -100,4 +100,119 @@ class KoreanRomPatcherTest {
         )
         assertEquals(0x1000000, KoreanRomPatcher.EXPECTED_SIZE_BYTES)
     }
+
+    // ---- produce(): download, cache, retry, verify ----
+    //
+    // A fake "xdelta" is the bytes the fake applier appends to the base;
+    // the injected verifier accepts exactly GOOD_ROM.
+
+    private val base = "JP-BASE".toByteArray()
+    private val goodPatch = "+GOOD".toByteArray()
+    private val stalePatch = "+STALE".toByteArray()
+    private val goodRom = "JP-BASE+GOOD".toByteArray()
+
+    private fun bundle(xdelta: ByteArray): ByteArray = ByteArrayOutputStream().also { bos ->
+        ZipOutputStream(bos).use { zos ->
+            zos.putNextEntry(ZipEntry("포켓몬스터 리프그린.xdelta"))
+            zos.write(xdelta)
+            zos.closeEntry()
+        }
+    }.toByteArray()
+
+    private val applier: (ByteArray, ByteArray) -> ByteArray? = { b, p -> b + p }
+    private val verifier: (ByteArray) -> Boolean = { it.contentEquals(goodRom) }
+
+    private class FakeHttp(private val responses: List<() -> ByteArray>) : (String) -> ByteArray {
+        var calls = 0
+        override fun invoke(url: String): ByteArray = responses[calls++].invoke()
+    }
+
+    private fun tempCache(): java.io.File = kotlin.io.path.createTempDirectory("patcher").toFile()
+
+    private fun cachedPatch(dir: java.io.File) = java.io.File(dir, "leafgreen_J-K.xdelta")
+
+    @Test fun freshDownloadPatchesCachesAndReportsPhases() {
+        val dir = tempCache()
+        val http = FakeHttp(listOf({ bundle(goodPatch) }))
+        val phases = ArrayList<KoreanRomPatcher.Phase>()
+        val result = KoreanRomPatcher.produce(base, dir, applier, phases::add, http, verifier)
+
+        assertArrayEquals(goodRom, result.getOrThrow())
+        assertEquals(1, http.calls)
+        assertArrayEquals(goodPatch, cachedPatch(dir).readBytes())
+        assertEquals(
+            listOf(
+                KoreanRomPatcher.Phase.DOWNLOADING_PATCH,
+                KoreanRomPatcher.Phase.EXTRACTING_PATCH,
+                KoreanRomPatcher.Phase.PATCHING,
+                KoreanRomPatcher.Phase.VERIFYING,
+            ),
+            phases,
+        )
+    }
+
+    @Test fun goodCachedPatchSkipsTheDownload() {
+        val dir = tempCache()
+        cachedPatch(dir).writeBytes(goodPatch)
+        val http = FakeHttp(emptyList())
+        val result = KoreanRomPatcher.produce(base, dir, applier, {}, http, verifier)
+
+        assertArrayEquals(goodRom, result.getOrThrow())
+        assertEquals(0, http.calls)
+    }
+
+    @Test fun staleCachedPatchIsReplacedByOneFreshDownload() {
+        val dir = tempCache()
+        cachedPatch(dir).writeBytes(stalePatch)
+        val http = FakeHttp(listOf({ bundle(goodPatch) }))
+        val result = KoreanRomPatcher.produce(base, dir, applier, {}, http, verifier)
+
+        assertArrayEquals(goodRom, result.getOrThrow())
+        assertEquals(1, http.calls)
+        assertArrayEquals(goodPatch, cachedPatch(dir).readBytes())
+    }
+
+    @Test fun truncatedDownloadFailsClearlyAndCachesNothing() {
+        val dir = tempCache()
+        // Incompressible, so the cut lands inside the entry's data (a cut in
+        // the central directory alone still streams the whole entry fine).
+        val full = bundle(ByteArray(64 * 1024).also { java.util.Random(1).nextBytes(it) })
+        val http = FakeHttp(listOf({ full.copyOf(full.size / 2) }))
+        val result = KoreanRomPatcher.produce(base, dir, applier, {}, http, verifier)
+
+        val message = result.exceptionOrNull()?.message.orEmpty()
+        assertTrue("got $result", message.contains("incomplete or damaged"))
+        assertFalse(cachedPatch(dir).exists())
+    }
+
+    @Test fun networkFailureSurfacesAndCachesNothing() {
+        val dir = tempCache()
+        val http = FakeHttp(listOf({ throw java.io.IOException("HTTP 503 fetching patch bundle") }))
+        val result = KoreanRomPatcher.produce(base, dir, applier, {}, http, verifier)
+
+        assertEquals("HTTP 503 fetching patch bundle", result.exceptionOrNull()?.message)
+        assertFalse(cachedPatch(dir).exists())
+    }
+
+    @Test fun wrongBaseFailsAfterOneDownloadWithAHint() {
+        val dir = tempCache()
+        val http = FakeHttp(listOf({ bundle(goodPatch) }, { bundle(goodPatch) }))
+        val result = KoreanRomPatcher.produce("US-BASE".toByteArray(), dir, applier, {}, http, verifier)
+
+        val message = result.exceptionOrNull()?.message.orEmpty()
+        assertTrue(message, message.contains("Japanese LeafGreen 1.0"))
+        // A just-downloaded patch isn't stale; don't fetch it again.
+        assertEquals(1, http.calls)
+    }
+
+    @Test fun undecodablePatchReportsDecodeFailure() {
+        val dir = tempCache()
+        cachedPatch(dir).writeBytes(goodPatch)
+        val http = FakeHttp(listOf({ bundle(goodPatch) }))
+        val result = KoreanRomPatcher.produce(base, dir, { _, _ -> null }, {}, http, verifier)
+
+        val message = result.exceptionOrNull()?.message.orEmpty()
+        assertTrue(message, message.startsWith("xdelta decode failed"))
+        assertEquals(1, http.calls)
+    }
 }

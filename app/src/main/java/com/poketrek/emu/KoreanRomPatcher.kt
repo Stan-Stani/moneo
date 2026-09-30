@@ -118,8 +118,9 @@ object KoreanRomPatcher {
      * Network and native work — call from an IO context. [applyXdelta] is
      * injected so this is unit-testable and so the native singleton stays
      * the activity's concern. The cached patch lives at
-     * `cacheDir/leafgreen_J-K.xdelta`; a bad cache is deleted and the
-     * download retried once.
+     * `cacheDir/leafgreen_J-K.xdelta`; a cached patch that doesn't produce
+     * the expected ROM is deleted and the download retried once. Nothing is
+     * cached from a download that doesn't unzip.
      */
     fun produce(
         baseBytes: ByteArray,
@@ -127,26 +128,22 @@ object KoreanRomPatcher {
         applyXdelta: (ByteArray, ByteArray) -> ByteArray?,
         onPhase: (Phase) -> Unit = {},
         httpGet: (String) -> ByteArray = ::httpGetFollowingRedirects,
+        /** The patched-ROM check; injectable so tests needn't build a real 16 MiB ROM. */
+        isExpected: (ByteArray) -> Boolean = ::isExpectedKoreanRom,
     ): Result<ByteArray> = runCatching {
         val cached = File(cacheDir, CACHED_PATCH_NAME)
 
-        fun fetchPatchBytes(): ByteArray {
-            if (cached.exists() && cached.length() > 0) {
-                return runCatching { cached.readBytes() }.getOrElse {
-                    cached.delete(); downloadAndCachePatch(cached, onPhase, httpGet)
-                }
-            }
-            return downloadAndCachePatch(cached, onPhase, httpGet)
-        }
-
-        var patch = fetchPatchBytes()
+        val cachedPatch = cached.takeIf { it.exists() && it.length() > 0 }
+            ?.let { runCatching { it.readBytes() }.getOrNull() }
+        var patch = cachedPatch ?: downloadAndCachePatch(cached, onPhase, httpGet)
         onPhase(Phase.PATCHING)
         var patched = applyXdelta(baseBytes, patch)
 
         // A stale/corrupt cached patch is the likeliest first-failure cause;
-        // nuke it and pull a fresh copy once before giving up.
-        if (patched == null || !isExpectedKoreanRom(patched)) {
-            Log.w(TAG, "First patch attempt failed; refetching patch bundle")
+        // nuke it and pull a fresh copy once before giving up. A patch we
+        // just downloaded is as fresh as it gets, so the base is to blame.
+        if ((patched == null || !isExpected(patched)) && cachedPatch != null) {
+            Log.w(TAG, "Cached patch failed; refetching patch bundle")
             cached.delete()
             patch = downloadAndCachePatch(cached, onPhase, httpGet)
             onPhase(Phase.PATCHING)
@@ -157,7 +154,7 @@ object KoreanRomPatcher {
         requireNotNull(patched) {
             "xdelta decode failed — is this a Japanese LeafGreen 1.0 ROM?"
         }
-        require(isExpectedKoreanRom(patched)) {
+        require(isExpected(patched)) {
             val crc = CRC32().apply { update(patched) }.value
             "Patched ROM mismatch (got ${RomIdentity.crc32Hex(crc)}, " +
                 "size ${patched.size}). The base must be Japanese LeafGreen 1.0."
@@ -173,7 +170,13 @@ object KoreanRomPatcher {
         onPhase(Phase.DOWNLOADING_PATCH)
         val zip = httpGet(PATCH_BUNDLE_URL)
         onPhase(Phase.EXTRACTING_PATCH)
-        val xdelta = extractLeafgreenXdelta(zip)
+        val xdelta = try {
+            extractLeafgreenXdelta(zip)
+        } catch (e: Exception) {
+            throw java.io.IOException(
+                "The patch download was incomplete or damaged (${zip.size} bytes: ${e.message}). Try again.", e,
+            )
+        }
         runCatching {
             cached.parentFile?.mkdirs()
             cached.writeBytes(xdelta)
