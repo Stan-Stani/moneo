@@ -31,7 +31,7 @@ You don't need to build anything or know how to code to play.
 
 **Play:**
 
-1. In the app, go to **Settings → Add ROM** and pick your `.gba` file. Moneo identifies the ROM and turns on the matching features.
+1. In the app, go to **Settings → Add ROM** and pick your `.gba` file. Moneo identifies the ROM and turns on the matching features. For Korean, you can instead pick a Japanese LeafGreen 1.0 ROM under **Settings → Set up Korean ROM…** and the app patches it for you ([details](#in-app-setup-recommended)).
 2. Play LeafGreen normally with the on-screen D-pad.
 3. Every tile you walk in the overworld spends from a **movement budget**. When it runs out, the D-pad locks until you **walk in the real world** — your phone's step counter refills the budget.
 4. The Korean words you'd be meeting at that point in the story queue up as a spaced-repetition deck. Review them, then keep playing.
@@ -132,11 +132,24 @@ ROM files are never committed to this repository. `*.gba` is in `.gitignore`. Th
 
 Moneo is built around the **2024 Korean fan-translation** of LeafGreen (CRC32 `0x4A38A8CB`). That ROM is produced by applying an xdelta patch to a Japanese FRLG base — **not** the English one. The fan-translation team built on the Japanese binary because the JP RE community had already done the tile/font work; the filename `leafgreen_J-K_2024.gba` encodes this: **J**apanese base, **K**orean-patched.
 
-The patch and the JP base ROM are both **third-party works**: we don't ship either. You supply your own legally-obtained JP LeafGreen dump, then run the included patcher locally.
+The patch and the JP base ROM are both **third-party works**: we don't ship either. You supply your own legally-obtained JP LeafGreen dump; the app (or a desktop script) applies the patch locally.
 
-### Quick setup
+### In-app setup (recommended)
 
-1. Acquire a Japanese FRLG 1.0 ROM yourself (MD5 must match `138a71a5be83f3f3d7af3d31916a5fc7` — the patcher will warn you if it doesn't). Moneo does not distribute it.
+The app can build the Korean ROM on the phone itself — no computer needed.
+
+1. Acquire a Japanese LeafGreen 1.0 ROM yourself. Moneo does not distribute it.
+2. In the app, open **Settings → Korean ROM (2024 patch) → Set up Korean ROM…** and pick the Japanese `.gba`.
+3. The app downloads the authors' patch bundle (the same Google Drive link as below), extracts the LeafGreen `.xdelta`, applies it on-device with a bundled xdelta3 decoder, and checks the result is 16 MiB with CRC32 `0x4A38A8CB`. Progress shows as *Downloading patch… → Extracting patch… → Patching ROM… → Verifying…*.
+4. On success the Korean ROM is cached and loaded immediately, and Korean flashcard features turn on. If verification fails, the base probably isn't Japanese LeafGreen 1.0 — the error message shows the CRC it got.
+
+Your base ROM never leaves the device; the only network request is the patch download (cached after the first run, and re-fetched once automatically if a cached copy fails to apply).
+
+### Desktop setup (alternative)
+
+If you'd rather patch on a computer and copy the result over:
+
+1. Check your Japanese FRLG 1.0 ROM's MD5 matches `138a71a5be83f3f3d7af3d31916a5fc7` (the patcher will warn you if it doesn't).
 2. Fetch the patch zip from the team's [hangulogame.com page](https://www.hangulogame.com/patch/gba/844/) (or [mirror](https://drive.google.com/uc?export=download&id=1PtJ7YplZBdN8Yvb3cw-w9hrt-sT2trPt)) and extract `leafgreen_J-K.xdelta` into `tools/moneo/rom_swap/`. See [`tools/moneo/rom_swap/README.md`](tools/moneo/rom_swap/README.md#whats-here) for a one-liner that pulls the zip and renames the three GBA-series patches.
 3. Apply:
    ```bash
