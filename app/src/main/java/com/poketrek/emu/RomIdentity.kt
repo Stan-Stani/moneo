@@ -34,6 +34,8 @@ enum class RomVariant(
         gatingSupported = false,
         areaGateSupported = true,
     ),
+    /** Japanese LeafGreen 1.0: the base the 2024 Korean patch applies to. */
+    LEAFGREEN_JP_10("LeafGreen (Japan 1.0)", gatingSupported = false),
     UNKNOWN("Unknown ROM", gatingSupported = false),
 }
 
@@ -56,6 +58,7 @@ data class RomIdentity(val crc32: Long, val variant: RomVariant) {
             0xDAFFECECL to RomVariant.LEAFGREEN_US_REV1,
             0x398C4817L to RomVariant.LEAFGREEN_KOREAN,
             0x4A38A8CBL to RomVariant.LEAFGREEN_KR_2024,
+            0x0A48556BL to RomVariant.LEAFGREEN_JP_10,
         )
 
         fun of(bytes: ByteArray): RomIdentity {

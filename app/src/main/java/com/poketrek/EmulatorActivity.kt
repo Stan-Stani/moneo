@@ -61,6 +61,13 @@ class EmulatorActivity : ComponentActivity() {
     private val koreanSetupState: MutableState<KoreanRomPatcher.State> =
         mutableStateOf(KoreanRomPatcher.State.Idle)
 
+    // Feedback for "Choose ROM" when the file can't be read or loaded.
+    private val romPickError: MutableState<String?> = mutableStateOf(null)
+
+    // A picked Japanese 1.0 base, held while the user decides between
+    // building the Korean ROM from it and playing it as-is.
+    private val pendingJpBase: MutableState<Pair<ByteArray, String?>?> = mutableStateOf(null)
+
     // Orientation lock + manual flip. The activity is locked (no sensor
     // follow) but we listen to OrientationEventListener purely to detect when
     // the user is *trying* to rotate between landscape and portrait, and
@@ -96,14 +103,22 @@ class EmulatorActivity : ComponentActivity() {
         } catch (e: SecurityException) {
             Log.w(TAG, "Could not persist URI permission", e)
         }
-        val bytes = contentResolver.openInputStream(uri)?.use { it.readBytes() }
-        if (bytes != null && runner.loadRom(bytes)) {
-            val identity = runner.romIdentity.value ?: return@registerForActivityResult
-            val label = displayNameFor(uri)
-                ?: identity.variant.displayName.takeIf { it.isNotBlank() }
-                ?: "ROM ${identity.crc32Hex}"
-            romCache.put(bytes, identity.crc32, label)
+        val bytes = runCatching {
+            contentResolver.openInputStream(uri)?.use { it.readBytes() }
+        }.getOrNull()
+        if (bytes == null) {
+            romPickError.value = "Couldn't read the selected file."
+            return@registerForActivityResult
         }
+        romPickError.value = null
+        // The Japanese 1.0 dump is the Korean patch's base. Someone who picks
+        // it almost certainly wants the Korean game, so ask before loading it.
+        if (com.poketrek.emu.RomIdentity.of(bytes).variant ==
+            com.poketrek.emu.RomVariant.LEAFGREEN_JP_10) {
+            pendingJpBase.value = bytes to displayNameFor(uri)
+            return@registerForActivityResult
+        }
+        loadPickedRom(bytes, displayNameFor(uri))
     }
 
     // Step 1 of Korean setup: user picks their own Japanese LeafGreen 1.0
@@ -122,6 +137,22 @@ class EmulatorActivity : ComponentActivity() {
                 KoreanRomPatcher.State.Error("Couldn't read the selected file.")
             return@registerForActivityResult
         }
+        buildKoreanRom(baseBytes)
+    }
+
+    private fun loadPickedRom(bytes: ByteArray, displayName: String?) {
+        if (!runner.loadRom(bytes)) {
+            romPickError.value = "That file didn't load as a Game Boy Advance ROM."
+            return
+        }
+        val identity = runner.romIdentity.value ?: return
+        val label = displayName
+            ?: identity.variant.displayName.takeIf { it.isNotBlank() }
+            ?: "ROM ${identity.crc32Hex}"
+        romCache.put(bytes, identity.crc32, label)
+    }
+
+    private fun buildKoreanRom(baseBytes: ByteArray) {
         koreanSetupState.value =
             KoreanRomPatcher.State.Running(KoreanRomPatcher.Phase.DOWNLOADING_PATCH)
         lifecycleScope.launch {
@@ -237,6 +268,16 @@ class EmulatorActivity : ComponentActivity() {
                             pickJpBaseForKorean.launch(arrayOf("application/octet-stream", "*/*"))
                         },
                         koreanSetupState = { koreanSetupState.value },
+                        romPickError = romPickError.value,
+                        pendingJpBase = pendingJpBase.value != null,
+                        onBuildKoreanFromPicked = {
+                            pendingJpBase.value?.let { buildKoreanRom(it.first) }
+                            pendingJpBase.value = null
+                        },
+                        onPlayPickedAsIs = {
+                            pendingJpBase.value?.let { loadPickedRom(it.first, it.second) }
+                            pendingJpBase.value = null
+                        },
                         onDebugAddSteps = budget::debugAddSteps,
                         getSaveSlots = saveStateStore::slots,
                         onSaveSlot = { slot ->
@@ -369,6 +410,10 @@ private fun AppRoot(
     onPickRom: () -> Unit,
     onSetupKoreanRom: () -> Unit,
     koreanSetupState: () -> KoreanRomPatcher.State,
+    romPickError: String?,
+    pendingJpBase: Boolean,
+    onBuildKoreanFromPicked: () -> Unit,
+    onPlayPickedAsIs: () -> Unit,
     onDebugAddSteps: (Int) -> Unit,
     getSaveSlots: () -> List<com.poketrek.emu.SaveStateStore.Slot>,
     onSaveSlot: (Int) -> Boolean,
@@ -384,16 +429,12 @@ private fun AppRoot(
     val romLoaded by runner.romLoaded
     Box(modifier = Modifier.fillMaxSize()) {
         if (!romLoaded) {
-            Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                Column(
-                    verticalArrangement = Arrangement.spacedBy(16.dp),
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                ) {
-                    Text("Moneo", style = MaterialTheme.typography.headlineMedium)
-                    Text("Pick a LeafGreen ROM (.gba) to begin")
-                    Button(onClick = onPickRom) { Text("Choose ROM") }
-                }
-            }
+            com.poketrek.ui.OnboardingScreen(
+                koreanSetupState = koreanSetupState(),
+                romPickError = romPickError,
+                onSetupKoreanRom = onSetupKoreanRom,
+                onPickRom = onPickRom,
+            )
         } else {
             com.poketrek.ui.EmulatorScreen(
                 runner = runner,
@@ -412,6 +453,12 @@ private fun AppRoot(
                 onLoadCachedRom = onLoadCachedRom,
                 onRemoveCachedRom = onRemoveCachedRom,
                 modifier = Modifier.fillMaxSize().padding(8.dp),
+            )
+        }
+        if (pendingJpBase) {
+            com.poketrek.ui.JapaneseBaseDialog(
+                onBuildKorean = onBuildKoreanFromPicked,
+                onPlayAsIs = onPlayPickedAsIs,
             )
         }
         if (showFlipPrompt) {

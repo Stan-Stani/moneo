@@ -120,7 +120,7 @@ fun suggestDirectionFor(variant: RomVariant, language: String): FlashcardDirecti
             if (isKoreanLocale) FlashcardDirection.EN_TO_KO else null
         RomVariant.LEAFGREEN_KOREAN, RomVariant.LEAFGREEN_KR_2024 ->
             if (isEnglishLocale) FlashcardDirection.KO_TO_EN else null
-        RomVariant.UNKNOWN -> null
+        RomVariant.LEAFGREEN_JP_10, RomVariant.UNKNOWN -> null
     }
 }
 

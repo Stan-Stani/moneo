@@ -57,4 +57,11 @@ class RomIdentityTest {
         assertFalse(RomVariant.LEAFGREEN_KOREAN.gatingSupported)
         assertFalse(RomVariant.UNKNOWN.gatingSupported)
     }
+
+    @Test fun `Japanese LeafGreen 1_0 is recognised as the Korean patch base`() {
+        // CRC32 of the clean dump whose MD5 is 138a71a5be83f3f3d7af3d31916a5fc7.
+        assertEquals(RomVariant.LEAFGREEN_JP_10, RomIdentity.variantFor(0x0A48556BL))
+        assertFalse(RomVariant.LEAFGREEN_JP_10.gatingSupported)
+        assertFalse(RomVariant.LEAFGREEN_JP_10.areaGateSupported)
+    }
 }

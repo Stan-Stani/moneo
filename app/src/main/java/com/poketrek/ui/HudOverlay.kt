@@ -1094,14 +1094,7 @@ private fun KoreanRomSetupSection(
         )
         when {
             running != null -> {
-                val label = when (running.phase) {
-                    com.poketrek.emu.KoreanRomPatcher.Phase.DOWNLOADING_PATCH ->
-                        "Downloading patch…"
-                    com.poketrek.emu.KoreanRomPatcher.Phase.EXTRACTING_PATCH ->
-                        "Extracting patch…"
-                    com.poketrek.emu.KoreanRomPatcher.Phase.PATCHING -> "Patching ROM…"
-                    com.poketrek.emu.KoreanRomPatcher.Phase.VERIFYING -> "Verifying…"
-                }
+                val label = koreanSetupPhaseLabel(running.phase)
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
