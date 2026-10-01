@@ -50,7 +50,7 @@ data class AskEndpoint(
             val suffixes = when (provider) {
                 // anthropic-java appends /v1/messages.
                 AskProvider.ANTHROPIC -> listOf("/v1/messages", "/messages", "/v1")
-                // openai-java appends /chat/completions to a …/v1 base.
+                // OpenAiAsker appends /chat/completions to a …/v1 base.
                 AskProvider.OPENAI -> listOf("/chat/completions", "/responses")
             }
             for (s in suffixes) {

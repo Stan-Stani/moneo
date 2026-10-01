@@ -94,10 +94,12 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.anthropic.java)
-    implementation(libs.openai.java)
+    // Same version anthropic-java brings in; OpenAiAsker calls it directly.
+    implementation(libs.okhttp)
     debugImplementation(libs.androidx.compose.ui.tooling)
 
     testImplementation(libs.junit4)
+    testImplementation(libs.okhttp.mockwebserver)
     // Real org.json on the JVM unit-test classpath so JSON validators
     // (e.g. SentenceCorpusTest) can run without an Android device.
     testImplementation("org.json:json:20240303")
