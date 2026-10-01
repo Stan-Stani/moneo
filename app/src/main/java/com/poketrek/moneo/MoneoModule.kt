@@ -54,23 +54,37 @@ class MoneoModule private constructor(context: Context) {
     )
 
     /**
+     * The current activity's emulator. MoneoModule outlives the activity, so
+     * each bind repoints these instead of keeping the first runner: a
+     * recreated activity (e.g. after Back, with the process still alive)
+     * would otherwise leave the reading helper polling a stopped emulator.
+     */
+    @Volatile private var bus: RamCapture.BusReader? = null
+    @Volatile private var romSupported: () -> Boolean = { false }
+    @Volatile private var currentLocation: () -> String? = { null }
+    private val liveBus = RamCapture.BusReader { addr, length -> bus?.readBytes(addr, length) }
+
+    /**
      * Start watching the message box; [isSupported] says whether the loaded
      * ROM is the 2024 KR patch, [location] names the current map for the
-     * unmatched-dialogue log.
+     * unmatched-dialogue log. Call again from a new activity to rebind.
      */
     fun bindDialogReader(
         reader: RamCapture.BusReader,
         isSupported: () -> Boolean,
         location: () -> String? = { null },
     ) {
+        bus = reader
+        romSupported = isSupported
+        currentLocation = location
         if (dialogReader != null) return
         val r = runCatching {
             com.poketrek.moneo.reading.DialogReader(
-                reader,
+                liveBus,
                 com.poketrek.moneo.reading.KoText2024.loadFromAssets(appContext),
                 com.poketrek.moneo.reading.DialogIndex.loadFromAssets(appContext),
-                isSupported,
-                onUnmatched = { unmatchedDialog.record(it, location()) },
+                isSupported = { romSupported() },
+                onUnmatched = { unmatchedDialog.record(it, currentLocation()) },
                 names = com.poketrek.moneo.reading.NameFinder(
                     repository.vocab.value.values
                         .filter { it.primarySourceType in com.poketrek.moneo.reading.NameFinder.NAME_TYPES }
@@ -351,10 +365,11 @@ class MoneoModule private constructor(context: Context) {
         else -> type
     }
 
-    /** Wire up the optional runtime EWRAM capture once the runner exists. */
+    /** Wire up the optional runtime EWRAM capture to the current runner (see [bus]). */
     fun bindCapture(reader: RamCapture.BusReader) {
+        bus = reader
         if (ramCapture == null) {
-            ramCapture = RamCapture(reader, captureDir)
+            ramCapture = RamCapture(liveBus, captureDir)
         }
     }
 
