@@ -153,6 +153,17 @@ class EmulatorActivity : ComponentActivity() {
     }
 
     private fun buildKoreanRom(baseBytes: ByteArray) {
+        val picked = com.poketrek.emu.RomIdentity.of(baseBytes)
+        if (picked.variant == com.poketrek.emu.RomVariant.LEAFGREEN_KR_2024) {
+            // Already the Korean ROM: nothing to patch.
+            loadPickedRom(baseBytes, KoreanRomPatcher.ROM_LABEL)
+            koreanSetupState.value = KoreanRomPatcher.State.Success(picked.crc32)
+            return
+        }
+        KoreanRomPatcher.baseProblem(picked.variant)?.let {
+            koreanSetupState.value = KoreanRomPatcher.State.Error(it)
+            return
+        }
         koreanSetupState.value =
             KoreanRomPatcher.State.Running(KoreanRomPatcher.Phase.DOWNLOADING_PATCH)
         lifecycleScope.launch {

@@ -105,6 +105,17 @@ object KoreanRomPatcher {
         error("Patch bundle entry '$target' vanished on second read")
     }
 
+    /**
+     * Why [variant] can't be the patch base, or null when it may be: the
+     * Japanese 1.0 dump, or an unrecognised file we let the patch judge.
+     * Lets a known wrong ROM fail before the patch is downloaded. Pure.
+     */
+    fun baseProblem(variant: RomVariant): String? = when (variant) {
+        RomVariant.LEAFGREEN_JP_10, RomVariant.UNKNOWN -> null
+        RomVariant.LEAFGREEN_KR_2024 -> null // already Korean; the caller just loads it
+        else -> "That's ${variant.displayName}. The Korean patch needs Japanese LeafGreen 1.0."
+    }
+
     /** Size + CRC32 gate for a candidate patched ROM. Pure. */
     fun isExpectedKoreanRom(bytes: ByteArray): Boolean =
         bytes.size == EXPECTED_SIZE_BYTES &&
@@ -168,7 +179,13 @@ object KoreanRomPatcher {
         httpGet: (String) -> ByteArray,
     ): ByteArray {
         onPhase(Phase.DOWNLOADING_PATCH)
-        val zip = httpGet(PATCH_BUNDLE_URL)
+        val zip = try {
+            httpGet(PATCH_BUNDLE_URL)
+        } catch (e: java.io.IOException) {
+            throw java.io.IOException(
+                "Couldn't download the patch (${e.message}). Check your internet connection and try again.", e,
+            )
+        }
         onPhase(Phase.EXTRACTING_PATCH)
         val xdelta = try {
             extractLeafgreenXdelta(zip)
@@ -205,14 +222,14 @@ object KoreanRomPatcher {
                     in 200..299 -> return conn.inputStream.use { it.readBytes() }
                     in 300..399 -> {
                         url = conn.getHeaderField("Location")
-                            ?: error("Redirect ($code) without Location")
+                            ?: throw java.io.IOException("Redirect ($code) without Location")
                     }
-                    else -> error("HTTP $code fetching patch bundle")
+                    else -> throw java.io.IOException("HTTP $code fetching patch bundle")
                 }
             } finally {
                 conn.disconnect()
             }
         }
-        error("Too many redirects fetching patch bundle")
+        throw java.io.IOException("Too many redirects fetching patch bundle")
     }
 }

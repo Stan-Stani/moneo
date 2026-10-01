@@ -62,9 +62,9 @@ fun OnboardingScreen(
             modifier = Modifier
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
-                .padding(horizontal = 24.dp, vertical = 20.dp),
+                .padding(horizontal = 24.dp, vertical = 12.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(14.dp),
+            verticalArrangement = Arrangement.spacedBy(10.dp),
         ) {
             Text("Moneo · 몬어", style = MaterialTheme.typography.headlineMedium)
             Text(
@@ -187,8 +187,9 @@ private fun KoreanSetupStatus(
             Text(koreanSetupPhaseLabel(state.phase), fontSize = 13.sp)
         }
         is KoreanRomPatcher.State.Error -> {
-            Text("Setup failed: ${state.message}", color = Color(0xFFB91C1C), fontSize = 12.sp)
+            // Button first, so it stays in view on a short landscape screen.
             Button(onClick = onSetup) { Text("Try again") }
+            Text("Setup failed: ${state.message}", color = Color(0xFFB91C1C), fontSize = 12.sp)
         }
         // Success loads the ROM, which replaces this screen.
         else -> Button(onClick = onSetup) { Text("Pick Japanese ROM…") }

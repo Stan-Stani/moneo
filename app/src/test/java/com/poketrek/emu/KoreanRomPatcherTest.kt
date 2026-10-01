@@ -190,7 +190,8 @@ class KoreanRomPatcherTest {
         val http = FakeHttp(listOf({ throw java.io.IOException("HTTP 503 fetching patch bundle") }))
         val result = KoreanRomPatcher.produce(base, dir, applier, {}, http, verifier)
 
-        assertEquals("HTTP 503 fetching patch bundle", result.exceptionOrNull()?.message)
+        val message = result.exceptionOrNull()?.message.orEmpty()
+        assertTrue(message, message.startsWith("Couldn't download the patch (HTTP 503"))
         assertFalse(cachedPatch(dir).exists())
     }
 
@@ -214,5 +215,13 @@ class KoreanRomPatcherTest {
         val message = result.exceptionOrNull()?.message.orEmpty()
         assertTrue(message, message.startsWith("xdelta decode failed"))
         assertEquals(1, http.calls)
+    }
+
+    @Test fun knownNonJapaneseBasesAreRejectedBeforeDownloading() {
+        assertNull(KoreanRomPatcher.baseProblem(RomVariant.LEAFGREEN_JP_10))
+        assertNull(KoreanRomPatcher.baseProblem(RomVariant.UNKNOWN))
+        assertNull(KoreanRomPatcher.baseProblem(RomVariant.LEAFGREEN_KR_2024))
+        val us = KoreanRomPatcher.baseProblem(RomVariant.LEAFGREEN_US_REV1).orEmpty()
+        assertTrue(us, us.contains("USA") && us.contains("Japanese LeafGreen 1.0"))
     }
 }
