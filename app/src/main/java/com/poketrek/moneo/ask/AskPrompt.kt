@@ -17,8 +17,13 @@ object AskPrompt {
         English speaker learning Korean.
 
         Each request is a JSON object describing the game screen:
-        - message: the text of the open message box, decoded from game memory (exact;
-          null when no box is open, e.g. menus or the overworld)
+        - message: the line the question is about, decoded from game memory (exact):
+          the open message box, or, when messageOnScreen is false, the last line shown,
+          messageSecondsAgo seconds ago, which has closed since. null when there's
+          neither (e.g. menus, or nothing said lately)
+        - recentMessages: the lines shown before message, oldest first, each with
+          secondsAgo. Use them when the question is about something said earlier or
+          about the conversation as a whole
         - words: dictionary words in that message, with an English gloss and whether
           the player already knows each one
         - knownWords: every Korean word the player has learned in their flashcards

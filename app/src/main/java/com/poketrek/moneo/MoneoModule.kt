@@ -85,6 +85,7 @@ class MoneoModule private constructor(context: Context) {
                 com.poketrek.moneo.reading.DialogIndex.loadFromAssets(appContext),
                 isSupported = { romSupported() },
                 onUnmatched = { unmatchedDialog.record(it, currentLocation()) },
+                onShown = recentLines::add,
                 names = com.poketrek.moneo.reading.NameFinder(
                     repository.vocab.value.values
                         .filter { it.primarySourceType in com.poketrek.moneo.reading.NameFinder.NAME_TYPES }
@@ -144,16 +145,21 @@ class MoneoModule private constructor(context: Context) {
     /** Questions to an LLM watching a shared folder (tools/ask_bridge). */
     val ask = com.poketrek.moneo.ask.AskBridge(context, prefs)
 
+    /** Lines the reading helper saw lately, so 💬 can ask about closed ones. */
+    val recentLines = com.poketrek.moneo.reading.RecentLines()
+
     /**
-     * Asks [question] about the screen: the open message box's text and
-     * words (when the reading helper sees one), the words the player knows,
-     * and [screen] (the framebuffer).
+     * Asks [question] about the screen: the open message box's text and words
+     * (or, with no box open, the last line the reading helper saw), the lines
+     * before it, the words the player knows, and [screen] (the framebuffer).
      */
     fun askAboutScreen(question: String, screen: android.graphics.Bitmap?, map: Pair<Int, Int>?, rom: String?) {
         val location = map?.let { (bank, id) ->
             "map $bank:$id" + (mapAreas?.areaIdFor(bank, id)?.let { " ($it)" } ?: "")
         }
-        val shown = dialogReader?.current?.value
+        val now = System.currentTimeMillis()
+        val target = recentLines.target(dialogReader?.current?.value)
+        val shown = target.line
         val cards = repository.cards.value
         ask.ask(question, shown?.message, screen) { id, followUp ->
             val vocab = repository.vocab.value
@@ -171,7 +177,12 @@ class MoneoModule private constructor(context: Context) {
                 rom = rom,
                 followUp = followUp,
                 hasScreenshot = screen != null,
-                createdMs = System.currentTimeMillis(),
+                createdMs = now,
+                messageOnScreen = target.onScreen,
+                messageSecondsAgo = target.lineAtMs?.let { (now - it) / 1000 },
+                recentMessages = target.before.map {
+                    com.poketrek.moneo.ask.AskRequest.Recent(it.shown.message, (now - it.atMs) / 1000)
+                },
             )
         }
     }

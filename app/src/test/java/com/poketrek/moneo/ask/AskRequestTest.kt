@@ -54,4 +54,22 @@ class AskRequestTest {
         assertTrue(a < b)
         assertTrue(Regex("""\d{8}-\d{6}-\d{3}""").matches(a))
     }
+
+    @Test fun jsonCarriesAClosedLineAndTheOnesBefore() {
+        val j = request("간판은 도움이 되지!", screenshot = true).copy(
+            messageOnScreen = false,
+            messageSecondsAgo = 20,
+            recentMessages = listOf(AskRequest.Recent("여기는 태초마을!", 45)),
+        ).toJson()
+        assertFalse(j.getBoolean("messageOnScreen"))
+        assertEquals(20, j.getInt("messageSecondsAgo"))
+        val r = j.getJSONArray("recentMessages").getJSONObject(0)
+        assertEquals("여기는 태초마을!", r.getString("message"))
+        assertEquals(45, r.getInt("secondsAgo"))
+        // Defaults: an open box with no history.
+        val open = request("간판은 도움이 되지!", screenshot = true).toJson()
+        assertTrue(open.getBoolean("messageOnScreen"))
+        assertTrue(open.isNull("messageSecondsAgo"))
+        assertEquals(0, open.getJSONArray("recentMessages").length())
+    }
 }

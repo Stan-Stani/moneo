@@ -9,9 +9,12 @@ import org.json.JSONObject
  * as `inbox/<id>.json` next to a screenshot `inbox/<id>.png`. The watcher
  * replies with `outbox/<id>.md`.
  *
- * [message] is the open message box's text as decoded from RAM (null when no
- * box is open; the screenshot is then all there is). [followUp] asks the
- * watcher to continue the previous conversation instead of starting fresh.
+ * [message] is the line the question is about, decoded from RAM: the open
+ * message box, or when none is open ([messageOnScreen] false) the last line
+ * shown, [messageSecondsAgo] ago. Null when there's neither; the screenshot
+ * is then all there is. [recentMessages] are the lines before it, oldest
+ * first. [followUp] asks the watcher to continue the previous conversation
+ * instead of starting fresh.
  */
 data class AskRequest(
     val id: String,
@@ -25,7 +28,13 @@ data class AskRequest(
     val followUp: Boolean,
     val hasScreenshot: Boolean,
     val createdMs: Long,
+    val messageOnScreen: Boolean = message != null,
+    val messageSecondsAgo: Long? = null,
+    val recentMessages: List<Recent> = emptyList(),
 ) {
+    /** An earlier line, [secondsAgo] before the question. */
+    data class Recent(val message: String, val secondsAgo: Long)
+
     fun toJson(): JSONObject = JSONObject()
         .put("version", 1)
         .put("id", id)
@@ -36,6 +45,11 @@ data class AskRequest(
         .put("rom", rom ?: JSONObject.NULL)
         .put("location", location ?: JSONObject.NULL)
         .put("message", message ?: JSONObject.NULL)
+        .put("messageOnScreen", messageOnScreen)
+        .put("messageSecondsAgo", messageSecondsAgo ?: JSONObject.NULL)
+        .put("recentMessages", JSONArray().apply {
+            for (r in recentMessages) put(JSONObject().put("message", r.message).put("secondsAgo", r.secondsAgo))
+        })
         .put("lineId", lineId ?: JSONObject.NULL)
         .put("words", JSONArray().apply {
             for (w in words) put(JSONObject().put("korean", w.korean).put("gloss", w.gloss).put("known", w.known))

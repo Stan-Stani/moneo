@@ -30,6 +30,8 @@ class DialogReader(
     /** Called once per newly shown message that no dialog line matched. */
     private val onUnmatched: ((String) -> Unit)? = null,
     private val names: NameFinder = NameFinder.EMPTY,
+    /** Called once per newly shown message (e.g. to keep [RecentLines]). */
+    private val onShown: ((OnScreen) -> Unit)? = null,
 ) {
     /**
      * [names]: Pokémon/move/ability names in the message, looked for when no
@@ -77,7 +79,9 @@ class DialogReader(
         val line = index.match(message)
         val found = if (line == null || line.template) names.find(message) else emptyList()
         Log.d(TAG, "0x${addr.toString(16)} line=${line?.id} names=$found ${message.replace('\n', ' ')}")
-        _current.value = OnScreen(message, line, found)
+        val shown = OnScreen(message, line, found)
+        _current.value = shown
+        onShown?.invoke(shown)
         if (line == null && found.isEmpty() && message.isNotBlank()) onUnmatched?.invoke(message)
     }
 

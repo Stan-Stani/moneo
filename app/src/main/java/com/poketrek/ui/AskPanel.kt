@@ -22,6 +22,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -32,6 +33,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.poketrek.moneo.MoneoModule
+import kotlinx.coroutines.delay
 
 /** Canned questions for the quick buttons, phrased for the watcher's prompt. */
 private const val ASK_SIMPLER = "이 대사를 더 쉬운 한국어로 설명해 줘."
@@ -70,6 +72,12 @@ fun AskPanel(
 ) {
     val exchanges by moneo.ask.exchanges.collectAsState()
     val onScreen = moneo.dialogReader?.current?.collectAsState()?.value
+    // With no box open, questions are about the last line seen (RecentLines.target).
+    val recent by moneo.recentLines.lines.collectAsState()
+    val now by produceState(System.currentTimeMillis()) {
+        while (true) { delay(5_000); value = System.currentTimeMillis() }
+    }
+    val target = remember(onScreen, recent, now) { moneo.recentLines.target(onScreen) }
     var draft by remember { mutableStateOf("") }
     val listState = rememberLazyListState()
     // Newest question at the top; a streaming answer grows down from there.
@@ -83,7 +91,11 @@ fun AskPanel(
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text(
-                onScreen?.message?.replace('\n', ' ') ?: "No message box open — the screenshot is sent",
+                when {
+                    target.onScreen -> target.line?.message.orEmpty()
+                    target.line != null -> "Last line (${ago(now - (target.lineAtMs ?: now))}): ${target.line.message}"
+                    else -> "No message box open — the screenshot is sent"
+                }.replace('\n', ' '),
                 color = Color(0xFF9CA3AF),
                 fontSize = 11.sp,
                 maxLines = 1,
@@ -174,6 +186,11 @@ private fun StudyWords(moneo: MoneoModule, words: List<String>) {
             )
         }
     }
+}
+
+private fun ago(ms: Long): String = when {
+    ms < 60_000 -> "${ms / 1000} s ago"
+    else -> "${ms / 60_000} min ago"
 }
 
 @Composable
