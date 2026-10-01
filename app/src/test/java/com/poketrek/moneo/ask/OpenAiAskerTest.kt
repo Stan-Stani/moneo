@@ -94,6 +94,15 @@ class OpenAiAskerTest {
         assertTrue(messageFor(MockResponse().setBody("not json")).contains("can't read"))
     }
 
+    @Test fun testSendsATinyRequestAndReturnsTheModel() {
+        server.enqueue(MockResponse().setBody("""{"model":"gpt-test-2026","choices":[{"message":{"content":"OK"}}]}"""))
+        assertEquals("gpt-test-2026", asker().test())
+        val body = JSONObject(server.takeRequest().body.readUtf8())
+        assertEquals(1, body.getJSONArray("messages").length())
+        server.enqueue(MockResponse().setResponseCode(401))
+        try { asker().test(); fail("no exception") } catch (e: AskException) { assertTrue(e.message!!.contains("rejected")) }
+    }
+
     @Test fun defaultUrlIsOpenAi() {
         assertEquals("https://api.openai.com/v1/chat/completions", OpenAiAsker.chatCompletionsUrl(null))
     }

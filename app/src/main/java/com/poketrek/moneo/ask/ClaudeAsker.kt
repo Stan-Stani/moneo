@@ -7,6 +7,7 @@ import com.anthropic.client.okhttp.AnthropicOkHttpClient
 import com.anthropic.core.JsonValue
 import com.anthropic.errors.AnthropicIoException
 import com.anthropic.errors.AnthropicServiceException
+import com.anthropic.errors.NotFoundException
 import com.anthropic.errors.RateLimitException
 import com.anthropic.errors.UnauthorizedException
 import com.anthropic.models.messages.Base64ImageSource
@@ -68,17 +69,7 @@ class ClaudeAsker(override val endpoint: AskEndpoint) : Asker {
             }
             .build()
 
-        val response = try {
-            client.messages().create(params)
-        } catch (e: UnauthorizedException) {
-            throw AskException("The API key was rejected. Check it in Settings → Ask an LLM.", e)
-        } catch (e: RateLimitException) {
-            throw AskException("Rate limited by the Claude API. Try again in a moment.", e)
-        } catch (e: AnthropicServiceException) {
-            throw AskException("Claude API error ${e.statusCode()}: ${e.message}", e)
-        } catch (e: AnthropicIoException) {
-            throw AskException("Couldn't reach the Claude API. Are you online?", e)
-        }
+        val response = mapErrors { client.messages().create(params) }
 
         if (response.stopReason().orElse(null) == StopReason.REFUSAL) {
             throw AskException("Claude declined to answer this one.")
@@ -94,7 +85,31 @@ class ClaudeAsker(override val endpoint: AskEndpoint) : Asker {
         return text
     }
 
+    override fun test(): String {
+        val params = MessageCreateParams.builder()
+            .model(endpoint.modelOrDefault)
+            .maxTokens(16L)
+            .addUserMessage("Reply with OK.")
+            .build()
+        return mapErrors { client.messages().create(params) }.model().asString()
+    }
+
     override fun reset() = history.clear()
+
+    /** Runs [call], turning API failures into [AskException]s fit for the panel. */
+    private inline fun <T> mapErrors(call: () -> T): T = try {
+        call()
+    } catch (e: UnauthorizedException) {
+        throw AskException("The API key was rejected. Check it in Settings → Ask an LLM.", e)
+    } catch (e: NotFoundException) {
+        throw AskException("Not found (404): check the base URL and model \"${endpoint.modelOrDefault}\".", e)
+    } catch (e: RateLimitException) {
+        throw AskException("Rate limited by the Claude API. Try again in a moment.", e)
+    } catch (e: AnthropicServiceException) {
+        throw AskException("Claude API error ${e.statusCode()}: ${e.message}", e)
+    } catch (e: AnthropicIoException) {
+        throw AskException("Couldn't reach ${endpoint.baseUrl ?: "the Claude API"}. Are you online?", e)
+    }
 
     private fun pngBlock(screen: Bitmap): ImageBlockParam {
         val png = Asker.pngBytes(screen)

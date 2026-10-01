@@ -37,20 +37,7 @@ class OpenAiAsker(
         val body = JSONObject()
             .put("model", endpoint.modelOrDefault)
             .put("messages", JSONArray().put(systemMessage).apply { messages.forEach { put(it) } })
-        val call = Request.Builder()
-            .url(chatCompletionsUrl(endpoint.baseUrl))
-            .header("Authorization", "Bearer ${endpoint.apiKey}")
-            // After Authorization, so a gateway can swap in its own auth header.
-            .apply { endpoint.headers.forEach { (name, value) -> header(name, value) } }
-            .post(body.toString().toRequestBody(JSON))
-            .build()
-
-        val (code, text) = try {
-            http.newCall(call).execute().use { it.code to it.body?.string().orEmpty() }
-        } catch (e: IOException) {
-            throw AskException("Couldn't reach ${endpoint.baseUrl ?: "the OpenAI API"}. Are you online?", e)
-        }
-        if (code !in 200..299) throw AskException(errorMessage(code, text))
+        val text = post(body)
 
         val message = try {
             JSONObject(text).getJSONArray("choices").getJSONObject(0).getJSONObject("message")
@@ -64,7 +51,33 @@ class OpenAiAsker(
         return answer
     }
 
+    override fun test(): String {
+        val body = JSONObject()
+            .put("model", endpoint.modelOrDefault)
+            .put("messages", JSONArray().put(JSONObject().put("role", "user").put("content", "Reply with OK.")))
+        val text = post(body)
+        return runCatching { JSONObject(text).getString("model") }.getOrDefault(endpoint.modelOrDefault)
+    }
+
     override fun reset() = history.clear()
+
+    /** POSTs [body] to chat/completions; returns the response text or throws [AskException]. */
+    private fun post(body: JSONObject): String {
+        val call = Request.Builder()
+            .url(chatCompletionsUrl(endpoint.baseUrl))
+            .header("Authorization", "Bearer ${endpoint.apiKey}")
+            // After Authorization, so a gateway can swap in its own auth header.
+            .apply { endpoint.headers.forEach { (name, value) -> header(name, value) } }
+            .post(body.toString().toRequestBody(JSON))
+            .build()
+        val (code, text) = try {
+            http.newCall(call).execute().use { it.code to it.body?.string().orEmpty() }
+        } catch (e: IOException) {
+            throw AskException("Couldn't reach ${endpoint.baseUrl ?: "the OpenAI API"}. Are you online?", e)
+        }
+        if (code !in 200..299) throw AskException(errorMessage(code, text))
+        return text
+    }
 
     private fun errorMessage(code: Int, body: String): String {
         val detail = runCatching { JSONObject(body).getJSONObject("error").getString("message") }

@@ -1621,10 +1621,13 @@ private fun AskFolderExpander(moneo: MoneoModule) {
                 fontSize = 12.sp,
                 fontFamily = FontFamily.Monospace,
             )
+            var test by remember(current) { mutableStateOf<String?>(null) }
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 TextButton(onClick = { editing = true }) { Text("Edit", fontSize = 12.sp) }
                 TextButton(onClick = { moneo.prefs.setAskEndpoint(null) }) { Text("Remove", fontSize = 12.sp) }
+                EndpointTestButton({ current }, onResult = { test = it })
             }
+            test?.let { EndpointTestResult(it) }
         }
 
         Text("Or: Claude Code in Termux", fontWeight = FontWeight.SemiBold, fontSize = 13.sp)
@@ -1730,23 +1733,64 @@ private fun AskEndpointForm(
         modifier = Modifier.fillMaxWidth(),
     )
     val apiKey = key.trim().ifEmpty { current?.apiKey.orEmpty() }
+    val complete = apiKey.isNotBlank() && (!openAi || model.isNotBlank())
+    fun draft() = com.poketrek.moneo.ask.AskEndpoint(
+        provider = provider,
+        apiKey = apiKey,
+        baseUrl = com.poketrek.moneo.ask.AskEndpoint.normalizeBaseUrl(provider, baseUrl),
+        model = model.trim().ifEmpty { null },
+        headers = com.poketrek.moneo.ask.AskEndpoint.parseHeaders(headers),
+    )
+    var test by remember { mutableStateOf<String?>(null) }
     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-        Button(
-            onClick = {
-                onSave(
-                    com.poketrek.moneo.ask.AskEndpoint(
-                        provider = provider,
-                        apiKey = apiKey,
-                        baseUrl = com.poketrek.moneo.ask.AskEndpoint.normalizeBaseUrl(provider, baseUrl),
-                        model = model.trim().ifEmpty { null },
-                        headers = com.poketrek.moneo.ask.AskEndpoint.parseHeaders(headers),
-                    ),
-                )
-            },
-            enabled = apiKey.isNotBlank() && (!openAi || model.isNotBlank()),
-        ) { Text("Save", fontSize = 12.sp) }
+        Button(onClick = { onSave(draft()) }, enabled = complete) { Text("Save", fontSize = 12.sp) }
+        EndpointTestButton({ if (complete) draft() else null }, onResult = { test = it })
         if (onCancel != null) TextButton(onClick = onCancel) { Text("Cancel", fontSize = 12.sp) }
     }
+    test?.let { EndpointTestResult(it) }
+}
+
+/**
+ * Sends a tiny request to [endpoint] and reports "✓ model in 1.2 s" or the
+ * error the 💬 panel would show, via [onResult] ("…" while it runs).
+ */
+@Composable
+private fun EndpointTestButton(
+    endpoint: () -> com.poketrek.moneo.ask.AskEndpoint?,
+    onResult: (String) -> Unit,
+) {
+    val scope = rememberCoroutineScope()
+    var running by remember { mutableStateOf(false) }
+    TextButton(
+        enabled = !running,
+        onClick = {
+            val e = endpoint() ?: run { onResult("⚠ Fill in the key (and model) first."); return@TextButton }
+            running = true
+            onResult("Testing…")
+            scope.launch {
+                val t0 = System.nanoTime()
+                val result = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+                    runCatching { com.poketrek.moneo.ask.Asker.create(e).test() }
+                }
+                val secs = "%.1f".format((System.nanoTime() - t0) / 1e9)
+                onResult(result.fold({ "✓ $it answered in $secs s" }, { "⚠ ${it.message ?: it.javaClass.simpleName}" }))
+                running = false
+            }
+        },
+    ) { Text("Test", fontSize = 12.sp) }
+}
+
+@Composable
+private fun EndpointTestResult(text: String) {
+    Text(
+        text,
+        fontSize = 12.sp,
+        color = when {
+            text.startsWith("✓") -> Color(0xFF047857)
+            text.startsWith("⚠") -> Color(0xFFB91C1C)
+            else -> Color(0xFF6B7280)
+        },
+    )
 }
 
 /**
