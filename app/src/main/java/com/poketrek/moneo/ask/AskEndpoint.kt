@@ -78,8 +78,11 @@ data class AskEndpoint(
 interface Asker {
     val endpoint: AskEndpoint
 
-    /** Returns the answer text, or throws [AskException] with a message fit for the panel. */
-    fun ask(request: AskRequest, screen: Bitmap?): String
+    /**
+     * Returns the answer text, or throws [AskException] with a message fit for
+     * the panel. [onText] gets the answer so far as it streams in.
+     */
+    fun ask(request: AskRequest, screen: Bitmap?, onText: (String) -> Unit = {}): String
 
     /**
      * Sends a tiny request to check the key, URL and model; returns the model

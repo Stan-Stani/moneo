@@ -29,13 +29,17 @@ import kotlinx.coroutines.sync.withLock
  */
 class AskBridge(context: Context, private val prefs: MoneoPrefs) {
 
-    /** A question and, once the watcher answers, its [reply] (or [error]). */
+    /**
+     * A question and, once answered, its [reply] (or [error]). While a direct
+     * answer streams in, [partial] holds the text so far.
+     */
     data class Exchange(
         val id: String,
         val question: String,
         val message: String?,
         val reply: String? = null,
         val error: String? = null,
+        val partial: String? = null,
     ) {
         val pending get() = reply == null && error == null
     }
@@ -83,7 +87,16 @@ class AskBridge(context: Context, private val prefs: MoneoPrefs) {
 
     private suspend fun askDirect(endpoint: AskEndpoint, request: AskRequest, screen: Bitmap?): Pair<String?, String?> =
         directLock.withLock {
-            runCatching { askerFor(endpoint).ask(request, screen) }.fold(
+            var shownAt = 0L
+            val onText = { text: String ->
+                // A fast stream sends many tiny chunks; redraw at most ~12×/s.
+                val now = System.currentTimeMillis()
+                if (now - shownAt >= STREAM_REDRAW_MS) {
+                    shownAt = now
+                    _exchanges.update { list -> list.map { if (it.id == request.id) it.copy(partial = text) else it } }
+                }
+            }
+            runCatching { askerFor(endpoint).ask(request, screen, onText) }.fold(
                 { it to null },
                 { Log.w(TAG, "ask ${request.id} failed", it); null to (it.message ?: it.javaClass.simpleName) },
             )
@@ -169,5 +182,6 @@ class AskBridge(context: Context, private val prefs: MoneoPrefs) {
         private const val TAG = "AskBridge"
         private const val POLL_MS = 700L
         private const val TIMEOUT_MS = 240_000L
+        private const val STREAM_REDRAW_MS = 80L
     }
 }

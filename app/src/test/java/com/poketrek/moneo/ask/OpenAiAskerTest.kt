@@ -103,6 +103,38 @@ class OpenAiAskerTest {
         try { asker().test(); fail("no exception") } catch (e: AskException) { assertTrue(e.message!!.contains("rejected")) }
     }
 
+    private fun sse(vararg data: String) = MockResponse()
+        .setHeader("Content-Type", "text/event-stream; charset=utf-8")
+        .setBody(data.joinToString("") { "data: $it\n\n" })
+
+    private fun delta(field: String, text: String) =
+        """{"choices":[{"index":0,"delta":{${JSONObject.quote(field)}:${JSONObject.quote(text)}}}]}"""
+
+    @Test fun streamsTheAnswerAsItArrives() {
+        server.enqueue(sse(
+            """{"choices":[],"prompt_filter_results":[]}""",
+            delta("content", "간판은 "),
+            delta("content", "도움이 돼요."),
+            "[DONE]",
+        ))
+        val seen = mutableListOf<String>()
+        val reply = asker().askPng(request("쉽게", false), null) { seen += it }
+        assertEquals("간판은 도움이 돼요.", reply)
+        assertEquals(listOf("간판은 ", "간판은 도움이 돼요."), seen)
+        assertTrue(JSONObject(server.takeRequest().body.readUtf8()).getBoolean("stream"))
+    }
+
+    @Test fun streamedRefusalAndErrorBecomePanelMessages() {
+        server.enqueue(sse(delta("refusal", "I can't help with that."), "[DONE]"))
+        try { asker().askPng(request("q", false), null); fail("no exception") } catch (e: AskException) {
+            assertEquals("The model declined: I can't help with that.", e.message)
+        }
+        server.enqueue(sse(delta("content", "부분"), """{"error":{"message":"overloaded"}}"""))
+        try { asker().askPng(request("q", false), null); fail("no exception") } catch (e: AskException) {
+            assertEquals("API error: overloaded", e.message)
+        }
+    }
+
     @Test fun defaultUrlIsOpenAi() {
         assertEquals("https://api.openai.com/v1/chat/completions", OpenAiAsker.chatCompletionsUrl(null))
     }

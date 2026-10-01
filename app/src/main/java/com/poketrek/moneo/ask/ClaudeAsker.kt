@@ -10,6 +10,7 @@ import com.anthropic.errors.AnthropicServiceException
 import com.anthropic.errors.NotFoundException
 import com.anthropic.errors.RateLimitException
 import com.anthropic.errors.UnauthorizedException
+import com.anthropic.helpers.MessageAccumulator
 import com.anthropic.models.messages.Base64ImageSource
 import com.anthropic.models.messages.ContentBlockParam
 import com.anthropic.models.messages.ImageBlockParam
@@ -40,7 +41,7 @@ class ClaudeAsker(override val endpoint: AskEndpoint) : Asker {
 
     private val history = AskHistory<MessageParam>()
 
-    override fun ask(request: AskRequest, screen: Bitmap?): String {
+    override fun ask(request: AskRequest, screen: Bitmap?, onText: (String) -> Unit): String {
         val blocks = buildList {
             add(ContentBlockParam.ofText(AskPrompt.userText(request)))
             if (screen != null) add(ContentBlockParam.ofImage(pngBlock(screen)))
@@ -69,7 +70,23 @@ class ClaudeAsker(override val endpoint: AskEndpoint) : Asker {
             }
             .build()
 
-        val response = mapErrors { client.messages().create(params) }
+        val accumulator = MessageAccumulator.create()
+        mapErrors {
+            val stream = client.messages().createStreaming(params)
+            try {
+                val text = StringBuilder()
+                stream.stream().forEach { event ->
+                    accumulator.accumulate(event)
+                    event.contentBlockDelta().flatMap { it.delta().text() }.ifPresent {
+                        text.append(it.text())
+                        onText(text.toString())
+                    }
+                }
+            } finally {
+                stream.close()
+            }
+        }
+        val response = accumulator.message()
 
         if (response.stopReason().orElse(null) == StopReason.REFUSAL) {
             throw AskException("Claude declined to answer this one.")

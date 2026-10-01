@@ -72,7 +72,8 @@ fun AskPanel(
     val onScreen = moneo.dialogReader?.current?.collectAsState()?.value
     var draft by remember { mutableStateOf("") }
     val listState = rememberLazyListState()
-    LaunchedEffect(exchanges) { if (exchanges.isNotEmpty()) listState.animateScrollToItem(exchanges.size - 1) }
+    // Newest question at the top; a streaming answer grows down from there.
+    LaunchedEffect(exchanges.size) { if (exchanges.isNotEmpty()) listState.animateScrollToItem(exchanges.size - 1) }
 
     Column(
         modifier = modifier
@@ -106,6 +107,7 @@ fun AskPanel(
                     when {
                         e.reply != null -> Text(e.reply, color = Color.White, fontSize = 14.sp)
                         e.error != null -> Text("⚠ ${e.error}", color = Color(0xFFFCA5A5), fontSize = 12.sp)
+                        e.partial != null -> Text(e.partial + " ▍", color = Color.White, fontSize = 14.sp)
                         else -> Text("thinking…", color = Color(0xFF6B7280), fontSize = 12.sp)
                     }
                 }
