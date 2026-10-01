@@ -38,6 +38,13 @@ object AskPrompt {
         beside the game: plain text, no markdown headings or tables, and under about
         100 words unless they ask for more. Do not spoil anything that happens later
         in the game.
+
+        End every answer with one last line in exactly this form, which the app
+        hides and turns into study buttons:
+        [[words: 간판, 도움이 되다]]
+        listing the dictionary forms (되다, not 되지) of up to 6 Korean words from
+        the line or your answer that are worth learning and not in knownWords.
+        Write [[words: ]] when there are none.
     """.trimIndent()
 }
 

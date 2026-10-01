@@ -15,8 +15,15 @@ fun readingRows(
     repository: MoneoRepository,
     shown: DialogReader.OnScreen,
     cards: Map<String, CardRecord>,
+): List<ReadingRow> = wordRows(repository, shown.line?.words.orEmpty() + shown.names, cards)
+
+/** Rows for dictionary-form [words]; words with no deck entry are left out. */
+fun wordRows(
+    repository: MoneoRepository,
+    words: List<String>,
+    cards: Map<String, CardRecord>,
 ): List<ReadingRow> =
-    (shown.line?.words.orEmpty() + shown.names).distinct().mapNotNull { w ->
+    words.distinct().mapNotNull { w ->
         val entries = repository.visibleEntriesFor(w)
         if (entries.isEmpty()) {
             val hidden = repository.anyEntryFor(w) ?: return@mapNotNull null

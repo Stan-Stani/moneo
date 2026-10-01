@@ -40,6 +40,8 @@ class AskBridge(context: Context, private val prefs: MoneoPrefs) {
         val reply: String? = null,
         val error: String? = null,
         val partial: String? = null,
+        /** Dictionary forms the answer flagged as worth studying ([AnswerWords]). */
+        val words: List<String> = emptyList(),
     ) {
         val pending get() = reply == null && error == null
     }
@@ -78,7 +80,10 @@ class AskBridge(context: Context, private val prefs: MoneoPrefs) {
             } else {
                 askThroughFolder(folder!!, id, request, screen)
             }
-            _exchanges.update { list -> list.map { if (it.id == id) it.copy(reply = reply, error = error) else it } }
+            val split = reply?.let(AnswerWords::split)
+            _exchanges.update { list ->
+                list.map { if (it.id == id) it.copy(reply = split?.text, error = error, words = split?.words.orEmpty()) else it }
+            }
         }
     }
 
@@ -93,7 +98,8 @@ class AskBridge(context: Context, private val prefs: MoneoPrefs) {
                 val now = System.currentTimeMillis()
                 if (now - shownAt >= STREAM_REDRAW_MS) {
                     shownAt = now
-                    _exchanges.update { list -> list.map { if (it.id == request.id) it.copy(partial = text) else it } }
+                    val shown = AnswerWords.visible(text)
+                    _exchanges.update { list -> list.map { if (it.id == request.id) it.copy(partial = shown) else it } }
                 }
             }
             runCatching { askerFor(endpoint).ask(request, screen, onText) }.fold(

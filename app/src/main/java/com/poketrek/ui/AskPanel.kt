@@ -105,7 +105,10 @@ fun AskPanel(
                 Column {
                     Text("› ${e.question}", color = Color(0xFF93C5FD), fontSize = 12.sp)
                     when {
-                        e.reply != null -> Text(e.reply, color = Color.White, fontSize = 14.sp)
+                        e.reply != null -> {
+                            Text(e.reply, color = Color.White, fontSize = 14.sp)
+                            StudyWords(moneo, e.words)
+                        }
                         e.error != null -> Text("⚠ ${e.error}", color = Color(0xFFFCA5A5), fontSize = 12.sp)
                         e.partial != null -> Text(e.partial + " ▍", color = Color.White, fontSize = 14.sp)
                         else -> Text("thinking…", color = Color(0xFF6B7280), fontSize = 12.sp)
@@ -132,6 +135,42 @@ fun AskPanel(
                     cursorColor = Color.White,
                 ),
                 modifier = Modifier.weight(1f),
+            )
+        }
+    }
+}
+
+/**
+ * The deck words an answer flagged ([com.poketrek.moneo.ask.AnswerWords])
+ * that the player doesn't know yet, as ★ study-next toggles like the
+ * reading helper's. Nothing shows when all are known or not in the deck.
+ */
+@OptIn(androidx.compose.foundation.layout.ExperimentalLayoutApi::class)
+@Composable
+private fun StudyWords(moneo: MoneoModule, words: List<String>) {
+    if (words.isEmpty()) return
+    val cards by moneo.repository.cards.collectAsState()
+    val studyNext by moneo.repository.studyNext.collectAsState()
+    val rows = remember(words, cards) {
+        com.poketrek.moneo.reading.wordRows(moneo.repository, words, cards).filter { it.id != null && !it.known }
+    }
+    if (rows.isEmpty()) return
+    androidx.compose.foundation.layout.FlowRow(
+        horizontalArrangement = Arrangement.spacedBy(6.dp),
+        verticalArrangement = Arrangement.spacedBy(4.dp),
+        modifier = Modifier.padding(top = 4.dp),
+    ) {
+        rows.forEach { r ->
+            val queued = r.id in studyNext
+            Text(
+                (if (queued) "★ " else "☆ ") + r.korean + " · " + r.gloss,
+                color = if (queued) Color(0xFFFCD34D) else Color(0xFFD1D5DB),
+                fontSize = 11.sp,
+                maxLines = 1,
+                modifier = Modifier
+                    .background(Color(0xFF1F2937), RoundedCornerShape(6.dp))
+                    .clickable { r.id?.let { moneo.repository.toggleStudyNext(it) } }
+                    .padding(horizontal = 6.dp, vertical = 3.dp),
             )
         }
     }
