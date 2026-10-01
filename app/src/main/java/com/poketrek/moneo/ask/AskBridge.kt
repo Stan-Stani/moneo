@@ -20,8 +20,8 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.withLock
 
 /**
- * Asks an LLM about what's on screen. With an API key set, calls the Claude
- * API directly ([ClaudeAsker]). Otherwise goes through a shared folder: the app writes
+ * Asks an LLM about what's on screen. With an endpoint set, calls it directly
+ * ([ClaudeAsker] or [OpenAiAsker]). Otherwise goes through a shared folder: the app writes
  * `inbox/<id>.png` then `inbox/<id>.json` ([AskRequest]), and a watcher
  * (tools/ask_bridge/moneo-ask.sh, e.g. Claude Code in Termux) answers with
  * `outbox/<id>.md`. The folder is picked with the Storage Access Framework,
@@ -47,30 +47,30 @@ class AskBridge(context: Context, private val prefs: MoneoPrefs) {
     /** This session's questions, oldest first. */
     val exchanges: StateFlow<List<Exchange>> = _exchanges.asStateFlow()
 
-    val configured: Boolean get() = prefs.askApiKey.value != null || prefs.askFolder.value != null
+    val configured: Boolean get() = prefs.askEndpoint.value != null || prefs.askFolder.value != null
 
-    private var asker: ClaudeAsker? = null
+    private var asker: Asker? = null
 
-    /** The direct-API asker for the current key, rebuilt when the key changes. */
-    private fun askerFor(key: String): ClaudeAsker =
-        asker?.takeIf { it.apiKey == key } ?: ClaudeAsker(key).also { asker = it }
+    /** The direct-API asker for [endpoint], rebuilt when the settings change. */
+    private fun askerFor(endpoint: AskEndpoint): Asker =
+        asker?.takeIf { it.endpoint == endpoint } ?: Asker.create(endpoint).also { asker = it }
 
     /**
      * Writes the request and waits for the reply in the background. [build]
      * gets the new id and whether this continues the previous conversation.
      */
     fun ask(question: String, message: String?, screen: Bitmap?, build: (id: String, followUp: Boolean) -> AskRequest) {
-        val apiKey = prefs.askApiKey.value
+        val endpoint = prefs.askEndpoint.value
         val folder = prefs.askFolder.value?.let(Uri::parse)
-        if (apiKey == null && folder == null) return
+        if (endpoint == null && folder == null) return
         val now = System.currentTimeMillis()
         val id = AskRequest.newId(now)
         val prev = _exchanges.value.lastOrNull()
         val request = build(id, AskRequest.isFollowUp(prev?.message, prev != null, message))
         _exchanges.update { it + Exchange(id, question, message) }
         scope.launch {
-            val (reply, error) = if (apiKey != null) {
-                askDirect(apiKey, request, screen)
+            val (reply, error) = if (endpoint != null) {
+                askDirect(endpoint, request, screen)
             } else {
                 askThroughFolder(folder!!, id, request, screen)
             }
@@ -81,9 +81,9 @@ class AskBridge(context: Context, private val prefs: MoneoPrefs) {
     /** One question at a time, so a follow-up sees the answer before it. */
     private val directLock = kotlinx.coroutines.sync.Mutex()
 
-    private suspend fun askDirect(apiKey: String, request: AskRequest, screen: Bitmap?): Pair<String?, String?> =
+    private suspend fun askDirect(endpoint: AskEndpoint, request: AskRequest, screen: Bitmap?): Pair<String?, String?> =
         directLock.withLock {
-            runCatching { askerFor(apiKey).ask(request, screen) }.fold(
+            runCatching { askerFor(endpoint).ask(request, screen) }.fold(
                 { it to null },
                 { Log.w(TAG, "ask ${request.id} failed", it); null to (it.message ?: it.javaClass.simpleName) },
             )

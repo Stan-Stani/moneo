@@ -94,6 +94,7 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.anthropic.java)
+    implementation(libs.openai.java)
     debugImplementation(libs.androidx.compose.ui.tooling)
 
     testImplementation(libs.junit4)

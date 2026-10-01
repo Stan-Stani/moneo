@@ -40,10 +40,10 @@ You don't need to build anything or know how to code to play.
 
 Stuck on a line? The 💬 button sends the current screen to Claude and shows the answer in a panel beside the game. There are two ways to connect it:
 
-- **Your own API key (simplest):** **Settings → Ask an LLM (💬) → Claude API key**, paste a key from [console.anthropic.com](https://console.anthropic.com). The app calls the Claude API directly; usage is billed to your account and the key stays on the phone.
+- **Your own API key (simplest):** **Settings → Ask an LLM (💬)**, pick a provider and paste a key. *Claude (Anthropic)* uses a key from [console.anthropic.com](https://console.anthropic.com) (default model `claude-opus-5-5`). *OpenAI-compatible* covers anything that speaks the OpenAI Chat Completions API — OpenAI, Azure AI Foundry / Azure OpenAI (`https://<resource>.services.ai.azure.com/openai/v1`), OpenRouter (`https://openrouter.ai/api/v1`), Ollama, LM Studio — and needs a model name. Either provider takes an optional base URL (a full endpoint URL pasted from another tool is trimmed to the base), and extra headers for API gateways. The app calls the API directly; usage is billed to your account and the key stays on the phone.
 - **Claude Code in [Termux](https://termux.dev):** no key in the app; described below.
 
-Either way, each question carries a screenshot, the exact text of the open message box (decoded from game memory), the dictionary words in it, and every word you already know from your flashcards. Claude answers in simple Korean built from those known words — ask "in English" if you want English — and a follow-up about the same line keeps the conversation going.
+Either way, each question carries a screenshot, the exact text of the open message box (decoded from game memory), the dictionary words in it, and every word you already know from your flashcards. The model answers in simple Korean built from those known words — ask "in English" if you want English — and a follow-up about the same line keeps the conversation going.
 
 **Termux setup.** The app and Termux talk only through a shared folder, and the app itself needs no API key. In short:
 
@@ -66,7 +66,7 @@ The rest of this README is for people who want to build, modify, or contribute t
 
 ### Status
 
-Playable end to end: embedded mGBA, real-walk step-gating, save states, in-app Korean ROM patching, the SRS deck with per-area readiness and the area gate, in-game reading help, and 💬 (Claude API key or Termux). Verified on a Samsung Galaxy S20+; wider device validation is still pending.
+Playable end to end: embedded mGBA, real-walk step-gating, save states, in-app Korean ROM patching, the SRS deck with per-area readiness and the area gate, in-game reading help, and 💬 (your own Claude or OpenAI-compatible API key, or Termux). Verified on a Samsung Galaxy S20+; wider device validation is still pending.
 
 CI (`.github/workflows/ci.yml`) runs the JVM unit tests and builds a debug APK on every push and pull request; the APK is attached to each run.
 

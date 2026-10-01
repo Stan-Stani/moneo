@@ -10,6 +10,7 @@ junit = "1.2.1"
 junit4 = "4.13.2"
 espresso = "3.6.1"
 anthropic = "2.68.0"
+openai = "4.73.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -26,6 +27,7 @@ androidx-datastore-preferences = { group = "androidx.datastore", name = "datasto
 androidx-test-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junit" }
 junit4 = { group = "junit", name = "junit", version.ref = "junit4" }
 anthropic-java = { group = "com.anthropic", name = "anthropic-java", version.ref = "anthropic" }
+openai-java = { group = "com.openai", name = "openai-java", version.ref = "openai" }
 androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
 
 [plugins]

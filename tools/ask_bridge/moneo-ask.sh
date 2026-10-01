@@ -28,7 +28,7 @@ done
 mkdir -p "$DIR/inbox" "$DIR/outbox" "$DIR/done"
 command -v termux-wake-lock >/dev/null && termux-wake-lock
 
-# The app's direct-API mode (ClaudeAsker.kt) carries a copy of this prompt; keep them in step.
+# The app's direct-API mode (AskPrompt.kt) carries a copy of this prompt; keep them in step.
 read -r -d '' SYSTEM_PROMPT <<'EOF'
 You are a Korean reading tutor for someone playing Pokémon LeafGreen in
 Korean (the 2024 fan translation) on their phone, while walking. They are an

@@ -1583,45 +1583,47 @@ private fun AskFolderExpander(moneo: MoneoModule) {
         }.onFailure { android.util.Log.w("AskFolder", "Could not persist folder permission", it) }
         moneo.prefs.setAskFolder(uri.toString())
     }
-    val apiKey by moneo.prefs.askApiKey.collectAsState()
-    var keyDraft by remember { mutableStateOf("") }
+    val endpoint by moneo.prefs.askEndpoint.collectAsState()
+    var editing by remember { mutableStateOf(false) }
     val label = folder?.let { android.net.Uri.parse(it).lastPathSegment?.substringAfterLast(':') ?: it }
     Expander(
         title = "Ask an LLM (💬)",
         summary = when {
-            apiKey != null -> "Claude API"
+            endpoint != null -> endpoint!!.summary
             label != null -> label
             else -> "Off"
         },
     ) {
-        Text("Claude API key", fontWeight = FontWeight.SemiBold, fontSize = 13.sp)
+        Text("Your own API key", fontWeight = FontWeight.SemiBold, fontSize = 13.sp)
         Text(
-            "Sends the message box, its words and a screenshot straight to Claude " +
-                "(${com.poketrek.moneo.ask.ClaudeAsker.MODEL}) with your own key from " +
-                "console.anthropic.com. Usage is billed to your account. The key stays on this phone.",
+            "Sends the message box, its words and a screenshot straight to an LLM with your own key: " +
+                "Claude (console.anthropic.com), or anything that speaks the OpenAI API " +
+                "(OpenAI, Azure OpenAI, OpenRouter, Ollama…). Usage is billed to your account. " +
+                "The key stays on this phone.",
             fontSize = 12.sp,
             color = Color(0xFF6B7280),
         )
-        if (apiKey == null) {
-            OutlinedTextField(
-                value = keyDraft,
-                onValueChange = { keyDraft = it },
-                label = { Text("sk-ant-…", fontSize = 12.sp) },
-                singleLine = true,
-                visualTransformation = androidx.compose.ui.text.input.PasswordVisualTransformation(),
-                modifier = Modifier.fillMaxWidth(),
+        val current = endpoint
+        if (current == null || editing) {
+            AskEndpointForm(
+                current = current,
+                onSave = { moneo.prefs.setAskEndpoint(it); editing = false },
+                onCancel = if (current != null) ({ editing = false }) else null,
             )
-            Button(
-                onClick = { moneo.prefs.setAskApiKey(keyDraft); keyDraft = "" },
-                enabled = keyDraft.isNotBlank(),
-            ) { Text("Save key", fontSize = 12.sp) }
         } else {
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-            ) {
-                Text("Key …${apiKey!!.takeLast(4)}", fontSize = 12.sp, fontFamily = FontFamily.Monospace)
-                TextButton(onClick = { moneo.prefs.setAskApiKey(null) }) { Text("Remove key", fontSize = 12.sp) }
+            Text(
+                buildString {
+                    append(current.summary)
+                    append("\n").append(current.baseUrl ?: "default URL")
+                    append("\nKey …").append(current.apiKey.takeLast(4))
+                    if (current.headers.isNotEmpty()) append(" · headers: ").append(current.headers.keys.joinToString())
+                },
+                fontSize = 12.sp,
+                fontFamily = FontFamily.Monospace,
+            )
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                TextButton(onClick = { editing = true }) { Text("Edit", fontSize = 12.sp) }
+                TextButton(onClick = { moneo.prefs.setAskEndpoint(null) }) { Text("Remove", fontSize = 12.sp) }
             }
         }
 
@@ -1642,6 +1644,108 @@ private fun AskFolderExpander(moneo: MoneoModule) {
                 TextButton(onClick = { moneo.prefs.setAskFolder(null) }) { Text("Turn off", fontSize = 12.sp) }
             }
         }
+    }
+}
+
+/**
+ * Provider, key, and optional model, base URL and extra headers for 💬.
+ * Editing keeps the saved key unless a new one is typed.
+ */
+@Composable
+private fun AskEndpointForm(
+    current: com.poketrek.moneo.ask.AskEndpoint?,
+    onSave: (com.poketrek.moneo.ask.AskEndpoint) -> Unit,
+    onCancel: (() -> Unit)?,
+) {
+    var provider by remember { mutableStateOf(current?.provider ?: com.poketrek.moneo.ask.AskProvider.ANTHROPIC) }
+    var key by remember { mutableStateOf("") }
+    var model by remember { mutableStateOf(current?.model.orEmpty()) }
+    var baseUrl by remember { mutableStateOf(current?.baseUrl.orEmpty()) }
+    var headers by remember {
+        mutableStateOf(current?.headers?.entries?.joinToString("\n") { (k, v) -> "$k: $v" }.orEmpty())
+    }
+    val openAi = provider == com.poketrek.moneo.ask.AskProvider.OPENAI
+    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        for (p in com.poketrek.moneo.ask.AskProvider.entries) {
+            if (p == provider) {
+                Button(onClick = {}) { Text(p.label, fontSize = 12.sp) }
+            } else {
+                androidx.compose.material3.OutlinedButton(onClick = {
+                    // Model names and URLs don't carry over between providers.
+                    provider = p
+                    model = ""
+                    baseUrl = ""
+                }) { Text(p.label, fontSize = 12.sp) }
+            }
+        }
+    }
+    OutlinedTextField(
+        value = key,
+        onValueChange = { key = it },
+        label = {
+            Text(
+                when {
+                    current != null -> "API key (blank keeps …${current.apiKey.takeLast(4)})"
+                    openAi -> "API key"
+                    else -> "API key (sk-ant-…)"
+                },
+                fontSize = 12.sp,
+            )
+        },
+        singleLine = true,
+        visualTransformation = androidx.compose.ui.text.input.PasswordVisualTransformation(),
+        modifier = Modifier.fillMaxWidth(),
+    )
+    OutlinedTextField(
+        value = model,
+        onValueChange = { model = it },
+        label = {
+            Text(
+                if (openAi) "Model (required, e.g. gpt-5.5)" else "Model (default ${provider.defaultModel})",
+                fontSize = 12.sp,
+            )
+        },
+        singleLine = true,
+        modifier = Modifier.fillMaxWidth(),
+    )
+    OutlinedTextField(
+        value = baseUrl,
+        onValueChange = { baseUrl = it },
+        label = {
+            Text(
+                if (openAi) "Base URL (default api.openai.com/v1; e.g. openrouter.ai/api/v1, …azure.com/openai/v1)"
+                else "Base URL (default api.anthropic.com; e.g. …services.ai.azure.com/anthropic)",
+                fontSize = 12.sp,
+            )
+        },
+        singleLine = true,
+        modifier = Modifier.fillMaxWidth(),
+    )
+    OutlinedTextField(
+        value = headers,
+        onValueChange = { headers = it },
+        label = { Text("Extra headers, one \"Name: value\" per line (optional)", fontSize = 12.sp) },
+        minLines = 1,
+        maxLines = 4,
+        modifier = Modifier.fillMaxWidth(),
+    )
+    val apiKey = key.trim().ifEmpty { current?.apiKey.orEmpty() }
+    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        Button(
+            onClick = {
+                onSave(
+                    com.poketrek.moneo.ask.AskEndpoint(
+                        provider = provider,
+                        apiKey = apiKey,
+                        baseUrl = com.poketrek.moneo.ask.AskEndpoint.normalizeBaseUrl(provider, baseUrl),
+                        model = model.trim().ifEmpty { null },
+                        headers = com.poketrek.moneo.ask.AskEndpoint.parseHeaders(headers),
+                    ),
+                )
+            },
+            enabled = apiKey.isNotBlank() && (!openAi || model.isNotBlank()),
+        ) { Text("Save", fontSize = 12.sp) }
+        if (onCancel != null) TextButton(onClick = onCancel) { Text("Cancel", fontSize = 12.sp) }
     }
 }
 
