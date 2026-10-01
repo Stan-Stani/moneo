@@ -11,6 +11,7 @@ import androidx.datastore.preferences.core.stringSetPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.poketrek.moneo.ask.AskEndpoint
 import com.poketrek.moneo.ask.AskProvider
+import org.json.JSONObject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -46,10 +47,14 @@ private val KEY_VISITED_AREAS = stringSetPreferencesKey("moneo_visited_areas")
 private val KEY_STUDY_NEXT = stringPreferencesKey("moneo_study_next")
 private val KEY_READING_HELP = booleanPreferencesKey("moneo_reading_help")
 private val KEY_ASK_FOLDER = stringPreferencesKey("moneo_ask_folder")
+/** Legacy plaintext key (before [KEY_ASK_SECRETS]); migrated on load. */
 private val KEY_ASK_API_KEY = stringPreferencesKey("moneo_ask_api_key")
+/** API key and extra headers, as JSON encrypted by [SecretBox]. */
+private val KEY_ASK_SECRETS = stringPreferencesKey("moneo_ask_secrets")
 private val KEY_ASK_PROVIDER = stringPreferencesKey("moneo_ask_provider")
 private val KEY_ASK_BASE_URL = stringPreferencesKey("moneo_ask_base_url")
 private val KEY_ASK_MODEL = stringPreferencesKey("moneo_ask_model")
+/** Legacy plaintext headers; migrated into [KEY_ASK_SECRETS] on load. */
 private val KEY_ASK_HEADERS = stringPreferencesKey("moneo_ask_headers")
 private val KEY_DIRECTION = stringPreferencesKey("moneo_direction")
 private val KEY_DIRECTION_MANUAL = booleanPreferencesKey("moneo_direction_manual")
@@ -283,7 +288,8 @@ class MoneoPrefs private constructor(private val context: Context) {
     /**
      * The player's own LLM endpoint for 💬: provider, API key and optional
      * base URL, model and extra headers. When set, questions go straight to
-     * it instead of through [askFolder]. Kept in app-private storage.
+     * it instead of through [askFolder]. The key and headers are stored
+     * encrypted with a Keystore key ([SecretBox]).
      */
     private val _askEndpoint = MutableStateFlow<AskEndpoint?>(null)
     val askEndpoint: StateFlow<AskEndpoint?> = _askEndpoint.asStateFlow()
@@ -291,20 +297,33 @@ class MoneoPrefs private constructor(private val context: Context) {
     fun setAskEndpoint(value: AskEndpoint?) {
         val endpoint = value?.takeIf { it.apiKey.isNotBlank() }?.copy(apiKey = value.apiKey.trim())
         _askEndpoint.value = endpoint
-        scope.launch {
-            context.moneoStore.edit {
-                if (endpoint == null) {
-                    for (k in listOf(KEY_ASK_API_KEY, KEY_ASK_PROVIDER, KEY_ASK_BASE_URL, KEY_ASK_MODEL, KEY_ASK_HEADERS)) it.remove(k)
-                } else {
-                    it[KEY_ASK_API_KEY] = endpoint.apiKey
-                    it[KEY_ASK_PROVIDER] = endpoint.provider.name
-                    it.putOrRemove(KEY_ASK_BASE_URL, endpoint.baseUrl)
-                    it.putOrRemove(KEY_ASK_MODEL, endpoint.model)
-                    it.putOrRemove(
-                        KEY_ASK_HEADERS,
-                        endpoint.headers.entries.joinToString("\n") { (k, v) -> "$k: $v" }.ifEmpty { null },
-                    )
-                }
+        scope.launch { persistAskEndpoint(endpoint) }
+    }
+
+    /**
+     * Writes [endpoint] with its key and headers encrypted ([SecretBox]), and
+     * drops the legacy plaintext copies. If the Keystore refuses, the
+     * endpoint stays in memory for this session but isn't saved.
+     */
+    private suspend fun persistAskEndpoint(endpoint: AskEndpoint?) {
+        val secrets = endpoint?.let {
+            SecretBox.encrypt(
+                org.json.JSONObject()
+                    .put("apiKey", it.apiKey)
+                    .put("headers", it.headers.entries.joinToString("\n") { (k, v) -> "$k: $v" })
+                    .toString(),
+            ) ?: return
+        }
+        context.moneoStore.edit {
+            it.remove(KEY_ASK_API_KEY)
+            it.remove(KEY_ASK_HEADERS)
+            if (endpoint == null || secrets == null) {
+                for (k in listOf(KEY_ASK_SECRETS, KEY_ASK_PROVIDER, KEY_ASK_BASE_URL, KEY_ASK_MODEL)) it.remove(k)
+            } else {
+                it[KEY_ASK_SECRETS] = secrets
+                it[KEY_ASK_PROVIDER] = endpoint.provider.name
+                it.putOrRemove(KEY_ASK_BASE_URL, endpoint.baseUrl)
+                it.putOrRemove(KEY_ASK_MODEL, endpoint.model)
             }
         }
     }
@@ -373,14 +392,22 @@ class MoneoPrefs private constructor(private val context: Context) {
             studyNext = prefs[KEY_STUDY_NEXT]?.split('\n')?.filter { it.isNotEmpty() } ?: emptyList()
             _readingHelp.value = prefs[KEY_READING_HELP] ?: true
             _askFolder.value = prefs[KEY_ASK_FOLDER]
-            _askEndpoint.value = prefs[KEY_ASK_API_KEY]?.let { key ->
+            val secrets = prefs[KEY_ASK_SECRETS]?.let(SecretBox::decrypt)?.let(::JSONObject)
+            val legacyKey = prefs[KEY_ASK_API_KEY]
+            val apiKey = secrets?.optString("apiKey")?.takeIf { it.isNotEmpty() } ?: legacyKey
+            _askEndpoint.value = apiKey?.let { key ->
                 AskEndpoint(
                     provider = AskProvider.fromStored(prefs[KEY_ASK_PROVIDER]),
                     apiKey = key,
                     baseUrl = prefs[KEY_ASK_BASE_URL],
                     model = prefs[KEY_ASK_MODEL],
-                    headers = AskEndpoint.parseHeaders(prefs[KEY_ASK_HEADERS]),
+                    headers = AskEndpoint.parseHeaders(secrets?.optString("headers") ?: prefs[KEY_ASK_HEADERS]),
                 )
+            }
+            if (legacyKey != null || prefs[KEY_ASK_HEADERS] != null) {
+                // Saved by a version that kept the key in plaintext: re-save it encrypted.
+                val endpoint = _askEndpoint.value
+                scope.launch { persistAskEndpoint(endpoint) }
             }
             _direction.value = FlashcardDirection.fromStored(prefs[KEY_DIRECTION])
             _directionWasManuallySet.value = prefs[KEY_DIRECTION_MANUAL] ?: false
