@@ -141,7 +141,7 @@ class EmulatorActivity : ComponentActivity() {
     }
 
     private fun loadPickedRom(bytes: ByteArray, displayName: String?) {
-        if (!runner.loadRom(bytes)) {
+        if (!com.poketrek.emu.RomIdentity.looksLikeGbaRom(bytes) || !runner.loadRom(bytes)) {
             romPickError.value = "That file didn't load as a Game Boy Advance ROM."
             return
         }
@@ -269,6 +269,7 @@ class EmulatorActivity : ComponentActivity() {
                         },
                         koreanSetupState = { koreanSetupState.value },
                         romPickError = romPickError.value,
+                        onDismissRomPickError = { romPickError.value = null },
                         pendingJpBase = pendingJpBase.value != null,
                         onBuildKoreanFromPicked = {
                             pendingJpBase.value?.let { buildKoreanRom(it.first) }
@@ -411,6 +412,7 @@ private fun AppRoot(
     onSetupKoreanRom: () -> Unit,
     koreanSetupState: () -> KoreanRomPatcher.State,
     romPickError: String?,
+    onDismissRomPickError: () -> Unit,
     pendingJpBase: Boolean,
     onBuildKoreanFromPicked: () -> Unit,
     onPlayPickedAsIs: () -> Unit,
@@ -452,6 +454,8 @@ private fun AppRoot(
                 currentRomCrc32 = currentRomCrc32,
                 onLoadCachedRom = onLoadCachedRom,
                 onRemoveCachedRom = onRemoveCachedRom,
+                romPickError = romPickError,
+                onDismissRomPickError = onDismissRomPickError,
                 modifier = Modifier.fillMaxSize().padding(8.dp),
             )
         }

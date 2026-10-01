@@ -64,4 +64,12 @@ class RomIdentityTest {
         assertFalse(RomVariant.LEAFGREEN_JP_10.gatingSupported)
         assertFalse(RomVariant.LEAFGREEN_JP_10.areaGateSupported)
     }
+
+    @Test fun `GBA header check accepts a cartridge header and rejects other files`() {
+        val header = ByteArray(0xC0).also { it[3] = 0xEA.toByte(); it[0xB2] = 0x96.toByte() }
+        assertTrue(RomIdentity.looksLikeGbaRom(header))
+        assertFalse(RomIdentity.looksLikeGbaRom("this is not a rom\n".toByteArray()))
+        assertFalse(RomIdentity.looksLikeGbaRom(header.copyOf().also { it[0xB2] = 0 }))
+        assertFalse(RomIdentity.looksLikeGbaRom(header.copyOf().also { it[3] = 0 }))
+    }
 }

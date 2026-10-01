@@ -22,6 +22,7 @@ import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.poketrek.emu.EmulatorRunner
 import com.poketrek.moneo.MoneoModule
 import com.poketrek.moneo.gate.MoneoSoftGate
@@ -60,6 +61,9 @@ fun EmulatorScreen(
     currentRomCrc32: () -> Long? = { null },
     onLoadCachedRom: (Long) -> Boolean = { false },
     onRemoveCachedRom: (Long) -> Unit = {},
+    /** Why the last "Add ROM" pick didn't load, shown as a banner until dismissed. */
+    romPickError: String? = null,
+    onDismissRomPickError: () -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
     val tick by runner.frameTick
@@ -213,6 +217,23 @@ fun EmulatorScreen(
                     .align(Alignment.TopCenter)
                     .padding(top = 8.dp),
             )
+        }
+
+        if (romPickError != null) {
+            androidx.compose.foundation.layout.Row(
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    // Below the HUD row so it doesn't cover the settings button.
+                    .padding(top = 64.dp)
+                    .background(Color(0xEE7F1D1D), androidx.compose.foundation.shape.RoundedCornerShape(10.dp))
+                    .padding(start = 12.dp, end = 4.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                androidx.compose.material3.Text(romPickError, color = Color.White, fontSize = 13.sp)
+                androidx.compose.material3.TextButton(onClick = onDismissRomPickError) {
+                    androidx.compose.material3.Text("✕", color = Color.White)
+                }
+            }
         }
 
         if (settingsOpen) {

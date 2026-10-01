@@ -69,6 +69,15 @@ data class RomIdentity(val crc32: Long, val variant: RomVariant) {
         /** Maps a known CRC32 to its ROM variant; falls back to [RomVariant.UNKNOWN]. */
         fun variantFor(crc32: Long): RomVariant = KNOWN[crc32] ?: RomVariant.UNKNOWN
 
+        /**
+         * Whether [bytes] carry a GBA cartridge header: the ARM branch at the
+         * entry point (byte 3 = 0xEA) and the fixed value 0x96 at 0xB2, the
+         * signature mGBA's GBAIsROM checks. mGBA's loadROM itself accepts
+         * any bytes, so a text file would otherwise "load" as a blank game.
+         */
+        fun looksLikeGbaRom(bytes: ByteArray): Boolean =
+            bytes.size > 0xB2 && bytes[3] == 0xEA.toByte() && bytes[0xB2] == 0x96.toByte()
+
         /** Pretty-prints a CRC32 as `0xXXXXXXXX`. */
         fun crc32Hex(crc32: Long): String =
             "0x" + crc32.toString(16).uppercase().padStart(8, '0')
