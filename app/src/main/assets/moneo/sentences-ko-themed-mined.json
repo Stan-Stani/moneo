@@ -1662,8 +1662,8 @@
   },
   {
    "vocabId": "rom-mine-v3:들다",
-   "korean": "오랜만에 든 짐이 무거워요.",
-   "gloss": "The bag I picked up after a long time feels heavy.",
+   "korean": "트레이너가 든 가방이 무거워 보여요.",
+   "gloss": "The bag the trainer is carrying looks heavy.",
    "targetForm": "든",
    "areaId": "rom_mined",
    "source": "themed-v1",
@@ -1750,7 +1750,16 @@
     1312,
     1330,
     1555
-   ]
+   ],
+   "auditFix": {
+    "verdict": "awkward",
+    "issue": "Reported as an awkward literal translation. The gloss 'picked up after a long time' reads as 'after a long delay', but 오랜만에 means 'for the first time in a while'; the Korean itself is grammatical but stilted (오랜만에 짐을 드니까 무겁네요 is the natural way to say it). Replaced with a natural, game-themed use of the same form 든 (들다 'to hold/carry', past modifier).",
+    "evidenceUrl": "https://ko.dict.naver.com/#/search?query=%EB%93%A4%EB%8B%A4",
+    "auditedAt": "2026-10-01",
+    "githubIssue": 2,
+    "originalKorean": "오랜만에 든 짐이 무거워요.",
+    "originalGloss": "The bag I picked up after a long time feels heavy."
+   }
   },
   {
    "vocabId": "rom-mine-v3:자다",
